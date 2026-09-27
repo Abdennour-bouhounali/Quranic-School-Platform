@@ -106,13 +106,17 @@ const G1_S1_SKIP = 0
 // jamalSiffin owns g2-s1 lesson 1; skip that stub to avoid duplication.
 const G2_S1_SKIP = 0
 
+// iqtisadRustami owns g3-s1 lesson 1; skip that stub to avoid duplication.
+const G3_S1_SKIP = 0
+
 export const historyIbadiLessons: Lesson[] = Object.entries(GRADE_SEMESTER_MAP).flatMap(
   ([gradeId, [slot1, slot2]]) => [
     ...CURRICULUM[slot1]
       .filter(
         (_, i) =>
           !(gradeId === 'history-ibadi-g1' && i === G1_S1_SKIP) &&
-          !(gradeId === 'history-ibadi-g2' && i === G2_S1_SKIP),
+          !(gradeId === 'history-ibadi-g2' && i === G2_S1_SKIP) &&
+          !(gradeId === 'history-ibadi-g3' && i === G3_S1_SKIP),
       )
       .map((def) => makeStubLesson(gradeId, 's1', slot1, CURRICULUM[slot1].indexOf(def) + 1, def)),
     ...CURRICULUM[slot2].map((def, i) => makeStubLesson(gradeId, 's2', slot2, i + 1, def)),
