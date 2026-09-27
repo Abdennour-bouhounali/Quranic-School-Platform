@@ -130,7 +130,7 @@ export function LessonPage({ lesson, onExit }: Props) {
         )}
       </AnimatePresence>
 
-      <main className="mx-auto max-w-6xl px-4 py-6 md:py-10">
+      <main className="mx-auto max-w-6xl px-4 py-6 pb-24 md:py-10 md:pb-24">
         <AnimatePresence mode="wait">
           <motion.div
             key={`${runId}-${section.id}`}
@@ -144,26 +144,24 @@ export function LessonPage({ lesson, onExit }: Props) {
         </AnimatePresence>
       </main>
 
-      {section.kind !== 'hero' && (
-        <footer className="sticky bottom-0 z-20 border-t border-cream-deep/60 bg-cream-soft/90 backdrop-blur-md">
-          <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3" style={{ paddingBottom: 'max(0.75rem, env(safe-area-inset-bottom))' }}>
-            <button type="button" onClick={() => goTo(index - 1)} disabled={isFirst} className="btn-secondary disabled:opacity-40">
-              <Back className="h-4 w-4" aria-hidden /> {t('lesson.previous')}
-            </button>
-            <span className="num text-sm font-medium text-ink-muted" aria-label={t('a11y.progress')}>
-              {index + 1} / {lesson.sections.length}
-            </span>
-            <button
-              type="button"
-              onClick={() => goTo(index + 1)}
-              disabled={isLast}
-              className={cn('btn-primary disabled:opacity-40', isLast && 'invisible')}
-            >
-              {t('lesson.next')} <Forward className="h-4 w-4" aria-hidden />
-            </button>
-          </div>
-        </footer>
-      )}
+      <footer className="fixed bottom-0 inset-x-0 z-20 border-t border-cream-deep/60 bg-cream-soft/90 backdrop-blur-md">
+        <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3" style={{ paddingBottom: 'max(0.75rem, env(safe-area-inset-bottom))' }}>
+          <button type="button" onClick={() => goTo(index - 1)} disabled={isFirst} className="btn-secondary disabled:opacity-40">
+            <Back className="h-4 w-4" aria-hidden /> {t('lesson.previous')}
+          </button>
+          <span className="num text-sm font-medium text-ink-muted" aria-label={t('a11y.progress')}>
+            {index + 1} / {lesson.sections.length}
+          </span>
+          <button
+            type="button"
+            onClick={() => goTo(index + 1)}
+            disabled={isLast}
+            className={cn('btn-primary disabled:opacity-40', isLast && 'invisible')}
+          >
+            {t('lesson.next')} <Forward className="h-4 w-4" aria-hidden />
+          </button>
+        </div>
+      </footer>
     </div>
   )
 }

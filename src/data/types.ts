@@ -7,10 +7,13 @@ export type LocalizedAudio = Partial<Record<keyof LocalizedText, string>>
 // 'approximate' = widely accepted but the exact age/date is not certain.
 export type Certainty = 'established' | 'approximate'
 
+export type LessonStatus = 'draft' | 'published'
+
 export type Grade = {
   id: string
   title: LocalizedText
   ageRange: string
+  status?: LessonStatus
 }
 
 export type Module = {
@@ -18,6 +21,15 @@ export type Module = {
   gradeId: string
   title: LocalizedText
   description: LocalizedText
+}
+
+// A grouping of ordered lessons within a module.
+export type Semester = {
+  id: string
+  moduleId: string
+  gradeId: string
+  order: number
+  title: LocalizedText
 }
 
 // ---------- Sections ----------
@@ -246,6 +258,10 @@ export type Lesson = {
   id: string
   gradeId: string
   moduleId: string
+  // Optional for draft/stub lessons; required when content is published.
+  semesterId?: string
+  order?: number
+  status?: LessonStatus
   title: LocalizedText
   description: LocalizedText
   estimatedMinutes: number

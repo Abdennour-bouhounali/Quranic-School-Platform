@@ -4,8 +4,11 @@ const IMG = '/images/lessons/prophet-birth-youth'
 
 export const prophetBirthYouth: Lesson = {
   id: 'prophet-birth-youth',
-  gradeId: 'g1',
-  moduleId: 'seerah',
+  gradeId: 'history-ibadi-g1',
+  moduleId: 'history-ibadi-g1',
+  semesterId: 'history-ibadi-g1-s1',
+  order: 1,
+  status: 'published',
   estimatedMinutes: 20,
   cover: `${IMG}/hero.png`,
   coverAlt: {
