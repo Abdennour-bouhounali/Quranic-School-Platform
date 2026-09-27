@@ -33,19 +33,19 @@ export const iqtisadRustami: Lesson = {
   },
 
   sections: [
-    // 01 — Hero: hook on Rustamid prosperity
+    // 01 — Hero
     {
       kind: 'hero',
       id: 'hero',
       image: `${IMG}/hero.png`,
       imageAlt: {
         ar: 'سوق رستمية حيّة تمتلئ بالقوافل والبضائع',
-        fr: `Un marché rustamide vivant, rempli de caravanes et de marchandises`,
+        fr: 'Un marché rustamide vivant, rempli de caravanes et de marchandises',
         en: 'A lively Rustamid market filled with caravans and goods',
       },
       title: {
         ar: 'المغرب الإسلامي في عهد الرستميين',
-        fr: `Le Maghreb islamique sous les Rustamides`,
+        fr: 'Le Maghreb islamique sous les Rustamides',
         en: 'The Islamic Maghreb under the Rustamids',
       },
       question: {
@@ -60,7 +60,7 @@ export const iqtisadRustami: Lesson = {
       },
     },
 
-    // 02 — Story: the four economic pillars
+    // 02 — Story: four economic pillars
     {
       kind: 'story',
       id: 'pillars',
@@ -71,7 +71,7 @@ export const iqtisadRustami: Lesson = {
       },
       intro: {
         ar: 'اقلب البطاقات لتتعرّف على كلّ نشاط من الأنشطة الاقتصادية التي جعلت المغرب الأوسط يزدهر.',
-        fr: `Retourne les cartes pour découvrir chaque activité économique qui fit prospérer le Maghreb central.`,
+        fr: 'Retourne les cartes pour découvrir chaque activité économique qui fit prospérer le Maghreb central.',
         en: 'Flip the cards to discover each economic activity that made the central Maghreb flourish.',
       },
       cards: [
@@ -80,7 +80,7 @@ export const iqtisadRustami: Lesson = {
           image: `${IMG}/agriculture.png`,
           imageAlt: {
             ar: 'حقول خضراء واسعة تمتدّ في سهول المغرب الأوسط',
-            fr: `De vastes champs verts s'étendant dans les plaines du Maghreb central`,
+            fr: 'De vastes champs verts dans les plaines du Maghreb central',
             en: 'Wide green fields stretching across the plains of the central Maghreb',
           },
           fact: {
@@ -94,7 +94,7 @@ export const iqtisadRustami: Lesson = {
           image: `${IMG}/livestock.png`,
           imageAlt: {
             ar: 'قطعان من الإبل والخيل والبقر والغنم في السهول',
-            fr: `Des troupeaux de chameaux, chevaux, bovins et moutons dans les plaines`,
+            fr: 'Des troupeaux de chameaux, chevaux, bovins et moutons dans les plaines',
             en: 'Herds of camels, horses, cattle and sheep on the plains',
           },
           fact: {
@@ -122,7 +122,7 @@ export const iqtisadRustami: Lesson = {
           image: `${IMG}/trade.png`,
           imageAlt: {
             ar: 'قافلة جمال تتحرّك بين التلال محمّلةً بالبضائع',
-            fr: `Une caravane de chameaux se déplaçant entre les collines chargée de marchandises`,
+            fr: 'Une caravane de chameaux chargée de marchandises entre les collines',
             en: 'A camel caravan moving between hills laden with goods',
           },
           fact: {
@@ -141,7 +141,7 @@ export const iqtisadRustami: Lesson = {
         options: [
           {
             id: 'agr',
-            label: { ar: 'الزراعة', fr: 'L'agriculture', en: 'Agriculture' },
+            label: { ar: 'الزراعة', fr: `L'agriculture`, en: 'Agriculture' },
             isRelevant: true,
             explanation: {
               ar: 'الزراعة أساس الغذاء والاكتفاء الذاتي، وكانت متنوّعة جداً في المغرب الأوسط.',
@@ -161,7 +161,7 @@ export const iqtisadRustami: Lesson = {
           },
           {
             id: 'crafts2',
-            label: { ar: 'الحرف', fr: 'L'artisanat', en: 'Crafts' },
+            label: { ar: 'الحرف', fr: `L'artisanat`, en: 'Crafts' },
             isRelevant: true,
             explanation: {
               ar: 'الحرف أمّنت احتياجات السكان اليومية وأمدّت التجارة بالمنتجات الصناعية.',
@@ -171,7 +171,7 @@ export const iqtisadRustami: Lesson = {
           },
           {
             id: 'live2',
-            label: { ar: 'الرعي', fr: 'L'élevage', en: 'Livestock' },
+            label: { ar: 'الرعي', fr: `L'élevage`, en: 'Livestock' },
             isRelevant: true,
             explanation: {
               ar: 'الرعي وفّر الغذاء والمواد الخام للحرف، وكانت قوافل الجمال أداة التجارة الكبرى.',
@@ -183,18 +183,18 @@ export const iqtisadRustami: Lesson = {
       },
     },
 
-    // 03 — Timeline: the agricultural sectors and what they produce
+    // 03 — Timeline: agricultural zones
     {
       kind: 'timeline',
       id: 'agriculture-zones',
       title: {
         ar: 'مناطق الزراعة وإنتاجها',
-        fr: `Les zones agricoles et leurs productions`,
+        fr: 'Les zones agricoles et leurs productions',
         en: 'Agricultural zones and their produce',
       },
       intro: {
         ar: 'كان المغرب الأوسط غنيّاً بمناطق زراعية متنوّعة. تعرّف على كلّ منطقة وما تُنتجه.',
-        fr: `Le Maghreb central était riche en zones agricoles diversifiées. Découvre chaque région et ce qu'elle produit.`,
+        fr: 'Le Maghreb central était riche en zones agricoles diversifiées. Découvre chaque région et sa production.',
         en: 'The central Maghreb was rich in diverse agricultural zones. Discover each region and what it produces.',
       },
       image: `${IMG}/map.png`,
@@ -210,7 +210,7 @@ export const iqtisadRustami: Lesson = {
           label: { ar: 'السهول الساحلية الخصبة', fr: 'Les plaines côtières fertiles', en: 'Fertile coastal plains' },
           detail: {
             ar: 'كانت السهول الساحلية خصبة تُنتج الحبوب والكتان والخضر والفواكه.',
-            fr: `Les plaines côtières étaient fertiles, produisant céréales, lin, légumes et fruits.`,
+            fr: 'Les plaines côtières étaient fertiles, produisant céréales, lin, légumes et fruits.',
             en: 'The coastal plains were fertile, producing grains, flax, vegetables and fruits.',
           },
         },
@@ -230,7 +230,7 @@ export const iqtisadRustami: Lesson = {
           label: { ar: 'رعي الماشية', fr: 'Élevage de bétail', en: 'Livestock grazing' },
           detail: {
             ar: 'تربّت في البادية قطعان الإبل والخيل والبقر والغنم، ووُفّر السمن والعسل بكثرة.',
-            fr: `Les steppes accueillaient des troupeaux de chameaux, chevaux, bovins et moutons, et le beurre clarifié et le miel étaient abondants.`,
+            fr: 'Les steppes accueillaient des troupeaux de chameaux, chevaux, bovins et moutons, et le beurre clarifié et le miel étaient abondants.',
             en: 'The steppes hosted herds of camels, horses, cattle and sheep, and clarified butter and honey were abundant.',
           },
         },
@@ -240,20 +240,20 @@ export const iqtisadRustami: Lesson = {
           label: { ar: 'صناعة السفن', fr: 'Construction navale', en: 'Shipbuilding' },
           detail: {
             ar: 'كانت صناعة السفن قائمةً على السواجل (السواحل)، وتموّنت من أخشاب الغابات القريبة.',
-            fr: `La construction navale était active sur les côtes, approvisionnée en bois des forêts proches.`,
+            fr: 'La construction navale était active sur les côtes, approvisionnée en bois des forêts proches.',
             en: 'Shipbuilding was active along the coast, supplied with timber from nearby forests.',
           },
         },
       ],
     },
 
-    // 04 — Sorting: the trade route steps
+    // 04 — Sorting: trade circuit steps
     {
       kind: 'sorting',
       id: 'trade-routes',
       title: {
         ar: 'مسار التبادل التجاري الرستمي',
-        fr: `Le circuit des échanges commerciaux rustamides`,
+        fr: 'Le circuit des échanges commerciaux rustamides',
         en: 'The circuit of Rustamid commercial exchanges',
       },
       intro: {
@@ -264,7 +264,7 @@ export const iqtisadRustami: Lesson = {
       image: `${IMG}/caravan.png`,
       imageAlt: {
         ar: 'قافلة جمال تسير عبر الصحراء',
-        fr: `Une caravane de chameaux traversant le désert`,
+        fr: 'Une caravane de chameaux traversant le désert',
         en: 'A camel caravan crossing the desert',
       },
       items: [
@@ -280,7 +280,7 @@ export const iqtisadRustami: Lesson = {
           id: 'step2',
           label: {
             ar: 'عرض المنتجات في الأسواق اليومية والأسبوعية',
-            fr: `Présentation des produits dans les marchés quotidiens et hebdomadaires`,
+            fr: 'Présentation des produits dans les marchés quotidiens et hebdomadaires',
             en: 'Display of products in daily and weekly markets',
           },
         },
@@ -288,7 +288,7 @@ export const iqtisadRustami: Lesson = {
           id: 'step3',
           label: {
             ar: 'تنظيم قوافل الجمال لنقل البضائع',
-            fr: `Organisation de caravanes de chameaux pour transporter les marchandises`,
+            fr: 'Organisation de caravanes de chameaux pour transporter les marchandises',
             en: 'Organisation of camel caravans to transport goods',
           },
         },
@@ -316,24 +316,24 @@ export const iqtisadRustami: Lesson = {
       },
     },
 
-    // 05 — Explorer: trade hotspots (map from page 1)
+    // 05 — Explorer: trade map hotspots
     {
       kind: 'explorer',
       id: 'trade-map',
       title: {
         ar: 'خريطة طرق التجارة الرستمية',
-        fr: `Carte des routes commerciales rustamides`,
+        fr: 'Carte des routes commerciales rustamides',
         en: 'Map of Rustamid trade routes',
       },
       intro: {
         ar: 'انقر على النقاط لتكتشف المناطق التي كان الرستميون يتاجرون معها.',
-        fr: `Clique sur les points pour découvrir les régions avec lesquelles les Rustamides commerçaient.`,
+        fr: 'Clique sur les points pour découvrir les régions avec lesquelles les Rustamides commerçaient.',
         en: 'Tap the points to discover the regions with which the Rustamids traded.',
       },
       image: `${IMG}/map.png`,
       imageAlt: {
         ar: 'خريطة طرق التجارة الرستمية',
-        fr: `Carte des routes commerciales rustamides`,
+        fr: 'Carte des routes commerciales rustamides',
         en: 'Map of Rustamid trade routes',
       },
       hotspots: [
@@ -352,7 +352,7 @@ export const iqtisadRustami: Lesson = {
           id: 'andalus',
           x: 18,
           y: 22,
-          label: { ar: 'الأندلس', fr: 'L'Andalousie', en: 'Andalusia' },
+          label: { ar: 'الأندلس', fr: `L'Andalousie`, en: 'Andalusia' },
           description: {
             ar: 'أحضر الرستميون منها الورق والكتان. كانت الأندلس مصدراً مهمّاً للمواد الخام.',
             fr: `Les Rustamides en importaient du papier et du lin. L'Andalousie était une source importante de matières premières.`,
@@ -395,18 +395,18 @@ export const iqtisadRustami: Lesson = {
       ],
     },
 
-    // 06 — Placement: match region to its famous product (activity 2 from page 5)
+    // 06 — Placement: region → product
     {
       kind: 'placement',
       id: 'region-products',
       title: {
         ar: 'سجّل ما تشتهر به هذه المناطق',
-        fr: `Note ce dont ces régions sont célèbres`,
+        fr: 'Note ce dont ces régions sont célèbres',
         en: 'Record what these regions are famous for',
       },
       intro: {
         ar: 'اسحب بطاقة المنتج ووضعها في المنطقة الصحيحة.',
-        fr: `Fais glisser la carte du produit vers la bonne région.`,
+        fr: 'Fais glisser la carte du produit vers la bonne région.',
         en: 'Drag the product card to the correct region.',
       },
       slots: [
@@ -448,18 +448,18 @@ export const iqtisadRustami: Lesson = {
       ],
     },
 
-    // 07 — Quiz: vocabulary (أتعرّف) and comprehension (أجيب)
+    // 07 — Quiz
     {
       kind: 'quiz',
       id: 'vocabulary',
       title: {
         ar: 'أتعرّف — مصطلحات الدرس',
-        fr: `Je retiens — les termes du cours`,
+        fr: 'Je retiens — les termes du cours',
         en: 'Vocabulary — lesson terms',
       },
       intro: {
         ar: 'تحقّق من فهمك لمصطلحات الدرس.',
-        fr: `Vérifie ta compréhension des termes du cours.`,
+        fr: 'Vérifie ta compréhension des termes du cours.',
         en: 'Check your understanding of the lesson terms.',
       },
       questions: [
@@ -468,19 +468,19 @@ export const iqtisadRustami: Lesson = {
           type: 'mcq',
           question: {
             ar: 'ما معنى «الازدهار»؟',
-            fr: `Que signifie « الازدهار » (al-izdihār) ?`,
+            fr: `Que signifie "الازدهار" (al-izdihār) ?`,
             en: 'What does "الازدهار" (al-izdihār) mean?',
           },
           options: [
             { id: 'a', label: { ar: 'مجرّد الوجود والبقاء', fr: 'La simple existence et survie', en: 'Mere existence and survival' } },
-            { id: 'b', label: { ar: 'حالة تتجاوز الوجود إلى النموّ والتطوّر', fr: 'Un état dépassant l'existence pour atteindre la croissance et le développement', en: 'A state beyond existence, reaching growth and development' } },
+            { id: 'b', label: { ar: 'حالة تتجاوز الوجود إلى النموّ والتطوّر', fr: `Un état dépassant l'existence pour atteindre la croissance`, en: 'A state beyond existence, reaching growth and development' } },
             { id: 'c', label: { ar: 'التراجع والانحسار', fr: 'Le recul et la régression', en: 'Decline and regression' } },
-            { id: 'd', label: { ar: 'الاستقلال السياسي', fr: 'L'indépendance politique', en: 'Political independence' } },
+            { id: 'd', label: { ar: 'الاستقلال السياسي', fr: `L'indépendance politique`, en: 'Political independence' } },
           ],
           correctId: 'b',
           explanation: {
             ar: 'الازدهار: حالة تتجاوز مجرّد الوجود والبقاء إلى حالة النموّ والتطوّر.',
-            fr: `Al-izdihār : un état qui dépasse la simple existence et survie pour atteindre la croissance et le développement.`,
+            fr: `Al-izdihār : un état qui dépasse la simple existence pour atteindre la croissance et le développement.`,
             en: 'Al-izdihār: a state that goes beyond mere existence and survival to reach growth and development.',
           },
         },
@@ -489,20 +489,20 @@ export const iqtisadRustami: Lesson = {
           type: 'mcq',
           question: {
             ar: 'ما المقايضة؟',
-            fr: `Qu'est-ce que la troc (المقايضة) ?`,
-            en: 'What is barter (المقايضة)?',
+            fr: `Qu'est-ce que la troc ?`,
+            en: 'What is barter?',
           },
           options: [
-            { id: 'a', label: { ar: 'شراء البضاعة بالنقود', fr: 'Acheter de la marchandise avec de l'argent', en: 'Buying goods with money' } },
+            { id: 'a', label: { ar: 'شراء البضاعة بالنقود', fr: `Acheter de la marchandise avec de l'argent`, en: 'Buying goods with money' } },
             { id: 'b', label: { ar: 'معاوضة سلعة بسلعة لا تُدانيها في الشبه', fr: 'Échanger une marchandise contre une autre qui ne lui ressemble pas', en: 'Exchanging a good for another that is unlike it' } },
-            { id: 'c', label: { ar: 'تصدير البضاعة إلى الخارج', fr: 'Exporter des marchandises vers l'étranger', en: 'Exporting goods abroad' } },
-            { id: 'd', label: { ar: 'الاستيراد من بلاد أخرى', fr: 'Importer depuis d'autres pays', en: 'Importing from other countries' } },
+            { id: 'c', label: { ar: 'تصدير البضاعة إلى الخارج', fr: `Exporter des marchandises vers l'étranger`, en: 'Exporting goods abroad' } },
+            { id: 'd', label: { ar: 'الاستيراد من بلاد أخرى', fr: `Importer depuis d'autres pays`, en: 'Importing from other countries' } },
           ],
           correctId: 'b',
           explanation: {
             ar: 'المقايضة: معاوضة سلعة ومبادلة سلعة بسلعة لا تُدانيها في الشبه.',
-            fr: `La troc : compenser une marchandise et échanger une marchandise contre une autre qui ne lui ressemble pas.`,
-            en: 'Barter: compensating a good and exchanging a good for another that is unlike it.',
+            fr: `La troc : échanger une marchandise contre une autre qui ne lui ressemble pas.`,
+            en: 'Barter: exchanging a good for another that is unlike it.',
           },
         },
         {
@@ -531,19 +531,19 @@ export const iqtisadRustami: Lesson = {
           type: 'mcq',
           question: {
             ar: 'ما الحرف التي اشتغل بها سكّان المدن الرستمية؟',
-            fr: `Quels métiers les habitants des villes rustamides pratiquaient-ils ?`,
+            fr: 'Quels métiers les habitants des villes rustamides pratiquaient-ils ?',
             en: 'What crafts did the inhabitants of Rustamid cities practice?',
           },
           options: [
             { id: 'a', label: { ar: 'النسيج وصناعة الجلود والفخار وصناعة السفن', fr: 'Le tissage, la maroquinerie, la poterie et la construction navale', en: 'Weaving, leatherwork, pottery and shipbuilding' } },
-            { id: 'b', label: { ar: 'صناعة الأسلحة فقط', fr: 'La fabrication d'armes uniquement', en: 'Weapons manufacture only' } },
-            { id: 'c', label: { ar: 'الطباعة والنشر', fr: 'L'imprimerie et l'édition', en: 'Printing and publishing' } },
-            { id: 'd', label: { ar: 'الزراعة فقط', fr: 'L'agriculture seulement', en: 'Agriculture only' } },
+            { id: 'b', label: { ar: 'صناعة الأسلحة فقط', fr: `La fabrication d'armes uniquement`, en: 'Weapons manufacture only' } },
+            { id: 'c', label: { ar: 'الطباعة والنشر', fr: `L'imprimerie et l'édition`, en: 'Printing and publishing' } },
+            { id: 'd', label: { ar: 'الزراعة فقط', fr: `L'agriculture seulement`, en: 'Agriculture only' } },
           ],
           correctId: 'a',
           explanation: {
             ar: 'اشتغل الناس بالنسيج وصناعة الجلود، وصُنعت الأواني الخشبية والفخارية، وكانت صناعة السفن قائمةً على السواجل.',
-            fr: `Les gens pratiquaient le tissage et la maroquinerie, fabriquaient des ustensiles en bois et en poterie, et la construction navale était active sur les côtes.`,
+            fr: 'Les gens pratiquaient le tissage et la maroquinerie, fabriquaient des ustensiles en bois et en poterie, et la construction navale était active sur les côtes.',
             en: 'People practiced weaving and leatherwork, made wooden and ceramic vessels, and shipbuilding was active along the coasts.',
           },
         },
@@ -552,13 +552,13 @@ export const iqtisadRustami: Lesson = {
           type: 'mcq',
           question: {
             ar: 'ما البلاد التي كان الرستميون يتاجرون معها خارج المغرب؟',
-            fr: `Avec quels pays les Rustamides commerçaient-ils hors du Maghreb ?`,
+            fr: 'Avec quels pays les Rustamides commerçaient-ils hors du Maghreb ?',
             en: 'With which countries outside the Maghreb did the Rustamids trade?',
           },
           options: [
-            { id: 'a', label: { ar: 'الأندلس والصحراء وإفريقيا', fr: 'L'Andalousie, le Sahara et l'Afrique', en: 'Andalusia, the Sahara and Africa' } },
-            { id: 'b', label: { ar: 'الهند والصين فقط', fr: 'L'Inde et la Chine seulement', en: 'India and China only' } },
-            { id: 'c', label: { ar: 'أوروبا الشمالية', fr: 'L'Europe du Nord', en: 'Northern Europe' } },
+            { id: 'a', label: { ar: 'الأندلس والصحراء وإفريقيا', fr: `L'Andalousie, le Sahara et l'Afrique`, en: 'Andalusia, the Sahara and Africa' } },
+            { id: 'b', label: { ar: 'الهند والصين فقط', fr: `L'Inde et la Chine seulement`, en: 'India and China only' } },
+            { id: 'c', label: { ar: 'أوروبا الشمالية', fr: `L'Europe du Nord`, en: 'Northern Europe' } },
             { id: 'd', label: { ar: 'بلاد فارس فقط', fr: 'La Perse seulement', en: 'Persia only' } },
           ],
           correctId: 'a',
@@ -573,26 +573,26 @@ export const iqtisadRustami: Lesson = {
           type: 'truefalse',
           question: {
             ar: 'قال ابن حوقل إنّ قوافل الجمال الرستمية لا تُدانيها إبل العرب في الكثرة.',
-            fr: `Ibn Ḥawqal a dit que les caravanes de chameaux rustamides sont inégalées en nombre par les chameaux arabes.`,
-            en: 'Ibn Ḥawqal said that the Rustamid camel caravans are unmatched in number by the camels of the Arabs.',
+            fr: `Ibn Hawqal a dit que les caravanes de chameaux rustamides sont inégalées en nombre.`,
+            en: 'Ibn Hawqal said that the Rustamid camel caravans are unmatched in number by the camels of the Arabs.',
           },
           answer: true,
           explanation: {
             ar: 'نعم، ذكر ابن حوقل أنّ عدد جمال القوافل الرستمية كان كبيراً جداً لا تُدانيها إبل العرب.',
-            fr: `Oui, Ibn Ḥawqal a mentionné que le nombre de chameaux des caravanes rustamides était si grand qu'ils n'avaient pas d'égal chez les Arabes.`,
-            en: 'Yes, Ibn Ḥawqal mentioned that the number of camels in Rustamid caravans was so great that they had no equal among the Arabs.',
+            fr: `Oui, Ibn Hawqal a mentionné que le nombre de chameaux des caravanes rustamides était si grand qu'ils n'avaient pas d'égal chez les Arabes.`,
+            en: 'Yes, Ibn Hawqal mentioned that the number of camels in Rustamid caravans was so great that they had no equal among the Arabs.',
           },
         },
       ],
     },
 
-    // 08 — Value: lessons from the lesson (أعتبر من الدرس)
+    // 08 — Value
     {
       kind: 'value',
       id: 'values',
       title: {
         ar: 'أعتبر من الدرس',
-        fr: `Je tire les leçons du cours`,
+        fr: 'Je tire les leçons du cours',
         en: 'Lessons from the lesson',
       },
       prompt: {
@@ -633,24 +633,24 @@ export const iqtisadRustami: Lesson = {
         },
         {
           id: 'quality',
-          label: { ar: 'التفوّق في الجودة', fr: 'L'excellence dans la qualité', en: 'Excellence in quality' },
+          label: { ar: 'التفوّق في الجودة', fr: `L'excellence dans la qualité`, en: 'Excellence in quality' },
           isCorrect: true,
           feedback: {
             ar: 'يظهر تفوّقك فيما تقدّم، وجودة ما تُقدّم من قوّة ما تُتقن.',
-            fr: `Ton excellence se manifeste dans ce que tu offres, et la qualité de ce que tu fournis vient de la maîtrise de ton art.`,
+            fr: 'Ton excellence se manifeste dans ce que tu offres, et la qualité de ce que tu fournis vient de la maîtrise de ton art.',
             en: 'Your excellence shows in what you offer, and the quality of what you provide comes from mastering your craft.',
           },
         },
       ],
       valuesTitle: {
         ar: 'القيم المستخلصة',
-        fr: `Les valeurs tirées`,
+        fr: 'Les valeurs tirées',
         en: 'Values derived',
       },
       values: [
         {
           id: 'v1',
-          value: { ar: 'التنوّع مؤشّر على الثراء والوفرة', fr: 'La diversité est un indicateur de richesse et d'abondance', en: 'Diversity is an indicator of wealth and abundance' },
+          value: { ar: 'التنوّع مؤشّر على الثراء والوفرة', fr: `La diversité est un indicateur de richesse et d'abondance`, en: 'Diversity is an indicator of wealth and abundance' },
           evidence: {
             ar: 'ازدهر المغرب الأوسط لأنّ اقتصاده تنوّع بين الزراعة والرعي والحرف والتجارة.',
             fr: `Le Maghreb central prospéra parce que son économie était diversifiée entre agriculture, élevage, artisanat et commerce.`,
@@ -668,7 +668,7 @@ export const iqtisadRustami: Lesson = {
         },
         {
           id: 'v3',
-          value: { ar: 'الأرض ثروة تحقّق الأمن الغذائي وتوفّر الأموال', fr: 'La terre est une richesse qui assure la sécurité alimentaire et procure des ressources', en: 'The land is a wealth that achieves food security and provides resources' },
+          value: { ar: 'الأرض ثروة تحقّق الأمن الغذائي وتوفّر الأموال', fr: `La terre assure la sécurité alimentaire et procure des ressources`, en: 'The land achieves food security and provides resources' },
           evidence: {
             ar: 'السهول الخصبة في المتيجة والشلف ووهران غذّت السكّان وأمّنت فائضاً للتصدير.',
             fr: `Les plaines fertiles de la Mitidja, du Cheliff et d'Oran nourrissaient la population et assuraient un surplus pour l'exportation.`,
@@ -677,7 +677,7 @@ export const iqtisadRustami: Lesson = {
         },
         {
           id: 'v4',
-          value: { ar: 'يظهر تفوّقك فيما تقدّم وجودة ما تُتقن', fr: 'Ton excellence se manifeste dans ce que tu offres et la qualité de ce que tu maîtrises', en: 'Your excellence shows in what you offer and the quality of what you master' },
+          value: { ar: 'يظهر تفوّقك فيما تقدّم وجودة ما تُتقن', fr: `Ton excellence se manifeste dans ce que tu offres et la qualité de ce que tu maîtrises`, en: 'Your excellence shows in what you offer and the quality of what you master' },
           evidence: {
             ar: 'اشتُهر الحرفيون الرستميون بجودة منتجاتهم من النسيج والفخار والجلود حتى طلبت عليها الأسواق الخارجية.',
             fr: `Les artisans rustamides étaient réputés pour la qualité de leurs tissus, poteries et cuirs, au point que les marchés extérieurs les réclamaient.`,
@@ -687,13 +687,13 @@ export const iqtisadRustami: Lesson = {
       ],
     },
 
-    // 09 — Completion: summary
+    // 09 — Completion
     {
       kind: 'completion',
       id: 'completion',
       keyTakeaway: {
         ar: 'شهد المغرب الإسلامي في العهد الرستمي ازدهاراً اقتصادياً متنوّعاً قائماً على الزراعة والرعي والحرف والتجارة، وربطته قوافل الجمال بإفريقيا والأندلس والصحراء.',
-        fr: `Le Maghreb islamique connut sous les Rustamides une prospérité économique diversifiée fondée sur l'agriculture, l'élevage, l'artisanat et le commerce, que les caravanes de chameaux reliaient à l'Afrique, à l'Andalousie et au Sahara.`,
+        fr: `Le Maghreb islamique connut sous les Rustamides une prospérité économique diversifiée fondée sur l'agriculture, l'élevage, l'artisanat et le commerce, reliée par des caravanes de chameaux à l'Afrique, à l'Andalousie et au Sahara.`,
         en: 'The Islamic Maghreb witnessed under the Rustamids a diverse economic prosperity founded on agriculture, livestock, crafts and trade, linked by camel caravans to Africa, Andalusia and the Sahara.',
       },
       learned: [
