@@ -15,7 +15,6 @@ export const historyIbadiGrade1: Grade = {
 export const historyIbadiGrade2: Grade = {
   id: 'history-ibadi-g2',
   ageRange: '',
-  status: 'draft',
   title: {
     ar: 'المستوى الثاني — التاريخ الإباضي',
     fr: 'Niveau 2 — Histoire Ibadite',

@@ -20,7 +20,7 @@ export function HomePage({ onOpenLesson }: Props) {
 
   return (
     <div className="min-h-full bg-mesh">
-      <header className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-4 py-4">
+      <header className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-2 py-4">
         <div className="flex items-center gap-3">
           <img src="/favicon.svg" alt="" className="h-10 w-10" />
           <div>
@@ -31,7 +31,7 @@ export function HomePage({ onOpenLesson }: Props) {
         <LanguageSwitcher />
       </header>
 
-      <main className="mx-auto max-w-6xl space-y-8 px-4 pb-16">
+      <main className="mx-auto max-w-6xl space-y-8 px-2 pb-16">
         <section className="relative overflow-hidden rounded-[2rem] bg-night text-cream-soft shadow-card">
           <div className="stars absolute inset-0" aria-hidden />
           <div className="relative grid gap-6 p-7 md:grid-cols-[1.2fr_1fr] md:items-center md:p-12">

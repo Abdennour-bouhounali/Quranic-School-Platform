@@ -84,7 +84,7 @@ export function LessonPage({ lesson, onExit }: Props) {
   return (
     <div className="min-h-full bg-mesh">
       <header className="sticky top-0 z-30 border-b border-cream-deep/60 bg-cream-soft/85 backdrop-blur-md">
-        <div className={cn('mx-auto flex max-w-6xl items-center gap-3 px-4', presentation.active ? 'py-1.5' : 'py-2.5')}>
+        <div className={cn('mx-auto flex max-w-6xl items-center gap-3 px-2', presentation.active ? 'py-1.5' : 'py-2.5')}>
           <button type="button" onClick={exitLesson} className="btn-ghost h-11 w-11 shrink-0 !p-0" aria-label={t('lesson.home')}>
             <Home className="h-5 w-5" aria-hidden />
           </button>
@@ -130,7 +130,7 @@ export function LessonPage({ lesson, onExit }: Props) {
         )}
       </AnimatePresence>
 
-      <main className="mx-auto max-w-6xl px-4 py-6 pb-24 md:py-10 md:pb-24">
+      <main className="mx-auto max-w-6xl px-2 py-6 pb-24 md:py-10 md:pb-24">
         <AnimatePresence mode="wait">
           <motion.div
             key={`${runId}-${section.id}`}
@@ -145,7 +145,7 @@ export function LessonPage({ lesson, onExit }: Props) {
       </main>
 
       <footer className="fixed bottom-0 inset-x-0 z-20 border-t border-cream-deep/60 bg-cream-soft/90 backdrop-blur-md">
-        <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3" style={{ paddingBottom: 'max(0.75rem, env(safe-area-inset-bottom))' }}>
+        <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-2 py-3" style={{ paddingBottom: 'max(0.75rem, env(safe-area-inset-bottom))' }}>
           <button type="button" onClick={() => goTo(index - 1)} disabled={isFirst} className="btn-secondary disabled:opacity-40">
             <Back className="h-4 w-4" aria-hidden /> {t('lesson.previous')}
           </button>

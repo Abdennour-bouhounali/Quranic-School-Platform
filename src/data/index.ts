@@ -8,13 +8,14 @@ import {
   historyIbadiSemesters,
 } from './grades'
 import { prophetBirthYouth } from './lessons/prophet-birth-youth'
+import { jamalSiffin } from './lessons/history-ibadi/g2-s1-l1-jamal-siffin'
 import { historyIbadiLessons } from './lessons/history-ibadi'
 import type { Grade, Lesson, Module, Semester } from './types'
 
 // The only entry point components use to read content.
 // Swap these implementations for API calls when a backend exists.
 
-const lessons: Lesson[] = [prophetBirthYouth, ...historyIbadiLessons]
+const lessons: Lesson[] = [prophetBirthYouth, jamalSiffin, ...historyIbadiLessons]
 
 const ALL_GRADES: Grade[] = [
   historyIbadiGrade1,
