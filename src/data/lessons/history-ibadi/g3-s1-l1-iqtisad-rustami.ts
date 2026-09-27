@@ -107,9 +107,9 @@ export const iqtisadRustami: Lesson = {
           id: 'crafts',
           image: `${IMG}/crafts.png`,
           imageAlt: {
-            ar: 'خزّاف يشكّل الفخار على عجلته، وبجانبه أواني خشبية وجلود',
-            fr: `Un potier façonnant la céramique sur son tour, avec des ustensiles en bois et des cuirs`,
-            en: 'A potter shaping ceramics on the wheel, with wooden vessels and leather goods beside',
+            ar: 'ورشة خزف بها عجلة فخار وأواني خشبية وجلود',
+            fr: `Un atelier de poterie avec un tour, des ustensiles en bois et des cuirs`,
+            en: 'A pottery workshop with a wheel, wooden vessels, and leather goods',
           },
           fact: {
             ar: 'الحرف: اشتغل الناس بالنسيج وصناعة الجلود، وصُنعت الأواني الخشبية والفخارية، وكانت صناعة السفن قائمةً على السواجل.',
