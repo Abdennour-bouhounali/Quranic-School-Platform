@@ -92,11 +92,9 @@ export function LessonPage({ lesson, onExit }: Props) {
             {!presentation.active && <p className="truncate text-sm font-semibold">{tx(lesson.title)}</p>}
             <LessonProgress steps={steps} currentIndex={index} visited={progress.visited} onSelect={goTo} />
           </div>
-          {!presentation.active && (
-            <div className="hidden sm:block">
-              <LanguageSwitcher />
-            </div>
-          )}
+          <div className="hidden sm:block">
+            <LanguageSwitcher />
+          </div>
           <button
             type="button"
             onClick={presentation.toggle}
@@ -109,11 +107,9 @@ export function LessonPage({ lesson, onExit }: Props) {
             <span className="hidden lg:inline">{presentLabel}</span>
           </button>
         </div>
-        {!presentation.active && (
-          <div className="flex justify-center pb-2 sm:hidden">
-            <LanguageSwitcher />
-          </div>
-        )}
+        <div className={cn('flex justify-center sm:hidden', presentation.active ? 'pb-1.5' : 'pb-2')}>
+          <LanguageSwitcher />
+        </div>
       </header>
 
       <AnimatePresence>
