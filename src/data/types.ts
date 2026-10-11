@@ -231,6 +231,190 @@ export type MemorySection = {
   rounds: MemoryRound[]
 }
 
+// ---------- Missions (quest map) ----------
+
+export type Mission = {
+  id: string
+  question: LocalizedText
+  // id of the section that answers this question; the card jumps there.
+  target: string
+  teaser: LocalizedText
+}
+
+export type MissionsSection = {
+  kind: 'missions'
+  id: string
+  title: LocalizedText
+  intro: LocalizedText
+  missions: Mission[]
+}
+
+// ---------- Chat story ----------
+
+export type ChatSpeaker = {
+  id: string
+  name: LocalizedText
+  // One glyph inside the round avatar (never a face or figure).
+  avatar: string
+  // Logical side: 'start' bubbles hug the reading-start edge, 'end' the other.
+  side: 'start' | 'end'
+  tone: 'emerald' | 'gold' | 'night' | 'clay'
+}
+
+export type ChatReplyOption = {
+  id: string
+  label: LocalizedText
+  correct: boolean
+  hint: LocalizedText
+}
+
+export type ChatStep =
+  | { type: 'msg'; id: string; who: string; text: LocalizedText }
+  // The learner picks what the speaker says; a correct pick becomes the bubble.
+  | { type: 'reply'; id: string; who: string; prompt: LocalizedText; options: ChatReplyOption[] }
+
+export type ChatSection = {
+  kind: 'chat'
+  id: string
+  title: LocalizedText
+  intro: LocalizedText
+  image?: string
+  imageAlt?: LocalizedText
+  speakers: ChatSpeaker[]
+  steps: ChatStep[]
+}
+
+// ---------- Ripple (concentric circles of the call) ----------
+
+export type RippleRing = {
+  id: string
+  label: LocalizedText
+  period: LocalizedText
+  summary: LocalizedText
+}
+
+export type RippleClue = {
+  id: string
+  text: LocalizedText
+  ringId: string
+  hint: LocalizedText
+}
+
+export type RippleSection = {
+  kind: 'ripple'
+  id: string
+  title: LocalizedText
+  intro: LocalizedText
+  // Listed from the CENTRE outwards.
+  rings: RippleRing[]
+  clues: RippleClue[]
+}
+
+// ---------- Swipe judge ----------
+
+export type SwipeSide = { label: LocalizedText; tag: LocalizedText }
+
+export type SwipeCard = {
+  id: string
+  who: LocalizedText
+  deed: LocalizedText
+  // Decorative scene shown on top of the card.
+  image?: string
+  side: 'left' | 'right'
+  explanation: LocalizedText
+}
+
+export type SwipeSection = {
+  kind: 'swipe'
+  id: string
+  title: LocalizedText
+  intro: LocalizedText
+  left: SwipeSide
+  right: SwipeSide
+  cards: SwipeCard[]
+}
+
+// ---------- Domino chain (cause and effect) ----------
+
+export type ChainDistractor = { label: LocalizedText; hint: LocalizedText }
+
+export type ChainStep = {
+  id: string
+  image?: string
+  prompt: LocalizedText
+  correct: LocalizedText
+  distractors: ChainDistractor[]
+}
+
+export type ChainSection = {
+  kind: 'chain'
+  id: string
+  title: LocalizedText
+  intro: LocalizedText
+  image?: string
+  imageAlt?: LocalizedText
+  start: LocalizedText
+  steps: ChainStep[]
+  ending: LocalizedText
+}
+
+// ---------- Verse builder ----------
+
+export type Verse = {
+  id: string
+  context: LocalizedText
+  ref: LocalizedText
+  // Arabic words in correct order.
+  words: string[]
+  meaning: LocalizedText
+}
+
+export type VerseSection = {
+  kind: 'verses'
+  id: string
+  title: LocalizedText
+  intro: LocalizedText
+  verses: Verse[]
+}
+
+// ---------- Blitz (timed true / false streak) ----------
+
+export type BlitzStatement = {
+  id: string
+  text: LocalizedText
+  answer: boolean
+  explanation: LocalizedText
+}
+
+export type BlitzSection = {
+  kind: 'blitz'
+  id: string
+  title: LocalizedText
+  intro: LocalizedText
+  secondsPerCard: number
+  statements: BlitzStatement[]
+}
+
+// ---------- Reading (narrative passage) ----------
+
+export type ReadingParagraph = {
+  id: string
+  // Optional short heading above this paragraph, for pacing a longer passage.
+  heading?: LocalizedText
+  text: LocalizedText
+  audio?: LocalizedAudio
+}
+
+export type ReadingSection = {
+  kind: 'reading'
+  id: string
+  title: LocalizedText
+  intro: LocalizedText
+  image?: string
+  imageAlt?: LocalizedText
+  paragraphs: ReadingParagraph[]
+}
+
 // ---------- Completion ----------
 
 export type CompletionSection = {
@@ -250,6 +434,14 @@ export type LessonSection =
   | ValueSection
   | QuizSection
   | MemorySection
+  | MissionsSection
+  | ChatSection
+  | RippleSection
+  | SwipeSection
+  | ChainSection
+  | VerseSection
+  | BlitzSection
+  | ReadingSection
   | CompletionSection
 
 export type SectionKind = LessonSection['kind']

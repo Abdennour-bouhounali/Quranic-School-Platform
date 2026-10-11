@@ -100,23 +100,26 @@ function makeStubLesson(gradeId: string, semesterSlot: string, _curriculumBlock:
 // ── Generate all stubs ────────────────────────────────────────────────────────
 // 3 grades × 2 semesters × 6 (or 4) lessons = 34 per grade, 34 total (no duplication)
 
-// prophet-birth-youth owns g1-s1 lesson 1; skip that stub to avoid duplication.
-const G1_S1_SKIP = 0
+// prophet-birth-youth owns g1-s1 lesson 1, missionMushrikin owns lesson 2;
+// skip those stubs to avoid duplication.
+const G1_S1_SKIPS = [0, 1]
 
-// jamalSiffin owns g2-s1 lesson 1; skip that stub to avoid duplication.
-const G2_S1_SKIP = 0
+// jamalSiffin owns g2-s1 lesson 1, nahrawanMuhakkima owns lesson 2;
+// skip those stubs to avoid duplication.
+const G2_S1_SKIPS = [0, 1]
 
-// iqtisadRustami owns g3-s1 lesson 1; skip that stub to avoid duplication.
-const G3_S1_SKIP = 0
+// iqtisadRustami owns g3-s1 lesson 1, suqutRustamiyya owns lesson 2;
+// skip those stubs to avoid duplication.
+const G3_S1_SKIPS = [0, 1]
 
 export const historyIbadiLessons: Lesson[] = Object.entries(GRADE_SEMESTER_MAP).flatMap(
   ([gradeId, [slot1, slot2]]) => [
     ...CURRICULUM[slot1]
       .filter(
         (_, i) =>
-          !(gradeId === 'history-ibadi-g1' && i === G1_S1_SKIP) &&
-          !(gradeId === 'history-ibadi-g2' && i === G2_S1_SKIP) &&
-          !(gradeId === 'history-ibadi-g3' && i === G3_S1_SKIP),
+          !(gradeId === 'history-ibadi-g1' && G1_S1_SKIPS.includes(i)) &&
+          !(gradeId === 'history-ibadi-g2' && G2_S1_SKIPS.includes(i)) &&
+          !(gradeId === 'history-ibadi-g3' && G3_S1_SKIPS.includes(i)),
       )
       .map((def) => makeStubLesson(gradeId, 's1', slot1, CURRICULUM[slot1].indexOf(def) + 1, def)),
     ...CURRICULUM[slot2].map((def, i) => makeStubLesson(gradeId, 's2', slot2, i + 1, def)),

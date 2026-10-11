@@ -1,17 +1,25 @@
 import { motion } from 'framer-motion'
 import { ArrowRight, BookOpen, Lock, RotateCcw, Sparkles } from 'lucide-react'
 import type {
+  BlitzSection,
+  ChainSection,
+  ChatSection,
   CompletionSection,
   ExplorerSection,
   HeroSection,
   LessonSection,
   MemorySection,
+  MissionsSection,
   PlacementSection,
   QuizSection,
+  ReadingSection,
+  RippleSection,
   SortingSection,
   StorySection,
+  SwipeSection,
   TimelineSection,
   ValueSection,
+  VerseSection,
 } from '@/data'
 import { useI18n } from '@/i18n'
 import { useState } from 'react'
@@ -27,6 +35,12 @@ import { MultipleChoice } from '@/components/activities/MultipleChoice'
 import { ValueCard } from '@/components/activities/ValueCard'
 import { QuizRunner } from '@/components/activities/QuizRunner'
 import { MemoryGame } from '@/components/activities/MemoryGame'
+import { ChatStory } from '@/components/activities/ChatStory'
+import { RippleGame } from '@/components/activities/RippleGame'
+import { SwipeJudge } from '@/components/activities/SwipeJudge'
+import { DominoChain } from '@/components/activities/DominoChain'
+import { VerseBuilder } from '@/components/activities/VerseBuilder'
+import { BlitzGame } from '@/components/activities/BlitzGame'
 import { cn } from '@/lib/utils'
 
 export type SectionNav = {
@@ -60,6 +74,22 @@ export function SectionRenderer({ section, nav }: { section: LessonSection; nav:
       return <Quiz section={section} nav={nav} />
     case 'memory':
       return <Memory section={section} nav={nav} />
+    case 'missions':
+      return <Missions section={section} nav={nav} />
+    case 'chat':
+      return <Chat section={section} nav={nav} />
+    case 'ripple':
+      return <Ripple section={section} nav={nav} />
+    case 'swipe':
+      return <Swipe section={section} nav={nav} />
+    case 'chain':
+      return <Chain section={section} nav={nav} />
+    case 'verses':
+      return <Verses section={section} nav={nav} />
+    case 'blitz':
+      return <Blitz section={section} nav={nav} />
+    case 'reading':
+      return <Reading section={section} nav={nav} />
     case 'completion':
       return <Completion section={section} nav={nav} />
   }
@@ -222,6 +252,139 @@ function Memory({ section, nav }: Props<MemorySection>) {
           <SmartImage src={section.image} alt="" tone="day" className="hidden aspect-square w-full rounded-3xl shadow-card lg:block" />
         )}
         <MemoryGame cards={section.cards} rounds={section.rounds} />
+      </div>
+    </>
+  )
+}
+
+function Missions({ section, nav }: Props<MissionsSection>) {
+  const { t, tx } = useI18n()
+  return (
+    <>
+      <SectionHeader index={nav.index} title={tx(section.title)} intro={tx(section.intro)} />
+      <ol className="grid gap-4 md:grid-cols-2">
+        {section.missions.map((m, i) => {
+          const target = nav.sections.findIndex((s) => s.id === m.target)
+          return (
+            <motion.li key={m.id} initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 * i }}>
+              <button
+                type="button"
+                disabled={target < 0}
+                onClick={() => nav.goTo(target)}
+                className="card group flex h-full w-full items-start gap-4 text-start transition-all hover:-translate-y-1 hover:border-gold"
+              >
+                <span className="num flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-emerald-deep text-xl font-bold text-gold-soft">{i + 1}</span>
+                <span className="min-w-0 space-y-1">
+                  <span className="block text-lg font-semibold leading-snug">{tx(m.question)}</span>
+                  <span className="block text-sm text-ink-muted">{tx(m.teaser)}</span>
+                  {target >= 0 && (
+                    <span className="mt-2 inline-flex items-center gap-1.5 text-sm font-semibold text-gold">
+                      {t('lesson.goToStep')} <span className="num">{String(target).padStart(2, '0')}</span>
+                      <ArrowRight className="h-4 w-4 rtl:rotate-180" aria-hidden />
+                    </span>
+                  )}
+                </span>
+              </button>
+            </motion.li>
+          )
+        })}
+      </ol>
+    </>
+  )
+}
+
+function Chat({ section, nav }: Props<ChatSection>) {
+  const { tx } = useI18n()
+  return (
+    <>
+      <SectionHeader index={nav.index} title={tx(section.title)} intro={tx(section.intro)} />
+      {section.image && section.imageAlt && (
+        <SmartImage src={section.image} alt={tx(section.imageAlt)} tone="night" className="mx-auto mb-6 aspect-[16/7] w-full max-w-2xl rounded-3xl shadow-card" />
+      )}
+      <ChatStory speakers={section.speakers} steps={section.steps} />
+    </>
+  )
+}
+
+function Ripple({ section, nav }: Props<RippleSection>) {
+  const { tx } = useI18n()
+  return (
+    <>
+      <SectionHeader index={nav.index} title={tx(section.title)} intro={tx(section.intro)} />
+      <RippleGame rings={section.rings} clues={section.clues} />
+    </>
+  )
+}
+
+function Swipe({ section, nav }: Props<SwipeSection>) {
+  const { tx } = useI18n()
+  return (
+    <>
+      <SectionHeader index={nav.index} title={tx(section.title)} intro={tx(section.intro)} />
+      <SwipeJudge left={section.left} right={section.right} cards={section.cards} />
+    </>
+  )
+}
+
+function Chain({ section, nav }: Props<ChainSection>) {
+  const { tx } = useI18n()
+  return (
+    <>
+      <SectionHeader index={nav.index} title={tx(section.title)} intro={tx(section.intro)} />
+      {section.image && section.imageAlt && (
+        <SmartImage src={section.image} alt={tx(section.imageAlt)} tone="dusk" className="mx-auto mb-6 aspect-[16/7] w-full max-w-2xl rounded-3xl shadow-card" />
+      )}
+      <DominoChain start={section.start} steps={section.steps} ending={section.ending} />
+    </>
+  )
+}
+
+function Verses({ section, nav }: Props<VerseSection>) {
+  const { tx } = useI18n()
+  return (
+    <>
+      <SectionHeader index={nav.index} title={tx(section.title)} intro={tx(section.intro)} />
+      <VerseBuilder verses={section.verses} />
+    </>
+  )
+}
+
+function Blitz({ section, nav }: Props<BlitzSection>) {
+  const { tx } = useI18n()
+  return (
+    <>
+      <SectionHeader index={nav.index} title={tx(section.title)} intro={tx(section.intro)} />
+      <BlitzGame secondsPerCard={section.secondsPerCard} statements={section.statements} />
+    </>
+  )
+}
+
+function Reading({ section, nav }: Props<ReadingSection>) {
+  const { t, tx, dir } = useI18n()
+  return (
+    <>
+      <SectionHeader index={nav.index} title={tx(section.title)} intro={tx(section.intro)} />
+      {section.image && section.imageAlt && (
+        <SmartImage src={section.image} alt={tx(section.imageAlt)} tone="dusk" className="mb-6 aspect-[16/9] w-full rounded-3xl shadow-card md:aspect-[3/1] lg:aspect-[7/2]" />
+      )}
+      <div className="card space-y-5">
+        {section.paragraphs.map((p, i) => (
+          <motion.div key={p.id} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.08, duration: 0.4 }}>
+            {p.heading && (
+              <h3 className="mb-1.5 flex items-center gap-2 text-base font-semibold text-emerald-warm md:text-lg">
+                <BookOpen className="h-4 w-4 text-gold" aria-hidden />
+                {tx(p.heading)}
+              </h3>
+            )}
+            <p className="text-base leading-loose text-ink-soft md:text-lg">{tx(p.text)}</p>
+          </motion.div>
+        ))}
+      </div>
+      <div className="mt-6 flex justify-end">
+        <button type="button" onClick={nav.next} className="btn-primary">
+          {t('lesson.next')}
+          <ArrowRight className={cn('h-5 w-5', dir === 'rtl' && 'rotate-180')} aria-hidden />
+        </button>
       </div>
     </>
   )

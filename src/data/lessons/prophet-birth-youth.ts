@@ -130,15 +130,246 @@ export const prophetBirthYouth: Lesson = {
       ],
     },
 
-    // 03 — The birth: order the events
+    // 03 — Lineage and Birth
+    {
+      kind: 'story',
+      id: 'lineage-and-birth',
+      title: { ar: 'نسبه ومولده', fr: 'Sa lignée et sa naissance', en: 'His lineage and birth' },
+      intro: {
+        ar: 'اقلب البطاقات لتعرف متى ولد ومن هم والداه.',
+        fr: 'Retourne les cartes pour savoir quand il est né et qui sont ses parents.',
+        en: 'Flip the cards to know when he was born and who his parents are.',
+      },
+      cards: [
+        {
+          id: 'father',
+          image: `${IMG}/family-tree.png`,
+          imageAlt: { ar: 'والده', fr: 'Son père', en: 'His father' },
+          fact: {
+            ar: 'أبوه عبد الله بن عبد المطلب، مات في المدينة قبل أن يولد الرسول ﷺ.',
+            fr: 'Son père \'Abdullāh est mort à Médine avant sa naissance.',
+            en: 'His father \'Abdullah died in Madinah before he was born.',
+          },
+        },
+        {
+          id: 'birth-date',
+          image: `${IMG}/family-tree.png`,
+          imageAlt: { ar: 'شجرة العائلة', fr: 'Arbre généalogique', en: 'Family tree' },
+          fact: {
+            ar: 'ولد بمكة صبيحة يوم الاثنين 12 ربيع الأول في عام الفيل الموافق لـ 632 ميلادي.',
+            fr: 'Né à la Mecque un lundi 12 Rabi\' al-Awwal de l\'Année de l\'Éléphant (632 ap. J.-C.).',
+            en: 'Born in Makkah on Monday 12 Rabi\' al-Awwal in the Year of the Elephant (632 AD).',
+          },
+        },
+        {
+          id: 'mother',
+          image: `${IMG}/family-tree.png`,
+          imageAlt: { ar: 'والدته', fr: 'Sa mère', en: 'His mother' },
+          fact: {
+            ar: 'أمه آمنة بنت وهب، أفضل امرأة نسباً وشرفاً، فرح جده عبد المطلب بمولده ودعا الله وشكر له.',
+            fr: 'Sa mère Āmina bint Wahb, de la plus noble lignée. Son grand-père se réjouit de sa naissance.',
+            en: 'His mother Aminah bint Wahb, of the best lineage. His grandfather rejoiced at his birth and thanked God.',
+          },
+        },
+      ],
+      reflection: {
+        prompt: {
+          ar: 'بماذا شعر جده عبد المطلب عند ولادته؟',
+          fr: 'Qu\'a ressenti son grand-père à sa naissance ?',
+          en: 'What did his grandfather feel at his birth?',
+        },
+        options: [
+          {
+            id: 'joy',
+            isRelevant: true,
+            label: { ar: 'فرح به وشكر الله', fr: 'Il s\'est réjoui et a remercié Dieu', en: 'Rejoiced and thanked God' },
+            explanation: { ar: 'لأنه كان يعوضه عن ابنه عبد الله.', fr: 'Car il remplaçait son fils.', en: 'Because he replaced his son.' },
+          },
+          {
+            id: 'sadness',
+            isRelevant: false,
+            label: { ar: 'حزن لأنه يتيم', fr: 'Triste car il était orphelin', en: 'Sad because he was an orphan' },
+            explanation: { ar: 'بل فرح به فرحاً شديداً.', fr: 'Au contraire, il fut très joyeux.', en: 'On the contrary, he was very happy.' },
+          },
+        ],
+      },
+    },
+
+    // 04 — Birth predictions
+    {
+      kind: 'story',
+      id: 'birth-predictions',
+      title: { ar: 'بشارات المولد', fr: 'Signes de la naissance', en: 'Signs of the birth' },
+      intro: {
+        ar: 'صاحبت ولادة النبي ﷺ علامات عجيبة. اقلب البطاقات لتكتشفها.',
+        fr: 'Des signes merveilleux ont accompagné la naissance du Prophète ﷺ. Retourne les cartes.',
+        en: 'Wondrous signs accompanied the birth of the Prophet ﷺ. Flip the cards.',
+      },
+      cards: [
+        {
+          id: 'elephant',
+          image: `${IMG}/year-of-elephant.png`,
+          imageAlt: { ar: 'فيل في الصحراء', fr: 'Un éléphant dans le désert', en: 'An elephant in the desert' },
+          fact: {
+            ar: 'حادثة عام الفيل: حيث حمى الله مكة، وفي هذا العام ولد النبي ﷺ.',
+            fr: 'L\'Année de l\'Éléphant : Dieu a protégé la Mecque, et le Prophète ﷺ y est né.',
+            en: 'The Year of the Elephant: God protected Makkah, and the Prophet ﷺ was born.',
+          },
+        },
+        {
+          id: 'light',
+          image: `${IMG}/mother-light.png`,
+          imageAlt: { ar: 'نور يضيء القصور', fr: 'Lumière éclairant des palais', en: 'Light illuminating palaces' },
+          fact: {
+            ar: 'نور يخرج من حمل أمه به أضاءت له قصور الشام.',
+            fr: 'Une lumière est sortie lors de sa naissance, illuminant les palais du Shām.',
+            en: 'A light emerged from his mother\'s pregnancy, illuminating the palaces of Sham.',
+          },
+        },
+        {
+          id: 'star',
+          image: `${IMG}/predictions.png`,
+          imageAlt: { ar: 'نجم ساطع', fr: 'Étoile brillante', en: 'Bright star' },
+          fact: {
+            ar: 'ظهور نجم أحمد في السماء، وهو علامة عرفها أهل الكتاب.',
+            fr: 'L\'apparition de l\'étoile d\'Ahmad dans le ciel, un signe connu des Gens du Livre.',
+            en: 'The appearance of Ahmad\'s star in the sky, a sign known to the People of the Book.',
+          },
+        },
+        {
+          id: 'palace',
+          image: `${IMG}/palace-of-chosroes.png`,
+          imageAlt: { ar: 'إيوان كسرى', fr: 'Le palais de Chosroês', en: 'The Palace of Chosroes' },
+          fact: {
+            ar: 'إهتزاز إيوان كسرى وسقوط شرفاته ليلة مولده ﷺ.',
+            fr: 'Le tremblement du palais de Chosroês la nuit de sa naissance.',
+            en: 'The shaking of the Palace of Chosroes on the night of his birth.',
+          },
+        },
+      ],
+      reflection: {
+        prompt: {
+          ar: 'ماذا نفهم من هذه البشارات؟',
+          fr: 'Que comprenons-nous de ces signes ?',
+          en: 'What do we understand from these signs?',
+        },
+        options: [
+          {
+            id: 'greatness',
+            isRelevant: true,
+            label: { ar: 'عظمة هذا المولود', fr: 'La grandeur de cet enfant', en: 'The greatness of this child' },
+            explanation: {
+              ar: 'هيأ الله الكون لاستقبال أعظم الأنبياء.',
+              fr: 'Dieu a préparé l\'univers pour accueillir le plus grand des prophètes.',
+              en: 'God prepared the universe to welcome the greatest of prophets.',
+            },
+          },
+          {
+            id: 'magic',
+            isRelevant: false,
+            label: { ar: 'أنها مجرد صدفة', fr: 'Juste une coïncidence', en: 'Just a coincidence' },
+            explanation: {
+              ar: 'بل هي آيات من الله.',
+              fr: 'Ce sont des signes de Dieu.',
+              en: 'They are signs from God.',
+            },
+          },
+        ],
+      },
+    },
+
+    // 05 — Childhood (Combined nursing & death of parents/grandfather)
+    {
+      kind: 'story',
+      id: 'childhood',
+      title: { ar: 'طفولته', fr: 'Son enfance', en: 'His childhood' },
+      intro: {
+        ar: 'نشأ ﷺ في بيئة نقية، لكنه واجه اليتم مبكراً. اقلب البطاقات.',
+        fr: 'Il ﷺ grandit dans un environnement pur, mais fit face très tôt au statut d\'orphelin. Retournez les cartes.',
+        en: 'He ﷺ grew up in a pure environment, but faced being an orphan early. Flip the cards.',
+      },
+      cards: [
+        {
+          id: 'desert',
+          image: `${IMG}/childhood-01.png`,
+          imageAlt: {
+            ar: 'خيام من الشعر في البادية',
+            fr: 'Tentes dans le désert',
+            en: 'Tents in the desert',
+          },
+          fact: {
+            ar: 'قضى سنواته الأولى في بادية بني سعد عند مرضعته حليمة السعدية، حيث الهواء النقي واللغة العربية الفصيحة.',
+            fr: 'Il passa ses premières années chez les Banū Sa‘d, auprès de sa nourrice Ḥalīma : air pur et arabe le plus éloquent.',
+            en: 'He spent his first years among Banū Sa‘d with his wet-nurse Ḥalīma: clean air and the purest Arabic.',
+          },
+        },
+        {
+          id: 'chest-splitting',
+          image: `${IMG}/chest-splitting.png`,
+          imageAlt: {
+            ar: 'طست من ذهب في الصحراء',
+            fr: 'Un bassin en or dans le désert',
+            en: 'A golden basin in the desert',
+          },
+          fact: {
+            ar: 'في الرابعة من عمره بالبادية، جاءه جبريل عليه السلام فشق صدره وغسل قلبه بماء زمزم في طست من ذهب ليزكيه.',
+            fr: 'À quatre ans, l\'ange Gabriel vint lui fendre la poitrine et laver son cœur avec l\'eau de Zamzam.',
+            en: 'At four years old, Angel Gabriel came, opened his chest and washed his heart with Zamzam water.',
+          },
+        },
+        {
+          id: 'mother-death',
+          image: `${IMG}/mother-grave.png`,
+          imageAlt: { ar: 'طريق في الصحراء', fr: 'Chemin dans le désert', en: 'Desert path' },
+          fact: {
+            ar: 'ذهبت أمه لزيارة قبر والده بالمدينة، وفي طريق عودتها اشتد عليها المرض فتوفيت وعمره لا يتجاوز 7 سنين.',
+            fr: 'Sa mère mourut sur le chemin du retour de Médine. Il avait environ 7 ans.',
+            en: 'His mother died on the way back from visiting his father\'s grave. He was about 7.',
+          },
+        },
+        {
+          id: 'grandfather',
+          image: `${IMG}/childhood-02.png`,
+          imageAlt: { ar: 'بيت في مكة', fr: 'Maison à la Mecque', en: 'House in Makkah' },
+          fact: {
+            ar: 'أصبح يتيم الأب والأم، فكفله جده ثم عمه أبو طالب الذي رعاه وكان به رفيقاً عطوفاً.',
+            fr: 'Orphelin de père et mère, son grand-père s\'en occupa puis son oncle Abū Ṭālib avec affection.',
+            en: 'An orphan of father and mother, his grandfather cared for him, then his affectionate uncle Abu Talib.',
+          },
+        },
+      ],
+      reflection: {
+        prompt: {
+          ar: 'من كفله بعد وفاة جده؟',
+          fr: 'Qui l\'a pris en charge après son grand-père ?',
+          en: 'Who cared for him after his grandfather?',
+        },
+        options: [
+          {
+            id: 'abutalib',
+            isRelevant: true,
+            label: { ar: 'عمه أبو طالب', fr: 'Son oncle Abū Ṭālib', en: 'His uncle Abu Talib' },
+            explanation: { ar: 'كان يحبه حباً شديداً.', fr: 'Il l\'aimait beaucoup.', en: 'He loved him very much.' },
+          },
+          {
+            id: 'abulahab',
+            isRelevant: false,
+            label: { ar: 'عمه أبو لهب', fr: 'Son oncle Abū Lahab', en: 'His uncle Abu Lahab' },
+            explanation: { ar: 'أبو طالب هو من كفله.', fr: 'C\'est Abū Ṭālib qui s\'en est occupé.', en: 'Abu Talib took care of him.' },
+          },
+        ],
+      },
+    },
+
+    // 06 — The birth: order the events (Moved after learning all childhood events)
     {
       kind: 'sorting',
       id: 'birth-order',
-      title: { ar: 'الميلاد', fr: 'La naissance', en: 'The birth' },
+      title: { ar: 'أحداث الطفولة', fr: 'Événements de l\'enfance', en: 'Childhood events' },
       intro: {
-        ar: 'وُلد محمد ﷺ في مكة في «عام الفيل». رتّب هذه الأحداث من الأقدم إلى الأحدث.',
-        fr: 'Muhammad ﷺ est né à la Mecque durant « l’Année de l’Éléphant ». Range ces événements du plus ancien au plus récent.',
-        en: 'Muhammad ﷺ was born in Makkah in “the Year of the Elephant”. Order these events from earliest to latest.',
+        ar: 'رتّب أحداث نشأته الأولى من الأقدم إلى الأحدث.',
+        fr: 'Range les événements de sa petite enfance du plus ancien au plus récent.',
+        en: 'Order the events of his early childhood from earliest to latest.',
       },
       image: `${IMG}/birth.png`,
       imageAlt: {
@@ -166,9 +397,9 @@ export const prophetBirthYouth: Lesson = {
         {
           id: 'halima',
           label: {
-            ar: 'رضاعته عند حليمة السعدية في البادية',
-            fr: 'Il est nourri par Ḥalīma as-Sa‘diyya dans le désert',
-            en: 'He is nursed by Ḥalīma as-Sa‘diyya in the desert',
+            ar: 'رضاعته عند حليمة السعدية',
+            fr: 'Nourri par Ḥalīma as-Sa‘diyya',
+            en: 'Nursed by Ḥalīma as-Sa‘diyya',
           },
         },
         {
@@ -189,52 +420,23 @@ export const prophetBirthYouth: Lesson = {
         },
       ],
       explanation: {
-        ar: 'تُوفّي والده قبل ولادته، فوُلد يتيمًا. ثم رضع في البادية، وتوفيت أمه وهو في نحو السادسة، فكفله جده عبد المطلب، ثم عمّه أبو طالب.',
-        fr: 'Son père mourut avant sa naissance : il naquit orphelin. Puis il fut nourri dans le désert ; sa mère mourut quand il avait environ six ans ; son grand-père puis son oncle Abū Ṭālib s’occupèrent de lui.',
-        en: 'His father died before he was born, so he was born an orphan. Then he was nursed in the desert; his mother died when he was about six; his grandfather, then his uncle Abū Ṭālib, cared for him.',
+        ar: 'تُوفّي والده قبل ولادته، فوُلد يتيمًا. ثم رضع في البادية، وتوفيت أمه وهو في نحو السابعة، فكفله جده عبد المطلب، ثم عمّه أبو طالب.',
+        fr: 'Son père mourut avant sa naissance. Puis il fut nourri dans le désert ; sa mère mourut quand il avait environ 7 ans ; son grand-père puis son oncle s’occupèrent de lui.',
+        en: 'His father died before he was born. Then he was nursed in the desert; his mother died when he was about 7; his grandfather, then his uncle cared for him.',
       },
     },
 
-    // 04 — Childhood story cards
+    // 07 — Youth and work
     {
       kind: 'story',
-      id: 'childhood',
-      title: { ar: 'الطفولة', fr: 'L’enfance', en: 'Childhood' },
+      id: 'youth-and-work',
+      title: { ar: 'شبابه وعمله', fr: 'Sa jeunesse et son travail', en: 'His youth and work' },
       intro: {
-        ar: 'ثلاث لقطات من طفولته ﷺ. اقلب كل بطاقة لتكتشفها.',
-        fr: 'Trois moments de son enfance ﷺ. Retourne chaque carte pour la découvrir.',
-        en: 'Three moments from his childhood ﷺ. Flip each card to discover it.',
+        ar: 'اقلب البطاقات لتتعرف على عمله ومواقفه ﷺ في شبابه.',
+        fr: 'Retourne les cartes pour découvrir son travail et ses actions ﷺ dans sa jeunesse.',
+        en: 'Flip the cards to discover his work and actions ﷺ in his youth.',
       },
       cards: [
-        {
-          id: 'desert',
-          image: `${IMG}/childhood-01.png`,
-          imageAlt: {
-            ar: 'خيام من الشعر في البادية عند الغروب',
-            fr: 'Tentes en poil de chèvre dans le désert au coucher du soleil',
-            en: 'Goat-hair tents in the desert at sunset',
-          },
-          fact: {
-            ar: 'قضى سنواته الأولى في بادية بني سعد عند مرضعته حليمة السعدية، حيث الهواء النقي واللغة العربية الفصيحة.',
-            fr: 'Il passa ses premières années chez les Banū Sa‘d, auprès de sa nourrice Ḥalīma : air pur et arabe le plus éloquent.',
-            en: 'He spent his first years among Banū Sa‘d with his wet-nurse Ḥalīma: clean air and the purest Arabic.',
-          },
-        },
-        {
-          id: 'care',
-          image: `${IMG}/childhood-02.png`,
-          imageAlt: {
-            ar: 'فناء بيت من الطين في مكة مع مصباح زيت مضاء',
-            fr: 'Cour d’une maison en terre à la Mecque, une lampe à huile allumée',
-            en: 'Courtyard of a mud-brick house in Makkah with a lit oil lamp',
-          },
-          fact: {
-            ar: 'فقد أمه وهو في نحو السادسة، فرعاه جده عبد المطلب، ثم عمه أبو طالب الذي أحبّه كأحد أبنائه.',
-            fr: 'Il perdit sa mère vers six ans ; son grand-père ‘Abd al-Muṭṭalib l’éleva, puis son oncle Abū Ṭālib, qui l’aima comme son propre fils.',
-            en: 'He lost his mother at about six; his grandfather ‘Abd al-Muṭṭalib raised him, then his uncle Abū Ṭālib, who loved him like his own son.',
-          },
-          certainty: 'approximate',
-        },
         {
           id: 'shepherd',
           image: `${IMG}/childhood-03.png`,
@@ -244,68 +446,145 @@ export const prophetBirthYouth: Lesson = {
             en: 'A flock of sheep on rocky hills near Makkah',
           },
           fact: {
-            ar: 'رعى الغنم لأهل مكة، وأخبر ﷺ أنّ كل الأنبياء رعوا الغنم.',
-            fr: 'Il garda les moutons des Mecquois, et il ﷺ a dit que tous les prophètes avaient été bergers.',
-            en: 'He tended sheep for the people of Makkah, and he ﷺ said that every prophet had been a shepherd.',
+            ar: 'في أول شبابه رعى الغنم لأهل مكة مقابل أجر ليعتمد على نفسه. وأخبر ﷺ أنّ كل الأنبياء رعوا الغنم.',
+            fr: 'Dans sa jeunesse, il garda les moutons des Mecquois contre salaire pour être indépendant.',
+            en: 'In his youth, he tended sheep for the people of Makkah for a wage to be self-reliant.',
+          },
+        },
+        {
+          id: 'hilf-al-fudul',
+          image: `${IMG}/hilf-al-fudul.png`,
+          imageAlt: {
+            ar: 'اجتماع رجال قريش لحلف الفضول',
+            fr: 'Réunion pour le pacte de Fudul',
+            en: 'Gathering for Hilf al-Fudul',
+          },
+          fact: {
+            ar: 'شارك في "حلف الفضول" مع قريش، حيث تعاهدوا على نصرة المظلوم، وظل يفتخر به.',
+            fr: 'Il a participé au "pacte de Fudul" pour défendre l\'opprimé, dont il était fier.',
+            en: 'He participated in "Hilf al-Fudul" to defend the oppressed, which he was proud of.',
+          },
+        },
+        {
+          id: 'trade',
+          image: `${IMG}/youth-trade.png`,
+          imageAlt: { ar: 'تجارة', fr: 'Commerce', en: 'Trade' },
+          fact: {
+            ar: 'لما سمعت به السيدة خديجة طلبت منه أن يخرج بمالها تاجراً إلى الشام. فنمت تجارتها لبركته وأمانته.',
+            fr: 'Khadīja lui demanda de mener son commerce au Shām. Le commerce prospéra par son honnêteté.',
+            en: 'Khadija asked him to lead her trade to Sham. The trade prospered due to his honesty.',
           },
         },
       ],
       reflection: {
         prompt: {
-          ar: 'ماذا تعلّمنا من هذه المرحلة؟ اختر كل ما تراه صحيحًا.',
-          fr: 'Que nous apprend cette étape ? Choisis tout ce qui te semble juste.',
-          en: 'What does this stage teach us? Pick everything you think is right.',
+          ar: 'بماذا كان يلقب في شبابه؟',
+          fr: 'Comment était-il surnommé dans sa jeunesse ?',
+          en: 'What was his title in his youth?',
         },
         options: [
           {
-            id: 'patience',
+            id: 'amin',
             isRelevant: true,
-            label: { ar: 'الصبر على فقد الأحبّة', fr: 'La patience face à la perte', en: 'Patience through loss' },
-            explanation: {
-              ar: 'فقد والديه صغيرًا، ومع ذلك نشأ قويًّا صابرًا.',
-              fr: 'Il perdit ses parents très jeune, et grandit pourtant fort et patient.',
-              en: 'He lost both parents young, yet grew up strong and patient.',
-            },
+            label: { ar: 'الصادق الأمين', fr: 'Al-Sadiq Al-Amin', en: 'The Truthful, The Trustworthy' },
+            explanation: { ar: 'لحفظه للأمانات وصدقه.', fr: 'Pour sa loyauté.', en: 'For keeping trusts.' },
           },
           {
-            id: 'responsibility',
-            isRelevant: true,
-            label: { ar: 'تحمّل المسؤولية مبكرًا', fr: 'Être responsable tôt', en: 'Taking responsibility early' },
-            explanation: {
-              ar: 'رعي الغنم يعلّم الانتباه والرفق وحماية الضعيف.',
-              fr: 'Garder un troupeau apprend l’attention, la douceur et la protection du plus faible.',
-              en: 'Tending a flock teaches attention, gentleness and protecting the weak.',
-            },
-          },
-          {
-            id: 'family',
-            isRelevant: true,
-            label: { ar: 'قيمة العائلة والرعاية', fr: 'La valeur de la famille', en: 'The value of family care' },
-            explanation: {
-              ar: 'جده ثم عمه احتضناه وأحاطاه بالحب.',
-              fr: 'Son grand-père puis son oncle l’ont entouré d’amour.',
-              en: 'His grandfather and then his uncle surrounded him with love.',
-            },
-          },
-          {
-            id: 'wealth',
+            id: 'king',
             isRelevant: false,
-            label: { ar: 'أهمية الثراء', fr: 'L’importance de la richesse', en: 'The importance of wealth' },
+            label: { ar: 'ملك قريش', fr: 'Roi de Quraysh', en: 'King of Quraysh' },
+            explanation: { ar: 'لم يكن ملكاً، بل كان أميناً.', fr: 'Il n\'était pas roi.', en: 'He was not a king.' },
+          },
+        ],
+      },
+    },
+
+    // 08 — Marriage and Manhood
+    {
+      kind: 'story',
+      id: 'marriage-and-manhood',
+      title: { ar: 'زواجه ورجولته', fr: 'Son mariage et son âge adulte', en: 'His marriage and manhood' },
+      intro: {
+        ar: 'اقلب البطاقات لتتعرف على زواجه ومواقفه قبل النبوة.',
+        fr: 'Retournez les cartes pour découvrir son mariage et ses actions avant la prophétie.',
+        en: 'Flip the cards to discover his marriage and actions before prophethood.',
+      },
+      cards: [
+        {
+          id: 'marriage',
+          image: `${IMG}/childhood-02.png`,
+          imageAlt: { ar: 'زواج', fr: 'Mariage', en: 'Marriage' },
+          fact: {
+            ar: 'تزوج السيدة خديجة وعمره 25 سنة، ورُزق منها بأولاده: القاسم، عبد الله، زينب، رقية، أم كلثوم، وفاطمة.',
+            fr: 'Il épousa Khadīja à 25 ans et eut : al-Qāsim, ‘Abdullāh, Zaynab, Ruqayya, Umm Kulthūm et Fāṭima.',
+            en: 'He married Khadija at 25 and had: al-Qasim, Abdullah, Zaynab, Ruqayyah, Umm Kulthum, and Fatima.',
+          },
+        },
+        {
+          id: 'black-stone',
+          image: `${IMG}/black-stone.png`,
+          imageAlt: {
+            ar: 'رجال يرفعون الحجر الأسود على رداء',
+            fr: 'Hommes soulevant la Pierre Noire sur un manteau',
+            en: 'Men lifting the Black Stone on a cloak',
+          },
+          fact: {
+            ar: 'في سن 35، أعادت قريش بناء الكعبة. واختلفوا من يضع الحجر الأسود، فحل الخلاف بحكمته ووقاهم من حرب.',
+            fr: 'À 35 ans, il a résolu avec sagesse la querelle de la Pierre Noire et leur a évité une guerre.',
+            en: 'At age 35, he wisely resolved the dispute over placing the Black Stone and saved them from war.',
+          },
+        },
+        {
+          id: 'cave-hira',
+          image: `${IMG}/cave-hira.png`,
+          imageAlt: {
+            ar: 'غار حراء يطل على مكة',
+            fr: 'La grotte de Hira',
+            en: 'Cave Hira',
+          },
+          fact: {
+            ar: 'كان يخلو بنفسه في غار حراء ليتعبد على طريقة إبراهيم عليه السلام، مبتعداً عن أصنام الجاهلية.',
+            fr: 'Il s\'isolait dans la grotte de Hira pour adorer Dieu à la manière d\'Abraham, loin des idoles.',
+            en: 'He secluded himself in Cave Hira to worship in the way of Abraham, away from idols.',
+          },
+        },
+      ],
+      reflection: {
+        prompt: {
+          ar: 'ماذا نتعلم من موقف الحجر الأسود؟',
+          fr: 'Qu\'apprenons-nous de l\'histoire de la Pierre Noire ?',
+          en: 'What do we learn from the Black Stone incident?',
+        },
+        options: [
+          {
+            id: 'wisdom',
+            isRelevant: true,
+            label: { ar: 'الحكمة في حل الخلافات', fr: 'La sagesse dans les conflits', en: 'Wisdom in resolving conflicts' },
             explanation: {
-              ar: 'نشأ في حياة بسيطة؛ قيمته كانت في أخلاقه لا في ماله.',
-              fr: 'Il a grandi simplement ; sa valeur était dans son caractère, pas dans sa fortune.',
-              en: 'He grew up simply; his worth lay in his character, not his wealth.',
+              ar: 'جنب قريشاً حرباً طاحنة بحسن تصرفه.',
+              fr: 'Il a évité une guerre à Quraysh par sa sagesse.',
+              en: 'He saved Quraysh from a terrible war with his good judgement.',
+            },
+          },
+          {
+            id: 'greed',
+            isRelevant: false,
+            label: { ar: 'البحث عن السلطة', fr: 'La recherche de pouvoir', en: 'Seeking power' },
+            explanation: {
+              ar: 'بل كان حريصاً على الإصلاح والسلام.',
+              fr: 'Au contraire, il cherchait la paix.',
+              en: 'Rather, he was keen on peace.',
             },
           },
         ],
       },
     },
 
-    // 05 — Youth timeline
+    // 09 — Youth timeline
     {
       kind: 'timeline',
       id: 'youth-timeline',
-      title: { ar: 'الشباب', fr: 'La jeunesse', en: 'Youth' },
+      title: { ar: 'رحلة شبابه', fr: 'Son parcours', en: 'His journey' },
       intro: {
         ar: 'تنقّل بين المراحل واضغط على كل محطة لتكتشفها.',
         fr: 'Parcours les étapes et touche chaque station pour la découvrir.',
@@ -343,9 +622,9 @@ export const prophetBirthYouth: Lesson = {
           period: { ar: 'الشباب', fr: 'Jeunesse', en: 'Youth' },
           label: { ar: 'الصادق الأمين', fr: 'Le véridique, le digne de confiance', en: 'The truthful, the trustworthy' },
           detail: {
-            ar: 'عُرف بين قريش بالصدق والأمانة حتى لقّبوه «الأمين».',
-            fr: 'Quraysh le connaissait pour sa sincérité et son honnêteté, au point de le surnommer « al-Amīn ».',
-            en: 'Quraysh knew him for his truthfulness and honesty, so much that they called him “al-Amīn”.',
+            ar: 'عُرف بين قريش بالصدق والأمانة حتى لقّبوه «الأمين». شارك في حلف الفضول لنصرة المظلوم.',
+            fr: 'Quraysh le connaissait pour sa sincérité, au point de le surnommer « al-Amīn ».',
+            en: 'Quraysh knew him for his truthfulness, so much that they called him “al-Amīn”.',
           },
         },
         {
@@ -372,7 +651,7 @@ export const prophetBirthYouth: Lesson = {
       ],
     },
 
-    // 06 — Timeline placement game
+    // 10 — Timeline placement game
     {
       kind: 'placement',
       id: 'place-events',
@@ -441,7 +720,7 @@ export const prophetBirthYouth: Lesson = {
       ],
     },
 
-    // 07 — What can we learn?
+    // 11 — What can we learn?
     {
       kind: 'value',
       id: 'values',
@@ -528,7 +807,7 @@ export const prophetBirthYouth: Lesson = {
       ],
     },
 
-    // 08 — Mini quiz
+    // 12 — Mini quiz
     {
       kind: 'quiz',
       id: 'quiz',
@@ -644,7 +923,7 @@ export const prophetBirthYouth: Lesson = {
       ],
     },
 
-    // 09 — Memory challenge
+    // 13 — Memory challenge
     {
       kind: 'memory',
       id: 'memory',
@@ -677,7 +956,7 @@ export const prophetBirthYouth: Lesson = {
       ],
     },
 
-    // 10 — Completion
+    // 14 — Completion
     {
       kind: 'completion',
       id: 'completion',
