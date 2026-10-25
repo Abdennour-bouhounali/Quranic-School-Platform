@@ -64,6 +64,8 @@ LessonSection =                  // discriminated by `kind`
   | ValueSection      'value'       choice with per-option feedback + value flip cards
   | QuizSection       'quiz'        questions: mcq | truefalse | ordering | matching | visual
   | MemorySection     'memory'      study → flip → recall rounds
+  | JourneySection     'journey'     route with one question per stop
+  | BalanceSection     'balance'     two-pan scale, facts placed on a side
   | CompletionSection 'completion'  takeaway + "what you learned"
 ```
 
@@ -108,6 +110,8 @@ Components read content only through `src/data/index.ts`. To move to a backend, 
 | `QuizRunner` | One question at a time, first-try score, retry | questions |
 | `MemoryGame` | Study (8s or "I'm ready"), cards flip, recall rounds | cards, rounds |
 | `ValueCard` | Flip card: value on the front, story evidence on the back | value, evidence |
+| `JourneyPath` | Winding route: answer each stop's question to move the traveller on (`journey` section) | stops, arrival text |
+| `BalanceScale` | Weigh facts on two pans; the beam tilts as they land (`balance` section) | two pan labels, weights with `side` |
 
 Shared UI: `FeedbackMessage` (correct / incorrect / info, all encouraging), `LessonProgress`, `SmartImage`, `CertaintyBadge`, `SectionHeader`.
 

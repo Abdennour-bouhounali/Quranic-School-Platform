@@ -415,6 +415,46 @@ export type ReadingSection = {
   paragraphs: ReadingParagraph[]
 }
 
+// ---------- Journey (answer each stop to move the traveller along a route) ----------
+
+export type JourneyStop = {
+  id: string
+  name: LocalizedText
+  image?: string
+  question: LocalizedText
+  options: { id: string; label: LocalizedText; correct: boolean; hint?: LocalizedText }[]
+  // Shown once the stop is answered correctly.
+  reveal: LocalizedText
+}
+
+export type JourneySection = {
+  kind: 'journey'
+  id: string
+  title: LocalizedText
+  intro: LocalizedText
+  stops: JourneyStop[]
+  arrival: LocalizedText
+}
+
+// ---------- Balance scale (weigh facts on two pans) ----------
+
+export type BalanceWeight = {
+  id: string
+  text: LocalizedText
+  side: 'left' | 'right'
+  explanation: LocalizedText
+}
+
+export type BalanceSection = {
+  kind: 'balance'
+  id: string
+  title: LocalizedText
+  intro: LocalizedText
+  left: LocalizedText
+  right: LocalizedText
+  weights: BalanceWeight[]
+}
+
 // ---------- Completion ----------
 
 export type CompletionSection = {
@@ -442,6 +482,8 @@ export type LessonSection =
   | VerseSection
   | BlitzSection
   | ReadingSection
+  | JourneySection
+  | BalanceSection
   | CompletionSection
 
 export type SectionKind = LessonSection['kind']

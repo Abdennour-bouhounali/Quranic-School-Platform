@@ -100,17 +100,17 @@ function makeStubLesson(gradeId: string, semesterSlot: string, _curriculumBlock:
 // ── Generate all stubs ────────────────────────────────────────────────────────
 // 3 grades × 2 semesters × 6 (or 4) lessons = 34 per grade, 34 total (no duplication)
 
-// prophet-birth-youth owns g1-s1 lesson 1, missionMushrikin owns lesson 2;
+// prophet-birth-youth owns g1-s1 lesson 1, missionMushrikin lesson 2, hijraHabashaMadina lesson 3;
 // skip those stubs to avoid duplication.
-const G1_S1_SKIPS = [0, 1]
+const G1_S1_SKIPS = [0, 1, 2]
 
-// jamalSiffin owns g2-s1 lesson 1, nahrawanMuhakkima owns lesson 2;
+// jamalSiffin owns g2-s1 lesson 1, nahrawanMuhakkima lesson 2, ahlDawaJabir lesson 3;
 // skip those stubs to avoid duplication.
-const G2_S1_SKIPS = [0, 1]
+const G2_S1_SKIPS = [0, 1, 2]
 
-// iqtisadRustami owns g3-s1 lesson 1, suqutRustamiyya owns lesson 2;
+// iqtisadRustami owns g3-s1 lesson 1, suqutRustamiyya lesson 2, ahlIstiqama45 lesson 3;
 // skip those stubs to avoid duplication.
-const G3_S1_SKIPS = [0, 1]
+const G3_S1_SKIPS = [0, 1, 2]
 
 export const historyIbadiLessons: Lesson[] = Object.entries(GRADE_SEMESTER_MAP).flatMap(
   ([gradeId, [slot1, slot2]]) => [

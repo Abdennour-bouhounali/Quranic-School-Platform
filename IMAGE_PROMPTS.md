@@ -134,3 +134,47 @@ Visual system: warm, calm, premium, no cartoon faces, and no heavy ornament. Nig
 1. List each step's visual need in the lesson file (`image` + `imageAlt` in ar, fr and en).
 2. Write a prompt here: purpose, composition, lighting, aspect and must-nots, and append the shared style.
 3. Generate, review against the rejection list, and convert to PNG in `public/images/lessons/<lesson-id>/`.
+
+---
+
+## Lessons g1-s1-l3, g2-s1-l3, g3-s1-l3 (Flux schnell via Cloudflare Workers AI)
+
+Generated with the same Flux workflow as above (8 steps, 1024×1024 → PNG). Every image was reviewed by eye. Rejected and regenerated: `madina-arrival` (rendered the word "SALLCOME"), `oman-exile` and `fatimid-cairo` (minaret-like towers), `mahdia-siege` (a figure-like shape by a tent). Two attempted map images (`route-map`, `maghreb-map`) were dropped because Flux rendered wrong, text-bearing maps; the lessons use the `journey` activity instead. A faint signature strip was cropped from `oman-exile` and `abu-yazid`.
+
+Shared suffix appended to every prompt below: `painterly digital illustration, premium educational storybook style, soft cinematic light, restrained palette of warm sand, cream, deep emerald green and subtle gold, clean composition, highly detailed, an empty uninhabited scene`
+
+
+### public/images/lessons/hijra-habasha-madina/
+
+- **hero.png** — `Wide panoramic view of a lone caravan trail of kneeling camels resting under a vast starry night sky beside a distant palm oasis city glowing with warm lamps, calm and awe-inspiring`
+- **habasha-shore.png** — `Wooden sailing boats moored on a calm turquoise Red Sea shore at dawn, green highlands of Abyssinia on the horizon, gentle waves, golden sunrise`
+- **najashi-court.png** — `A grand ancient palace hall with a carved empty wooden throne under tall arches, hanging oil lamps, rich red and gold carpets, warm candlelight, dignified and quiet`
+- **shib-siege.png** — `A narrow dry rocky mountain valley with a few goat-hair tents and bare sandy ground, scorched thorny shrubs, harsh midday sun, a feeling of hunger and hardship`
+- **sahifa.png** — `An old torn parchment scroll with holes eaten away by insects hanging on a rough stone wall beside a dark cube-shaped stone building draped in black cloth, warm lamp light, only unreadable faint brown ink marks`
+- **taif.png** — `Rocky brown hills of Taif with green orchard terraces behind low stone walls and a lone dusty path winding between them, late afternoon light, quiet and lonely`
+- **isra-night.png** — `A shining path of golden light stretching across a deep blue starry night sky between a dark desert city and a distant glowing stone domed sanctuary on a hilltop, serene and sacred`
+- **aqaba-night.png** — `A moonlit narrow rocky mountain pass at night with a few flickering torches stuck in the sand between large boulders and kneeling camels, secret meeting atmosphere, deep blue and warm amber`
+- **thawr-cave.png** — `The dark entrance of a mountain cave at sunrise with a delicate spider web across the opening and a nesting dove on a rock, rugged desert mountain, golden dawn light`
+- **hijra-road.png** — `An aerial view of many camel hoof prints and a long winding desert trail crossing golden dunes toward distant dark mountains under a huge sky`
+- **madina-arrival.png** — `A lush green palm oasis town of low mud-brick houses with warm glowing lamps in the windows at dusk, a plain wooden gate with a garland of green palm leaves hanging across it, joyful warm light`
+
+### public/images/lessons/ahl-dawa-jabir/
+
+- **hero.png** — `A vast quiet courtyard mosque of early Basra with rows of stone pillars, empty woven mats arranged in a circle and open books on wooden stands, soft golden dawn light through the arches`
+- **basra-halaqa.png** — `A circle of empty cushions and mats around a single wooden book stand under pillars in a courtyard, warm light, scattered quill pens and inkwells, a sense of a study circle waiting for learners`
+- **ocean-of-knowledge.png** — `A vast deep blue ocean at sunrise whose waves turn into floating glowing open books and scrolls, a distant shore with a library arch, magical yet respectful`
+- **diwan-manuscripts.png** — `A wooden desk covered with stacks of handwritten manuscripts, rolled scrolls, an inkwell and quill, a brass oil lamp, warm candlelight, close-up scholarly still life`
+- **hidden-lantern.png** — `A small dim hidden room with a single lantern on a table among books and a heavy curtained doorway, deep shadows and a feeling of secrecy and caution`
+- **oman-exile.png** — `A date palm village of Oman with a low square mud-brick fort with thick walls, a stone irrigation channel flowing through green gardens at the foot of rocky mountains, peaceful sunset`
+- **knowledge-tree.png** — `A great ancient tree with golden glowing branches each ending in an open book, roots in dark soil and a river of light flowing from its trunk, symbolic and elegant`
+
+### public/images/lessons/ahl-istiqama-4-5/
+
+- **hero.png** — `A fortified mountain village of mud-brick dwellings built into rocky cliffs of the Maghreb at sunset with a long caravan route below, dramatic sky, resilient and calm`
+- **famine.png** — `Dry cracked farmland under a pale hot sky with an empty wooden granary and a single bowl holding a handful of grain on the ground, wilting wheat stalks, hardship`
+- **abu-yazid.png** — `A lone grey donkey standing on a vast plain facing a distant fortified coastal city with a huge defensive wall, wind and dust, dramatic stormy sky`
+- **mahdia-siege.png** — `A heavily fortified coastal city on a narrow rocky peninsula surrounded by the sea with thick stone walls and a great gate, rows of glowing campfires and lanterns scattered on the empty plain in the evening`
+- **hamma-oasis.png** — `A hidden palm oasis of the Tunisian Jarid with hot springs and green gardens at the foot of rugged desert mountains, golden hour, peaceful`
+- **scholars-tent.png** — `A large tent interior lit by hanging lamps with woven carpets, low wooden book stands and a scatter of manuscripts for a council of scholars, warm and serious mood`
+- **fatimid-cairo.png** — `A massive plain sandstone city gate with a great round arch and thick crenellated walls beside a calm river at golden hour, palm trees, strong and imposing`
+- **warjlan-halaqa.png** — `A desert oasis city of mud-brick houses with narrow shaded alleys and a courtyard where open books rest on mats in a circle, palm trees, warm gold light`

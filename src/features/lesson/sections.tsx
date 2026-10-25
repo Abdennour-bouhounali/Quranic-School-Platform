@@ -1,12 +1,14 @@
 import { motion } from 'framer-motion'
 import { ArrowRight, BookOpen, Lock, RotateCcw, Sparkles } from 'lucide-react'
 import type {
+  BalanceSection,
   BlitzSection,
   ChainSection,
   ChatSection,
   CompletionSection,
   ExplorerSection,
   HeroSection,
+  JourneySection,
   LessonSection,
   MemorySection,
   MissionsSection,
@@ -40,6 +42,8 @@ import { RippleGame } from '@/components/activities/RippleGame'
 import { SwipeJudge } from '@/components/activities/SwipeJudge'
 import { DominoChain } from '@/components/activities/DominoChain'
 import { VerseBuilder } from '@/components/activities/VerseBuilder'
+import { JourneyPath } from '@/components/activities/JourneyPath'
+import { BalanceScale } from '@/components/activities/BalanceScale'
 import { BlitzGame } from '@/components/activities/BlitzGame'
 import { cn } from '@/lib/utils'
 
@@ -90,6 +94,10 @@ export function SectionRenderer({ section, nav }: { section: LessonSection; nav:
       return <Blitz section={section} nav={nav} />
     case 'reading':
       return <Reading section={section} nav={nav} />
+    case 'journey':
+      return <Journey section={section} nav={nav} />
+    case 'balance':
+      return <Balance section={section} nav={nav} />
     case 'completion':
       return <Completion section={section} nav={nav} />
   }
@@ -355,6 +363,26 @@ function Blitz({ section, nav }: Props<BlitzSection>) {
     <>
       <SectionHeader index={nav.index} title={tx(section.title)} intro={tx(section.intro)} />
       <BlitzGame secondsPerCard={section.secondsPerCard} statements={section.statements} />
+    </>
+  )
+}
+
+function Journey({ section, nav }: Props<JourneySection>) {
+  const { tx } = useI18n()
+  return (
+    <>
+      <SectionHeader index={nav.index} title={tx(section.title)} intro={tx(section.intro)} />
+      <JourneyPath stops={section.stops} arrival={section.arrival} />
+    </>
+  )
+}
+
+function Balance({ section, nav }: Props<BalanceSection>) {
+  const { tx } = useI18n()
+  return (
+    <>
+      <SectionHeader index={nav.index} title={tx(section.title)} intro={tx(section.intro)} />
+      <BalanceScale left={section.left} right={section.right} weights={section.weights} />
     </>
   )
 }
