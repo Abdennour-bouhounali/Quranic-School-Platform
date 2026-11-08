@@ -374,6 +374,9 @@ export type VerseSection = {
   id: string
   title: LocalizedText
   intro: LocalizedText
+  // 'quran' (default): Qur'anic verses. 'saying': a human saying (scholar, Companion…);
+  // the UI then never calls the text a verse (آية).
+  source?: 'quran' | 'saying'
   verses: Verse[]
 }
 

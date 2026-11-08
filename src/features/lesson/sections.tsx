@@ -352,7 +352,7 @@ function Verses({ section, nav }: Props<VerseSection>) {
   return (
     <>
       <SectionHeader index={nav.index} title={tx(section.title)} intro={tx(section.intro)} />
-      <VerseBuilder verses={section.verses} />
+      <VerseBuilder verses={section.verses} source={section.source} />
     </>
   )
 }

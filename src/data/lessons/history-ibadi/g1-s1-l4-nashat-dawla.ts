@@ -123,9 +123,9 @@ export const nashatDawla: Lesson = {
           id: 'p1',
           heading: { ar: 'السابقون الأوّلون', fr: 'Les premiers devanciers', en: 'The first forerunners' },
           text: {
-            ar: 'قال الله تعالى: «وَالسَّابِقُونَ الْأَوَّلُونَ مِنَ الْمُهَاجِرِينَ وَالْأَنْصَارِ وَالَّذِينَ اتَّبَعُوهُمْ بِإِحْسَانٍ رَضِيَ اللَّهُ عَنْهُمْ وَرَضُوا عَنْهُ وَأَعَدَّ لَهُمْ جَنَّاتٍ تَجْرِي تَحْتَهَا الْأَنْهَارُ خَالِدِينَ فِيهَا أَبَدًا ذَلِكَ الْفَوْزُ الْعَظِيمُ» (التوبة 100).',
-            fr: 'Dieu dit : « Les tout premiers devanciers parmi les Émigrés et les Ansār, et ceux qui les ont suivis dans le bien : Dieu les agrée et ils L’agréent. Il leur a préparé des jardins sous lesquels coulent les rivières, où ils demeureront éternellement. Voilà l’immense succès. » (at-Tawba 100)',
-            en: 'God says: "The first forerunners among the Emigrants and the Ansar, and those who followed them in goodness — God is pleased with them and they are pleased with Him. He has prepared for them gardens beneath which rivers flow, abiding there forever. That is the supreme triumph." (at-Tawba 100)',
+            ar: 'قال الله تعالى: ﴿وَالسَّابِقُونَ الْأَوَّلُونَ مِنَ الْمُهَاجِرِينَ وَالْأَنْصَارِ وَالَّذِينَ اتَّبَعُوهُمْ بِإِحْسَانٍ رَضِيَ اللَّهُ عَنْهُمْ وَرَضُوا عَنْهُ وَأَعَدَّ لَهُمْ جَنَّاتٍ تَجْرِي تَحْتَهَا الْأَنْهَارُ خَالِدِينَ فِيهَا أَبَدًا ذَلِكَ الْفَوْزُ الْعَظِيمُ﴾ [التوبة: 100].',
+            fr: 'Dieu dit : « Les tout premiers devanciers parmi les Émigrés et les Ansār, et ceux qui les ont suivis dans le bien : Dieu les agrée et ils L’agréent. Il leur a préparé des jardins sous lesquels coulent les rivières, où ils demeureront éternellement. Voilà l’immense succès. » [at-Tawba : 100, traduction du sens]',
+            en: 'God says: "The first forerunners among the Emigrants and the Ansar, and those who followed them in goodness — God is pleased with them and they are pleased with Him. He has prepared for them gardens beneath which rivers flow, abiding there forever. That is the supreme triumph." [at-Tawba: 100, translation of the meaning]',
           },
         },
         {

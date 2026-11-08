@@ -151,9 +151,9 @@ export const missionMushrikin: Lesson = {
             en: 'Gabriel (Peace Be Upon Him) and the Command to Read',
           },
           text: {
-            ar: 'بينما كان النبيّ ﷺ جالسًا في الغار، نزل عليه مَلَكٌ عظيمٌ ذو لباسٍ أبيض، وهو جبريل عليه السلام. ضمّه جبريل إلى صدره وقال له: «اقرأ!»، فقال محمد ﷺ فزعًا: «ما أنا بقارئ». كرّرها جبريل ثلاث مرّات، ثمّ تلا عليه أوّل كلماتٍ من كتاب الله: ﴿اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ ۝ خَلَقَ الْإِنسَانَ مِنْ عَلَقٍ ۝ اقْرَأْ وَرَبُّكَ الْأَكْرَمُ ۝ الَّذِي عَلَّمَ بِالْقَلَمِ﴾.',
-            fr: 'Tandis que le Prophète ﷺ était assis dans la grotte, un ange majestueux vêtu de blanc descendit vers lui : c’était l’ange Gabriel (paix sur lui). Gabriel le serra contre lui et lui dit : « Lis ! » Muhammad ﷺ répondit, saisi d’émotion : « Je ne sais pas lire ». Gabriel répéta cette demande trois fois, puis lui récita les premiers versets du Livre d’Allah : « Lis au nom de ton Seigneur qui a créé, qui a créé l’homme d’une adhérence. Lis ! Et ton Seigneur est le Très Noble, qui a enseigné par la plume ».',
-            en: 'While the Prophet ﷺ sat in the cave, a majestic angel in white garments descended upon him: the angel Gabriel (peace be upon him). Gabriel embraced him closely and said: "Read!" Muhammad ﷺ answered, filled with awe: "I cannot read." Gabriel repeated this three times, then recited to him the first verses of the Book of God: "Read in the name of your Lord who created, created humanity from a clinging clot. Read! And your Lord is the Most Generous, who taught by the pen."',
+            ar: 'بينما كان النبيّ ﷺ جالسًا في الغار، نزل عليه مَلَكٌ عظيمٌ ذو لباسٍ أبيض، وهو جبريل عليه السلام. ضمّه جبريل إلى صدره وقال له: «اقرأ!»، فقال محمد ﷺ فزعًا: «ما أنا بقارئ». كرّرها جبريل ثلاث مرّات، ثمّ تلا عليه أوّل كلماتٍ من كتاب الله: ﴿اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ ۝ خَلَقَ الْإِنسَانَ مِنْ عَلَقٍ ۝ اقْرَأْ وَرَبُّكَ الْأَكْرَمُ ۝ الَّذِي عَلَّمَ بِالْقَلَمِ﴾ [العلق: 1–4].',
+            fr: 'Tandis que le Prophète ﷺ était assis dans la grotte, un ange majestueux vêtu de blanc descendit vers lui : c’était l’ange Gabriel (paix sur lui). Gabriel le serra contre lui et lui dit : « Lis ! » Muhammad ﷺ répondit, saisi d’émotion : « Je ne sais pas lire ». Gabriel répéta cette demande trois fois, puis lui récita les premiers versets du Livre d’Allah : « Lis au nom de ton Seigneur qui a créé, qui a créé l’homme d’une adhérence. Lis ! Et ton Seigneur est le Très Noble, qui a enseigné par la plume » [al-‘Alaq : 1–4, traduction du sens].',
+            en: 'While the Prophet ﷺ sat in the cave, a majestic angel in white garments descended upon him: the angel Gabriel (peace be upon him). Gabriel embraced him closely and said: "Read!" Muhammad ﷺ answered, filled with awe: "I cannot read." Gabriel repeated this three times, then recited to him the first verses of the Book of God: "Read in the name of your Lord who created, created humanity from a clinging clot. Read! And your Lord is the Most Generous, who taught by the pen." [al-‘Alaq: 1–4, translation of the meaning]',
           },
         },
         {
@@ -194,7 +194,7 @@ export const missionMushrikin: Lesson = {
             fr: 'Les tout premiers versets du Coran révélés au Messager ﷺ dans la grotte de Hirā’ :',
             en: 'The very first verses of the Qur’an revealed to the Messenger ﷺ in the cave of Hira:',
           },
-          ref: { ar: 'سورة العلق', fr: 'Sourate al-‘Alaq', en: 'Surat al-‘Alaq' },
+          ref: { ar: 'سورة العلق، الآية 1', fr: 'Sourate al-‘Alaq, verset 1', en: 'Surat al-‘Alaq, verse 1' },
           words: ['اقْرَأْ', 'بِاسْمِ', 'رَبِّكَ', 'الَّذِي', 'خَلَقَ'],
           meaning: {
             ar: 'أمرٌ من الله لرسوله (ص) أن يقرأ باسمه تعالى، وهو خالق كلّ شيء.',
@@ -209,7 +209,7 @@ export const missionMushrikin: Lesson = {
             fr: 'Puis Gabriel (sur lui la paix) poursuivit les versets :',
             en: 'Then Gabriel (peace be upon him) continued the verses:',
           },
-          ref: { ar: 'سورة العلق', fr: 'Sourate al-‘Alaq', en: 'Surat al-‘Alaq' },
+          ref: { ar: 'سورة العلق، الآيتان 3–4', fr: 'Sourate al-‘Alaq, versets 3–4', en: 'Surat al-‘Alaq, verses 3–4' },
           words: ['اقْرَأْ', 'وَرَبُّكَ', 'الْأَكْرَمُ', 'الَّذِي', 'عَلَّمَ', 'بِالْقَلَمِ'],
           meaning: {
             ar: 'تذكيرٌ بكرم الله تعالى الذي علّم الإنسان الكتابة بالقلم.',
@@ -334,9 +334,9 @@ export const missionMushrikin: Lesson = {
             en: 'The Command to Warn and the Start of Secret Dawah',
           },
           text: {
-            ar: 'بعد أربعين يومًا، نزل جبريل عليه السلام مرّةً أخرى، وتنزّلت الآيات الكريمة: ﴿يَا أَيُّهَا الْمُدَّثِّرُ ۝ قُمْ فَأَنذِرْ ۝ وَرَبَّكَ فَكَبِّرْ﴾، فأمر الله نبيّه بالقيام بمهمّة الدعوة. بدأ الرسول ﷺ يدعو الناس سرًّا خوفًا من بطش قريش، فكان يعرض الإسلام على أهل الخير والصدق. وكان أوّل من أسلم: زوجه خديجة، وابن عمّه عليّ بن أبي طالب، وصاحبه أبو بكر الصدّيق، وخادمه زيد بن حارثة رضي الله عنهم.',
-            fr: 'Quarante jours plus tard, Gabriel (paix sur lui) apparut de nouveau, apportant les versets : « Ô toi qui te couvres d’un manteau ! Lève-toi et avertis ! Et ton Seigneur, célèbre Sa grandeur ! » Allah ordonna ainsi à Son Prophète d’accomplir la mission de l’appel. Le Messager ﷺ commença par prêcher secrètement pour préserver les croyants de l’hostilité de Quraysh, s’adressant à ceux dont le cœur aimait la vérité. Les premiers à embrasser l’islam furent son épouse Khadīja, son cousin ‘Alī ibn Abī Ṭālib, son fidèle compagnon Abū Bakr et son serviteur Zayd ibn Ḥāritha (qu’Allah les agrée tous).',
-            en: 'Forty days later, Gabriel (peace be upon him) appeared again, bringing the divine words: "O you wrapped in a cloak! Arise and warn! And your Lord, magnify!" God thereby commanded His Prophet to embark on the mission of calling people. The Messenger ﷺ began calling in secret to protect the early believers from Quraysh’s wrath, reaching out to those known for truthfulness. The first to embrace Islam were his wife Khadija, his cousin Ali ibn Abi Talib, his close friend Abu Bakr, and his servant Zayd ibn Haritha (may God be pleased with them all).',
+            ar: 'بعد أربعين يومًا، نزل جبريل عليه السلام مرّةً أخرى، وتنزّلت الآيات الكريمة: ﴿يَا أَيُّهَا الْمُدَّثِّرُ ۝ قُمْ فَأَنذِرْ ۝ وَرَبَّكَ فَكَبِّرْ﴾ [المدّثّر: 1–3]، فأمر الله نبيّه بالقيام بمهمّة الدعوة. بدأ الرسول ﷺ يدعو الناس سرًّا خوفًا من بطش قريش، فكان يعرض الإسلام على أهل الخير والصدق. وكان أوّل من أسلم: زوجه خديجة، وابن عمّه عليّ بن أبي طالب، وصاحبه أبو بكر الصدّيق، وخادمه زيد بن حارثة رضي الله عنهم.',
+            fr: 'Quarante jours plus tard, Gabriel (paix sur lui) apparut de nouveau, apportant les versets : « Ô toi qui te couvres d’un manteau ! Lève-toi et avertis ! Et ton Seigneur, célèbre Sa grandeur ! » [al-Muddaththir : 1–3, traduction du sens] Allah ordonna ainsi à Son Prophète d’accomplir la mission de l’appel. Le Messager ﷺ commença par prêcher secrètement pour préserver les croyants de l’hostilité de Quraysh, s’adressant à ceux dont le cœur aimait la vérité. Les premiers à embrasser l’islam furent son épouse Khadīja, son cousin ‘Alī ibn Abī Ṭālib, son fidèle compagnon Abū Bakr et son serviteur Zayd ibn Ḥāritha (qu’Allah les agrée tous).',
+            en: 'Forty days later, Gabriel (peace be upon him) appeared again, bringing the divine words: "O you wrapped in a cloak! Arise and warn! And your Lord, magnify!" [al-Muddaththir: 1–3, translation of the meaning] God thereby commanded His Prophet to embark on the mission of calling people. The Messenger ﷺ began calling in secret to protect the early believers from Quraysh’s wrath, reaching out to those known for truthfulness. The first to embrace Islam were his wife Khadija, his cousin Ali ibn Abi Talib, his close friend Abu Bakr, and his servant Zayd ibn Haritha (may God be pleased with them all).',
           },
         },
         {
@@ -360,9 +360,9 @@ export const missionMushrikin: Lesson = {
             en: 'Calling the Clan and the Proclamation on Mount al-Safa',
           },
           text: {
-            ar: 'أمر الله رسوله ﷺ بأن يوسّع دعوته فقال: ﴿وَأَنذِرْ عَشِيرَتَكَ الْأَقْرَبِينَ﴾، فصنع طعامًا ودعا بني عبد المطلب، فنصره عمّه أبو طالب، بينما عاداه أبو لهب. ثمّ نزل الأمر الإلهيّ بالجهر: ﴿فَاصْدَعْ بِمَا تُؤْمَرُ وَأَعْرِضْ عَنِ الْمُشْرِكِينَ﴾. صعد النبيّ ﷺ جبل الصفا ونادى قريشًا وسألهم: «أرأيتم لو أخبرتكم أنّ خيلًا بالوادي تريد أن تُغير عليكم، أكنتم مصدّقي؟»، قالوا: «نعم، ما جرّبنا عليك كذبًا قطّ!»، فقال: «فإنّي نذيرٌ لكم بين يدَي عذابٍ شديد»، فغضب أبو لهب وصاح: «تبًّا لك! ألهذا جمعتنا؟!».',
-            fr: 'Allah ordonna ensuite à Son Prophète d’élargir son appel : « Et avertis ta parenté la plus proche ». Il prépara un repas et invita les Banū ‘Abd al-Muṭṭalib : son oncle Abū Ṭālib lui promit son soutien, tandis qu’Abū Lahab le repoussa durement. Puis vint l’ordre solennel de proclamer publiquement le message : « Proclame donc ce qui t’est commandé et détourne-toi des polythéistes ». Le Prophète ﷺ monta sur le mont aṣ-Ṣafā et interpella les clans de Quraysh : « Si je vous disais que des cavaliers s’apprêtent à fondre sur vous dans la vallée, me croiriez-vous ? » Ils répondirent : « Oui, nous ne t’avons jamais connu menteur ! » Il déclara alors : « Je suis pour vous un avertisseur face à un châtiment redoutable ». Abū Lahab s’écria alors avec colère : « Péris donc ! Est-ce pour cela que tu nous as rassemblés ?! »',
-            en: 'God then instructed His Prophet to expand his call: "And warn your nearest kin." He prepared a meal and invited the Banu Abd al-Muttalib: his uncle Abu Talib offered him protection, while Abu Lahab rejected him fiercely. Soon after came the command for public proclamation: "Proclaim what you are commanded and turn away from the polytheists." The Prophet ﷺ ascended Mount al-Safa and called out to the clans of Quraysh: "If I told you that horsemen were in the valley ready to attack, would you believe me?" They answered: "Yes, we have never found you to lie!" He then said: "I am a warner to you of a severe punishment." Hearing this, Abu Lahab cried out in anger: "May you perish! Is this why you gathered us?!"',
+            ar: 'أمر الله رسوله ﷺ بأن يوسّع دعوته فقال: ﴿وَأَنذِرْ عَشِيرَتَكَ الْأَقْرَبِينَ﴾ [الشعراء: 214]، فصنع طعامًا ودعا بني عبد المطلب، فنصره عمّه أبو طالب، بينما عاداه أبو لهب. ثمّ نزل الأمر الإلهيّ بالجهر: ﴿فَاصْدَعْ بِمَا تُؤْمَرُ وَأَعْرِضْ عَنِ الْمُشْرِكِينَ﴾ [الحجر: 94]. صعد النبيّ ﷺ جبل الصفا ونادى قريشًا وسألهم: «أرأيتم لو أخبرتكم أنّ خيلًا بالوادي تريد أن تُغير عليكم، أكنتم مصدّقي؟»، قالوا: «نعم، ما جرّبنا عليك كذبًا قطّ!»، فقال: «فإنّي نذيرٌ لكم بين يدَي عذابٍ شديد»، فغضب أبو لهب وصاح: «تبًّا لك! ألهذا جمعتنا؟!».',
+            fr: 'Allah ordonna ensuite à Son Prophète d’élargir son appel : « Et avertis ta parenté la plus proche » [ash-Shu‘arā’ : 214, traduction du sens]. Il prépara un repas et invita les Banū ‘Abd al-Muṭṭalib : son oncle Abū Ṭālib lui promit son soutien, tandis qu’Abū Lahab le repoussa durement. Puis vint l’ordre solennel de proclamer publiquement le message : « Proclame donc ce qui t’est commandé et détourne-toi des polythéistes » [al-Ḥijr : 94, traduction du sens]. Le Prophète ﷺ monta sur le mont aṣ-Ṣafā et interpella les clans de Quraysh : « Si je vous disais que des cavaliers s’apprêtent à fondre sur vous dans la vallée, me croiriez-vous ? » Ils répondirent : « Oui, nous ne t’avons jamais connu menteur ! » Il déclara alors : « Je suis pour vous un avertisseur face à un châtiment redoutable ». Abū Lahab s’écria alors avec colère : « Péris donc ! Est-ce pour cela que tu nous as rassemblés ?! »',
+            en: 'God then instructed His Prophet to expand his call: "And warn your nearest kin." [ash-Shu‘ara’: 214, translation of the meaning] He prepared a meal and invited the Banu Abd al-Muttalib: his uncle Abu Talib offered him protection, while Abu Lahab rejected him fiercely. Soon after came the command for public proclamation: "Proclaim what you are commanded and turn away from the polytheists." [al-Hijr: 94, translation of the meaning] The Prophet ﷺ ascended Mount al-Safa and called out to the clans of Quraysh: "If I told you that horsemen were in the valley ready to attack, would you believe me?" They answered: "Yes, we have never found you to lie!" He then said: "I am a warner to you of a severe punishment." Hearing this, Abu Lahab cried out in anger: "May you perish! Is this why you gathered us?!"',
           },
         },
       ],
@@ -398,9 +398,9 @@ export const missionMushrikin: Lesson = {
           id: 's1',
           prompt: { ar: 'ماذا نزل عليه وهو مُتغطٍّ؟', fr: 'Que lui fut-il révélé alors qu’il était couvert ?', en: 'What was revealed to him while covered?' },
           correct: {
-            ar: 'نزلت الآيات: "يا أيّها المدّثّر، قم فأنذر، وربّك فكبّر"، يأمره الله فيها بالقيام والإنذار.',
-            fr: '«ô toi qui te couvres d’un manteau ! Lève-toi et avertis ! Et de ton Seigneur, célèbre la grandeur !» : Dieu lui ordonne de se lever et d’avertir.',
-            en: '"O you wrapped in a cloak, arise and warn, and your Lord magnify": God commands him to rise and give warning.',
+            ar: 'نزلت الآيات: ﴿يَا أَيُّهَا الْمُدَّثِّرُ ۝ قُمْ فَأَنذِرْ ۝ وَرَبَّكَ فَكَبِّرْ﴾ [المدّثّر: 1–3]، يأمره الله فيها بالقيام والإنذار.',
+            fr: '«ô toi qui te couvres d’un manteau ! Lève-toi et avertis ! Et de ton Seigneur, célèbre la grandeur !» [al-Muddaththir : 1–3, traduction du sens] : Dieu lui ordonne de se lever et d’avertir.',
+            en: '"O you wrapped in a cloak, arise and warn, and your Lord magnify" [al-Muddaththir: 1–3, translation of the meaning]: God commands him to rise and give warning.',
           },
           distractors: [
             {
@@ -472,9 +472,9 @@ export const missionMushrikin: Lesson = {
         en: 'The Messenger calls his clan',
       },
       intro: {
-        ar: 'بعد ثلاث سنوات من الدعوة السرّية الفرديّة، أنزل الله: "وأنذر عشيرتك الأقربين". ضع كلّ بطاقةٍ في خانتها الصحيحة لتتابع ما جرى.',
-        fr: 'Après trois ans d’appel secret et individuel, Dieu révéla : « Avertis ta parenté la plus proche. » Place chaque carte dans la bonne case pour suivre les événements.',
-        en: 'After three years of secret, individual calling, God revealed: "And warn your nearest kindred." Place each card in its correct slot to follow what happened.',
+        ar: 'بعد ثلاث سنوات من الدعوة السرّية الفرديّة، أنزل الله: ﴿وَأَنذِرْ عَشِيرَتَكَ الْأَقْرَبِينَ﴾ [الشعراء: 214]. ضع كلّ بطاقةٍ في خانتها الصحيحة لتتابع ما جرى.',
+        fr: 'Après trois ans d’appel secret et individuel, Dieu révéla : « Avertis ta parenté la plus proche. » [ash-Shu‘arā’ : 214, traduction du sens] Place chaque carte dans la bonne case pour suivre les événements.',
+        en: 'After three years of secret, individual calling, God revealed: "And warn your nearest kindred." [ash-Shu‘ara’: 214, translation of the meaning] Place each card in its correct slot to follow what happened.',
       },
       slots: [
         { id: 'invite', label: { ar: 'الدعوة إلى الطعام', fr: 'L’invitation au repas', en: 'The invitation to the meal' } },
@@ -513,9 +513,9 @@ export const missionMushrikin: Lesson = {
         en: 'The Prophet ﷺ proclaims the call openly',
       },
       intro: {
-        ar: 'بعد بضعة أيام، جاء أمر الله أن يجهر بالدعوة للناس جميعًا: "فاصدَعْ بما تؤمَر وأعرِض عن المشركين". اضغط على عناصر المشهد لتكتشف ما جرى.',
-        fr: 'Quelques jours plus tard, l’ordre vint de proclamer l’appel à tous : « Expose donc clairement ce qui t’est commandé et détourne-toi des associateurs. » Touche les éléments de la scène pour découvrir ce qui s’est passé.',
-        en: 'A few days later, the command came to proclaim the call openly to everyone: "So proclaim what you are commanded and turn away from the polytheists." Tap the elements of the scene to discover what happened.',
+        ar: 'بعد بضعة أيام، جاء أمر الله أن يجهر بالدعوة للناس جميعًا: ﴿فَاصْدَعْ بِمَا تُؤْمَرُ وَأَعْرِضْ عَنِ الْمُشْرِكِينَ﴾ [الحجر: 94]. اضغط على عناصر المشهد لتكتشف ما جرى.',
+        fr: 'Quelques jours plus tard, l’ordre vint de proclamer l’appel à tous : « Expose donc clairement ce qui t’est commandé et détourne-toi des associateurs. » [al-Ḥijr : 94, traduction du sens] Touche les éléments de la scène pour découvrir ce qui s’est passé.',
+        en: 'A few days later, the command came to proclaim the call openly to everyone: "So proclaim what you are commanded and turn away from the polytheists." [al-Hijr: 94, translation of the meaning] Tap the elements of the scene to discover what happened.',
       },
       image: `${IMG}/valley-horses.png`,
       imageAlt: {
@@ -658,14 +658,14 @@ export const missionMushrikin: Lesson = {
             {
               id: 'right',
               correct: true,
-              label: { ar: 'اتّهموه بالسحر والجنون والسفه والشعر', fr: '« Tu es un sorcier, un fou, un insensé, un poète »', en: '"You are a sorcerer, a madman, a fool, a poet"' },
-              hint: { ar: 'راجع الآية التي استشهد بها الدرس: "ويقولون أئنّا لتاركو آلهتنا لشاعرٍ مجنون".', fr: 'Relis le verset cité par la leçon : « et ils disent : Allons-nous abandonner nos divinités pour un poète fou ? »', en: 'Recall the verse the lesson quotes: "and they say: are we to leave our gods for a mad poet?"' },
+              label: { ar: 'اتّهموه بالسحر والكهانة والشعر والجنون', fr: '« Tu es un sorcier, un devin, un poète, un fou »', en: '"You are a sorcerer, a soothsayer, a poet, a madman"' },
+              hint: { ar: 'راجع فقرة «حملات التكذيب والافتراء»: نعتوه بالسحر والكهانة والشعر والجنون.', fr: 'Relis le paragraphe « Les calomnies et fausses accusations » : ils le traitèrent de sorcier, de devin, de poète et de fou.', en: 'Look back at the paragraph “Slander and False Accusations”: they called him a sorcerer, a soothsayer, a poet and a madman.' },
             },
             {
               id: 'wrong',
               correct: false,
               label: { ar: 'اتّهموه بسرقة أموالهم', fr: '« Tu as volé nos biens »', en: '"You stole our wealth"' },
-              hint: { ar: 'لم يذكر الدرس هذه التهمة؛ عُد إلى الآية المذكورة في البطاقة.', fr: 'La leçon ne mentionne pas ce grief ; relis le verset cité.', en: 'The lesson does not mention this accusation; revisit the verse quoted.' },
+              hint: { ar: 'لم يذكر الدرس هذه التهمة؛ عُد إلى فقرة «حملات التكذيب والافتراء».', fr: 'La leçon ne mentionne pas ce grief ; relis le paragraphe « Les calomnies et fausses accusations ».', en: 'The lesson does not mention this accusation; look back at the paragraph “Slander and False Accusations”.' },
             },
           ],
         },

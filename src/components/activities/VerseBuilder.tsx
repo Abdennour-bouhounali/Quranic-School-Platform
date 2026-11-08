@@ -6,11 +6,16 @@ import { useI18n } from '@/i18n'
 import { cn, shuffle } from '@/lib/utils'
 import { FeedbackMessage } from '@/components/ui/FeedbackMessage'
 
-type Props = { verses: Verse[] }
+type Props = { verses: Verse[]; source?: 'quran' | 'saying' }
 
 // Rebuild each verse word by word from scrambled chips. A wrong tap only shakes the chip.
-export function VerseBuilder({ verses }: Props) {
+// With source="saying" the same game is used for a human saying, and the UI never calls it a verse.
+export function VerseBuilder({ verses, source = 'quran' }: Props) {
   const { t, tx } = useI18n()
+  const label =
+    source === 'saying'
+      ? { build: t('lesson.buildSaying'), done: t('lesson.sayingDone'), next: t('lesson.nextSaying'), all: t('lesson.allSayings') }
+      : { build: t('lesson.buildVerse'), done: t('lesson.verseDone'), next: t('lesson.nextVerse'), all: t('lesson.allVerses') }
   const [vIndex, setVIndex] = useState(0)
   const [built, setBuilt] = useState<number[]>([]) // chip ids already placed, in order
   const [shake, setShake] = useState<number | null>(null)
@@ -63,7 +68,7 @@ export function VerseBuilder({ verses }: Props) {
 
       {!finished && (
         <>
-          <p className="text-sm text-ink-muted">{t('lesson.buildVerse')}</p>
+          <p className="text-sm text-ink-muted">{label.build}</p>
           <ul dir="rtl" lang="ar" className="flex flex-wrap gap-2.5">
             {chips.map(({ id, w }) => {
               const used = built.includes(id)
@@ -91,12 +96,12 @@ export function VerseBuilder({ verses }: Props) {
 
       {finished && (
         <div className="space-y-3">
-          <FeedbackMessage status="correct" title={allDone ? t('lesson.allVerses') : t('lesson.verseDone')}>
+          <FeedbackMessage status="correct" title={allDone ? label.all : label.done}>
             {tx(verse.meaning)}
           </FeedbackMessage>
           {vIndex + 1 < verses.length && (
             <button type="button" onClick={next} className="btn-primary">
-              {t('lesson.nextVerse')}
+              {label.next}
             </button>
           )}
         </div>

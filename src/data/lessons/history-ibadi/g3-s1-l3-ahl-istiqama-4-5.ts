@@ -143,10 +143,11 @@ export const ahlIstiqama45: Lesson = {
       ],
     },
 
-    // 04 — Verse builder: Abu Zakariya Fasil's saying (slide 2)
+    // 04 — Word builder (source: 'saying'): Abu Zakariya Fasil's saying (slide 2) — NOT a Qur'anic verse
     {
       kind: 'verses',
       id: 'fasil-saying',
+      source: 'saying',
       title: { ar: 'قحط الأرض وقحط الإسلام', fr: 'Disette de la terre, disette de l’islam', en: 'Famine of the land, famine of Islam' },
       intro: {
         ar: 'قرأتَ كلمات أبي زكريا فصيل في النصّ. أعِد الآن بناء كلّ جملةٍ منها بالترتيب.',

@@ -1253,8 +1253,8 @@ export const jamalSiffin: Lesson = {
           value: { ar: 'الإصلاح بين المؤمنين', fr: 'La réconciliation entre croyants', en: 'Reconciliation between believers' },
           evidence: {
             ar: '﴿وَإِن طَائِفَتَانِ مِنَ الْمُؤْمِنِينَ اقْتَتَلُوا فَأَصْلِحُوا بَيْنَهُمَا﴾ [الحجرات: 9].',
-            fr: '« Si deux groupes de croyants se combattent, réconciliez-les » [al-Ḥujurāt : 9].',
-            en: '“If two parties of the believers fight, make peace between them” [al-Ḥujurāt: 9].',
+            fr: '« Si deux groupes de croyants se combattent, réconciliez-les » [al-Ḥujurāt : 9, traduction du sens].',
+            en: '“If two parties of the believers fight, make peace between them” [al-Ḥujurāt: 9, translation of the meaning].',
           },
         },
         {
@@ -1262,8 +1262,8 @@ export const jamalSiffin: Lesson = {
           value: { ar: 'الأخوّة', fr: 'La fraternité', en: 'Brotherhood' },
           evidence: {
             ar: '﴿إِنَّمَا الْمُؤْمِنُونَ إِخْوَةٌ فَأَصْلِحُوا بَيْنَ أَخَوَيْكُمْ﴾ [الحجرات: 10].',
-            fr: '« Les croyants ne sont que des frères : réconciliez vos frères » [al-Ḥujurāt : 10].',
-            en: '“The believers are but brothers, so make peace between your brothers” [al-Ḥujurāt: 10].',
+            fr: '« Les croyants ne sont que des frères : réconciliez vos frères » [al-Ḥujurāt : 10, traduction du sens].',
+            en: '“The believers are but brothers, so make peace between your brothers” [al-Ḥujurāt: 10, translation of the meaning].',
           },
         },
         {

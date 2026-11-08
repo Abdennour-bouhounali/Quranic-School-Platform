@@ -111,9 +111,9 @@ export const prophetBirthYouth: Lesson = {
           y: 16,
           label: { ar: 'طرق القوافل', fr: 'Routes des caravanes', en: 'Caravan routes' },
           description: {
-            ar: 'كانت قوافل قريش ترحل في الشتاء إلى اليمن وفي الصيف إلى الشام، وقد ذكر القرآن ذلك في سورة قريش.',
-            fr: 'Les caravanes de Quraysh allaient l’hiver au Yémen et l’été en Syrie (Shām) — le Coran l’évoque dans la sourate Quraysh.',
-            en: 'Quraysh caravans travelled to Yemen in winter and to Syria (Shām) in summer — the Qur’an mentions this in Surah Quraysh.',
+            ar: 'كانت قوافل قريش ترحل في الشتاء إلى اليمن وفي الصيف إلى الشام، وقد ذكر القرآن رحلتَي الشتاء والصيف في سورة قريش.',
+            fr: 'Les caravanes de Quraysh allaient l’hiver au Yémen et l’été en Syrie (Shām) — le Coran évoque ces deux voyages, d’hiver et d’été, dans la sourate Quraysh.',
+            en: 'Quraysh caravans travelled to Yemen in winter and to Syria (Shām) in summer — the Qur’an mentions these winter and summer journeys in Surah Quraysh.',
           },
         },
         {
