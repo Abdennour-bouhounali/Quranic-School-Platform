@@ -178,3 +178,42 @@ Shared suffix appended to every prompt below: `painterly digital illustration, p
 - **scholars-tent.png** — `A large tent interior lit by hanging lamps with woven carpets, low wooden book stands and a scatter of manuscripts for a council of scholars, warm and serious mood`
 - **fatimid-cairo.png** — `A massive plain sandstone city gate with a great round arch and thick crenellated walls beside a calm river at golden hour, palm trees, strong and imposing`
 - **warjlan-halaqa.png** — `A desert oasis city of mud-brick houses with narrow shaded alleys and a courtyard where open books rest on mats in a circle, palm trees, warm gold light`
+
+---
+
+## Lessons g1-s1-l4, g2-s1-l4, g3-s1-l4 (Flux schnell via Cloudflare Workers AI)
+
+Same workflow and shared suffix as the previous section (8 steps, 1024×1024 → PNG). Every image was reviewed by eye. Rejected and regenerated: `welcome-house` (modern door handle), `brotherhood` (teapot-like lamps, radiator), `sahifa` (fountain pen), `night-watch` (signature), `hero` of ibn-ibad (minaret-like tower, then pitched roofs with chimneys), `tamim-tents` (standing figures, then riders), `letter-scroll` (text on the lamp, then a modern-looking pen), `umayyad-hall` (text panels), `oasis-map` (figures), `caravan-station` (glyphs, signpost text, "PLATEE"), `scholars-books` (statue figure, pseudo-script on open pages), `sudan-caravan` (distant walkers), `market-goods` (calligraphy banner), `sedrata-ruins` (tiny figures). `open-book` was dropped after two text-bearing attempts. A signature strip was cropped from `welcome-house`, `dialogue`, warjlan-sadrata `hero`, `irrigation` and `market-goods`.
+
+### public/images/lessons/nashat-dawla/
+
+- **hero.png** — `Wide panoramic view of a green palm oasis town of low flat-roofed mud-brick houses at sunrise, dense date palm groves and black volcanic hills around, a simple walled courtyard with a shaded palm-frond roof at the heart of the town, golden morning light, hopeful and peaceful`
+- **masjid.png** (explorer, square, uncropped) — `Elevated view of a simple early open-air courtyard enclosure with low mud-brick walls, one side shaded by a flat roof of dried palm fronds resting on rows of palm-trunk pillars, woven mats on the shaded sandy floor, an open wooden gateway, a small plain mud-brick house attached beside the enclosure, date palms around, bright daylight`
+- **welcome-house.png** — `Inside an ancient desert mud-brick dwelling with rough plastered walls and a palm-wood ceiling, a doorway hung with a woven curtain drawn aside letting in warm sunlight, floor cushions and woven rugs, a low wooden tray with dates, flat bread and a clay water jug, folded wool blankets for guests, generous and welcoming`
+- **brotherhood.png** — `Two small ancient clay oil lamps of the shallow open saucer kind with a pinched spout, set side by side on a rough wooden plank, one flame leaning to light the wick of the other so both glow together, plain dark mud-brick wall behind, symbolic of brotherhood and sharing`
+- **sahifa.png** — `A rolled ancient parchment scroll tied with a red cord lying on a low wooden table beside a clay inkwell and a feather quill, a small clay oil lamp glowing, rough mud-brick wall behind, calm and solemn`
+- **qibla.png** — `A simple open-air prayer courtyard of mud-brick walls and palm-trunk pillars with rows of woven prayer mats, golden afternoon light streaming in from one side and long shadows turning across the mats, a sense of a change of direction`
+- **adhan-dawn.png** — `Flat mud-brick rooftops of a palm oasis town at dawn, the first light rising over dark hills, a wide sky in rose and gold, birds flying, calm and calling atmosphere`
+- **night-watch.png** — `A mud-brick town wall with a heavy wooden gate at night under a bright full moon, two burning torches on the wall, wooden spears leaning against the wall, date palm trees around, watchful and calm, deep blue and warm amber`
+
+### public/images/lessons/ibn-ibad/
+
+- **hero.png** — `Rolled parchment letters tied with cord and a clay inkwell with a reed pen on a wooden windowsill under a pointed arch window, outside a wide calm river and dense date palm groves with low flat-roofed cube-shaped mud-brick houses at dusk, warm lamp glow`
+- **tamim-tents.png** — `Ground-level view of a large encampment of dark goat-hair tents pitched among date palms on a wide plain beside a river at sunset, camels kneeling and resting in the sand in front of the tents, long shadows, strong and secure`
+- **letter-scroll.png** — `Close-up of a plain rolled parchment scroll tied with a red cord resting on a worn brown leather satchel on a rough wooden desk, beside it a small shallow clay saucer oil lamp with a small flame and a simple cut reed stick, warm firelight, dark background`
+- **umayyad-hall.png** — `A grand palace hall with walls covered in golden and green mosaic of trees and rivers, polished marble columns and a raised empty gilded throne under a great arch, hanging lamps, opulent and quiet`
+- **mecca-valley.png** — `A desert valley town of low flat-roofed houses encircled by rugged dark mountains at dusk, rows of small campfires glowing along the mountain ridges all around the valley, tense and heavy atmosphere, deep blue and amber` (the Kaaba is deliberately not shown)
+- **dialogue.png** — `Two embroidered floor cushions facing each other across a low wooden table holding two open books and a single lit oil lamp, in a quiet room with a carved wooden screen, warm evening light, a sense of calm conversation`
+- **straight-path.png** — `A long straight stone path crossing golden desert dunes toward a glowing sunrise on the horizon, the path clear and steady, vast calm sky`
+
+### public/images/lessons/warjlan-sadrata/
+
+- **hero.png** — `Two neighboring desert oasis cities of low mud-brick houses surrounded by vast palm groves in the Sahara at golden sunset, a long line of kneeling resting camels with loaded saddlebags beside a stone well outside the walls, wide panoramic view, calm and prosperous`
+- **oasis-map.png** (explorer, square, uncropped) — `Top-down illustrated map view of a small medieval Saharan oasis town: a compact cluster of flat-roofed mud-brick houses in the center, three round stone wells beside the houses, two straight blue irrigation canals running from the town out to dense green date palm orchards at the left and bottom edges, a sandy caravan trail with resting camels at the upper right corner, plain golden sand everywhere else`
+- **caravan-station.png** — `A caravan rest stop in the Sahara at dawn: camels kneeling in a circle beside a stone well with a wooden pulley frame, leather water skins and saddlebags lying on the sand, date palms and a low mud-brick town wall in the background`
+- **irrigation.png** — `A long straight stone irrigation canal of clear flowing water running through a lush date palm grove and green gardens in the Sahara desert toward distant mud-brick houses, warm morning light`
+- **scholars-books.png** — `Still life of a stack of closed leather-bound books and tied rolled scrolls on a woven palm mat beside a clay inkwell with reed pens and a lit brass oil lamp, plain smooth sand-colored mud wall behind, warm gold light`
+- **sudan-caravan.png** — `A single long line of camels laden with colorful bundles of dyed cloth walking across golden sand dunes toward a wide empty green savanna with baobab trees at sunrise`
+- **market-goods.png** — `Close-up still life of rolls of plain brightly dyed cloth in indigo, saffron and red, baskets of spices and dates, copper pots and leather bags on a woven mat, plain palm-leaf awning above, warm light`
+- **sedrata-ruins.png** — `Close view of the top of a finely carved stucco arch and broken mud-brick walls emerging from smooth golden Sahara sand dunes, hazy pale sky, quiet and melancholic`
+- **ouargla-simple.png** — `A modest quiet Saharan oasis town of simple low mud-brick houses among tall date palms beside a stone well at dusk, peaceful and sheltered, warm lamp glow in small windows`

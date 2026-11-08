@@ -10,12 +10,15 @@ import {
 import { prophetBirthYouth } from './lessons/prophet-birth-youth'
 import { missionMushrikin } from './lessons/history-ibadi/g1-s1-l2-mission-mushrikin'
 import { hijraHabashaMadina } from './lessons/history-ibadi/g1-s1-l3-hijra-habasha-madina'
+import { nashatDawla } from './lessons/history-ibadi/g1-s1-l4-nashat-dawla'
 import { jamalSiffin } from './lessons/history-ibadi/g2-s1-l1-jamal-siffin'
 import { nahrawanMuhakkima } from './lessons/history-ibadi/g2-s1-l2-nahrawan-muhakkima'
 import { ahlDawaJabir } from './lessons/history-ibadi/g2-s1-l3-ahl-dawa-jabir'
+import { ibnIbad } from './lessons/history-ibadi/g2-s1-l4-ibn-ibad'
 import { iqtisadRustami } from './lessons/history-ibadi/g3-s1-l1-iqtisad-rustami'
 import { suqutRustamiyya } from './lessons/history-ibadi/g3-s1-l2-suqut-rustamiyya'
 import { ahlIstiqama45 } from './lessons/history-ibadi/g3-s1-l3-ahl-istiqama-4-5'
+import { warjlanSadrata } from './lessons/history-ibadi/g3-s1-l4-warjlan-sadrata'
 import { historyIbadiLessons } from './lessons/history-ibadi'
 import type { Grade, Lesson, Module, Semester } from './types'
 
@@ -26,12 +29,15 @@ const lessons: Lesson[] = [
   prophetBirthYouth,
   missionMushrikin,
   hijraHabashaMadina,
+  nashatDawla,
   jamalSiffin,
   nahrawanMuhakkima,
   ahlDawaJabir,
+  ibnIbad,
   iqtisadRustami,
   suqutRustamiyya,
   ahlIstiqama45,
+  warjlanSadrata,
   ...historyIbadiLessons,
 ]
 
