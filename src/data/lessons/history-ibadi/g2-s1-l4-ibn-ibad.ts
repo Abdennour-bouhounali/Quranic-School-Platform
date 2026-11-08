@@ -135,9 +135,9 @@ export const ibnIbad: Lesson = {
           id: 'p2',
           heading: { ar: 'تعلّمه', fr: 'Ses études', en: 'His studies' },
           text: {
-            ar: 'تعلّم عند كبار الصحابة، كعمّار بن ياسر وخزيمة بن ثابت.',
-            fr: 'Il étudia auprès de grands Compagnons, comme ‘Ammār ibn Yāsir et Khuzayma ibn Thābit.',
-            en: 'He studied with senior Companions, such as ‘Ammar ibn Yasir and Khuzayma ibn Thabit.',
+            ar: 'تعلّم عند كبار الصحابة، كعمّار بن ياسر وخزيمة بن ثابت رضي الله عنهما.',
+            fr: 'Il étudia auprès de grands Compagnons, comme ‘Ammār ibn Yāsir et Khuzayma ibn Thābit (qu’Allah les agrée).',
+            en: 'He studied with senior Companions, such as ‘Ammar ibn Yasir and Khuzayma ibn Thabit (may God be pleased with them).',
           },
         },
         {
@@ -295,9 +295,9 @@ export const ibnIbad: Lesson = {
         },
         {
           id: 'w6',
-          text: { ar: 'كان ابن إباض يصدر عن مشورته', fr: 'Ibn Ibāḍ agissait sur son conseil', en: 'Ibn Ibad acted on his counsel' },
+          text: { ar: 'أستاذ ابن إباض في العلم ومستشاره، مع أنّه أصغر منه سنًّا', fr: 'Le maître et le conseiller d’Ibn Ibāḍ, bien que plus jeune que lui', en: 'Ibn Ibad’s teacher and adviser, though younger than him' },
           side: 'left',
-          explanation: { ar: 'نعم، فابن إباض تلميذ جابر في العلم، وإن كان أكبر منه سنًّا.', fr: 'Oui : Ibn Ibāḍ était l’élève de Jābir en science, bien que plus âgé que lui.', en: 'Yes — Ibn Ibad was Jabir’s student in knowledge, though older than him.' },
+          explanation: { ar: 'نعم، فابن إباض تلميذ جابر في العلم ويصدر عن مشورته، وإن كان أكبر منه سنًّا.', fr: 'Oui : Ibn Ibāḍ était l’élève de Jābir en savoir et agissait sur son conseil, bien que plus âgé que lui.', en: 'Yes — Ibn Ibad was Jabir’s student in knowledge and acted on his counsel, though older than him.' },
         },
       ],
     },
@@ -323,9 +323,9 @@ export const ibnIbad: Lesson = {
           id: 'p1',
           heading: { ar: 'سؤالٌ من الحاكم', fr: 'Une question du souverain', en: 'A question from the ruler' },
           text: {
-            ar: 'اشتهر عبد الله بن إباض بمراسلاته مع عبد الملك بن مروان الأمويّ، عندما أرسل إليه يسأله عن آرائه.',
-            fr: '‘Abd Allāh ibn Ibāḍ est célèbre pour sa correspondance avec l’Omeyyade ‘Abd al-Malik ibn Marwān, lorsque celui-ci lui écrivit pour l’interroger sur ses avis.',
-            en: '‘Abdullah ibn Ibad is famous for his correspondence with the Umayyad ‘Abd al-Malik ibn Marwan, when the latter wrote to ask him about his views.',
+            ar: 'اشتهر عبد الله بن إباض بمراسلاته مع عبد الملك بن مروان الأمويّ، عندما أرسل إليه يسأله عن آرائه، وبيّن من خلالها مواقف أهل الدعوة والاستقامة.',
+            fr: '‘Abd Allāh ibn Ibāḍ est célèbre pour sa correspondance avec l’Omeyyade ‘Abd al-Malik ibn Marwān, lorsque celui-ci lui écrivit pour l’interroger sur ses avis ; il y exposa les positions des gens de l’Appel et de la Rectitude.',
+            en: '‘Abdullah ibn Ibad is famous for his correspondence with the Umayyad ‘Abd al-Malik ibn Marwan, when the latter wrote to ask him about his views; through it he set out the positions of the People of the Call and Rectitude.',
           },
         },
         {
@@ -393,7 +393,7 @@ export const ibnIbad: Lesson = {
           type: 'reply',
           id: 'r1',
           who: 'ibad',
-          prompt: { ar: 'بماذا بدأ ابن إباض نصيحته للحاكم؟', fr: 'Par quel conseil Ibn Ibāḍ commença-t-il ?', en: 'With what counsel did Ibn Ibad begin?' },
+          prompt: { ar: 'ماذا نصح ابن إباض الحاكمَ في رسالته؟', fr: 'Quel conseil Ibn Ibāḍ donna-t-il au souverain dans sa lettre ?', en: 'What did Ibn Ibad advise the ruler in his letter?' },
           options: [
             { id: 'a', correct: true, label: { ar: '«… ولا تظلموا الناس شيئًا»', fr: '« … Ne faites aucun tort aux gens »', en: '"… Do not wrong people in anything"' }, hint: { ar: 'هذا ما جاء في رسالة ابن إباض.', fr: 'C’est ce que dit la lettre d’Ibn Ibāḍ.', en: 'This is what Ibn Ibad’s letter says.' } },
             { id: 'b', correct: false, label: { ar: '«أطيعوا الولاة في كلّ ما يأمرون»', fr: '« Obéissez aux gouverneurs en tout ce qu’ils ordonnent »', en: '"Obey the governors in all they command"' }, hint: { ar: 'كانت رسائله نصحًا للحاكم نفسه، لا دعوةً إلى طاعة الولاة.', fr: 'Ses lettres conseillaient le souverain lui-même, pas l’obéissance aux gouverneurs.', en: 'His letters counselled the ruler himself — they did not call for obeying the governors.' } },
@@ -422,16 +422,6 @@ export const ibnIbad: Lesson = {
             { id: 'c', correct: false, label: { ar: '«وأن نسكت عمّا نراه»', fr: '« Que nous taisions ce que nous voyons »', en: '"Let us keep silent about what we see"' }, hint: { ar: 'ابن إباض كان صوت أهل الدعوة العلنيّ، لا الساكت.', fr: 'Ibn Ibāḍ était la voix publique des gens de l’Appel, pas un silencieux.', en: 'Ibn Ibad was the public voice of the People of the Call, not a silent one.' } },
           ],
         },
-        {
-          type: 'msg',
-          id: 'note',
-          who: 'ibad',
-          text: {
-            ar: 'كتبتُ كلّ ذلك عن مشورة الإمام جابر بن زيد.',
-            fr: 'J’ai écrit tout cela sur le conseil de l’imam Jābir ibn Zayd.',
-            en: 'I wrote all this on the counsel of Imam Jabir ibn Zayd.',
-          },
-        },
       ],
     },
 
@@ -456,9 +446,9 @@ export const ibnIbad: Lesson = {
           id: 'p1',
           heading: { ar: 'مع ابن الزبير في مكّة', fr: 'Avec Ibn al-Zubayr à La Mecque', en: 'With Ibn al-Zubayr in Makkah' },
           text: {
-            ar: 'لمّا قام عبد الله بن الزبير سنة 63 هـ ثائرًا في مكّة على الأمويين، بعد تولية يزيد بن معاوية ومقتل الحسين بن عليّ، انضمّ إليه المسلمون من الحجاز وأهل العراق، ومن بينهم أصحاب الإمام أبي بلال، وكان منهم عبد الله بن إباض.',
-            fr: 'Lorsque ‘Abd Allāh ibn al-Zubayr se souleva à La Mecque contre les Omeyyades en 63 H, après l’investiture de Yazīd ibn Mu‘āwiya et le meurtre d’al-Ḥusayn ibn ‘Alī, des musulmans du Hedjaz et d’Irak le rejoignirent, dont les compagnons de l’imam Abū Bilāl — parmi eux ‘Abd Allāh ibn Ibāḍ.',
-            en: 'When ‘Abdullah ibn al-Zubayr rose up in Makkah against the Umayyads in 63 AH, after Yazid ibn Mu‘awiya was installed and al-Husayn ibn ‘Ali was killed, Muslims from the Hijaz and Iraq joined him, among them the companions of Imam Abu Bilal — including ‘Abdullah ibn Ibad.',
+            ar: 'لمّا قام عبد الله بن الزبير سنة 63 هـ ثائرًا في مكّة على الأمويين، بعد تولية يزيد بن معاوية ومقتل الحسين بن عليّ رضي الله عنهما، انضمّ إليه المسلمون من الحجاز وأهل العراق، ومن بينهم أصحاب الإمام أبي بلال، وكان منهم عبد الله بن إباض.',
+            fr: 'Lorsque ‘Abd Allāh ibn al-Zubayr se souleva à La Mecque contre les Omeyyades en 63 H, après l’investiture de Yazīd ibn Mu‘āwiya et le meurtre d’al-Ḥusayn ibn ‘Alī (qu’Allah les agrée), des musulmans du Hedjaz et d’Irak le rejoignirent, dont les compagnons de l’imam Abū Bilāl — parmi eux ‘Abd Allāh ibn Ibāḍ.',
+            en: 'When ‘Abdullah ibn al-Zubayr rose up in Makkah against the Umayyads in 63 AH, after Yazid ibn Mu‘awiya was installed and al-Husayn ibn ‘Ali (may God be pleased with them) was killed, Muslims from the Hijaz and Iraq joined him, among them the companions of Imam Abu Bilal — including ‘Abdullah ibn Ibad.',
           },
         },
         {
@@ -585,13 +575,14 @@ export const ibnIbad: Lesson = {
           id: 't2',
           period: { ar: 'زمن الصحابة', fr: 'L’époque des Compagnons', en: 'The age of the Companions' },
           label: { ar: 'طلب العلم', fr: 'La quête du savoir', en: 'Seeking knowledge' },
-          detail: { ar: 'تعلّم عند كبار الصحابة كعمّار بن ياسر وخزيمة بن ثابت، ثمّ صار تلميذًا للإمام جابر في العلم وإن كان أكبر منه سنًّا.', fr: 'Il étudia auprès de grands Compagnons comme ‘Ammār ibn Yāsir et Khuzayma ibn Thābit, puis devint l’élève de l’imam Jābir en science, bien que plus âgé que lui.', en: 'He studied with senior Companions such as ‘Ammar ibn Yasir and Khuzayma ibn Thabit, and became Imam Jabir’s student in knowledge, though older than him.' },
+          detail: { ar: 'تعلّم عند كبار الصحابة كعمّار بن ياسر وخزيمة بن ثابت رضي الله عنهما، ثمّ صار تلميذًا للإمام جابر في العلم وإن كان أكبر منه سنًّا.', fr: 'Il étudia auprès de grands Compagnons comme ‘Ammār ibn Yāsir et Khuzayma ibn Thābit, puis devint l’élève de l’imam Jābir en science, bien que plus âgé que lui.', en: 'He studied with senior Companions such as ‘Ammar ibn Yasir and Khuzayma ibn Thabit, and became Imam Jabir’s student in knowledge, though older than him.' },
         },
         {
           id: 't3',
           period: { ar: '63 هـ', fr: '63 H', en: '63 AH' },
           label: { ar: 'الدفاع عن مكّة', fr: 'La défense de La Mecque', en: 'Defending Makkah' },
           detail: { ar: 'انضمّ مع أصحاب أبي بلال إلى ابن الزبير في مكّة، وحاصرها الجيش الأمويّ 60 يومًا.', fr: 'Avec les compagnons d’Abū Bilāl, il rejoignit Ibn al-Zubayr à La Mecque, que l’armée omeyyade assiégea 60 jours.', en: 'With Abu Bilal’s companions he joined Ibn al-Zubayr in Makkah, which the Umayyad army besieged for 60 days.' },
+          certainty: 'approximate',
         },
         {
           id: 't4',
@@ -644,7 +635,7 @@ export const ibnIbad: Lesson = {
         {
           id: 'p3',
           heading: { ar: 'الدعوة والاستقامة', fr: 'L’Appel et la Rectitude', en: 'The Call and Rectitude' },
-          text: { ar: 'الدعوة إلى الله أحسن القول، والاستقامة على الطريق أرفع الفعل.', fr: 'Appeler à Dieu est la meilleure des paroles, et la rectitude sur le chemin est le plus noble des actes.', en: 'Calling to God is the best of speech, and steadfastness on the path is the highest of deeds.' },
+          text: { ar: 'الدعوة إلى الله أحسن القول، والاستقامة على الطريق أرفع الفعل.', fr: 'Appeler à Dieu est la meilleure des paroles, et la rectitude sur le chemin est le plus noble des actes.', en: 'Calling to God is the best of speech, and rectitude on the path is the highest of deeds.' },
         },
       ],
     },
@@ -813,7 +804,7 @@ export const ibnIbad: Lesson = {
         {
           id: 'courage',
           value: { ar: 'قول الحقّ', fr: 'Dire la vérité', en: 'Speaking the truth' },
-          evidence: { ar: 'بيّن للحاكم موقف أصحابه من انحراف القيادة عن نهج الراشدين.', fr: 'Il exposa au souverain la position de ses compagnons face à l’écart du pouvoir.', en: 'He told the ruler his companions’ position on the leadership’s deviation.' },
+          evidence: { ar: 'بيّن للحاكم موقف أصحابه من انحراف القيادة عن نهج الراشدين.', fr: 'Il exposa au souverain la position de ses compagnons face à l’écart du pouvoir par rapport à la voie des califes bien guidés.', en: 'He told the ruler his companions’ position on the leadership’s departure from the way of the Rightly Guided Caliphs.' },
         },
         {
           id: 'humility',
@@ -844,14 +835,14 @@ export const ibnIbad: Lesson = {
           en: 'After Siffin, the People of the Call were judged by what was said of them, so Ibn Ibad took on explaining their view.',
         },
         {
-          ar: 'ابن إباض من بني تميم، وُلد قبل 23 هـ، وتعلّم عند عمّار بن ياسر وخزيمة بن ثابت، وكان حيًّا سنة 86 هـ.',
+          ar: 'ابن إباض من بني تميم، وُلد قبل 23 هـ، وتعلّم عند عمّار بن ياسر وخزيمة بن ثابت رضي الله عنهما، وكان حيًّا سنة 86 هـ.',
           fr: 'Ibn Ibāḍ, des Banū Tamīm, naquit avant 23 H, étudia auprès de ‘Ammār ibn Yāsir et de Khuzayma ibn Thābit, et vivait encore en 86 H.',
           en: 'Ibn Ibad, of Banu Tamim, was born before 23 AH, studied with ‘Ammar ibn Yasir and Khuzayma ibn Thabit, and was still alive in 86 AH.',
         },
         {
-          ar: 'راسل عبد الملك بن مروان ناصحًا: «ولا تظلموا الناس شيئًا، وأن يكون كتاب الله حكمًا بيني وبينكم».',
-          fr: 'Il écrivit à ‘Abd al-Malik ibn Marwān pour le conseiller : « Ne faites aucun tort aux gens, et que le Livre de Dieu soit juge entre moi et vous. »',
-          en: 'He wrote to ‘Abd al-Malik ibn Marwan in counsel: "Do not wrong people in anything, and let the Book of God be the judge between me and you."',
+          ar: 'راسل عبد الملك بن مروان ناصحًا: «… ولا تظلموا الناس شيئًا، وأن يكون كتاب الله حكمًا بيني وبينكم فيما اختلفنا فيه».',
+          fr: 'Il écrivit à ‘Abd al-Malik ibn Marwān pour le conseiller : « … Ne faites aucun tort aux gens, et que le Livre de Dieu soit juge entre moi et vous en ce sur quoi nous divergeons. »',
+          en: 'He wrote to ‘Abd al-Malik ibn Marwan in counsel: "… Do not wrong people in anything, and let the Book of God be the judge between me and you in what we differ on."',
         },
         {
           ar: 'دافع عن مكّة سنة 63 هـ، وناظر نافع بن الأزرق وأنكر عليه استحلال دماء المسلمين.',

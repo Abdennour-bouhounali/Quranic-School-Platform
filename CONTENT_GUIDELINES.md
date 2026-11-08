@@ -6,7 +6,8 @@ The quality of a lesson matters more than its length.
 ## 1. Respect for the Prophet ﷺ and the prophets
 
 - **Never depict the Prophet Muhammad ﷺ visually.** That rules out a face, body, silhouette, shadow, hands, a back view, a figure of light, or any human figure that could be read as him.
-- In practice, **lesson illustrations contain no human figures at all**. Scenes are told through landscapes, architecture, objects, animals, light and sky. The same rule applies to other prophets and to the Companions.
+- **Never depict the other prophets or the Companions (الصحابة) either**: no face, figure, silhouette or back view of them, and no crowd, army or gathering in a scene where the Prophet ﷺ or Companions were present (the Black Stone, Ḥilf al-Fuḍūl, Ḥirāʾ, the Hijra, Badr, the Camel, Ṣiffīn, ʿAlī's army at Nahrawan, his assassination…). Such scenes are told through landscapes, architecture, objects, animals, light and sky.
+- Other people may appear (later rulers, armies and townspeople, e.g. the Rustamid or Fatimid periods), as long as nothing in the picture could be read as the Prophet ﷺ or a Companion.
 - Write **محمد ﷺ** with ﷺ after his name and after "the Prophet". Use (عليه السلام / peace be upon him) for other prophets, and (رضي الله عنها / may God be pleased with her) for Companions such as Khadīja.
 - Treat the Kaaba respectfully: no playful distortion, and no gamified effects on it.
 
@@ -20,28 +21,23 @@ Before adding a fact, ask:
 4. Can the learner interact with it?
 5. Does it help them understand the story?
 
+**Source of truth:** the textbook slides in `Other ressources/*.pdf` (and the photos in `ressources/`). **Every piece of information in a lesson's slides must appear in the lesson.** Do not drop slide content because it is debated or weakly reported.
+
 Then:
 
 - **Established** facts are stated plainly.
-- **Widely accepted but imprecise** details (ages, some dates) are marked `certainty: 'approximate'` and phrased with "about / نحو / environ".
-- **Disputed** details are left out of MVP lessons, or presented explicitly as differing opinions. Do not build a game on them.
-- Never invent details to make an activity work. If an activity needs a fact that isn't reliable, change the activity.
+- **Imprecise or debated** details that are in the slides (ages, some dates) are kept, and marked `certainty: 'approximate'` / phrased with "about / نحو / environ" where the schema allows.
+- **Clear errors in the slides are corrected**, not copied: a wrong year (e.g. a birth year of 632 CE instead of about 571 CE), a wrong place, an obvious typo that reverses the meaning, and spelling or grammar mistakes.
+- Never invent details to make an activity work. If an activity needs a fact that isn't in the sources, change the activity.
 
 ### Choices made in the reference lesson
 
 | Topic | Treatment | Why |
 |---|---|---|
-| Birth year | "the Year of the Elephant", with no Gregorian year and no exact day | The year name is agreed upon. The exact day and date are debated, so they are left out. |
-| Father's death | before his birth | The majority position in the Sīra |
-| Time with Ḥalīma | "his first years" | The exact duration varies between reports |
-| Mother's death | "about six" (approximate badge) | Commonly reported and approximate |
-| Grandfather's death | "about eight" | Commonly reported and approximate |
+| Birth | "the Year of the Elephant", Monday 12 Rabīʿ al-Awwal, about 571 CE | As the slides state, with the slide's Gregorian year (632, the year of his death) corrected |
+| Birth wonders (the light, the star, Kisrā's palace) | kept, as in the slides | The slides include them |
+| Mother's death, marriage and other ages | as in the slides, approximate badge | Reports differ slightly |
 | Shepherding | stated, with his ﷺ statement that every prophet shepherded | Authentic hadith (al-Bukhārī) |
-| Trade for Khadīja to al-Shām | stated | Well established in the Sīra |
-| Marriage | "about twenty-five" (approximate badge) | The most widely held age |
-| "al-Amīn" | stated | Well established |
-| Baḥīrā encounter, age-12 journey details | **omitted** | Details and chains are debated. Not needed at this level. |
-| Birth miracles and wonders | **omitted** | Many reports are weak. The lesson focuses on the reliable core. |
 
 Changes to religious or historical content should be reviewed by a qualified teacher before release.
 

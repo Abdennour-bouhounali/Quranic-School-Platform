@@ -2,7 +2,7 @@ import type { Lesson } from '../../types'
 
 // Source: Ibadite History textbook Grade 3 (Other ressources/Ibadite_History_S5.pdf), "الدرس الثلاثون: أهل الاستقامة بين القرنين 4 و5 هـ", slides 2–9 (pages 23–31).
 //   Slide 2 — تغيّر أحوال المغرب: معاناة سكان المغرب الأوسط من العبيديين الذين لم يرغبوا في مشاركة الحكم، فتوسّعوا تدريجيًّا محاربين القبائل،
-//             فعمّ الخوف وقلّ الإنتاج؛ قول أبي زكريا فصيل (القرن 4 هـ): «إذا قحطت الأرض تنال الجنة بقبضة من طعام، وإذا قحط الإسلام تنال الجنة بكلمة حق تقال…».
+//             فعمّ الخوف وقلّ الإنتاج؛ قول أبي زكرياء فصيل (القرن 4 هـ): «إذا قحطت الأرض تنال الجنة بقبضة من طعام، وإذا قحط الإسلام تنال الجنة بكلمة حق تقال…».
 //   Slide 3 — ثورة أبي يزيد: أبو يزيد مخلد بن كيداد النكّاري، انطلق من توزر على حماره سنة 331 هـ، دخل مدن الأوراس وغرب إفريقية وأسقط قبيلة كتامة، حاصر المهدية،
 //             كاد يسقط دولتهم لولا جماعة من أصحابه لا خير فيهم انضمّوا للنهب والفساد، فلم يُنكر عليهم، فتخلّت عنه القبائل، انهزم سنة 334 هـ،
 //             وتبعه الجيش، وخاصّة من وقف معه من أهل الدعوة المتحصّنين في البوادي والجبال المنيعة.
@@ -30,7 +30,7 @@ export const ahlIstiqama45: Lesson = {
     en: 'A fortified mud-brick mountain village carved into the rocks of the Maghreb at sunset, a long caravan trail below under a blazing sky',
   },
   title: {
-    ar: 'أهل الاستقامة في القرنين 4 و5 هجري',
+    ar: 'أهل الاستقامة في القرنين 4 و5 للهجرة',
     fr: 'Les gens de la Rectitude aux IVe et Ve siècles de l’Hégire',
     en: 'The People of Rectitude in the 4th and 5th centuries AH',
   },
@@ -102,7 +102,7 @@ export const ahlIstiqama45: Lesson = {
       id: 'reading-changes',
       title: { ar: 'اقرأ: تغيّر أحوال المغرب', fr: 'Lis : le Maghreb change', en: 'Read: the Maghreb changes' },
       intro: {
-        ar: 'اقرأ كيف عاش الناس، ثمّ أعِد بناء قول أبي زكريا فصيل في اللعبة.',
+        ar: 'اقرأ كيف عاش الناس، ثمّ أعِد بناء قول أبي زكرياء فصيل في اللعبة.',
         fr: 'Lis comment les gens vivaient, puis reconstitue la parole d’Abū Zakariyyā’ Faṣīl dans le jeu.',
         en: 'Read how people lived, then rebuild Abu Zakariya Fasil’s saying in the game.',
       },
@@ -117,23 +117,23 @@ export const ahlIstiqama45: Lesson = {
           id: 'p1',
           heading: { ar: 'حكّامٌ لا يشاركون', fr: 'Des dirigeants qui ne partagent pas', en: 'Rulers who would not share' },
           text: {
-            ar: 'عانى سكّان بلاد المغرب، خصوصًا المغرب الأوسط، من العبيديّين. فلم يرغب حكّامهم أن يُشاركوا الحكم، فتوسّعوا تدريجيًّا محاربين القبائل.',
-            fr: 'Les habitants du Maghreb, surtout du Maghreb central, souffrirent des Ubaydides. Leurs dirigeants ne voulaient pas partager le pouvoir, et étendirent peu à peu leur contrôle en combattant les tribus.',
-            en: 'The people of the Maghreb, especially the central Maghreb, suffered under the Ubaydids. Their rulers did not want to share power, so they gradually expanded their control by fighting the tribes.',
+            ar: 'عانى سكّان بلاد المغرب، خصوصًا المغرب الأوسط، من العبيديّين الذين اكتسحوا بلاد المغرب ثمّ امتدّوا إلى مصر. فلم يرغب حكّامهم أن يُشاركوا الحكم، فتوسّعوا تدريجيًّا محاربين القبائل.',
+            fr: 'Les habitants du Maghreb, surtout du Maghreb central, souffrirent des Ubaydides, qui balayèrent le Maghreb puis s’étendirent jusqu’à l’Égypte. Leurs dirigeants ne voulaient pas partager le pouvoir, et étendirent peu à peu leur contrôle en combattant les tribus.',
+            en: 'The people of the Maghreb, especially the central Maghreb, suffered under the Ubaydids, who swept across the Maghreb and then extended into Egypt. Their rulers did not want to share power, so they gradually expanded their control by fighting the tribes.',
           },
         },
         {
           id: 'p2',
           heading: { ar: 'خوفٌ وفقر', fr: 'Peur et pauvreté', en: 'Fear and poverty' },
           text: {
-            ar: 'تعسّفوا وأخذوا الأموال وأرزاق الناس، فتذمّرت القبائل وساد الاستياء. فعمّ الخوف وقلّ الإنتاج، حتى بلغ الناس زمانًا وصفه أبو زكريا فصيل في القرن الرابع الهجري.',
-            fr: 'Ils se montrèrent arbitraires et saisirent biens et subsistances des gens ; les tribus s’indignèrent et le mécontentement régna. La peur s’étendit et la production baissa, jusqu’à un temps que décrivit Abū Zakariyyā’ Faṣīl, au IVe siècle de l’Hégire.',
-            en: 'They were oppressive and seized people’s wealth and livelihoods, so the tribes grew resentful and discontent spread. Fear grew and production fell, until a time that Abu Zakariya Fasil described in the 4th century AH.',
+            ar: 'تعسّفوا وأخذوا الأموال وأرزاق الناس، ممّا جعل جموع السكّان تثور عليهم. فعمّ الخوف وقلّ الإنتاج، حتى بلغ الناس زمانًا وصفه أبو زكرياء فصيل في القرن الرابع الهجري.',
+            fr: 'Ils se montrèrent arbitraires et saisirent biens et subsistances des gens, si bien que la population se souleva contre eux. La peur s’étendit et la production baissa, jusqu’à un temps que décrivit Abū Zakariyyā’ Faṣīl, au IVe siècle de l’Hégire.',
+            en: 'They were oppressive and seized people’s wealth and livelihoods, so the population rose up against them. Fear grew and production fell, until a time that Abu Zakariya Fasil described in the 4th century AH.',
           },
         },
         {
           id: 'p3',
-          heading: { ar: 'كلمات أبي زكريا فصيل', fr: 'Les mots d’Abū Zakariyyā’ Faṣīl', en: 'Abu Zakariya Fasil’s words' },
+          heading: { ar: 'كلمات أبي زكرياء فصيل', fr: 'Les mots d’Abū Zakariyyā’ Faṣīl', en: 'Abu Zakariya Fasil’s words' },
           text: {
             ar: '«إذا قحطت الأرض تُنال الجنّة بقبضة من طعام، وإذا قحط الإسلام تُنال الجنّة بكلمة حقّ تُقال، وقحط الإسلام أشدّ من قحط الطعام، وقد اجتمع الاثنان في زماننا هذا.»',
             fr: '« Quand la terre est en disette, on gagne le Paradis par une poignée de nourriture ; quand l’islam est en disette, on gagne le Paradis par une parole de vérité dite. Et la disette de l’islam est plus dure que celle de la nourriture, et les deux se sont réunies à notre époque. »',
@@ -150,14 +150,14 @@ export const ahlIstiqama45: Lesson = {
       source: 'saying',
       title: { ar: 'قحط الأرض وقحط الإسلام', fr: 'Disette de la terre, disette de l’islam', en: 'Famine of the land, famine of Islam' },
       intro: {
-        ar: 'قرأتَ كلمات أبي زكريا فصيل في النصّ. أعِد الآن بناء كلّ جملةٍ منها بالترتيب.',
+        ar: 'قرأتَ كلمات أبي زكرياء فصيل في النصّ. أعِد الآن بناء كلّ جملةٍ منها بالترتيب.',
         fr: 'Tu as lu les mots d’Abū Zakariyyā’ Faṣīl dans le texte. Reconstruis maintenant chacune de ses phrases dans l’ordre.',
         en: 'You read Abu Zakariya Fasil’s words in the text. Now rebuild each of his sentences in order.',
       },
       verses: [
         {
           id: 'f1',
-          context: { ar: 'يقول أبو زكريا فصيل:', fr: 'Abū Zakariyyā’ Faṣīl dit :', en: 'Abu Zakariya Fasil says:' },
+          context: { ar: 'يقول أبو زكرياء فصيل:', fr: 'Abū Zakariyyā’ Faṣīl dit :', en: 'Abu Zakariya Fasil says:' },
           ref: { ar: 'القرن 4 هـ', fr: 'IVe siècle H', en: '4th century AH' },
           words: ['إِذَا', 'قَحَطَتِ', 'الْأَرْضُ', 'تُنَالُ', 'الْجَنَّةُ', 'بِقَبْضَةٍ', 'مِنْ', 'طَعَامٍ'],
           meaning: {
@@ -219,12 +219,12 @@ export const ahlIstiqama45: Lesson = {
         {
           id: 'p2',
           heading: { ar: 'يقترب من المهدية', fr: 'Il approche de Mahdia', en: 'He nears Mahdia' },
-          text: { ar: 'دخل مدن الأوراس وغرب إفريقية، وأسقط قبيلة كتامة، وتقدّم نحو المهدية عاصمة العبيديين وحاصرها أيّامًا، حتى كاد يُسقط دولتهم.', fr: 'Il entra dans les villes de l’Aurès et de l’ouest de l’Ifrīqiya, renversa la tribu des Kutāma, avança vers Mahdia, capitale des Ubaydides, et l’assiégea plusieurs jours, faillissant faire tomber leur État.', en: 'He entered the cities of the Aurès and western Ifriqiya, overthrew the Kutama tribe, advanced toward Mahdia, the Ubaydid capital, and besieged it for days, nearly toppling their state.' },
+          text: { ar: 'دخل مدن الأوراس وغرب إفريقية، وأسقط قبيلة كتامة، وتقدّم نحو المهدية عاصمة العبيديين (في تونس اليوم، وفيها قصر القائم بن عبيد الله) وحاصرها أيّامًا، حتى كاد يُسقط دولتهم.', fr: 'Il entra dans les villes de l’Aurès et de l’ouest de l’Ifrīqiya, renversa la tribu des Kutāma, avança vers Mahdia, capitale des Ubaydides (dans l’actuelle Tunisie, où se trouve le palais d’al-Qā’im ibn ‘Ubayd Allāh), et l’assiégea plusieurs jours, faillissant faire tomber leur État.', en: 'He entered the cities of the Aurès and western Ifriqiya, overthrew the Kutama tribe, advanced toward Mahdia, the Ubaydid capital (in today’s Tunisia, home of the palace of al-Qa’im ibn ‘Ubayd Allah), and besieged it for days, nearly toppling their state.' },
         },
         {
           id: 'p3',
           heading: { ar: 'ما أضعفه', fr: 'Ce qui l’affaiblit', en: 'What weakened him' },
-          text: { ar: 'لولا أنّ جماعةً من أصحابه لا خير فيهم انضمّوا إليه طمعًا في النهب وإحداث الفساد في المدن، ولم يُنكر عليهم أبو يزيد، فتخلّت عنه القبائل التي كانت تؤيّده.', fr: 'Mais des gens peu recommandables parmi ses compagnons le rejoignirent par désir de pillage et de désordre dans les villes ; Abū Yazīd ne les réprimanda pas, et les tribus qui le soutenaient l’abandonnèrent.', en: 'But a group of his companions of bad conduct joined him seeking loot and to cause corruption in the cities; Abu Yazid did not reprimand them, and the tribes that supported him abandoned him.' },
+          text: { ar: 'لكنّ جماعةً من أصحابه لا خير فيهم انضمّوا إليه طمعًا في النهب، وعاثوا في المدن فسادًا، ولم يُنكر عليهم أبو يزيد، فتخلّت عنه القبائل التي كانت تؤيّده.', fr: 'Mais un groupe de ses compagnons, peu recommandables, l’avait rejoint par désir de pillage et sema le désordre dans les villes ; Abū Yazīd ne les réprimanda pas, et les tribus qui le soutenaient l’abandonnèrent.', en: 'But a group of his companions of bad conduct had joined him out of greed for loot and spread corruption in the cities; Abu Yazid did not reprimand them, so the tribes that supported him abandoned him.' },
         },
         {
           id: 'p4',
@@ -261,7 +261,7 @@ export const ahlIstiqama45: Lesson = {
           prompt: { ar: 'فمن قاد أكبر ثورة ضدّ العبيديين، وكيف انطلق؟', fr: 'Qui mena la plus grande révolte contre les Ubaydides, et comment partit-il ?', en: 'Who led the largest revolt against the Ubaydids, and how did he set out?' },
           correct: { ar: 'أبو يزيد مخلد بن كيداد النكّاري، انطلق من توزر على حماره سنة 331 هـ', fr: 'Abū Yazīd Makhlad ibn Kaydād an-Nukkārī, parti de Tozeur sur son âne en 331 H', en: 'Abu Yazid Makhlad ibn Kaydad al-Nukkari, who set out from Tozeur on his donkey in 331 AH' },
           distractors: [
-            { label: { ar: 'أبو نوح سعيد بن زنغيل، من وارجلان', fr: 'Abū Nūḥ Sa‘īd ibn Zanghīl, depuis Ouargla', en: 'Abu Nuh Sa‘id ibn Zanghil, from Warjlan' }, hint: { ar: 'أبو نوح من الشيخين اللذين جاءا بعد ذلك بعقود.', fr: 'Abū Nūḥ est l’un des deux cheikhs qui vinrent des décennies plus tard.', en: 'Abu Nuh is one of the two sheikhs who came decades later.' } },
+            { label: { ar: 'أبو نوح سعيد بن زنغيل، من وارجلان', fr: 'Abū Nūḥ Sa‘īd ibn Zanghīl, depuis Ouargla', en: 'Abu Nuh Sa‘id ibn Zanghil, from Warjlan' }, hint: { ar: 'أبو نوح من الشيخين اللذين ظهر دورهما بعد ذلك بنحو ربع قرن (357–358 هـ).', fr: 'Abū Nūḥ est l’un des deux cheikhs dont le rôle vint environ un quart de siècle plus tard (357–358 H).', en: 'Abu Nuh is one of the two sheikhs whose role came about a quarter of a century later (357–358 AH).' } },
             { label: { ar: 'أبو القاسم يزيد بن مخلد من الحامة', fr: 'Abū al-Qāsim Yazīd ibn Makhlad d’al-Ḥamma', en: 'Abu al-Qasim Yazid ibn Makhlad of al-Hamma' }, hint: { ar: 'أبو القاسم من علماء الدعوة قُتل سنة 357 هـ.', fr: 'Abū al-Qāsim fut un savant de l’Appel tué en 357 H.', en: 'Abu al-Qasim was a scholar of the Call, killed in 357 AH.' } },
           ],
         },
@@ -295,9 +295,9 @@ export const ahlIstiqama45: Lesson = {
         },
       ],
       ending: {
-        ar: 'انهزمت الثورة سنة 334 هـ، لكنّ أهل الدعوة ظلّوا متحصّنين في البوادي والجبال المنيعة.',
-        fr: 'La révolte échoua en 334 H, mais les gens de l’Appel restèrent retranchés dans les déserts et les montagnes inaccessibles.',
-        en: 'The revolt was defeated in 334 AH, but the People of the Call remained sheltered in remote deserts and fortified mountains.',
+        ar: 'انهزمت الثورة سنة 334 هـ، وتعقّب الجيشُ من وقف معه، وخاصّةً أهل الدعوة الذين تحصّنوا في البوادي والجبال المنيعة.',
+        fr: 'La révolte échoua en 334 H, et l’armée traqua ceux qui l’avaient soutenu, surtout les gens de l’Appel retranchés dans les déserts et les montagnes inaccessibles.',
+        en: 'The revolt was defeated in 334 AH, and the army hunted down those who had stood with him, especially the People of the Call who had taken refuge in remote deserts and fortified mountains.',
       },
     },
 
@@ -322,16 +322,16 @@ export const ahlIstiqama45: Lesson = {
           id: 'p1',
           heading: { ar: 'اعتداءٌ على عالم', fr: 'Une agression contre un savant', en: 'An attack on a scholar' },
           text: {
-            ar: 'من بين عدوان العبيديين قتلُ الشيخ أبي القاسم يزيد بن مخلد سنة 357 هـ، وهو من أجلّ علماء أهل الدعوة بالحامة.',
-            fr: 'Parmi les agressions des Ubaydides, la mort du cheikh Abū al-Qāsim Yazīd ibn Makhlad en 357 H, l’un des plus éminents savants des gens de l’Appel à al-Ḥamma.',
-            en: 'Among the Ubaydids’ aggressions was the killing of Sheikh Abu al-Qasim Yazid ibn Makhlad in 357 AH, one of the most esteemed scholars of the Call in al-Hamma.',
+            ar: 'من بين عدوان العبيديين قتلُ الشيخ أبي القاسم يزيد بن مخلد سنة 357 هـ، وهو من أجلّ علماء أهل الدعوة بالحامة (حامة الجريد في تونس اليوم).',
+            fr: 'Parmi les agressions des Ubaydides, la mort du cheikh Abū al-Qāsim Yazīd ibn Makhlad en 357 H, l’un des plus éminents savants des gens de l’Appel à al-Ḥamma (al-Ḥāmma du Djérid, dans l’actuelle Tunisie).',
+            en: 'Among the Ubaydids’ aggressions was the killing of Sheikh Abu al-Qasim Yazid ibn Makhlad in 357 AH, one of the most esteemed scholars of the Call in al-Hamma (al-Hamma of the Jarid, in today’s Tunisia).',
           },
         },
         {
           id: 'p2',
           heading: { ar: 'قرارٌ ونصيحة', fr: 'Une décision et un conseil', en: 'A decision and advice' },
           text: {
-            ar: 'فعزم الشيخان أبو خزر يغلا بن زلتاف وأبو نوح سعيد بن زنغيل — رحمهما الله — على التصدّي للعبيديين وإنهاء ظلمهم. لكنّ مواردهم كانت محدودة، فأرسلوا إلى الجهات يستنفرون. ونصحهم مشايخ آخرون بعدم الثأر والثورة دون القوّة اللازمة، لكنّهما سارا إلى بغاي دون انتظار العون.',
+            ar: 'فعزم الشيخان أبو خزر يغلا بن زلتاف وأبو نوح سعيد بن زنغيل — رحمهما الله — على إلزام العبيديين حدّهم وإنهاء ظلمهم. لكنّ مواردهم كانت محدودة، فأرسلوا إلى الجهات يستنفرون. ونصحهم مشايخ آخرون بعدم الثأر والثورة دون القوّة اللازمة، لكنّهما سارا إلى بغاي دون انتظار العون.',
             fr: 'Les deux cheikhs, Abū Khazar Yaghlā ibn Zultāf et Abū Nūḥ Sa‘īd ibn Zanghīl — que Dieu leur fasse miséricorde — décidèrent d’affronter les Ubaydides pour mettre fin à leur oppression. Mais leurs moyens étaient limités ; ils lancèrent donc des appels de soutien dans plusieurs régions. D’autres cheikhs leur conseillèrent de ne pas chercher vengeance ni se révolter sans la force nécessaire, mais ils marchèrent vers Baghāy sans attendre de renforts.',
             en: 'The two sheikhs, Abu Khazar Yaghla ibn Zultaf and Abu Nuh Sa‘id ibn Zanghil — may God have mercy on them — resolved to confront the Ubaydids and end their oppression. But their resources were limited, so they sent calls for support to various regions. Other sheikhs advised against revenge and revolt without the necessary strength, but the two marched to Baghay without waiting for reinforcements.',
           },
@@ -375,15 +375,15 @@ export const ahlIstiqama45: Lesson = {
         },
         {
           id: 'w3',
-          text: { ar: 'سارا إلى بغاي دون انتظار العون', fr: 'Ils marchèrent vers Baghāy sans attendre de renforts', en: 'They marched to Baghay without waiting for reinforcements' },
+          text: { ar: 'كان قتل أبي القاسم واحدًا من اعتداءات العبيديين المتتالية', fr: 'La mort d’Abū al-Qāsim n’était qu’une des agressions répétées des Ubaydides', en: 'Abu al-Qasim’s killing was one of the Ubaydids’ repeated aggressions' },
           side: 'left',
-          explanation: { ar: 'هذا قرارٌ بالخروج الفوريّ.', fr: 'C’est la décision de marcher aussitôt.', en: 'This is the decision to march at once.' },
+          explanation: { ar: 'تتابع العدوان جعلهما يعزمان على إلزام العبيديين حدّهم.', fr: 'Ces agressions successives les décidèrent à remettre les Ubaydides à leur place.', en: 'The string of aggressions made them resolve to hold the Ubaydids in check.' },
         },
         {
           id: 'w4',
           text: { ar: 'كانت مواردهم محدودة', fr: 'Leurs moyens étaient limités', en: 'Their resources were limited' },
           side: 'right',
-          explanation: { ar: 'مواردٌ قليلة تدعو إلى التريّث.', fr: 'Des moyens faibles appellent à la patience.', en: 'Scarce resources call for patience.' },
+          explanation: { ar: 'مواردُ قليلة تدعو إلى التريّث.', fr: 'Des moyens faibles appellent à la patience.', en: 'Scarce resources call for patience.' },
         },
         {
           id: 'w5',
@@ -393,9 +393,9 @@ export const ahlIstiqama45: Lesson = {
         },
         {
           id: 'w6',
-          text: { ar: 'خسر أهل الدعوة جمعًا كبيرًا من طلبتهم في معركة 358 هـ', fr: 'Les gens de l’Appel perdirent un grand nombre d’étudiants lors de la bataille de 358 H', en: 'The People of the Call lost many students in the battle of 358 AH' },
+          text: { ar: 'أرسلا إلى الجهات يستنفران، ولم يكن العون قد وصل بعد', fr: 'Ils avaient lancé des appels dans plusieurs régions, mais les renforts n’étaient pas encore arrivés', en: 'They had sent calls for support to various regions, but reinforcements had not yet arrived' },
           side: 'right',
-          explanation: { ar: 'نتيجةٌ تُظهر حكمة التريّث.', fr: 'Une conséquence qui montre la sagesse de la patience.', en: 'A result that shows the wisdom of patience.' },
+          explanation: { ar: 'انتظار العون كان يدعو إلى التريّث، لكنّهما سارا إلى بغاي دون انتظاره.', fr: 'Attendre les renforts appelait à la patience, mais ils marchèrent vers Baghāy sans les attendre.', en: 'Waiting for help called for patience, but they marched to Baghay without waiting for it.' },
         },
       ],
     },
@@ -412,7 +412,7 @@ export const ahlIstiqama45: Lesson = {
         {
           id: 'p1',
           heading: { ar: 'الأمير يبحث عنهما', fr: 'L’émir les cherche', en: 'The emir searches for them' },
-          text: { ar: 'أرسل الأمير الشيعيّ قوّاته يبحث عن الشيخين أبي نوح وأبي خزر، بعد أن هزّ ما فعلاه سلطانه. فاستطاعوا القبض على أبي نوح، لكنّ الأمير احترمه وقرّبه منه خوفًا من قوّة عقله وفصاحة لسانه، وسعى إلى أبي خزر قائد المقاومة.', fr: 'L’émir chiite envoya ses forces à la recherche des deux cheikhs, Abū Nūḥ et Abū Khazar, après que leurs actes eurent ébranlé son autorité. Ils parvinrent à capturer Abū Nūḥ, mais l’émir le respecta et le rapprocha de lui, craignant la force de son intelligence et son éloquence, et il chercha Abū Khazar, chef de la résistance.', en: 'The Shi‘i emir sent forces to search for the two sheikhs, Abu Nuh and Abu Khazar, after their actions had shaken his authority. They managed to capture Abu Nuh, but the emir respected him and brought him close, fearing his strong intellect and eloquence, and he sought Abu Khazar, the leader of the resistance.' },
+          text: { ar: 'أرسل الأمير الشيعيّ قوّاته تبحث عن الشيخين أبي نوح وأبي خزر، بعد أن هزّ ما فعلاه سلطانه. فاستطاعوا القبض على أبي نوح، لكنّ الأمير احترمه وقرّبه منه خوفًا من قوّة عقله وفصاحة لسانه، وأراد أيضًا أبا خزر، إمامَ الدفاع وقائد المقاومة.', fr: 'L’émir chiite envoya ses forces à la recherche des deux cheikhs, Abū Nūḥ et Abū Khazar, après que leurs actes eurent ébranlé son autorité. Ils parvinrent à capturer Abū Nūḥ, mais l’émir le respecta et le rapprocha de lui, craignant la force de son intelligence et son éloquence, et il voulut aussi Abū Khazar, imam de la défense et chef de la résistance.', en: 'The Shi‘i emir sent forces to search for the two sheikhs, Abu Nuh and Abu Khazar, after their actions had shaken his authority. They managed to capture Abu Nuh, but the emir respected him and brought him close, fearing his strong intellect and eloquence, and he also wanted Abu Khazar, the imam of the defence and leader of the resistance.' },
         },
         {
           id: 'p2',
@@ -433,9 +433,9 @@ export const ahlIstiqama45: Lesson = {
       id: 'sheikhs-journey',
       title: { ar: 'درب الشيخين', fr: 'Le chemin des deux cheikhs', en: 'The sheikhs’ road' },
       intro: {
-        ar: 'اجتز محطّات الشيخين من بغاي إلى وارجلان بإجابة سؤال كلّ محطّة.',
-        fr: 'Franchis les étapes des deux cheikhs, de Baghāy à Ouargla, en répondant à la question de chaque étape.',
-        en: 'Pass the sheikhs’ stops, from Baghay to Warjlan, by answering each stop’s question.',
+        ar: 'اجتز محطّات الشيخين من بغاي إلى مصر ووارجلان بإجابة سؤال كلّ محطّة.',
+        fr: 'Franchis les étapes des deux cheikhs, de Baghāy à l’Égypte et à Ouargla, en répondant à la question de chaque étape.',
+        en: 'Pass the sheikhs’ stops, from Baghay to Egypt and Warjlan, by answering each stop’s question.',
       },
       stops: [
         {
@@ -462,14 +462,14 @@ export const ahlIstiqama45: Lesson = {
           name: { ar: 'مجلس الأمير', fr: 'La cour de l’émir', en: 'The emir’s court' },
           image: `${IMG}/scholars-tent.png`,
           question: {
-            ar: 'ماذا حدث للشيخين بعد أن أعطاهما الأمير الأمان؟',
-            fr: 'Que devinrent les deux cheikhs après que l’émir leur eut accordé la sécurité ?',
-            en: 'What happened to the sheikhs after the emir granted them safety?',
+            ar: 'ماذا حدث للشيخين بعد أن أعطى الأمير الأمان في كامل البلاد؟',
+            fr: 'Que devinrent les deux cheikhs après que l’émir eut accordé la sécurité dans tout le pays ?',
+            en: 'What happened to the two sheikhs after the emir granted safety across the whole land?',
           },
           options: [
             { id: 'a', correct: true, label: { ar: 'بقيا عنده فأحسن إليهما وناظرهما في مجلسه', fr: 'Ils restèrent auprès de lui, qui les traita bien et dialogua avec eux', en: 'They stayed with him, and he treated them well and engaged with them' } },
             { id: 'b', correct: false, label: { ar: 'نُفيا فورًا خارج البلاد', fr: 'Ils furent aussitôt exilés hors du pays', en: 'They were exiled at once from the land' }, hint: { ar: 'بقيا عنده وأُحسن إليهما.', fr: 'Ils restèrent auprès de lui et furent bien traités.', en: 'They stayed with him and were treated well.' } },
-            { id: 'c', correct: false, label: { ar: 'عادا إلى القتال', fr: 'Ils reprirent le combat', en: 'They went back to fighting' }, hint: { ar: 'انتهى الصراع بسلّم أبي خزر نفسه حقنًا للدماء.', fr: 'Le conflit prit fin quand Abū Khazar se rendit pour épargner le sang.', en: 'The conflict ended when Abu Khazar surrendered to spare bloodshed.' } },
+            { id: 'c', correct: false, label: { ar: 'عادا إلى القتال', fr: 'Ils reprirent le combat', en: 'They went back to fighting' }, hint: { ar: 'انتهى الصراع بتسليم أبي خزر نفسه حقنًا للدماء.', fr: 'Le conflit prit fin quand Abū Khazar se rendit pour épargner le sang.', en: 'The conflict ended when Abu Khazar surrendered to spare bloodshed.' } },
           ],
           reveal: {
             ar: 'وهكذا انتهى الصراع بينهم وبين الأمير.',
@@ -538,9 +538,9 @@ export const ahlIstiqama45: Lesson = {
         },
       ],
       arrival: {
-        ar: 'من بغاي إلى مجلس الأمير، ومن مصر إلى وارجلان: ذهب أبو خزر ليحمي الأمان، وذهب أبو نوح ليحيي العلم. وهكذا بقيت الاستقامة حيّة.',
-        fr: 'De Baghāy à la cour de l’émir, de l’Égypte à Ouargla : Abū Khazar partit protéger la sécurité, Abū Nūḥ partit raviver le savoir. Ainsi la Rectitude resta vivante.',
-        en: 'From Baghay to the emir’s court, from Egypt to Warjlan: Abu Khazar went to guard safety, Abu Nuh went to revive knowledge. And so Rectitude stayed alive.',
+        ar: 'من بغاي إلى مجلس الأمير، ثمّ افترق الطريقان: أبو خزر إلى مصر ليحمي الأمان، وأبو نوح إلى وارجلان ليُحيي العلم. وهكذا بقيت الاستقامة حيّة.',
+        fr: 'De Baghāy à la cour de l’émir, puis les chemins se séparèrent : Abū Khazar vers l’Égypte pour protéger la sécurité, Abū Nūḥ vers Ouargla pour raviver le savoir. Ainsi la Rectitude resta vivante.',
+        en: 'From Baghay to the emir’s court, then the roads parted: Abu Khazar to Egypt to guard safety, Abu Nuh to Warjlan to revive knowledge. And so Rectitude stayed alive.',
       },
     },
 
@@ -591,12 +591,14 @@ export const ahlIstiqama45: Lesson = {
         {
           id: 't331',
           period: { ar: '331 هـ', fr: '331 H', en: '331 AH' },
+          certainty: 'approximate',
           label: { ar: 'انطلاق أبي يزيد', fr: 'Départ d’Abū Yazīd', en: 'Abu Yazid sets out' },
           detail: { ar: 'انطلق من توزر على حماره وجمع الآلاف، وتقدّم نحو المهدية عاصمة العبيديين.', fr: 'Il partit de Tozeur sur son âne, rassembla des milliers de partisans et avança vers Mahdia, capitale des Ubaydides.', en: 'He set out from Tozeur on his donkey, gathered thousands, and advanced toward Mahdia, the Ubaydid capital.' },
         },
         {
           id: 't334',
           period: { ar: '334 هـ', fr: '334 H', en: '334 AH' },
+          certainty: 'approximate',
           label: { ar: 'هزيمة الثورة', fr: 'Échec de la révolte', en: 'Defeat of the revolt' },
           detail: { ar: 'انهزم أبو يزيد وتبعه الجيش، وخاصّةً من وقف معه من أهل الدعوة المتحصّنين.', fr: 'Abū Yazīd fut vaincu et l’armée le poursuivit, surtout les gens de l’Appel retranchés qui l’avaient soutenu.', en: 'Abu Yazid was defeated and the army pursued him, especially the People of the Call who had stood with him and taken refuge.' },
         },
@@ -780,7 +782,7 @@ export const ahlIstiqama45: Lesson = {
         {
           id: 'truth',
           value: { ar: 'كلمة الحقّ', fr: 'La parole de vérité', en: 'The word of truth' },
-          evidence: { ar: 'قال أبو زكريا فصيل: في قحط الإسلام تُنال الجنّة بكلمة حقّ تُقال.', fr: 'Abū Zakariyyā’ Faṣīl dit : quand l’islam est en disette, on gagne le Paradis par une parole de vérité.', en: 'Abu Zakariya Fasil said: when Islam is in famine, Paradise is earned by a word of truth spoken.' },
+          evidence: { ar: 'قال أبو زكرياء فصيل: في قحط الإسلام تُنال الجنّة بكلمة حقّ تُقال.', fr: 'Abū Zakariyyā’ Faṣīl dit : quand l’islam est en disette, on gagne le Paradis par une parole de vérité.', en: 'Abu Zakariya Fasil said: when Islam is in famine, Paradise is earned by a word of truth spoken.' },
         },
         {
           id: 'discipline',

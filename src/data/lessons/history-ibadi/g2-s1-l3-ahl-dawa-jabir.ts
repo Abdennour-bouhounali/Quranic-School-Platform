@@ -1,13 +1,13 @@
 import type { Lesson } from '../../types'
 
-// Source: Ibadite History textbook (Other ressources/Ibadite_History_S3.pdf), lesson "الإمام جابر بن زيد", pages 10–14.
+// Source: Ibadite History textbook (Other ressources/Ibadite_History_S3.pdf), lesson "الإمام جابر بن زيد", pages 9–15.
 //   Slide 2 — الإشكالية: تعود تسمية أهل الدعوة والاستقامة إلى سنة 64 هـ، بعد انقسام حلقة الإمام أبي بلال، واقتداء أهل الدعوة والاستقامة بالعالم الجليل جابر بن زيد
 //             الذي فرّغ حياته لطلب العلم وأخذ الدين من المنبع الصافي عن الرسول، عندما أخذ الاجتهاد يتزايد والآراء والأقوال تتعدّد. فمن هو إمام أهل الدعوة؟
 //   Slide 3 — الإمام جابر إمام أهل الدعوة: حضر حلقة أبي بلال مرداس مبكرًا، أصبح عالمًا رائدًا ومرجعًا بعد وفاة أبي بلال سنة 61 هـ، الحجّاج بن يوسف على العراق يتابع حركاته،
 //             فكان الإمام يتستر وأصحابه لا يفصحون عن آرائهم، ولم يسلم من سجن الحجاج ثم نفيه إلى عُمان. بطاقة الإمام: النسب، المولد، التعلّم، المكانة، الأعمال، الآثار، الوفاة سنة 93 هـ.
 //   Slide 4 — منابع علم الإمام جابر: «أدركت سبعين بدريًّا فحويت ما عندهم من العلم إلا البحر» (ابن عباس)، عائشة «اسأل يا جابر فلا حياء في الدين»، أبو هريرة وعبد الله بن عمر وعبد الله بن مسعود وأنس بن مالك.
 //   Slide 5 — مكانة الإمام جابر العلمية: أقوال ابن عباس وابن عمر وقتادة، سعة علمه واجتهاده وتبحّره في الفقه والسنة، رواية متصلة إلى الرسول، ثقة عدل ضابط.
-//   Slide 6 — من آثار الإمام جابر: توزّع علمه بين كبار تلاميذه كأبي عبيدة مسلم بن أبي كريمة، كتاب النكاح وكتاب الصلاة، الربيع بن حبيب في مسنده، «ديوان جابر» ألف ورقة لم يصل أثره.
+//   Slide 6 — من آثار الإمام جابر: توزّع علمه بين كبار تلاميذه كأبي عبيدة مسلم بن أبي كريمة، كتاب النكاح وكتاب الصلاة، الربيع بن حبيب في مسنده، ضمام بن السائب، تدوين الفقه مبكّرًا، «ديوان جابر» ألّفه وهو أوّل كتاب أُلّف في الفقه، بقي في حوزة أبي عبيدة ثمّ اختفى أثره.
 // Every fact below is taken from those slides; nothing is added from outside them.
 // No human figure is ever illustrated (see CONTENT_GUIDELINES.md): the scenes are told through study circles, books, light and landscape.
 
@@ -33,7 +33,7 @@ export const ahlDawaJabir: Lesson = {
     en: 'The People of the Call and Rectitude',
   },
   description: {
-    ar: 'من هو إمام أهل الدعوة؟ تتبّع رحلة جابر بن زيد من عُمان إلى البصرة، ومن بحر ابن عباس إلى بيت عائشة، واكتشف كيف حفظ علم الصحابة للأجيال رغم السجن والنفي.',
+    ar: 'من هو إمام أهل الدعوة؟ تتبّع رحلة جابر بن زيد من عُمان إلى البصرة، ومن بحر ابن عبّاس إلى بيت عائشة رضي الله عنها، واكتشف كيف حفظ علم الصحابة للأجيال رغم السجن والنفي.',
     fr: 'Qui est l’imam des gens de l’Appel ? Suis le parcours de Jābir ibn Zayd, d’Oman à Bassora, de « la mer » Ibn ‘Abbās à la maison de ‘Ā’isha, et découvre comment il préserva le savoir des Compagnons malgré la prison et l’exil.',
     en: 'Who is the imam of the People of the Call? Follow Jabir ibn Zayd’s path from Oman to Basra, from the "sea" Ibn ‘Abbas to the house of ‘A’isha, and see how he preserved the Companions’ knowledge despite prison and exile.',
   },
@@ -56,9 +56,9 @@ export const ahlDawaJabir: Lesson = {
         en: 'When opinions multiply and sayings differ, whom do people follow?',
       },
       intro: {
-        ar: 'تعود تسمية «أهل الدعوة والاستقامة» إلى سنة 64 هـ، بعد انقسام حلقة الإمام أبي بلال. اقتدى أهل الدعوة بعالمٍ جليلٍ فرّغ حياته لطلب العلم وأخذ الدين من المنبع الصافي عن الرسول (ص). فمن هو إمام أهل الدعوة؟',
-        fr: 'Le nom de « gens de l’Appel et de la Rectitude » remonte à l’an 64 de l’Hégire, après la division du cercle de l’imam Abū Bilāl. Ils suivirent un grand savant qui consacra sa vie à la quête du savoir et puisa la religion à la source pure auprès du Messager ﷺ. Qui est l’imam des gens de l’Appel ?',
-        en: 'The name "People of the Call and Rectitude" goes back to the year 64 AH, after the study circle of Imam Abu Bilal split. They followed a great scholar who devoted his life to seeking knowledge and took the religion from the pure source, the Messenger ﷺ. Who is the imam of the People of the Call?',
+        ar: 'تعود تسمية «أهل الدعوة والاستقامة» إلى سنة 64 هـ، بعد انقسام حلقة الإمام أبي بلال. اقتدى أهل الدعوة بعالمٍ جليلٍ فرّغ حياته لطلب العلم وأخذ الدين من المنبع الصافي عن الرسول ﷺ، حين أخذ الاجتهاد يتزايد والآراء والأقوال تتعدّد. فمن هو إمام أهل الدعوة؟',
+        fr: 'Le nom de « gens de l’Appel et de la Rectitude » remonte à l’an 64 de l’Hégire, après la division du cercle de l’imam Abū Bilāl. Ils suivirent un grand savant qui consacra sa vie à la quête du savoir et puisa la religion à la source pure auprès du Messager ﷺ, alors que l’effort d’interprétation s’intensifiait et que les avis se multipliaient. Qui est l’imam des gens de l’Appel ?',
+        en: 'The name "People of the Call and Rectitude" goes back to the year 64 AH, after the study circle of Imam Abu Bilal split. They followed a great scholar who devoted his life to seeking knowledge and took the religion from the pure source, the Messenger ﷺ, at a time when independent reasoning was growing and opinions were multiplying. Who is the imam of the People of the Call?',
       },
     },
 
@@ -125,26 +125,35 @@ export const ahlDawaJabir: Lesson = {
           heading: { ar: 'عالمٌ ومرجع', fr: 'Un savant, une référence', en: 'A scholar and a reference' },
           text: {
             ar: 'سرعان ما أصبح عالمًا رائدًا ومرجعًا لها، وظهر دوره في توجيه أهل الدعوة بعد وفاة الإمام أبي بلال في سنة 61 هـ. ويُعتبر الإمام جابر المؤسّس لفقهها وقواعدها.',
-            fr: 'Il devint vite un savant éminent et une référence pour elle ; son rôle dans la direction des gens de l’Appel apparut après la mort de l’imam Abū Bilāl en l’an 61 de l’Hégire. L’imam Jābir est considéré comme le fondateur de son droit et de ses principes.',
-            en: 'He soon became a leading scholar and its reference, and his role in guiding the People of the Call emerged after Imam Abu Bilal’s death in the year 61 AH. Imam Jabir is regarded as the founder of its jurisprudence and principles.',
+            fr: 'Il devint vite un savant éminent et une référence pour ce cercle ; son rôle dans la direction des gens de l’Appel apparut après la mort de l’imam Abū Bilāl en l’an 61 de l’Hégire. L’imam Jābir est considéré comme le fondateur du droit et des principes des gens de l’Appel.',
+            en: 'He soon became a leading scholar and its reference, and his role in guiding the People of the Call emerged after Imam Abu Bilal’s death in the year 61 AH. Imam Jabir is regarded as the founder of the jurisprudence and principles of the People of the Call.',
           },
         },
         {
           id: 'p4',
           heading: { ar: 'بطاقة الإمام', fr: 'La carte de l’imam', en: 'The imam’s card' },
           text: {
-            ar: 'من قبيلة أزد بعُمان، وُلد حوالي سنة 21 هـ في قرية فرق بولاية نزوى. تعلّم في البصرة عند كبار الصحابة، وفي الحجاز عند أمّنا عائشة وعبد الله بن عبّاس. وهو إمام مذهب أهل الحقّ والاستقامة، راسخٌ في العلم، وشهد له الصحابة بذلك.',
-            fr: 'De la tribu d’Azd en Oman, il naquit vers l’an 21 de l’Hégire dans le village de Farq, wilāya de Nizwā. Il étudia à Bassora auprès de grands Compagnons, et au Hedjaz auprès de ‘Ā’isha et de ‘Abd Allāh ibn ‘Abbās. Il est l’imam de l’école des gens de la Vérité et de la Rectitude, solide en science, et les Compagnons en témoignèrent.',
-            en: 'Of the tribe of Azd in Oman, he was born around 21 AH in the village of Farq, in the wilaya of Nizwa. He studied in Basra with senior Companions, and in the Hijaz with ‘A’isha and ‘Abdullah ibn ‘Abbas. He is the imam of the school of the People of Truth and Rectitude, firmly grounded in knowledge, as the Companions testified.',
+            ar: 'من قبيلة أزد بعُمان، وُلد حوالي سنة 21 هـ في قرية فرق بولاية نزوى. تعلّم في البصرة عند كبار الصحابة، وفي الحجاز عند أمّنا عائشة رضي الله عنها وعبد الله بن عبّاس رضي الله عنهما. وهو إمام مذهب أهل الحقّ والاستقامة، راسخٌ في العلم، وشهد له الصحابة بذلك.',
+            fr: 'De la tribu d’Azd en Oman, il naquit vers l’an 21 de l’Hégire dans le village de Farq, wilāya de Nizwā. Il étudia à Bassora auprès de grands Compagnons, et au Hedjaz auprès de ‘Ā’isha (qu’Allah l’agrée) et de ‘Abd Allāh ibn ‘Abbās (qu’Allah les agrée, lui et son père). Il est l’imam de l’école des gens de la Vérité et de la Rectitude, solide en science, et les Compagnons en témoignèrent.',
+            en: 'Of the tribe of Azd in Oman, he was born around 21 AH in the village of Farq, in the wilaya of Nizwa. He studied in Basra with senior Companions, and in the Hijaz with ‘A’isha (may God be pleased with her) and ‘Abdullah ibn ‘Abbas (may God be pleased with him and his father). He is the imam of the school of the People of Truth and Rectitude, firmly grounded in knowledge, as the Companions testified.',
+          },
+        },
+        {
+          id: 'p6',
+          heading: { ar: 'أعماله وآثاره', fr: 'Ses œuvres et son héritage', en: 'His works and legacy' },
+          text: {
+            ar: 'شكّل حلق العلم ليفقّه الناس في دينهم، وحوى علوم الصحابة (منهم سبعون بدريًّا) وبلّغها لروّاد الحلقات، ورتّب الأحاديث ورسخ في العقيدة والفقه وبلّغها. ويعتمد المذهب على ما بلّغه من علم الصحابة عن الرسول ﷺ، وترك ديوانًا كبيرًا لم يصل إلينا، نُقل منه ما حفظه الأئمّة وتلاميذه.',
+            fr: 'Il forma des cercles de savoir pour instruire les gens dans leur religion, recueillit le savoir des Compagnons (dont soixante-dix combattants de Badr) et le transmit à ceux qui fréquentaient ses cercles ; il ordonna les hadiths, s’enracina dans le dogme et le droit et les transmit. L’école repose sur ce qu’il transmit du savoir des Compagnons rapporté du Messager ﷺ, et il laissa un grand Dīwān qui ne nous est pas parvenu ; on en a transmis ce que les imams et ses élèves avaient retenu.',
+            en: 'He formed circles of learning to teach people their religion, gathered the knowledge of the Companions (seventy of them veterans of Badr) and passed it on to those who attended his circles; he organized the hadith, grounded himself in creed and jurisprudence and conveyed them. The school rests on what he conveyed of the Companions’ knowledge from the Messenger ﷺ, and he left a large Diwan that did not reach us; what the imams and his students preserved was passed on from it.',
           },
         },
         {
           id: 'p3',
           heading: { ar: 'في زمن الحجّاج', fr: 'À l’époque d’al-Ḥajjāj', en: 'In the time of al-Hajjaj' },
           text: {
-            ar: 'كان الوالي الأمويّ على العراق، الحجّاج بن يوسف، يتابع حركاته، فكان الإمام يتستّر، وكان أصحابه لا يُفصحون عن آرائهم لئلّا يتعرّضوا للمضايقات من الولاة ويضيع الدين بفقدانه.',
-            fr: 'Le gouverneur omeyyade d’Irak, al-Ḥajjāj ibn Yūsuf, surveillait ses mouvements ; l’imam se cachait donc, et ses compagnons ne révélaient pas leurs avis pour ne pas subir les vexations des gouverneurs et pour que la religion ne soit pas perdue avec lui.',
-            en: 'The Umayyad governor of Iraq, al-Hajjaj ibn Yusuf, was tracking his movements, so the imam kept himself concealed, and his companions did not disclose their views, so as not to suffer harassment from the governors and so that the religion would not be lost with him.',
+            ar: 'كان الوالي الأمويّ على العراق، الحجّاج بن يوسف، يتابع حركاته، فكان الإمام يتستّر، وكان أصحابه لا يُفصحون عن آرائهم لئلّا يتعرّضوا للمضايقات من الولاة ويضيع الدين بفقدانه. ونظرًا لمكانة عبد الله بن إباض وسمعته وسمعة قبيلته بني تميم التي يرهبها ولاة العراق، كان هو يتحدّث ويناقش بآراء إمام أهل الدعوة جابر بن زيد.',
+            fr: 'Le gouverneur omeyyade d’Irak, al-Ḥajjāj ibn Yūsuf, surveillait ses mouvements ; l’imam se cachait donc, et ses compagnons ne révélaient pas leurs avis pour ne pas subir les vexations des gouverneurs et pour que la religion ne soit pas perdue avec lui. Grâce au rang et au renom de ‘Abd Allāh ibn Ibāḍ et de sa tribu, les Banū Tamīm, que redoutaient les gouverneurs d’Irak, c’est lui qui parlait et débattait selon les avis de l’imam des gens de l’Appel, Jābir ibn Zayd.',
+            en: 'The Umayyad governor of Iraq, al-Hajjaj ibn Yusuf, was tracking his movements, so the imam kept himself concealed, and his companions did not disclose their views, so as not to suffer harassment from the governors and so that the religion would not be lost with him. Because of the standing and reputation of ‘Abdullah ibn Ibad and of his tribe, Banu Tamim, whom the governors of Iraq feared, it was he who spoke and debated according to the views of the imam of the People of the Call, Jabir ibn Zayd.',
           },
         },
         {
@@ -170,10 +179,12 @@ export const ahlDawaJabir: Lesson = {
         en: 'Drag each fact to the right box on the imam’s card, or tap the fact and then the box.',
       },
       slots: [
-        { id: 'nasab', label: { ar: 'نسبه', fr: 'Sa tribu', en: 'His lineage' } },
+        { id: 'nasab', label: { ar: 'نسبه', fr: 'Sa tribu', en: 'His tribe' } },
         { id: 'mawlid', label: { ar: 'مولده', fr: 'Sa naissance', en: 'His birth' } },
         { id: 'taallum', label: { ar: 'تعلّمه', fr: 'Ses études', en: 'His studies' } },
         { id: 'makana', label: { ar: 'مكانته', fr: 'Son rang', en: 'His standing' } },
+        { id: 'aamal', label: { ar: 'أعماله', fr: 'Ses œuvres', en: 'His works' } },
+        { id: 'athar', label: { ar: 'آثاره', fr: 'Son héritage', en: 'His legacy' } },
         { id: 'wafat', label: { ar: 'وفاته', fr: 'Sa mort', en: 'His death' } },
       ],
       cards: [
@@ -192,7 +203,7 @@ export const ahlDawaJabir: Lesson = {
         {
           id: 'c-taallum',
           slotId: 'taallum',
-          label: { ar: 'في البصرة عند كبار الصحابة، وفي الحجاز عند أمّنا عائشة وعبد الله بن عبّاس', fr: 'À Bassora auprès de grands Compagnons, et au Hedjaz auprès de ‘Ā’isha et d’Ibn ‘Abbās', en: 'In Basra with senior Companions, and in the Hijaz with ‘A’isha and ‘Abdullah ibn ‘Abbas' },
+          label: { ar: 'في البصرة عند كبار الصحابة، وفي الحجاز عند أمّنا عائشة رضي الله عنها وعبد الله بن عبّاس', fr: 'À Bassora auprès de grands Compagnons, et au Hedjaz auprès de ‘Ā’isha et d’Ibn ‘Abbās', en: 'In Basra with senior Companions, and in the Hijaz with ‘A’isha and ‘Abdullah ibn ‘Abbas' },
           hint: { ar: 'هذه أسماء أساتذته وأماكن دراسته.', fr: 'Ce sont les noms de ses maîtres et les lieux de ses études.', en: 'These are the names of his teachers and places of study.' },
         },
         {
@@ -200,6 +211,18 @@ export const ahlDawaJabir: Lesson = {
           slotId: 'makana',
           label: { ar: 'إمام مذهب أهل الحقّ والاستقامة، راسخٌ في العلم', fr: 'Imam de l’école des gens de la Vérité et de la Rectitude, solide en science', en: 'Imam of the school of the People of Truth and Rectitude, firmly grounded in knowledge' },
           hint: { ar: 'هذا وصفٌ لمقامه بين الناس.', fr: 'C’est une description de son rang parmi les gens.', en: 'This describes his standing among the people.' },
+        },
+        {
+          id: 'c-aamal',
+          slotId: 'aamal',
+          label: { ar: 'شكّل حلق العلم ليفقّه الناس في دينهم، ورتّب الأحاديث', fr: 'Forma des cercles de savoir pour instruire les gens, et ordonna les hadiths', en: 'Formed circles of learning to teach people, and organized the hadith' },
+          hint: { ar: 'هذا شيءٌ قام به في حياته.', fr: 'C’est une chose qu’il accomplit de son vivant.', en: 'This is something he did during his life.' },
+        },
+        {
+          id: 'c-athar',
+          slotId: 'athar',
+          label: { ar: 'ترك ديوانًا كبيرًا لم يصل إلينا', fr: 'Laissa un grand Dīwān qui ne nous est pas parvenu', en: 'Left a large Diwan that did not reach us' },
+          hint: { ar: 'هذا ما بقي بعده.', fr: 'C’est ce qui resta après lui.', en: 'This is what remained after him.' },
         },
         {
           id: 'c-wafat',
@@ -222,17 +245,17 @@ export const ahlDawaJabir: Lesson = {
         {
           id: 'p1',
           heading: { ar: 'عن كبار الصحابة والتابعين', fr: 'Auprès des grands Compagnons et Successeurs', en: 'From senior Companions and Successors' },
-          text: { ar: 'أخذ الإمام جابر بن زيد العلم عن كثيرٍ من صحابة رسول الله (ص) والتابعين، وأخذ عنهم علوم الشرع. ويقول عن نفسه: «أدركتُ سبعين بدريًّا فحويتُ ما عندهم من العلم إلّا البحر»، وكان يقصد بالبحر عبد الله بن عبّاس.', fr: 'L’imam Jābir ibn Zayd reçut le savoir de nombreux Compagnons du Messager ﷺ et des Successeurs, et apprit d’eux les sciences de la loi. Il dit de lui-même : « J’ai connu soixante-dix Compagnons de Badr et j’ai recueilli leur savoir, sauf celui de la mer », entendant par « la mer » ‘Abd Allāh ibn ‘Abbās.', en: 'Imam Jabir ibn Zayd took knowledge from many Companions of God’s Messenger ﷺ and from the Successors, and learned the sciences of the law from them. He says of himself: "I met seventy Companions who fought at Badr and gathered all the knowledge they had, except the sea", meaning by "the sea" ‘Abdullah ibn ‘Abbas.' },
+          text: { ar: 'أخذ الإمام جابر بن زيد العلم عن كثيرٍ من صحابة رسول الله ﷺ والتابعين، وأخذ عنهم علوم الشرع. ويقول عن نفسه: «أدركتُ سبعين بدريًّا فحويتُ ما عندهم من العلم إلّا البحر»، وكان يقصد بالبحر عبد الله بن عبّاس رضي الله عنهما.', fr: 'L’imam Jābir ibn Zayd reçut le savoir de nombreux Compagnons du Messager ﷺ et des Successeurs, et apprit d’eux les sciences de la loi. Il dit de lui-même : « J’ai connu soixante-dix Compagnons de Badr et j’ai recueilli leur savoir, sauf celui de la mer », entendant par « la mer » ‘Abd Allāh ibn ‘Abbās (qu’Allah l’agrée).', en: 'Imam Jabir ibn Zayd took knowledge from many Companions of God’s Messenger ﷺ and from the Successors, and learned the sciences of the law from them. He says of himself: "I met seventy Companions who fought at Badr and gathered all the knowledge they had, except the sea", meaning by "the sea" ‘Abdullah ibn ‘Abbas (may God be pleased with him).' },
         },
         {
           id: 'p2',
-          heading: { ar: 'عند أمّ المؤمنين عائشة', fr: 'Chez la Mère des croyants ‘Ā’isha', en: 'With the Mother of the Believers ‘A’isha' },
-          text: { ar: 'كما أخذ العلم عن السيّدة عائشة أمّ المؤمنين زوجة رسول الله (ص)، وكان يسألها من وراء حجاب عن كلّ شيءٍ من أمور الدين، حتى ما تخصّ المرأة، فكانت تقول له: «اسأل يا جابر، فلا حياء في الدين».', fr: 'Il reçut aussi le savoir de ‘Ā’isha, Mère des croyants et épouse du Messager ﷺ ; il l’interrogeait derrière un voile sur tout ce qui touche à la religion, même ce qui concerne spécifiquement les femmes, et elle lui disait : « Demande, Jābir, il n’y a pas de pudeur en matière de religion. »', en: 'He also took knowledge from ‘A’isha, the Mother of the Believers and wife of God’s Messenger ﷺ; he asked her from behind a screen about everything in religion, even matters specific to women, and she would tell him: "Ask, Jabir — there is no shyness in religion."' },
+          heading: { ar: 'عند أمّ المؤمنين عائشة رضي الله عنها', fr: 'Chez la Mère des croyants ‘Ā’isha', en: 'With the Mother of the Believers ‘A’isha' },
+          text: { ar: 'كما أخذ العلم عن السيّدة عائشة أمّ المؤمنين رضي الله عنها، زوجة رسول الله ﷺ، وكان يسألها من وراء حجاب عن كلّ شيءٍ من أمور الدين، حتى ما يخصّ المرأة، فكانت تقول له: «اسأل يا جابر، فلا حياء في الدين».', fr: 'Il reçut aussi le savoir de ‘Ā’isha (qu’Allah l’agrée), Mère des croyants et épouse du Messager ﷺ ; il l’interrogeait derrière un voile sur tout ce qui touche à la religion, même ce qui concerne spécifiquement les femmes, et elle lui disait : « Demande, Jābir, il n’y a pas de pudeur en matière de religion. »', en: 'He also took knowledge from ‘A’isha (may God be pleased with her), the Mother of the Believers and wife of God’s Messenger ﷺ; he asked her from behind a screen about everything in religion, even matters specific to women, and she would tell him: "Ask, Jabir — there is no shyness in religion."' },
         },
         {
           id: 'p3',
           heading: { ar: 'وغيرهم من الصحابة', fr: 'Et d’autres Compagnons', en: 'And other Companions' },
-          text: { ar: 'وتتلمذ أيضًا عند الصحابة الكرام أبي هريرة وعبد الله بن عمر وعبد الله بن مسعود وأنس بن مالك خادم رسول الله (ص)، فهؤلاء يُعدّون من كبار الصحابة، وهم أقرب الناس إلى رسول الله (ص).', fr: 'Il fut aussi l’élève des nobles Compagnons Abū Hurayra, ‘Abd Allāh ibn ‘Umar, ‘Abd Allāh ibn Mas‘ūd et Anas ibn Mālik, serviteur du Messager ﷺ ; ils comptent parmi les plus grands Compagnons et furent les plus proches du Messager ﷺ.', en: 'He also studied with the noble Companions Abu Hurayra, ‘Abdullah ibn ‘Umar, ‘Abdullah ibn Mas‘ud and Anas ibn Malik, the servant of God’s Messenger ﷺ; they count among the senior Companions and were the closest people to God’s Messenger ﷺ.' },
+          text: { ar: 'وتتلمذ أيضًا عند الصحابة الكرام أبي هريرة وعبد الله بن عمر وعبد الله بن مسعود وأنس بن مالك خادم رسول الله ﷺ، رضي الله عنهم، فهؤلاء يُعدّون من كبار الصحابة، وهم أقرب الناس إلى رسول الله ﷺ.', fr: 'Il fut aussi l’élève des nobles Compagnons Abū Hurayra, ‘Abd Allāh ibn ‘Umar, ‘Abd Allāh ibn Mas‘ūd et Anas ibn Mālik, serviteur du Messager ﷺ (qu’Allah les agrée) ; ils comptent parmi les plus grands Compagnons et furent les plus proches du Messager ﷺ.', en: 'He also studied with the noble Companions Abu Hurayra, ‘Abdullah ibn ‘Umar, ‘Abdullah ibn Mas‘ud and Anas ibn Malik, the servant of God’s Messenger ﷺ (may God be pleased with them); they count among the senior Companions and were the closest people to God’s Messenger ﷺ.' },
         },
       ],
     },
@@ -260,7 +283,7 @@ export const ahlDawaJabir: Lesson = {
           options: [
             { id: 'a', correct: true, label: { ar: 'عُمان، في قرية فرق بولاية نزوى', fr: 'Oman, dans le village de Farq, wilāya de Nizwā', en: 'Oman, in the village of Farq in the wilaya of Nizwa' } },
             { id: 'b', correct: false, label: { ar: 'العراق، في مدينة البصرة', fr: 'L’Irak, dans la ville de Bassora', en: 'Iraq, in the city of Basra' }, hint: { ar: 'البصرة هي مكان تعلّمه عند كبار الصحابة، لا مولده.', fr: 'Bassora est le lieu de ses études auprès des Compagnons, non de sa naissance.', en: 'Basra is where he studied with senior Companions, not where he was born.' } },
-            { id: 'c', correct: false, label: { ar: 'الحجاز، في مكّة', fr: 'Le Hedjaz, à La Mecque', en: 'The Hijaz, in Makkah' }, hint: { ar: 'الحجاز مكان لقائه بعائشة وابن عبّاس، لا مولده.', fr: 'Le Hedjaz est où il rencontra ‘Ā’isha et Ibn ‘Abbās, non son lieu de naissance.', en: 'The Hijaz is where he met ‘A’isha and Ibn ‘Abbas, not his birthplace.' } },
+            { id: 'c', correct: false, label: { ar: 'الحجاز، في مكّة', fr: 'Le Hedjaz, à La Mecque', en: 'The Hijaz, in Makkah' }, hint: { ar: 'الحجاز مكان لقائه بعائشة رضي الله عنها وابن عبّاس، لا مولده.', fr: 'Le Hedjaz est où il rencontra ‘Ā’isha et Ibn ‘Abbās, non son lieu de naissance.', en: 'The Hijaz is where he met ‘A’isha and Ibn ‘Abbas, not his birthplace.' } },
           ],
           reveal: {
             ar: 'وُلد حوالي سنة 21 هـ من قبيلة أزد بعُمان، ثمّ انطلق يطلب العلم.',
@@ -299,7 +322,7 @@ export const ahlDawaJabir: Lesson = {
           },
           options: [
             { id: 'a', correct: true, label: { ar: 'عبد الله بن عبّاس', fr: '‘Abd Allāh ibn ‘Abbās', en: '‘Abdullah ibn ‘Abbas' } },
-            { id: 'b', correct: false, label: { ar: 'أبو هريرة', fr: 'Abū Hurayra', en: 'Abu Hurayra' }, hint: { ar: 'أبو هريرة من الصحابة الذين تتلمذ عندهم أيضًا، لكنّ «البحر» لقبٌ آخر.', fr: 'Abū Hurayra est un autre de ses maîtres, mais « la mer » désigne quelqu’un d’autre.', en: 'Abu Hurayra was another of his teachers, but "the sea" refers to someone else.' } },
+            { id: 'b', correct: false, label: { ar: 'أبو هريرة', fr: 'Abū Hurayra', en: 'Abu Hurayra' }, hint: { ar: 'أبو هريرة من الصحابة الذين تتلمذ عندهم أيضًا، لكنّ «البحر» لقبُ صحابيٍّ آخر.', fr: 'Abū Hurayra est un autre de ses maîtres, mais « la mer » désigne quelqu’un d’autre.', en: 'Abu Hurayra was another of his teachers, but "the sea" refers to someone else.' } },
             { id: 'c', correct: false, label: { ar: 'عبد الله بن مسعود', fr: '‘Abd Allāh ibn Mas‘ūd', en: '‘Abdullah ibn Mas‘ud' }, hint: { ar: 'ابن مسعود من أساتذته أيضًا، لكنّ المقصود غيره.', fr: 'Ibn Mas‘ūd fut aussi l’un de ses maîtres, mais il s’agit d’un autre.', en: 'Ibn Mas‘ud was also one of his teachers, but it is someone else.' } },
           ],
           reveal: {
@@ -310,9 +333,9 @@ export const ahlDawaJabir: Lesson = {
         },
         {
           id: 'aisha',
-          name: { ar: 'بيت عائشة', fr: 'Chez ‘Ā’isha', en: '‘A’isha’s house' },
+          name: { ar: 'بيت عائشة رضي الله عنها', fr: 'Chez ‘Ā’isha', en: '‘A’isha’s house' },
           question: {
-            ar: 'ماذا كانت أمّ المؤمنين عائشة (رضي الله عنها) تقول لجابر وهو يسألها من وراء حجاب؟',
+            ar: 'ماذا كانت أمّ المؤمنين عائشة رضي الله عنها تقول لجابر وهو يسألها من وراء حجاب؟',
             fr: 'Que disait la Mère des croyants ‘Ā’isha (qu’Allah l’agrée) à Jābir lorsqu’il l’interrogeait derrière un voile ?',
             en: 'What did the Mother of the Believers ‘A’isha (may God be pleased with her) say to Jabir as he asked her from behind a screen?',
           },
@@ -342,14 +365,14 @@ export const ahlDawaJabir: Lesson = {
             { id: 'c', correct: false, label: { ar: 'تولّى منصبًا عند الحجّاج', fr: 'Il reçut une charge auprès d’al-Ḥajjāj', en: 'He took a post under al-Hajjaj' }, hint: { ar: 'كان الحجّاج يتابع حركاته، فسجنه.', fr: 'Al-Ḥajjāj surveillait ses mouvements, et l’emprisonna.', en: 'Al-Hajjaj tracked his movements, and imprisoned him.' } },
           ],
           reveal: {
-            ar: 'ثمّ توفّي سنة 93 هـ، بعد أن ترك علمًا ملأ الآفاق.',
-            fr: 'Puis il mourut en l’an 93 de l’Hégire, laissant un savoir qui remplit les horizons.',
-            en: 'He then died in the year 93 AH, leaving behind knowledge that filled the horizons.',
+            ar: 'ثمّ توفّي سنة 93 هـ، وبقي علمه موزّعًا بين كبار تلاميذه.',
+            fr: 'Puis il mourut en l’an 93 de l’Hégire ; son savoir resta réparti entre ses grands élèves.',
+            en: 'He then died in the year 93 AH; his knowledge stayed shared among his senior students.',
           },
         },
       ],
       arrival: {
-        ar: 'من فرق في عُمان إلى البصرة والحجاز، ومن «البحر» إلى بيت عائشة، ثمّ السجن والنفي: هذا هو طريق العلم عند جابر بن زيد.',
+        ar: 'من فرق في عُمان إلى البصرة والحجاز، ومن «البحر» إلى بيت عائشة رضي الله عنها، ثمّ السجن والنفي: هذا هو طريق العلم عند جابر بن زيد.',
         fr: 'De Farq en Oman à Bassora et au Hedjaz, de « la mer » à la maison de ‘Ā’isha, puis la prison et l’exil : tel fut le chemin du savoir de Jābir ibn Zayd.',
         en: 'From Farq in Oman to Basra and the Hijaz, from "the sea" to ‘A’isha’s house, then prison and exile: this was Jabir ibn Zayd’s road of knowledge.',
       },
@@ -359,7 +382,7 @@ export const ahlDawaJabir: Lesson = {
     {
       kind: 'reading',
       id: 'reading-status',
-      title: { ar: 'اقرأ: مكانة الإمام جابر العلمية', fr: 'Lis : le rang scientifique de l’imam Jābir', en: 'Read: Imam Jabir’s scholarly standing' },
+      title: { ar: 'اقرأ: مكانة الإمام جابر العلمية', fr: 'Lis : le rang de savant de l’imam Jābir', en: 'Read: Imam Jabir’s scholarly standing' },
       intro: { ar: 'اقرأ ما قاله كبار العلماء فيه، ثمّ اختبر ما فهمته.', fr: 'Lis ce que de grands savants dirent de lui, puis teste ce que tu as retenu.', en: 'Read what great scholars said of him, then test what you understood.' },
       image: `${IMG}/basra-halaqa.png`,
       imageAlt: { ar: 'حلقةُ علمٍ تحت الأعمدة: وسائدُ فارغة مرتّبة في دائرة حول حاملٍ خشبيّ يحمل كتابًا مفتوحًا', fr: 'Un cercle d’étude sous les colonnes : des coussins vides disposés en cercle autour d’un pupitre portant un livre ouvert', en: 'A study circle beneath the columns: empty cushions arranged in a ring around a wooden stand holding an open book' },
@@ -367,17 +390,17 @@ export const ahlDawaJabir: Lesson = {
         {
           id: 'p1',
           heading: { ar: 'تلميذ ابن عبّاس', fr: 'L’élève d’Ibn ‘Abbās', en: 'Ibn ‘Abbas’s student' },
-          text: { ar: 'كان الإمام جابر من أنجب تلامذة عبد الله بن عبّاس حتى قال فيه: «لو أنّ أهل البصرة نزلوا عند قول جابر بن زيد لوسعهم علمًا عمّا في كتاب الله». وقال أيضًا: «عجبًا لأهل العراق كيف يحتاجون إلينا وفيهم جابر بن زيد!»', fr: 'L’imam Jābir fut l’un des meilleurs élèves de ‘Abd Allāh ibn ‘Abbās, au point que celui-ci dit de lui : « Si les gens de Bassora s’en tenaient à l’avis de Jābir ibn Zayd, ils auraient assez de savoir sur ce qui est dans le Livre de Dieu. » Il dit aussi : « Quel étonnement que les gens d’Irak aient besoin de nous alors que Jābir ibn Zayd est parmi eux ! »', en: 'Imam Jabir was among the most gifted students of ‘Abdullah ibn ‘Abbas, who said of him: "If the people of Basra followed Jabir ibn Zayd’s word, they would have enough knowledge of what is in the Book of God." He also said: "How strange that the people of Iraq need us when Jabir ibn Zayd is among them!"' },
+          text: { ar: 'كان الإمام جابر من أنجب تلامذة عبد الله بن عبّاس رضي الله عنهما، حتى قال فيه: «لو أنّ أهل البصرة نزلوا عند قول جابر بن زيد لوسعهم علمًا عمّا في كتاب الله». وقال أيضًا: «عجبًا لأهل العراق كيف يحتاجون إلينا وفيهم جابر بن زيد!»', fr: 'L’imam Jābir fut l’un des meilleurs élèves de ‘Abd Allāh ibn ‘Abbās, au point que celui-ci dit de lui : « Si les gens de Bassora s’en tenaient à l’avis de Jābir ibn Zayd, ils auraient assez de savoir sur ce qui est dans le Livre de Dieu. » Il dit aussi : « Quel étonnement que les gens d’Irak aient besoin de nous alors que Jābir ibn Zayd est parmi eux ! »', en: 'Imam Jabir was among the most gifted students of ‘Abdullah ibn ‘Abbas, who said of him: "If the people of Basra followed Jabir ibn Zayd’s word, they would have enough knowledge of what is in the Book of God." He also said: "How strange that the people of Iraq need us when Jabir ibn Zayd is among them!"' },
         },
         {
           id: 'p2',
           heading: { ar: 'شهاداتٌ في حقّه', fr: 'Des témoignages sur lui', en: 'Testimonies about him' },
-          text: { ar: 'وأشار إلى غزارة علمه بقوله: «اسألوا جابر بن زيد، فلو سأله أهل المشرق والمغرب لوسعهم علمه». وعندما كان أهل العراق يسألونه كان يردّ عليهم: «كيف تسألونني وفيكم جابر!». ووصفه عبد الله بن عمر بأنّه من فقهاء البصرة البارزين. وقال فيه قتادة يوم توفّي: «اليوم توفّي أعلم أهل العراق».', fr: 'Il signala l’ampleur de son savoir en disant : « Interrogez Jābir ibn Zayd ; si les gens de l’Orient et de l’Occident l’interrogeaient, son savoir leur suffirait. » Quand les gens d’Irak l’interrogeaient, il leur répondait : « Comment m’interrogez-vous alors que Jābir est parmi vous ! » ‘Abd Allāh ibn ‘Umar le décrivit comme l’un des juristes éminents de Bassora. Et Qatāda dit de lui le jour de sa mort : « Aujourd’hui est mort le plus savant des gens d’Irak. »', en: 'He pointed to the breadth of his knowledge, saying: "Ask Jabir ibn Zayd — if the people of the East and the West asked him, his knowledge would suffice them." When the people of Iraq asked him, he would answer: "How can you ask me when Jabir is among you!" ‘Abdullah ibn ‘Umar described him as one of the prominent jurists of Basra. And Qatada said of him on the day he died: "Today the most knowledgeable of the people of Iraq has died."' },
+          text: { ar: 'وأشار ابن عبّاس إلى غزارة علم جابر بقوله: «اسألوا جابر بن زيد، فلو سأله أهل المشرق والمغرب لوسعهم علمه». وعندما كان أهل العراق يسألون ابنَ عبّاس كان يردّ عليهم: «كيف تسألونني وفيكم جابر!». ووصفه الصحابة، ومنهم عبد الله بن عمر رضي الله عنهما، بأنّه من فقهاء البصرة البارزين. وقال فيه قتادة يوم توفّي: «اليوم توفّي أعلم أهل العراق».', fr: 'Ibn ‘Abbās signala l’ampleur du savoir de Jābir en disant : « Interrogez Jābir ibn Zayd ; si les gens de l’Orient et de l’Occident l’interrogeaient, son savoir leur suffirait. » Quand les gens d’Irak interrogeaient Ibn ‘Abbās, il leur répondait : « Comment m’interrogez-vous alors que Jābir est parmi vous ! » Les Compagnons, dont ‘Abd Allāh ibn ‘Umar, le décrivirent comme l’un des juristes éminents de Bassora. Et Qatāda dit de lui le jour de sa mort : « Aujourd’hui est mort le plus savant des gens d’Irak. »', en: 'Ibn ‘Abbas pointed to the breadth of Jabir’s knowledge, saying: "Ask Jabir ibn Zayd — if the people of the East and the West asked him, his knowledge would suffice them." When the people of Iraq asked Ibn ‘Abbas, he would answer: "How can you ask me when Jabir is among you!" The Companions, among them ‘Abdullah ibn ‘Umar, described him as one of the prominent jurists of Basra. And Qatada said of him on the day he died: "Today the most knowledgeable of the people of Iraq has died."' },
         },
         {
           id: 'p3',
           heading: { ar: 'أبرز ما اتّصف به', fr: 'Ce qui le caractérisait le plus', en: 'What marked him most' },
-          text: { ar: 'كانت أبرز علامةٍ اتّصف بها سعة علمه واجتهاده وتبحّره في الفقه والسنّة، ورواياته متّصلةٌ إلى الرسول (ص)، واحتجّ بأقواله مجموعةٌ من المفسّرين والعلماء واعتبروه ثقةً وأجمعوا على عدالته وضبطه.', fr: 'Ce qui le caractérisait le plus : l’ampleur de son savoir, son effort d’interprétation et sa maîtrise du droit et de la sunna ; ses transmissions remontaient jusqu’au Messager ﷺ, un groupe d’exégètes et de savants s’appuya sur ses avis, le jugea digne de confiance et s’accorda sur sa probité et sa précision.', en: 'His most notable traits were the breadth of his knowledge, his scholarly effort and his depth in jurisprudence and the Sunna; his reports were linked back to the Messenger ﷺ, a group of commentators and scholars cited his words, considered him trustworthy and agreed on his integrity and accuracy.' },
+          text: { ar: 'كانت أبرز علامةٍ اتّصف بها سعة علمه واجتهاده وتبحّره في الفقه، ودرايته بالسنّة وروايته لها، ورواياته متّصلةٌ إلى الرسول ﷺ، واحتجّ بأقواله مجموعةٌ من المفسّرين والعلماء واعتبروه ثقةً وأجمعوا على عدالته وضبطه.', fr: 'Ce qui le caractérisait le plus : l’ampleur de son savoir, son effort d’interprétation et sa maîtrise du droit, sa connaissance de la sunna et sa transmission ; ses transmissions remontaient jusqu’au Messager ﷺ, un groupe d’exégètes et de savants s’appuya sur ses avis, le jugea digne de confiance et s’accorda sur sa probité et sa précision.', en: 'His most notable traits were the breadth of his knowledge, his scholarly effort and his depth in jurisprudence, his understanding and transmission of the Sunna; his reports were linked back to the Messenger ﷺ, a group of commentators and scholars cited his words, considered him trustworthy and agreed on his integrity and accuracy.' },
         },
       ],
     },
@@ -460,27 +483,36 @@ export const ahlDawaJabir: Lesson = {
           id: 'p1',
           heading: { ar: 'علمٌ توزّع على التلاميذ', fr: 'Un savoir réparti entre les élèves', en: 'Knowledge shared among students' },
           text: {
-            ar: 'توزّع علم جابر بن زيد بين كثيرٍ من كبار تلاميذه، الذين انتشر مذهب أهل الدعوة على أيديهم، كالإمام أبي عبيدة مسلم بن أبي كريمة.',
-            fr: 'Le savoir de Jābir ibn Zayd se répartit entre nombre de ses grands élèves, par lesquels l’école des gens de l’Appel se diffusa, tel l’imam Abū ‘Ubayda Muslim ibn Abī Karīma.',
-            en: 'Jabir ibn Zayd’s knowledge was shared among many of his senior students, through whom the school of the People of the Call spread, such as Imam Abu ‘Ubayda Muslim ibn Abi Karima.',
+            ar: 'توزّع علم جابر بن زيد بين كثيرٍ من كبار تلاميذه، الذين انتشر مذهب أهل الدعوة على أيديهم، كالإمام أبي عبيدة مسلم بن أبي كريمة وضمام بن السائب وغيرهما.',
+            fr: 'Le savoir de Jābir ibn Zayd se répartit entre nombre de ses grands élèves, par lesquels l’école des gens de l’Appel se diffusa, tels l’imam Abū ‘Ubayda Muslim ibn Abī Karīma, Ḍimām ibn al-Sā’ib et d’autres.',
+            en: 'Jabir ibn Zayd’s knowledge was shared among many of his senior students, through whom the school of the People of the Call spread, such as Imam Abu ‘Ubayda Muslim ibn Abi Karima, Dimam ibn al-Sa’ib and others.',
           },
         },
         {
           id: 'p2',
           heading: { ar: 'من أوائل من كتب الفقه', fr: 'Parmi les premiers à écrire le droit', en: 'Among the first to write jurisprudence' },
           text: {
-            ar: 'دُوّن علمه مبكّرًا، وكان جابر نفسه من أقدم الفقهاء الذين استعملوا الكتابة والمراسلة، فكتب بأجوبته إلى تلاميذه وأصحابه. وله كتاب النكاح وكتاب الصلاة، وآراؤه وأقواله منتشرةٌ في كتب المذهب، إضافةً إلى الحديث الذي رواه وجمعه الربيع بن حبيب في مسنده.',
-            fr: 'Son savoir fut consigné très tôt, et Jābir fut lui-même parmi les plus anciens juristes à recourir à l’écriture et à la correspondance : il adressa ses réponses à ses élèves et compagnons. On lui attribue un Livre du mariage et un Livre de la prière ; ses avis sont répandus dans les ouvrages de l’école, ainsi que les hadiths qu’il transmit et que ar-Rabī‘ ibn Ḥabīb réunit dans son Musnad.',
-            en: 'His knowledge was recorded early, and Jabir himself was among the earliest jurists to use writing and correspondence, sending his answers to his students and companions. He has a Book of Marriage and a Book of Prayer, and his views and sayings are spread through the school’s books, along with the hadith he narrated and that ar-Rabi‘ ibn Habib gathered in his Musnad.',
+            ar: 'وقد تمّ تدوين ذلك الفقه في فترةٍ مبكّرة، وكان جابر نفسه من أقدم الفقهاء الذين استعملوا الكتابة والمراسلة، فكتب بأجوبته إلى تلاميذه وأصحابه. وله كتاب النكاح وكتاب الصلاة، وآراؤه وأقواله منتشرةٌ في كتب المذهب، إضافةً إلى الحديث الذي رواه وجمعه الربيع بن حبيب في مسنده.',
+            fr: 'Son savoir fut consigné très tôt, et Jābir fut lui-même parmi les plus anciens juristes à recourir à l’écriture et à la correspondance : il adressa ses réponses à ses élèves et compagnons. Il a un Livre du mariage et un Livre de la prière ; ses avis sont répandus dans les ouvrages de l’école, ainsi que les hadiths qu’il transmit et que al-Rabī‘ ibn Ḥabīb réunit dans son Musnad.',
+            en: 'His knowledge was recorded early, and Jabir himself was among the earliest jurists to use writing and correspondence, sending his answers to his students and companions. He has a Book of Marriage and a Book of Prayer, and his views and sayings are spread through the school’s books, along with the hadith he narrated and that al-Rabi‘ ibn Habib gathered in his Musnad.',
           },
         },
         {
           id: 'p3',
           heading: { ar: 'ديوان جابر', fr: 'Le Dīwān de Jābir', en: 'The Diwan of Jabir' },
           text: {
-            ar: 'تذكر كتب السير أنّ الإمام جابرًا ترك كتابًا ضخمًا في الحديث والفقه، يُسمّى «ديوان جابر»، تعرّض فيه لمسائل الأحكام وضمّنه أحاديث رواها عن الصحابة والتابعين. وله قيمةٌ كبرى لقربه من عصر النبوّة، لكنّ أثره اختفى منذ عهدٍ مبكّر، ونُقل منه ما حفظته الأئمّة وتلاميذه.',
-            fr: 'Les livres de biographies rapportent que l’imam Jābir laissa un volumineux ouvrage de hadith et de droit, appelé « Dīwān de Jābir », traitant des questions de jurisprudence et contenant des hadiths rapportés des Compagnons et des Successeurs. Il avait une immense valeur par sa proximité de l’époque prophétique, mais sa trace disparut très tôt ; on en a transmis ce que les imams et ses élèves avaient retenu.',
-            en: 'The biographical sources say Imam Jabir left a large book of hadith and jurisprudence called the "Diwan of Jabir", dealing with legal rulings and including hadith he narrated from the Companions and Successors. It held great value for its closeness to the age of prophethood, but its trace vanished early; what the imams and his students had preserved was passed on from it.',
+            ar: 'تذكر كتب السير أنّ الإمام جابرًا ألّف كتابًا ضخمًا في الحديث والفقه سُمّي «ديوان جابر»، تعرّض فيه لمسائل الأحكام وضمّنه الأحاديث التي رواها عن الصحابة والتابعين، وهو أوّل كتابٍ أُلّف في الفقه.',
+            fr: 'Les livres de biographies rapportent que l’imam Jābir composa un volumineux ouvrage de hadith et de droit, appelé « Dīwān de Jābir », où il traita des questions de jurisprudence et réunit les hadiths qu’il avait rapportés des Compagnons et des Successeurs. C’est le premier livre composé en droit.',
+            en: 'The biographical sources say Imam Jabir wrote a large book of hadith and jurisprudence called the "Diwan of Jabir", in which he dealt with legal rulings and included the hadith he narrated from the Companions and Successors. It is the first book ever written on jurisprudence.',
+          },
+        },
+        {
+          id: 'p4',
+          heading: { ar: 'تحفةٌ اختفى أثرها', fr: 'Un trésor disparu', en: 'A treasure that vanished' },
+          text: {
+            ar: 'ولهذا الكتاب قيمةٌ كبرى لما فيه من علمٍ ونفع، لقربه من عصر النبوّة ولأخذه من كبار الصحابة. وبقيت هذه التحفة في حوزة تلميذه أبي عبيدة مسلم بن أبي كريمة، لكنّ أثرها اختفى منذ عهدٍ مبكّر، ونُقل منه ما حفظه الأئمّة وتلاميذه.',
+            fr: 'Ce livre a une immense valeur par le savoir et le profit qu’il contient, par sa proximité de l’époque prophétique et parce qu’il fut puisé auprès des grands Compagnons. Ce trésor resta entre les mains de son élève Abū ‘Ubayda Muslim ibn Abī Karīma, mais sa trace disparut très tôt ; on en a transmis ce que les imams et ses élèves avaient retenu.',
+            en: 'This book holds great value for the knowledge and benefit it contains, its closeness to the age of prophethood, and because it was taken from the senior Companions. This treasure stayed in the keeping of his student Abu ‘Ubayda Muslim ibn Abi Karima, but its trace vanished early; what the imams and his students had preserved was passed on from it.',
           },
         },
       ],
@@ -509,7 +541,7 @@ export const ahlDawaJabir: Lesson = {
           y: 72,
           label: { ar: 'الجذور: علم الصحابة', fr: 'Les racines : le savoir des Compagnons', en: 'The roots: the Companions’ knowledge' },
           description: {
-            ar: 'أخذ جابر العلم عن كثيرٍ من صحابة رسول الله (ص) والتابعين، منهم سبعون بدريًّا، وعن عائشة وابن عبّاس وأبي هريرة وابن عمر وابن مسعود وأنس بن مالك.',
+            ar: 'أخذ جابر العلم عن كثيرٍ من صحابة رسول الله ﷺ والتابعين، منهم سبعون بدريًّا، وعن عائشة رضي الله عنها وابن عبّاس وأبي هريرة وابن عمر وابن مسعود وأنس بن مالك.',
             fr: 'Jābir reçut le savoir de nombreux Compagnons du Messager ﷺ et des Successeurs, dont soixante-dix combattants de Badr, ainsi que de ‘Ā’isha, Ibn ‘Abbās, Abū Hurayra, Ibn ‘Umar, Ibn Mas‘ūd et Anas ibn Mālik.',
             en: 'Jabir took knowledge from many Companions of God’s Messenger ﷺ and from the Successors, including seventy who fought at Badr, and from ‘A’isha, Ibn ‘Abbas, Abu Hurayra, Ibn ‘Umar, Ibn Mas‘ud and Anas ibn Malik.',
           },
@@ -531,9 +563,9 @@ export const ahlDawaJabir: Lesson = {
           y: 28,
           label: { ar: 'الأغصان: التلاميذ', fr: 'Les branches : les élèves', en: 'The branches: the students' },
           description: {
-            ar: 'انتشر مذهب أهل الدعوة على أيدي كبار تلاميذه، كأبي عبيدة مسلم بن أبي كريمة، فوصل علمه إلى الأجيال اللاحقة.',
-            fr: 'L’école des gens de l’Appel se diffusa par ses grands élèves, tel Abū ‘Ubayda Muslim ibn Abī Karīma, et son savoir parvint aux générations suivantes.',
-            en: 'The school of the People of the Call spread through his senior students, such as Abu ‘Ubayda Muslim ibn Abi Karima, and his knowledge reached later generations.',
+            ar: 'انتشر مذهب أهل الدعوة على أيدي كبار تلاميذه، كأبي عبيدة مسلم بن أبي كريمة وضمام بن السائب، فوصل علمه إلى الأجيال اللاحقة.',
+            fr: 'L’école des gens de l’Appel se diffusa par ses grands élèves, tels Abū ‘Ubayda Muslim ibn Abī Karīma et Ḍimām ibn al-Sā’ib, et son savoir parvint aux générations suivantes.',
+            en: 'The school of the People of the Call spread through his senior students, such as Abu ‘Ubayda Muslim ibn Abi Karima and Dimam ibn al-Sa’ib, and his knowledge reached later generations.',
           },
         },
         {
@@ -543,8 +575,8 @@ export const ahlDawaJabir: Lesson = {
           label: { ar: 'الثمار: الكتب والمسند', fr: 'Les fruits : les livres et le Musnad', en: 'The fruits: books and the Musnad' },
           description: {
             ar: 'كتاب النكاح وكتاب الصلاة، وآراؤه في كتب المذهب، والحديث الذي رواه وجمعه الربيع بن حبيب في مسنده.',
-            fr: 'Le Livre du mariage et le Livre de la prière, ses avis dans les ouvrages de l’école, et les hadiths qu’il transmit et que ar-Rabī‘ ibn Ḥabīb réunit dans son Musnad.',
-            en: 'The Book of Marriage and the Book of Prayer, his views in the school’s books, and the hadith he narrated and ar-Rabi‘ ibn Habib gathered in his Musnad.',
+            fr: 'Le Livre du mariage et le Livre de la prière, ses avis dans les ouvrages de l’école, et les hadiths qu’il transmit et que al-Rabī‘ ibn Ḥabīb réunit dans son Musnad.',
+            en: 'The Book of Marriage and the Book of Prayer, his views in the school’s books, and the hadith he narrated and al-Rabi‘ ibn Habib gathered in his Musnad.',
           },
         },
         {
@@ -553,9 +585,9 @@ export const ahlDawaJabir: Lesson = {
           y: 92,
           label: { ar: 'النهر: الديوان الضائع', fr: 'Le fleuve : le recueil perdu', en: 'The river: the lost Diwan' },
           description: {
-            ar: 'ترك ديوانًا كبيرًا في الحديث والفقه لم يصل إلينا، ونُقل منه ما حفظته الأئمّة وتلاميذه، فجرى علمه كالنهر من جيلٍ إلى جيل.',
-            fr: 'Il laissa un grand Dīwān de hadith et de droit qui ne nous est pas parvenu ; on en transmit ce que les imams et ses élèves avaient retenu, et son savoir coula comme un fleuve de génération en génération.',
-            en: 'He left a large Diwan of hadith and jurisprudence that did not reach us; what the imams and his students preserved was passed on from it, so his knowledge flowed like a river from generation to generation.',
+            ar: 'ألّف ديوانًا كبيرًا في الحديث والفقه، أوّل كتابٍ أُلّف في الفقه، بقي عند تلميذه أبي عبيدة ثمّ لم يصل إلينا، ونُقل منه ما حفظته الأئمّة وتلاميذه، فجرى علمه كالنهر من جيلٍ إلى جيل.',
+            fr: 'Il composa un grand Dīwān de hadith et de droit, le premier livre de droit, resté chez son élève Abū ‘Ubayda puis perdu ; on en transmit ce que les imams et ses élèves avaient retenu, et son savoir coula comme un fleuve de génération en génération.',
+            en: 'He wrote a large Diwan of hadith and jurisprudence, the first book on jurisprudence, which stayed with his student Abu ‘Ubayda and then was lost; what the imams and his students preserved was passed on from it, so his knowledge flowed like a river from generation to generation.',
           },
         },
       ],
@@ -616,7 +648,7 @@ export const ahlDawaJabir: Lesson = {
         },
         {
           id: 'b3',
-          text: { ar: 'كانت عائشة تمنعه من السؤال عن أمور الدين.', fr: '‘Ā’isha l’empêchait de poser des questions sur la religion.', en: '‘A’isha prevented him from asking about matters of religion.' },
+          text: { ar: 'كانت عائشة رضي الله عنها تمنعه من السؤال عن أمور الدين.', fr: '‘Ā’isha l’empêchait de poser des questions sur la religion.', en: '‘A’isha prevented him from asking about matters of religion.' },
           answer: false,
           explanation: { ar: 'خطأ، كانت تقول له: اسأل يا جابر فلا حياء في الدين.', fr: 'Faux, elle lui disait : « Demande, Jābir, il n’y a pas de pudeur en religion. »', en: 'False — she told him: "Ask, Jabir — there is no shyness in religion."' },
         },
@@ -634,7 +666,7 @@ export const ahlDawaJabir: Lesson = {
         },
         {
           id: 'b6',
-          text: { ar: 'جمع الربيع بن حبيب حديث جابر في مسنده.', fr: 'ar-Rabī‘ ibn Ḥabīb réunit les hadiths de Jābir dans son Musnad.', en: 'ar-Rabi‘ ibn Habib gathered Jabir’s hadith in his Musnad.' },
+          text: { ar: 'جمع الربيع بن حبيب حديث جابر في مسنده.', fr: 'al-Rabī‘ ibn Ḥabīb réunit les hadiths de Jābir dans son Musnad.', en: 'al-Rabi‘ ibn Habib gathered Jabir’s hadith in his Musnad.' },
           answer: true,
           explanation: { ar: 'صحيح، وكذلك له كتاب النكاح وكتاب الصلاة.', fr: 'Vrai, et on lui attribue aussi un Livre du mariage et un Livre de la prière.', en: 'True — he also has a Book of Marriage and a Book of Prayer.' },
         },
@@ -671,10 +703,10 @@ export const ahlDawaJabir: Lesson = {
         {
           id: 'q2',
           type: 'truefalse',
-          question: { ar: 'اعتمد المذهب على ما بلّغه جابر من علم الصحابة عن الرسول (ص).', fr: 'L’école s’appuya sur ce que Jābir transmit du savoir des Compagnons rapporté du Messager ﷺ.', en: 'The school relied on what Jabir conveyed of the Companions’ knowledge from the Messenger ﷺ.' },
+          question: { ar: 'اعتمد المذهب على ما بلّغه جابر من علم الصحابة عن الرسول ﷺ.', fr: 'L’école s’appuya sur ce que Jābir transmit du savoir des Compagnons rapporté du Messager ﷺ.', en: 'The school relied on what Jabir conveyed of the Companions’ knowledge from the Messenger ﷺ.' },
           answer: true,
           explanation: {
-            ar: 'صحيح، فقد أخذ الدين من المنبع الصافي عن الرسول (ص) بواسطة الصحابة.',
+            ar: 'صحيح، فقد أخذ الدين من المنبع الصافي عن الرسول ﷺ بواسطة الصحابة.',
             fr: 'Vrai : il puisa la religion à la source pure du Messager ﷺ par l’intermédiaire des Compagnons.',
             en: 'True — he took the religion from the pure source, the Messenger ﷺ, through the Companions.',
           },
@@ -687,28 +719,28 @@ export const ahlDawaJabir: Lesson = {
             { id: 'p1', left: { ar: 'عبد الله بن عبّاس', fr: '‘Abd Allāh ibn ‘Abbās', en: '‘Abdullah ibn ‘Abbas' }, right: { ar: '«لوسعهم علمًا عمّا في كتاب الله»', fr: '« Ils auraient assez de savoir sur le Livre de Dieu »', en: '"They would have enough knowledge of the Book of God"' } },
             { id: 'p2', left: { ar: 'قتادة', fr: 'Qatāda', en: 'Qatada' }, right: { ar: '«اليوم توفّي أعلم أهل العراق»', fr: '« Aujourd’hui est mort le plus savant d’Irak »', en: '"Today the most knowledgeable in Iraq has died"' } },
             { id: 'p3', left: { ar: 'عائشة رضي الله عنها', fr: '‘Ā’isha (qu’Allah l’agrée)', en: '‘A’isha (may God be pleased with her)' }, right: { ar: '«اسأل يا جابر فلا حياء في الدين»', fr: '« Demande, Jābir, il n’y a pas de pudeur en religion »', en: '"Ask, Jabir — no shyness in religion"' } },
-            { id: 'p4', left: { ar: 'الربيع بن حبيب', fr: 'ar-Rabī‘ ibn Ḥabīb', en: 'ar-Rabi‘ ibn Habib' }, right: { ar: 'جمع حديثه في مسنده', fr: 'Réunit ses hadiths dans son Musnad', en: 'Gathered his hadith in his Musnad' } },
+            { id: 'p4', left: { ar: 'الربيع بن حبيب', fr: 'al-Rabī‘ ibn Ḥabīb', en: 'al-Rabi‘ ibn Habib' }, right: { ar: 'جمع حديثه في مسنده', fr: 'Réunit ses hadiths dans son Musnad', en: 'Gathered his hadith in his Musnad' } },
           ],
           explanation: {
             ar: 'كلّ شهادةٍ في الدرس تؤكّد جانبًا من مكانة جابر العلمية.',
-            fr: 'Chaque témoignage de la leçon confirme un aspect du rang scientifique de Jābir.',
+            fr: 'Chaque témoignage de la leçon confirme un aspect du rang de savant de Jābir.',
             en: 'Each testimony in the lesson confirms an aspect of Jabir’s scholarly standing.',
           },
         },
         {
           id: 'q4',
-          type: 'ordering',
-          question: { ar: 'رتّب هذه الأحداث زمنيًّا', fr: 'Ordonne ces événements chronologiquement', en: 'Put these events in order' },
-          items: [
-            { id: 'o1', label: { ar: 'ولادة جابر حوالي 21 هـ', fr: 'Naissance de Jābir vers 21 H', en: 'Jabir’s birth around 21 AH' } },
-            { id: 'o2', label: { ar: 'وفاة أبي بلال 61 هـ', fr: 'Mort d’Abū Bilāl en 61 H', en: 'Abu Bilal’s death in 61 AH' } },
-            { id: 'o3', label: { ar: 'تسمية أهل الدعوة 64 هـ', fr: 'Le nom des gens de l’Appel en 64 H', en: 'The naming of the People of the Call in 64 AH' } },
-            { id: 'o4', label: { ar: 'وفاة جابر 93 هـ', fr: 'Mort de Jābir en 93 H', en: 'Jabir’s death in 93 AH' } },
+          type: 'mcq',
+          question: { ar: 'ما الذي يميّز «ديوان جابر»؟', fr: 'Qu’est-ce qui distingue le « Dīwān de Jābir » ?', en: 'What makes the "Diwan of Jabir" special?' },
+          options: [
+            { id: 'a', label: { ar: 'هو أوّل كتابٍ أُلّف في الفقه', fr: 'C’est le premier livre composé en droit', en: 'It is the first book written on jurisprudence' } },
+            { id: 'b', label: { ar: 'هو ديوانٌ في الشعر والأدب', fr: 'C’est un recueil de poésie et de lettres', en: 'It is a collection of poetry and literature' } },
+            { id: 'c', label: { ar: 'ألّفه الربيع بن حبيب', fr: 'Il fut composé par al-Rabī‘ ibn Ḥabīb', en: 'It was written by al-Rabi‘ ibn Habib' } },
           ],
+          correctId: 'a',
           explanation: {
-            ar: '21 هـ ثمّ 61 هـ ثمّ 64 هـ ثمّ 93 هـ.',
-            fr: '21 H, puis 61 H, puis 64 H, puis 93 H.',
-            en: '21 AH, then 61 AH, then 64 AH, then 93 AH.',
+            ar: 'ألّفه جابر في الحديث والفقه، وهو أوّل كتابٍ أُلّف في الفقه، وبقي عند تلميذه أبي عبيدة ثمّ اختفى أثره منذ عهدٍ مبكّر.',
+            fr: 'Jābir le composa en hadith et en droit ; c’est le premier livre de droit. Il resta chez son élève Abū ‘Ubayda, puis sa trace disparut très tôt.',
+            en: 'Jabir wrote it on hadith and jurisprudence; it is the first book on jurisprudence. It stayed with his student Abu ‘Ubayda, then its trace vanished early.',
           },
         },
       ],
@@ -720,7 +752,7 @@ export const ahlDawaJabir: Lesson = {
       id: 'values',
       title: { ar: 'ماذا نتعلّم من هذا الدرس؟', fr: 'Que retenir de cette leçon ?', en: 'What do we learn from this lesson?' },
       prompt: {
-        ar: 'حين كان جابر يسأل عائشة (رضي الله عنها) من وراء حجاب، ماذا علّمته؟',
+        ar: 'حين كان جابر يسأل عائشة رضي الله عنها من وراء حجاب، ماذا علّمته؟',
         fr: 'Lorsque Jābir interrogeait ‘Ā’isha (qu’Allah l’agrée) derrière un voile, que lui enseigna-t-elle ?',
         en: 'When Jabir asked ‘A’isha (may God be pleased with her) from behind a screen, what did she teach him?',
       },
@@ -749,7 +781,7 @@ export const ahlDawaJabir: Lesson = {
         {
           id: 'curiosity',
           value: { ar: 'طلب العلم بلا حياء', fr: 'Chercher le savoir sans gêne', en: 'Seeking knowledge without shyness' },
-          evidence: { ar: 'سأل عائشة عن كلّ شيءٍ من أمور الدين.', fr: 'Il interrogea ‘Ā’isha sur tout ce qui touche à la religion.', en: 'He asked ‘A’isha about everything in religion.' },
+          evidence: { ar: 'سأل عائشة رضي الله عنها عن كلّ شيءٍ من أمور الدين.', fr: 'Il interrogea ‘Ā’isha sur tout ce qui touche à la religion.', en: 'He asked ‘A’isha about everything in religion.' },
         },
         {
           id: 'wisdom',
@@ -763,8 +795,8 @@ export const ahlDawaJabir: Lesson = {
         },
         {
           id: 'trust',
-          value: { ar: 'الأمانة العلمية', fr: 'L’honnêteté scientifique', en: 'Scholarly honesty' },
-          evidence: { ar: 'رواياته متّصلة إلى الرسول (ص)، وأجمعوا على عدالته وضبطه.', fr: 'Ses transmissions remontent jusqu’au Messager ﷺ, et l’on s’accorda sur sa probité et sa précision.', en: 'His reports were linked back to the Messenger ﷺ, and scholars agreed on his integrity and accuracy.' },
+          value: { ar: 'الأمانة العلمية', fr: 'L’intégrité du savant', en: 'Scholarly honesty' },
+          evidence: { ar: 'رواياته متّصلة إلى الرسول ﷺ، وأجمعوا على عدالته وضبطه.', fr: 'Ses transmissions remontent jusqu’au Messager ﷺ, et l’on s’accorda sur sa probité et sa précision.', en: 'His reports were linked back to the Messenger ﷺ, and scholars agreed on his integrity and accuracy.' },
         },
       ],
     },
@@ -774,7 +806,7 @@ export const ahlDawaJabir: Lesson = {
       kind: 'completion',
       id: 'completion',
       keyTakeaway: {
-        ar: 'الإمام جابر بن زيد هو إمام أهل الدعوة والاستقامة: أخذ علم الصحابة عن الرسول (ص)، وحفظه لتلاميذه رغم السجن والنفي، وترك علمًا وأثرًا ما يزال مذهب أهل الدعوة يقوم عليه.',
+        ar: 'الإمام جابر بن زيد هو إمام أهل الدعوة والاستقامة: أخذ علم الصحابة عن الرسول ﷺ، وحفظه لتلاميذه رغم السجن والنفي، وترك علمًا وأثرًا ما يزال مذهب أهل الدعوة يقوم عليه.',
         fr: 'L’imam Jābir ibn Zayd est l’imam des gens de l’Appel et de la Rectitude : il reçut le savoir des Compagnons rapporté du Messager ﷺ, le transmit à ses élèves malgré la prison et l’exil, et laissa un savoir et une trace sur lesquels l’école repose encore.',
         en: 'Imam Jabir ibn Zayd is the imam of the People of the Call and Rectitude: he took the Companions’ knowledge from the Messenger ﷺ, preserved it for his students despite prison and exile, and left knowledge and works on which the school still rests.',
       },
@@ -785,7 +817,7 @@ export const ahlDawaJabir: Lesson = {
           en: 'The name People of the Call and Rectitude dates to 64 AH, when they followed the great scholar Jabir ibn Zayd.',
         },
         {
-          ar: 'وُلد جابر بن زيد في عُمان حوالي سنة 21 هـ، وتعلّم في البصرة والحجاز عند كبار الصحابة، ومنهم عائشة وابن عبّاس.',
+          ar: 'وُلد جابر بن زيد في عُمان حوالي سنة 21 هـ، وتعلّم في البصرة والحجاز عند كبار الصحابة، ومنهم عائشة رضي الله عنها وابن عبّاس.',
           fr: 'Jābir ibn Zayd naquit en Oman vers 21 H et étudia à Bassora et au Hedjaz auprès de grands Compagnons, dont ‘Ā’isha et Ibn ‘Abbās.',
           en: 'Jabir ibn Zayd was born in Oman around 21 AH and studied in Basra and the Hijaz with senior Companions, including ‘A’isha and Ibn ‘Abbas.',
         },
@@ -795,9 +827,9 @@ export const ahlDawaJabir: Lesson = {
           en: 'Great scholars testified to the breadth of his knowledge, and Qatada said the day he died in 93 AH: "Today the most knowledgeable of Iraq has died."',
         },
         {
-          ar: 'توزّع علمه بين تلاميذه كأبي عبيدة، وبقيت كتبه ورواياته في كتب المذهب وفي مسند الربيع، أمّا ديوانه فلم يصل أثره.',
-          fr: 'Son savoir se répartit entre ses élèves comme Abū ‘Ubayda ; ses livres et ses transmissions subsistent dans les ouvrages de l’école et le Musnad d’ar-Rabī‘, mais la trace de son Dīwān s’est perdue.',
-          en: 'His knowledge was shared among students like Abu ‘Ubayda; his books and reports survive in the school’s works and ar-Rabi‘’s Musnad, but the trace of his Diwan was lost.',
+          ar: 'توزّع علمه بين تلاميذه كأبي عبيدة وضمام، وانتشرت آراؤه وأقواله في كتب المذهب، وجمع الربيع حديثه في مسنده، أمّا ديوانه — أوّل كتابٍ أُلّف في الفقه — فقد اختفى أثره منذ عهدٍ مبكّر.',
+          fr: 'Son savoir se répartit entre ses élèves comme Abū ‘Ubayda et Ḍimām ; ses avis sont répandus dans les ouvrages de l’école et al-Rabī‘ réunit ses hadiths dans son Musnad, mais la trace de son Dīwān — le premier livre de droit — disparut très tôt.',
+          en: 'His knowledge was shared among students like Abu ‘Ubayda and Dimam; his views spread through the school’s books and al-Rabi‘ gathered his hadith in his Musnad, but the trace of his Diwan — the first book on jurisprudence — vanished early.',
         },
       ],
     },

@@ -16,7 +16,7 @@ Credentials (`CF_ACCOUNT_ID`, `CF_API_TOKEN`) are read from the environment or a
 
 **Every image must be reviewed by eye before it is committed.** Reject and regenerate if you see any of these:
 
-- any human figure, including tiny riders, distant people or silhouettes
+- any figure that could be read as the Prophet ﷺ, another prophet or a Companion — including any person, rider or crowd in a scene where they were present
 - rendered text, letters, captions or watermarks (schnell adds these often)
 - modern buildings, minarets, clock towers or electric lights
 - anything that could be read as a depiction of the Prophet ﷺ
@@ -39,7 +39,7 @@ highly detailed
 
 Visual system: warm, calm, premium, no cartoon faces, and no heavy ornament. Night scenes use deep blue and teal. Day scenes use sand and gold.
 
-**Global must-NOT (every image):** a depiction of the Prophet ﷺ in any form · any human figure · faces · silhouettes · text · watermarks · modern buildings or objects · minarets or the modern Masjid al-Ḥarām · the clock tower.
+**Global must-NOT (every image):** a depiction of the Prophet ﷺ, other prophets or the Companions in any form (no people at all in scenes where they were present) · text · watermarks · modern buildings or objects · minarets or the modern Masjid al-Ḥarām · the clock tower.
 
 ---
 
@@ -217,3 +217,38 @@ Same workflow and shared suffix as the previous section (8 steps, 1024×1024 →
 - **market-goods.png** — `Close-up still life of rolls of plain brightly dyed cloth in indigo, saffron and red, baskets of spices and dates, copper pots and leather bags on a woven mat, plain palm-leaf awning above, warm light`
 - **sedrata-ruins.png** — `Close view of the top of a finely carved stucco arch and broken mud-brick walls emerging from smooth golden Sahara sand dunes, hazy pale sky, quiet and melancholic`
 - **ouargla-simple.png** — `A modest quiet Saharan oasis town of simple low mud-brick houses among tall date palms beside a stone well at dusk, peaceful and sheltered, warm lamp glow in small windows`
+
+---
+
+## Content audit fixes (Flux schnell via Cloudflare Workers AI)
+
+Images that showed the Prophet ﷺ or Companions, or a crowd in a scene where they were present, were replaced (see CONTENT_GUIDELINES.md §1). Same workflow and shared suffix.
+
+### Regenerated
+
+- **prophet-birth-youth/cave-hira.png** — `View from inside an empty small rocky mountain cave looking out through its narrow opening at a wide ancient desert valley far below at dusk, a small plain cube-shaped Kaaba standing among a few low flat-roofed mud-brick houses, bare rocky mountains all around, a woven reed mat and a clay water jug resting on the bare stone floor of the cave, quiet and contemplative`
+- **prophet-birth-youth/black-stone.png** — `A dark polished Black Stone resting in the middle of a large woven striped cloak spread on the sandy ground in front of the half-rebuilt stone wall of the ancient Kaaba, wooden scaffolding and stacked building stones around, four corners of the cloak lying open, calm late afternoon light`
+- **prophet-birth-youth/hilf-al-fudul.png** — `An empty ancient Arabian mud-brick hall at night with plain plastered walls and palm-wood ceiling beams, floor cushions arranged in a circle on woven carpets around a low wooden table, a single rolled parchment scroll tied with a red cord on the table, clay oil lamps glowing, solemn and dignified`
+- **prophet-birth-youth/youth-trade.png** — `Four saddled camels resting on open golden sand dunes at sunrise, plain undecorated bundles of woven cloth and leather saddlebags of trade goods on the sand beside them, two plain clay jars, a long empty desert trail winding north toward distant rocky hills, warm sunrise`
+- **hijra-habasha-madina/miraj-sky.png** (new) — `A luminous staircase of soft golden light rising from a distant glowing stone domed sanctuary up through layers of deep blue starry sky and swirling clouds toward a radiant celestial light, serene and sacred`
+- **jamal-siffin/hero.png** — `Wide view of an empty dusty plain beside palm groves and a calm river delta at dusk, a single empty wooden camel litter draped in plain dark red cloth standing alone on the sand, dropped spears and round shields scattered around it, settling dust, solemn and quiet`
+- **jamal-siffin/siffin-hero.png** — `Wide view of a vast empty plain on the bank of the Euphrates river at dawn, two long rows of abandoned tents facing each other across the plain, tall plain red and green cloth banners on wooden poles fluttering in the wind, dramatic clouds, tense calm`
+
+### Pending (the daily Cloudflare quota ran out)
+
+These sections currently point to an existing figure-free image. After generating, point each section back to its own file and update its `imageAlt`.
+
+- **jamal-siffin/envoy.png** — `A single saddled brown horse tied to a stone marker beside a dusty road winding north through rocky hills, a rolled parchment letter tied with red cord resting on the stone, soft morning light`
+- **jamal-siffin/march.png** — `A long trail of hoofprints and camel tracks crossing a wide golden desert plain toward the horizon, plain cloth banners on wooden poles planted along the route, a cloud of dust far in the distance, golden afternoon light`
+- **jamal-siffin/siffin.png** — `Round wooden shields, curved swords and long spears lying on the sand of an empty battlefield beside a slow river, haze of dust in the air, late afternoon light, quiet after the fighting`
+- **jamal-siffin/demand.png** — `A quiet open courtyard of an early mud-brick building with palm-trunk pillars and a flat roof of dried palm fronds, woven mats and plain floor cushions arranged in a circle on the sandy floor, warm daylight streaming in`
+- **jamal-siffin/jamal.png** — `A single tall camel standing calmly on a dusty plain, carrying an empty wooden litter covered in plain undecorated red cloth, broken spears and dropped round shields scattered on the sand around it, palm trees in the hazy distance, evening light`
+- **jamal-siffin/answer.png** (has pseudo-text and modern objects) — a new still life of a closed book, reed pen and inkwell
+- **nahrawan-muhakkima/hero.png** — `Abandoned dark goat-hair tents on the bank of a wide river under a dark stormy sky, palm groves on the far bank, wind blowing sand across the ground, ominous and heavy`
+- **nahrawan-muhakkima/abdallah-ibn-wahb.png** — `An austere desert camp of simple dark goat-hair tents among low dunes, a single plain dark cloth banner on a tall wooden pole planted between the tents, woven mats and a small wooden book stand in front of the main tent, calm evening light`
+- **nahrawan-muhakkima/nahrawan-ambush.png** — `Overturned tents, broken spears and scattered round shields on a river bank at dawn, thin smoke drifting over the calm water, palm trees on the far bank, pale mournful light`
+- **nahrawan-muhakkima/mosque-door-dawn.png** — `A heavy carved wooden double door set in a thick plain mud-brick wall at dawn, a small clay oil lamp glowing in a niche beside the door, an empty courtyard with long blue shadows, a thin crescent moon in the pale sky`
+- **nahrawan-muhakkima/pursuit.png** — `A narrow dark alley of an old mud-brick city at night, a single burning torch fixed on the wall, a closed heavy wooden door, long shadows on the worn stone paving, tense and silent`
+- **nahrawan-muhakkima/damascus-capital.png** — `An ancient walled city at sunset with thick crenellated stone ramparts, a great palace with one broad low lead-covered dome, green gardens and orchards around the walls, plain green banners on the ramparts, majestic`
+- **nahrawan-muhakkima/varied-reactions.png** (new) — `Still life on a woven mat in a quiet room: on the left a sheathed sword lying flat, in the middle a small closed wooden box, on the right a closed leather-bound book beside a lit clay oil lamp, warm gold light, symbolic and calm`
+- **hijra-habasha-madina/year-of-sorrow.png** (new; the Year of Sorrow card temporarily uses sahifa.png) — a quiet mourning scene: an empty house doorway at dusk with an unlit lamp

@@ -37,11 +37,11 @@ export const nashatDawla: Lesson = {
   },
   title: {
     ar: 'نشأة الدولة الإسلامية',
-    fr: 'La naissance de l’État islamique',
-    en: 'The Birth of the Islamic State',
+    fr: 'La naissance de l’État musulman à Médine',
+    en: 'The Birth of the Muslim State in Madina',
   },
   description: {
-    ar: 'وصل الرسول (ص) إلى المدينة، فماذا بنى أوّلًا؟ اكتشف المسجد، والمؤاخاة، وصحيفة المدينة، وتحوّل القبلة، وأوّل أذان، وكيف بقيت المدينة يقظة.',
+    ar: 'وصل الرسول ﷺ إلى المدينة، فماذا بنى أوّلًا؟ اكتشف المسجد، والمؤاخاة، وصحيفة المدينة، وتحوّل القبلة، وأوّل أذان، وكيف بقيت المدينة يقظة.',
     fr: 'Le Prophète ﷺ arrive à Médine : que bâtit-il en premier ? Découvre la mosquée, la fraternisation, la charte de Médine, le changement de qibla, le premier appel à la prière, et la vigilance de Médine.',
     en: 'The Prophet ﷺ reaches Madina: what did he build first? Discover the mosque, the brotherhood, the Charter of Madina, the change of qibla, the first call to prayer, and how Madina stayed watchful.',
   },
@@ -64,9 +64,9 @@ export const nashatDawla: Lesson = {
         en: 'If you arrived in a new town to begin a safe life there, what would you start with?',
       },
       intro: {
-        ar: 'استقبل المسلمون من أهل المدينة إخوانهم المهاجرين مع الرسول (ص) من مكّة، بعد أن تركوا ديارهم وأموالهم بحثًا عن مكانٍ يقيمون فيه دينهم في أمان. فكيف كان أوّل لقاءٍ بينهم؟ وما أوّل الأعمال التي قام بها الرسول (ص)؟ وكيف أصبح حال المسلمين بعيدًا عن المشركين؟',
-        fr: 'Les musulmans de Médine accueillirent leurs frères émigrés venus de La Mecque avec le Prophète ﷺ, qui avaient quitté leurs maisons et leurs biens pour trouver un lieu où pratiquer leur religion en sécurité. Comment fut leur première rencontre ? Quelles furent les premières actions du Prophète ﷺ ? Et comment devint la vie des musulmans loin des polythéistes ?',
-        en: 'The Muslims of Madina welcomed their brothers who had migrated from Makkah with the Prophet ﷺ, leaving their homes and wealth behind to find a place to practise their religion in safety. How was their first meeting? What were the Prophet’s ﷺ first actions? And how did the Muslims’ life become, far from the polytheists?',
+        ar: 'استقبل المسلمون من أهل المدينة إخوانهم المهاجرين مع الرسول ﷺ من مكّة، بعد أن تركوا ديارهم وأموالهم بحثًا عن مكانٍ يقيمون فيه دينهم في أمان. فكيف كان أوّل لقاءٍ بينهم؟ وما أوّل الأعمال التي قام بها الرسول ﷺ؟ وكيف أصبح حال المسلمين بعيدًا عن المشركين؟',
+        fr: 'Les musulmans de Médine accueillirent leurs frères émigrés venus de La Mecque avec le Prophète ﷺ, qui avaient quitté leurs maisons et leurs biens pour trouver un lieu où pratiquer leur religion en sécurité. Comment fut leur première rencontre ? Quelles furent les premières actions du Prophète ﷺ ? Et que devint la vie des musulmans loin des polythéistes ?',
+        en: 'The Muslims of Madina welcomed their brothers who had migrated from Makkah with the Prophet ﷺ, leaving their homes and wealth behind to find a place to practise their religion in safety. How was their first meeting? What were the Prophet’s ﷺ first actions? And what became of the Muslims’ life, far from the polytheists?',
       },
     },
 
@@ -83,7 +83,7 @@ export const nashatDawla: Lesson = {
       missions: [
         {
           id: 'm1',
-          question: { ar: 'ما أوّل الأعمال التي قام بها الرسول (ص) فور وصوله إلى المدينة؟', fr: 'Quelle fut la première action du Prophète ﷺ à son arrivée à Médine ?', en: 'What was the Prophet’s ﷺ first action on reaching Madina?' },
+          question: { ar: 'ما أوّل الأعمال التي قام بها الرسول ﷺ فور وصوله إلى المدينة؟', fr: 'Quelle fut la première action du Prophète ﷺ à son arrivée à Médine ?', en: 'What was the Prophet’s ﷺ first action on reaching Madina?' },
           target: 'reading-masjid',
           teaser: { ar: 'مكانٌ قبل البيت.', fr: 'Un lieu avant la maison.', en: 'A place before the house.' },
         },
@@ -95,7 +95,7 @@ export const nashatDawla: Lesson = {
         },
         {
           id: 'm3',
-          question: { ar: 'كيف أصبح حال المسلمين بعيدًا عن المشركين؟', fr: 'Comment devint la vie des musulmans loin des polythéistes ?', en: 'How did the Muslims fare, far from the polytheists?' },
+          question: { ar: 'كيف أصبح حال المسلمين بعيدًا عن المشركين؟', fr: 'Que devint la vie des musulmans loin des polythéistes ?', en: 'How did the Muslims fare, far from the polytheists?' },
           target: 'reading-vigilance',
           teaser: { ar: 'أمانٌ، لكنّ العيون ساهرة.', fr: 'La sécurité, mais des yeux qui veillent.', en: 'Safety — but watchful eyes.' },
         },
@@ -112,11 +112,11 @@ export const nashatDawla: Lesson = {
         fr: 'Lis comment les Émigrés furent accueillis, puis reconstitue le verset dans le jeu suivant.',
         en: 'Read how the Emigrants were welcomed, then rebuild the verse in the next game.',
       },
-      image: `${IMG}/adhan-dawn.png`,
+      image: `${IMG}/welcome-house.png`,
       imageAlt: {
-        ar: 'أسطحُ بيوتٍ طينية في واحة نخيلٍ عند الفجر، وأوّل الضوء يطلع خلف جبالٍ داكنة وطيورٌ تحلّق في سماءٍ وردية',
-        fr: 'Les toits plats de maisons en terre d’une oasis à l’aube, la première lumière se levant derrière des montagnes sombres et des oiseaux dans un ciel rose',
-        en: 'Flat mud-brick rooftops of an oasis town at dawn, first light rising behind dark hills and birds in a rose sky',
+        ar: 'داخلُ بيتٍ طينيّ بسيط، ستارةٌ منسوجة مرفوعة عن الباب يدخل منها ضوء الشمس، ووسائدُ وسجّاد، وصينيّةٌ عليها تمرٌ وخبز وإبريق ماء',
+        fr: 'L’intérieur d’une simple maison en terre, un rideau tissé relevé sur la porte laissant entrer le soleil, des coussins, des tapis et un plateau avec des dattes, du pain et une cruche d’eau',
+        en: 'Inside a simple mud-brick house, a woven curtain drawn back from the door letting in sunlight, cushions, rugs and a tray with dates, bread and a water jug',
       },
       paragraphs: [
         {
@@ -132,7 +132,7 @@ export const nashatDawla: Lesson = {
           id: 'p2',
           heading: { ar: 'إخوةٌ يستقبلون إخوة', fr: 'Des frères accueillent des frères', en: 'Brothers welcome brothers' },
           text: {
-            ar: 'استقبل المسلمون من أهل المدينة إخوانهم المهاجرين مع الرسول (ص) من مكّة ليستقرّوا بها، بعد أن تركوا ديارهم وأموالهم بحثًا عن مكانٍ يقيمون فيه دينهم في أمان.',
+            ar: 'استقبل المسلمون من أهل المدينة إخوانهم المهاجرين مع الرسول ﷺ من مكّة ليستقرّوا بها، بعد أن تركوا ديارهم وأموالهم بحثًا عن مكانٍ يقيمون فيه دينهم في أمان.',
             fr: 'Les musulmans de Médine accueillirent leurs frères émigrés de La Mecque avec le Prophète ﷺ pour qu’ils s’y installent, eux qui avaient quitté maisons et biens pour trouver un lieu où pratiquer leur religion en sécurité.',
             en: 'The Muslims of Madina welcomed their brothers who had migrated from Makkah with the Prophet ﷺ so they could settle there, after they had left their homes and wealth to find a place to practise their religion in safety.',
           },
@@ -141,7 +141,7 @@ export const nashatDawla: Lesson = {
           id: 'p3',
           heading: { ar: 'يومُ الوصول', fr: 'Le jour de l’arrivée', en: 'The day of arrival' },
           text: {
-            ar: 'وصل الرسول (ص) إلى المدينة يوم الثاني عشر من ربيع الأوّل من السنة الرابعة عشرة للبعثة، فاستبشر المسلمون بقدومه واستقبلوه بسعادةٍ غامرة.',
+            ar: 'وصل الرسول ﷺ إلى المدينة يوم الثاني عشر من ربيع الأوّل من السنة الرابعة عشرة للبعثة، فاستبشر المسلمون بقدومه واستقبلوه بسعادةٍ غامرة.',
             fr: 'Le Prophète ﷺ arriva à Médine le 12 rabī‘ al-awwal de la quatorzième année de la mission ; les musulmans se réjouirent de sa venue et l’accueillirent avec une immense joie.',
             en: 'The Prophet ﷺ reached Madina on the 12th of Rabi‘ al-Awwal in the fourteenth year of the mission; the Muslims rejoiced at his coming and welcomed him with overflowing happiness.',
           },
@@ -180,22 +180,22 @@ export const nashatDawla: Lesson = {
       id: 'reading-masjid',
       title: { ar: 'اقرأ: بناء المسجد النبويّ', fr: 'Lis : la construction de la mosquée du Prophète', en: 'Read: building the Prophet’s Mosque' },
       intro: {
-        ar: 'ما أوّل ما فعله الرسول (ص)؟ اقرأ، ثمّ استكشف المسجد.',
+        ar: 'ما أوّل ما فعله الرسول ﷺ؟ اقرأ، ثمّ استكشف المسجد.',
         fr: 'Quelle fut la première chose que fit le Prophète ﷺ ? Lis, puis explore la mosquée.',
         en: 'What was the first thing the Prophet ﷺ did? Read, then explore the mosque.',
       },
-      image: `${IMG}/welcome-house.png`,
+      image: `${IMG}/hero.png`,
       imageAlt: {
-        ar: 'داخلُ بيتٍ طينيّ بسيط، ستارةٌ منسوجة مرفوعة عن الباب يدخل منها ضوء الشمس، ووسائدُ وسجّاد، وصينيّةٌ عليها تمرٌ وخبز وإبريق ماء',
-        fr: 'L’intérieur d’une simple maison en terre, un rideau tissé relevé sur la porte laissant entrer le soleil, des coussins, des tapis et un plateau avec des dattes, du pain et une cruche d’eau',
-        en: 'Inside a simple mud-brick house, a woven curtain drawn back from the door letting in sunlight, cushions, rugs and a tray with dates, bread and a water jug',
+        ar: 'واحةُ نخيلٍ خضراء تتخلّلها بيوتٌ طينية منخفضة عند الشروق، وفي وسطها ساحةٌ مسوّرة بسقفٍ من سعف النخل',
+        fr: 'Une oasis verte de palmiers parsemée de maisons basses en terre au lever du soleil, avec en son cœur une cour close couverte de palmes',
+        en: 'A green palm oasis dotted with low mud-brick houses at sunrise, with a walled courtyard roofed in palm fronds at its heart',
       },
       paragraphs: [
         {
           id: 'p1',
           heading: { ar: 'تنافسُ الأنصار', fr: 'L’émulation des Ansār', en: 'The Ansar compete' },
           text: {
-            ar: 'تنافس الأنصار فيمن يستضيف الرسول (ص) في منزله، لكنّه أشار عليهم باختيار مكان المسجد أوّلًا، ثمّ يبني بيته بجواره.',
+            ar: 'تنافس الأنصار فيمن يستضيف الرسول ﷺ في منزله، لكنّه أشار عليهم باختيار مكان المسجد أوّلًا، ثمّ يبني بيته بجواره.',
             fr: 'Les Ansār rivalisèrent pour recevoir le Prophète ﷺ chez eux, mais il leur indiqua de choisir d’abord l’emplacement de la mosquée ; ensuite, il bâtirait sa maison à côté.',
             en: 'The Ansar competed over who would host the Prophet ﷺ in his home, but he directed them to choose the site of the mosque first; then he would build his house beside it.',
           },
@@ -204,7 +204,7 @@ export const nashatDawla: Lesson = {
           id: 'p2',
           heading: { ar: 'المسجد أوّلًا', fr: 'La mosquée d’abord', en: 'The mosque first' },
           text: {
-            ar: 'اهتمّ النبيّ (ص) أوّل الأمر ببناء المسجد، لأنّه يُعدّ منارةً للمسلمين.',
+            ar: 'اهتمّ النبيّ ﷺ أوّل الأمر ببناء المسجد، لأنّه يُعدّ منارةً للمسلمين.',
             fr: 'Le Prophète ﷺ s’occupa en tout premier de bâtir la mosquée, car elle est un phare pour les musulmans.',
             en: 'The Prophet ﷺ cared first of all about building the mosque, because it is a beacon for the Muslims.',
           },
@@ -244,7 +244,7 @@ export const nashatDawla: Lesson = {
           y: 45,
           label: { ar: 'المكان أوّلًا', fr: 'L’emplacement d’abord', en: 'The site first' },
           description: {
-            ar: 'تنافس الأنصار في استضافة الرسول (ص)، فأشار عليهم باختيار مكان المسجد أوّلًا.',
+            ar: 'تنافس الأنصار في استضافة الرسول ﷺ، فأشار عليهم باختيار مكان المسجد أوّلًا.',
             fr: 'Les Ansār rivalisaient pour recevoir le Prophète ﷺ ; il leur indiqua de choisir d’abord l’emplacement de la mosquée.',
             en: 'The Ansar competed to host the Prophet ﷺ; he directed them to choose the site of the mosque first.',
           },
@@ -277,7 +277,7 @@ export const nashatDawla: Lesson = {
           y: 55,
           label: { ar: 'البيت بجوار المسجد', fr: 'La maison à côté de la mosquée', en: 'The house beside the mosque' },
           description: {
-            ar: 'بعد اختيار مكان المسجد، يبني الرسول (ص) بيته بجواره.',
+            ar: 'بعد اختيار مكان المسجد، يبني الرسول ﷺ بيته بجواره.',
             fr: 'Une fois l’emplacement de la mosquée choisi, le Prophète ﷺ bâtit sa maison à côté.',
             en: 'Once the mosque’s site was chosen, the Prophet ﷺ built his house beside it.',
           },
@@ -326,7 +326,7 @@ export const nashatDawla: Lesson = {
           id: 'p2',
           heading: { ar: 'كلُّ أنصاريٍّ وأخوه', fr: 'Chaque Ansārī et son frère', en: 'Each Ansari and his brother' },
           text: {
-            ar: 'آخى الرسول (ص) بين كلّ أنصاريٍّ ونزيله من المهاجرين، فأخذ كلّ رجلٍ من الأنصار رجلًا من المهاجرين واعتبره أخًا له.',
+            ar: 'آخى الرسول ﷺ بين كلّ أنصاريٍّ ونزيله من المهاجرين، فأخذ كلّ رجلٍ من الأنصار رجلًا من المهاجرين واعتبره أخًا له.',
             fr: 'Le Prophète ﷺ fit de chaque Ansārī et de l’Émigré qu’il hébergeait des frères : chaque homme des Ansār prit un homme des Émigrés et le considéra comme son frère.',
             en: 'The Prophet ﷺ made each Ansari and the Emigrant staying with him brothers: each man of the Ansar took a man of the Emigrants and regarded him as his brother.',
           },
@@ -376,7 +376,7 @@ export const nashatDawla: Lesson = {
         },
         {
           id: 's2',
-          prompt: { ar: 'وماذا فعل الرسول (ص)؟', fr: 'Et que fit le Prophète ﷺ ?', en: 'And what did the Prophet ﷺ do?' },
+          prompt: { ar: 'وماذا فعل الرسول ﷺ؟', fr: 'Et que fit le Prophète ﷺ ?', en: 'And what did the Prophet ﷺ do?' },
           correct: { ar: 'آخى بين كلّ أنصاريٍّ ونزيله من المهاجرين', fr: 'Il fit frères chaque Ansārī et l’Émigré qu’il hébergeait', en: 'He made each Ansari and the Emigrant staying with him brothers' },
           distractors: [
             { label: { ar: 'جعل المهاجرين يسكنون وحدهم خارج المدينة', fr: 'Il fit loger les Émigrés seuls hors de la ville', en: 'He housed the Emigrants alone outside the town' }, hint: { ar: 'جمع بينهم ولم يفرّقهم.', fr: 'Il les réunit au lieu de les séparer.', en: 'He brought them together rather than apart.' } },
@@ -404,7 +404,7 @@ export const nashatDawla: Lesson = {
     {
       kind: 'reading',
       id: 'reading-sahifa',
-      title: { ar: 'اقرأ: الرسول (ص) يضع دستورًا للمدينة', fr: 'Lis : le Prophète ﷺ donne une charte à Médine', en: 'Read: the Prophet ﷺ gives Madina a charter' },
+      title: { ar: 'اقرأ: الرسول ﷺ يضع دستورًا للمدينة', fr: 'Lis : le Prophète ﷺ donne une charte à Médine', en: 'Read: the Prophet ﷺ gives Madina a charter' },
       intro: {
         ar: 'في المدينة لم يكن المسلمون وحدهم. اقرأ، ثمّ رتّب بنود الصحيفة.',
         fr: 'À Médine, les musulmans n’étaient pas seuls. Lis, puis range les clauses de la charte.',
@@ -421,7 +421,7 @@ export const nashatDawla: Lesson = {
           id: 'p1',
           heading: { ar: 'مجتمعٌ جديد', fr: 'Une société nouvelle', en: 'A new society' },
           text: {
-            ar: 'تشكّل في المدينة المنوّرة مجتمعٌ جديد من المسلمين ومن المشركين ومن اليهود، فأقرّ الرسول (ص) للجميع دينه وأمواله.',
+            ar: 'تشكّل في المدينة المنوّرة مجتمعٌ جديد من المسلمين ومن المشركين ومن اليهود، فأقرّ الرسول ﷺ للجميع دينه وأمواله.',
             fr: 'À Médine se forma une société nouvelle de musulmans, de polythéistes et de juifs ; le Prophète ﷺ reconnut à chacun sa religion et ses biens.',
             en: 'In Madina a new society formed of Muslims, polytheists and Jews; the Prophet ﷺ confirmed for everyone their religion and their property.',
           },
@@ -430,7 +430,7 @@ export const nashatDawla: Lesson = {
           id: 'p2',
           heading: { ar: 'حقوقٌ وحدود', fr: 'Des droits et des limites', en: 'Rights and limits' },
           text: {
-            ar: 'وأقرّ الرسول (ص) أن يعرف الواحد للآخر حقوقه وحدوده، فلا يتعدّى بعضهم على بعض، وعاهدوه أن يكونوا عونًا على الأعداء إن هاجموا المدينة.',
+            ar: 'وأقرّ الرسول ﷺ أن يعرف الواحد للآخر حقوقه وحدوده، فلا يتعدّى بعضهم على بعض، وعاهدوه أن يكونوا عونًا على الأعداء إن هاجموا المدينة.',
             fr: 'Le Prophète ﷺ établit que chacun connaisse les droits et les limites de l’autre, afin que nul n’agresse autrui ; et ils s’engagèrent à s’entraider contre les ennemis s’ils attaquaient Médine.',
             en: 'The Prophet ﷺ established that each should know the other’s rights and limits, so that none would wrong another; and they pledged to stand together against enemies if they attacked Madina.',
           },
@@ -439,7 +439,7 @@ export const nashatDawla: Lesson = {
           id: 'p3',
           heading: { ar: 'صحيفة المدينة', fr: 'La charte de Médine', en: 'The Charter of Madina' },
           text: {
-            ar: 'وثّق الرسول (ص) هذه البنود في وثيقةٍ لتشهد على اتّفاقهم، وسُمّيت «صحيفة المدينة»، فعمّت الطمأنينة والسلام في المدينة المنوّرة، وأخذت حياة المسلمين تزدهر.',
+            ar: 'وثّق الرسول ﷺ هذه البنود في وثيقةٍ لتشهد على اتّفاقهم، وسُمّيت «صحيفة المدينة»، فعمّت الطمأنينة والسلام في المدينة المنوّرة، وأخذت حياة المسلمين تزدهر.',
             fr: 'Le Prophète ﷺ consigna ces clauses dans un document témoignant de leur accord, appelé « la charte de Médine » ; la sérénité et la paix se répandirent à Médine, et la vie des musulmans se mit à prospérer.',
             en: 'The Prophet ﷺ recorded these clauses in a document to bear witness to their agreement, called "the Charter of Madina"; calm and peace spread through Madina, and the Muslims’ life began to flourish.',
           },
@@ -473,7 +473,7 @@ export const nashatDawla: Lesson = {
           id: 'c2',
           slotId: 'terms',
           label: { ar: 'لكلٍّ دينه وأمواله', fr: 'À chacun sa religion et ses biens', en: 'Each keeps his religion and property' },
-          hint: { ar: 'هذا ممّا أقرّه الرسول (ص) للجميع.', fr: 'C’est ce que le Prophète ﷺ reconnut à tous.', en: 'This is something the Prophet ﷺ confirmed for all.' },
+          hint: { ar: 'هذا ممّا أقرّه الرسول ﷺ للجميع.', fr: 'C’est ce que le Prophète ﷺ reconnut à tous.', en: 'This is something the Prophet ﷺ confirmed for all.' },
         },
         {
           id: 'c3',
@@ -523,7 +523,7 @@ export const nashatDawla: Lesson = {
           id: 'p1',
           heading: { ar: 'قبلة الأنبياء', fr: 'La qibla des prophètes', en: 'The qibla of the prophets' },
           text: {
-            ar: 'كان الرسول (ص) يتّجه في صلاته نحو المسجد الأقصى، وهي قبلة الأنبياء قبله. ولمّا أنزل الله عزّ وجلّ أمره بتغيير القبلة، ذهب المسلمون يُبلّغون مساجد المدينة.',
+            ar: 'كان الرسول ﷺ يتّجه في صلاته نحو المسجد الأقصى، وهي قبلة الأنبياء قبله. ولمّا أنزل الله عزّ وجلّ أمره بتغيير القبلة، ذهب المسلمون يُبلّغون مساجد المدينة.',
             fr: 'Le Prophète ﷺ se tournait, dans sa prière, vers la mosquée al-Aqṣā, qibla des prophètes avant lui. Quand Dieu révéla l’ordre de changer de qibla, des musulmans partirent l’annoncer aux mosquées de Médine.',
             en: 'In his prayer the Prophet ﷺ faced al-Aqsa Mosque, the qibla of the prophets before him. When God revealed His command to change the qibla, Muslims went to tell the mosques of Madina.',
           },
@@ -541,7 +541,7 @@ export const nashatDawla: Lesson = {
           id: 'p3',
           heading: { ar: 'متى نصلّي؟', fr: 'Quand prier ?', en: 'When do we pray?' },
           text: {
-            ar: 'اجتهد المسلمون في المدينة على أداء فرائضهم مع مزاولة أشغالهم لتوفير معيشتهم، فكلّما حان أوان الصلاة استراحوا من أعمالهم متوجّهين نحو الصلاة ولقاء الرسول (ص). واشتكى الكثير منهم أنّهم لا يُدركون الصلاة لعدم معرفتهم وقت دخولها.',
+            ar: 'اجتهد المسلمون في المدينة على أداء فرائضهم مع مزاولة أشغالهم لتوفير معيشتهم، فكلّما حان أوان الصلاة استراحوا من أعمالهم متوجّهين نحو الصلاة ولقاء الرسول ﷺ. واشتكى الكثير منهم أنّهم لا يُدركون الصلاة لعدم معرفتهم وقت دخولها.',
             fr: 'À Médine, les musulmans s’efforçaient d’accomplir leurs obligations tout en travaillant pour vivre ; à chaque heure de prière, ils quittaient leurs tâches pour prier et rejoindre le Prophète ﷺ. Mais beaucoup se plaignaient de manquer la prière, faute de savoir quand son heure arrivait.',
             en: 'In Madina the Muslims strove to perform their duties while working for their living; whenever prayer time came, they left their work to pray and meet the Prophet ﷺ. But many complained that they missed the prayer because they did not know when its time had come.',
           },
@@ -550,9 +550,9 @@ export const nashatDawla: Lesson = {
           id: 'p4',
           heading: { ar: 'بلال يرفع الأذان', fr: 'Bilāl lance l’appel', en: 'Bilal raises the adhan' },
           text: {
-            ar: 'فرأى كلٌّ من عمر بن الخطّاب وعبد الله بن زيد في منامهما مناديًا يُخبرهما بكلمات الأذان، فراحا يُخبران رسول الله (ص) فسُرّ بذلك، ثمّ اختار بلال بن رباح ليُنادي بها على الناس، فرفع بذلك أوّل أذانٍ في المدينة.',
-            fr: '‘Umar ibn al-Khaṭṭāb et ‘Abd Allāh ibn Zayd virent chacun en songe un crieur leur apprenant les paroles de l’adhān ; ils allèrent l’annoncer au Messager ﷺ, qui s’en réjouit, puis il choisit Bilāl ibn Rabāḥ pour les clamer aux gens : ce fut le premier adhān à Médine.',
-            en: '‘Umar ibn al-Khattab and ‘Abdullah ibn Zayd each saw in a dream a caller teaching them the words of the adhan; they went to tell God’s Messenger ﷺ, who was pleased, and then he chose Bilal ibn Rabah to call them out to the people — the first adhan in Madina.',
+            ar: 'فرأى كلٌّ من عمر بن الخطّاب وعبد الله بن زيد رضي الله عنهما في منامهما مناديًا يُخبرهما بكلمات الأذان، فراحا يُخبران رسول الله ﷺ فسُرّ بذلك، ثمّ اختار بلال بن رباح رضي الله عنه ليُنادي بها على الناس، فرفع بذلك أوّل أذانٍ في المدينة.',
+            fr: '‘Umar ibn al-Khaṭṭāb et ‘Abd Allāh ibn Zayd (qu’Allah les agrée) virent chacun en songe un crieur leur apprenant les paroles de l’adhān ; ils allèrent l’annoncer au Messager ﷺ, qui s’en réjouit, puis il choisit Bilāl ibn Rabāḥ pour les clamer aux gens : ce fut le premier adhān à Médine.',
+            en: '‘Umar ibn al-Khattab and ‘Abdullah ibn Zayd (may God be pleased with them) each saw in a dream a caller teaching them the words of the adhan; they went to tell God’s Messenger ﷺ, who was pleased, and then he chose Bilal ibn Rabah to call them out to the people — the first adhan in Madina.',
           },
         },
       ],
@@ -577,13 +577,13 @@ export const nashatDawla: Lesson = {
       items: [
         { id: 'i1', label: { ar: 'المسلمون يعملون لتوفير معيشتهم ويتوجّهون إلى الصلاة كلّما حان وقتها', fr: 'Les musulmans travaillent pour vivre et vont prier à chaque heure de prière', en: 'The Muslims work for their living and go to pray whenever it is time' } },
         { id: 'i2', label: { ar: 'كثيرٌ منهم يشتكون أنّهم لا يعرفون وقت دخول الصلاة', fr: 'Beaucoup se plaignent de ne pas savoir quand commence la prière', en: 'Many complain they do not know when prayer time begins' } },
-        { id: 'i3', label: { ar: 'عمر بن الخطّاب وعبد الله بن زيد يريان في المنام مناديًا بكلمات الأذان', fr: '‘Umar ibn al-Khaṭṭāb et ‘Abd Allāh ibn Zayd voient en songe un crieur disant l’adhān', en: '‘Umar ibn al-Khattab and ‘Abdullah ibn Zayd see a caller with the adhan in a dream' } },
-        { id: 'i4', label: { ar: 'يُخبران رسول الله (ص) فيُسرّ بذلك', fr: 'Ils l’annoncent au Messager ﷺ, qui s’en réjouit', en: 'They tell God’s Messenger ﷺ, who is pleased' } },
-        { id: 'i5', label: { ar: 'يختار الرسول (ص) بلال بن رباح ليُنادي على الناس', fr: 'Le Prophète ﷺ choisit Bilāl ibn Rabāḥ pour appeler les gens', en: 'The Prophet ﷺ chooses Bilal ibn Rabah to call the people' } },
+        { id: 'i3', label: { ar: 'عمر بن الخطّاب وعبد الله بن زيد رضي الله عنهما يريان في المنام مناديًا بكلمات الأذان', fr: '‘Umar ibn al-Khaṭṭāb et ‘Abd Allāh ibn Zayd voient en songe un crieur disant l’adhān', en: '‘Umar ibn al-Khattab and ‘Abdullah ibn Zayd see a caller with the adhan in a dream' } },
+        { id: 'i4', label: { ar: 'يُخبران رسول الله ﷺ فيُسرّ بذلك', fr: 'Ils l’annoncent au Messager ﷺ, qui s’en réjouit', en: 'They tell God’s Messenger ﷺ, who is pleased' } },
+        { id: 'i5', label: { ar: 'يختار الرسول ﷺ بلال بن رباح ليُنادي على الناس', fr: 'Le Prophète ﷺ choisit Bilāl ibn Rabāḥ pour appeler les gens', en: 'The Prophet ﷺ chooses Bilal ibn Rabah to call the people' } },
         { id: 'i6', label: { ar: 'يرتفع أوّل أذانٍ في المدينة', fr: 'Le premier adhān retentit à Médine', en: 'The first adhan rings out in Madina' } },
       ],
       explanation: {
-        ar: 'من حاجةٍ حقيقيّة — معرفة وقت الصلاة — إلى رؤيا، ثمّ موافقة الرسول (ص)، ثمّ صوت بلال: هكذا صار الأذان يُعلن دخول وقت الصلاة.',
+        ar: 'من حاجةٍ حقيقيّة — معرفة وقت الصلاة — إلى رؤيا، ثمّ موافقة الرسول ﷺ، ثمّ صوت بلال: هكذا صار الأذان يُعلن دخول وقت الصلاة.',
         fr: 'D’un vrai besoin — connaître l’heure de la prière — à un songe, puis l’accord du Prophète ﷺ, puis la voix de Bilāl : ainsi l’adhān vint annoncer l’heure de la prière.',
         en: 'From a real need — knowing prayer time — to a dream, then the Prophet’s ﷺ approval, then Bilal’s voice: this is how the adhan came to announce prayer time.',
       },
@@ -611,7 +611,7 @@ export const nashatDawla: Lesson = {
           heading: { ar: 'أمانٌ… وخطرٌ باقٍ', fr: 'La sécurité… et un danger qui demeure', en: 'Safety… and a lingering danger' },
           text: {
             ar: 'رغم انتقال المهاجرين إلى المدينة وتخلّصهم من أذى قريش وشعورهم بالأمان، إلّا أنّ خطر قريش بقي يترصّد المسلمين.',
-            fr: 'Bien que les Émigrés se fussent installés à Médine, libérés du tort de Quraysh et en sécurité, le danger de Quraysh continuait de guetter les musulmans.',
+            fr: 'Bien que les Émigrés se fussent installés à Médine, libérés des persécutions de Quraysh et en sécurité, le danger de Quraysh continuait de guetter les musulmans.',
             en: 'Although the Emigrants had moved to Madina, escaped Quraysh’s harm and felt safe, the danger from Quraysh still lay in wait for the Muslims.',
           },
         },
@@ -619,7 +619,7 @@ export const nashatDawla: Lesson = {
           id: 'p2',
           heading: { ar: 'ليالٍ ساهرة', fr: 'Des nuits de veille', en: 'Sleepless nights' },
           text: {
-            ar: 'كان المشركون يتوعّدون المسلمين ويهدّدونهم بإرسال جيشٍ إلى المدينة، فكان المسلمون يُدركون هذه المخاطر، فلا يبيتون إلّا ساهرين يحرسون المدينة ويحرسون رسول الله (ص).',
+            ar: 'كان المشركون يتوعّدون المسلمين ويهدّدونهم بإرسال جيشٍ إلى المدينة، فكان المسلمون يُدركون هذه المخاطر، فلا يبيتون إلّا ساهرين يحرسون المدينة ويحرسون رسول الله ﷺ.',
             fr: 'Les polythéistes menaçaient les musulmans d’envoyer une armée contre Médine ; conscients de ces dangers, les musulmans passaient leurs nuits à veiller, gardant la ville et gardant le Messager ﷺ.',
             en: 'The polytheists threatened the Muslims with sending an army against Madina; aware of these dangers, the Muslims spent their nights awake, guarding the town and guarding God’s Messenger ﷺ.',
           },
@@ -628,7 +628,7 @@ export const nashatDawla: Lesson = {
           id: 'p3',
           heading: { ar: 'عيونٌ في الداخل والخارج', fr: 'Des yeux dedans et dehors', en: 'Eyes inside and out' },
           text: {
-            ar: 'كان الرسول (ص) وأصحابه يُراقبون الأوضاع داخل المدينة وخارجها، وساعدهم في ذلك دستور المدينة الذي تعاهدوا عليه، رغم ما يترصّده الأعداء من فرصةٍ للغدر بالمسلمين.',
+            ar: 'كان الرسول ﷺ وأصحابه يُراقبون الأوضاع داخل المدينة وخارجها، وساعدهم في ذلك دستور المدينة الذي تعاهدوا عليه، رغم ما يترصّده الأعداء من فرصةٍ للغدر بالمسلمين.',
             fr: 'Le Prophète ﷺ et ses compagnons surveillaient la situation à l’intérieur et à l’extérieur de Médine, aidés en cela par la charte de Médine sur laquelle ils s’étaient engagés, malgré les ennemis qui guettaient une occasion de trahir les musulmans.',
             en: 'The Prophet ﷺ and his companions watched the situation inside and outside Madina, helped in this by the Charter of Madina they had pledged to, even as enemies waited for a chance to betray the Muslims.',
           },
@@ -675,7 +675,7 @@ export const nashatDawla: Lesson = {
         },
         {
           id: 'w5',
-          text: { ar: 'يحرسون رسول الله (ص)', fr: 'Ils gardaient le Messager ﷺ', en: 'They guarded God’s Messenger ﷺ' },
+          text: { ar: 'يحرسون رسول الله ﷺ', fr: 'Ils gardaient le Messager ﷺ', en: 'They guarded God’s Messenger ﷺ' },
           side: 'right',
           explanation: { ar: 'نعم، كانت الحراسة له وللمدينة.', fr: 'Oui, la garde était pour lui et pour la ville.', en: 'Yes — the guard was for him and for the town.' },
         },
@@ -683,7 +683,7 @@ export const nashatDawla: Lesson = {
           id: 'w6',
           text: { ar: 'مراقبة الأوضاع داخل المدينة وخارجها', fr: 'Surveiller la situation dedans et dehors', en: 'Watching the situation inside and outside' },
           side: 'right',
-          explanation: { ar: 'هكذا كان الرسول (ص) وأصحابه يحمونها.', fr: 'C’est ainsi que le Prophète ﷺ et ses compagnons la protégeaient.', en: 'This is how the Prophet ﷺ and his companions protected it.' },
+          explanation: { ar: 'هكذا كان الرسول ﷺ وأصحابه يحمونها.', fr: 'C’est ainsi que le Prophète ﷺ et ses compagnons la protégeaient.', en: 'This is how the Prophet ﷺ and his companions protected it.' },
         },
         {
           id: 'w7',
@@ -708,13 +708,13 @@ export const nashatDawla: Lesson = {
       statements: [
         {
           id: 'b1',
-          text: { ar: 'بنى الرسول (ص) بيته أوّلًا ثمّ المسجد.', fr: 'Le Prophète ﷺ bâtit d’abord sa maison, puis la mosquée.', en: 'The Prophet ﷺ built his house first, then the mosque.' },
+          text: { ar: 'بنى الرسول ﷺ بيته أوّلًا ثمّ المسجد.', fr: 'Le Prophète ﷺ bâtit d’abord sa maison, puis la mosquée.', en: 'The Prophet ﷺ built his house first, then the mosque.' },
           answer: false,
           explanation: { ar: 'خطأ، اختار مكان المسجد أوّلًا ثمّ بنى بيته بجواره.', fr: 'Faux, il choisit d’abord la mosquée, puis bâtit sa maison à côté.', en: 'False — he chose the mosque first, then built his house beside it.' },
         },
         {
           id: 'b2',
-          text: { ar: 'آخى الرسول (ص) بين كلّ أنصاريٍّ ونزيله من المهاجرين.', fr: 'Le Prophète ﷺ fit frères chaque Ansārī et l’Émigré qu’il hébergeait.', en: 'The Prophet ﷺ made each Ansari and the Emigrant he hosted brothers.' },
+          text: { ar: 'آخى الرسول ﷺ بين كلّ أنصاريٍّ ونزيله من المهاجرين.', fr: 'Le Prophète ﷺ fit frères chaque Ansārī et l’Émigré qu’il hébergeait.', en: 'The Prophet ﷺ made each Ansari and the Emigrant he hosted brothers.' },
           answer: true,
           explanation: { ar: 'صحيح، وهذه هي المؤاخاة.', fr: 'Vrai, c’est la fraternisation.', en: 'True — this is the brotherhood.' },
         },
@@ -726,7 +726,7 @@ export const nashatDawla: Lesson = {
         },
         {
           id: 'b4',
-          text: { ar: 'كانت قبلة الأنبياء قبل الرسول (ص) المسجد الأقصى.', fr: 'La qibla des prophètes avant le Prophète ﷺ était la mosquée al-Aqṣā.', en: 'The qibla of the prophets before the Prophet ﷺ was al-Aqsa Mosque.' },
+          text: { ar: 'كانت قبلة الأنبياء قبل الرسول ﷺ المسجد الأقصى.', fr: 'La qibla des prophètes avant le Prophète ﷺ était la mosquée al-Aqṣā.', en: 'The qibla of the prophets before the Prophet ﷺ was al-Aqsa Mosque.' },
           answer: true,
           explanation: { ar: 'صحيح، ثمّ أمر الله بالتحوّل إلى الكعبة.', fr: 'Vrai, puis Dieu ordonna de se tourner vers la Ka‘ba.', en: 'True — then God commanded turning toward the Kaaba.' },
         },
@@ -738,9 +738,9 @@ export const nashatDawla: Lesson = {
         },
         {
           id: 'b6',
-          text: { ar: 'رفع بلال بن رباح أوّل أذانٍ في المدينة.', fr: 'Bilāl ibn Rabāḥ lança le premier adhān à Médine.', en: 'Bilal ibn Rabah raised the first adhan in Madina.' },
+          text: { ar: 'رفع بلال بن رباح رضي الله عنه أوّل أذانٍ في المدينة.', fr: 'Bilāl ibn Rabāḥ lança le premier adhān à Médine.', en: 'Bilal ibn Rabah raised the first adhan in Madina.' },
           answer: true,
-          explanation: { ar: 'صحيح، اختاره الرسول (ص) لذلك.', fr: 'Vrai, le Prophète ﷺ le choisit pour cela.', en: 'True — the Prophet ﷺ chose him for it.' },
+          explanation: { ar: 'صحيح، اختاره الرسول ﷺ لذلك.', fr: 'Vrai, le Prophète ﷺ le choisit pour cela.', en: 'True — the Prophet ﷺ chose him for it.' },
         },
       ],
     },
@@ -759,7 +759,7 @@ export const nashatDawla: Lesson = {
         {
           id: 'q1',
           type: 'mcq',
-          question: { ar: 'ما هو أوّل عملٍ قام به الرسول (ص) عند دخوله المدينة؟', fr: 'Quelle fut la première action du Prophète ﷺ en entrant à Médine ?', en: 'What was the Prophet’s ﷺ first action on entering Madina?' },
+          question: { ar: 'ما هو أوّل عملٍ قام به الرسول ﷺ عند دخوله المدينة؟', fr: 'Quelle fut la première action du Prophète ﷺ en entrant à Médine ?', en: 'What was the Prophet’s ﷺ first action on entering Madina?' },
           options: [
             { id: 'a', label: { ar: 'بناء المسجد', fr: 'Bâtir la mosquée', en: 'Building the mosque' } },
             { id: 'b', label: { ar: 'بناء بيته', fr: 'Bâtir sa maison', en: 'Building his house' } },
@@ -775,7 +775,7 @@ export const nashatDawla: Lesson = {
         {
           id: 'q2',
           type: 'mcq',
-          question: { ar: 'كيف تعامل الرسول (ص) مع غير المسلمين في المدينة؟', fr: 'Comment le Prophète ﷺ traita-t-il les non-musulmans à Médine ?', en: 'How did the Prophet ﷺ deal with non-Muslims in Madina?' },
+          question: { ar: 'كيف تعامل الرسول ﷺ مع غير المسلمين في المدينة؟', fr: 'Comment le Prophète ﷺ traita-t-il les non-musulmans à Médine ?', en: 'How did the Prophet ﷺ deal with non-Muslims in Madina?' },
           options: [
             { id: 'a', label: { ar: 'أقرّ للجميع دينه وأمواله، ووثّق ذلك في صحيفة المدينة', fr: 'Il reconnut à chacun sa religion et ses biens, et le consigna dans la charte', en: 'He confirmed everyone’s religion and property, and recorded it in the Charter' } },
             { id: 'b', label: { ar: 'أخرجهم من المدينة', fr: 'Il les chassa de Médine', en: 'He expelled them from Madina' } },
@@ -806,7 +806,7 @@ export const nashatDawla: Lesson = {
           pairs: [
             { id: 'p1', left: { ar: 'كيف استقبل الأنصار المهاجرين؟', fr: 'Comment les Ansār reçurent-ils les Émigrés ?', en: 'How did the Ansar receive the Emigrants?' }, right: { ar: 'تسابقوا إلى استضافتهم وإمدادهم بما يحتاجون', fr: 'Ils rivalisèrent pour les héberger et les pourvoir', en: 'They raced to host and provide for them' } },
             { id: 'p2', left: { ar: 'لماذا كان المسلمون يحرسون المدينة؟', fr: 'Pourquoi les musulmans gardaient-ils Médine ?', en: 'Why did the Muslims guard Madina?' }, right: { ar: 'لأنّ المشركين هدّدوا بإرسال جيشٍ إليها', fr: 'Parce que les polythéistes menaçaient d’envoyer une armée', en: 'Because the polytheists threatened to send an army' } },
-            { id: 'p3', left: { ar: 'لماذا يُرفع الأذان؟', fr: 'Pourquoi lance-t-on l’adhān ?', en: 'Why is the adhan raised?' }, right: { ar: 'ليعرف الناس دخول وقت الصلاة', fr: 'Pour que les gens sachent que l’heure de la prière est venue', en: 'So people know prayer time has come' } },
+            { id: 'p3', left: { ar: 'لماذا يُرفع الأذان في المساجد؟', fr: 'Pourquoi lance-t-on l’adhān dans les mosquées ?', en: 'Why is the adhan raised in the mosques?' }, right: { ar: 'ليعرف الناس دخول وقت الصلاة', fr: 'Pour que les gens sachent que l’heure de la prière est venue', en: 'So people know prayer time has come' } },
           ],
           explanation: {
             ar: 'هذه أسئلة «أجيب» في الدرس، وأجوبتها في النصوص التي قرأتها.',
@@ -819,12 +819,12 @@ export const nashatDawla: Lesson = {
           type: 'ordering',
           question: { ar: 'رتّب هذه الأحداث كما وردت في الدرس', fr: 'Range ces événements dans l’ordre de la leçon', en: 'Put these events in the lesson’s order' },
           items: [
-            { id: 'o1', label: { ar: 'وصول الرسول (ص) إلى المدينة', fr: 'L’arrivée du Prophète ﷺ à Médine', en: 'The Prophet ﷺ reaches Madina' } },
+            { id: 'o1', label: { ar: 'وصول الرسول ﷺ إلى المدينة', fr: 'L’arrivée du Prophète ﷺ à Médine', en: 'The Prophet ﷺ reaches Madina' } },
             { id: 'o2', label: { ar: 'اختيار مكان المسجد', fr: 'Le choix de l’emplacement de la mosquée', en: 'Choosing the mosque’s site' } },
-            { id: 'o3', label: { ar: 'بناء بيت الرسول (ص) بجوار المسجد', fr: 'La maison du Prophète ﷺ bâtie à côté', en: 'Building his house beside it' } },
+            { id: 'o3', label: { ar: 'بناء بيت الرسول ﷺ بجوار المسجد', fr: 'La maison du Prophète ﷺ bâtie à côté', en: 'Building his house beside it' } },
           ],
           explanation: {
-            ar: 'وصل الرسول (ص)، فأشار باختيار مكان المسجد أوّلًا، ثمّ بنى بيته بجواره.',
+            ar: 'وصل الرسول ﷺ، فأشار باختيار مكان المسجد أوّلًا، ثمّ بنى بيته بجواره.',
             fr: 'Le Prophète ﷺ arriva, demanda de choisir d’abord l’emplacement de la mosquée, puis bâtit sa maison à côté.',
             en: 'The Prophet ﷺ arrived, asked that the mosque’s site be chosen first, then built his house beside it.',
           },
@@ -838,7 +838,7 @@ export const nashatDawla: Lesson = {
       id: 'values',
       title: { ar: 'ماذا نتعلّم من هذا الدرس؟', fr: 'Que retenir de cette leçon ?', en: 'What do we learn from this lesson?' },
       prompt: {
-        ar: 'تنافس الأنصار في استضافة الرسول (ص) في منازلهم. بماذا أشار عليهم؟',
+        ar: 'تنافس الأنصار في استضافة الرسول ﷺ في منازلهم. بماذا أشار عليهم؟',
         fr: 'Les Ansār rivalisaient pour recevoir le Prophète ﷺ chez eux. Que leur indiqua-t-il ?',
         en: 'The Ansar competed to host the Prophet ﷺ in their homes. What did he direct them to do?',
       },
@@ -867,7 +867,7 @@ export const nashatDawla: Lesson = {
         {
           id: 'brotherhood',
           value: { ar: 'الأخوّة والتعاون', fr: 'La fraternité et l’entraide', en: 'Brotherhood and cooperation' },
-          evidence: { ar: 'آخى الرسول (ص) بين المهاجرين والأنصار، فلا عداوة ولا ضعف.', fr: 'Le Prophète ﷺ fit frères Émigrés et Ansār : ni hostilité ni faiblesse.', en: 'The Prophet ﷺ made Emigrants and Ansar brothers: no enmity, no weakness.' },
+          evidence: { ar: 'آخى الرسول ﷺ بين المهاجرين والأنصار، فلا عداوة ولا ضعف.', fr: 'Le Prophète ﷺ fit frères Émigrés et Ansār : ni hostilité ni faiblesse.', en: 'The Prophet ﷺ made Emigrants and Ansar brothers: no enmity, no weakness.' },
         },
         {
           id: 'generosity',
@@ -877,7 +877,7 @@ export const nashatDawla: Lesson = {
         {
           id: 'justice',
           value: { ar: 'العدل والتعايش', fr: 'La justice et la coexistence', en: 'Justice and coexistence' },
-          evidence: { ar: 'أقرّ الرسول (ص) لكلّ ساكني المدينة دينهم وأموالهم في صحيفة المدينة.', fr: 'Le Prophète ﷺ reconnut à tous les habitants de Médine leur religion et leurs biens.', en: 'The Prophet ﷺ confirmed all Madina’s residents’ religion and property in the Charter.' },
+          evidence: { ar: 'أقرّ الرسول ﷺ لكلّ ساكني المدينة دينهم وأموالهم في صحيفة المدينة.', fr: 'Le Prophète ﷺ reconnut à tous les habitants de Médine leur religion et leurs biens.', en: 'The Prophet ﷺ confirmed all Madina’s residents’ religion and property in the Charter.' },
         },
         {
           id: 'obedience',
@@ -887,7 +887,7 @@ export const nashatDawla: Lesson = {
         {
           id: 'vigilance',
           value: { ar: 'اليقظة والمسؤولية', fr: 'La vigilance et la responsabilité', en: 'Vigilance and responsibility' },
-          evidence: { ar: 'كان المسلمون يبيتون ساهرين يحرسون المدينة والرسول (ص).', fr: 'Les musulmans veillaient la nuit pour garder la ville et le Prophète ﷺ.', en: 'The Muslims stayed awake at night guarding the town and the Prophet ﷺ.' },
+          evidence: { ar: 'كان المسلمون يبيتون ساهرين يحرسون المدينة والرسول ﷺ.', fr: 'Les musulmans veillaient la nuit pour garder la ville et le Prophète ﷺ.', en: 'The Muslims stayed awake at night guarding the town and the Prophet ﷺ.' },
         },
       ],
     },
@@ -897,18 +897,18 @@ export const nashatDawla: Lesson = {
       kind: 'completion',
       id: 'completion',
       keyTakeaway: {
-        ar: 'في المدينة بدأ الرسول (ص) بالمسجد منارةً للمسلمين، ثمّ آخى بين المهاجرين والأنصار، ووضع صحيفة المدينة لكلّ ساكنيها، فعمّ السلام وازدهرت حياة المسلمين، مع بقاء اليقظة في وجه خطر قريش.',
+        ar: 'في المدينة بدأ الرسول ﷺ بالمسجد منارةً للمسلمين، ثمّ آخى بين المهاجرين والأنصار، ووضع صحيفة المدينة لكلّ ساكنيها، فعمّ السلام وازدهرت حياة المسلمين، مع بقاء اليقظة في وجه خطر قريش.',
         fr: 'À Médine, le Prophète ﷺ commença par la mosquée, phare des musulmans, puis fit frères Émigrés et Ansār et établit la charte de Médine pour tous ses habitants : la paix se répandit et la vie des musulmans prospéra, tout en restant vigilants face au danger de Quraysh.',
         en: 'In Madina the Prophet ﷺ began with the mosque, a beacon for the Muslims, then made the Emigrants and Ansar brothers and set the Charter of Madina for all its residents: peace spread and the Muslims’ life flourished, while they stayed watchful against Quraysh’s danger.',
       },
       learned: [
         {
-          ar: 'وصل الرسول (ص) إلى المدينة يوم 12 ربيع الأوّل من السنة الرابعة عشرة للبعثة، وبدأ ببناء المسجد ثمّ بنى بيته بجواره.',
+          ar: 'وصل الرسول ﷺ إلى المدينة يوم 12 ربيع الأوّل من السنة الرابعة عشرة للبعثة، وبدأ ببناء المسجد ثمّ بنى بيته بجواره.',
           fr: 'Le Prophète ﷺ arriva à Médine le 12 rabī‘ al-awwal de la quatorzième année de la mission ; il commença par la mosquée, puis bâtit sa maison à côté.',
           en: 'The Prophet ﷺ reached Madina on 12 Rabi‘ al-Awwal of the fourteenth year of the mission; he began with the mosque, then built his house beside it.',
         },
         {
-          ar: 'آخى الرسول (ص) بين كلّ أنصاريٍّ ونزيله من المهاجرين، فاتّحد المسلمون.',
+          ar: 'آخى الرسول ﷺ بين كلّ أنصاريٍّ ونزيله من المهاجرين، فاتّحد المسلمون.',
           fr: 'Le Prophète ﷺ fit frères chaque Ansārī et son hôte émigré, et les musulmans s’unirent.',
           en: 'The Prophet ﷺ made each Ansari and his Emigrant guest brothers, and the Muslims were united.',
         },
@@ -918,12 +918,12 @@ export const nashatDawla: Lesson = {
           en: 'The Charter of Madina confirmed all its residents’ religion, property and rights, and mutual help against any attacker.',
         },
         {
-          ar: 'تحوّلت القبلة من المسجد الأقصى إلى الكعبة، ورفع بلال بن رباح أوّل أذانٍ في المدينة.',
+          ar: 'تحوّلت القبلة من المسجد الأقصى إلى الكعبة، ورفع بلال بن رباح رضي الله عنه أوّل أذانٍ في المدينة.',
           fr: 'La qibla passa de la mosquée al-Aqṣā à la Ka‘ba, et Bilāl ibn Rabāḥ lança le premier adhān à Médine.',
           en: 'The qibla turned from al-Aqsa Mosque to the Kaaba, and Bilal ibn Rabah raised the first adhan in Madina.',
         },
         {
-          ar: 'بقي خطر قريش، فكان المسلمون يحرسون المدينة والرسول (ص) ويراقبون الأوضاع داخلها وخارجها.',
+          ar: 'بقي خطر قريش، فكان المسلمون يحرسون المدينة والرسول ﷺ ويراقبون الأوضاع داخلها وخارجها.',
           fr: 'Le danger de Quraysh demeurait : les musulmans gardaient la ville et le Prophète ﷺ et surveillaient la situation dedans et dehors.',
           en: 'Quraysh’s danger remained: the Muslims guarded the town and the Prophet ﷺ and watched the situation inside and out.',
         },

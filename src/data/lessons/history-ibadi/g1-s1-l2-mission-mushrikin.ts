@@ -1,16 +1,19 @@
 import type { Lesson } from '../../types'
 
-// Source: Ibadite History textbook, "الدرس الأول: بعثة الرسول (ص) وموقف المشركين من البعثة".
+// Source: Ibadite History textbook slides ("Other ressources/Ibadite_History_S1.pdf", pp. 13–22),
+// "الدرس الأول: بعثة الرسول ﷺ وموقف المشركين من البعثة".
 //   Slide 2 — إشكالية الدرس
-//   Slide 3 — نزول الوحي على محمد (ص)
-//   Slide 4 — عودة محمد (ص) من غار حراء
+//   Slide 3 — نزول الوحي على محمد ﷺ
+//   Slide 4 — عودة محمد ﷺ من غار حراء
 //   Slide 5 — الأمر بالدعوة إلى الله
 //   Slide 6 — دار الأرقم بن أبي الأرقم
 //   Slide 7 — رسول الله يدعو عشيرته
-//   Slide 8 — الرسول (ص) يجهر بالدعوة
-//   Slide 9 — إيذاء المشركين لرسول الله (ص)
-//   Slide 10 — قريش تغري الرسول (ص)
-// Every fact below is taken from those slides; nothing is added from outside them.
+//   Slide 8 — الرسول ﷺ يجهر بالدعوة
+//   Slide 9 — إيذاء المشركين لرسول الله ﷺ
+//   Slide 10 — قريش تغري الرسول ﷺ
+// Every fact on those slides appears below. The reading passages add only well-known,
+// authentic wording around them: «زمّلوني» and Khadīja's reassurance (al-Bukhārī),
+// verse 2 of al-‘Alaq, and the hadith of al-Ṣafā («أرأيتم لو أخبرتكم…», al-Bukhārī).
 
 const IMG = '/images/lessons/mission-mushrikin'
 
@@ -29,12 +32,12 @@ export const missionMushrikin: Lesson = {
     en: 'A rugged mountain in the Makkan desert at night, a beam of golden light rising from a small cave mouth under a star-filled sky',
   },
   title: {
-    ar: 'بعثة الرسول (ص) وموقف المشركين',
+    ar: 'بعثة الرسول ﷺ وموقف المشركين',
     fr: 'La mission du Prophète ﷺ et la position des polythéistes',
     en: 'The Prophet’s ﷺ mission and the polytheists’ response',
   },
   description: {
-    ar: 'كيف نزل الوحي على محمد (ص) في غار حراء؟ وكيف أمره الله بالدعوة؟ تابع رحلة الدعوة من السرّ إلى الجهر، واكتشف كيف واجهتها قريش.',
+    ar: 'كيف نزل الوحي على محمد ﷺ في غار حراء؟ وكيف أمره الله بالدعوة؟ تابع رحلة الدعوة من السرّ إلى الجهر، واكتشف كيف واجهتها قريش.',
     fr: 'Comment la révélation descendit-elle sur Muhammad ﷺ dans la grotte de Hirā’ ? Comment Dieu lui ordonna-t-il d’appeler à Lui ? Suis le chemin de l’appel, du secret à la proclamation publique, et découvre comment Quraysh y répondit.',
     en: 'How did revelation come down to Muhammad ﷺ in the cave of Hira? How did God command him to call people to Him? Follow the call from secrecy to open proclamation, and discover how Quraysh responded.',
   },
@@ -56,14 +59,14 @@ export const missionMushrikin: Lesson = {
         en: 'The lesson’s question',
       },
       question: {
-        ar: 'كيف كان نزول الوحي على محمد (ص)؟',
+        ar: 'كيف كان نزول الوحي على محمد ﷺ؟',
         fr: 'Comment la révélation est-elle descendue sur Muhammad ﷺ ?',
         en: 'How did revelation come down to Muhammad ﷺ?',
       },
       intro: {
-        ar: 'كيف أمر الله تعالى رسوله (ص) بالدعوة؟ كيف كان موقف قريش عندما جهر الرسول (ص) بالدعوة؟ وبماذا أغرت قريشُ الرسولَ (ص) ليتخلّى عن الإسلام؟ افتح أربع مهمّات لتكتشف الأجوبة.',
-        fr: 'Comment Dieu ordonna-t-Il à Son messager d’appeler les gens ? Quelle fut l’attitude de Quraysh quand le Prophète proclama ouvertement son appel ? Et par quoi Quraysh tenta-t-elle de le séduire pour qu’il abandonne l’islam ? Ouvre quatre missions pour découvrir les réponses.',
-        en: 'How did God command His messenger to call people to Him? How did Quraysh react when the Prophet proclaimed his call openly? And what did Quraysh offer the Prophet to make him abandon Islam? Open four missions to find out.',
+        ar: 'كيف أمر الله تعالى رسوله ﷺ بالدعوة؟ كيف كان موقف قريش عندما جهر الرسول ﷺ بالدعوة؟ وبماذا أغرت قريشُ الرسولَ ﷺ ليتخلّى عن الإسلام؟ افتح أربع مهمّات لتكتشف الأجوبة.',
+        fr: 'Comment Dieu ordonna-t-Il à Son messager ﷺ d’appeler les gens ? Quelle fut l’attitude de Quraysh quand le Prophète ﷺ proclama ouvertement son appel ? Et par quoi Quraysh tenta-t-elle de le séduire pour qu’il abandonne l’islam ? Ouvre quatre missions pour découvrir les réponses.',
+        en: 'How did God command His messenger ﷺ to call people to Him? How did Quraysh react when the Prophet ﷺ proclaimed his call openly? And what did Quraysh offer the Prophet ﷺ to make him abandon Islam? Open four missions to find out.',
       },
     },
 
@@ -84,25 +87,25 @@ export const missionMushrikin: Lesson = {
       missions: [
         {
           id: 'm1',
-          question: { ar: 'كيف كان نزول الوحي على محمد (ص)؟', fr: 'Comment la révélation descendit-elle sur Muhammad ﷺ ?', en: 'How did revelation come down to Muhammad ﷺ?' },
+          question: { ar: 'كيف كان نزول الوحي على محمد ﷺ؟', fr: 'Comment la révélation descendit-elle sur Muhammad ﷺ ?', en: 'How did revelation come down to Muhammad ﷺ?' },
           target: 'reading-revelation',
           teaser: { ar: 'غارُ حراء، وليلةٌ غيّرت التاريخ.', fr: 'La grotte de Hirā’, une nuit qui changea l’histoire.', en: 'The cave of Hira, a night that changed history.' },
         },
         {
           id: 'm2',
-          question: { ar: 'كيف أمر الله رسوله (ص) بالدعوة؟', fr: 'Comment Dieu ordonna-t-Il à Son messager d’appeler ?', en: 'How did God command His messenger to call people?' },
+          question: { ar: 'كيف أمر الله رسوله ﷺ بالدعوة؟', fr: 'Comment Dieu ordonna-t-Il à Son messager ﷺ d’appeler ?', en: 'How did God command His messenger ﷺ to call people?' },
           target: 'reading-order-to-call',
           teaser: { ar: 'من السرّ في دار الأرقم إلى الجهر على الصفا.', fr: 'Du secret dans la maison d’al-Arqam à la proclamation sur aṣ-Ṣafā.', en: 'From secrecy in the house of al-Arqam to proclaiming on al-Safa.' },
         },
         {
           id: 'm3',
-          question: { ar: 'كيف كان موقف قريش عندما جهر الرسول بالدعوة؟', fr: 'Quelle fut l’attitude de Quraysh face à l’appel public ?', en: 'How did Quraysh react to the open call?' },
+          question: { ar: 'كيف كان موقف قريش عندما جهر الرسول ﷺ بالدعوة؟', fr: 'Quelle fut l’attitude de Quraysh face à l’appel public ?', en: 'How did Quraysh react to the open call?' },
           target: 'reading-persecution',
           teaser: { ar: 'سخريةٌ، وأذىً، وشوكٌ على الطريق.', fr: 'Moqueries, persécution et épines sur le chemin.', en: 'Mockery, harm, and thorns on the path.' },
         },
         {
           id: 'm4',
-          question: { ar: 'بماذا أغرت قريشٌ الرسولَ ليتخلّى عن الإسلام؟', fr: 'Par quoi Quraysh tenta-t-elle de le séduire ?', en: 'What did Quraysh offer to make him give up Islam?' },
+          question: { ar: 'بماذا أغرت قريشٌ الرسولَ ﷺ ليتخلّى عن الإسلام؟', fr: 'Par quoi Quraysh tenta-t-elle de séduire le Prophète ﷺ ?', en: 'What did Quraysh offer the Prophet ﷺ to make him give up Islam?' },
           target: 'reading-temptation',
           teaser: { ar: 'مالٌ ورئاسةٌ… وردٌّ واحد.', fr: 'Richesse et pouvoir… et une seule réponse.', en: 'Wealth and leadership… and a single answer.' },
         },
@@ -151,9 +154,9 @@ export const missionMushrikin: Lesson = {
             en: 'Gabriel (Peace Be Upon Him) and the Command to Read',
           },
           text: {
-            ar: 'بينما كان النبيّ ﷺ جالسًا في الغار، نزل عليه مَلَكٌ عظيمٌ ذو لباسٍ أبيض، وهو جبريل عليه السلام. ضمّه جبريل إلى صدره وقال له: «اقرأ!»، فقال محمد ﷺ فزعًا: «ما أنا بقارئ». كرّرها جبريل ثلاث مرّات، ثمّ تلا عليه أوّل كلماتٍ من كتاب الله: ﴿اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ ۝ خَلَقَ الْإِنسَانَ مِنْ عَلَقٍ ۝ اقْرَأْ وَرَبُّكَ الْأَكْرَمُ ۝ الَّذِي عَلَّمَ بِالْقَلَمِ﴾ [العلق: 1–4].',
-            fr: 'Tandis que le Prophète ﷺ était assis dans la grotte, un ange majestueux vêtu de blanc descendit vers lui : c’était l’ange Gabriel (paix sur lui). Gabriel le serra contre lui et lui dit : « Lis ! » Muhammad ﷺ répondit, saisi d’émotion : « Je ne sais pas lire ». Gabriel répéta cette demande trois fois, puis lui récita les premiers versets du Livre d’Allah : « Lis au nom de ton Seigneur qui a créé, qui a créé l’homme d’une adhérence. Lis ! Et ton Seigneur est le Très Noble, qui a enseigné par la plume » [al-‘Alaq : 1–4, traduction du sens].',
-            en: 'While the Prophet ﷺ sat in the cave, a majestic angel in white garments descended upon him: the angel Gabriel (peace be upon him). Gabriel embraced him closely and said: "Read!" Muhammad ﷺ answered, filled with awe: "I cannot read." Gabriel repeated this three times, then recited to him the first verses of the Book of God: "Read in the name of your Lord who created, created humanity from a clinging clot. Read! And your Lord is the Most Generous, who taught by the pen." [al-‘Alaq: 1–4, translation of the meaning]',
+            ar: 'بينما كان النبيّ ﷺ في خلوته بالغار، جاءه مَلَكٌ طويلٌ ذو لباسٍ أبيض، وهو جبريل عليه السلام، فجذبه إليه وقال له: «اقرأ!»، فردّ محمد ﷺ فزعًا: «ما أنا بقارئ». وكرّر ذلك ثلاث مرّات، ثمّ قرأ عليه أوّل آياتٍ من كتاب الله: ﴿اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ ۝ خَلَقَ الْإِنسَانَ مِنْ عَلَقٍ ۝ اقْرَأْ وَرَبُّكَ الْأَكْرَمُ ۝ الَّذِي عَلَّمَ بِالْقَلَمِ ۝ عَلَّمَ الْإِنسَانَ مَا لَمْ يَعْلَمْ﴾ [العلق: 1–5].',
+            fr: 'Alors que le Prophète ﷺ se retirait dans la grotte, un ange de haute stature vêtu de blanc vint à lui : c’était Gabriel (paix sur lui). Il l’attira contre lui et lui dit : « Lis ! » Muhammad ﷺ répondit, effrayé : « Je ne sais pas lire. » Cela se répéta trois fois, puis l’ange lui récita les premiers versets du Livre de Dieu : « Lis au nom de ton Seigneur qui a créé, qui a créé l’homme d’une adhérence. Lis ! Et ton Seigneur est le Très Noble, qui a enseigné par la plume, a enseigné à l’homme ce qu’il ne savait pas. » [al-‘Alaq : 1–5, traduction du sens]',
+            en: 'While the Prophet ﷺ was in seclusion in the cave, a tall angel in white garments came to him: it was Gabriel (peace be upon him). He drew him close and said: "Read!" Muhammad ﷺ answered, frightened: "I cannot read." This happened three times, then the angel recited to him the first verses of the Book of God: "Read in the name of your Lord who created, created humanity from a clinging clot. Read! And your Lord is the Most Generous, who taught by the pen, taught humanity what it did not know." [al-‘Alaq: 1–5, translation of the meaning]',
           },
         },
         {
@@ -164,9 +167,9 @@ export const missionMushrikin: Lesson = {
             en: 'Khadija’s Reassurance and Waraqa’s Glad Tidings',
           },
           text: {
-            ar: 'عاد النبيّ ﷺ إلى بيته وهو يرتجف من هيبة الموقف، وقال لزوجته: «زمّلوني زمّلوني!»، فطمأنته خديجة رضي الله عنها بحكمتها وذكّرته بأخلاقه النبيلة: «كلّا والله، لا يُخزيك الله أبدًا، إنّك لتصل الرحم وتُعين الضعيف وتُكرم الضيف». ثمّ انطلقت به إلى ابن عمّها ورقة بن نوفل، الذي كان عالمًا بالكتب القديمة، فبشّره بأنّ الذي نزل عليه هو الناموس الأكبر (جبريل) وأنّه نبيّ هذه الأمّة.',
-            fr: 'Le Prophète ﷺ rentra chez lui en tremblant devant la solennité de l’événement, disant à son épouse : « Enveloppez-moi, enveloppez-moi ! » Khadīja (qu’Allah l’agrée), avec sa grande sagesse, le rassura et lui rappela ses vertus généreuses : « Non, par Allah ! Allah ne te délaissera jamais : tu préserves les liens du sang, tu soutiens les faibles et tu honores tes hôtes ». Puis elle le conduisit auprès de son cousin Waraqa ibn Nawfal, savant des écritures anciennes, qui lui annonça que celui qui lui était apparu était l’Archange Gabriel et qu’il était le prophète attendu de cette nation.',
-            en: 'The Prophet ﷺ returned home trembling at the solemnity of what had occurred, calling to his wife: "Cover me! Cover me!" Khadija (may God be pleased with her), with great wisdom, calmed him and recalled his noble virtues: "No, by God! God will never forsake you: you uphold family bonds, bear the burdens of the weary, and honor your guests." She then took him to her cousin Waraqa ibn Nawfal, a scholar of the ancient scriptures, who brought glad tidings: the one who visited him was the Great Angel Gabriel, and Muhammad was indeed the chosen prophet of this nation.',
+            ar: 'عاد النبيّ ﷺ إلى بيته مسرعًا وهو يرتجف من هيبة الموقف، وقال لزوجته: «زمّلوني زمّلوني!»، فطمأنته خديجة رضي الله عنها بحكمتها وذكّرته بأخلاقه النبيلة: «كلّا والله! ما يُخزيك الله أبدًا… إنّك لتصل الرحم، وتحمل الكَلّ، وتكسب المعدوم، وتُكرم الضيف». ثمّ انطلقت به إلى ابن عمّها ورقة بن نوفل، الذي كان عالمًا بالكتب القديمة، فبشّره بأنّ الذي أتاه هو جبريل، وأنّه نبيّ هذه الأمّة.',
+            fr: 'Le Prophète ﷺ rentra en hâte chez lui, tremblant devant la solennité de l’événement, et dit à son épouse : « Enveloppez-moi, enveloppez-moi ! » Khadīja (qu’Allah l’agrée), avec sagesse, le rassura et lui rappela ses nobles qualités : « Non, par Allah ! Dieu ne te couvrira jamais de honte… tu maintiens les liens de parenté, tu portes le fardeau des faibles, tu donnes à qui n’a rien et tu honores l’hôte. » Puis elle le conduisit auprès de son cousin Waraqa ibn Nawfal, savant des écritures anciennes, qui lui annonça que celui qui était venu à lui était Gabriel, et qu’il était le prophète de cette communauté.',
+            en: 'The Prophet ﷺ hurried home, trembling at the solemnity of what had happened, and said to his wife: "Cover me! Cover me!" Khadija (may God be pleased with her) wisely calmed him and reminded him of his noble character: "No, by God! God will never disgrace you… you maintain family ties, carry the burden of the weak, give to those who have nothing, and honour guests." She then took him to her cousin Waraqa ibn Nawfal, a scholar of the ancient scriptures, who gave him glad tidings: the one who had come to him was Gabriel, and he ﷺ was the prophet of this nation.',
           },
         },
       ],
@@ -177,12 +180,12 @@ export const missionMushrikin: Lesson = {
       kind: 'verses',
       id: 'revelation',
       title: {
-        ar: 'نزول الوحي على محمد (ص)',
+        ar: 'نزول الوحي على محمد ﷺ',
         fr: 'La révélation descend sur Muhammad ﷺ',
         en: 'Revelation comes down to Muhammad ﷺ',
       },
       intro: {
-        ar: 'في الثاني عشر من رمضان، عام 610م، وكان عمر محمد (ص) أربعين سنة، وبينما هو في خلوته بغار حراء، جاءه مَلَكٌ طويلٌ ذو لباسٍ أبيض، فجذبه إليه وقال له: اقرأ. فردّ محمد (ص) فزِعًا: ما أنا بقارئ. وكرّر هذا ثلاث مرّات، حتى قرأ عليه أوّل آياتٍ من القرآن. اضغط الكلمات بالترتيب لتبني الآيات كما نزلت.',
+        ar: 'في الثاني عشر من رمضان، عام 610م، وكان عمر محمد ﷺ أربعين سنة، وبينما هو في خلوته بغار حراء، جاءه مَلَكٌ طويلٌ ذو لباسٍ أبيض، فجذبه إليه وقال له: اقرأ. فردّ محمد ﷺ فزِعًا: ما أنا بقارئ. وكرّر هذا ثلاث مرّات، حتى قرأ عليه أوّل آياتٍ من القرآن. اضغط الكلمات بالترتيب لتبني الآيات كما نزلت.',
         fr: 'Le douze de Ramadan, en l’an 610, alors que Muhammad ﷺ avait quarante ans et se retirait dans la grotte de Hirā’, un ange de haute stature vêtu de blanc vint à lui, le saisit et lui dit : « Lis ! » Muhammad ﷺ répondit, effrayé : « Je ne sais pas lire. » Cela se répéta trois fois, jusqu’à ce que l’ange lui récite les premiers versets du Coran. Touche les mots dans l’ordre pour reconstituer les versets tels qu’ils descendirent.',
         en: 'On the twelfth of Ramadan, in the year 610 CE, when Muhammad ﷺ was forty years old and secluded in the cave of Hira, a tall angel in white clothing came to him, held him close and said: "Read!" Muhammad ﷺ answered, frightened: "I cannot read." This happened three times, until the angel recited to him the first verses of the Qur’an. Tap the words in order to rebuild the verses as they came down.',
       },
@@ -190,23 +193,38 @@ export const missionMushrikin: Lesson = {
         {
           id: 'iqra',
           context: {
-            ar: 'أوّل ما نزل من القرآن الكريم على رسول الله (ص) في غار حراء:',
+            ar: 'أوّل ما نزل من القرآن الكريم على رسول الله ﷺ في غار حراء:',
             fr: 'Les tout premiers versets du Coran révélés au Messager ﷺ dans la grotte de Hirā’ :',
             en: 'The very first verses of the Qur’an revealed to the Messenger ﷺ in the cave of Hira:',
           },
           ref: { ar: 'سورة العلق، الآية 1', fr: 'Sourate al-‘Alaq, verset 1', en: 'Surat al-‘Alaq, verse 1' },
           words: ['اقْرَأْ', 'بِاسْمِ', 'رَبِّكَ', 'الَّذِي', 'خَلَقَ'],
           meaning: {
-            ar: 'أمرٌ من الله لرسوله (ص) أن يقرأ باسمه تعالى، وهو خالق كلّ شيء.',
-            fr: 'Un ordre de Dieu à Son messager de lire en Son nom, Lui qui est le Créateur de toute chose.',
-            en: 'A command from God to His messenger to read in His name — He who is the Creator of everything.',
+            ar: 'أمرٌ من الله لرسوله ﷺ أن يقرأ باسمه تعالى، وهو خالق كلّ شيء.',
+            fr: 'Un ordre de Dieu à Son messager ﷺ de lire en Son nom, Lui qui est le Créateur de toute chose.',
+            en: 'A command from God to His messenger ﷺ to read in His name — He who is the Creator of everything.',
           },
         },
         {
-          id: 'iqra2',
+          id: 'iqra-2',
+          context: {
+            ar: 'ثمّ ذكّرت الآية بأصل خلق الإنسان:',
+            fr: 'Puis le verset rappela l’origine de la création de l’homme :',
+            en: 'Then the verse recalled how humankind was created:',
+          },
+          ref: { ar: 'سورة العلق، الآية 2', fr: 'Sourate al-‘Alaq, verset 2', en: 'Surat al-‘Alaq, verse 2' },
+          words: ['خَلَقَ', 'الْإِنسَانَ', 'مِنْ', 'عَلَقٍ'],
+          meaning: {
+            ar: 'خلق الله الإنسان من علقة، أي من شيءٍ صغيرٍ عالق.',
+            fr: 'Dieu a créé l’homme d’une adhérence, c’est-à-dire d’une petite chose accrochée.',
+            en: 'God created humankind from a clinging clot — something tiny that clings.',
+          },
+        },
+        {
+          id: 'iqra-3-4',
           context: {
             ar: 'ثمّ تابع جبريل عليه السلام الآيات:',
-            fr: 'Puis Gabriel (sur lui la paix) poursuivit les versets :',
+            fr: 'Puis Gabriel (paix sur lui) poursuivit les versets :',
             en: 'Then Gabriel (peace be upon him) continued the verses:',
           },
           ref: { ar: 'سورة العلق، الآيتان 3–4', fr: 'Sourate al-‘Alaq, versets 3–4', en: 'Surat al-‘Alaq, verses 3–4' },
@@ -217,6 +235,21 @@ export const missionMushrikin: Lesson = {
             en: 'A reminder of God’s generosity — He taught humankind to write by the pen.',
           },
         },
+        {
+          id: 'iqra-5',
+          context: {
+            ar: 'وختمت الآيات الأولى بنعمة العلم:',
+            fr: 'Les premiers versets s’achevèrent sur le bienfait du savoir :',
+            en: 'The first verses ended with the gift of knowledge:',
+          },
+          ref: { ar: 'سورة العلق، الآية 5', fr: 'Sourate al-‘Alaq, verset 5', en: 'Surat al-‘Alaq, verse 5' },
+          words: ['عَلَّمَ', 'الْإِنسَانَ', 'مَا', 'لَمْ', 'يَعْلَمْ'],
+          meaning: {
+            ar: 'الله هو الذي علّم الإنسان ما لم يكن يعرفه.',
+            fr: 'C’est Dieu qui a enseigné à l’homme ce qu’il ne savait pas.',
+            en: 'It is God who taught humankind what it did not know.',
+          },
+        },
       ],
     },
 
@@ -225,12 +258,12 @@ export const missionMushrikin: Lesson = {
       kind: 'story',
       id: 'return-from-hira',
       title: {
-        ar: 'عودة محمد (ص) من غار حراء',
+        ar: 'عودة محمد ﷺ من غار حراء',
         fr: 'Le retour de Muhammad ﷺ de la grotte de Hirā’',
         en: 'Muhammad’s ﷺ return from the cave of Hira',
       },
       intro: {
-        ar: 'خرج الرسول (ص) من الغار فرأى رجلًا يصعد إلى السماء يقول: "يا محمد، أنت رسول الله وأنا جبريل". اقلب البطاقات لتتابع ما جرى بعدها.',
+        ar: 'خرج الرسول ﷺ من الغار فرأى رجلًا يصعد إلى السماء يقول: "يا محمد، أنت رسول الله وأنا جبريل". اقلب البطاقات لتتابع ما جرى بعدها.',
         fr: 'Le Prophète ﷺ sortit de la grotte et vit une forme s’élever vers le ciel en disant : « Ô Muhammad, tu es le messager de Dieu, et je suis Gabriel. » Retourne les cartes pour suivre la suite.',
         en: 'The Prophet ﷺ left the cave and saw a figure rising into the sky, saying: "O Muhammad, you are the messenger of God, and I am Gabriel." Flip the cards to follow what happened next.',
       },
@@ -244,7 +277,7 @@ export const missionMushrikin: Lesson = {
             en: 'Inside an ancient Arabian home, bedding and a warm lamp',
           },
           fact: {
-            ar: 'انطلق الرسول (ص) مسرعًا إلى بيته يريد زوجته خديجة لتخفّف عنه الرعب. فلمّا قصّ عليها ما وقع قال: "خشيت على نفسي!" فردّت خديجة رضي الله عنها الحكيمة: "كلّا والله! ما يخزيك أبدًا… إنّك لتصل الرحم، وتحمل الكَلّ، وتكسب المعدوم، وتُكرم الضيف".',
+            ar: 'انطلق الرسول ﷺ مسرعًا إلى بيته يريد زوجته خديجة لتخفّف عنه الرعب. فلمّا قصّ عليها ما وقع قال: "خشيت على نفسي!" فردّت خديجة رضي الله عنها الحكيمة: "كلّا والله! ما يخزيك أبدًا… إنّك لتصل الرحم، وتحمل الكَلّ، وتكسب المعدوم، وتُكرم الضيف".',
             fr: 'Le Prophète ﷺ se hâta vers sa demeure, cherchant Khadīja pour apaiser sa frayeur. Après lui avoir raconté ce qui s’était passé, il dit : « Je crains pour moi-même ! » Khadīja (qu’Allah l’agrée), avec sagesse, répondit : « Non, par Allah ! Il ne t’arrivera jamais rien de honteux… tu maintiens les liens de parenté, tu portes le fardeau des faibles, tu donnes à qui n’a rien, et tu honores l’hôte. »',
             en: 'The Prophet ﷺ hurried home, seeking his wife Khadija to calm his fear. After he told her what had happened, he said: "I fear for myself!" Khadija (may God be pleased with her), with wisdom, replied: "No, by God! He will never disgrace you… you maintain family ties, carry the burden of the weak, give to those who have nothing, and honor guests."',
           },
@@ -258,7 +291,7 @@ export const missionMushrikin: Lesson = {
             en: 'Ancient parchment scrolls beside a clay lamp',
           },
           fact: {
-            ar: 'ذهبت خديجة بنت خويلد بالرسول (ص) إلى ابن عمّها ورقة بن نوفل النصرانيّ، فقصّت عليه القصّة، فردّ ورقة مبشِّرًا: "هذا الذي أتاك جبريل، اثبُت يا محمد… اثبُت على الحقّ، فأنت نبيّ هذه الأمّة".',
+            ar: 'ذهبت خديجة بنت خويلد بالرسول ﷺ إلى ابن عمّها ورقة بن نوفل النصرانيّ، فقصّت عليه القصّة، فردّ ورقة مبشِّرًا: "هذا الذي أتاك جبريل، اثبُت يا محمد… اثبُت على الحقّ، فأنت نبيّ هذه الأمّة".',
             fr: 'Khadīja bint Khuwaylid emmena le Prophète ﷺ chez son cousin Waraqa ibn Nawfal, chrétien, et lui raconta l’histoire. Waraqa répondit, annonçant une bonne nouvelle : « C’est bien Gabriel qui est venu à toi. Tiens bon, ô Muhammad… tiens bon sur la vérité, car tu es le prophète de cette communauté. »',
             en: 'Khadija bint Khuwaylid took the Prophet ﷺ to her cousin Waraqa ibn Nawfal, a Christian, and told him the story. Waraqa answered with glad tidings: "This is the one who came to you — Gabriel. Stand firm, O Muhammad… stand firm upon the truth, for you are the prophet of this nation."',
           },
@@ -266,7 +299,7 @@ export const missionMushrikin: Lesson = {
       ],
       reflection: {
         prompt: {
-          ar: 'ماذا قدّمت خديجة رضي الله عنها للرسول (ص) في تلك اللحظة؟ اختر كلّ ما يدعمه النصّ.',
+          ar: 'ماذا قدّمت خديجة رضي الله عنها للرسول ﷺ في تلك اللحظة؟ اختر كلّ ما يدعمه النصّ.',
           fr: 'Qu’offrit Khadīja au Prophète ﷺ en cet instant ? Choisis tout ce que le texte appuie.',
           en: 'What did Khadija offer the Prophet ﷺ in that moment? Choose everything the text supports.',
         },
@@ -334,9 +367,9 @@ export const missionMushrikin: Lesson = {
             en: 'The Command to Warn and the Start of Secret Dawah',
           },
           text: {
-            ar: 'بعد أربعين يومًا، نزل جبريل عليه السلام مرّةً أخرى، وتنزّلت الآيات الكريمة: ﴿يَا أَيُّهَا الْمُدَّثِّرُ ۝ قُمْ فَأَنذِرْ ۝ وَرَبَّكَ فَكَبِّرْ﴾ [المدّثّر: 1–3]، فأمر الله نبيّه بالقيام بمهمّة الدعوة. بدأ الرسول ﷺ يدعو الناس سرًّا خوفًا من بطش قريش، فكان يعرض الإسلام على أهل الخير والصدق. وكان أوّل من أسلم: زوجه خديجة، وابن عمّه عليّ بن أبي طالب، وصاحبه أبو بكر الصدّيق، وخادمه زيد بن حارثة رضي الله عنهم.',
-            fr: 'Quarante jours plus tard, Gabriel (paix sur lui) apparut de nouveau, apportant les versets : « Ô toi qui te couvres d’un manteau ! Lève-toi et avertis ! Et ton Seigneur, célèbre Sa grandeur ! » [al-Muddaththir : 1–3, traduction du sens] Allah ordonna ainsi à Son Prophète d’accomplir la mission de l’appel. Le Messager ﷺ commença par prêcher secrètement pour préserver les croyants de l’hostilité de Quraysh, s’adressant à ceux dont le cœur aimait la vérité. Les premiers à embrasser l’islam furent son épouse Khadīja, son cousin ‘Alī ibn Abī Ṭālib, son fidèle compagnon Abū Bakr et son serviteur Zayd ibn Ḥāritha (qu’Allah les agrée tous).',
-            en: 'Forty days later, Gabriel (peace be upon him) appeared again, bringing the divine words: "O you wrapped in a cloak! Arise and warn! And your Lord, magnify!" [al-Muddaththir: 1–3, translation of the meaning] God thereby commanded His Prophet to embark on the mission of calling people. The Messenger ﷺ began calling in secret to protect the early believers from Quraysh’s wrath, reaching out to those known for truthfulness. The first to embrace Islam were his wife Khadija, his cousin Ali ibn Abi Talib, his close friend Abu Bakr, and his servant Zayd ibn Haritha (may God be pleased with them all).',
+            ar: 'بعد أربعين يومًا، نزل جبريل عليه السلام مرّةً أخرى على سيّدنا محمد ﷺ على صورته الحقيقيّة، فذهب الرسول ﷺ إلى زوجته خديجة رضي الله عنها وهو في غاية الرعب، وطلب منها أن تغطّيه، فنزلت الآيات: ﴿يَا أَيُّهَا الْمُدَّثِّرُ ۝ قُمْ فَأَنذِرْ ۝ وَرَبَّكَ فَكَبِّرْ ۝ وَثِيَابَكَ فَطَهِّرْ ۝ وَالرُّجْزَ فَاهْجُرْ ۝ وَلَا تَمْنُن تَسْتَكْثِرُ ۝ وَلِرَبِّكَ فَاصْبِرْ﴾ [المدّثّر: 1–7]، فأمر الله نبيّه ﷺ بالقيام بمهمّة الدعوة. فشرع الرسول ﷺ يدعو سرًّا كما أمره الله تعالى، خوفًا من سادة قريش، فكان يدعو من يعرف فيه حبّ الخير ونصرة الحقّ. وكان أوّل من استجاب له: زوجته خديجة، وابن عمّه عليّ بن أبي طالب، وصديقه أبو بكر الصدّيق، وخادمه زيد بن حارثة رضي الله عنهم.',
+            fr: 'Quarante jours plus tard, Gabriel (paix sur lui) apparut de nouveau à Muhammad ﷺ sous sa forme véritable. Saisi d’une grande frayeur, le Prophète ﷺ alla trouver son épouse Khadīja (qu’Allah l’agrée) et lui demanda de le couvrir. Alors furent révélés ces versets : « Ô toi qui te couvres d’un manteau ! Lève-toi et avertis ! Et ton Seigneur, célèbre Sa grandeur ! Et tes vêtements, purifie-les ! Et l’impureté, fuis-la ! Ne donne pas en espérant recevoir davantage ! Et pour ton Seigneur, sois patient ! » [al-Muddaththir : 1–7, traduction du sens] Dieu ordonna ainsi à Son Prophète ﷺ d’accomplir la mission de l’appel. Le Messager ﷺ se mit à appeler en secret, comme Dieu le lui avait ordonné, par crainte des seigneurs de Quraysh, s’adressant à ceux en qui il connaissait l’amour du bien et le soutien de la vérité. Les premiers à embrasser l’islam furent son épouse Khadīja, son cousin ‘Alī ibn Abī Ṭālib, son fidèle compagnon Abū Bakr et son serviteur Zayd ibn Ḥāritha (qu’Allah les agrée tous).',
+            en: 'Forty days later, Gabriel (peace be upon him) came again to Muhammad ﷺ in his true form. In great fear, the Prophet ﷺ went to his wife Khadija (may God be pleased with her) and asked her to cover him. Then these verses were revealed: "O you wrapped in a cloak! Arise and warn! Your Lord, magnify! Your garments, purify! Uncleanness, shun! Do not give in order to gain more! And for your Lord, be patient!" [al-Muddaththir: 1–7, translation of the meaning] God thereby commanded His Prophet ﷺ to take up the mission of calling people. The Messenger ﷺ began calling in secret, as God commanded, fearing the chiefs of Quraysh, and called those he knew to love good and support the truth. The first to embrace Islam were his wife Khadija, his cousin Ali ibn Abi Talib, his close friend Abu Bakr, and his servant Zayd ibn Haritha (may God be pleased with them all).',
           },
         },
         {
@@ -360,9 +393,9 @@ export const missionMushrikin: Lesson = {
             en: 'Calling the Clan and the Proclamation on Mount al-Safa',
           },
           text: {
-            ar: 'أمر الله رسوله ﷺ بأن يوسّع دعوته فقال: ﴿وَأَنذِرْ عَشِيرَتَكَ الْأَقْرَبِينَ﴾ [الشعراء: 214]، فصنع طعامًا ودعا بني عبد المطلب، فنصره عمّه أبو طالب، بينما عاداه أبو لهب. ثمّ نزل الأمر الإلهيّ بالجهر: ﴿فَاصْدَعْ بِمَا تُؤْمَرُ وَأَعْرِضْ عَنِ الْمُشْرِكِينَ﴾ [الحجر: 94]. صعد النبيّ ﷺ جبل الصفا ونادى قريشًا وسألهم: «أرأيتم لو أخبرتكم أنّ خيلًا بالوادي تريد أن تُغير عليكم، أكنتم مصدّقي؟»، قالوا: «نعم، ما جرّبنا عليك كذبًا قطّ!»، فقال: «فإنّي نذيرٌ لكم بين يدَي عذابٍ شديد»، فغضب أبو لهب وصاح: «تبًّا لك! ألهذا جمعتنا؟!».',
-            fr: 'Allah ordonna ensuite à Son Prophète d’élargir son appel : « Et avertis ta parenté la plus proche » [ash-Shu‘arā’ : 214, traduction du sens]. Il prépara un repas et invita les Banū ‘Abd al-Muṭṭalib : son oncle Abū Ṭālib lui promit son soutien, tandis qu’Abū Lahab le repoussa durement. Puis vint l’ordre solennel de proclamer publiquement le message : « Proclame donc ce qui t’est commandé et détourne-toi des polythéistes » [al-Ḥijr : 94, traduction du sens]. Le Prophète ﷺ monta sur le mont aṣ-Ṣafā et interpella les clans de Quraysh : « Si je vous disais que des cavaliers s’apprêtent à fondre sur vous dans la vallée, me croiriez-vous ? » Ils répondirent : « Oui, nous ne t’avons jamais connu menteur ! » Il déclara alors : « Je suis pour vous un avertisseur face à un châtiment redoutable ». Abū Lahab s’écria alors avec colère : « Péris donc ! Est-ce pour cela que tu nous as rassemblés ?! »',
-            en: 'God then instructed His Prophet to expand his call: "And warn your nearest kin." [ash-Shu‘ara’: 214, translation of the meaning] He prepared a meal and invited the Banu Abd al-Muttalib: his uncle Abu Talib offered him protection, while Abu Lahab rejected him fiercely. Soon after came the command for public proclamation: "Proclaim what you are commanded and turn away from the polytheists." [al-Hijr: 94, translation of the meaning] The Prophet ﷺ ascended Mount al-Safa and called out to the clans of Quraysh: "If I told you that horsemen were in the valley ready to attack, would you believe me?" They answered: "Yes, we have never found you to lie!" He then said: "I am a warner to you of a severe punishment." Hearing this, Abu Lahab cried out in anger: "May you perish! Is this why you gathered us?!"',
+            ar: 'أمر الله رسوله ﷺ بأن يوسّع دعوته فقال: ﴿وَأَنذِرْ عَشِيرَتَكَ الْأَقْرَبِينَ﴾ [الشعراء: 214]، فأعدّ طعامًا ولبنًا ودعا بني عبد المطلب، وعرض عليهم الإجابة إلى دين الله وترك عبادة الأصنام، وحثّهم على حسن الخلق، فأيّده عمّه أبو طالب بالنصرة والعناية غير أنّه لم يُسلم، أمّا أبو لهب فآذاه إيذاءً شديدًا. وبعد بضعة أيام نزل الأمر الإلهيّ بالجهر بالدعوة للناس جميعًا: ﴿فَاصْدَعْ بِمَا تُؤْمَرُ وَأَعْرِضْ عَنِ الْمُشْرِكِينَ﴾ [الحجر: 94]. فصعد النبيّ ﷺ جبل الصفا، وطلب أن تجتمع قريش لأمرٍ يهمّهم، وسألهم: «أرأيتم لو أخبرتكم أنّ خيلًا بالوادي تريد أن تُغير عليكم، أكنتم مصدّقي؟»، قالوا: «نعم، ما جرّبنا عليك كذبًا قطّ!»، فقال: «فإنّي نذيرٌ لكم بين يدَي عذابٍ شديد»، فتوجّه إليه عمّه أبو لهب يصرخ في وجهه: «تبًّا لك! ألهذا جمعتنا؟!»، ثمّ تفرّقت جموعهم.',
+            fr: 'Allah ordonna ensuite à Son Prophète d’élargir son appel : « Et avertis ta parenté la plus proche » [ash-Shu‘arā’ : 214, traduction du sens]. Il prépara de la nourriture et du lait, invita les Banū ‘Abd al-Muṭṭalib, les appela à répondre à la religion de Dieu et à délaisser les idoles, et les exhorta aux bonnes mœurs. Son oncle Abū Ṭālib le soutint et le protégea, sans toutefois embrasser l’islam ; quant à Abū Lahab, il lui fit gravement du tort. Quelques jours plus tard vint l’ordre de proclamer l’appel à tous : « Proclame donc ce qui t’est commandé et détourne-toi des polythéistes » [al-Ḥijr : 94, traduction du sens]. Le Prophète ﷺ monta sur le mont aṣ-Ṣafā, demanda à Quraysh de se réunir pour une affaire importante et leur dit : « Si je vous disais que des cavaliers s’apprêtent à fondre sur vous dans la vallée, me croiriez-vous ? » Ils répondirent : « Oui, nous ne t’avons jamais connu menteur ! » Il déclara alors : « Je suis pour vous un avertisseur face à un châtiment redoutable ». Son oncle Abū Lahab se tourna vers lui en criant : « Péris donc ! Est-ce pour cela que tu nous as rassemblés ?! » Puis l’assemblée se dispersa.',
+            en: 'God then instructed His Prophet to expand his call: "And warn your nearest kin." [ash-Shu‘ara’: 214, translation of the meaning] He prepared food and milk, invited the Banu Abd al-Muttalib, called them to accept God’s religion and leave idol worship, and urged them to good character. His uncle Abu Talib supported and protected him, though he did not accept Islam; Abu Lahab, however, harmed him severely. A few days later came the command to proclaim the call to everyone: "Proclaim what you are commanded and turn away from the polytheists." [al-Hijr: 94, translation of the meaning] The Prophet ﷺ climbed Mount al-Safa, asked Quraysh to gather for an important matter and said to them: "If I told you that horsemen were in the valley ready to attack, would you believe me?" They answered: "Yes, we have never found you to lie!" He then said: "I am a warner to you of a severe punishment." His uncle Abu Lahab turned on him, shouting: "May you perish! Is this why you gathered us?!" Then the gathering dispersed.',
           },
         },
       ],
@@ -389,7 +422,7 @@ export const missionMushrikin: Lesson = {
         en: 'A modest stone and mud-brick house in a shaded Makkan alley at dusk',
       },
       start: {
-        ar: 'دخل الرسول (ص) على خديجة وهو في غاية الرعب، فطلب منها أن تغطّيه.',
+        ar: 'دخل الرسول ﷺ على خديجة وهو في غاية الرعب، فطلب منها أن تغطّيه.',
         fr: 'Le Prophète ﷺ entra chez Khadīja, saisi d’une grande frayeur, et lui demanda de le couvrir.',
         en: 'The Prophet ﷺ came in to Khadija in great fear, and asked her to cover him.',
       },
@@ -399,7 +432,7 @@ export const missionMushrikin: Lesson = {
           prompt: { ar: 'ماذا نزل عليه وهو مُتغطٍّ؟', fr: 'Que lui fut-il révélé alors qu’il était couvert ?', en: 'What was revealed to him while covered?' },
           correct: {
             ar: 'نزلت الآيات: ﴿يَا أَيُّهَا الْمُدَّثِّرُ ۝ قُمْ فَأَنذِرْ ۝ وَرَبَّكَ فَكَبِّرْ﴾ [المدّثّر: 1–3]، يأمره الله فيها بالقيام والإنذار.',
-            fr: '«ô toi qui te couvres d’un manteau ! Lève-toi et avertis ! Et de ton Seigneur, célèbre la grandeur !» [al-Muddaththir : 1–3, traduction du sens] : Dieu lui ordonne de se lever et d’avertir.',
+            fr: '« Ô toi qui te couvres d’un manteau ! Lève-toi et avertis ! Et ton Seigneur, célèbre Sa grandeur ! » [al-Muddaththir : 1–3, traduction du sens] : Dieu lui ordonne de se lever et d’avertir.',
             en: '"O you wrapped in a cloak, arise and warn, and your Lord magnify" [al-Muddaththir: 1–3, translation of the meaning]: God commands him to rise and give warning.',
           },
           distractors: [
@@ -411,7 +444,7 @@ export const missionMushrikin: Lesson = {
         },
         {
           id: 's2',
-          prompt: { ar: 'كيف بدأ الرسول (ص) دعوته بعدها؟', fr: 'Comment débuta son appel ensuite ?', en: 'How did his call begin after that?' },
+          prompt: { ar: 'كيف بدأ الرسول ﷺ دعوته بعدها؟', fr: 'Comment débuta son appel ensuite ?', en: 'How did his call begin after that?' },
           correct: {
             ar: 'شرع يدعو سرًّا كما أمره الله، خوفًا من سادة قريش، فكان يدعو من يعرف فيه حبّ الخير ونصرة الحقّ.',
             fr: 'Il se mit à appeler secrètement, comme Dieu le lui avait ordonné, craignant les seigneurs de Quraysh ; il appelait ceux en qui il connaissait l’amour du bien et le soutien de la vérité.',
@@ -443,7 +476,7 @@ export const missionMushrikin: Lesson = {
           id: 's4',
           prompt: { ar: 'أين أصبح المسلمون الجدد يجتمعون؟', fr: 'Où les nouveaux musulmans se mirent-ils à se réunir ?', en: 'Where did the new Muslims gather?' },
           correct: {
-            ar: 'أصبحت دار الأرقم بن أبي الأرقم في شعاب مكّة مقصدًا لمن يريد إعلان إسلامه؛ كان الرسول (ص) يعلّمهم ويقوّي إيمانهم ويرغّبهم بتزكية النفوس ومكارم الأخلاق.',
+            ar: 'أصبحت دار الأرقم بن أبي الأرقم في شعاب مكّة مقصدًا لمن يريد إعلان إسلامه؛ كان الرسول ﷺ يعلّمهم ويقوّي إيمانهم ويرغّبهم بتزكية النفوس ومكارم الأخلاق.',
             fr: 'La maison d’al-Arqam ibn Abī al-Arqam, dans les ravins de La Mecque, devint le lieu de ceux qui voulaient déclarer leur islam ; le Prophète ﷺ les enseignait, affermissait leur foi et les encourageait à la purification de l’âme et aux nobles mœurs.',
             en: 'The house of al-Arqam ibn Abi al-Arqam, in a Makkan ravine, became the gathering place for those who wished to declare their Islam; the Prophet ﷺ taught them, strengthened their faith, and encouraged purity of soul and noble character.',
           },
@@ -467,9 +500,9 @@ export const missionMushrikin: Lesson = {
       kind: 'placement',
       id: 'calling-the-clan',
       title: {
-        ar: 'رسول الله يدعو عشيرته',
-        fr: 'Le Messager appelle son clan',
-        en: 'The Messenger calls his clan',
+        ar: 'رسول الله ﷺ يدعو عشيرته',
+        fr: 'Le Messager ﷺ appelle son clan',
+        en: 'The Messenger ﷺ calls his clan',
       },
       intro: {
         ar: 'بعد ثلاث سنوات من الدعوة السرّية الفرديّة، أنزل الله: ﴿وَأَنذِرْ عَشِيرَتَكَ الْأَقْرَبِينَ﴾ [الشعراء: 214]. ضع كلّ بطاقةٍ في خانتها الصحيحة لتتابع ما جرى.',
@@ -484,7 +517,7 @@ export const missionMushrikin: Lesson = {
       cards: [
         {
           id: 'meal',
-          label: { ar: 'أعدّ الرسول (ص) طعامًا ولبنًا، وعرض عليهم الإجابة إلى دين الله وترك عبادة الأصنام، وحثّهم على حسن الخلق', fr: 'Le Prophète ﷺ prépara nourriture et lait, les invita à répondre à la religion de Dieu et à délaisser les idoles, et les exhorta aux bonnes mœurs', en: 'The Prophet ﷺ prepared food and milk, invited them to accept God’s religion and leave idol worship, and urged good character' },
+          label: { ar: 'أعدّ الرسول ﷺ طعامًا ولبنًا، وعرض عليهم الإجابة إلى دين الله وترك عبادة الأصنام، وحثّهم على حسن الخلق', fr: 'Le Prophète ﷺ prépara nourriture et lait, les invita à répondre à la religion de Dieu et à délaisser les idoles, et les exhorta aux bonnes mœurs', en: 'The Prophet ﷺ prepared food and milk, invited them to accept God’s religion and leave idol worship, and urged good character' },
           slotId: 'invite',
           hint: { ar: 'هذا ما جرى في مجلس الدعوة نفسه، قبل أن يردّ أحدٌ عليه.', fr: 'Ceci se passa lors de l’assemblée elle-même, avant toute réponse.', en: 'This happened at the gathering itself, before anyone responded.' },
         },
@@ -496,7 +529,7 @@ export const missionMushrikin: Lesson = {
         },
         {
           id: 'lahab-harm',
-          label: { ar: 'آذى ابن أخيه محمدًا (ص) إيذاءً شديدًا', fr: 'Il fit gravement du tort à son neveu Muhammad ﷺ', en: 'He harmed his nephew Muhammad ﷺ severely' },
+          label: { ar: 'آذى ابن أخيه محمدًا ﷺ إيذاءً شديدًا', fr: 'Il fit gravement du tort à son neveu Muhammad ﷺ', en: 'He harmed his nephew Muhammad ﷺ severely' },
           slotId: 'abu-lahab',
           hint: { ar: 'هذا ردّ العمّ الآخر، الذي عارض الدعوة بشدّة.', fr: 'C’est la réponse de l’autre oncle, qui s’opposa violemment à l’appel.', en: 'This is the other uncle’s response — he opposed the call fiercely.' },
         },
@@ -508,7 +541,7 @@ export const missionMushrikin: Lesson = {
       kind: 'explorer',
       id: 'open-proclamation',
       title: {
-        ar: 'الرسول (ص) يجهر بالدعوة',
+        ar: 'الرسول ﷺ يجهر بالدعوة',
         fr: 'Le Prophète ﷺ proclame ouvertement son appel',
         en: 'The Prophet ﷺ proclaims the call openly',
       },
@@ -530,7 +563,7 @@ export const missionMushrikin: Lesson = {
           y: 55,
           label: { ar: 'اجتماع قريش', fr: 'L’assemblée de Quraysh', en: 'The gathering of Quraysh' },
           description: {
-            ar: 'طلب الرسول (ص) أن تجتمع قريش لأمرٍ يهمّهم، فقال لهم: "أرأيتم لو أخبرتكم أنّ خيلًا بهذا الوادي تريد أن تُغير عليكم، أكنتم مُصدّقي؟" فقالوا: "نعم، ما جرّبنا عليك كذبًا قطّ!"',
+            ar: 'طلب الرسول ﷺ أن تجتمع قريش لأمرٍ يهمّهم، فقال لهم: "أرأيتم لو أخبرتكم أنّ خيلًا بهذا الوادي تريد أن تُغير عليكم، أكنتم مُصدّقي؟" فقالوا: "نعم، ما جرّبنا عليك كذبًا قطّ!"',
             fr: 'Le Prophète ﷺ demanda à Quraysh de se réunir pour une affaire importante, et leur dit : « Si je vous disais que des cavaliers dans cette vallée s’apprêtent à vous attaquer, me croiriez-vous ? » Ils répondirent : « Oui, nous ne t’avons jamais connu menteur ! »',
             en: 'The Prophet ﷺ asked Quraysh to gather for an important matter, and said to them: "If I told you that horsemen were in this valley preparing to raid you, would you believe me?" They said: "Yes — we have never known you to lie!"',
           },
@@ -553,7 +586,7 @@ export const missionMushrikin: Lesson = {
           label: { ar: 'ردّة فعل أبي لهب', fr: 'La réaction d’Abū Lahab', en: 'Abu Lahab’s reaction' },
           description: {
             ar: 'توجّه إليه عمّه أبو لهب يصرخ في وجهه: "تبًّا لك! ألهذا جمعتنا؟!" ثمّ تفرّقت جموعهم.',
-            fr: 'Son oncle Abū Lahab se tourna vers lui en criant : « Malheur à toi ! Est-ce pour cela que tu nous as réunis ? » Puis l’assemblée se dispersa.',
+            fr: 'Son oncle Abū Lahab se tourna vers lui en criant : « Péris donc ! Est-ce pour cela que tu nous as rassemblés ?! » Puis l’assemblée se dispersa.',
             en: 'His uncle Abu Lahab turned on him, shouting: "May you perish! Is this why you gathered us?" Then the gathering dispersed.',
           },
         },
@@ -589,9 +622,9 @@ export const missionMushrikin: Lesson = {
             en: 'Slander and False Accusations',
           },
           text: {
-            ar: 'عندما جهر النبيّ ﷺ بكلمة التوحيد ودعا إلى ترك الأصنام، ثارت ثائرة قريش؛ فقد خشيت على مكانتها ورئاستها بين العرب. ولمّا عجزوا عن مواجهة حجّة القرآن الكريم، لجأوا إلى الافتراء والتهم الباطلة، فنعتوا النبيّ الصادق الأمين بالسحر والكهانة والشعر والجنون، محاولين تشويه صورته وإبعاد الناس عن سماع كلام الله.',
-            fr: 'Lorsque le Prophète ﷺ proclama ouvertement le message de l’Unicité divine et appela à délaisser les idoles de pierre, les notables de Quraysh s’emportèrent, craignant pour leur autorité et leurs privilèges parmi les tribus. Incapables de contester la grandeur du Coran, ils eurent recours aux mensonges et aux calomnies, qualifiant le Prophète intègre de sorcier, de devin, de poète ou d’insensé, dans le but d’empêcher les gens d’écouter la parole divine.',
-            en: 'When the Prophet ﷺ publicly proclaimed the message of divine Oneness and called for the abandonment of stone idols, Quraysh’s leaders grew furious, fearing the loss of their prestige and authority among the Arabs. Unable to counter the eloquence of the Qur’an, they turned to falsehood and mockery, labeling the trustworthy Prophet as a sorcerer, soothsayer, poet, or madman, attempting to deter people from listening to the Word of God.',
+            ar: 'عندما جهر النبيّ ﷺ بكلمة التوحيد ودعا إلى ترك الأصنام، ثارت ثائرة قريش؛ فقد خشيت على مكانتها ورئاستها بين العرب. ولمّا عجزوا عن مواجهة حجّة القرآن الكريم، لجأوا إلى الافتراء والتهم الباطلة، فاتّهموا النبيّ الصادق الأمين ﷺ بالسحر والجنون والسفه والشعر، كما قال تعالى: ﴿وَيَقُولُونَ أَئِنَّا لَتَارِكُو آلِهَتِنَا لِشَاعِرٍ مَّجْنُونٍ﴾ [الصافات: 36]، محاولين تشويه صورته وإبعاد الناس عن سماع كلام الله.',
+            fr: 'Lorsque le Prophète ﷺ proclama ouvertement l’Unicité divine et appela à délaisser les idoles, les notables de Quraysh s’emportèrent, craignant pour leur rang et leur autorité parmi les Arabes. Incapables de répondre à l’argument du Coran, ils eurent recours aux mensonges et aux fausses accusations : ils accusèrent le Prophète ﷺ, le véridique et digne de confiance, de sorcellerie, de folie, de sottise et de poésie, comme le dit Dieu : « Et ils disaient : Allons-nous abandonner nos divinités pour un poète fou ? » [aṣ-Ṣāffāt : 36, traduction du sens], afin d’empêcher les gens d’écouter la parole de Dieu.',
+            en: 'When the Prophet ﷺ publicly proclaimed God’s Oneness and called for abandoning idols, Quraysh’s leaders grew furious, fearing for their rank and authority among the Arabs. Unable to answer the argument of the Qur’an, they turned to lies and false accusations: they accused the truthful, trustworthy Prophet ﷺ of sorcery, madness, foolishness and poetry, as God says: "And they said: Are we to abandon our gods for a mad poet?" [aṣ-Ṣāffāt: 36, translation of the meaning], trying to keep people from listening to the Word of God.',
           },
         },
         {
@@ -602,9 +635,9 @@ export const missionMushrikin: Lesson = {
             en: 'Assault at the Kaaba and Abu Bakr’s Defense',
           },
           text: {
-            ar: 'لم يكتفِ كفار قريش بالاستهزاء والكلمات، بل تعدّوا ذلك إلى الإيذاء الجسديّ الشديد؛ ففي يومٍ من الأيام، وبينما كان النبيّ ﷺ يطوف بالبيت الحرام، تكاثر عليه المشركون وأمسك أحدهم بثوبه لخنقه، فأسرع رفيقه أبو بكر الصدّيق رضي الله عنه ليدافع عنه بكلّ شجاعة، وصرخ في وجوههم بكلمات الإيمان: «أتقتلون رجلًا أن يقول ربي الله وقد جاءكم بالبيّنات من ربّكم؟!»، فتركوا النبيّ وانهالوا بالضرب على أبي بكر.',
-            fr: 'Les polythéistes ne se contentèrent pas de paroles blessantes : ils passèrent à la violence physique. Un jour, alors que le Prophète ﷺ accomplissait le ṭawāf autour de la Maison Sacrée, des assaillants l’encerclèrent et l’un d’eux tenta de l’étrangler avec son vêtement. Son fidèle ami Abū Bakr aṣ-Ṣiddīq accourut avec bravoure pour le protéger et s’écria avec ferveur : « Allez-vous tuer un homme simplement parce qu’il dit : mon Seigneur est Allah, alors qu’il est venu à vous avec des preuves claires de votre Seigneur ?! » Ils relâchèrent alors le Prophète pour s’acharner violemment sur Abū Bakr.',
-            en: 'The polytheists did not stop at cruel words: they escalated to physical violence. One day, while the Prophet ﷺ was circumambulating the Sacred Sanctuary, attackers surrounded him and one seized his cloak in an attempt to strangle him. His loyal friend Abu Bakr al-Siddiq rushed forward courageously to protect him, crying out: "Will you slay a man merely because he proclaims: My Lord is God, when he has come to you with clear signs from your Lord?!" The assailants turned away from the Prophet to beat Abu Bakr relentlessly instead.',
+            ar: 'لم يكتفِ كفّار قريش بالاستهزاء والكلمات، بل تعدّوا ذلك إلى الإيذاء الجسديّ؛ ففي يومٍ من الأيام أحاط المشركون بالنبيّ ﷺ وهو يطوف بالكعبة، ثمّ أمسك أحدهم بثوبه يريد أن يخنقه، فقام أبو بكر الصدّيق رضي الله عنه يردّ عنه قائلًا: «أتقتلون رجلًا يقول: ربّي الله؟»، فتركوه.',
+            fr: 'Les polythéistes de Quraysh ne se contentèrent pas de moqueries : ils passèrent à la violence physique. Un jour, ils encerclèrent le Prophète ﷺ alors qu’il accomplissait le ṭawāf autour de la Ka‘ba, et l’un d’eux saisit son vêtement, voulant l’étrangler. Abū Bakr aṣ-Ṣiddīq (qu’Allah l’agrée) se dressa pour le défendre en disant : « Allez-vous tuer un homme qui dit : mon Seigneur est Allah ? » Alors ils le lâchèrent.',
+            en: 'The polytheists of Quraysh did not stop at mockery: they turned to physical violence. One day they surrounded the Prophet ﷺ while he was circling the Kaaba, and one of them seized his garment, meaning to strangle him. Abu Bakr al-Siddiq (may God be pleased with him) stood up to defend him, saying: "Will you kill a man who says: my Lord is God?" So they let him go.',
           },
         },
         {
@@ -615,9 +648,9 @@ export const missionMushrikin: Lesson = {
             en: 'The Thorns of Abu Lahab, His Wife, and the Prophet’s ﷺ Fortitude',
           },
           text: {
-            ar: 'وكان عمّ النبيّ أبو لهب من أشدّ الناس عداوةً له، يتبعه في المجامع ليُكذّبه وينفّر الناس منه. كما شاركت زوجته أمّ جميل في هذا الظلم، فكانت تجمع الشوك والحطب وتضعه في طريق النبيّ ﷺ وأمام بابه ليلًا لتدمي قدميه الشريفتين. لكنّ رسول الله ﷺ قابل هذا الأذى كلّه بالصبر الجميل، وما زاده الكيد إلّا ثباتًا على دعوة الحقّ ورحمةً بالعالمين.',
-            fr: 'Son propre oncle Abū Lahab comptait parmi ses ennemis les plus acharnés, le poursuivant sur les places pour contredire son message et éloigner les pèlerins. Son épouse Umm Jamīl participait activement à cette cruauté : elle ramassait des épines pour les déposer la nuit sur le sentier et devant la porte du Prophète ﷺ afin de le blesser. Malgré toute cette méchanceté, le Messager ﷺ demeura d’une patience admirable, et ces épreuves ne firent que renforcer son dévouement à guider l’humanité avec bienveillance.',
-            en: 'His own uncle Abu Lahab stood among his most bitter adversaries, following him across public gatherings to deny his words and steer people away. His wife Umm Jamil actively joined in this malice: she would gather thorns and place them at night along the Prophet’s ﷺ path and at his doorstep to wound his feet. Yet the Messenger of God ﷺ met every hardship with noble patience, and their schemes only fortified his resolve to bring mercy and guidance to the world.',
+            ar: 'وكان عمّ النبيّ ﷺ أبو لهب أشدّ المشركين إيذاءً له، فقد كان يستهزئ به ويمنع الناس من الاستماع إليه. كما شاركت زوجته أمّ جميل في هذا الظلم، فكانت تحمل الشوك وتضعه في طريق النبيّ ﷺ وعلى بابه ليلًا. لكنّ رسول الله ﷺ قابل هذا الأذى كلّه بالصبر الجميل، وما زاده الكيد إلّا ثباتًا على دعوة الحقّ ورحمةً بالعالمين.',
+            fr: 'Son propre oncle Abū Lahab était le plus acharné des polythéistes à lui nuire : il se moquait de lui et empêchait les gens de l’écouter. Son épouse Umm Jamīl participait à cette injustice : elle apportait des épines et les déposait la nuit sur le chemin du Prophète ﷺ et devant sa porte. Malgré toute cette méchanceté, le Messager ﷺ demeura d’une patience admirable, et ces épreuves ne firent que renforcer son dévouement à guider l’humanité avec bienveillance.',
+            en: 'His own uncle Abu Lahab was the harshest of the polytheists in harming him: he mocked him and stopped people from listening to him. His wife Umm Jamil joined in this injustice: she would carry thorns and place them at night on the Prophet’s ﷺ path and at his door. Yet the Messenger of God ﷺ met every hardship with noble patience, and their schemes only fortified his resolve to bring mercy and guidance to the world.',
           },
         },
       ],
@@ -628,8 +661,8 @@ export const missionMushrikin: Lesson = {
       kind: 'chat',
       id: 'persecution-chat',
       title: {
-        ar: 'إيذاء المشركين لرسول الله (ص)',
-        fr: 'La persécution du Messager par les polythéistes',
+        ar: 'إيذاء المشركين لرسول الله ﷺ',
+        fr: 'La persécution du Messager ﷺ par les polythéistes',
         en: 'The polytheists’ persecution of the Messenger ﷺ',
       },
       intro: {
@@ -653,18 +686,18 @@ export const missionMushrikin: Lesson = {
           type: 'reply',
           id: 'accuse',
           who: 'mushrikun',
-          prompt: { ar: 'بأيّ تُهمٍ اتّهم المشركون الرسول (ص)؟ اختر ما ذكره الدرس.', fr: 'De quels griefs les polythéistes accusaient-ils le Prophète ﷺ ? Choisis ce que dit la leçon.', en: 'What accusations did the polytheists level at the Prophet ﷺ? Choose what the lesson states.' },
+          prompt: { ar: 'بأيّ تُهمٍ اتّهم المشركون الرسول ﷺ؟ اختر ما ذكره الدرس.', fr: 'De quels griefs les polythéistes accusaient-ils le Prophète ﷺ ? Choisis ce que dit la leçon.', en: 'What accusations did the polytheists level at the Prophet ﷺ? Choose what the lesson states.' },
           options: [
             {
               id: 'right',
               correct: true,
-              label: { ar: 'اتّهموه بالسحر والكهانة والشعر والجنون', fr: '« Tu es un sorcier, un devin, un poète, un fou »', en: '"You are a sorcerer, a soothsayer, a poet, a madman"' },
-              hint: { ar: 'راجع فقرة «حملات التكذيب والافتراء»: نعتوه بالسحر والكهانة والشعر والجنون.', fr: 'Relis le paragraphe « Les calomnies et fausses accusations » : ils le traitèrent de sorcier, de devin, de poète et de fou.', en: 'Look back at the paragraph “Slander and False Accusations”: they called him a sorcerer, a soothsayer, a poet and a madman.' },
+              label: { ar: 'اتّهموه بالسحر والجنون والسفه والشعر', fr: 'Ils l’accusèrent de sorcellerie, de folie, de sottise et de poésie', en: 'They accused him of sorcery, madness, foolishness and poetry' },
+              hint: { ar: 'صحيح، كما في فقرة «حملات التكذيب والافتراء»: اتّهموه بالسحر والجنون والسفه والشعر.', fr: 'Exact, comme dans le paragraphe « Les calomnies et fausses accusations » : sorcellerie, folie, sottise et poésie.', en: 'Correct, as in the paragraph “Slander and False Accusations”: sorcery, madness, foolishness and poetry.' },
             },
             {
               id: 'wrong',
               correct: false,
-              label: { ar: 'اتّهموه بسرقة أموالهم', fr: '« Tu as volé nos biens »', en: '"You stole our wealth"' },
+              label: { ar: 'اتّهموه بسرقة أموالهم', fr: 'Ils l’accusèrent d’avoir volé leurs biens', en: 'They accused him of stealing their wealth' },
               hint: { ar: 'لم يذكر الدرس هذه التهمة؛ عُد إلى فقرة «حملات التكذيب والافتراء».', fr: 'La leçon ne mentionne pas ce grief ; relis le paragraphe « Les calomnies et fausses accusations ».', en: 'The lesson does not mention this accusation; look back at the paragraph “Slander and False Accusations”.' },
             },
           ],
@@ -674,7 +707,7 @@ export const missionMushrikin: Lesson = {
           id: 'uncle-worst',
           who: 'narrator',
           text: {
-            ar: 'كان عمّ الرسول (ص) أبو لهب أشدّ المشركين إيذاءً له، فقد كان يستهزئ به ويمنع الناس من الاستماع إليه.',
+            ar: 'كان عمّ الرسول ﷺ أبو لهب أشدّ المشركين إيذاءً له، فقد كان يستهزئ به ويمنع الناس من الاستماع إليه.',
             fr: 'L’oncle du Prophète ﷺ, Abū Lahab, était le plus acharné à lui nuire : il le raillait et empêchait les gens de l’écouter.',
             en: 'The Prophet’s ﷺ uncle Abu Lahab was the harshest of the polytheists in harming him: he mocked him and stopped people from listening to him.',
           },
@@ -684,7 +717,7 @@ export const missionMushrikin: Lesson = {
           id: 'kaaba-attack',
           who: 'narrator',
           text: {
-            ar: 'في يومٍ أحاط المشركون بمحمد (ص) وهو يطوف بالكعبة، ثمّ أمسك أحدهم بثوب الرسول (ص) يريد أن يخنقه.',
+            ar: 'في يومٍ أحاط المشركون بمحمد ﷺ وهو يطوف بالكعبة، ثمّ أمسك أحدهم بثوب الرسول ﷺ يريد أن يخنقه.',
             fr: 'Un jour, les polythéistes encerclèrent Muhammad ﷺ alors qu’il accomplissait le ṭawāf autour de la Ka‘ba, et l’un d’eux saisit son vêtement, voulant l’étrangler.',
             en: 'One day the polytheists surrounded Muhammad ﷺ while he circled the Kaaba, and one of them seized his garment, meaning to strangle him.',
           },
@@ -693,7 +726,7 @@ export const missionMushrikin: Lesson = {
           type: 'reply',
           id: 'abubakr-defends',
           who: 'abubakr',
-          prompt: { ar: 'ماذا قال أبو بكر رضي الله عنه وهو يردّ عنه؟', fr: 'Que dit Abū Bakr pour le défendre ?', en: 'What did Abu Bakr say in his defense?' },
+          prompt: { ar: 'ماذا قال أبو بكر رضي الله عنه وهو يردّ عنه؟', fr: 'Que dit Abū Bakr (qu’Allah l’agrée) pour le défendre ?', en: 'What did Abu Bakr (may God be pleased with him) say in his defence?' },
           options: [
             {
               id: 'right',
@@ -714,7 +747,7 @@ export const missionMushrikin: Lesson = {
           id: 'thorns',
           who: 'narrator',
           text: {
-            ar: 'وكانت تقوم بإيذائه امرأة أبي لهب، فقد كانت تحمل الشوك وتضعه في طريق النبيّ (ص) وعلى بابه ليلًا.',
+            ar: 'وكانت تقوم بإيذائه امرأة أبي لهب، فقد كانت تحمل الشوك وتضعه في طريق النبيّ ﷺ وعلى بابه ليلًا.',
             fr: 'La femme d’Abū Lahab s’y employait aussi : elle apportait des épines et les plaçait sur le chemin du Prophète ﷺ et devant sa porte, la nuit.',
             en: 'Abu Lahab’s wife took part too: she carried thorns and scattered them on the Prophet’s ﷺ path and at his door by night.',
           },
@@ -733,14 +766,14 @@ export const missionMushrikin: Lesson = {
       },
       intro: {
         ar: 'اقرأ كيف حاولت قريش إغراء النبيّ ﷺ بالمال والرئاسة ليترك دعوته، وكيف كان ردّه الحاسم.',
-        fr: 'Lis comment Quraysh tenta de séduire le Prophète ﷺ par l’or et le pouvoir pour qu’il renonce à sa mission, et quelle fut sa réponse inébranlable.',
-        en: 'Read how Quraysh attempted to bribe the Prophet ﷺ with wealth and leadership to abandon his mission, and his resolute response.',
+        fr: 'Lis comment Quraysh tenta de séduire le Prophète ﷺ par la richesse et le pouvoir pour qu’il renonce à sa mission, et quelle fut sa réponse inébranlable.',
+        en: 'Read how Quraysh tried to tempt the Prophet ﷺ with wealth and leadership to abandon his mission, and how firmly he answered.',
       },
       image: `${IMG}/hajj-tribes.png`,
       imageAlt: {
-        ar: 'وفودٌ وقوافل من قبائل العرب تجتمع في موسم الحجّ بمكّة عند المغيب',
-        fr: 'Caravanes et délégations des tribus arabes rassemblées à La Mecque au coucher du soleil pendant la saison du pèlerinage',
-        en: 'Caravans and delegations of Arab tribes gathered in Makkah at sunset during the pilgrimage season',
+        ar: 'صفوف من خيام القبائل الوافدة وجمالها الباركة في وادٍ بين جبال مكّة عند المغيب',
+        fr: 'Des rangées de tentes des tribus venues à La Mecque et leurs chameaux agenouillés, dans une vallée entre les montagnes, au coucher du soleil',
+        en: 'Rows of tents of visiting tribes and their kneeling camels in a valley among Makkah’s mountains at sunset',
       },
       paragraphs: [
         {
@@ -772,14 +805,14 @@ export const missionMushrikin: Lesson = {
         {
           id: 'p3',
           heading: {
-            ar: 'المساومة بالمال والمُلك والردّ النبويّ',
-            fr: 'La tentative d’achat par la richesse et le trône',
-            en: 'The Offer of Wealth and Throne, and the Prophetic Resolve',
+            ar: 'المساومة بالمال والرئاسة والردّ النبويّ',
+            fr: 'L’offre de richesse et de pouvoir, et la réponse du Prophète ﷺ',
+            en: 'The Offer of Wealth and Leadership, and the Prophet’s ﷺ Answer',
           },
           text: {
-            ar: 'لجأت قريش إلى حيلةٍ جديدة هي الإغراء والمساومة؛ فأرسلوا وفودهم إلى النبيّ ﷺ يعرضون عليه أن يجمعوا له من أموالهم حتى يكون أغناهم، أو يجعلوه ملِكًا وسيّدًا عليهم لا يقطعون أمرًا دونه، في مقابل شرطٍ واحد: أن يتخلّى عن هذا الدين ويترك عيب آلهتهم. فكان ردّ النبيّ ﷺ الرفض القاطع لكلّ متاع الدنيا؛ مؤكّدًا أنّ رسالة الله ودينه الحقّ أسمى من كلّ كنوز الأرض وتيجان الملك.',
-            fr: 'Quraysh imagina alors une nouvelle ruse : la tentation matérielle et le marchandage. Leurs émissaires vinrent trouver le Prophète ﷺ pour lui proposer de lui constituer une fortune immense pour qu’il devienne le plus riche d’entre eux, ou de le couronner roi et chef suprême de La Mecque sans qu’aucune décision ne se prenne sans son accord, à une seule condition : renoncer à son appel et cesser de dénoncer leurs idoles. Le Prophète ﷺ opposa un refus catégorique et absolu à toutes ces offres éphémères, proclamant que la vérité divine était infiniment plus précieuse que toutes les richesses et couronnes du monde.',
-            en: 'Quraysh turned to a new strategy: material temptation and compromise. Their emissaries approached the Prophet ﷺ offering to pool their fortunes until he became the wealthiest man among them, or to crown him king and supreme leader of Makkah so that no decision would be made without his approval — all on one condition: that he abandon his mission and cease renouncing their idols. The Prophet ﷺ responded with decisive refusal of all worldly bait, affirming that the truth of God’s guidance was far greater than all the riches and crowns of the earth.',
+            ar: 'لجأت قريش إلى حيلةٍ جديدة هي الإغراء والمساومة؛ فأرسلوا إلى النبيّ ﷺ يعرضون عليه الأموال ورئاسة قريش، في مقابل أن يترك دين الله. فرفض النبيّ ﷺ رفضًا قاطعًا، لأنّ رسالة الله ودينه الحقّ عنده أسمى من كلّ متاع الدنيا.',
+            fr: 'Quraysh recourut alors à une nouvelle ruse : la tentation et le marchandage. Ils envoyèrent dire au Prophète ﷺ qu’ils lui offraient des richesses et la direction de Quraysh, en échange de l’abandon de la religion de Dieu. Le Prophète ﷺ refusa catégoriquement, car le message de Dieu et Sa vraie religion valaient plus, pour lui, que tous les biens de ce monde.',
+            en: 'Quraysh then turned to a new trick: temptation and bargaining. They sent word to the Prophet ﷺ offering him wealth and the leadership of Quraysh in exchange for leaving God’s religion. The Prophet ﷺ refused outright, for God’s message and His true religion were worth more to him than all the goods of this world.',
           },
         },
       ],
@@ -790,12 +823,12 @@ export const missionMushrikin: Lesson = {
       kind: 'swipe',
       id: 'temptation',
       title: {
-        ar: 'قريش تغري الرسول (ص)',
+        ar: 'قريش تغري الرسول ﷺ',
         fr: 'Quraysh tente de séduire le Messager ﷺ',
         en: 'Quraysh tries to tempt the Messenger ﷺ',
       },
       intro: {
-        ar: 'استمرّ الرسول (ص) في الدعوة بجدّ وعزمٍ دون أن يلتفت إلى أذى المشركين، واستغلّ موسم الحجّ لدعوة القبائل العربية الوافدة إلى مكّة. اسحب كلّ بطاقة إلى الجهة الصحيحة: أكان هذا مما خافته قريش، أم مما عرضته عليه؟',
+        ar: 'استمرّ الرسول ﷺ في الدعوة بجدّ وعزمٍ دون أن يلتفت إلى أذى المشركين، واستغلّ موسم الحجّ لدعوة القبائل العربية الوافدة إلى مكّة. اسحب كلّ بطاقة إلى الجهة الصحيحة: أكان هذا مما خافته قريش، أم مما عرضته عليه؟',
         fr: 'Le Prophète ﷺ poursuivit son appel avec détermination, sans se soucier du tort des polythéistes, et profita du pèlerinage pour appeler les tribus arabes venues à La Mecque. Fais glisser chaque carte du bon côté : était-ce une crainte de Quraysh, ou une offre qu’elle lui fit ?',
         en: 'The Prophet ﷺ continued his call with determination, undeterred by the harm of the polytheists, and used the pilgrimage season to call the Arab tribes coming to Makkah. Swipe each card to the right side: was it something Quraysh feared, or something it offered him?',
       },
@@ -812,13 +845,13 @@ export const missionMushrikin: Lesson = {
           id: 'tribes-enter-islam',
           who: { ar: 'موسم الحجّ', fr: 'La saison du pèlerinage', en: 'The pilgrimage season' },
           deed: {
-            ar: 'خافت قريش أن تدخل القبائل الوافدة في الإسلام وتترك أصنامها',
-            fr: 'Quraysh craignait que les tribus venues n’embrassent l’islam et n’abandonnent leurs idoles',
-            en: 'Quraysh feared that the visiting tribes would enter Islam and abandon their idols',
+            ar: 'دخول القبائل الوافدة في الإسلام وتركها أصنامها',
+            fr: 'Les tribus venues à La Mecque embrassent l’islam et abandonnent leurs idoles',
+            en: 'The visiting tribes enter Islam and abandon their idols',
           },
           side: 'left',
           explanation: {
-            ar: 'بالضبط — استغلّ الرسول (ص) موسم الحجّ لدعوة القبائل، وهذا ما أخافهم.',
+            ar: 'بالضبط — استغلّ الرسول ﷺ موسم الحجّ لدعوة القبائل، وهذا ما أخافهم.',
             fr: 'Exact — le Prophète ﷺ profitait du pèlerinage pour appeler les tribus, ce qui les effrayait.',
             en: 'Exactly — the Prophet ﷺ used the pilgrimage season to call the tribes, and this frightened them.',
           },
@@ -827,9 +860,9 @@ export const missionMushrikin: Lesson = {
           id: 'trade-ruin',
           who: { ar: 'تجارة مكّة', fr: 'Le commerce de La Mecque', en: 'Makkah’s trade' },
           deed: {
-            ar: 'خافت قريش أن تتخلّى القبائل عن مكّة وتفسد تجارتها النشطة في موسم الحجّ',
-            fr: 'Quraysh craignait que les tribus n’abandonnent La Mecque, ruinant son commerce florissant pendant le pèlerinage',
-            en: 'Quraysh feared the tribes would abandon Makkah, ruining its trade that thrived during the pilgrimage season',
+            ar: 'تخلّي القبائل عن مكّة وكساد تجارتها النشطة في موسم الحجّ',
+            fr: 'Les tribus délaissent La Mecque, et son commerce florissant du pèlerinage s’effondre',
+            en: 'The tribes abandon Makkah, and its thriving pilgrimage-season trade collapses',
           },
           side: 'left',
           explanation: {
@@ -841,11 +874,11 @@ export const missionMushrikin: Lesson = {
         {
           id: 'wealth-offer',
           image: `${IMG}/offer.png`,
-          who: { ar: 'العرض الأوّل', fr: 'La première offre', en: 'The first offer' },
+          who: { ar: 'رسالة من سادة قريش', fr: 'Un message des chefs de Quraysh', en: 'A message from the chiefs of Quraysh' },
           deed: {
-            ar: 'أرسلوا إلى الرسول (ص) يعرضون عليه الأموال مقابل أن يترك دين الله',
-            fr: 'Ils envoyèrent au Prophète ﷺ pour lui proposer des richesses en échange de l’abandon de la religion de Dieu',
-            en: 'They sent to the Prophet ﷺ offering him wealth in exchange for leaving God’s religion',
+            ar: 'الأموال، مقابل أن يترك الرسول ﷺ دين الله',
+            fr: 'Des richesses, pour que le Prophète ﷺ abandonne la religion de Dieu',
+            en: 'Wealth, if the Prophet ﷺ would leave God’s religion',
           },
           side: 'right',
           explanation: {
@@ -857,11 +890,11 @@ export const missionMushrikin: Lesson = {
         {
           id: 'leadership-offer',
           image: `${IMG}/offer.png`,
-          who: { ar: 'العرض الثاني', fr: 'La seconde offre', en: 'The second offer' },
+          who: { ar: 'رسالة أخرى من سادة قريش', fr: 'Un autre message des chefs de Quraysh', en: 'Another message from the chiefs of Quraysh' },
           deed: {
-            ar: 'عرضوا عليه رئاسة قريش مقابل أن يترك دين الله، فرفض',
-            fr: 'Ils lui offrirent la direction de Quraysh en échange de l’abandon de la religion de Dieu ; il refusa',
-            en: 'They offered him leadership of Quraysh in exchange for leaving God’s religion; he refused',
+            ar: 'رئاسة قريش، مقابل أن يترك الرسول ﷺ دين الله',
+            fr: 'La direction de Quraysh, pour que le Prophète ﷺ abandonne la religion de Dieu',
+            en: 'Leadership of Quraysh, if the Prophet ﷺ would leave God’s religion',
           },
           side: 'right',
           explanation: {
@@ -891,7 +924,7 @@ export const missionMushrikin: Lesson = {
       statements: [
         {
           id: 'b1',
-          text: { ar: 'نزل الوحي على محمد (ص) في غار حراء وعمره أربعون سنة.', fr: 'La révélation descendit sur Muhammad ﷺ dans la grotte de Hirā’ alors qu’il avait quarante ans.', en: 'Revelation came down to Muhammad ﷺ in the cave of Hira when he was forty years old.' },
+          text: { ar: 'نزل الوحي على محمد ﷺ في غار حراء وعمره أربعون سنة.', fr: 'La révélation descendit sur Muhammad ﷺ dans la grotte de Hirā’ alors qu’il avait quarante ans.', en: 'Revelation came down to Muhammad ﷺ in the cave of Hira when he was forty years old.' },
           answer: true,
           explanation: { ar: 'صحيح، هذا نصّ الدرس.', fr: 'Vrai, c’est le texte même de la leçon.', en: 'True — this is exactly what the lesson states.' },
         },
@@ -915,7 +948,7 @@ export const missionMushrikin: Lesson = {
         },
         {
           id: 'b5',
-          text: { ar: 'قبلت قريش عرض الرسول (ص) بترك أصنامها دون مقاومة.', fr: 'Quraysh accepta sans résistance de délaisser ses idoles.', en: 'Quraysh accepted without resistance to abandon its idols.' },
+          text: { ar: 'قبلت قريش عرض الرسول ﷺ بترك أصنامها دون مقاومة.', fr: 'Quraysh accepta sans résistance de délaisser ses idoles.', en: 'Quraysh accepted without resistance to abandon its idols.' },
           answer: false,
           explanation: { ar: 'خطأ، حاولت قريش إغراءه بالمال والرئاسة ليتخلّى هو عن دعوته، فرفض.', fr: 'Faux, Quraysh tenta de le séduire par l’argent et le pouvoir pour qu’il abandonne son appel ; il refusa.', en: 'False — Quraysh tried to tempt him with wealth and leadership to abandon his call; he refused.' },
         },
@@ -936,7 +969,7 @@ export const missionMushrikin: Lesson = {
         {
           id: 'q1',
           type: 'mcq',
-          question: { ar: 'مَن حمل إلى الرسول (ص) أوّل الوحي؟', fr: 'Qui apporta au Prophète ﷺ la première révélation ?', en: 'Who brought the first revelation to the Prophet ﷺ?' },
+          question: { ar: 'مَن حمل إلى الرسول ﷺ أوّل الوحي؟', fr: 'Qui apporta au Prophète ﷺ la première révélation ?', en: 'Who brought the first revelation to the Prophet ﷺ?' },
           options: [
             { id: 'a', label: { ar: 'جبريل عليه السلام', fr: 'Gabriel (sur lui la paix)', en: 'Gabriel (peace be upon him)' } },
             { id: 'b', label: { ar: 'ورقة بن نوفل', fr: 'Waraqa ibn Nawfal', en: 'Waraqa ibn Nawfal' } },
@@ -944,7 +977,7 @@ export const missionMushrikin: Lesson = {
           ],
           correctId: 'a',
           explanation: {
-            ar: 'جبريل عليه السلام هو من جاء إلى الرسول (ص) في غار حراء وقال له: اقرأ.',
+            ar: 'جبريل عليه السلام هو من جاء إلى الرسول ﷺ في غار حراء وقال له: اقرأ.',
             fr: 'C’est Gabriel (sur lui la paix) qui vint au Prophète ﷺ dans la grotte de Hirā’ et lui dit : « Lis ! »',
             en: 'It was Gabriel (peace be upon him) who came to the Prophet ﷺ in the cave of Hira and said: "Read!"',
           },
@@ -952,7 +985,7 @@ export const missionMushrikin: Lesson = {
         {
           id: 'q2',
           type: 'truefalse',
-          question: { ar: 'استغلّ الرسول (ص) موسم الحجّ لدعوة القبائل الوافدة إلى مكّة.', fr: 'Le Prophète ﷺ profita du pèlerinage pour appeler les tribus venues à La Mecque.', en: 'The Prophet ﷺ used the pilgrimage season to call the tribes visiting Makkah.' },
+          question: { ar: 'استغلّ الرسول ﷺ موسم الحجّ لدعوة القبائل الوافدة إلى مكّة.', fr: 'Le Prophète ﷺ profita du pèlerinage pour appeler les tribus venues à La Mecque.', en: 'The Prophet ﷺ used the pilgrimage season to call the tribes visiting Makkah.' },
           answer: true,
           explanation: {
             ar: 'صحيح، وهذا بالذات ما أخاف قريشًا على تجارتها وأصنامها.',
@@ -965,7 +998,7 @@ export const missionMushrikin: Lesson = {
           type: 'matching',
           question: { ar: 'صِل كلّ شخصيّة بموقفها', fr: 'Relie chaque personnage à son attitude', en: 'Match each person to their stance' },
           pairs: [
-            { id: 'p1', left: { ar: 'خديجة رضي الله عنها', fr: 'Khadīja (qu’Allah l’agrée)', en: 'Khadija (may God be pleased with her)' }, right: { ar: 'طمأنت الرسول (ص) وأخذته إلى ورقة', fr: 'Rassura le Prophète ﷺ et l’emmena voir Waraqa', en: 'Reassured the Prophet ﷺ and took him to Waraqa' } },
+            { id: 'p1', left: { ar: 'خديجة رضي الله عنها', fr: 'Khadīja (qu’Allah l’agrée)', en: 'Khadija (may God be pleased with her)' }, right: { ar: 'طمأنت الرسول ﷺ وأخذته إلى ورقة', fr: 'Rassura le Prophète ﷺ et l’emmena voir Waraqa', en: 'Reassured the Prophet ﷺ and took him to Waraqa' } },
             { id: 'p2', left: { ar: 'أبو بكر رضي الله عنه', fr: 'Abū Bakr (qu’Allah l’agrée)', en: 'Abu Bakr (may God be pleased with him)' }, right: { ar: 'دافع عنه عند الكعبة', fr: 'Le défendit près de la Ka‘ba', en: 'Defended him at the Kaaba' } },
             { id: 'p3', left: { ar: 'أبو لهب', fr: 'Abū Lahab', en: 'Abu Lahab' }, right: { ar: 'كان أشدّ المشركين إيذاءً له', fr: 'Fut le plus acharné à lui nuire', en: 'Was the harshest in harming him' } },
           ],
@@ -1004,7 +1037,7 @@ export const missionMushrikin: Lesson = {
         en: 'What do we learn from this lesson?',
       },
       prompt: {
-        ar: 'حين عُرض على الرسول (ص) المال والرئاسة مقابل ترك دعوته، ماذا فعل؟',
+        ar: 'حين عُرض على الرسول ﷺ المال والرئاسة مقابل ترك دعوته، ماذا فعل؟',
         fr: 'Quand on offrit au Prophète ﷺ richesse et pouvoir en échange de l’abandon de son appel, que fit-il ?',
         en: 'When the Prophet ﷺ was offered wealth and leadership to abandon his call, what did he do?',
       },
@@ -1050,7 +1083,7 @@ export const missionMushrikin: Lesson = {
           id: 'steadfastness',
           value: { ar: 'الثبات على الحقّ', fr: 'La fermeté sur la vérité', en: 'Steadfastness upon truth' },
           evidence: {
-            ar: 'رفض الرسول (ص) المال والرئاسة ليبقى على دعوته.',
+            ar: 'رفض الرسول ﷺ المال والرئاسة ليبقى على دعوته.',
             fr: 'Le Prophète ﷺ refusa argent et pouvoir pour rester fidèle à son appel.',
             en: 'The Prophet ﷺ refused wealth and leadership to remain true to his call.',
           },
@@ -1059,9 +1092,9 @@ export const missionMushrikin: Lesson = {
           id: 'trustworthiness',
           value: { ar: 'الصدق والأمانة', fr: 'La sincérité et l’honnêteté', en: 'Honesty and trustworthiness' },
           evidence: {
-            ar: 'صدّقت قريش نفسها أنّه لم يكذب عليهم قطّ، حتى في أشدّ لحظات المواجهة.',
+            ar: 'شهدت قريش نفسها بأنّه لم يكذب عليهم قطّ، حتى في أشدّ لحظات المواجهة.',
             fr: 'Quraysh elle-même reconnut qu’il ne leur avait jamais menti, même aux moments de confrontation les plus durs.',
-            en: 'Quraysh itself admitted he had never lied to them, even at the harshest moment of confrontation.',
+            en: 'Quraysh itself admitted he had never lied to them, even at the harshest moments of confrontation.',
           },
         },
         {
@@ -1078,8 +1111,8 @@ export const missionMushrikin: Lesson = {
           value: { ar: 'الوفاء ونصرة المظلوم', fr: 'La loyauté et le soutien à l’opprimé', en: 'Loyalty and standing by the wronged' },
           evidence: {
             ar: 'وقف أبو بكر رضي الله عنه يدافع عنه عند الكعبة رغم الخطر.',
-            fr: 'Abū Bakr se dressa pour le défendre près de la Ka‘ba malgré le danger.',
-            en: 'Abu Bakr stood to defend him at the Kaaba despite the danger.',
+            fr: 'Abū Bakr (qu’Allah l’agrée) se dressa pour le défendre près de la Ka‘ba malgré le danger.',
+            en: 'Abu Bakr (may God be pleased with him) stood to defend him at the Kaaba despite the danger.',
           },
         },
       ],
@@ -1090,20 +1123,20 @@ export const missionMushrikin: Lesson = {
       kind: 'completion',
       id: 'completion',
       keyTakeaway: {
-        ar: 'بدأت بعثة الرسول (ص) بالوحي في غار حراء، ثمّ تدرّجت الدعوة من السرّ إلى الجهر، فوجهت مقاومةً شديدةً من قريش — أذًى وإغراءً — لكنّ الرسول (ص) ثبت على الحقّ ورفض كلّ عرض.',
+        ar: 'بدأت بعثة الرسول ﷺ بالوحي في غار حراء، ثمّ تدرّجت الدعوة من السرّ إلى الجهر، فواجهت مقاومةً شديدةً من قريش — أذًى وإغراءً — لكنّ الرسول ﷺ ثبت على الحقّ ورفض كلّ عرض.',
         fr: 'La mission du Prophète ﷺ commença par la révélation dans la grotte de Hirā’, puis l’appel progressa du secret à la proclamation publique, se heurtant à une forte résistance de Quraysh — persécution et séduction — mais le Prophète ﷺ demeura ferme sur la vérité et refusa toute offre.',
         en: 'The Prophet’s ﷺ mission began with revelation in the cave of Hira, then the call progressed from secrecy to open proclamation, facing strong resistance from Quraysh — harm and temptation alike — yet the Prophet ﷺ stood firm upon truth and refused every offer.',
       },
       learned: [
         {
-          ar: 'نزل الوحي على محمد (ص) في غار حراء وعمره أربعون سنة، بالآيات الأولى من سورة العلق.',
-          fr: 'La révélation descendit sur Muhammad ﷺ dans la grotte de Hirā’ à quarante ans, avec les premiers versets de la sourate al-‘Alaq.',
-          en: 'Revelation came down to Muhammad ﷺ in the cave of Hira at age forty, with the first verses of Surat al-‘Alaq.',
+          ar: 'نزل الوحي على محمد ﷺ في غار حراء وعمره أربعون سنة، بالآيات الخمس الأولى من سورة العلق.',
+          fr: 'La révélation descendit sur Muhammad ﷺ dans la grotte de Hirā’ à quarante ans, avec les cinq premiers versets de la sourate al-‘Alaq.',
+          en: 'Revelation came down to Muhammad ﷺ in the cave of Hira at age forty, with the first five verses of Surat al-‘Alaq.',
         },
         {
-          ar: 'دعم خديجة وورقة بن نوفل كان سندًا أساسيًّا في أوّل لحظات الوحي.',
-          fr: 'Le soutien de Khadīja et de Waraqa ibn Nawfal fut essentiel dans les premiers instants de la révélation.',
-          en: 'The support of Khadija and Waraqa ibn Nawfal was essential in the earliest moments of revelation.',
+          ar: 'كان دعم خديجة رضي الله عنها وورقة بن نوفل سندًا أساسيًّا في أوّل لحظات الوحي.',
+          fr: 'Le soutien de Khadīja (qu’Allah l’agrée) et de Waraqa ibn Nawfal fut essentiel dans les premiers instants de la révélation.',
+          en: 'The support of Khadija (may God be pleased with her) and Waraqa ibn Nawfal was essential in the earliest moments of revelation.',
         },
         {
           ar: 'بدأت الدعوة سرًّا في دار الأرقم، ثمّ امتدّت إلى العشيرة الأقربين، ثمّ جُهر بها للناس كافّة.',
@@ -1111,7 +1144,7 @@ export const missionMushrikin: Lesson = {
           en: 'The call began secretly in the house of al-Arqam, extended to the nearest kindred, then was proclaimed to everyone.',
         },
         {
-          ar: 'واجهت قريشٌ الدعوة بالتهم والأذى الجسديّ، ثمّ حاولت إغراء الرسول (ص) بالمال والرئاسة — فرفض الاثنين معًا.',
+          ar: 'واجهت قريشٌ الدعوة بالتهم والأذى الجسديّ، ثمّ حاولت إغراء الرسول ﷺ بالمال والرئاسة — فرفض الاثنين معًا.',
           fr: 'Quraysh répondit à l’appel par les accusations et le tort physique, puis tenta de séduire le Prophète ﷺ avec argent et pouvoir — il refusa les deux.',
           en: 'Quraysh met the call with accusations and physical harm, then tried to tempt the Prophet ﷺ with wealth and leadership — he refused both.',
         },

@@ -2,12 +2,12 @@ import type { Lesson } from '../../types'
 
 // Source: Ibadite History textbook (Other ressources/Ibadite_History_S1.pdf), "الدرس الثالث: الهجرة إلى الحبشة والمدينة", slides 2–11.
 //   Slide 2 — إشكالية الدرس: إلى أين هاجر المسلمون؟ كيف وجدوا أرض الحبشة؟ ما هو عام الحزن؟ كيف كانت الهجرة إلى المدينة ومتى؟
-//   Slide 3 — الأمان في الحبشة: الآية (الزمر 10)، رأى الرسول (ص) ما يخفف عن أصحابه فاقترح الهجرة إلى الحبشة فإن بها ملكًا لا يُظلم عنده أحد،
+//   Slide 3 — الأمان في الحبشة: الآية (الزمر 10)، رأى الرسول ﷺ ما يخفف عن أصحابه فاقترح الهجرة إلى الحبشة فإن بها ملكًا لا يُظلم عنده أحد،
 //             خرج في السنة الخامسة للبعثة 15 مسلمًا يتقدمهم جعفر بن أبي طالب وعثمان بن عفان وغيرهم.
 //   Slide 4 — قريش تلاحق المسلمين: أرسلت إلى النجاشي، جعفر يبيّن جهالتهم ثم رسولهم الذي يعرفون صدقه وأمانته، يقرأ من سورة مريم، النجاشي يبكي ويقول: ارجعوا لبلدكم فو الله لا أسلّمهم أبدًا.
 //   Slide 5 — الأمر بمقاطعة المشركين لبني هاشم: السنة السابعة للبعثة، المقاطعة والحصار في الشِّعب، الصحيفة في جوف الكعبة، الجوع والعطش، انتشار الخبر في القبائل.
 //   Slide 6 — موقف ينهي الحصار: السنة العاشرة، هشام بن عمرو وخمسة آخرون، الأرضة أكلت الصحيفة وتركت (باسمك اللهم)، مات أبو طالب ثم خديجة (عام الحزن).
-//   Slide 7 — الرسول (ص) في الطائف: العام العاشر، عشرة أيام، الحجارة والضرب والشتم، ملك الجبال، «بل أرجو أن يخرج من أصلابهم من يعبد الله وحده».
+//   Slide 7 — الرسول ﷺ في الطائف: العام العاشر، عشرة أيام، الحجارة والضرب والشتم، ملك الجبال، «بل أرجو أن يخرج من أصلابهم من يعبد الله وحده».
 //   Slide 8 — رحلة الإسراء والمعراج: المسجد الأقصى، الأنبياء، الصلوات الخمس (من خمسين)، قريش كذّبت وسخرت، أبو بكر صدّقه فسُمّي الصدّيق.
 //   Slide 9 — التحضير للهجرة: السنة 11 ستة رجال من يثرب، السنة التالية اثنا عشر رجلًا في العقبة ومعهم مصعب بن عمير، السنة 13 بيعة العقبة الثانية.
 //   Slide 10 — الهجرة إلى المدينة: العام الرابع عشر للبعثة، التخطيط والتوكّل، غار ثور ثلاثة أيام، 11 يومًا، التهليل والتكبير.
@@ -36,8 +36,8 @@ export const hijraHabashaMadina: Lesson = {
     en: 'The Migration to Abyssinia and Madina',
   },
   description: {
-    ar: 'حين ضاق الأذى بالمسلمين في مكّة، أين وجدوا الأمان؟ تابع ملك الحبشة، وحصار الشِّعب، وعام الحزن، ثم طريق الهجرة إلى المدينة غارًا بعد غار.',
-    fr: 'Quand le tort devint trop lourd à La Mecque, où les musulmans trouvèrent-ils la sécurité ? Suis le roi d’Abyssinie, le siège du ravin, l’année de la tristesse, puis la route de l’émigration vers Médine.',
+    ar: 'حين ضاق الأذى بالمسلمين في مكّة، أين وجدوا الأمان؟ تابع ملك الحبشة، وحصار الشِّعب، وعام الحزن، ثمّ طريق الهجرة إلى المدينة.',
+    fr: 'Quand les persécutions devinrent trop lourdes à La Mecque, où les musulmans trouvèrent-ils la sécurité ? Suis le roi d’Abyssinie, le siège du ravin, l’année de la tristesse, puis la route de l’émigration vers Médine.',
     en: 'When the harm became too heavy in Makkah, where did the Muslims find safety? Follow the king of Abyssinia, the siege of the valley, the Year of Sorrow, then the road of the migration to Madina.',
   },
 
@@ -60,7 +60,7 @@ export const hijraHabashaMadina: Lesson = {
       },
       intro: {
         ar: 'اشتدّ أذى قريش على المسلمين في مكّة. فأين هاجروا أوّلًا؟ وكيف وجدوا أرض الحبشة؟ وما هو عام الحزن؟ وكيف كانت الهجرة إلى المدينة المنوّرة، ومتى؟',
-        fr: 'Le tort de Quraysh pesait de plus en plus sur les musulmans à La Mecque. Où émigrèrent-ils d’abord ? Comment trouvèrent-ils la terre d’Abyssinie ? Qu’est-ce que l’année de la tristesse ? Comment se déroula l’émigration vers Médine, et quand ?',
+        fr: 'Les persécutions de Quraysh pesaient de plus en plus sur les musulmans à La Mecque. Où émigrèrent-ils d’abord ? Comment trouvèrent-ils la terre d’Abyssinie ? Qu’est-ce que l’année de la tristesse ? Comment se déroula l’émigration vers Médine, et quand ?',
         en: 'Quraysh’s harm weighed ever more heavily on the Muslims in Makkah. Where did they migrate first? How did they find the land of Abyssinia? What is the Year of Sorrow? How did the migration to Madina happen, and when?',
       },
     },
@@ -91,7 +91,7 @@ export const hijraHabashaMadina: Lesson = {
         {
           id: 'm3',
           question: { ar: 'ما هو عام الحزن؟', fr: 'Qu’est-ce que l’année de la tristesse ?', en: 'What is the Year of Sorrow?' },
-          target: 'siege-balance',
+          target: 'after-siege',
           teaser: { ar: 'حصارٌ، وصحيفةٌ، وفقدُ سندَين.', fr: 'Un siège, un pacte, la perte de deux soutiens.', en: 'A siege, a covenant, and the loss of two supporters.' },
         },
         {
@@ -109,7 +109,7 @@ export const hijraHabashaMadina: Lesson = {
       id: 'reading-habasha',
       title: { ar: 'اقرأ: الأمان في الحبشة', fr: 'Lis : la sécurité en Abyssinie', en: 'Read: safety in Abyssinia' },
       intro: {
-        ar: 'اقرأ لماذا اقترح الرسول (ص) الحبشة، ثمّ ابنِ الآية في اللعبة التالية.',
+        ar: 'اقرأ لماذا اقترح الرسول ﷺ الحبشة، ثمّ ابنِ الآية في اللعبة التالية.',
         fr: 'Lis pourquoi le Prophète ﷺ proposa l’Abyssinie, puis reconstitue le verset dans le jeu suivant.',
         en: 'Read why the Prophet ﷺ suggested Abyssinia, then rebuild the verse in the next game.',
       },
@@ -122,10 +122,10 @@ export const hijraHabashaMadina: Lesson = {
       paragraphs: [
         {
           id: 'p1',
-          heading: { ar: 'أذًى يشتدّ', fr: 'Un tort qui s’aggrave', en: 'Harm that grows' },
+          heading: { ar: 'أذًى يشتدّ', fr: 'Des persécutions qui s’aggravent', en: 'Harm that grows' },
           text: {
-            ar: 'كان المسلمون في مكّة يتعرّضون للأذى يومًا بعد يوم. ورأى الرسول (ص) أن يُخفّف عن أصحابه، فاقترح عليهم الهجرة إلى الحبشة، فإنّ بها ملكًا لا يُظلم عنده أحد.',
-            fr: 'À La Mecque, les musulmans subissaient le tort jour après jour. Le Prophète ﷺ voulut alléger le sort de ses compagnons et leur proposa d’émigrer en Abyssinie, car elle avait un roi chez qui nul n’est lésé.',
+            ar: 'كان المسلمون في مكّة يتعرّضون للأذى يومًا بعد يوم. ورأى الرسول ﷺ أن يُخفّف عن أصحابه، فاقترح عليهم الهجرة إلى الحبشة، فإنّ بها ملكًا لا يُظلم عنده أحد.',
+            fr: 'À La Mecque, les musulmans subissaient des persécutions jour après jour. Le Prophète ﷺ voulut alléger le sort de ses compagnons et leur proposa d’émigrer en Abyssinie, car elle avait un roi chez qui nul n’est lésé.',
             en: 'In Makkah the Muslims suffered harm day after day. The Prophet ﷺ wished to ease things for his companions and suggested they migrate to Abyssinia, for it had a king with whom no one is wronged.',
           },
         },
@@ -192,12 +192,12 @@ export const hijraHabashaMadina: Lesson = {
         {
           id: 'p2',
           heading: { ar: 'جعفر يتكلّم', fr: 'Ja‘far prend la parole', en: 'Ja‘far speaks' },
-          text: { ar: 'فلمّا سمع النجاشي طلب المشركين، تقدّم جعفر بن أبي طالب ليُبيّن للملك أنّهم كانوا في جهالةٍ حتى جاءهم رسولٌ منهم يعرفون صدقه وأمانته، فدعاهم لعبادة الله الواحد. ثمّ قرأ عليه جعفر من سورة مريم.', fr: 'Lorsque le Négus entendit la demande des polythéistes, Ja‘far ibn Abī Ṭālib s’avança pour expliquer au roi qu’ils vivaient dans l’ignorance jusqu’à ce que vienne à eux un messager d’entre eux, dont ils connaissaient la sincérité et l’honnêteté, qui les appela à adorer le Dieu unique. Puis Ja‘far lui récita des versets de la sourate Maryam.', en: 'When the Najashi heard the polytheists’ demand, Ja‘far ibn Abi Talib stepped forward to explain to the king that they had lived in ignorance until a messenger from among them, whose truthfulness and honesty they knew, came to them and called them to worship the One God. Then Ja‘far recited to him from Surat Maryam.' },
+          text: { ar: 'فلمّا سمع النجاشي طلب المشركين، تقدّم جعفر بن أبي طالب رضي الله عنه ليُبيّن للملك أنّهم كانوا في جهالةٍ حتى جاءهم رسولٌ منهم يعرفون صدقه وأمانته، فدعاهم لعبادة الله الواحد. ثمّ قرأ عليه جعفر من سورة مريم.', fr: 'Lorsque le Négus entendit la demande des polythéistes, Ja‘far ibn Abī Ṭālib (qu’Allah l’agrée) s’avança pour expliquer au roi qu’ils vivaient dans l’ignorance jusqu’à ce que vienne à eux un messager d’entre eux, dont ils connaissaient la sincérité et l’honnêteté, qui les appela à adorer le Dieu unique. Puis Ja‘far lui récita des versets de la sourate Maryam.', en: 'When the Najashi heard the polytheists’ demand, Ja‘far ibn Abi Talib (may God be pleased with him) stepped forward to explain to the king that they had lived in ignorance until a messenger from among them, whose truthfulness and honesty they knew, came to them and called them to worship the One God. Then Ja‘far recited to him from Surat Maryam.' },
         },
         {
           id: 'p3',
           heading: { ar: 'النجاشي يردّ', fr: 'Le Négus répond', en: 'The Najashi answers' },
-          text: { ar: 'عندما سمع النجاشي لجعفر بكى بكاءً شديدًا، وقال لوفد قريش: «ارجعوا لبلدكم، فو الله لا أُسلّمهم أبدًا».', fr: 'Quand le Négus entendit Ja‘far, il pleura abondamment et dit à la délégation de Quraysh : « Retournez dans votre pays ! Par Dieu, je ne les livrerai jamais ! »', en: 'When the Najashi heard Ja‘far, he wept bitterly and said to Quraysh’s delegation: "Go back to your land! By God, I will never hand them over!"' },
+          text: { ar: 'عندما سمع النجاشي لجعفر بكى بكاءً شديدًا، وقال لوفد قريش: «ارجعوا لبلدكم، فوالله لا أُسلّمهم أبدًا».', fr: 'Quand le Négus entendit Ja‘far, il pleura abondamment et dit à la délégation de Quraysh : « Retournez dans votre pays ! Par Dieu, je ne les livrerai jamais ! »', en: 'When the Najashi heard Ja‘far, he wept bitterly and said to Quraysh’s delegation: "Go back to your land! By God, I will never hand them over!"' },
         },
       ],
     },
@@ -223,7 +223,7 @@ export const hijraHabashaMadina: Lesson = {
           id: 'p1',
           heading: { ar: 'قريش تريد قتله', fr: 'Quraysh veut le tuer', en: 'Quraysh wants to kill him' },
           text: {
-            ar: 'في السنة السابعة للبعثة أرادت قريش قتل الرسول (ص)، لكنّ بني هاشم قاموا بحمايته.',
+            ar: 'في السنة السابعة للبعثة أرادت قريش قتل الرسول ﷺ، لكنّ بني هاشم قاموا بحمايته.',
             fr: 'La septième année de la mission, Quraysh voulut tuer le Prophète ﷺ, mais les Banū Hāshim se levèrent pour le protéger.',
             en: 'In the seventh year of the mission, Quraysh wanted to kill the Prophet ﷺ, but the Banu Hashim rose to protect him.',
           },
@@ -297,7 +297,7 @@ export const hijraHabashaMadina: Lesson = {
         },
         {
           id: 'w5',
-          text: { ar: 'قام بنو هاشم بحماية الرسول (ص)', fr: 'Les Banū Hāshim protégèrent le Prophète ﷺ', en: 'The Banu Hashim protected the Prophet ﷺ' },
+          text: { ar: 'قام بنو هاشم بحماية الرسول ﷺ', fr: 'Les Banū Hāshim protégèrent le Prophète ﷺ', en: 'The Banu Hashim protected the Prophet ﷺ' },
           side: 'right',
           explanation: { ar: 'هذه حمايةٌ وسندٌ لا ثِقل.', fr: 'C’est un soutien, non un poids.', en: 'This was support, not a burden.' },
         },
@@ -332,7 +332,7 @@ export const hijraHabashaMadina: Lesson = {
     {
       kind: 'story',
       id: 'after-siege',
-      title: { ar: 'بعد الحصار: ثلاث محطّات', fr: 'Après le siège : trois étapes', en: 'After the siege: three stops' },
+      title: { ar: 'بعد الحصار: أربع محطّات', fr: 'Après le siège : quatre étapes', en: 'After the siege: four stops' },
       intro: {
         ar: 'اقلب كلّ بطاقة لتعرف ما حدث بعد أن انتهى الحصار.',
         fr: 'Retourne chaque carte pour découvrir ce qui suivit la fin du siège.',
@@ -340,7 +340,7 @@ export const hijraHabashaMadina: Lesson = {
       },
       cards: [
         {
-          id: 'sahifa',
+          id: 'sorrow',
           image: `${IMG}/sahifa.png`,
           imageAlt: {
             ar: 'صحيفةٌ قديمة ممزّقة أكلتها الأرضة، معلّقة على جدارٍ حجريّ تحت مصباح',
@@ -348,9 +348,9 @@ export const hijraHabashaMadina: Lesson = {
             en: 'An old torn parchment eaten by termites, hanging on a stone wall under a lamp',
           },
           fact: {
-            ar: 'بعد انتهاء الحصار مرض أبو طالب عمّ الرسول (ص) ومات، وبعد أيّامٍ توفّيت زوجته خديجة، فسُمّي ذلك العام: عام الحزن.',
-            fr: 'Après la fin du siège, Abū Ṭālib, oncle du Prophète ﷺ, tomba malade et mourut ; quelques jours plus tard, son épouse Khadīja mourut aussi. Cette année fut appelée l’année de la tristesse.',
-            en: 'After the siege ended, Abu Talib, the Prophet’s ﷺ uncle, fell ill and died; a few days later his wife Khadija passed away too. That year was called the Year of Sorrow.',
+            ar: 'بعد أن أكلت الأرضة الصحيفة وانتهى الحصار، مرض أبو طالب عمّ الرسول ﷺ ومات، وبعد أيّامٍ توفّيت خديجة رضي الله عنها زوجة الرسول ﷺ، فسُمّي ذلك العام: عام الحزن.',
+            fr: 'Une fois le pacte rongé par les termites et le siège terminé, Abū Ṭālib, oncle du Prophète ﷺ, tomba malade et mourut ; quelques jours plus tard mourut Khadīja (qu’Allah l’agrée), l’épouse du Prophète ﷺ. Cette année fut appelée l’année de la tristesse.',
+            en: 'Once termites had eaten the covenant and the siege was over, Abu Talib, the Prophet’s ﷺ uncle, fell ill and died; a few days later Khadija (may God be pleased with her), the Prophet’s ﷺ wife, passed away. That year was called the Year of Sorrow.',
           },
         },
         {
@@ -362,9 +362,9 @@ export const hijraHabashaMadina: Lesson = {
             en: 'Rocky hills of Ta’if, green orchards behind stone walls and a lonely dusty path',
           },
           fact: {
-            ar: 'في العام العاشر خرج الرسول (ص) إلى الطائف وبقي فيها عشرة أيّام يدعو أهلها، فقابلوه بالحجارة والضرب والشتم. ولمّا عاد قال له ملك الجبال: إن شئتَ أطبقتُ عليهم الأخشبين. فقال (ص): بل أرجو أن يخرج الله من أصلابهم من يعبد الله وحده.',
-            fr: 'La dixième année, le Prophète ﷺ alla à Ṭā’if et y resta dix jours à appeler ses habitants ; ils l’accueillirent à coups de pierres, de coups et d’insultes. À son retour, l’ange des montagnes lui dit : « Si tu veux, je referme sur eux les deux montagnes. » Il répondit ﷺ : « Plutôt, j’espère que Dieu fera naître de leurs reins ceux qui adoreront Dieu seul. »',
-            en: 'In the tenth year the Prophet ﷺ went to Ta’if and stayed ten days calling its people; they met him with stones, blows and insults. On his return the angel of the mountains said to him: "If you wish, I will crush them between the two mountains." He ﷺ replied: "Rather, I hope God will bring from their descendants those who worship God alone."',
+            ar: 'في العام العاشر للبعثة خرج الرسول ﷺ إلى الطائف وبقي فيها عشرة أيّام يدعو أهلها إلى الإسلام، فقابلوا دعوة الله عزّ وجلّ بالحجارة والضرب والشتم، فدعا الرسول ﷺ ربّه أن ينصره. وعند عودته إلى مكّة ناداه ملك الجبال: «إن شئتَ أطبقتُ عليهم الأخشبين». فردّ ﷺ: «بل أرجو أن يُخرج الله من أصلابهم من يعبد الله وحده».',
+            fr: 'La dixième année de la mission, le Prophète ﷺ alla à Ṭā’if et y resta dix jours à appeler ses habitants à l’islam ; ils répondirent à l’appel de Dieu par des pierres, des coups et des insultes, et le Prophète ﷺ pria son Seigneur de le secourir. Sur le chemin du retour vers La Mecque, l’ange des montagnes l’appela : « Si tu veux, je referme sur eux les deux montagnes. » Il répondit ﷺ : « Plutôt, j’espère que Dieu fera naître de leurs reins ceux qui adoreront Dieu seul. »',
+            en: 'In the tenth year of the mission the Prophet ﷺ went to Ta’if and stayed ten days calling its people to Islam; they answered God’s call with stones, blows and insults, and the Prophet ﷺ prayed to his Lord for help. On his way back to Makkah the angel of the mountains called to him: "If you wish, I will crush them between the two mountains." He ﷺ replied: "Rather, I hope God will bring from their descendants those who worship God alone."',
           },
         },
         {
@@ -376,15 +376,29 @@ export const hijraHabashaMadina: Lesson = {
             en: 'A path of golden light across a starry blue sky between a desert city and a distant domed sanctuary',
           },
           fact: {
-            ar: 'في رحلة الإسراء انتقل الرسول (ص) إلى المسجد الأقصى فوجد الأنبياء السابقين ينتظرونه فصلّى بهم إمامًا، ثمّ عُرج به إلى السماوات حتى سدرة المنتهى، ففُرضت الصلوات الخمسون ثمّ خُفّفت إلى خمس. وحين أخبر قريشًا كذّبوه وسخروا منه، وصدّقه أبو بكر فسُمّي الصدّيق.',
-            fr: 'Lors du voyage nocturne, le Prophète ﷺ fut conduit à la mosquée al-Aqṣā où les prophètes antérieurs l’attendaient, et il pria en imam devant eux ; puis il fut élevé à travers les cieux jusqu’au Lotus de la limite, où cinquante prières furent prescrites puis réduites à cinq. Quraysh le démentit et se moqua de lui, mais Abū Bakr le crut et fut nommé aṣ-Ṣiddīq.',
-            en: 'On the Night Journey the Prophet ﷺ was taken to al-Aqsa Mosque, where the earlier prophets awaited him and he led them in prayer; then he was raised through the heavens to the Lote Tree of the Furthest Limit, where fifty prayers were prescribed and then reduced to five. Quraysh denied and mocked him, but Abu Bakr believed him and was named as-Siddiq.',
+            ar: 'كان الرسول ﷺ نائمًا، فأيقظه جبريل عليه السلام وأمره بمرافقته، فانطلق معه على البراق نحو الشمال حتى بلغ المسجد الأقصى، فوجد جمعًا من الأنبياء السابقين ينتظرونه فصلّى بهم إمامًا. وسمّى الله عزّ وجلّ هذه الحادثة بالإسراء.',
+            fr: 'Le Prophète ﷺ dormait ; Jibrīl (paix sur lui) le réveilla et lui ordonna de l’accompagner. Il partit avec lui sur al-Burāq vers le nord jusqu’à la mosquée al-Aqṣā, où un groupe de prophètes antérieurs l’attendait, et il pria en imam devant eux. Dieu appela cet événement al-Isrā’ (le voyage nocturne).',
+            en: 'The Prophet ﷺ was asleep when Jibril (peace be upon him) woke him and told him to come along. He set off with him on al-Buraq northwards until he reached al-Aqsa Mosque, where a gathering of earlier prophets awaited him, and he led them in prayer. God named this event al-Isra’ (the Night Journey).',
+          },
+        },
+        {
+          id: 'miraj',
+          image: `${IMG}/miraj-sky.png`,
+          imageAlt: {
+            ar: 'درجٌ ذهبيّ يصعد تلًّا نحو مسجدٍ ذي قبّة يشعّ نورًا، وفوقه سماءٌ مرصّعة بالنجوم تدور فيها السحب حول ضياءٍ ساطع',
+            fr: 'Un escalier doré gravissant une colline vers un sanctuaire à dôme rayonnant, sous un ciel étoilé où les nuages tourbillonnent autour d’une lumière éclatante',
+            en: 'A golden stairway climbing a hill toward a glowing domed sanctuary, under a starry sky where clouds swirl around a radiant light',
+          },
+          fact: {
+            ar: 'ثمّ عُرج بالرسول ﷺ من السماء الدنيا إلى باقي السماوات، فسلّم على الأنبياء الذين التقاهم حتى وصل إلى سدرة المنتهى، ففرض الله عزّ وجلّ على عباده خمسين صلاة ثمّ خفّفها إلى خمس صلوات رحمةً ولطفًا منه بعباده. ولمّا عاد إلى مكّة وأخبر قريشًا بما رأى كذّبوه وسخروا منه، وصدّقه أبو بكر رضي الله عنه فسُمّي بالصدّيق.',
+            fr: 'Puis le Prophète ﷺ fut élevé du ciel le plus proche à travers les autres cieux, saluant les prophètes qu’il y rencontra, jusqu’au Lotus de la limite (Sidrat al-Muntahā). Dieu prescrivit à Ses serviteurs cinquante prières, puis les réduisit à cinq, par miséricorde et bonté envers eux. De retour à La Mecque, il raconta à Quraysh ce qu’il avait vu ; ils le démentirent et se moquèrent de lui, mais Abū Bakr (qu’Allah l’agrée) le crut et fut nommé aṣ-Ṣiddīq.',
+            en: 'Then the Prophet ﷺ was raised from the nearest heaven through the other heavens, greeting the prophets he met, until he reached the Lote Tree of the Furthest Limit (Sidrat al-Muntaha). God prescribed fifty prayers for His servants, then reduced them to five, out of His mercy and kindness to them. Back in Makkah he told Quraysh what he had seen; they denied and mocked him, but Abu Bakr (may God be pleased with him) believed him and was named as-Siddiq.',
           },
         },
       ],
       reflection: {
         prompt: {
-          ar: 'ماذا نلاحظ من موقف الرسول (ص) بعد كلّ هذا الألم؟',
+          ar: 'ماذا نلاحظ من موقف الرسول ﷺ بعد كلّ هذا الألم؟',
           fr: 'Que remarquons-nous dans l’attitude du Prophète ﷺ après toute cette douleur ?',
           en: 'What do we notice about the Prophet’s ﷺ attitude after all this pain?',
         },
@@ -392,19 +406,19 @@ export const hijraHabashaMadina: Lesson = {
           {
             id: 'hope',
             isRelevant: true,
-            label: { ar: 'كان يرجو الخير حتى لمن آذاه', fr: 'Il espérait le bien même pour ceux qui lui avaient fait du tort', en: 'He hoped for good even for those who harmed him' },
-            explanation: { ar: 'نعم — ردّ على ملك الجبال بأنّه يرجو أن يخرج من أصلابهم من يعبد الله وحده.', fr: 'Oui — il répondit à l’ange qu’il espérait voir naître de leurs reins des adorateurs de Dieu seul.', en: 'Yes — he told the angel he hoped for worshippers of God alone to come from their descendants.' },
+            label: { ar: 'كان يرجو الخير حتى لمن آذاه', fr: 'Il espérait le bien même pour ceux qui lui avaient fait du mal', en: 'He hoped for good even for those who harmed him' },
+            explanation: { ar: 'نعم — ردّ على ملك الجبال بأنّه يرجو أن يُخرج الله من أصلابهم من يعبد الله وحده.', fr: 'Oui — il répondit à l’ange qu’il espérait voir naître de leurs reins des adorateurs de Dieu seul.', en: 'Yes — he told the angel he hoped for worshippers of God alone to come from their descendants.' },
           },
           {
             id: 'continue',
             isRelevant: true,
-            label: { ar: 'استمرّ في الدعوة رغم الفقد والأذى', fr: 'Il poursuivit l’appel malgré les pertes et le tort', en: 'He kept calling despite the loss and the harm' },
-            explanation: { ar: 'نعم — بعد عام الحزن ذهب إلى الطائف يدعو أهلها.', fr: 'Oui — après l’année de la tristesse, il alla appeler les gens de Ṭā’if.', en: 'Yes — after the Year of Sorrow he went to Ta’if to call its people.' },
+            label: { ar: 'استمرّ في الدعوة رغم الفقد والأذى', fr: 'Il poursuivit l’appel malgré les pertes et les persécutions', en: 'He kept calling despite the loss and the harm' },
+            explanation: { ar: 'نعم — بعد وفاة أبي طالب وخديجة رضي الله عنها ذهب إلى الطائف يدعو أهلها.', fr: 'Oui — après la mort d’Abū Ṭālib et de Khadīja, il alla appeler les gens de Ṭā’if.', en: 'Yes — after the deaths of Abu Talib and Khadija he went to Ta’if to call its people.' },
           },
           {
             id: 'revenge',
             isRelevant: false,
-            label: { ar: 'قبل أن تُطبق الجبال على أهل الطائف', fr: 'Il accepta que les montagnes se referment sur les gens de Ṭā’if', en: 'He agreed that the mountains be closed upon the people of Ta’if' },
+            label: { ar: 'وافق على أن تُطبق الجبال على أهل الطائف', fr: 'Il accepta que les montagnes se referment sur les gens de Ṭā’if', en: 'He agreed that the mountains be closed upon the people of Ta’if' },
             explanation: { ar: 'لا — لقد رفض هذا العرض تمامًا.', fr: 'Non — il refusa cette offre complètement.', en: 'No — he refused this offer completely.' },
           },
         ],
@@ -426,7 +440,7 @@ export const hijraHabashaMadina: Lesson = {
           id: 't5',
           period: { ar: 'السنة 5', fr: 'An 5', en: 'Year 5' },
           label: { ar: 'الهجرة إلى الحبشة', fr: 'L’émigration en Abyssinie', en: 'Migration to Abyssinia' },
-          detail: { ar: 'خرج خمسة عشر مسلمًا يتقدّمهم جعفر بن أبي طالب وعثمان بن عفان.', fr: 'Quinze musulmans partirent, menés par Ja‘far ibn Abī Ṭālib et ‘Uthmān ibn ‘Affān.', en: 'Fifteen Muslims set out, led by Ja‘far ibn Abi Talib and ‘Uthman ibn ‘Affan.' },
+          detail: { ar: 'خرج خمسة عشر مسلمًا يتقدّمهم جعفر بن أبي طالب وعثمان بن عفان رضي الله عنهما.', fr: 'Quinze musulmans partirent, menés par Ja‘far ibn Abī Ṭālib et ‘Uthmān ibn ‘Affān.', en: 'Fifteen Muslims set out, led by Ja‘far ibn Abi Talib and ‘Uthman ibn ‘Affan.' },
         },
         {
           id: 't7',
@@ -438,7 +452,7 @@ export const hijraHabashaMadina: Lesson = {
           id: 't10',
           period: { ar: 'السنة 10', fr: 'An 10', en: 'Year 10' },
           label: { ar: 'نهاية الحصار وعام الحزن', fr: 'Fin du siège et année de la tristesse', en: 'End of the siege and the Year of Sorrow' },
-          detail: { ar: 'انتهى الحصار، ثمّ توفّي أبو طالب وخديجة، وخرج الرسول (ص) إلى الطائف.', fr: 'Le siège prit fin, puis Abū Ṭālib et Khadīja moururent, et le Prophète ﷺ alla à Ṭā’if.', en: 'The siege ended, then Abu Talib and Khadija died, and the Prophet ﷺ went to Ta’if.' },
+          detail: { ar: 'انتهى الحصار، ثمّ توفّي أبو طالب وخديجة رضي الله عنها، وخرج الرسول ﷺ إلى الطائف.', fr: 'Le siège prit fin, puis Abū Ṭālib et Khadīja moururent, et le Prophète ﷺ alla à Ṭā’if.', en: 'The siege ended, then Abu Talib and Khadija died, and the Prophet ﷺ went to Ta’if.' },
         },
         {
           id: 't11',
@@ -456,13 +470,13 @@ export const hijraHabashaMadina: Lesson = {
           id: 't13',
           period: { ar: 'السنة 13', fr: 'An 13', en: 'Year 13' },
           label: { ar: 'بيعة العقبة الثانية', fr: 'Le second serment de ‘Aqaba', en: 'The Second Pledge of ‘Aqaba' },
-          detail: { ar: 'دعا سادة المدينة الرسول (ص) إلى المدينة وتعهّدوا بنصرته وبذل الأرواح لإعلاء كلمة الله.', fr: 'Les chefs de Médine invitèrent le Prophète ﷺ et s’engagèrent à le soutenir et à sacrifier leur vie pour élever la parole de Dieu.', en: 'The leaders of Madina invited the Prophet ﷺ and pledged to support him and give their lives to raise the word of God.' },
+          detail: { ar: 'دعا سادة المدينة الرسول ﷺ إلى المدينة وتعهّدوا بنصرته وبذل الأرواح لإعلاء كلمة الله.', fr: 'Les chefs de Médine invitèrent le Prophète ﷺ et s’engagèrent à le soutenir et à sacrifier leur vie pour élever la parole de Dieu.', en: 'The leaders of Madina invited the Prophet ﷺ and pledged to support him and give their lives to raise the word of God.' },
         },
         {
           id: 't14',
           period: { ar: 'السنة 14', fr: 'An 14', en: 'Year 14' },
           label: { ar: 'الهجرة إلى المدينة', fr: 'L’émigration vers Médine', en: 'Migration to Madina' },
-          detail: { ar: 'أذن الله للرسول (ص) والمسلمين بالهجرة من مكّة، فدخل المدينة بالتهليل والتكبير.', fr: 'Dieu permit au Prophète ﷺ et aux musulmans d’émigrer de La Mecque, et il entra à Médine sous les « lā ilāha illā Allāh » et les « Allāhu akbar ».', en: 'God permitted the Prophet ﷺ and the Muslims to migrate from Makkah, and he entered Madina amid cries of tahlil and takbir.' },
+          detail: { ar: 'أذن الله للرسول ﷺ والمسلمين بالهجرة من مكّة، فدخل المدينة بالتهليل والتكبير.', fr: 'Dieu permit au Prophète ﷺ et aux musulmans d’émigrer de La Mecque, et il entra à Médine sous les « lā ilāha illā Allāh » et les « Allāhu akbar ».', en: 'God permitted the Prophet ﷺ and the Muslims to migrate from Makkah, and he entered Madina amid cries of tahlil and takbir.' },
         },
       ],
     },
@@ -472,19 +486,19 @@ export const hijraHabashaMadina: Lesson = {
       kind: 'reading',
       id: 'reading-hijra',
       title: { ar: 'اقرأ: ليلة الهجرة', fr: 'Lis : la nuit de l’émigration', en: 'Read: the night of the migration' },
-      intro: { ar: 'اقرأ كيف خرج الرسول (ص) من مكّة، ثمّ تتبّع الطريق في اللعبة التالية.', fr: 'Lis comment le Prophète ﷺ quitta La Mecque, puis suis la route dans le jeu suivant.', en: 'Read how the Prophet ﷺ left Makkah, then follow the road in the next game.' },
+      intro: { ar: 'اقرأ كيف خرج الرسول ﷺ من مكّة، ثمّ تتبّع الطريق في اللعبة التالية.', fr: 'Lis comment le Prophète ﷺ quitta La Mecque, puis suis la route dans le jeu suivant.', en: 'Read how the Prophet ﷺ left Makkah, then follow the road in the next game.' },
       image: `${IMG}/hijra-road.png`,
-      imageAlt: { ar: 'آثارُ أخفافٍ على طريقٍ طويل بين الكثبان الذهبية نحو جبالٍ بعيدة', fr: 'Des traces de pas sur une longue piste entre des dunes dorées vers de lointaines montagnes', en: 'Hoof prints on a long trail between golden dunes toward distant mountains' },
+      imageAlt: { ar: 'آثارُ أخفافٍ على طريقٍ طويل بين الكثبان الذهبية نحو جبالٍ بعيدة', fr: 'Des traces de chameaux sur une longue piste entre des dunes dorées vers de lointaines montagnes', en: 'Camel tracks on a long trail between golden dunes toward distant mountains' },
       paragraphs: [
         {
           id: 'p1',
           heading: { ar: 'الإذن بالهجرة', fr: 'La permission d’émigrer', en: 'Permission to migrate' },
-          text: { ar: 'أذن الله تعالى للرسول (ص) والمسلمين بالهجرة من مكّة في العام الرابع عشر للبعثة، فعزمت قريش على قتله.', fr: 'Dieu permit au Prophète ﷺ et aux musulmans d’émigrer de La Mecque la quatorzième année de la mission ; Quraysh résolut alors de le tuer.', en: 'God permitted the Prophet ﷺ and the Muslims to migrate from Makkah in the fourteenth year of the mission; Quraysh then resolved to kill him.' },
+          text: { ar: 'أذن الله تعالى للرسول ﷺ والمسلمين بالهجرة من مكّة في العام الرابع عشر للبعثة، فعزمت قريش على قتله.', fr: 'Dieu permit au Prophète ﷺ et aux musulmans d’émigrer de La Mecque la quatorzième année de la mission ; Quraysh résolut alors de le tuer.', en: 'God permitted the Prophet ﷺ and the Muslims to migrate from Makkah in the fourteenth year of the mission; Quraysh then resolved to kill him.' },
         },
         {
           id: 'p2',
           heading: { ar: 'تخطيطٌ وتوكّل', fr: 'Planifier et s’en remettre à Dieu', en: 'Planning and trusting God' },
-          text: { ar: 'توكّل الرسول (ص) على الله، وخطّط للهجرة بشكلٍ محكم حتى لا يتمكّن المشركون منه في الطريق. فخرج من داره ليلًا واختفى مع أبي بكر الصدّيق في غار ثور ثلاثة أيّام، حتى عجزت قريش عن ملاحقته.', fr: 'Le Prophète ﷺ s’en remit à Dieu et planifia l’émigration avec soin pour que les polythéistes ne puissent l’atteindre en chemin. Il quitta sa maison de nuit et se cacha avec Abū Bakr aṣ-Ṣiddīq dans la grotte de Thawr pendant trois jours, jusqu’à ce que Quraysh soit incapable de le poursuivre.', en: 'The Prophet ﷺ relied on God and planned the migration carefully so the polytheists could not seize him on the way. He left his house at night and hid with Abu Bakr as-Siddiq in the cave of Thawr for three days, until Quraysh could no longer pursue him.' },
+          text: { ar: 'توكّل الرسول ﷺ على الله، وخطّط للهجرة بشكلٍ محكم حتى لا يتمكّن المشركون منه في الطريق. فخرج من داره ليلًا واختفى مع أبي بكر الصدّيق رضي الله عنه في غار ثور ثلاثة أيّام، حتى عجزت قريش عن ملاحقته.', fr: 'Le Prophète ﷺ s’en remit à Dieu et planifia l’émigration avec soin pour que les polythéistes ne puissent l’atteindre en chemin. Il quitta sa maison de nuit et se cacha avec Abū Bakr aṣ-Ṣiddīq dans la grotte de Thawr pendant trois jours, jusqu’à ce que Quraysh soit incapable de le poursuivre.', en: 'The Prophet ﷺ relied on God and planned the migration carefully so the polytheists could not seize him on the way. He left his house at night and hid with Abu Bakr as-Siddiq in the cave of Thawr for three days, until Quraysh could no longer pursue him.' },
         },
         {
           id: 'p3',
@@ -510,7 +524,7 @@ export const hijraHabashaMadina: Lesson = {
           name: { ar: 'العقبة', fr: '‘Aqaba', en: '‘Aqaba' },
           image: `${IMG}/aqaba-night.png`,
           question: {
-            ar: 'بعد بيعة اثني عشر رجلًا في العقبة، مَن أرسل الرسول (ص) معهم ليعلّمهم الدين والقرآن؟',
+            ar: 'بعد بيعة اثني عشر رجلًا في العقبة، مَن أرسل الرسول ﷺ معهم ليعلّمهم الدين والقرآن؟',
             fr: 'Après le serment des douze hommes à ‘Aqaba, qui le Prophète ﷺ envoya-t-il avec eux pour leur enseigner la religion et le Coran ?',
             en: 'After the twelve men pledged at ‘Aqaba, whom did the Prophet ﷺ send with them to teach religion and the Qur’an?',
           },
@@ -520,7 +534,7 @@ export const hijraHabashaMadina: Lesson = {
             { id: 'c', correct: false, label: { ar: 'هشام بن عمرو', fr: 'Hishām ibn ‘Amr', en: 'Hisham ibn ‘Amr' }, hint: { ar: 'هشام هو من سعى في تمزيق الصحيفة.', fr: 'Hishām est celui qui voulut déchirer le pacte.', en: 'Hisham is the one who sought to tear up the covenant.' } },
           ],
           reveal: {
-            ar: 'بعد سنةٍ كاملة من التوجيه كثر المسلمون في المدينة، ثمّ دعا سادتها الرسول (ص) في العام الثالث عشر وتعهّدوا بنصرته: بيعة العقبة الثانية.',
+            ar: 'بعد سنةٍ كاملة من التوجيه كثر المسلمون في المدينة، ثمّ دعا سادتها الرسول ﷺ في العام الثالث عشر وتعهّدوا بنصرته: بيعة العقبة الثانية.',
             fr: 'Après une année entière de cet enseignement, les musulmans devinrent nombreux à Médine ; puis, la treizième année, ses chefs invitèrent le Prophète ﷺ et promirent de le soutenir : le second serment de ‘Aqaba.',
             en: 'After a full year of this teaching the Muslims in Madina grew numerous; then in the thirteenth year its leaders invited the Prophet ﷺ and pledged to support him: the Second Pledge of ‘Aqaba.',
           },
@@ -529,7 +543,7 @@ export const hijraHabashaMadina: Lesson = {
           id: 'night',
           name: { ar: 'ليلة الهجرة', fr: 'La nuit du départ', en: 'The night of departure' },
           question: {
-            ar: 'كيف خرج الرسول (ص) من داره؟',
+            ar: 'كيف خرج الرسول ﷺ من داره؟',
             fr: 'Comment le Prophète ﷺ sortit-il de sa maison ?',
             en: 'How did the Prophet ﷺ leave his house?',
           },
@@ -539,7 +553,7 @@ export const hijraHabashaMadina: Lesson = {
             { id: 'c', correct: false, label: { ar: 'مع جيشٍ كبير يحميه', fr: 'Avec une grande armée pour le protéger', en: 'With a great army to protect him' }, hint: { ar: 'خرج مع أبي بكر الصدّيق وحده، واختفيا في غار.', fr: 'Il partit avec Abū Bakr seul, et ils se cachèrent dans une grotte.', en: 'He left with Abu Bakr alone, and they hid in a cave.' } },
           ],
           reveal: {
-            ar: 'أذن الله للرسول (ص) في العام الرابع عشر للبعثة، وعزمت قريش على قتله، فتوكّل على الله وخطّط بإحكام.',
+            ar: 'أذن الله للرسول ﷺ في العام الرابع عشر للبعثة، وعزمت قريش على قتله، فتوكّل على الله وخطّط بإحكام.',
             fr: 'Dieu permit au Prophète ﷺ d’émigrer la quatorzième année de la mission ; Quraysh résolut de le tuer, mais il s’en remit à Dieu et planifia avec soin.',
             en: 'God permitted the Prophet ﷺ in the fourteenth year of the mission; Quraysh resolved to kill him, but he relied on God and planned with care.',
           },
@@ -549,7 +563,7 @@ export const hijraHabashaMadina: Lesson = {
           name: { ar: 'غار ثور', fr: 'La grotte de Thawr', en: 'Thawr cave' },
           image: `${IMG}/thawr-cave.png`,
           question: {
-            ar: 'كم يومًا بقي الرسول (ص) وأبو بكر في غار ثور؟',
+            ar: 'كم يومًا بقي الرسول ﷺ وأبو بكر في غار ثور؟',
             fr: 'Combien de jours le Prophète ﷺ et Abū Bakr restèrent-ils dans la grotte de Thawr ?',
             en: 'How many days did the Prophet ﷺ and Abu Bakr stay in the cave of Thawr?',
           },
@@ -569,7 +583,7 @@ export const hijraHabashaMadina: Lesson = {
           name: { ar: 'الطريق', fr: 'La route', en: 'The road' },
           image: `${IMG}/hijra-road.png`,
           question: {
-            ar: 'كم يومًا واصل الرسول (ص) طريقه بعد الغار؟',
+            ar: 'كم يومًا واصل الرسول ﷺ طريقه بعد الغار؟',
             fr: 'Combien de jours le Prophète ﷺ poursuivit-il sa route après la grotte ?',
             en: 'How many days did the Prophet ﷺ travel after the cave?',
           },
@@ -589,13 +603,13 @@ export const hijraHabashaMadina: Lesson = {
           name: { ar: 'المدينة', fr: 'Médine', en: 'Madina' },
           image: `${IMG}/madina-arrival.png`,
           question: {
-            ar: 'كيف استقبل أهل المدينة الرسول (ص)؟',
+            ar: 'كيف استقبل أهل المدينة الرسول ﷺ؟',
             fr: 'Comment les gens de Médine accueillirent-ils le Prophète ﷺ ?',
             en: 'How did the people of Madina welcome the Prophet ﷺ?',
           },
           options: [
             { id: 'a', correct: true, label: { ar: 'بالتهليل والتكبير', fr: 'Par le tahlīl et le takbīr', en: 'With tahlil and takbir' } },
-            { id: 'b', correct: false, label: { ar: 'بالصمت والترقّب', fr: 'Par le silence et la méfiance', en: 'With silence and suspicion' }, hint: { ar: 'استقبله أهلها بالفرح والتهليل.', fr: 'Ses habitants l’accueillirent avec joie et acclamations.', en: 'Its people welcomed him with joy and cheers.' } },
+            { id: 'b', correct: false, label: { ar: 'بالصمت والترقّب', fr: 'Par le silence et l’attente', en: 'With silence and waiting' }, hint: { ar: 'استقبله أهلها بالفرح والتهليل.', fr: 'Ses habitants l’accueillirent avec joie et acclamations.', en: 'Its people welcomed him with joy and cheers.' } },
             { id: 'c', correct: false, label: { ar: 'بإغلاق الأبواب', fr: 'En fermant leurs portes', en: 'By closing their doors' }, hint: { ar: 'كانوا قد بايعوه ووعدوا بنصرته في العقبة.', fr: 'Ils lui avaient prêté serment et promis de le soutenir à ‘Aqaba.', en: 'They had pledged to him and promised support at ‘Aqaba.' } },
           ],
           reveal: {
@@ -628,7 +642,7 @@ export const hijraHabashaMadina: Lesson = {
         {
           id: 's1',
           who: { ar: 'ملكٌ لا يُظلم عنده أحد', fr: 'Un roi chez qui nul n’est lésé', en: 'A king with whom no one is wronged' },
-          deed: { ar: 'اقترح الرسول (ص) الهجرة إلى بلاده لأجل عدله', fr: 'Le Prophète ﷺ proposa d’émigrer dans son pays à cause de sa justice', en: 'The Prophet ﷺ suggested migrating to his land because of his justice' },
+          deed: { ar: 'اقترح الرسول ﷺ الهجرة إلى بلاده لأجل عدله', fr: 'Le Prophète ﷺ proposa d’émigrer dans son pays à cause de sa justice', en: 'The Prophet ﷺ suggested migrating to his land because of his justice' },
           side: 'left',
           explanation: { ar: 'هذا هو النجاشي ملك الحبشة.', fr: 'C’est le Négus, roi d’Abyssinie.', en: 'This is the Najashi, king of Abyssinia.' },
         },
@@ -663,7 +677,7 @@ export const hijraHabashaMadina: Lesson = {
         {
           id: 's6',
           who: { ar: 'غار ثور', fr: 'La grotte de Thawr', en: 'The cave of Thawr' },
-          deed: { ar: 'اختفى فيه الرسول (ص) مع أبي بكر ثلاثة أيّام', fr: 'Le Prophète ﷺ s’y cacha avec Abū Bakr trois jours', en: 'The Prophet ﷺ hid there with Abu Bakr for three days' },
+          deed: { ar: 'اختفى فيه الرسول ﷺ مع أبي بكر ثلاثة أيّام', fr: 'Le Prophète ﷺ s’y cacha avec Abū Bakr trois jours', en: 'The Prophet ﷺ hid there with Abu Bakr for three days' },
           side: 'right',
           explanation: { ar: 'كان في طريق الهجرة إلى المدينة.', fr: 'C’était sur la route de l’émigration vers Médine.', en: 'It was on the road to Madina.' },
         },
@@ -677,7 +691,7 @@ export const hijraHabashaMadina: Lesson = {
         {
           id: 's8',
           who: { ar: 'التهليل والتكبير', fr: 'Tahlīl et takbīr', en: 'Tahlil and takbir' },
-          deed: { ar: 'بهما استقبل أهلها الرسول (ص) عند دخوله', fr: 'Ses habitants l’accueillirent ainsi à son entrée', en: 'With these its people welcomed him as he entered' },
+          deed: { ar: 'بهما استقبل أهلها الرسول ﷺ عند دخوله', fr: 'Ses habitants l’accueillirent ainsi à son entrée', en: 'With these its people welcomed him as he entered' },
           side: 'right',
           explanation: { ar: 'هكذا استقبلت المدينة نبيّها.', fr: 'Ainsi Médine accueillit son Prophète.', en: 'This is how Madina welcomed its Prophet.' },
         },
@@ -716,9 +730,9 @@ export const hijraHabashaMadina: Lesson = {
         },
         {
           id: 'b4',
-          text: { ar: 'تُوفّيت خديجة قبل أبي طالب في عام الحزن.', fr: 'Khadīja mourut avant Abū Ṭālib durant l’année de la tristesse.', en: 'Khadija died before Abu Talib in the Year of Sorrow.' },
+          text: { ar: 'تُوفّيت خديجة رضي الله عنها قبل أبي طالب في عام الحزن.', fr: 'Khadīja mourut avant Abū Ṭālib durant l’année de la tristesse.', en: 'Khadija died before Abu Talib in the Year of Sorrow.' },
           answer: false,
-          explanation: { ar: 'خطأ، مات أبو طالب أوّلًا ثمّ توفّيت خديجة بعد أيّام.', fr: 'Faux, Abū Ṭālib mourut d’abord, puis Khadīja quelques jours plus tard.', en: 'False — Abu Talib died first, then Khadija a few days later.' },
+          explanation: { ar: 'خطأ، مات أبو طالب أوّلًا ثمّ توفّيت خديجة رضي الله عنها بعد أيّام.', fr: 'Faux, Abū Ṭālib mourut d’abord, puis Khadīja quelques jours plus tard.', en: 'False — Abu Talib died first, then Khadija a few days later.' },
         },
         {
           id: 'b5',
@@ -728,7 +742,7 @@ export const hijraHabashaMadina: Lesson = {
         },
         {
           id: 'b6',
-          text: { ar: 'بقي الرسول (ص) وأبو بكر في غار ثور عشرة أيّام.', fr: 'Le Prophète ﷺ et Abū Bakr restèrent dix jours dans la grotte de Thawr.', en: 'The Prophet ﷺ and Abu Bakr stayed ten days in the cave of Thawr.' },
+          text: { ar: 'بقي الرسول ﷺ وأبو بكر في غار ثور عشرة أيّام.', fr: 'Le Prophète ﷺ et Abū Bakr restèrent dix jours dans la grotte de Thawr.', en: 'The Prophet ﷺ and Abu Bakr stayed ten days in the cave of Thawr.' },
           answer: false,
           explanation: { ar: 'خطأ، بقيا ثلاثة أيّام فقط، ثمّ واصلا الطريق أحد عشر يومًا.', fr: 'Faux, trois jours seulement, puis ils poursuivirent la route onze jours.', en: 'False — only three days, then they traveled eleven more days.' },
         },
@@ -749,7 +763,7 @@ export const hijraHabashaMadina: Lesson = {
         {
           id: 'q1',
           type: 'mcq',
-          question: { ar: 'لماذا اقترح الرسول (ص) الهجرة إلى الحبشة؟', fr: 'Pourquoi le Prophète ﷺ proposa-t-il l’émigration en Abyssinie ?', en: 'Why did the Prophet ﷺ suggest migrating to Abyssinia?' },
+          question: { ar: 'لماذا اقترح الرسول ﷺ الهجرة إلى الحبشة؟', fr: 'Pourquoi le Prophète ﷺ proposa-t-il l’émigration en Abyssinie ?', en: 'Why did the Prophet ﷺ suggest migrating to Abyssinia?' },
           options: [
             { id: 'a', label: { ar: 'لأنّ بها ملكًا لا يُظلم عنده أحد', fr: 'Parce qu’elle avait un roi chez qui nul n’est lésé', en: 'Because it had a king with whom no one is wronged' } },
             { id: 'b', label: { ar: 'لأنّها أقرب بلدٍ إلى مكّة', fr: 'Parce que c’était le pays le plus proche de La Mecque', en: 'Because it was the closest land to Makkah' } },
@@ -778,9 +792,9 @@ export const hijraHabashaMadina: Lesson = {
           type: 'matching',
           question: { ar: 'صِل كلّ شخصيّةٍ بدورها', fr: 'Relie chaque personnage à son rôle', en: 'Match each person to their role' },
           pairs: [
-            { id: 'p1', left: { ar: 'جعفر بن أبي طالب', fr: 'Ja‘far ibn Abī Ṭālib', en: 'Ja‘far ibn Abi Talib' }, right: { ar: 'تحدّث أمام النجاشي وقرأ من سورة مريم', fr: 'Parla devant le Négus et récita la sourate Maryam', en: 'Spoke before the Najashi and recited Surat Maryam' } },
-            { id: 'p2', left: { ar: 'مصعب بن عمير', fr: 'Muṣ‘ab ibn ‘Umayr', en: 'Mus‘ab ibn ‘Umayr' }, right: { ar: 'علّم أهل المدينة الدين والقرآن', fr: 'Enseigna la religion et le Coran aux gens de Médine', en: 'Taught the people of Madina religion and the Qur’an' } },
-            { id: 'p3', left: { ar: 'أبو بكر رضي الله عنه', fr: 'Abū Bakr (qu’Allah l’agrée)', en: 'Abu Bakr (may God be pleased with him)' }, right: { ar: 'صاحب الرسول (ص) في غار ثور', fr: 'Compagnon du Prophète ﷺ dans la grotte de Thawr', en: 'The Prophet’s ﷺ companion in the cave of Thawr' } },
+            { id: 'p1', left: { ar: 'جعفر بن أبي طالب رضي الله عنه', fr: 'Ja‘far ibn Abī Ṭālib', en: 'Ja‘far ibn Abi Talib' }, right: { ar: 'تحدّث أمام النجاشي وقرأ من سورة مريم', fr: 'Parla devant le Négus et récita des versets de la sourate Maryam', en: 'Spoke before the Najashi and recited from Surat Maryam' } },
+            { id: 'p2', left: { ar: 'مصعب بن عمير رضي الله عنه', fr: 'Muṣ‘ab ibn ‘Umayr', en: 'Mus‘ab ibn ‘Umayr' }, right: { ar: 'علّم أهل المدينة الدين والقرآن', fr: 'Enseigna la religion et le Coran aux gens de Médine', en: 'Taught the people of Madina religion and the Qur’an' } },
+            { id: 'p3', left: { ar: 'أبو بكر رضي الله عنه', fr: 'Abū Bakr (qu’Allah l’agrée)', en: 'Abu Bakr (may God be pleased with him)' }, right: { ar: 'صاحب الرسول ﷺ في غار ثور', fr: 'Compagnon du Prophète ﷺ dans la grotte de Thawr', en: 'The Prophet’s ﷺ companion in the cave of Thawr' } },
           ],
           explanation: {
             ar: 'لكلّ شخصيّةٍ دورٌ في أحداث الهجرتين.',
@@ -813,7 +827,7 @@ export const hijraHabashaMadina: Lesson = {
       id: 'values',
       title: { ar: 'ماذا نتعلّم من هذا الدرس؟', fr: 'Que retenir de cette leçon ?', en: 'What do we learn from this lesson?' },
       prompt: {
-        ar: 'حين عرض عليه ملك الجبال أن يُطبق الأخشبين على أهل الطائف، ماذا قال الرسول (ص)؟',
+        ar: 'حين عرض عليه ملك الجبال أن يُطبق الأخشبين على أهل الطائف، ماذا قال الرسول ﷺ؟',
         fr: 'Quand l’ange des montagnes lui proposa de refermer les deux montagnes sur les gens de Ṭā’if, que dit le Prophète ﷺ ?',
         en: 'When the angel of the mountains offered to crush the people of Ta’if between the two mountains, what did the Prophet ﷺ say?',
       },
@@ -822,7 +836,7 @@ export const hijraHabashaMadina: Lesson = {
           id: 'hope',
           isCorrect: true,
           label: { ar: 'بل أرجو أن يُخرج الله من أصلابهم من يعبد الله وحده', fr: 'Plutôt, j’espère que Dieu fera naître de leurs reins ceux qui adoreront Dieu seul', en: 'Rather, I hope God brings from their descendants those who worship God alone' },
-          feedback: { ar: 'صحيح — ردّ الأذى بالأمل والرحمة.', fr: 'Exact — il répondit au tort par l’espoir et la miséricorde.', en: 'Correct — he answered harm with hope and mercy.' },
+          feedback: { ar: 'صحيح — ردّ الأذى بالأمل والرحمة.', fr: 'Exact — il répondit au mal par l’espoir et la miséricorde.', en: 'Correct — he answered harm with hope and mercy.' },
         },
         {
           id: 'accept',
@@ -842,7 +856,7 @@ export const hijraHabashaMadina: Lesson = {
         {
           id: 'hope',
           value: { ar: 'الأمل والرحمة', fr: 'L’espoir et la miséricorde', en: 'Hope and mercy' },
-          evidence: { ar: 'في الطائف رجا الرسول (ص) الخير لمن آذاه.', fr: 'À Ṭā’if, le Prophète ﷺ espéra le bien pour ceux qui l’avaient lésé.', en: 'At Ta’if the Prophet ﷺ hoped for good for those who harmed him.' },
+          evidence: { ar: 'في الطائف رجا الرسول ﷺ الخير لمن آذاه.', fr: 'À Ṭā’if, le Prophète ﷺ espéra le bien pour ceux qui l’avaient maltraité.', en: 'At Ta’if the Prophet ﷺ hoped for good for those who harmed him.' },
         },
         {
           id: 'planning',
@@ -852,12 +866,12 @@ export const hijraHabashaMadina: Lesson = {
         {
           id: 'solidarity',
           value: { ar: 'التضامن والنصرة', fr: 'La solidarité et le soutien', en: 'Solidarity and support' },
-          evidence: { ar: 'حمى بنو هاشم الرسول (ص)، وساعد أهل مكّة المحاصَرين سرًّا.', fr: 'Les Banū Hāshim protégèrent le Prophète ﷺ et des gens de La Mecque aidèrent les assiégés.', en: 'The Banu Hashim protected the Prophet ﷺ and some in Makkah helped the besieged.' },
+          evidence: { ar: 'حمى بنو هاشم الرسول ﷺ، وحاول بعض من في مكّة مساعدة المحاصَرين رغم التضييق.', fr: 'Les Banū Hāshim protégèrent le Prophète ﷺ, et des gens de La Mecque tentèrent d’aider les assiégés malgré la pression.', en: 'The Banu Hashim protected the Prophet ﷺ, and some in Makkah tried to help the besieged despite the pressure.' },
         },
         {
           id: 'truthfulness',
           value: { ar: 'تصديق الحقّ', fr: 'Croire la vérité', en: 'Believing the truth' },
-          evidence: { ar: 'صدّق أبو بكر خبر الإسراء حين كذّبته قريش فسُمّي الصدّيق.', fr: 'Abū Bakr crut le récit du voyage nocturne quand Quraysh le démentit, et fut nommé aṣ-Ṣiddīq.', en: 'Abu Bakr believed the Night Journey when Quraysh denied it, and was named as-Siddiq.' },
+          evidence: { ar: 'صدّق أبو بكر رضي الله عنه خبر الإسراء حين كذّبته قريش فسُمّي الصدّيق.', fr: 'Abū Bakr crut le récit du voyage nocturne quand Quraysh le démentit, et fut nommé aṣ-Ṣiddīq.', en: 'Abu Bakr believed the Night Journey when Quraysh denied it, and was named as-Siddiq.' },
         },
       ],
     },
@@ -867,9 +881,9 @@ export const hijraHabashaMadina: Lesson = {
       kind: 'completion',
       id: 'completion',
       keyTakeaway: {
-        ar: 'حين ضاقت مكّة بالمسلمين وجدوا الأمان أوّلًا في الحبشة عند ملكٍ عادل، ثمّ صبروا على الحصار وعام الحزن، ثمّ مهّدت بيعتا العقبة للهجرة إلى المدينة، فخطّط الرسول (ص) وتوكّل ودخلها بالتهليل والتكبير.',
-        fr: 'Quand La Mecque devint trop étroite, les musulmans trouvèrent d’abord la sécurité en Abyssinie auprès d’un roi juste ; puis ils endurèrent le siège et l’année de la tristesse ; les deux serments de ‘Aqaba préparèrent l’émigration vers Médine, où le Prophète ﷺ planifia, s’en remit à Dieu et entra sous le tahlīl et le takbīr.',
-        en: 'When Makkah grew too narrow, the Muslims first found safety in Abyssinia with a just king; then they endured the siege and the Year of Sorrow; the two pledges of ‘Aqaba prepared the migration to Madina, where the Prophet ﷺ planned, relied on God, and entered amid tahlil and takbir.',
+        ar: 'حين ضاقت مكّة بالمسلمين وجدوا الأمان أوّلًا في الحبشة عند ملكٍ عادل، ثمّ صبروا على الحصار وعام الحزن، ثمّ مهّدت بيعتا العقبة للهجرة إلى المدينة، فخطّط الرسول ﷺ وتوكّل ودخلها بالتهليل والتكبير.',
+        fr: 'Quand La Mecque devint trop étroite, les musulmans trouvèrent d’abord la sécurité en Abyssinie auprès d’un roi juste ; puis ils endurèrent le siège et l’année de la tristesse ; les deux serments de ‘Aqaba préparèrent l’émigration vers Médine ; le Prophète ﷺ planifia, s’en remit à Dieu, puis entra à Médine sous le tahlīl et le takbīr.',
+        en: 'When Makkah grew too narrow, the Muslims first found safety in Abyssinia with a just king; then they endured the siege and the Year of Sorrow; the two pledges of ‘Aqaba prepared the migration to Madina; the Prophet ﷺ planned, relied on God, then entered Madina amid tahlil and takbir.',
       },
       learned: [
         {
@@ -883,7 +897,7 @@ export const hijraHabashaMadina: Lesson = {
           en: 'Quraysh besieged the Banu Hashim in the valley, and the siege ended when termites ate the covenant.',
         },
         {
-          ar: 'سُمّي العام الذي مات فيه أبو طالب ثمّ خديجة عام الحزن.',
+          ar: 'سُمّي العام الذي مات فيه أبو طالب ثمّ خديجة رضي الله عنها عام الحزن.',
           fr: 'L’année où moururent Abū Ṭālib puis Khadīja fut appelée l’année de la tristesse.',
           en: 'The year in which Abu Talib and then Khadija died was called the Year of Sorrow.',
         },

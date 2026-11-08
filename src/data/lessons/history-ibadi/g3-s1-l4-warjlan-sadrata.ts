@@ -14,7 +14,7 @@ import type { Lesson } from '../../types'
 //   Slide 7 — تبليغ الدين وجلب المنافع: ساهمت التجارة في اعتناق أهالي السودان للإسلام، حمل التجّار الألوان والخيرات ورسالة الإسلام، كانوا متخلّقين بأخلاقه
 //             فتركوا الأثر الطيّب، رافق القوافل عددٌ من الفقهاء والدعاة سفراء الإسلام، أسلم الأفراد كما أسلمت الممالك على يد أهل الاستقامة مثل مملكة مالي. (صورة: سوق وارجلان)
 //   Slide 9 — خراب سدراتة: التجارة جلبت جيوشًا لا لحمايتهما ولا لإعانتهما على الدعوة بل للقضاء عليهما وعلى حضارتهما والاستيلاء على طرق التجارة ومصادر الذهب؛
-//             هجوم يحيى بن إسحاق الميورقي الذي اجتذبه بريق سدراتة بعمرانها وزخارفها واستعراض أموالها، فخُرّبت ونُهبت أموالها سنة 626 هـ (1228 م)،
+//             هجوم يحيى بن إسحاق الميورقي الذي اجتذبه بريق سدراتة بعمرانها وزخارفها واستعراض أموالها، فخُرّبت ونُهبت أموالها سنة 626 هـ (1228–1229 م)،
 //             وبقيت وارجلان على بساطتها محصّنة بالعلماء دون تخريب. (صورة: سدراتة مدينة تحت الرمال)
 // Every fact below is taken from those slides; nothing is added from outside them.
 // No human figure is ever illustrated (see CONTENT_GUIDELINES.md): scenes are told through oases, wells, caravans of camels, goods, books and ruins.
@@ -155,6 +155,15 @@ export const warjlanSadrata: Lesson = {
             en: 'The two towns saw notable farming activity: many wells were dug, especially in Sedrata, and irrigation canals ran from there to Warjlan over twelve kilometres, and from there to the farms and orchards along the edges of the town.',
           },
         },
+        {
+          id: 'p5',
+          heading: { ar: 'على الخريطة', fr: 'Sur la carte', en: 'On the map' },
+          text: {
+            ar: 'تقع آثار سدراتة جنوب وارجلان، قرب قارة كريمة وجبل العبّاد وسبخةٍ واسعة. ومن معالم وارجلان القديمة مصلّى الشيخ أبي سهل.',
+            fr: 'Les vestiges de Sedrata se trouvent au sud de Ouargla, près de la Gara Krima, du djebel al-‘Abbād et d’une vaste sebkha. Parmi les anciens lieux de Ouargla figure l’oratoire (muṣallā) du cheikh Abū Sahl.',
+            en: 'The ruins of Sedrata lie south of Warjlan, near Garat Krima, Jebel al-‘Abbad and a wide salt flat (sabkha). Among Warjlan’s old landmarks is the prayer place (musalla) of Sheikh Abu Sahl.',
+          },
+        },
       ],
     },
 
@@ -209,7 +218,7 @@ export const warjlanSadrata: Lesson = {
         },
         {
           id: 's4',
-          prompt: { ar: 'ثمّ ما الذي حملته السواقي؟', fr: 'Et que firent les canaux ?', en: 'And what did the canals do?' },
+          prompt: { ar: 'ثمّ إلى أين امتدّت السواقي؟', fr: 'Et jusqu’où allaient les canaux ?', en: 'And where did the canals run?' },
           correct: { ar: 'امتدّت من سدراتة إلى وارجلان اثني عشر كيلومترًا، ثمّ إلى المزارع والبساتين', fr: 'Ils allaient de Sedrata à Ouargla sur douze kilomètres, puis vers les fermes et les vergers', en: 'They ran from Sedrata to Warjlan over twelve kilometres, then on to the farms and orchards' },
           distractors: [
             { label: { ar: 'امتدّت من وارجلان إلى البحر', fr: 'Ils allaient de Ouargla jusqu’à la mer', en: 'They ran from Warjlan to the sea' }, hint: { ar: 'السواقي محلّية: بين المدينتين ونحو البساتين.', fr: 'Les canaux étaient locaux : entre les deux villes et vers les vergers.', en: 'The canals were local: between the two towns and to the orchards.' } },
@@ -636,9 +645,9 @@ export const warjlanSadrata: Lesson = {
           id: 'p2',
           heading: { ar: 'بريقٌ يجذب الطامعين', fr: 'Un éclat qui attire les convoitises', en: 'A splendour that drew the greedy' },
           text: {
-            ar: 'فقد تعرّضت المنطقة لهجوم يحيى بن إسحاق الميورقي، حين اجتذبه بريق سدراتة: بعمرانها وزخارفها واستعراض أموالها، فخُرّبت ونُهبت أموالها سنة 626 هـ (1228 م).',
-            fr: 'La région fut attaquée par Yaḥyā ibn Isḥāq al-Mayūrqī, attiré par l’éclat de Sedrata — ses constructions, ses ornements et l’étalage de ses richesses. Elle fut détruite et ses biens pillés en 626 H (1228 apr. J.-C.).',
-            en: 'The region was attacked by Yahya ibn Ishaq al-Mayurqi, who was drawn by Sedrata’s splendour — its buildings, its ornaments and the display of its wealth. It was destroyed and its wealth plundered in 626 AH (1228 CE).',
+            ar: 'فقد تعرّضت المنطقة لهجوم يحيى بن إسحاق الميورقي، حين اجتذبه بريق سدراتة: بعمرانها وزخارفها واستعراض أموالها، فخُرّبت ونُهبت أموالها سنة 626 هـ (1228–1229 م).',
+            fr: 'La région fut attaquée par Yaḥyā ibn Isḥāq al-Mayūrqī, attiré par l’éclat de Sedrata — ses constructions, ses ornements et l’étalage de ses richesses. Elle fut détruite et ses biens pillés en 626 H (1228–1229 apr. J.-C.).',
+            en: 'The region was attacked by Yahya ibn Ishaq al-Mayurqi, who was drawn by Sedrata’s splendour — its buildings, its ornaments and the display of its wealth. It was destroyed and its wealth plundered in 626 AH (1228–1229 CE).',
           },
         },
         {
@@ -648,6 +657,15 @@ export const warjlanSadrata: Lesson = {
             ar: 'وبقيت وارجلان على بساطتها، محصّنةً بالعلماء، دون تخريب.',
             fr: 'Ouargla, elle, resta dans sa simplicité, protégée par ses savants, et ne fut pas détruite.',
             en: 'Warjlan, meanwhile, remained in its simplicity, protected by its scholars, and was spared destruction.',
+          },
+        },
+        {
+          id: 'p4',
+          heading: { ar: 'آثارٌ باقية', fr: 'Des traces qui demeurent', en: 'Traces that remain' },
+          text: {
+            ar: 'تُعرف سدراتة اليوم بأنّها «مدينةٌ تحت الرمال»، ومن آثارها محرابٌ مزخرف يشهد على عمرانها. أمّا وارجلان فما زالت عامرة، وسوقها من أشهر معالمها.',
+            fr: 'Sedrata est connue aujourd’hui comme « la ville sous le sable » ; parmi ses vestiges, un miḥrāb décoré témoigne de sa splendeur. Ouargla, elle, est toujours vivante, et son marché compte parmi ses lieux les plus connus.',
+            en: 'Today Sedrata is known as "the town under the sand"; among its remains is a decorated mihrab that bears witness to its splendour. Warjlan is still alive, and its market is one of its best-known landmarks.',
           },
         },
       ],
@@ -701,7 +719,7 @@ export const warjlanSadrata: Lesson = {
           deed: { ar: 'خُرّبت ونُهبت أموالها', fr: 'Elle fut détruite et ses biens pillés', en: 'It was destroyed and its wealth plundered' },
           image: `${IMG}/sedrata-ruins.png`,
           side: 'left',
-          explanation: { ar: 'خُرّبت سدراتة ونُهبت سنة 626 هـ (1228 م).', fr: 'Sedrata fut détruite et pillée en 626 H (1228).', en: 'Sedrata was destroyed and plundered in 626 AH (1228 CE).' },
+          explanation: { ar: 'خُرّبت سدراتة ونُهبت سنة 626 هـ (1228–1229 م).', fr: 'Sedrata fut détruite et pillée en 626 H (1228–1229).', en: 'Sedrata was destroyed and plundered in 626 AH (1228–1229 CE).' },
         },
         {
           id: 'simple',
@@ -849,13 +867,13 @@ export const warjlanSadrata: Lesson = {
           items: [
             { id: 'o1', label: { ar: 'تطوّرتا في العهد الرستمي', fr: 'Elles se développent à l’époque rustamide', en: 'They develop in the Rustamid era' } },
             { id: 'o2', label: { ar: 'صارتا مأمنًا لمن تبقّى من الأسرة الرستمية بعد تاهرت', fr: 'Elles deviennent le refuge des derniers Rustamides après Tāhert', en: 'They become a haven for the remaining Rustamids after Tahert' } },
-            { id: 'o3', label: { ar: 'توجّه إليهما العلماء بعد سقوط الدولة الرستمية', fr: 'Les savants s’y rendent après la chute de l’État rustamide', en: 'Scholars move there after the Rustamid state falls' } },
+            { id: 'o3', label: { ar: 'هجوم يحيى بن إسحاق الميورقي على المنطقة', fr: 'Attaque de Yaḥyā ibn Isḥāq al-Mayūrqī contre la région', en: 'Yahya ibn Ishaq al-Mayurqi attacks the region' } },
             { id: 'o4', label: { ar: 'خراب سدراتة سنة 626 هـ', fr: 'Destruction de Sedrata en 626 H', en: 'Sedrata is destroyed in 626 AH' } },
           ],
           explanation: {
-            ar: 'تطوّرٌ في العهد الرستمي، ثمّ مأمنٌ بعد تاهرت، ثمّ ازدهار العلم، ثمّ خراب سدراتة سنة 626 هـ.',
-            fr: 'Essor sous les Rustamides, refuge après Tāhert, floraison du savoir, puis destruction de Sedrata en 626 H.',
-            en: 'Growth under the Rustamids, a haven after Tahert, a flowering of knowledge, then Sedrata’s destruction in 626 AH.',
+            ar: 'تطوّرٌ في العهد الرستمي، ثمّ مأمنٌ بعد تاهرت، ثمّ هجوم الميورقي الذي اجتذبه بريق سدراتة، فخرابها ونهب أموالها سنة 626 هـ.',
+            fr: 'Essor sous les Rustamides, refuge après Tāhert, puis l’attaque d’al-Mayūrqī attiré par l’éclat de Sedrata, et enfin sa destruction et le pillage de ses biens en 626 H.',
+            en: 'Growth under the Rustamids, a haven after Tahert, then the attack of al-Mayurqi, drawn by Sedrata’s splendour, and finally its destruction and plunder in 626 AH.',
           },
         },
       ],

@@ -1,9 +1,13 @@
 import type { Lesson } from '../../types'
 
-// Source: Ibadite History textbook.
-//   pages 66–67 — «خلافة علي بن أبي طالب (1)»: وقعة يوم الجمل
+// Source: Grade 2 Ibadite History textbook, photographed pages in
+//   ressources/grade 2/s1/lessons1/ (IMG_20260927_120503/120506 = pp. 66–67,
+//   IMG_20260927_115916/115924/115932/115937 = pp. 70–73).
+//   pages 66–67 — «خلافة علي بن أبي طالب (1)»: تنظيم الدولة، انقسام المسلمين، وقعة يوم الجمل
 //   pages 70–73 — «خلافة علي بن أبي طالب (2)»: صفّين والتحكيم
-// Every fact below is taken from those pages; nothing is added from outside them.
+// Every piece of information on those pages is in the lesson. Corrected source errors:
+//   al-Khurayba is near al-Baṣra (the textbook box says "near al-Kūfa");
+//   «جمادى الآخر» → «جمادى الآخرة».
 
 const IMG = '/images/lessons/jamal-siffin'
 
@@ -17,9 +21,9 @@ export const jamalSiffin: Lesson = {
   estimatedMinutes: 35,
   cover: `${IMG}/hero.png`,
   coverAlt: {
-    ar: 'جيشان متقابلان في سهل عند الحدود بين الشام والعراق',
-    fr: 'Deux armées face à face dans une plaine, à la frontière entre le Shām et l’Irak',
-    en: 'Two armies facing each other on a plain at the Shām–Iraq border',
+    ar: 'جملٌ عليه غطاءٌ أحمر في سهلٍ قرب النخيل والماء عند الغروب، ورماحٌ ودروعٌ متناثرة على الرمل',
+    fr: 'Un chameau couvert d’une étoffe rouge dans une plaine près des palmiers et de l’eau au couchant, des lances et des boucliers épars sur le sable',
+    en: 'A camel draped in red cloth on a plain near palm trees and water at sunset, spears and shields scattered on the sand',
   },
   title: {
     ar: 'وقعة الجمل ومعركة صفّين',
@@ -39,9 +43,9 @@ export const jamalSiffin: Lesson = {
       id: 'hero',
       image: `${IMG}/hero.png`,
       imageAlt: {
-        ar: 'قافلةٌ تسير في طريق صحراوي بين الجبال',
-        fr: 'Une caravane sur une route désertique entre les montagnes',
-        en: 'A caravan on a desert road between mountains',
+        ar: 'جملٌ عليه غطاءٌ أحمر في سهلٍ قرب النخيل والماء عند الغروب، ورماحٌ ودروعٌ متناثرة على الرمل',
+        fr: 'Un chameau couvert d’une étoffe rouge dans une plaine près des palmiers et de l’eau au couchant, des lances et des boucliers épars sur le sable',
+        en: 'A camel draped in red cloth on a plain near palm trees and water at sunset, spears and shields scattered on the sand',
       },
       title: {
         ar: 'حين اختلف المسلمون لأوّل مرّة',
@@ -54,7 +58,7 @@ export const jamalSiffin: Lesson = {
         en: 'How did the Muslims arrive at their first battle against one another?',
       },
       intro: {
-        ar: 'بادر الخليفة عليٌّ إلى تغيير الولاة الذين كانوا في خلافة عثمان، ممّن لا يصلُح للولاية ولا تستقرّ الأوضاع بوجوده، فانطلق الولاة الجدد من المدينة إلى الأمصار الإسلامية: كالبصرة والشام والكوفة واليمن ليتولّوا مناصبهم. لكنّ الطريق إلى الاستقرار لم يكن سهلًا.',
+        ar: 'بادر الخليفة عليٌّ رضي الله عنه إلى تغيير الولاة الذين كانوا في خلافة عثمان، ممّن لا يصلُح للولاية ولا تستقرّ الأوضاع بوجوده، فانطلق الولاة الجدد من المدينة إلى الأمصار الإسلامية: كالبصرة والشام والكوفة واليمن ليتولّوا مناصبهم. لكنّ الطريق إلى الاستقرار لم يكن سهلًا.',
         fr: 'Le calife ‘Alī entreprit de remplacer les gouverneurs de l’époque de ‘Uthmān qui n’étaient pas aptes à gouverner et dont la présence empêchait la stabilité. Les nouveaux gouverneurs partirent de Médine vers les grandes villes — Baṣra, le Shām, Kūfa, le Yémen — pour prendre leurs fonctions. Mais le chemin vers la stabilité ne fut pas simple.',
         en: 'The caliph ‘Alī set about replacing the governors from ‘Uthmān’s time who were unfit to govern and in whose presence conditions could not settle. The new governors set out from Madinah to the great cities — Baṣra, Shām, Kūfa, Yemen — to take up their posts. But the road to stability was not easy.',
       },
@@ -70,32 +74,47 @@ export const jamalSiffin: Lesson = {
         en: 'A division in the unity of the Muslims',
       },
       intro: {
-        ar: 'بعد بيعة عليٍّ طالبه بعضُ الصحابة بالقصاص لعثمان. اقلب البطاقات لتعرف ما جرى.',
-        fr: 'Après l’allégeance à ‘Alī, certains Compagnons réclamèrent le qiṣāṣ pour ‘Uthmān. Retourne les cartes pour découvrir la suite.',
-        en: 'After the pledge to ‘Alī, some Companions demanded qiṣāṣ for ‘Uthmān. Flip the cards to learn what happened.',
+        ar: 'بعد بيعة عليٍّ رفض معاويةُ طاعته، وطالبه بعضُ الصحابة بالقصاص لعثمان. اقلب البطاقات لتعرف ما جرى.',
+        fr: 'Après l’allégeance à ‘Alī, Mu‘āwiya refusa de lui obéir, et certains Compagnons réclamèrent le qiṣāṣ pour ‘Uthmān. Retourne les cartes pour découvrir la suite.',
+        en: 'After the pledge to ‘Alī, Mu‘āwiya refused to obey him, and some Companions demanded qiṣāṣ for ‘Uthmān. Flip the cards to learn what happened.',
       },
       cards: [
         {
-          id: 'demand',
-          image: `${IMG}/demand.png`,
+          id: 'muawiya-message',
+          image: `${IMG}/refusal.png`,
           imageAlt: {
-            ar: 'مجلسٌ في المدينة يجتمع فيه الصحابة',
-            fr: 'Une assemblée de Compagnons à Médine',
-            en: 'A gathering of Companions in Madinah',
+            ar: 'قاعةُ قصرٍ فخمة فيها عرشٌ أحمر فارغ تحت قبّة',
+            fr: 'Une salle de palais somptueuse avec un trône rouge vide sous une coupole',
+            en: 'A grand palace hall with an empty red throne beneath a dome',
           },
           fact: {
-            ar: 'انطلق إلى عليٍّ بعد بيعته بعضُ الصحابة ومنهم طلحةُ بن عبيد الله والزبيرُ بن العوّام، وطالبوه بالقصاص لعثمان من الذين قتلوه، ليقيم الحدود ويُرهب المفسدين ويُبعدهم عن المدينة.',
-            fr: 'Après lui avoir prêté allégeance, des Compagnons — dont Ṭalḥa ibn ‘Ubaydillāh et az-Zubayr ibn al-‘Awwām — vinrent réclamer le qiṣāṣ pour ‘Uthmān contre ses meurtriers, afin qu’il applique les peines légales et éloigne les fauteurs de trouble de Médine.',
-            en: 'After pledging to him, some Companions — among them Ṭalḥa ibn ‘Ubaydillāh and az-Zubayr ibn al-‘Awwām — came demanding qiṣāṣ for ‘Uthmān from those who killed him, so that he might apply the legal penalties and drive the corrupters from Madinah.',
+            ar: 'أرسل أقربُ الناس لعثمان، وهو معاويةُ بن أبي سفيان الذي تولّى الشام منذ نحو 20 سنة، إلى عليٍّ رجلًا يُعلن رفضَه الطاعةَ لعليّ، واستعدادَه للقدوم بجيشٍ للقصاص لابن عمّه المقتول عثمان، ثمّ يكون للخلافة أمرٌ بعد ذلك.',
+            fr: 'Le plus proche parent de ‘Uthmān, Mu‘āwiya ibn Abī Sufyān, gouverneur du Shām depuis environ 20 ans, envoya à ‘Alī un homme annonçant qu’il refusait de lui obéir et qu’il était prêt à venir avec une armée pour obtenir le qiṣāṣ pour son cousin tué, ‘Uthmān ; la question du califat viendrait ensuite.',
+            en: 'The man closest to ‘Uthmān, Mu‘āwiya ibn Abī Sufyān, who had governed Shām for about 20 years, sent ‘Alī a man announcing that he refused to obey him and was ready to come with an army to take qiṣāṣ for his slain cousin ‘Uthmān; the question of the caliphate would come after that.',
+          },
+          certainty: 'approximate',
+        },
+        {
+          id: 'demand',
+          image: `${IMG}/reconciliation.png`,
+          imageAlt: {
+            ar: 'سجّادتان مزخرفتان متجاورتان على أرضٍ يغمرها الضوء',
+            fr: 'Deux tapis ornés posés côte à côte sur un sol baigné de lumière',
+            en: 'Two decorated rugs side by side on a sunlit floor',
+          },
+          fact: {
+            ar: 'انطلق إلى عليٍّ بعد بيعته بعضُ الصحابة ومنهم طلحةُ بن عبيد الله والزبيرُ بن العوّام رضي الله عنهما، وطالبوه بالقصاص لعثمان من الذين قتلوه، ليقيم الحدود ويُرهب المفسدين ويُبعدهم عن المدينة.',
+            fr: 'Après lui avoir prêté allégeance, des Compagnons — dont Ṭalḥa ibn ‘Ubaydillāh et az-Zubayr ibn al-‘Awwām — vinrent réclamer le qiṣāṣ pour ‘Uthmān contre ses meurtriers, afin qu’il applique les peines légales, intimide les fauteurs de trouble et les éloigne de Médine.',
+            en: 'After pledging to him, some Companions — among them Ṭalḥa ibn ‘Ubaydillāh and az-Zubayr ibn al-‘Awwām — came demanding qiṣāṣ for ‘Uthmān from those who killed him, so that he might apply the legal penalties, deter the corrupters and drive them from Madinah.',
           },
         },
         {
           id: 'answer',
           image: `${IMG}/answer.png`,
           imageAlt: {
-            ar: 'الخليفة يردّ على سائليه',
-            fr: 'Le calife répond à ceux qui l’interrogent',
-            en: 'The caliph answering those who ask him',
+            ar: 'كتابٌ مفتوحٌ وريشةُ كتابةٍ ومحبرةٌ على مكتبٍ خشبيّ',
+            fr: 'Un livre ouvert, une plume et un encrier sur un bureau en bois',
+            en: 'An open book, a quill and an inkwell on a wooden desk',
           },
           fact: {
             ar: 'فأجابهم بأنّ القصاص غيرُ ممكنٍ قبل أن تستقرّ الأوضاع ويعود الأمن والهدوء إلى الولايات.',
@@ -107,14 +126,14 @@ export const jamalSiffin: Lesson = {
           id: 'departure',
           image: `${IMG}/departure.png`,
           imageAlt: {
-            ar: 'قافلةٌ تغادر المدينة في اتّجاه العراق',
-            fr: 'Une caravane quittant Médine en direction de l’Irak',
-            en: 'A caravan leaving Madinah towards Iraq',
+            ar: 'ثلاثة جمالٍ تسير في الصحراء مبتعدةً عن مدينةٍ تلوح في الأفق',
+            fr: 'Trois chameaux marchant dans le désert, s’éloignant d’une ville à l’horizon',
+            en: 'Three camels walking through the desert, away from a city on the horizon',
           },
           fact: {
-            ar: 'لكنّ طلحة والزبير استعجلا القصاص وتفريق الجموع؛ ولمّا لم يُجب الخليفة طلبَهم خرجوا من المدينة إلى العراق، ولحقت بهم من مكّة عائشةُ أمّ المؤمنين وذهب معهم الآلاف.',
-            fr: 'Mais Ṭalḥa et az-Zubayr voulurent hâter le qiṣāṣ ; le calife n’ayant pas accédé à leur demande, ils quittèrent Médine vers l’Irak. ‘Ā’isha, mère des croyants, les rejoignit depuis La Mecque, et des milliers partirent avec eux.',
-            en: 'But Ṭalḥa and az-Zubayr pressed for haste in the qiṣāṣ; when the caliph did not grant their request they left Madinah for Iraq. ‘Ā’isha, mother of the believers, joined them from Makkah, and thousands went with them.',
+            ar: 'لكنّ طلحة والزبير استعجلا القصاص وتفريق الجموع؛ ولمّا لم يُجب الخليفة طلبَهم خرجوا من المدينة إلى العراق، ولحقت بهم من مكّة عائشةُ أمّ المؤمنين رضي الله عنها، وذهب معهم الآلاف.',
+            fr: 'Mais Ṭalḥa et az-Zubayr voulurent hâter le qiṣāṣ et la dispersion des attroupements ; le calife n’ayant pas accédé à leur demande, ils quittèrent Médine vers l’Irak. ‘Ā’isha, mère des croyants (qu’Allah l’agrée), les rejoignit depuis La Mecque, et des milliers partirent avec eux.',
+            en: 'But Ṭalḥa and az-Zubayr pressed for haste in the qiṣāṣ and in dispersing the crowds; when the caliph did not grant their request they left Madinah for Iraq. ‘Ā’isha, mother of the believers (may God be pleased with her), joined them from Makkah, and thousands went with them.',
           },
         },
       ],
@@ -199,34 +218,35 @@ export const jamalSiffin: Lesson = {
         fr: 'Touche chaque étape pour lire la fiche du premier affrontement : le Chameau.',
         en: 'Tap each stop to read the file of the first confrontation: the Camel.',
       },
-      image: `${IMG}/jamal.png`,
+      image: `${IMG}/hero.png`,
       imageAlt: {
-        ar: 'جملٌ عليه هودجٌ وسط ميدانٍ بعد توقّف القتال',
-        fr: 'Un chameau portant un palanquin au milieu du champ après l’arrêt des combats',
-        en: 'A camel bearing a howdah in the field after the fighting stopped',
+        ar: 'جملٌ عليه غطاءٌ أحمر في سهلٍ قرب النخيل والماء عند الغروب، ورماحٌ ودروعٌ متناثرة على الرمل',
+        fr: 'Un chameau couvert d’une étoffe rouge dans une plaine près des palmiers et de l’eau au couchant, des lances et des boucliers épars sur le sable',
+        en: 'A camel draped in red cloth on a plain near palm trees and water at sunset, spears and shields scattered on the sand',
       },
       steps: [
         {
           id: 'date',
           period: { ar: 'التاريخ', fr: 'Date', en: 'Date' },
           label: {
-            ar: '15 جمادى الآخر 36 هـ',
-            fr: '15 Jumādā al-Ākhir 36 H',
-            en: '15 Jumādā al-Ākhir 36 AH',
+            ar: '15 جمادى الآخرة 36 هـ',
+            fr: '15 Jumādā al-Ākhira 36 H',
+            en: '15 Jumādā al-Ākhira 36 AH',
           },
           detail: {
             ar: 'وبايع أهلُ العراق عليًّا في ذلك اليوم.',
             fr: 'Les gens d’Irak prêtèrent allégeance à ‘Alī ce jour-là.',
             en: 'The people of Iraq pledged allegiance to ‘Alī on that day.',
           },
+          certainty: 'approximate',
         },
         {
           id: 'place',
           period: { ar: 'المكان', fr: 'Lieu', en: 'Place' },
           label: {
-            ar: 'الخُرَيبة، قرب مدينة الكوفة بالعراق',
-            fr: 'Al-Khuraybah, près de Kūfa en Irak',
-            en: 'Al-Khuraybah, near the city of Kūfa in Iraq',
+            ar: 'الخُرَيبة، قرب مدينة البصرة بالعراق',
+            fr: 'Al-Khurayba, près de Baṣra en Irak',
+            en: 'Al-Khurayba, near the city of Baṣra in Iraq',
           },
           detail: {
             ar: 'واتّخذ عليٌّ الكوفةَ عاصمةً له بعد ذلك.',
@@ -243,7 +263,7 @@ export const jamalSiffin: Lesson = {
             en: 'Imam ‘Alī // Ṭalḥa ibn ‘Ubaydillāh and az-Zubayr ibn al-‘Awwām',
           },
           detail: {
-            ar: 'وحضرت الوقعةَ عائشةُ أمّ المؤمنين على ظهر الجمل، ومنه سُمّي اليوم.',
+            ar: 'وحضرت الوقعةَ عائشةُ أمّ المؤمنين رضي الله عنها على ظهر الجمل، ومنه سُمّي اليوم.',
             fr: '‘Ā’isha assista à la bataille sur le dos du chameau, d’où le nom de ce jour.',
             en: '‘Ā’isha was present at the battle on the back of the camel, from which the day takes its name.',
           },
@@ -296,9 +316,9 @@ export const jamalSiffin: Lesson = {
       },
       image: `${IMG}/reconciliation.png`,
       imageAlt: {
-        ar: 'مجلس تفاوضٍ في العراء بين فريقين',
-        fr: 'Une négociation en plein air entre deux camps',
-        en: 'An open-air negotiation between two camps',
+        ar: 'سجّادتان مزخرفتان متجاورتان على أرضٍ يغمرها الضوء',
+        fr: 'Deux tapis ornés posés côte à côte sur un sol baigné de lumière',
+        en: 'Two decorated rugs side by side on a sunlit floor',
       },
       items: [
         {
@@ -326,11 +346,19 @@ export const jamalSiffin: Lesson = {
           },
         },
         {
+          id: 'clash',
+          label: {
+            ar: 'خلافٌ حادّ بين الإمام عليّ وطلحة',
+            fr: 'Un vif désaccord entre l’imam ‘Alī et Ṭalḥa',
+            en: 'A sharp dispute between Imam ‘Alī and Ṭalḥa',
+          },
+        },
+        {
           id: 'battle',
           label: {
-            ar: 'وقع القتال الذي يُسمّى بيوم الجمل',
-            fr: 'Eut lieu le combat appelé « le jour du Chameau »',
-            en: 'The fighting called “the day of the Camel” took place',
+            ar: 'نشبت معركةٌ عامّة: القتال الذي يُسمّى بيوم الجمل',
+            fr: 'Une bataille générale éclata : le combat appelé « le jour du Chameau »',
+            en: 'A general battle broke out: the fighting called “the day of the Camel”',
           },
         },
         {
@@ -343,7 +371,7 @@ export const jamalSiffin: Lesson = {
         },
       ],
       explanation: {
-        ar: 'كان الصُّلح قد تمّ فعلًا بين عليٍّ وطلحة والزبير، لكنّ المفتنين عملوا على إيقاد الفتنة فأشعلوا العداوة بين الفئتين. وانتهت الواقعة بمقتل آلاف المسلمين ومنهم طلحة والزبير.',
+        ar: 'كان الصُّلح قد تمّ فعلًا بين عليٍّ وطلحة والزبير، لكنّ المفتنين عملوا على إيقاد الفتنة فأشعلوا العداوة بين الفئتين. وانتهت الواقعة بمقتل آلاف المسلمين ومنهم طلحة والزبير رضي الله عنهما.',
         fr: 'La réconciliation avait bel et bien été conclue entre ‘Alī, Ṭalḥa et az-Zubayr, mais les fauteurs de trouble œuvrèrent à attiser la discorde et rallumèrent l’hostilité. La bataille s’acheva par la mort de milliers de musulmans, dont Ṭalḥa et az-Zubayr.',
         en: 'Reconciliation had in fact been reached between ‘Alī, Ṭalḥa and az-Zubayr, but the instigators worked to kindle the strife and reignited hostility. The event ended with thousands of Muslims killed, among them Ṭalḥa and az-Zubayr.',
       },
@@ -520,9 +548,9 @@ export const jamalSiffin: Lesson = {
       id: 'siffin-hero',
       image: `${IMG}/siffin-hero.png`,
       imageAlt: {
-        ar: 'جيشان متقابلان في سهل عند الحدود بين الشام والعراق',
-        fr: 'Deux armées face à face dans une plaine',
-        en: 'Two armies facing each other on a plain',
+        ar: 'صفّان من الخيام الخالية متقابلان في سهلٍ واسع، ورايات حمراء وخضراء ترفرف تحت سحبٍ كثيفة',
+        fr: 'Deux rangées de tentes vides face à face dans une vaste plaine, des étendards rouges et verts flottant sous de lourds nuages',
+        en: 'Two rows of empty tents facing each other across a wide plain, red and green banners flying under heavy clouds',
       },
       title: {
         ar: 'بقيت الشام',
@@ -535,13 +563,13 @@ export const jamalSiffin: Lesson = {
         en: 'How will the caliph deal with the governor of Shām?',
       },
       intro: {
-        ar: 'ظلّت منطقة الشام لم تدخل في طاعة الخليفة عليّ، وعليها معاوية الذي أخذ يطالب بدم عثمان وهو مستعدٌّ للقتال من أجله. وقد شهد عليٌّ مقتلَ آلاف المسلمين في العراق بسبب الفُرقة، كما رأى توقُّف حركة الفتح وانتشار الدعاة، واشتغال الناس بالفتنة.',
-        fr: 'La région du Shām n’était pas entrée dans l’obéissance au calife ‘Alī ; elle était gouvernée par Mu‘āwiya, qui réclamait le sang de ‘Uthmān et se disait prêt à combattre pour cela. ‘Alī avait vu des milliers de musulmans périr en Irak à cause de la division, la conquête s’arrêter, et les gens s’occuper de la discorde.',
-        en: 'The region of Shām had not entered the obedience of the caliph ‘Alī; over it was Mu‘āwiya, who demanded ‘Uthmān’s blood and was ready to fight for it. ‘Alī had witnessed thousands of Muslims killed in Iraq through division, the movement of conquest halted, and people consumed by strife.',
+        ar: 'ظلّت منطقة الشام لم تدخل في طاعة الخليفة عليّ، وعليها معاوية الذي أخذ يطالب بدم عثمان وهو مستعدٌّ للقتال من أجله. وقد شهد عليٌّ مقتلَ آلاف المسلمين في العراق بسبب الفُرقة، كما رأى توقُّف حركة الفتح وانتشار الدعاة، واشتغال الناس بالفتنة. فكيف سيجيب معاويةُ أوامرَ الخليفة عليّ؟ وما الخطوات التالية للخليفة لرأب الصدع؟',
+        fr: 'La région du Shām n’était pas entrée dans l’obéissance au calife ‘Alī ; elle était gouvernée par Mu‘āwiya, qui réclamait le sang de ‘Uthmān et était prêt à combattre pour cela. ‘Alī avait vu des milliers de musulmans périr en Irak à cause de la division, la conquête et la diffusion des prédicateurs s’arrêter, et les gens s’occuper de la discorde. Comment Mu‘āwiya répondra-t-il aux ordres du calife ‘Alī ? Et quelles seront les prochaines étapes du calife pour réparer la fissure ?',
+        en: 'The region of Shām had not entered the obedience of the caliph ‘Alī; over it was Mu‘āwiya, who demanded ‘Uthmān’s blood and was ready to fight for it. ‘Alī had witnessed thousands of Muslims killed in Iraq through division, the movement of conquest and the spread of preachers halted, and people consumed by strife. How will Mu‘āwiya answer the orders of the caliph ‘Alī? And what will the caliph’s next steps be to mend the rift?',
       },
     },
 
-    // 02 — Why did it come to this? (questions from أستكشف)
+    // 08 — Why did it come to this? (questions from أستكشف, p.70)
     {
       kind: 'story',
       id: 'the-standoff',
@@ -558,11 +586,11 @@ export const jamalSiffin: Lesson = {
       cards: [
         {
           id: 'invitation',
-          image: `${IMG}/envoy.png`,
+          image: `${IMG}/departure.png`,
           imageAlt: {
-            ar: 'رسولٌ يحمل رسالةً على طريق الشام',
-            fr: 'Un messager portant une lettre sur la route du Shām',
-            en: 'A messenger carrying a letter on the road to Shām',
+            ar: 'ثلاثة جمالٍ تسير في الصحراء مبتعدةً عن مدينةٍ تلوح في الأفق',
+            fr: 'Trois chameaux marchant dans le désert, s’éloignant d’une ville à l’horizon',
+            en: 'Three camels walking through the desert, away from a city on the horizon',
           },
           fact: {
             ar: 'أرسل عليٌّ كرّم الله وجهه أحدَ مساعديه إلى معاوية بن أبي سفيان بالشام يدعوه إلى الدخول فيما دخل فيه المسلمون.',
@@ -574,9 +602,9 @@ export const jamalSiffin: Lesson = {
           id: 'refusal',
           image: `${IMG}/refusal.png`,
           imageAlt: {
-            ar: 'مجلس الوالي في الشام',
-            fr: 'Le conseil du gouverneur au Shām',
-            en: 'The governor’s council in Shām',
+            ar: 'قاعةُ قصرٍ فخمة فيها عرشٌ أحمر فارغ تحت قبّة',
+            fr: 'Une salle de palais somptueuse avec un trône rouge vide sous une coupole',
+            en: 'A grand palace hall with an empty red throne beneath a dome',
           },
           fact: {
             ar: 'لكنّ معاوية رفض مبايعته وطاعته، وطالبه بقَتَلة الخليفة، ثم أن يختار المسلمون لأنفسهم إمامًا.',
@@ -586,11 +614,11 @@ export const jamalSiffin: Lesson = {
         },
         {
           id: 'march',
-          image: `${IMG}/march.png`,
+          image: `${IMG}/siffin-hero.png`,
           imageAlt: {
-            ar: 'جيش يسير من العراق نحو الشام',
-            fr: 'Une armée marchant d’Irak vers le Shām',
-            en: 'An army marching from Iraq towards Shām',
+            ar: 'صفّان من الخيام الخالية متقابلان في سهلٍ واسع، ورايات حمراء وخضراء ترفرف تحت سحبٍ كثيفة',
+            fr: 'Deux rangées de tentes vides face à face dans une vaste plaine, des étendards rouges et verts flottant sous de lourds nuages',
+            en: 'Two rows of empty tents facing each other across a wide plain, red and green banners flying under heavy clouds',
           },
           fact: {
             ar: 'اعتبر عليٌّ معاويةَ خارجًا عن اجتماع المسلمين، فسار بجيشه من العراق إلى معاوية.',
@@ -602,8 +630,8 @@ export const jamalSiffin: Lesson = {
       reflection: {
         prompt: {
           ar: 'لماذا تواصل الصراع وعدم طاعة الإمام؟ اختر كلّ ما يدعمه النصّ.',
-          fr: 'Pourquoi le conflit s’est-il poursuivi ? Choisis tout ce que le texte appuie.',
-          en: 'Why did the conflict continue? Choose everything the text supports.',
+          fr: 'Pourquoi le conflit et le refus d’obéir à l’imam se sont-ils poursuivis ? Choisis tout ce que le texte appuie.',
+          en: 'Why did the conflict and the refusal to obey the imam continue? Choose everything the text supports.',
         },
         options: [
           {
@@ -680,26 +708,27 @@ export const jamalSiffin: Lesson = {
         fr: 'Touche chaque étape pour lire la fiche du deuxième affrontement : Ṣiffīn.',
         en: 'Tap each stop to read the file of the second confrontation: Ṣiffīn.',
       },
-      image: `${IMG}/siffin.png`,
+      image: `${IMG}/tahkim.png`,
       imageAlt: {
-        ar: 'مبارزة بين فارسين أمام صفّين من الجند',
-        fr: 'Un duel devant des rangées de soldats',
-        en: 'A duel before ranks of soldiers',
+        ar: 'سيفٌ وترسٌ وخوذتان ملقاةٌ على كثيبٍ من الرمل',
+        fr: 'Une épée, un bouclier et deux casques abandonnés sur une dune',
+        en: 'A sword, a shield and two helmets lying on a sand dune',
       },
       steps: [
         {
           id: 'date',
           period: { ar: 'التاريخ', fr: 'Date', en: 'Date' },
           label: {
-            ar: 'من محرّم 37 هـ إلى 15 صفر 37 هـ',
-            fr: 'De Muḥarram 37 H au 15 Ṣafar 37 H',
-            en: 'From Muḥarram 37 AH to 15 Ṣafar 37 AH',
+            ar: 'كلّ محرّم 37 هـ إلى 15 صفر 37 هـ',
+            fr: 'Tout Muḥarram 37 H jusqu’au 15 Ṣafar 37 H',
+            en: 'All of Muḥarram 37 AH until 15 Ṣafar 37 AH',
           },
           detail: {
-            ar: 'استمرّت المواجهة قرابة شهرين.',
-            fr: 'L’affrontement dura près de deux mois.',
-            en: 'The confrontation lasted nearly two months.',
+            ar: 'التقى جيشُ عليٍّ بجيش الشام في صفّين في شهر محرّم سنة 37 هـ.',
+            fr: 'L’armée de ‘Alī rencontra celle du Shām à Ṣiffīn au mois de Muḥarram 37 H.',
+            en: '‘Alī’s army met the army of Shām at Ṣiffīn in the month of Muḥarram 37 AH.',
           },
+          certainty: 'approximate',
         },
         {
           id: 'place',
@@ -710,9 +739,9 @@ export const jamalSiffin: Lesson = {
             en: 'Ṣiffīn, on the border between Shām and Iraq',
           },
           detail: {
-            ar: 'التقى جيشُ عليٍّ بجيش الشام في مكان يُسمّى صفّين.',
-            fr: 'L’armée de ‘Alī rencontra celle du Shām en un lieu nommé Ṣiffīn.',
-            en: '‘Alī’s army met the army of Shām at a place called Ṣiffīn.',
+            ar: 'سار عليٌّ بجيشه من العراق، فالتقى بجيش الشام في مكانٍ يُسمّى صفّين.',
+            fr: '‘Alī marcha d’Irak avec son armée et rencontra celle du Shām en un lieu nommé Ṣiffīn.',
+            en: '‘Alī marched from Iraq with his army and met the army of Shām at a place called Ṣiffīn.',
           },
         },
         {
@@ -757,6 +786,20 @@ export const jamalSiffin: Lesson = {
             en: 'The numbers differ according to the narrations.',
           },
           certainty: 'approximate',
+        },
+        {
+          id: 'results',
+          period: { ar: 'نتائج المعركة', fr: 'Résultats', en: 'Results' },
+          label: {
+            ar: 'تجنّب معاوية الخسارة',
+            fr: 'Mu‘āwiya évita la défaite',
+            en: 'Mu‘āwiya avoided defeat',
+          },
+          detail: {
+            ar: 'وتفرّق جيشُ عليٍّ ما بين رافضٍ للتحكيم وقابلٍ له، وانسحب الرافضون للتحكيم إلى حروراء وسُمّوا المحكِّمة.',
+            fr: 'L’armée de ‘Alī se divisa entre ceux qui refusaient l’arbitrage et ceux qui l’acceptaient ; ceux qui le refusaient se retirèrent à Ḥarūrā’ et furent appelés al-Muḥakkima.',
+            en: '‘Alī’s army split between those who rejected the arbitration and those who accepted it; those who rejected it withdrew to Ḥarūrā’ and were called al-Muḥakkima.',
+          },
         },
       ],
     },
@@ -892,6 +935,34 @@ export const jamalSiffin: Lesson = {
           },
         },
         {
+          id: 'kufa',
+          slotId: 'accepted',
+          label: {
+            ar: 'دخلوا مع عليٍّ إلى عاصمته الكوفة',
+            fr: 'Ils entrèrent avec ‘Alī dans sa capitale, Kūfa',
+            en: 'They entered ‘Alī’s capital, Kūfa, with him',
+          },
+          hint: {
+            ar: '«فمن قَبِل توقّف القتال دخل مع عليٍّ إلى عاصمته الكوفة».',
+            fr: '« Ceux qui acceptèrent l’arrêt des combats entrèrent avec ‘Alī dans sa capitale, Kūfa. »',
+            en: '“Those who accepted the halt entered ‘Alī’s capital, Kūfa, with him.”',
+          },
+        },
+        {
+          id: 'baghi',
+          slotId: 'refused',
+          label: {
+            ar: 'لم يخرجوا إلّا لقتال من خاصم صفّ المسلمين، ومعاوية باغٍ بدليل آية ﴿وَإِن طَائِفَتَانِ﴾',
+            fr: 'Ils n’étaient sortis que pour combattre ceux qui s’opposaient au rang des musulmans ; Mu‘āwiya était un agresseur (bāghī), selon le verset « Si deux groupes… »',
+            en: 'They had set out only to fight whoever opposed the ranks of the Muslims; Mu‘āwiya was an aggressor (bāghī), by the verse “If two parties…”',
+          },
+          hint: {
+            ar: 'هذه حجّة الفريق الرافض لوقف القتال.',
+            fr: 'C’est l’argument du groupe qui refusa l’arrêt des combats.',
+            en: 'This was the argument of the group that refused to stop the fighting.',
+          },
+        },
+        {
           id: 'trick',
           slotId: 'refused',
           label: {
@@ -923,9 +994,9 @@ export const jamalSiffin: Lesson = {
           id: 'harura',
           slotId: 'refused',
           label: {
-            ar: 'انسحبوا إلى حروراء وسُمّوا المحكِّمة',
-            fr: 'Ils se retirèrent à Ḥarūrā’ et furent appelés al-Muḥakkima',
-            en: 'They withdrew to Ḥarūrā’ and were called al-Muḥakkima',
+            ar: 'انسحبوا إلى حروراء وسُمّوا الحروريّة أو المحكِّمة',
+            fr: 'Ils se retirèrent à Ḥarūrā’ et furent appelés al-Ḥarūriyya ou al-Muḥakkima',
+            en: 'They withdrew to Ḥarūrā’ and were called al-Ḥarūriyya or al-Muḥakkima',
           },
           hint: {
             ar: 'حروراء منطقةٌ لا تبعد كثيرًا عن الكوفة بالعراق.',
@@ -946,15 +1017,15 @@ export const jamalSiffin: Lesson = {
         en: 'The arbitration at Dūmat al-Jandal',
       },
       intro: {
-        ar: 'في شهر رمضان 37 هـ اجتمع الحكَمان. اضغط على النقاط لتكتشف ما جرى.',
-        fr: 'En Ramaḍān 37 H, les deux arbitres se réunirent. Touche les points pour découvrir ce qui s’est passé.',
-        en: 'In Ramaḍān 37 AH the two arbiters met. Tap the points to discover what happened.',
+        ar: 'قبل عليٌّ التحكيم وأرسل ممثّلًا عنه، وأرسل معاوية ممثّلًا أيضًا، وتشاورا على أن يكون التحكيم في شهر رمضان؛ فانتظر المسلمون إلى شهر رمضان 37 هـ حين اجتمع الحكَمان. اضغط على النقاط لتكتشف ما جرى.',
+        fr: '‘Alī accepta l’arbitrage et envoya un représentant, Mu‘āwiya aussi ; ils convinrent que l’arbitrage aurait lieu en Ramaḍān. Les musulmans attendirent donc Ramaḍān 37 H, quand les deux arbitres se réunirent. Touche les points pour découvrir ce qui s’est passé.',
+        en: '‘Alī accepted the arbitration and sent a representative, and so did Mu‘āwiya; they agreed the arbitration would take place in Ramaḍān. So the Muslims waited until Ramaḍān 37 AH, when the two arbiters met. Tap the points to discover what happened.',
       },
       image: `${IMG}/tahkim.png`,
       imageAlt: {
-        ar: 'درعٌ ورمحٌ وسيفٌ موضوعة على الأرض بعد توقّف القتال',
-        fr: 'Un bouclier, une lance et une épée posés au sol après l’arrêt des combats',
-        en: 'A shield, spear and sword laid on the ground after the fighting stopped',
+        ar: 'سيفٌ وترسٌ وخوذتان ملقاةٌ على كثيبٍ من الرمل',
+        fr: 'Une épée, un bouclier et deux casques abandonnés sur une dune',
+        en: 'A sword, a shield and two helmets lying on a sand dune',
       },
       hotspots: [
         {
@@ -996,9 +1067,20 @@ export const jamalSiffin: Lesson = {
           y: 82,
           label: { ar: 'المشاورات', fr: 'Les consultations', en: 'The consultations' },
           description: {
-            ar: 'أربعة أشهر من المشاورات، اتّفق الطرفان فيها على عزل عليٍّ ومعاوية معًا.',
-            fr: 'Quatre mois de consultations : les deux parties convinrent de destituer ‘Alī et Mu‘āwiya.',
-            en: 'Four months of consultations, in which both sides agreed to depose both ‘Alī and Mu‘āwiya.',
+            ar: 'أربعة أشهر من المشاورات، اتّفق الطرفان فيها على أن ينزعا صاحبَيهما من الإمارة، أي عزل عليٍّ ومعاوية معًا، ليُختار خليفةٌ جديد على المسلمين.',
+            fr: 'Quatre mois de consultations : les deux parties convinrent de retirer le pouvoir à leurs deux chefs — destituer ‘Alī et Mu‘āwiya — afin qu’un nouveau calife soit choisi pour les musulmans.',
+            en: 'Four months of consultations, in which both sides agreed to remove their two leaders from command — deposing both ‘Alī and Mu‘āwiya — so that a new caliph could be chosen for the Muslims.',
+          },
+        },
+        {
+          id: 'speech',
+          x: 18,
+          y: 38,
+          label: { ar: 'كلمة أبي موسى', fr: 'Le discours d’Abū Mūsā', en: 'Abū Mūsā’s speech' },
+          description: {
+            ar: 'طلب عمرو بن العاص من أبي موسى أن يبدأ الحديث، فتقدّم أبو موسى وقال: «أيّها الناس، إنّا نظرنا في أمر هذه الأمّة فلم نرَ أمرًا أصلحَ لها ولا ألمَّ لشعثها من رأيٍ اتّفقت أنا وعمرو عليه، وهو أن نخلع عليًّا ومعاوية، ويرجع الأمر شورى بين المسلمين».',
+            fr: '‘Amr ibn al-‘Āṣ demanda à Abū Mūsā de parler en premier. Abū Mūsā s’avança et dit : « Ô gens, nous avons examiné l’affaire de cette communauté et n’avons rien vu de plus juste pour elle, ni de plus apte à la réunir, qu’un avis sur lequel ‘Amr et moi nous sommes accordés : destituer ‘Alī et Mu‘āwiya, et que l’affaire revienne à la concertation entre les musulmans. »',
+            en: '‘Amr ibn al-‘Āṣ asked Abū Mūsā to speak first. Abū Mūsā stepped forward and said: “O people, we have looked into the affair of this community and found nothing better for it, nor more able to reunite it, than a view ‘Amr and I agreed on: that we depose ‘Alī and Mu‘āwiya, and the matter return to consultation among the Muslims.”',
           },
         },
         {
@@ -1007,9 +1089,20 @@ export const jamalSiffin: Lesson = {
           y: 86,
           label: { ar: 'إعلان الاتّفاق', fr: 'L’annonce', en: 'The announcement' },
           description: {
-            ar: 'أعلن أبو موسى الأشعري عزلَ عليٍّ ومعاوية، ثم أعلن عمرٌو عزلَ عليٍّ وإثباتَ معاوية.',
-            fr: 'Abū Mūsā annonça la destitution de ‘Alī et de Mu‘āwiya ; puis ‘Amr annonça la destitution de ‘Alī et le maintien de Mu‘āwiya.',
-            en: 'Abū Mūsā announced the deposing of both ‘Alī and Mu‘āwiya; then ‘Amr announced the deposing of ‘Alī and the confirming of Mu‘āwiya.',
+            ar: 'أعلن أبو موسى الأشعري عزلَ عليٍّ ومعاوية، ثم قام عمرٌو فقال: «إنّه قد خلع صاحبه، وإنّي خلعته كما خلعه، وأثبتُّ صاحبي، وهو أحقّ الناس بمقامه» (أي بالخلافة).',
+            fr: 'Abū Mūsā annonça la destitution de ‘Alī et de Mu‘āwiya ; puis ‘Amr se leva et dit : « Il a destitué son homme ; je le destitue comme il l’a fait, et je maintiens le mien, qui est le plus digne de sa place » (c’est-à-dire du califat).',
+            en: 'Abū Mūsā announced the deposing of both ‘Alī and Mu‘āwiya; then ‘Amr stood and said: “He has deposed his man, and I depose him as he did, and I confirm my own man, who is the most entitled to his place” (that is, the caliphate).',
+          },
+        },
+        {
+          id: 'outcome',
+          x: 82,
+          y: 32,
+          label: { ar: 'النتيجة', fr: 'Le résultat', en: 'The outcome' },
+          description: {
+            ar: 'ظهر أنّ الذين يحاربون عليًّا كانوا يبحثون عن الإمارة، فتفرّقت جموع المسلمين وافترقت، وكانت نتيجة التحكيم: العودة إلى السيف بعد هذا التصرّف.',
+            fr: 'Il apparut que ceux qui combattaient ‘Alī cherchaient le pouvoir ; les rangs des musulmans se dispersèrent et se divisèrent, et le résultat de l’arbitrage fut le retour à l’épée après cet acte.',
+            en: 'It became clear that those fighting ‘Alī were seeking power; the Muslims’ ranks scattered and divided, and the result of the arbitration was a return to the sword after this act.',
           },
         },
       ],
@@ -1063,6 +1156,11 @@ export const jamalSiffin: Lesson = {
               id: 'manhaj',
               left: { ar: 'المنهج', fr: 'Al-manhaj', en: 'Al-manhaj' },
               right: { ar: 'الطريق الصحيحة الواضحة', fr: 'La voie droite et claire', en: 'The clear, correct path' },
+            },
+            {
+              id: 'shaath',
+              left: { ar: 'ألمّ لشعثها', fr: 'Alamm li-sha‘athihā', en: 'Alamm li-sha‘athihā' },
+              right: { ar: 'يجمع ما تفرّق من جمعكم', fr: 'Ce qui rassemble ce qui s’est dispersé de votre groupe', en: 'What gathers what has scattered of your group' },
             },
           ],
           explanation: {
@@ -1185,6 +1283,47 @@ export const jamalSiffin: Lesson = {
             en: '‘Amr asked Abū Mūsā to speak first; he deposed them both, then ‘Amr confirmed his own man. The result of the arbitration: a return to the sword.',
           },
         },
+        {
+          id: 'q-reject',
+          type: 'mcq',
+          question: {
+            ar: 'لماذا لن يقبل عليٌّ بتحكيم الحكمين؟',
+            fr: 'Pourquoi ‘Alī n’acceptera-t-il pas le verdict des deux arbitres ?',
+            en: 'Why would ‘Alī not accept the two arbiters’ verdict?',
+          },
+          options: [
+            {
+              id: 'broken',
+              label: {
+                ar: 'لأنّ عمرًا خالف ما اتّفقا عليه، فعزل عليًّا وأثبت معاوية',
+                fr: 'Parce que ‘Amr trahit ce qui avait été convenu : il destitua ‘Alī et maintint Mu‘āwiya',
+                en: 'Because ‘Amr broke what they had agreed: he deposed ‘Alī and confirmed Mu‘āwiya',
+              },
+            },
+            {
+              id: 'abumusa',
+              label: {
+                ar: 'لأنّ أبا موسى أثبت معاوية خليفةً',
+                fr: 'Parce qu’Abū Mūsā confirma Mu‘āwiya comme calife',
+                en: 'Because Abū Mūsā confirmed Mu‘āwiya as caliph',
+              },
+            },
+            {
+              id: 'place',
+              label: {
+                ar: 'لأنّ الحكمين اجتمعا في الكوفة',
+                fr: 'Parce que les arbitres se réunirent à Kūfa',
+                en: 'Because the arbiters met in Kūfa',
+              },
+            },
+          ],
+          correctId: 'broken',
+          explanation: {
+            ar: 'اتّفق الحكمان على عزل عليٍّ ومعاوية معًا وردّ الأمر شورى، فخلعهما أبو موسى، لكنّ عمرًا خلع عليًّا وأثبت معاوية؛ فكانت خدعة.',
+            fr: 'Les arbitres s’étaient accordés pour destituer ‘Alī et Mu‘āwiya et rendre l’affaire à la concertation ; Abū Mūsā les destitua tous deux, mais ‘Amr destitua ‘Alī et maintint Mu‘āwiya : ce fut une ruse.',
+            en: 'The arbiters had agreed to depose both ‘Alī and Mu‘āwiya and return the matter to consultation; Abū Mūsā deposed both, but ‘Amr deposed ‘Alī and confirmed Mu‘āwiya — it was a ruse.',
+          },
+        },
       ],
     },
 
@@ -1252,27 +1391,27 @@ export const jamalSiffin: Lesson = {
           id: 'islah',
           value: { ar: 'الإصلاح بين المؤمنين', fr: 'La réconciliation entre croyants', en: 'Reconciliation between believers' },
           evidence: {
-            ar: '﴿وَإِن طَائِفَتَانِ مِنَ الْمُؤْمِنِينَ اقْتَتَلُوا فَأَصْلِحُوا بَيْنَهُمَا﴾ [الحجرات: 9].',
-            fr: '« Si deux groupes de croyants se combattent, réconciliez-les » [al-Ḥujurāt : 9, traduction du sens].',
-            en: '“If two parties of the believers fight, make peace between them” [al-Ḥujurāt: 9, translation of the meaning].',
+            ar: '﴿وَإِن طَائِفَتَانِ مِنَ الْمُؤْمِنِينَ اقْتَتَلُوا فَأَصْلِحُوا بَيْنَهُمَا ۖ فَإِن بَغَتْ إِحْدَاهُمَا عَلَى الْأُخْرَىٰ فَقَاتِلُوا الَّتِي تَبْغِي حَتَّىٰ تَفِيءَ إِلَىٰ أَمْرِ اللَّهِ ۚ فَإِن فَاءَتْ فَأَصْلِحُوا بَيْنَهُمَا بِالْعَدْلِ وَأَقْسِطُوا ۖ إِنَّ اللَّهَ يُحِبُّ الْمُقْسِطِينَ﴾ [الحجرات: 9].',
+            fr: '« Si deux groupes de croyants se combattent, réconciliez-les. Si l’un d’eux agresse l’autre, combattez celui qui agresse jusqu’à ce qu’il revienne à l’ordre de Dieu. S’il revient, réconciliez-les avec justice et soyez équitables : Dieu aime ceux qui sont équitables » [al-Ḥujurāt : 9, traduction du sens].',
+            en: '“If two parties of the believers fight, make peace between them. If one of them transgresses against the other, fight the one that transgresses until it returns to the command of God. If it returns, make peace between them with justice and be equitable: God loves the equitable” [al-Ḥujurāt: 9, translation of the meaning].',
           },
         },
         {
           id: 'brotherhood',
           value: { ar: 'الأخوّة', fr: 'La fraternité', en: 'Brotherhood' },
           evidence: {
-            ar: '﴿إِنَّمَا الْمُؤْمِنُونَ إِخْوَةٌ فَأَصْلِحُوا بَيْنَ أَخَوَيْكُمْ﴾ [الحجرات: 10].',
-            fr: '« Les croyants ne sont que des frères : réconciliez vos frères » [al-Ḥujurāt : 10, traduction du sens].',
-            en: '“The believers are but brothers, so make peace between your brothers” [al-Ḥujurāt: 10, translation of the meaning].',
+            ar: '﴿إِنَّمَا الْمُؤْمِنُونَ إِخْوَةٌ فَأَصْلِحُوا بَيْنَ أَخَوَيْكُمْ ۚ وَاتَّقُوا اللَّهَ لَعَلَّكُمْ تُرْحَمُونَ﴾ [الحجرات: 10].',
+            fr: '« Les croyants ne sont que des frères : réconciliez vos frères et craignez Dieu, afin qu’il vous soit fait miséricorde » [al-Ḥujurāt : 10, traduction du sens].',
+            en: '“The believers are but brothers, so make peace between your brothers and fear God, that you may receive mercy” [al-Ḥujurāt: 10, translation of the meaning].',
           },
         },
         {
           id: 'gods-command',
           value: { ar: 'تقديم أمر الله على رأي البشر', fr: 'L’ordre de Dieu avant l’avis des hommes', en: 'God’s command above human opinion' },
           evidence: {
-            ar: 'أمرُ الله تعالى وعدلُه أكبرُ من رأي البشر ﴿وَمَا كَانَ لِمُؤْمِنٍ وَلَا مُؤْمِنَةٍ إِذَا قَضَى اللَّهُ وَرَسُولُهُ أَمْرًا أَن يَكُونَ لَهُمُ الْخِيَرَةُ مِنْ أَمْرِهِمْ﴾ [الأحزاب: 36].',
-            fr: 'L’ordre et la justice de Dieu dépassent l’avis humain [al-Aḥzāb : 36].',
-            en: 'God’s command and justice are greater than human opinion [al-Aḥzāb: 36].',
+            ar: 'أمرُ الله تعالى وعدلُه أكبرُ من رأي البشر ﴿وَمَا كَانَ لِمُؤْمِنٍ وَلَا مُؤْمِنَةٍ إِذَا قَضَى اللَّهُ وَرَسُولُهُ أَمْرًا أَن يَكُونَ لَهُمُ الْخِيَرَةُ مِنْ أَمْرِهِمْ ۗ وَمَن يَعْصِ اللَّهَ وَرَسُولَهُ فَقَدْ ضَلَّ ضَلَالًا مُّبِينًا﴾ [الأحزاب: 36].',
+            fr: 'L’ordre et la justice de Dieu dépassent l’avis humain : « Il n’appartient pas à un croyant ni à une croyante, lorsque Dieu et Son Messager ﷺ ont décidé d’une chose, d’avoir encore le choix dans leur affaire. Quiconque désobéit à Dieu et à Son Messager s’est égaré d’un égarement évident » [al-Aḥzāb : 36, traduction du sens].',
+            en: 'God’s command and justice are greater than human opinion: “It is not for a believing man or a believing woman, when God and His Messenger ﷺ have decided a matter, to have any choice in their affair. Whoever disobeys God and His Messenger has clearly gone astray” [al-Aḥzāb: 36, translation of the meaning].',
           },
         },
         {

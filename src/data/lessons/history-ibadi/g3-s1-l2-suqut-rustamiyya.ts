@@ -1,20 +1,18 @@
 import type { Lesson } from '../../types'
 
-// Source: Ibadite History textbook Grade 3 (Other ressources/Ibadite_History_S5.pdf), pages 14–20 (slides 1–7).
-//   Slide 2 — الإشكالية: اختباء أئمة الإباضية فرارًا من فاطمة، سقوط الدولة الرستمية بعد حوالي 136 سنة، لم يكلّف العبيديون جهدًا كبيرًا للدخول فاتحين.
-//   Slide 3/4 — واقعة مانو (283هـ): أضعفت الدولة الرستمية لأن قوّتها العسكرية والدفاعية كانت مستمدّة من نفوسة؛ قُتل الكثير منهم (400 عالِم)؛
-//     سبب المعركة: الجيش الأغلبي خرج لقتال ابن طولون في مصر، فاعترضته قوة من نفوسة وقبائل أخرى لمنعه من المرور عبر أراضيها، فوقعت معركة خسرتها نفوسة.
-//     لم تُطِع نفوسة نصيحة حكّامها بعدم اعتراض الأغلبيين، خاصّة وأنّ قبائل تاهرت لم تكن على وفاق وقد صَعُب اجتماعها.
-//   Slide 5/6 — مقتل الإمام أبي حاتم: استطاع أبو حاتم يوسف أن يقضي على كثير من الفساد الذي أصاب البلاد في عهده، إلا أنه لم يُنْه فساد بعض أفراد أسرته وأطماعهم،
-//     حيث نافسه عمّه يعقوب بن أفلح على السلطة، وحَكَم إلى جانبه أربع سنوات. ولم يكَد ينتهي هذا النزاع حتى عاداه أخوه اليقظان من جهة أخرى.
-//     وانتهى بقتل أبناء اليقظان بن أبي اليقظان لعمّهم الإمام أبي حاتم سنة 294هـ، وتولّى اليقظان الحكم فقاطعه الناس واعتبروا حكمه غصبًا ولم ينصروه
-//     ولم يثقوا إليه وقضى عامين في خوف وقلق.
-//   Slide 7 — العبيديون في تاهرت: طلبت دوسر ابنة الإمام المقتول من أبي عبد الله الشيعي، الذي خرج يدعو الناس إلى بيعة إمامه عبيد الله، وقد جمع عدّة قبائل
-//     تبحث عن الرئاسة، واللحّت عليه أن يأتي بجيشه إلى تاهرت ويثأر لأبيها، فاستغلّ جيشه هو وجيشه فرصة الصراع وتشتّت قبائل المنطقة ودخلوا المدينة دون مقاومة إلا من
-//     فرّ من فرّ منهم، وقتل العائلة الرستمية إلا مَن فرّ منهم، وأحرقوا مكتبة الرستميين، وسرقوا المدينة ونهبوها، وسقطت بذلك الدولة الرستمية.
-//     فرّ من فرّ من عائلة الرستميين إلى وارجلان وإفريقية، متمسّكة بعلمائها وفقهائها وقضاتها كأئمة الاستقامة، وبقيت قبائل أهل الاستقامة في المغرب الأوسط
-//     وإفريقية متمسّكة بعلمائها وفقهائها، بينما واصل الجيش العبيدي سعيه لإسقاط دول المغرب وأئمتها.
-// Every fact below is taken from those slides; nothing is added from outside them.
+// Source: Other ressources/Ibadite_History_S5.pdf, pages 14–20 (Lesson 29 «سقوط الدولة الرستمية», slides 1–7):
+//   slide 2  — الإشكالية: اختباء أئمة الإباضية (the slide's «فاطمة» is read as the Fatimids/Ubaydids), سقوط الدولة
+//              بعد حوالي 136 سنة، لم يكلّف العبيديين جهدًا كبيرًا + map «الدولة الرستمية في عهدها الأخير»
+//              (Mānū near Qābis; «في إيكجان نشأت وترعرعت الدعوة الشيعية العبيدية»).
+//   slide 3/4 — واقعة مانو (283هـ): القوة العسكرية مستمدّة من نفوسة، قُتل الكثير ومنهم 400 عالم، الجيش الأغلبي
+//              خرج لقتال «ابن طولون» في مصر (in 283 AH Egypt was ruled by Ibn Ṭūlūn's descendants, so we say
+//              "the Tulunids"), نفوسة لم تُطِع ولاتها، قبائل تاهرت لم تكن على وفاق.
+//   slide 5/6 — مقتل الإمام أبي حاتم يوسف: الفساد في عهده، العمّ يعقوب بن أفلح (4 سنوات)، الأخ اليقظان،
+//              قتله أبناء اليقظان بن أبي اليقظان، تولّي اليقظان الحكم سنة 294هـ، عامان في خوف وقلق.
+//   slide 7  — العبيديون في تاهرت: دوسر وأبو عبد الله الشيعي، الدخول دون مقاومة، قتل العائلة الرستمية إلا من فرّ،
+//              إحراق «مكتبة المعصومة»، النهب، الفرار إلى وارجلان والتخفّي فيها، أهل الاستقامة «كاتمةً أمرها»،
+//              مواصلة الجيش العبيدي إسقاط دول المغرب وأئمتها.
+// Narrative wording, activity prompts and distractors are editorial; facts come from the slides above.
 
 const IMG = '/images/lessons/suqut-rustamiyya'
 
@@ -28,9 +26,9 @@ export const suqutRustamiyya: Lesson = {
   estimatedMinutes: 35,
   cover: `${IMG}/hero.png`,
   coverAlt: {
-    ar: 'تاهرت تحترق عند الغسق، جيشٌ يقترب من أسوار المدينة وسحبُ دخانٍ تتصاعد فوق القصور',
-    fr: 'Tāhert en flammes au crépuscule, une armée approchant des remparts, des volutes de fumée au-dessus des palais',
-    en: 'Tāhert burning at dusk, an army approaching the city walls, smoke rising above the palaces',
+    ar: 'تاهرت تحترق عند الغسق، جيشٌ يقترب من أسوار المدينة وسحبُ دخانٍ تتصاعد فوق المدينة',
+    fr: 'Tāhert en flammes au crépuscule, une armée approchant des remparts, des volutes de fumée au-dessus de la ville',
+    en: 'Tāhert burning at dusk, an army approaching the city walls, smoke rising above the city',
   },
   title: {
     ar: 'سقوط الدولة الرستمية',
@@ -38,9 +36,9 @@ export const suqutRustamiyya: Lesson = {
     en: 'The Fall of the Rustamid State',
   },
   description: {
-    ar: 'بعد 136 سنة من الاستقامة والازدهار، سقطت تاهرت. اكتشف كيف مهّدت هزيمة نفوسة وصراع الإخوة على السلطة الطريق أمام العبيديين ليدخلوا العاصمة الرستمية دون مقاومة تُذكر.',
-    fr: 'Après 136 années d’intégrité et de prospérité, Tāhert tomba. Découvre comment la défaite de Nafūsa et la lutte fratricide pour le pouvoir ouvrirent la voie aux Ubaydides pour entrer dans la capitale rustamide presque sans résistance.',
-    en: 'After 136 years of integrity and prosperity, Tāhert fell. Discover how the defeat of Nafusa and the siblings’ struggle for power opened the way for the Ubaydids to enter the Rustamid capital with barely any resistance.',
+    ar: 'بعد نحو 136 سنة من النضال والاستقرار، سقطت تاهرت. اكتشف كيف مهّدت هزيمة نفوسة والصراع العائلي على السلطة الطريق أمام العبيديين ليدخلوا العاصمة الرستمية دون مقاومة.',
+    fr: 'Après environ 136 années de lutte et de stabilité, Tāhert tomba. Découvre comment la défaite de Nafūsa et la lutte familiale pour le pouvoir ouvrirent la voie aux Ubaydides pour entrer dans la capitale rustamide sans résistance.',
+    en: 'After about 136 years of struggle and stability, Tāhert fell. Discover how the defeat of Nafusa and the family struggle for power opened the way for the Ubaydids to enter the Rustamid capital without resistance.',
   },
 
   sections: [
@@ -50,9 +48,9 @@ export const suqutRustamiyya: Lesson = {
       id: 'hero',
       image: `${IMG}/hero.png`,
       imageAlt: {
-        ar: 'تاهرت تحترق عند الغسق، جيشٌ يقترب من أسوار المدينة وسحبُ دخانٍ تتصاعد فوق القصور',
-        fr: 'Tāhert en flammes au crépuscule, une armée approchant des remparts, des volutes de fumée au-dessus des palais',
-        en: 'Tāhert burning at dusk, an army approaching the city walls, smoke rising above the palaces',
+        ar: 'تاهرت تحترق عند الغسق، جيشٌ يقترب من أسوار المدينة وسحبُ دخانٍ تتصاعد فوق المدينة',
+        fr: 'Tāhert en flammes au crépuscule, une armée approchant des remparts, des volutes de fumée au-dessus de la ville',
+        en: 'Tāhert burning at dusk, an army approaching the city walls, smoke rising above the city',
       },
       title: {
         ar: 'إشكالية الدرس',
@@ -60,14 +58,14 @@ export const suqutRustamiyya: Lesson = {
         en: 'The lesson’s question',
       },
       question: {
-        ar: 'كيف سقطت دولةٌ صمدت 136 سنة دون أن يكلّف ذلك العبيديين جهدًا كبيرًا؟',
-        fr: 'Comment un État qui tint bon pendant 136 ans put-il tomber sans grand effort de la part des Ubaydides ?',
-        en: 'How did a state that stood for 136 years fall without costing the Ubaydids much effort?',
+        ar: 'كيف سقطت دولةٌ صمدت نحو 136 سنة دون أن يكلّف ذلك العبيديين جهدًا كبيرًا؟',
+        fr: 'Comment un État qui tint bon pendant environ 136 ans put-il tomber sans grand effort de la part des Ubaydides ?',
+        en: 'How did a state that stood for about 136 years fall without costing the Ubaydids much effort?',
       },
       intro: {
-        ar: 'اختبأ أئمة الإباضية فرارًا من فاطمة، وسقطت الدولة الرستمية بعد حوالي 136 سنة من النضال والاستقرار في المغرب، ولم يكلّف العبيديون جهدًا كبيرًا للدخول إلى تاهرت فاتحين. فما العوامل التي مهّدت لهذا السقوط؟',
-        fr: 'Les imams ibadites se cachèrent pour fuir Fāṭima, et l’État rustamide tomba après environ 136 années de lutte et de stabilité au Maghreb ; les Ubaydides n’eurent pas besoin d’un grand effort pour entrer à Tāhert en conquérants. Quels facteurs préparèrent cette chute ?',
-        en: 'The Ibadi imams went into hiding, fleeing Fatima, and the Rustamid state fell after about 136 years of struggle and stability in the Maghreb; the Ubaydids did not need much effort to enter Tahert as conquerors. What factors paved the way for this fall?',
+        ar: 'اختبأ أئمة الإباضية فرارًا من الفاطميين (العبيديين)، وسقطت الدولة الرستمية بعد حوالي 136 سنة من النضال والاستقرار في المغرب، ولم يكلّف العبيديون جهدًا كبيرًا للدخول إلى تاهرت فاتحين. فما العوامل التي مهّدت لهذا السقوط؟',
+        fr: 'Les imams ibadites se cachèrent pour fuir les Fatimides (Ubaydides), et l’État rustamide tomba après environ 136 années de lutte et de stabilité au Maghreb ; les Ubaydides n’eurent pas besoin d’un grand effort pour entrer à Tāhert en conquérants. Quels facteurs préparèrent cette chute ?',
+        en: 'The Ibadi imams went into hiding, fleeing the Fatimids (Ubaydids), and the Rustamid state fell after about 136 years of struggle and stability in the Maghreb; the Ubaydids did not need much effort to enter Tāhert as conquerors. What factors paved the way for this fall?',
       },
     },
 
@@ -100,7 +98,7 @@ export const suqutRustamiyya: Lesson = {
         },
         {
           id: 'm3',
-          question: { ar: 'كيف دخل العبيديون تاهرت دون مقاومة؟', fr: 'Comment les Ubaydides entrèrent-ils à Tāhert sans résistance ?', en: 'How did the Ubaydids enter Tahert without resistance?' },
+          question: { ar: 'كيف دخل العبيديون تاهرت دون مقاومة؟', fr: 'Comment les Ubaydides entrèrent-ils à Tāhert sans résistance ?', en: 'How did the Ubaydids enter Tāhert without resistance?' },
           target: 'reading-fall-of-tahert',
           teaser: { ar: 'ابنةٌ تطلب الثأر، وداعيةٌ يجمع الجيوش.', fr: 'Une fille qui demande vengeance, un prédicateur qui rassemble des armées.', en: 'A daughter seeking vengeance, a preacher gathering armies.' },
         },
@@ -123,9 +121,9 @@ export const suqutRustamiyya: Lesson = {
       },
       image: `${IMG}/battle-of-mano.png`,
       imageAlt: {
-        ar: 'مواجهةٌ بين جيشين في أرضٍ جبلية، فرسانٌ يتصادمون تحت غبارٍ كثيف',
-        fr: 'Un affrontement entre deux armées sur un terrain montagneux, des cavaliers s’entrechoquant sous une poussière épaisse',
-        en: 'A clash between two armies on mountainous terrain, horsemen colliding under thick dust',
+        ar: 'فرسانٌ مسلّحون بالرماح يندفعون على منحدرٍ جبليّ تحت غبارٍ كثيف',
+        fr: 'Des cavaliers armés de lances dévalant une pente montagneuse sous une poussière épaisse',
+        en: 'Horsemen armed with spears charging down a mountain slope under thick dust',
       },
       paragraphs: [
         {
@@ -136,9 +134,9 @@ export const suqutRustamiyya: Lesson = {
             en: 'An army on its way to Egypt',
           },
           text: {
-            ar: 'في سنة 283هـ، لم يكن المغرب الأوسط هدف الجيش الأغلبيّ. كان هذا الجيش قد خرج من إفريقية قاصدًا مصر، ليقاتل هناك ابن طولون. لم يكن في نيّته التوقّف عند تاهرت، ولا التعرّض لأهل نفوسة الذين يسكنون على مقربةٍ من دربه. لكنّ الطريق التي يسلكها جيشٌ ضخمٌ لا تمرّ دون أن يشعر بها الجميع.',
-            fr: 'En l’an 283 de l’Hégire, le Maghreb central n’était pas la cible de l’armée aghlabide. Cette armée était partie d’Ifrīqiya en direction de l’Égypte, pour y combattre Ibn Ṭūlūn. Elle n’avait nulle intention de s’arrêter à Tāhert, ni de s’en prendre aux gens de Nafūsa qui habitaient non loin de sa route. Mais le chemin que suit une armée aussi nombreuse ne passe jamais inaperçu.',
-            en: 'In the year 283 AH, the central Maghreb was not the target of the Aghlabid army. This army had set out from Ifriqiya heading for Egypt, to fight Ibn Tulun there. It had no intention of stopping at Tahert, nor of confronting the people of Nafusa who lived not far from its path. But the road a vast army travels never goes unnoticed by everyone around it.',
+            ar: 'في سنة 283هـ، خرج الجيش الأغلبيّ من إفريقية قاصدًا مصر، يريد الاشتباك مع الطولونيين (أبناء ابن طولون) هناك. وكان طريقه يمرّ عبر أراضي نفوسة وقبائل أخرى، قرب موضعٍ يُدعى مانو بجوار قابس.',
+            fr: 'En l’an 283 de l’Hégire, l’armée aghlabide partit d’Ifrīqiya en direction de l’Égypte, pour y affronter les Toulounides (les descendants d’Ibn Ṭūlūn). Sa route traversait les terres de Nafūsa et d’autres tribus, près d’un lieu appelé Mānū, à côté de Qābis.',
+            en: 'In the year 283 AH, the Aghlabid army set out from Ifriqiya heading for Egypt, to fight the Tulunids (the descendants of Ibn Tulun) there. Its route crossed the lands of Nafusa and other tribes, near a place called Mano, close to Gabès.',
           },
         },
         {
@@ -150,7 +148,7 @@ export const suqutRustamiyya: Lesson = {
           },
           text: {
             ar: 'رأى بعض قبائل نفوسة جيشًا أجنبيًّا يعبر قريبًا من أراضيهم، فاجتمعت كلمتهم على اعتراضه، حتى لا يمرّ عبر ديارهم. وكان حكّام نفوسة قد نصحوهم بألّا يتعرّضوا لهذا الجيش الكبير، فالمعركة معه خطرٌ لا يُستهان به. لكنّ نفوسة لم تُطِع هذه النصيحة. اجتمعت قوّةٌ منها ومن قبائل أخرى، وخرجت لتقف في وجه الجيش الأغلبيّ، واثقةً من قدرتها على منعه من المرور.',
-            fr: 'Certaines tribus de Nafūsa virent une armée étrangère traverser non loin de leurs terres, et s’accordèrent à l’intercepter, pour qu’elle ne passe pas par leurs contrées. Or les dirigeants de Nafūsa les avaient conseillés de ne pas s’en prendre à cette grande armée, car l’affronter était un danger qu’il ne fallait pas sous-estimer. Mais Nafūsa n’obéit pas à ce conseil. Une force réunissant des hommes de Nafūsa et d’autres tribus se leva pour barrer la route à l’armée aghlabide, confiante en sa capacité à l’empêcher de passer.',
+            fr: 'Certaines tribus de Nafūsa virent une armée étrangère traverser non loin de leurs terres, et s’accordèrent à l’intercepter, pour qu’elle ne passe pas par leurs contrées. Or les dirigeants de Nafūsa leur avaient conseillé de ne pas s’en prendre à cette grande armée, car l’affronter était un danger qu’il ne fallait pas sous-estimer. Mais Nafūsa n’obéit pas à ce conseil. Une force réunissant des hommes de Nafūsa et d’autres tribus se leva pour barrer la route à l’armée aghlabide, confiante en sa capacité à l’empêcher de passer.',
             en: 'Some of the Nafusa tribes saw a foreign army crossing near their lands, and agreed together to intercept it, so that it would not pass through their territory. Yet the rulers of Nafusa had advised them not to confront this large army, for fighting it was a danger not to be underestimated. But Nafusa did not heed this advice. A force gathering men from Nafusa and other tribes rose up to block the Aghlabid army’s path, confident in its ability to stop it from passing.',
           },
         },
@@ -162,9 +160,9 @@ export const suqutRustamiyya: Lesson = {
             en: 'The battle and the defeat',
           },
           text: {
-            ar: 'اصطدم الجيشان، ونشبت معركةٌ كبيرة. لم تكن النتيجة في صالح نفوسة؛ فقد خسرت المعركة خسارةً فادحة، وقُتل منها عددٌ كبير، من بينهم أربعمائة عالِمٍ من علمائها. كانت هذه الخسارة أثقل من أن تُقاس بعدد القتلى وحده، لأنّ نفوسة لم تكن مجرّد قبيلةٍ من قبائل المغرب الأوسط، بل كانت العمود الذي تستند إليه الدولة الرستمية في دفاعها عن نفسها.',
-            fr: 'Les deux armées s’affrontèrent, et une grande bataille éclata. L’issue ne fut pas favorable à Nafūsa : elle subit une lourde défaite, et un grand nombre des siens furent tués, dont quatre cents de ses savants. Cette perte pesait plus lourd que le seul nombre des morts, car Nafūsa n’était pas une simple tribu parmi celles du Maghreb central, mais le pilier sur lequel s’appuyait l’État rustamide pour assurer sa propre défense.',
-            en: 'The two armies clashed, and a great battle broke out. The outcome did not favor Nafusa: it suffered a heavy defeat, and a large number of its people were killed, including four hundred of its scholars. This loss weighed more heavily than the death toll alone, because Nafusa was not merely one tribe among those of the central Maghreb, but the pillar on which the Rustamid state leaned for its own defense.',
+            ar: 'اصطدم الجيشان، ونشبت معركةٌ كبيرة. لم تكن النتيجة في صالح نفوسة؛ فقد خسرت المعركة خسارةً فادحة، وقُتل منها عددٌ كبير، من بينهم أربعمائة عالِمٍ من علمائها. كانت هذه الخسارة أثقل من أن تُقاس بعدد القتلى وحده، لأنّ نفوسة لم تكن مجرّد قبيلةٍ من قبائل المغرب، بل كانت العمود الذي تستند إليه الدولة الرستمية في دفاعها عن نفسها.',
+            fr: 'Les deux armées s’affrontèrent, et une grande bataille éclata. L’issue ne fut pas favorable à Nafūsa : elle subit une lourde défaite, et un grand nombre des siens furent tués, dont quatre cents de ses savants. Cette perte pesait plus lourd que le seul nombre des morts, car Nafūsa n’était pas une simple tribu parmi celles du Maghreb, mais le pilier sur lequel s’appuyait l’État rustamide pour assurer sa propre défense.',
+            en: 'The two armies clashed, and a great battle broke out. The outcome did not favor Nafusa: it suffered a heavy defeat, and a large number of its people were killed, including four hundred of its scholars. This loss weighed more heavily than the death toll alone, because Nafusa was not merely one tribe among those of the Maghreb, but the pillar on which the Rustamid state leaned for its own defense.',
           },
         },
         {
@@ -175,9 +173,9 @@ export const suqutRustamiyya: Lesson = {
             en: 'A state without its shield',
           },
           text: {
-            ar: 'كانت قوّة الدولة الرستمية العسكرية والدفاعية مستمدّةً أساسًا من نفوسة. فحين ضعفت نفوسة، ضعفت معها قدرة الدولة على حماية نفسها. وزاد الأمر سوءًا أنّ قبائل تاهرت نفسها لم تكن على وفاق، وكان اجتماعها على كلمةٍ واحدة أمرًا صعبًا. هكذا، وفي يومٍ واحد، فقدت الدولة الرستمية درعها الأقوى، دون أن تدرك بعد حجم الثمن الذي ستدفعه لاحقًا.',
-            fr: 'La force militaire et défensive de l’État rustamide était tirée essentiellement de Nafūsa. Aussi, quand Nafūsa s’affaiblit, la capacité de l’État à se protéger s’affaiblit avec elle. Pire encore, les tribus de Tāhert elles-mêmes n’étaient pas en accord, et leur réunion autour d’une seule parole était chose difficile. Ainsi, en un seul jour, l’État rustamide perdit son bouclier le plus solide, sans encore mesurer le prix qu’il allait en payer.',
-            en: 'The Rustamid state’s military and defensive strength was drawn mainly from Nafusa. So when Nafusa was weakened, the state’s ability to protect itself was weakened with it. Matters grew worse still, as the tribes of Tahert themselves were not in agreement, and uniting them around one word was difficult. And so, in a single day, the Rustamid state lost its strongest shield, not yet realizing the price it would later pay.',
+            ar: 'كانت قوّة الدولة الرستمية العسكرية والدفاعية مستمدّةً أساسًا من نفوسة. فحين ضعفت نفوسة، ضعفت معها قدرة الدولة على حماية نفسها. وزاد الأمر سوءًا أنّ قبائل تاهرت نفسها لم تكن على وفاق، وكان اجتماعها على كلمةٍ واحدة أمرًا صعبًا. هكذا فقدت الدولة الرستمية درعها الأقوى.',
+            fr: 'La force militaire et défensive de l’État rustamide était tirée essentiellement de Nafūsa. Aussi, quand Nafūsa s’affaiblit, la capacité de l’État à se protéger s’affaiblit avec elle. Pire encore, les tribus de Tāhert elles-mêmes n’étaient pas en accord, et leur réunion autour d’une seule parole était chose difficile. Ainsi, l’État rustamide perdit son bouclier le plus solide.',
+            en: 'The Rustamid state’s military and defensive strength was drawn mainly from Nafusa. So when Nafusa was weakened, the state’s ability to protect itself was weakened with it. Matters grew worse still, as the tribes of Tāhert themselves were not in agreement, and uniting them around one word was difficult. And so the Rustamid state lost its strongest shield.',
           },
         },
       ],
@@ -199,14 +197,14 @@ export const suqutRustamiyya: Lesson = {
       },
       image: `${IMG}/battle-of-mano.png`,
       imageAlt: {
-        ar: 'مواجهةٌ بين جيشين في أرضٍ جبلية، فرسانٌ يتصادمون تحت غبارٍ كثيف',
-        fr: 'Un affrontement entre deux armées sur un terrain montagneux, des cavaliers s’entrechoquant sous une poussière épaisse',
-        en: 'A clash between two armies on mountainous terrain, horsemen colliding under thick dust',
+        ar: 'فرسانٌ مسلّحون بالرماح يندفعون على منحدرٍ جبليّ تحت غبارٍ كثيف',
+        fr: 'Des cavaliers armés de lances dévalant une pente montagneuse sous une poussière épaisse',
+        en: 'Horsemen armed with spears charging down a mountain slope under thick dust',
       },
       start: {
-        ar: 'في سنة 283هـ، خرج الجيش الأغلبيّ ليقاتل ابن طولون في مصر.',
-        fr: 'En l’an 283 H, l’armée aghlabide sortit combattre Ibn Ṭūlūn en Égypte.',
-        en: 'In the year 283 AH, the Aghlabid army set out to fight Ibn Tulun in Egypt.',
+        ar: 'في سنة 283هـ، خرج الجيش الأغلبيّ ليقاتل الطولونيين في مصر.',
+        fr: 'En l’an 283 H, l’armée aghlabide partit combattre les Toulounides en Égypte.',
+        en: 'In the year 283 AH, the Aghlabid army set out to fight the Tulunids in Egypt.',
       },
       steps: [
         {
@@ -225,6 +223,21 @@ export const suqutRustamiyya: Lesson = {
           ],
         },
         {
+          id: 's3',
+          prompt: { ar: 'هل أطاعت نفوسة نصيحة حكّامها قبل المعركة؟', fr: 'Nafūsa suivit-elle le conseil de ses dirigeants avant la bataille ?', en: 'Did Nafusa follow its rulers’ advice before the battle?' },
+          correct: {
+            ar: 'لا، لم يُطيعوا نصيحة حكّامهم بعدم التعرّض للجيش الأغلبي.',
+            fr: 'Non, ils n’obéirent pas au conseil de leurs dirigeants de ne pas s’opposer à l’armée aghlabide.',
+            en: 'No, they did not obey the advice of their rulers not to confront the Aghlabid army.',
+          },
+          distractors: [
+            {
+              label: { ar: 'نعم، فقد أمرهم حكّامهم بالقتال', fr: 'Oui, leurs dirigeants leur avaient ordonné de combattre', en: 'Yes, their rulers had ordered them to fight' },
+              hint: { ar: 'الدرس يذكر أنّهم عصوا النصيحة ولم يُطيعوها.', fr: 'La leçon précise qu’ils désobéirent au conseil reçu.', en: 'The lesson states they disobeyed the advice given to them.' },
+            },
+          ],
+        },
+        {
           id: 's2',
           prompt: { ar: 'ماذا حدث في المعركة التي وقعت بينهما؟', fr: 'Que se passa-t-il dans la bataille qui s’ensuivit ?', en: 'What happened in the battle that followed?' },
           correct: {
@@ -236,21 +249,6 @@ export const suqutRustamiyya: Lesson = {
             {
               label: { ar: 'انتصرت نفوسة وطردت الجيش الأغلبي', fr: 'Nafūsa triompha et repoussa l’armée aghlabide', en: 'Nafusa triumphed and drove off the Aghlabid army' },
               hint: { ar: 'الدرس يذكر خسارةً لنفوسة، لا انتصارًا.', fr: 'La leçon mentionne une défaite de Nafūsa, non une victoire.', en: 'The lesson states a defeat for Nafusa, not a victory.' },
-            },
-          ],
-        },
-        {
-          id: 's3',
-          prompt: { ar: 'لماذا دخلت نفوسة هذه المعركة رغم خطورتها؟', fr: 'Pourquoi Nafūsa s’engagea-t-elle dans cette bataille malgré son danger ?', en: 'Why did Nafusa enter this battle despite its danger?' },
-          correct: {
-            ar: 'لأنّهم لم يُطيعوا نصيحة حكّامهم بعدم التعرّض للجيش الأغلبي.',
-            fr: 'Parce qu’ils n’obéirent pas au conseil de leurs dirigeants de ne pas s’opposer à l’armée aghlabide.',
-            en: 'Because they did not obey the advice of their rulers not to confront the Aghlabid army.',
-          },
-          distractors: [
-            {
-              label: { ar: 'لأنّ حكّامهم أمروهم بذلك مباشرة', fr: 'Parce que leurs dirigeants le leur avaient ordonné', en: 'Because their rulers had ordered them to' },
-              hint: { ar: 'الدرس يذكر أنّهم عصوا النصيحة ولم يُطيعوها.', fr: 'La leçon précise qu’ils désobéirent au conseil reçu.', en: 'The lesson states they disobeyed the advice given to them.' },
             },
           ],
         },
@@ -273,7 +271,7 @@ export const suqutRustamiyya: Lesson = {
       ending: {
         ar: 'وزاد الطين بِلّة أنّ قبائل تاهرت لم تكن على وفاق، وقد صَعُب اجتماعها — فبقيت الدولة الرستمية بلا درعها الأقوى.',
         fr: 'Pire encore, les tribus de Tāhert n’étaient pas en accord, et leur union était difficile — l’État rustamide resta ainsi sans son bouclier le plus solide.',
-        en: 'To make matters worse, the tribes of Tahert were not in agreement, and uniting them was difficult — the Rustamid state was left without its strongest shield.',
+        en: 'To make matters worse, the tribes of Tāhert were not in agreement, and uniting them was difficult — the Rustamid state was left without its strongest shield.',
       },
     },
 
@@ -293,22 +291,22 @@ export const suqutRustamiyya: Lesson = {
       },
       image: `${IMG}/family-feud.png`,
       imageAlt: {
-        ar: 'قصرٌ مزخرفٌ تحت قمرٍ شاحب، ظلالٌ تتحرّك خلف نوافذه وتوحي بصراعٍ خفيّ',
-        fr: 'Un palais orné sous une lune pâle, des ombres bougeant derrière ses fenêtres, évoquant un conflit caché',
-        en: 'An ornate palace under a pale moon, shadows moving behind its windows suggesting a hidden conflict',
+        ar: 'فناءُ قصرٍ في وضح النهار تقف فيه شخوصٌ ملثّمة متباعدة، توحي بصراعٍ خفيّ',
+        fr: 'La cour d’un palais en plein jour, où se tiennent à distance des silhouettes encapuchonnées, évoquant un conflit caché',
+        en: 'A palace courtyard in daylight where hooded figures stand apart, suggesting a hidden conflict',
       },
       paragraphs: [
         {
           id: 'ff-p1',
           heading: {
             ar: 'الإمام الذي أصلح ما استطاع',
-            fr: 'L\'imam qui réforma autant qu\'il put',
+            fr: 'L’imam qui réforma autant qu’il put',
             en: 'The imam who reformed as much as he could',
           },
           text: {
-            ar: 'تولّى أبو حاتم يوسف الإمامة وهو يعرف حجم الفساد الذي أصاب البلاد قبله. فأخذ بزمام الأمور، وسعى بجدٍّ إلى إزالة ما استطاع من مواطن الخلل والفساد. وكان ذلك نجاحًا ملحوظًا. غير أنّ أُمورًا داخل بيته كانت تنمو في الظلام، ولم تبلغ أُذُنيه في الوقت المناسب.',
-            fr: 'Abū Ḥātim Yūsuf prit le pouvoir en pleine conscience de l\'étendue de la corruption qui avait touché le pays avant lui. Il saisit les rênes des affaires et s\'efforça sérieusement de corriger ce qu\'il pouvait des dysfonctionnements et de la corruption. Ce fut une réussite notable. Mais des choses grandissaient dans l\'ombre à l\'intérieur de sa propre maison, et n\'arrivèrent pas à ses oreilles en temps voulu.',
-            en: 'Abu Hatim Yusuf took the imamate fully aware of how much corruption had struck the country before him. He took the reins of affairs and strove earnestly to remove as much of the disorder and corruption as he could. This was a notable success. Yet things were growing in the shadows inside his own household, and did not reach his ears in time.',
+            ar: 'تولّى أبو حاتم يوسف الإمامة، فاستطاع أن يقضي على كثيرٍ من الفساد الذي أصاب البلاد والدولة في عهده. وكان ذلك نجاحًا ملحوظًا. إلّا أنّه لم يُنْهِ فساد بعض أفراد أسرته وأطماعهم.',
+            fr: 'Abū Ḥātim Yūsuf prit l’imamat et parvint à éliminer une grande partie de la corruption qui avait frappé le pays et l’État sous son règne. Ce fut une réussite notable. Mais il ne mit pas fin à la corruption ni aux ambitions de certains membres de sa propre famille.',
+            en: 'Abu Hatim Yusuf took the imamate and managed to eliminate much of the corruption that had struck the country and the state during his reign. This was a notable success. Yet he did not put an end to the corruption and ambitions of some members of his own family.',
           },
         },
         {
@@ -319,9 +317,9 @@ export const suqutRustamiyya: Lesson = {
             en: 'A rival uncle and divided rule',
           },
           text: {
-            ar: 'لم يُخفِ يعقوب بن أفلح، عمّ الإمام، طموحه في الحكم. نافس ابن أخيه على السلطة، وانتهى الأمر بأن حَكَم إلى جانبه أربع سنوات. كانت الدولة الرستمية تعيش إمامتين في وقتٍ واحد، وهو أمرٌ لا تُطيقه دولةٌ تتعرّض لضغوطٍ من الخارج. لكنّ الأيام كانت ستكشف ما هو أشدّ وطأةً من هذا كلّه.',
-            fr: 'Ya\'qūb ibn Aflaḥ, l\'oncle de l\'imam, n\'avait pas caché son ambition de gouverner. Il rivalisa avec son neveu pour le pouvoir, et l\'affaire finit par un règne conjoint de quatre ans. L\'État rustamide vivait deux imamats en même temps, chose qu\'un État soumis à des pressions extérieures ne pouvait longtemps tolérer. Mais les jours allaient révéler quelque chose de bien plus lourd encore.',
-            en: 'Ya\'qub ibn Aflah, the imam\'s uncle, did not hide his ambition to rule. He competed with his nephew for power, and the matter ended in a joint reign of four years. The Rustamid state was living two imamats at once — something a state already under external pressure could not long endure. But the days ahead would reveal something far heavier still.',
+            ar: 'نافس يعقوبُ بن أفلح، عمُّ الإمام، ابنَ أخيه على السلطة، وانتهى الأمر بأن حَكَم إلى جانبه أربع سنوات.',
+            fr: 'Ya‘qūb ibn Aflaḥ, l’oncle de l’imam, rivalisa avec son neveu pour le pouvoir, et l’affaire aboutit à ce qu’il gouverne à ses côtés pendant quatre ans.',
+            en: 'Ya‘qub ibn Aflah, the imam’s uncle, competed with his nephew for power, and the matter ended with him ruling alongside him for four years.',
           },
         },
         {
@@ -332,9 +330,9 @@ export const suqutRustamiyya: Lesson = {
             en: 'A brother who turns against him',
           },
           text: {
-            ar: 'لم يَكَد الإمامُ أبو حاتم يتنفّس بعد انتهاء النزاع مع عمّه، حتى واجهه أخوه اليقظان من جهةٍ أخرى. كان أبو حاتم الآن يصارع جبهتين: ما تبقّى من ضغوط الخارج، وخلافاتٍ تتّسع من الداخل. وكلّما ظنّ أنّ الطريق قد اتّضح، فتحت أمامه مشكلةٌ جديدة.',
-            fr: 'À peine l\'imam Abū Ḥātim avait-il repris son souffle après la fin du conflit avec son oncle, que son frère al-Yaqẓān se retourna contre lui d\'un autre côté. Abū Ḥātim se retrouvait à présent à combattre sur deux fronts : les pressions extérieures qui demeuraient, et des dissensions internes qui s\'élargissaient. Chaque fois qu\'il croyait voir la route s\'éclaircir, un nouveau problème s\'ouvrait devant lui.',
-            en: 'Imam Abu Hatim had barely caught his breath from the end of the conflict with his uncle when his brother Al-Yaqzan turned against him from another direction. Abu Hatim was now fighting on two fronts: whatever remained of external pressure, and internal disputes that kept widening. Every time he thought the road had cleared, a new problem opened before him.',
+            ar: 'ولم يَكَد هذا النزاع مع عمّه ينتهي، حتى عاداه أخوه اليقظان من جهةٍ أخرى. فانتقل الخلاف من العمّ إلى الأخ، واتّسع داخل الأسرة الحاكمة نفسها.',
+            fr: 'À peine ce conflit avec son oncle avait-il pris fin que son frère al-Yaqẓān devint son ennemi d’un autre côté. La discorde passa ainsi de l’oncle au frère et s’étendit au sein même de la famille régnante.',
+            en: 'This conflict with his uncle had barely ended when his brother Al-Yaqzan turned against him from another direction. The discord thus passed from the uncle to the brother and spread within the ruling family itself.',
           },
         },
         {
@@ -346,7 +344,7 @@ export const suqutRustamiyya: Lesson = {
           },
           text: {
             ar: 'في سنة 294هـ، قرّر أبناء اليقظان بن أبي اليقظان أن يضعوا حدًّا لهذا كلّه بطريقتهم. قتلوا عمّهم الإمام أبا حاتم. وتولّى اليقظان الحكم بعده. لكنّ الناس لم يُعطوه ثقتهم، وقاطعوه، ورأوا في حكمه غصبًا وانتزاعًا للسلطة بغير حقّ. مضى عامان من الحكم في خوفٍ وقلق. وكانت الدولة الرستمية قد خسرت درعها العسكريّ قبل سنواتٍ مع واقعة مانو، وها هي تفقد الآن تماسكها الداخليّ. كان الباب قد انفتح، ولم يبقَ إلّا من يدخل منه.',
-            fr: 'En l\'an 294 H, les fils d\'al-Yaqẓān ibn Abī al-Yaqẓān décidèrent de mettre fin à tout cela à leur manière. Ils tuèrent leur oncle, l\'imam Abū Ḥātim. Al-Yaqẓān prit ensuite le pouvoir. Mais les gens ne lui accordèrent pas leur confiance, le boycottèrent, et virent dans son règne une usurpation et une prise de pouvoir illégitime. Deux années de règne s\'écoulèrent dans la peur et l\'angoisse. L\'État rustamide avait déjà perdu son bouclier militaire quelques années plus tôt avec la bataille de Mānū ; il perdait désormais sa cohésion interne. La porte était grande ouverte — il ne manquait plus que celui qui la franchirait.',
+            fr: 'En l’an 294 H, les fils d’al-Yaqẓān ibn Abī al-Yaqẓān décidèrent de mettre fin à tout cela à leur manière. Ils tuèrent leur oncle, l’imam Abū Ḥātim. Al-Yaqẓān prit ensuite le pouvoir. Mais les gens ne lui accordèrent pas leur confiance, le boycottèrent, et virent dans son règne une usurpation et une prise de pouvoir illégitime. Deux années de règne s’écoulèrent dans la peur et l’angoisse. L’État rustamide avait déjà perdu son bouclier militaire quelques années plus tôt avec la bataille de Mānū ; il perdait désormais sa cohésion interne. La porte était grande ouverte — il ne manquait plus que celui qui la franchirait.',
             en: 'In the year 294 AH, the sons of al-Yaqzan ibn Abi al-Yaqzan decided to put an end to all of this their own way. They killed their uncle, Imam Abu Hatim. Al-Yaqzan then took power. But the people did not give him their trust, boycotted him, and saw his rule as a seizure and an illegitimate grab for power. Two years of fearful, anxious rule passed. The Rustamid state had already lost its military shield years earlier at the Battle of Mano; it was now losing its internal cohesion. The door had swung open — all that remained was for someone to walk through it.',
           },
         },
@@ -406,9 +404,9 @@ export const suqutRustamiyya: Lesson = {
       },
       image: `${IMG}/assassination-scene.png`,
       imageAlt: {
-        ar: 'ظلّ رجلٍ يُخفي خنجرًا خلف ظهره بينما يتحدّث اثنان في ممرٍّ مظلم',
-        fr: 'L’ombre d’un homme cachant un poignard derrière son dos, tandis que deux hommes discutent dans un couloir sombre',
-        en: 'The shadow of a man hiding a dagger behind his back, while two men speak in a dark corridor',
+        ar: 'رجلٌ في ممرٍّ مظلم يُمسك خنجرًا، وشخصان يتحدّثان في آخر الممرّ',
+        fr: 'Un homme tenant un poignard dans un couloir sombre, tandis que deux personnes discutent au bout du couloir',
+        en: 'A man holding a dagger in a dark corridor, while two people talk at the far end',
       },
       speakers: [
         { id: 'narrator', name: { ar: 'الراوي', fr: 'Le narrateur', en: 'The narrator' }, avatar: '✦', side: 'start', tone: 'night' },
@@ -498,24 +496,24 @@ export const suqutRustamiyya: Lesson = {
       ],
     },
 
-    // 07 — Fall of Tahert: narrative reading passage (slide 7)
+    // 07 — Fall of Tāhert: narrative reading passage (slide 7)
     {
       kind: 'reading',
       id: 'reading-fall-of-tahert',
       title: {
         ar: 'اقرأ: سقوط تاهرت',
         fr: 'Lis : la chute de Tāhert',
-        en: 'Read: the fall of Tahert',
+        en: 'Read: the fall of Tāhert',
       },
       intro: {
         ar: 'اقرأ كيف انتهت الدولة الرستمية، ثمّ استكشف المشهد بنفسك في النشاط التالي.',
-        fr: 'Lis comment l\'État rustamide prit fin, puis explore la scène par toi-même dans l\'activité suivante.',
+        fr: 'Lis comment l’État rustamide prit fin, puis explore la scène par toi-même dans l’activité suivante.',
         en: 'Read how the Rustamid state came to its end, then explore the scene yourself in the next activity.',
       },
       image: `${IMG}/fall-of-tahert.png`,
       imageAlt: {
         ar: 'جيشٌ يدخل أبواب مدينةٍ محصّنة عند الفجر بلا قتال، ودخانٌ يتصاعد من مبنًى في الخلفية',
-        fr: 'Une armée franchissant les portes d\'une ville fortifiée à l\'aube sans combat, de la fumée s\'élevant d\'un bâtiment en arrière-plan',
+        fr: 'Une armée franchissant les portes d’une ville fortifiée à l’aube sans combat, de la fumée s’élevant d’un bâtiment en arrière-plan',
         en: 'An army entering the gates of a fortified city at dawn without a fight, smoke rising from a building in the background',
       },
       paragraphs: [
@@ -527,9 +525,9 @@ export const suqutRustamiyya: Lesson = {
             en: 'A daughter seeking vengeance',
           },
           text: {
-            ar: 'لم تقبل دَوسَر، ابنة الإمام أبي حاتم المقتول، أن يمرّ مقتل أبيها دون ثأر. رأت في أبي عبد الله الشيعي ما أرادت: داعيةٌ يجمع القبائل، ويبحث عن مشروعيّةٍ يسانده بها الناس. فألحّت عليه، وطالبته بأن يأتي بجيشه إلى تاهرت ويثأر لأبيها الإمام المقتول.',
-            fr: 'Dawsar, fille de l\'imam Abū Ḥātim assassiné, refusa de laisser la mort de son père sans vengeance. Elle vit en Abū \'Abd Allāh al-Shī\'ī ce qu\'elle cherchait : un prédicateur qui rassemblait les tribus et cherchait une légitimité sur laquelle s\'appuyer. Elle insista auprès de lui et lui réclama de venir avec son armée à Tāhert pour venger son père, l\'imam assassiné.',
-            en: 'Dawsar, daughter of the slain Imam Abu Hatim, refused to let her father\'s killing pass unavenged. She saw in Abu Abdullah al-Shi\'i what she sought: a preacher gathering tribes and looking for a legitimacy the people would support. She pressed him insistently, demanding he bring his army to Tahert and avenge her slain father.',
+            ar: 'لم تقبل دَوسَر، ابنة الإمام المقتول أبي حاتم، أن يمرّ مقتل أبيها دون ثأر. فطلبت من أبي عبد الله الشيعي، وألحّت عليه، أن يأتي بجيشه إلى تاهرت ويثأر لأبيها.',
+            fr: 'Dawsar, fille de l’imam assassiné Abū Ḥātim, refusa que la mort de son père reste sans vengeance. Elle demanda à Abū ‘Abd Allāh al-Shī‘ī, avec insistance, de venir avec son armée à Tāhert pour venger son père.',
+            en: 'Dawsar, daughter of the slain Imam Abu Hatim, refused to let her father’s killing go unavenged. She asked Abu Abdullah al-Shi‘i, pressing him insistently, to bring his army to Tāhert and avenge her father.',
           },
         },
         {
@@ -540,9 +538,9 @@ export const suqutRustamiyya: Lesson = {
             en: 'A preacher gathering armies',
           },
           text: {
-            ar: 'كان أبو عبد الله الشيعي يخرج في تلك الأيام يدعو الناس إلى بيعة إمامه عبيد الله. وكان قد جمع حوله عدّة قبائل تبحث عن الرئاسة، ولا تعدم الأسباب للانضمام إليه. فلمّا جاءه طلب دَوسَر، وجد فيه ما يريد: مسوّغًا لدخول تاهرت، وفرصةً قد لا تتكرّر.',
-            fr: 'Abū \'Abd Allāh al-Shī\'ī parcourait en ces jours-là le pays pour appeler les gens à prêter allégeance à son imam \'Ubayd Allāh. Il avait rassemblé autour de lui plusieurs tribus en quête de pouvoir, qui ne manquaient pas de raisons de le rejoindre. Quand la demande de Dawsar lui parvint, il y trouva ce qu\'il voulait : un prétexte pour entrer à Tāhert, et une opportunité qui pourrait ne pas se représenter.',
-            en: 'Abu Abdullah al-Shi\'i was in those days travelling the land, calling people to pledge allegiance to his imam Ubaydallah. He had gathered around him several tribes seeking power, who never lacked reasons to join him. When Dawsar\'s request reached him, he found in it what he needed: a justification for entering Tahert, and an opportunity that might not come again.',
+            ar: 'كان أبو عبد الله الشيعي قد خرج يدعو الناس إلى بيعة إمامه عبيد الله، وهي الدعوة الشيعية العبيدية التي نشأت وترعرعت في إيكجان. وقد جمع حوله عدّة قبائل تبحث عن الرئاسة، فوجد في طلب دَوسَر فرصةً لدخول تاهرت.',
+            fr: 'Abū ‘Abd Allāh al-Shī‘ī était parti appeler les gens à prêter allégeance à son imam ‘Ubayd Allāh : c’était la prédication chiite ubaydide, née et développée à Ikjān. Il avait rassemblé autour de lui plusieurs tribus en quête de pouvoir, et vit dans la demande de Dawsar une occasion d’entrer à Tāhert.',
+            en: 'Abu Abdullah al-Shi‘i had set out calling people to pledge allegiance to his imam Ubaydallah: this was the Ubaydid Shi‘i mission, which was born and grew up in Ikjan. He had gathered around him several tribes seeking power, and saw in Dawsar’s request an opportunity to enter Tāhert.',
           },
         },
         {
@@ -553,9 +551,9 @@ export const suqutRustamiyya: Lesson = {
             en: 'An entry without resistance',
           },
           text: {
-            ar: 'استغلّ أبو عبد الله الشيعي وجيشه فرصةَ الصراع الداخليّ وتشتّت قبائل المنطقة الرستمية. لم تكن تاهرت بمنجاةٍ، ولم يكن في أسوارها مَن يكفي لردّ جيشٍ متماسك. دخلوا المدينة دون مقاومةٍ تُذكر، إلّا مَن فرّ فرارًا بحياته. لم يكن هذا نصرًا عسكريًّا بقدر ما كان استغلالًا لعجزٍ داخليٍّ.',
-            fr: 'Abū \'Abd Allāh al-Shī\'ī et son armée profitèrent du conflit interne et de la dispersion des tribus de la région rustamide. Tāhert n\'était plus en mesure de se défendre, et ses remparts n\'abritaient plus assez d\'hommes pour repousser une armée soudée. Ils entrèrent dans la ville sans résistance notable, sinon de ceux qui prirent la fuite pour sauver leur vie. Ce n\'était pas tant une victoire militaire qu\'une exploitation d\'une impuissance intérieure.',
-            en: 'Abu Abdullah al-Shi\'i and his army exploited the internal conflict and the scattering of the Rustamid region\'s tribes. Tahert was no longer in a position to defend itself, and its walls no longer sheltered enough men to repel a cohesive army. They entered the city with barely any resistance, save for those who fled for their lives. This was less a military victory than an exploitation of inner helplessness.',
+            ar: 'استغلّ أبو عبد الله الشيعي وجيشه فرصةَ الصراع وتشتّت قبائل المنطقة، ودخلوا المدينة دون مقاومة. لم يكن هذا نصرًا عسكريًّا بقدر ما كان استغلالًا لضعفٍ داخليّ.',
+            fr: 'Abū ‘Abd Allāh al-Shī‘ī et son armée profitèrent du conflit et de la dispersion des tribus de la région, et entrèrent dans la ville sans résistance. Ce fut moins une victoire militaire que l’exploitation d’une faiblesse intérieure.',
+            en: 'Abu Abdullah al-Shi‘i and his army exploited the conflict and the scattering of the region’s tribes, and entered the city without resistance. This was less a military victory than the exploitation of an inner weakness.',
           },
         },
         {
@@ -566,22 +564,22 @@ export const suqutRustamiyya: Lesson = {
             en: 'The fall and the end',
           },
           text: {
-            ar: 'بعد دخول تاهرت، قتل العبيديون أفراد العائلة الرستمية إلّا مَن فرّ منهم. وأحرقوا مكتبة الرستميين، وهي ذاكرةٌ من الذاكرات التي لا تعوض. وسرقوا المدينة ونهبوها. سقطت الدولة الرستمية بذلك بعد 136 سنةً من القيام. فرّ من فرّ من آل الرستميين إلى وارجلان وإفريقية. وبقيت قبائل أهل الاستقامة في المغرب الأوسط وإفريقية متمسّكةً بعلمائها وفقهائها وقضاتها. ووصف التاريخ هؤلاء العلماء بأنّهم كانوا أئمّةً للاستقامة في زمنٍ لم تكن فيه دولة.',
-            fr: 'Après l\'entrée dans Tāhert, les Ubaydides tuèrent les membres de la famille rustamide, sauf ceux qui réussirent à fuir. Ils incendièrent la bibliothèque des Rustamides — une mémoire irremplaçable. Ils pillèrent et dévalisèrent la ville. L\'État rustamide tomba ainsi, après 136 années d\'existence. Ceux de la famille rustamide qui purent fuir se réfugièrent à Wārjlān et en Ifrīqiya. Les tribus des gens de l\'intégrité restèrent au Maghreb central et en Ifrīqiya, attachées à leurs savants, juristes et juges. L\'histoire décrit ces savants comme des imams d\'intégrité en un temps où il n\'y avait plus d\'État.',
-            en: 'After entering Tahert, the Ubaydids killed the members of the Rustamid family, save for those who managed to flee. They burned the Rustamid library — an irreplaceable memory. They stole from and plundered the city. The Rustamid state fell thus, after 136 years of existence. Those of the Rustamid family who could flee took refuge in Ouargla and Ifriqiya. The tribes of the people of integrity remained in the central Maghreb and Ifriqiya, holding fast to their scholars, jurists and judges. History describes these scholars as imams of integrity in a time when there was no longer a state.',
+            ar: 'بعد دخول تاهرت، قُتلت العائلة الرستمية إلّا مَن فرّ منهم، وأُحرقت مكتبة المعصومة، وسُرقت المدينة ونُهبت، فسقطت بذلك الدولة الرستمية بعد نحو 136 سنة من قيامها. فرّ مَن فرّ من عائلة الرستميين إلى وارجلان وتخفّوا فيها، وبقيت قبائل أهل الاستقامة في المغرب الأوسط وإفريقية متمسّكةً بعلمائها وفقهائها، كاتمةً أمرها، بينما واصل الجيش العبيدي سعيه لإسقاط دول المغرب وأئمّتها.',
+            fr: 'Après l’entrée dans Tāhert, la famille rustamide fut massacrée, sauf ceux qui s’enfuirent ; la bibliothèque al-Ma‘ṣūma fut incendiée, et la ville fut volée et pillée. L’État rustamide tomba ainsi, après environ 136 années d’existence. Ceux de la famille rustamide qui purent fuir se réfugièrent à Wārjlān et s’y cachèrent. Les tribus des gens de l’intégrité restèrent au Maghreb central et en Ifrīqiya, attachées à leurs savants et à leurs juristes, et gardèrent leur cause secrète, tandis que l’armée ubaydide poursuivait son effort pour renverser les États du Maghreb et leurs imams.',
+            en: 'After entering Tāhert, the Rustamid family was killed except for those who fled; the al-Ma‘suma library was burned, and the city was robbed and plundered. And so the Rustamid state fell, after about 136 years of existence. Those of the Rustamid family who could flee went to Ouargla and hid there. The tribes of the people of integrity remained in the central Maghreb and Ifriqiya, holding fast to their scholars and jurists and keeping their cause hidden, while the Ubaydid army continued its effort to topple the states of the Maghreb and their imams.',
           },
         },
       ],
     },
 
-    // 08 — Fall of Tahert: hotspot explorer (slide 7)
+    // 08 — Fall of Tāhert: hotspot explorer (slide 7)
     {
       kind: 'explorer',
       id: 'fall-of-tahert-explorer',
       title: {
         ar: 'العبيديون في تاهرت',
         fr: 'Les Ubaydides à Tāhert',
-        en: 'The Ubaydids in Tahert',
+        en: 'The Ubaydids in Tāhert',
       },
       intro: {
         ar: 'اضغط على عناصر المشهد لتكتشف كيف سقطت عاصمة الدولة الرستمية.',
@@ -597,57 +595,57 @@ export const suqutRustamiyya: Lesson = {
       hotspots: [
         {
           id: 'dawsar',
-          x: 15,
-          y: 35,
+          x: 12,
+          y: 30,
           label: { ar: 'طلب دَوسَر', fr: 'La demande de Dawsar', en: 'Dawsar’s request' },
           description: {
             ar: 'طلبت دَوسَر ابنة الإمام المقتول من أبي عبد الله الشيعي أن يأتي بجيشه إلى تاهرت ويثأر لأبيها، وألحّت عليه في ذلك.',
             fr: 'Dawsar, fille de l’imam assassiné, demanda à Abū ‘Abd Allāh al-Shī‘ī de venir avec son armée à Tāhert pour venger son père, et insista auprès de lui.',
-            en: 'Dawsar, daughter of the slain imam, asked Abu Abdullah al-Shi‘i to bring his army to Tahert and avenge her father, and pressed him insistently.',
+            en: 'Dawsar, daughter of the slain imam, asked Abu Abdullah al-Shi‘i to bring his army to Tāhert and avenge her father, and pressed him insistently.',
           },
         },
         {
           id: 'preacher',
-          x: 50,
-          y: 25,
+          x: 52,
+          y: 78,
           label: { ar: 'أبو عبد الله الشيعي', fr: 'Abū ‘Abd Allāh al-Shī‘ī', en: 'Abu Abdullah al-Shi‘i' },
           description: {
-            ar: 'خرج يدعو الناس إلى بيعة إمامه عبيد الله، وقد جمع حوله عدّة قبائل كانت تبحث عن الرئاسة.',
-            fr: 'Il partit appeler les gens à prêter allégeance à son imam ‘Ubayd Allāh, et rassembla autour de lui plusieurs tribus en quête de pouvoir.',
-            en: 'He set out calling people to pledge allegiance to his imam Ubaydallah, and gathered around him several tribes seeking power.',
+            ar: 'خرج يدعو الناس إلى بيعة إمامه عبيد الله، وهي الدعوة الشيعية العبيدية التي نشأت وترعرعت في إيكجان، وقد جمع حوله عدّة قبائل كانت تبحث عن الرئاسة.',
+            fr: 'Il partit appeler les gens à prêter allégeance à son imam ‘Ubayd Allāh — la prédication chiite ubaydide, née et développée à Ikjān — et rassembla autour de lui plusieurs tribus en quête de pouvoir.',
+            en: 'He set out calling people to pledge allegiance to his imam Ubaydallah — the Ubaydid Shi‘i mission, born and grown in Ikjan — and gathered around him several tribes seeking power.',
           },
         },
         {
           id: 'exploited-split',
-          x: 72,
-          y: 40,
+          x: 48,
+          y: 50,
           label: { ar: 'استغلال الفرصة', fr: 'L’occasion saisie', en: 'The opportunity seized' },
           description: {
-            ar: 'فاستغلّ هو وجيشه فرصةَ الصراع وتشتّت قبائل المنطقة الرستمية، ودخلوا المدينة دون مقاومةٍ تُذكر إلّا مَن فرّ منهم.',
-            fr: 'Lui et son armée profitèrent du conflit et de la dispersion des tribus de la région rustamide, et entrèrent dans la ville sans véritable résistance, sinon de ceux qui s’enfuirent.',
-            en: 'He and his army exploited the conflict and the scattering of the Rustamid region’s tribes, entering the city without real resistance — save for those who fled.',
+            ar: 'فاستغلّ هو وجيشه فرصةَ الصراع وتشتّت قبائل المنطقة، ودخلوا المدينة دون مقاومة.',
+            fr: 'Lui et son armée profitèrent du conflit et de la dispersion des tribus de la région, et entrèrent dans la ville sans résistance.',
+            en: 'He and his army exploited the conflict and the scattering of the region’s tribes, and entered the city without resistance.',
           },
         },
         {
           id: 'library',
-          x: 85,
-          y: 60,
-          label: { ar: 'إحراق المكتبة', fr: 'L’incendie de la bibliothèque', en: 'The burning of the library' },
+          x: 61,
+          y: 24,
+          label: { ar: 'إحراق مكتبة المعصومة', fr: 'L’incendie de la bibliothèque al-Ma‘ṣūma', en: 'The burning of the al-Ma‘suma library' },
           description: {
-            ar: 'قَتَل العائلةَ الرستمية إلّا مَن فرّ منهم، وأحرقوا مكتبة الرستميين، وسرقوا المدينة ونهبوها، وسقطت بذلك الدولة الرستمية.',
-            fr: 'Il tua la famille rustamide sauf ceux qui s’enfuirent, et ils incendièrent la bibliothèque des Rustamides, pillèrent et dévalisèrent la ville — c’est ainsi que l’État rustamide tomba.',
-            en: 'He killed the Rustamid family except for those who fled, and they burned the Rustamid library, stole from and plundered the city — and so the Rustamid state fell.',
+            ar: 'قُتلت العائلة الرستمية إلّا مَن فرّ منهم، وأُحرقت مكتبة المعصومة، وسُرقت المدينة ونُهبت، وسقطت بذلك الدولة الرستمية.',
+            fr: 'La famille rustamide fut tuée, sauf ceux qui s’enfuirent ; la bibliothèque al-Ma‘ṣūma fut incendiée, la ville volée et pillée — c’est ainsi que l’État rustamide tomba.',
+            en: 'The Rustamid family was killed except for those who fled; the al-Ma‘suma library was burned, and the city robbed and plundered — and so the Rustamid state fell.',
           },
         },
         {
           id: 'scattering',
-          x: 25,
-          y: 75,
+          x: 88,
+          y: 80,
           label: { ar: 'بعد السقوط', fr: 'Après la chute', en: 'After the fall' },
           description: {
-            ar: 'فرّ مَن فرّ من عائلة الرستميين إلى وارجلان وإفريقية، وبقيت قبائل أهل الاستقامة في المغرب الأوسط وإفريقية متمسّكةً بعلمائها وفقهائها وقضاتها كأئمّة استقامة، بينما واصل الجيش العبيدي سعيَه لإسقاط دُوَل المغرب وأئمّتها.',
-            fr: 'Ceux de la famille rustamide qui purent s’enfuir se réfugièrent à Wārjlān et en Ifrīqiya, tandis que les tribus des gens de l’intégrité restèrent au Maghreb central et en Ifrīqiya, attachées à leurs savants, juristes et juges comme imams d’intégrité, pendant que l’armée ubaydide poursuivait son effort pour renverser les États du Maghreb et leurs imams.',
-            en: 'Those of the Rustamid family who managed to flee took refuge in Ouargla and Ifriqiya, while the tribes of the people of integrity remained in the central Maghreb and Ifriqiya, holding fast to their scholars, jurists and judges as imams of integrity, while the Ubaydid army continued its effort to topple the states of the Maghreb and their imams.',
+            ar: 'فرّ مَن فرّ من عائلة الرستميين إلى وارجلان وتخفّوا فيها، وبقيت قبائل أهل الاستقامة في المغرب الأوسط وإفريقية متمسّكةً بعلمائها وفقهائها، كاتمةً أمرها، بينما واصل الجيش العبيدي سعيَه لإسقاط دُوَل المغرب وأئمّتها.',
+            fr: 'Ceux de la famille rustamide qui purent s’enfuir se réfugièrent à Wārjlān et s’y cachèrent ; les tribus des gens de l’intégrité restèrent au Maghreb central et en Ifrīqiya, attachées à leurs savants et juristes, en gardant leur cause secrète, pendant que l’armée ubaydide poursuivait son effort pour renverser les États du Maghreb et leurs imams.',
+            en: 'Those of the Rustamid family who managed to flee went to Ouargla and hid there; the tribes of the people of integrity remained in the central Maghreb and Ifriqiya, holding fast to their scholars and jurists and keeping their cause hidden, while the Ubaydid army continued its effort to topple the states of the Maghreb and their imams.',
           },
         },
       ],
@@ -663,16 +661,16 @@ export const suqutRustamiyya: Lesson = {
         en: 'After the fall: who fled, who stayed?',
       },
       intro: {
-        ar: 'اسحب كلّ بطاقة إلى الجهة الصحيحة: أكان هذا ممّن فرّ من تاهرت، أم ممّن بقي متمسّكًا باستقامته؟',
-        fr: 'Fais glisser chaque carte du bon côté : s’agit-il de ceux qui fuirent Tāhert, ou de ceux qui restèrent attachés à leur intégrité ?',
-        en: 'Swipe each card to the right side: was this about those who fled Tahert, or those who remained holding fast to their integrity?',
+        ar: 'اسحب كلّ بطاقة إلى الجهة الصحيحة: هل فرّ أصحابها واختبؤوا، أم بقوا في أرضهم متمسّكين بعلمائهم؟',
+        fr: 'Fais glisser chaque carte du bon côté : ces personnes ont-elles fui et se sont-elles cachées, ou sont-elles restées sur leurs terres, attachées à leurs savants ?',
+        en: 'Swipe each card to the correct side: did these people flee and hide, or did they stay on their land, holding fast to their scholars?',
       },
       left: {
-        label: { ar: 'فرّ من تاهرت', fr: 'Fuit Tāhert', en: 'Fled Tahert' },
+        label: { ar: 'فرّ واختبأ', fr: 'Fuit et se cacha', en: 'Fled and hid' },
         tag: { ar: 'فرار', fr: 'Fuite', en: 'Flight' },
       },
       right: {
-        label: { ar: 'بقي متمسّكًا بالاستقامة', fr: 'Resta attaché à l’intégrité', en: 'Stayed, holding fast' },
+        label: { ar: 'بقي متمسّكًا بعلمائه', fr: 'Resta, attaché à ses savants', en: 'Stayed, holding fast to its scholars' },
         tag: { ar: 'ثبات', fr: 'Fermeté', en: 'Steadfastness' },
       },
       cards: [
@@ -680,60 +678,60 @@ export const suqutRustamiyya: Lesson = {
           id: 'rustamid-survivors',
           who: { ar: 'الناجون من العائلة الرستمية', fr: 'Les survivants de la famille rustamide', en: 'The surviving Rustamid family' },
           deed: {
-            ar: 'فرّ من فرّ من عائلة الرستميين إلى وارجلان وإفريقية بعد مقتل أفرادٍ من أسرتهم ونهب تاهرت',
-            fr: 'Ceux qui purent fuir de la famille rustamide se réfugièrent à Wārjlān et en Ifrīqiya après le meurtre de certains des leurs et le pillage de Tāhert',
-            en: 'Those of the Rustamid family who could flee took refuge in Ouargla and Ifriqiya after members of their family were killed and Tahert was plundered',
+            ar: 'نجوا من القتل حين دخل العبيديون تاهرت',
+            fr: 'Échappèrent au massacre quand les Ubaydides entrèrent à Tāhert',
+            en: 'Escaped the killing when the Ubaydids entered Tāhert',
           },
           side: 'left',
           explanation: {
-            ar: 'صحيح، نصّ الدرس أنّهم فرّوا إلى وارجلان وإفريقية بعد سقوط تاهرت.',
-            fr: 'Exact, la leçon précise qu’ils fuirent vers Wārjlān et l’Ifrīqiya après la chute de Tāhert.',
-            en: 'Correct — the lesson states they fled to Ouargla and Ifriqiya after Tahert’s fall.',
+            ar: 'فرّ مَن فرّ من عائلة الرستميين إلى وارجلان وتخفّوا فيها.',
+            fr: 'Ceux de la famille rustamide qui purent fuir se réfugièrent à Wārjlān et s’y cachèrent.',
+            en: 'Those of the Rustamid family who could flee went to Ouargla and hid there.',
           },
         },
         {
-          id: 'dawsar-herself',
-          who: { ar: 'دَوسَر', fr: 'Dawsar', en: 'Dawsar' },
+          id: 'ibadi-imams',
+          who: { ar: 'أئمّة الإباضية', fr: 'Les imams ibadites', en: 'The Ibadi imams' },
           deed: {
-            ar: 'ألحّت على أبي عبد الله الشيعي أن يأتي بجيشه إلى تاهرت ويثأر لأبيها الإمام المقتول',
-            fr: 'Insista auprès d’Abū ‘Abd Allāh al-Shī‘ī pour qu’il vienne avec son armée venger son père, l’imam assassiné',
-            en: 'Pressed Abu Abdullah al-Shi‘i to bring his army to avenge her father, the slain imam',
+            ar: 'طاردهم الفاطميون (العبيديون)',
+            fr: 'Étaient poursuivis par les Fatimides (Ubaydides)',
+            en: 'Were pursued by the Fatimids (Ubaydids)',
           },
           side: 'left',
           explanation: {
-            ar: 'هذا تصرّف دوسر نفسها، التي استدعت الجيش الذي أسقط تاهرت — وهي مَن فتح الباب لهذا الفرار الجماعي.',
-            fr: 'C’est l’acte de Dawsar elle-même, qui appela l’armée qui fit tomber Tāhert — elle est à l’origine de cette fuite collective.',
-            en: 'This is Dawsar’s own act — she summoned the army that brought down Tahert, opening the door to this collective flight.',
+            ar: 'اختبأ أئمّة الإباضية فرارًا من الفاطميين (العبيديين).',
+            fr: 'Les imams ibadites se cachèrent pour fuir les Fatimides (Ubaydides).',
+            en: 'The Ibadi imams went into hiding, fleeing the Fatimids (Ubaydids).',
           },
         },
         {
-          id: 'ahl-istiqama',
-          who: { ar: 'قبائل أهل الاستقامة', fr: 'Les tribus des gens de l’intégrité', en: 'The tribes of the people of integrity' },
+          id: 'istiqama-maghreb',
+          who: { ar: 'قبائل أهل الاستقامة في المغرب الأوسط', fr: 'Les tribus des gens de l’intégrité au Maghreb central', en: 'The tribes of the people of integrity in the central Maghreb' },
           deed: {
-            ar: 'بقيت في المغرب الأوسط وإفريقية متمسّكةً بعلمائها وفقهائها وقضاتها كأئمّة استقامة',
-            fr: 'Restèrent au Maghreb central et en Ifrīqiya, attachées à leurs savants, juristes et juges comme imams d’intégrité',
-            en: 'Remained in the central Maghreb and Ifriqiya, holding fast to their scholars, jurists and judges as imams of integrity',
+            ar: 'عاشت سقوط الدولة الرستمية في أرضها',
+            fr: 'Vécurent la chute de l’État rustamide sur leurs propres terres',
+            en: 'Lived through the fall of the Rustamid state on their own land',
           },
           side: 'right',
           explanation: {
-            ar: 'بالضبط، هذا نصّ الدرس: بقوا متمسّكين بعلمائهم رغم سقوط الدولة.',
-            fr: 'Exactement, c’est le texte de la leçon : ils restèrent attachés à leurs savants malgré la chute de l’État.',
-            en: 'Exactly — this is what the lesson states: they stayed attached to their scholars despite the state’s fall.',
+            ar: 'بقيت في المغرب الأوسط متمسّكةً بعلمائها وفقهائها، كاتمةً أمرها.',
+            fr: 'Elles restèrent au Maghreb central, attachées à leurs savants et juristes, en gardant leur cause secrète.',
+            en: 'They stayed in the central Maghreb, holding fast to their scholars and jurists and keeping their cause hidden.',
           },
         },
         {
-          id: 'ubaydid-army',
-          who: { ar: 'الجيش العبيدي', fr: 'L’armée ubaydide', en: 'The Ubaydid army' },
+          id: 'istiqama-ifriqiya',
+          who: { ar: 'قبائل أهل الاستقامة في إفريقية', fr: 'Les tribus des gens de l’intégrité en Ifrīqiya', en: 'The tribes of the people of integrity in Ifriqiya' },
           deed: {
-            ar: 'واصل سعيَه لإسقاط دُوَل المغرب وأئمّتها بعد سقوط تاهرت',
-            fr: 'Poursuivit son effort pour renverser les États du Maghreb et leurs imams après la chute de Tāhert',
-            en: 'Continued its effort to topple the states of the Maghreb and their imams after Tahert fell',
+            ar: 'بلغها خبر سقوط تاهرت',
+            fr: 'Apprirent la chute de Tāhert',
+            en: 'Heard of the fall of Tāhert',
           },
           side: 'right',
           explanation: {
-            ar: 'في الواقع، الجيش العبيدي لم يفرّ ولم يبقَ مستقيمًا — بل واصل الهجوم. هذه البطاقة اختبارٌ لانتباهك: أعد قراءة الدرس إن اخترت أحد الجانبين دون تدقيق.',
-            fr: 'En réalité, l’armée ubaydide ne fuit pas et ne resta pas « droite » — elle poursuivit l’attaque. Cette carte teste ton attention : relis la leçon si tu as choisi un côté sans vérifier.',
-            en: 'In fact, the Ubaydid army neither fled nor remained steadfast in integrity — it kept attacking. This card tests your attention: re-read the lesson if you picked a side without checking.',
+            ar: 'بقيت هي أيضًا في إفريقية متمسّكةً بعلمائها وفقهائها، كاتمةً أمرها.',
+            fr: 'Elles aussi restèrent en Ifrīqiya, attachées à leurs savants et juristes, en gardant leur cause secrète.',
+            en: 'They too stayed in Ifriqiya, holding fast to their scholars and jurists and keeping their cause hidden.',
           },
         },
       ],
@@ -781,15 +779,15 @@ export const suqutRustamiyya: Lesson = {
         },
         {
           id: 'b5',
-          text: { ar: 'دخل العبيديون تاهرت بعد حصارٍ طويل وقتالٍ عنيف.', fr: 'Les Ubaydides entrèrent à Tāhert après un long siège et des combats violents.', en: 'The Ubaydids entered Tahert after a long siege and fierce fighting.' },
+          text: { ar: 'دخل العبيديون تاهرت بعد حصارٍ طويل وقتالٍ عنيف.', fr: 'Les Ubaydides entrèrent à Tāhert après un long siège et des combats violents.', en: 'The Ubaydids entered Tāhert after a long siege and fierce fighting.' },
           answer: false,
-          explanation: { ar: 'خطأ، دخلوا المدينة دون مقاومةٍ تُذكر إلّا مَن فرّ، لأنّهم استغلّوا تشتّت قبائل المنطقة.', fr: 'Faux, ils entrèrent dans la ville sans résistance notable, sinon ceux qui s’enfuirent, profitant de la dispersion des tribus de la région.', en: 'False — they entered the city with barely any resistance, save for those who fled, exploiting the region’s scattered tribes.' },
+          explanation: { ar: 'خطأ، دخلوا المدينة دون مقاومة، لأنّهم استغلّوا الصراع وتشتّت قبائل المنطقة.', fr: 'Faux, ils entrèrent dans la ville sans résistance, profitant du conflit et de la dispersion des tribus de la région.', en: 'False — they entered the city without resistance, exploiting the conflict and the region’s scattered tribes.' },
         },
         {
           id: 'b6',
           text: { ar: 'طلبت دَوسَر من أبي عبد الله الشيعي أن يثأر لأبيها.', fr: 'Dawsar demanda à Abū ‘Abd Allāh al-Shī‘ī de venger son père.', en: 'Dawsar asked Abu Abdullah al-Shi‘i to avenge her father.' },
           answer: true,
-          explanation: { ar: 'صحيح، ابنة الإمام المقتول ألحّت عليه أن يأتي بجيشه إلى تاهرت.', fr: 'Vrai, la fille de l’imam assassiné insista pour qu’il vienne avec son armée à Tāhert.', en: 'True — the daughter of the slain imam pressed him to bring his army to Tahert.' },
+          explanation: { ar: 'صحيح، ابنة الإمام المقتول ألحّت عليه أن يأتي بجيشه إلى تاهرت.', fr: 'Vrai, la fille de l’imam assassiné insista pour qu’il vienne avec son armée à Tāhert.', en: 'True — the daughter of the slain imam pressed him to bring his army to Tāhert.' },
         },
       ],
     },
@@ -810,15 +808,15 @@ export const suqutRustamiyya: Lesson = {
           type: 'mcq',
           question: { ar: 'ما سبب اعتراض نفوسة للجيش الأغلبي سنة 283هـ؟', fr: 'Pourquoi Nafūsa intercepta-t-elle l’armée aghlabide en 283 H ?', en: 'Why did Nafusa intercept the Aghlabid army in 283 AH?' },
           options: [
-            { id: 'a', label: { ar: 'لمنعه من المرور عبر أراضيها وهو في طريقه لقتال ابن طولون', fr: 'Pour l’empêcher de traverser ses terres alors qu’elle se dirigeait combattre Ibn Ṭūlūn', en: 'To prevent it from passing through their lands on its way to fight Ibn Tulun' } },
+            { id: 'a', label: { ar: 'لمنعه من المرور عبر أراضيها وهو في طريقه لقتال الطولونيين', fr: 'Pour empêcher l’armée de traverser ses terres alors qu’elle se rendait en Égypte combattre les Toulounides', en: 'To prevent it from passing through their lands on its way to fight the Tulunids' } },
             { id: 'b', label: { ar: 'لأنّها أرادت الانضمام إليه', fr: 'Parce qu’elle voulait s’y joindre', en: 'Because they wanted to join it' } },
             { id: 'c', label: { ar: 'لأنّ معاوية طلب منها ذلك', fr: 'Parce que Mu‘āwiya le lui avait demandé', en: 'Because Mu‘awiya had asked them to' } },
           ],
           correctId: 'a',
           explanation: {
-            ar: 'خرج الجيش الأغلبي لقتال ابن طولون في مصر، فاعترضته قوّةٌ من نفوسة وقبائل أخرى لمنعه من المرور عبر أراضيها.',
-            fr: 'L’armée aghlabide partit combattre Ibn Ṭūlūn en Égypte ; une force de Nafūsa et d’autres tribus l’intercepta pour l’empêcher de traverser leurs terres.',
-            en: 'The Aghlabid army set out to fight Ibn Tulun in Egypt; a force from Nafusa and other tribes intercepted it to prevent it from passing through their lands.',
+            ar: 'خرج الجيش الأغلبي لقتال الطولونيين في مصر، فاعترضته قوّةٌ من نفوسة وقبائل أخرى لمنعه من المرور عبر أراضيها.',
+            fr: 'L’armée aghlabide partit combattre les Toulounides en Égypte ; une force de Nafūsa et d’autres tribus l’intercepta pour l’empêcher de traverser leurs terres.',
+            en: 'The Aghlabid army set out to fight the Tulunids in Egypt; a force from Nafusa and other tribes intercepted it to prevent it from passing through their lands.',
           },
         },
         {
@@ -829,7 +827,7 @@ export const suqutRustamiyya: Lesson = {
           explanation: {
             ar: 'صحيح، وزاد الأمر سوءًا أنّ قبائل تاهرت لم تكن على وفاق وصَعُب اجتماعها.',
             fr: 'Vrai, et la situation s’aggrava car les tribus de Tāhert n’étaient pas en accord et leur union était difficile.',
-            en: 'True — and matters worsened because the tribes of Tahert were not in agreement and uniting them was difficult.',
+            en: 'True — and matters worsened because the tribes of Tāhert were not in agreement and uniting them was difficult.',
           },
         },
         {
@@ -840,12 +838,12 @@ export const suqutRustamiyya: Lesson = {
             { id: 'p1', left: { ar: 'أبو حاتم يوسف', fr: 'Abū Ḥātim Yūsuf', en: 'Abu Hatim Yusuf' }, right: { ar: 'الإمام الذي قتله أبناء أخيه', fr: 'L’imam tué par les fils de son frère', en: 'The imam killed by his brother’s sons' } },
             { id: 'p2', left: { ar: 'اليقظان', fr: 'Al-Yaqẓān', en: 'Al-Yaqzan' }, right: { ar: 'عاداه وتولّى الحكم بعده لكن الناس قاطعوه', fr: 'Son adversaire, qui prit le pouvoir après lui mais fut boycotté', en: 'His rival, who took power after him but was boycotted by the people' } },
             { id: 'p3', left: { ar: 'دَوسَر', fr: 'Dawsar', en: 'Dawsar' }, right: { ar: 'ابنة الإمام المقتول التي طلبت الثأر', fr: 'La fille de l’imam assassiné qui demanda vengeance', en: 'The slain imam’s daughter who sought vengeance' } },
-            { id: 'p4', left: { ar: 'أبو عبد الله الشيعي', fr: 'Abū ‘Abd Allāh al-Shī‘ī', en: 'Abu Abdullah al-Shi‘i' }, right: { ar: 'الداعية الذي قاد الجيش العبيدي إلى تاهرت', fr: 'Le prédicateur qui mena l’armée ubaydide à Tāhert', en: 'The preacher who led the Ubaydid army to Tahert' } },
+            { id: 'p4', left: { ar: 'أبو عبد الله الشيعي', fr: 'Abū ‘Abd Allāh al-Shī‘ī', en: 'Abu Abdullah al-Shi‘i' }, right: { ar: 'الداعية الذي قاد الجيش العبيدي إلى تاهرت', fr: 'Le prédicateur qui mena l’armée ubaydide à Tāhert', en: 'The preacher who led the Ubaydid army to Tāhert' } },
           ],
           explanation: {
             ar: 'كلّ هذه الشخصيّات ساهمت، كلٌّ بطريقته، في سلسلة الأحداث التي أدّت إلى سقوط تاهرت.',
             fr: 'Chacun de ces personnages contribua, à sa manière, à la chaîne d’événements qui mena à la chute de Tāhert.',
-            en: 'Each of these figures contributed, in their own way, to the chain of events that led to the fall of Tahert.',
+            en: 'Each of these figures contributed, in their own way, to the chain of events that led to the fall of Tāhert.',
           },
         },
         {
@@ -856,7 +854,7 @@ export const suqutRustamiyya: Lesson = {
             { id: 'o1', label: { ar: 'هزيمة نفوسة في واقعة مانو', fr: 'La défaite de Nafūsa à la bataille de Mānū', en: 'Nafusa’s defeat at the Battle of Mano' } },
             { id: 'o2', label: { ar: 'مقتل الإمام أبي حاتم على يد أبناء أخيه', fr: 'L’assassinat de l’imam Abū Ḥātim par les fils de son frère', en: 'The killing of Imam Abu Hatim by his brother’s sons' } },
             { id: 'o3', label: { ar: 'طلب دَوسَر الثأر من أبي عبد الله الشيعي', fr: 'La demande de vengeance de Dawsar à Abū ‘Abd Allāh al-Shī‘ī', en: 'Dawsar’s request for vengeance to Abu Abdullah al-Shi‘i' } },
-            { id: 'o4', label: { ar: 'دخول العبيديين تاهرت وسقوط الدولة الرستمية', fr: 'L’entrée des Ubaydides à Tāhert et la chute de l’État rustamide', en: 'The Ubaydids’ entry into Tahert and the fall of the Rustamid state' } },
+            { id: 'o4', label: { ar: 'دخول العبيديين تاهرت وسقوط الدولة الرستمية', fr: 'L’entrée des Ubaydides à Tāhert et la chute de l’État rustamide', en: 'The Ubaydids’ entry into Tāhert and the fall of the Rustamid state' } },
           ],
           explanation: {
             ar: 'هذا هو مسار الدرس: ضعفٌ عسكريّ، فصراعٌ عائليّ، فنداء استنجاد، فسقوطٌ نهائيّ.',
@@ -885,7 +883,7 @@ export const suqutRustamiyya: Lesson = {
           feedback: {
             ar: 'صحيح؛ استغلّ أبو عبد الله الشيعي بالضبط فرصة الصراع وتشتّت قبائل المنطقة ليدخل تاهرت دون مقاومة.',
             fr: 'Exact ; Abū ‘Abd Allāh al-Shī‘ī profita précisément du conflit et de la dispersion des tribus pour entrer à Tāhert sans résistance.',
-            en: 'Correct — Abu Abdullah al-Shi‘i exploited exactly the conflict and the scattering of the tribes to enter Tahert without resistance.',
+            en: 'Correct — Abu Abdullah al-Shi‘i exploited exactly the conflict and the scattering of the tribes to enter Tāhert without resistance.',
           },
         },
         {
@@ -931,7 +929,7 @@ export const suqutRustamiyya: Lesson = {
           evidence: {
             ar: 'قبائل تاهرت لم تكن على وفاق وصَعُب اجتماعها، وهذا ما استغلّه أبو عبد الله الشيعي للدخول دون مقاومة.',
             fr: 'Les tribus de Tāhert n’étaient pas en accord et leur union était difficile — c’est précisément ce qu’exploita Abū ‘Abd Allāh al-Shī‘ī pour entrer sans résistance.',
-            en: 'The tribes of Tahert were not in agreement and uniting them was difficult — exactly what Abu Abdullah al-Shi‘i exploited to enter without resistance.',
+            en: 'The tribes of Tāhert were not in agreement and uniting them was difficult — exactly what Abu Abdullah al-Shi‘i exploited to enter without resistance.',
           },
         },
         {
@@ -960,13 +958,13 @@ export const suqutRustamiyya: Lesson = {
       kind: 'completion',
       id: 'completion',
       keyTakeaway: {
-        ar: 'سقطت الدولة الرستمية بعد 136 سنة: أضعفتها هزيمة نفوسة في واقعة مانو، ثمّ مزّقها صراعٌ عائليّ انتهى بمقتل الإمام أبي حاتم، فاستغلّ العبيديون هذا التشتّت ودخلوا تاهرت دون مقاومةٍ تُذكر، فيما بقيت قبائل أهل الاستقامة متمسّكةً بعلمائها.',
-        fr: 'L’État rustamide tomba après 136 années : affaibli par la défaite de Nafūsa à Mānū, puis déchiré par un conflit familial qui s’acheva par l’assassinat de l’imam Abū Ḥātim, les Ubaydides profitèrent de cette division pour entrer à Tāhert sans résistance notable, tandis que les tribus des gens de l’intégrité restèrent attachées à leurs savants.',
-        en: 'The Rustamid state fell after 136 years: weakened by Nafusa’s defeat at Mano, then torn apart by a family conflict that ended with the killing of Imam Abu Hatim, the Ubaydids exploited this division and entered Tahert with barely any resistance, while the tribes of the people of integrity remained attached to their scholars.',
+        ar: 'سقطت الدولة الرستمية بعد نحو 136 سنة: أضعفتها هزيمة نفوسة في واقعة مانو، ثمّ مزّقها صراعٌ عائليّ انتهى بمقتل الإمام أبي حاتم، فاستغلّ العبيديون هذا التشتّت ودخلوا تاهرت دون مقاومة، فيما بقيت قبائل أهل الاستقامة متمسّكةً بعلمائها، كاتمةً أمرها.',
+        fr: 'L’État rustamide tomba après environ 136 années : affaibli par la défaite de Nafūsa à Mānū, puis déchiré par un conflit familial qui s’acheva par l’assassinat de l’imam Abū Ḥātim, il laissa les Ubaydides profiter de cette division pour entrer à Tāhert sans résistance, tandis que les tribus des gens de l’intégrité restaient attachées à leurs savants, en gardant leur cause secrète.',
+        en: 'The Rustamid state fell after about 136 years: weakened by Nafusa’s defeat at Mano, then torn apart by a family conflict that ended with the killing of Imam Abu Hatim, it let the Ubaydids exploit this division and enter Tāhert without resistance, while the tribes of the people of integrity remained attached to their scholars, keeping their cause hidden.',
       },
       learned: [
         {
-          ar: 'خسرت نفوسة واقعة مانو (283هـ) أمام الجيش الأغلبي، وقُتل منها الكثير منهم 400 عالِم، فضعفت الدولة الرستمية التي كانت قوّتها العسكرية مستمدّةً منها.',
+          ar: 'خسرت نفوسة واقعة مانو (283هـ) أمام الجيش الأغلبي، وقُتل منها الكثير، منهم 400 عالِم، فضعفت الدولة الرستمية التي كانت قوّتها العسكرية مستمدّةً منها.',
           fr: 'Nafūsa perdit la bataille de Mānū (283 H) face à l’armée aghlabide, et beaucoup des siens furent tués, dont 400 savants, ce qui affaiblit l’État rustamide dont la force militaire en dépendait.',
           en: 'Nafusa lost the Battle of Mano (283 AH) against the Aghlabid army, and many of them were killed, including 400 scholars, weakening the Rustamid state whose military strength depended on them.',
         },
@@ -978,17 +976,17 @@ export const suqutRustamiyya: Lesson = {
         {
           ar: 'طلبت دَوسَر ابنة الإمام المقتول من أبي عبد الله الشيعي أن يثأر لأبيها، فجمع عدّة قبائل واستغلّ تشتّت المنطقة ليدخل تاهرت.',
           fr: 'Dawsar, fille de l’imam assassiné, demanda à Abū ‘Abd Allāh al-Shī‘ī de le venger ; il rassembla plusieurs tribus et profita de la division de la région pour entrer à Tāhert.',
-          en: 'Dawsar, the slain imam’s daughter, asked Abu Abdullah al-Shi‘i to avenge her father; he gathered several tribes and exploited the region’s division to enter Tahert.',
+          en: 'Dawsar, the slain imam’s daughter, asked Abu Abdullah al-Shi‘i to avenge her father; he gathered several tribes and exploited the region’s division to enter Tāhert.',
         },
         {
-          ar: 'دخل العبيديون تاهرت دون مقاومةٍ تُذكر، وقتلوا العائلة الرستمية إلّا مَن فرّ، وأحرقوا مكتبتهم ونهبوا المدينة، فسقطت الدولة الرستمية.',
-          fr: 'Les Ubaydides entrèrent à Tāhert sans résistance notable, tuèrent la famille rustamide sauf ceux qui fuirent, incendièrent leur bibliothèque et pillèrent la ville — l’État rustamide tomba ainsi.',
-          en: 'The Ubaydids entered Tahert with barely any resistance, killed the Rustamid family except for those who fled, burned their library and plundered the city — and so the Rustamid state fell.',
+          ar: 'دخل العبيديون تاهرت دون مقاومة، وقتلوا العائلة الرستمية إلّا مَن فرّ منهم، وأحرقوا مكتبة المعصومة، وسرقوا المدينة ونهبوها، فسقطت الدولة الرستمية.',
+          fr: 'Les Ubaydides entrèrent à Tāhert sans résistance, tuèrent la famille rustamide sauf ceux qui fuirent, incendièrent la bibliothèque al-Ma‘ṣūma, volèrent et pillèrent la ville — l’État rustamide tomba ainsi.',
+          en: 'The Ubaydids entered Tāhert without resistance, killed the Rustamid family except for those who fled, burned the al-Ma‘suma library, and robbed and plundered the city — and so the Rustamid state fell.',
         },
         {
-          ar: 'فرّ الناجون من آل الرستميين إلى وارجلان وإفريقية، وبقيت قبائل أهل الاستقامة متمسّكةً بعلمائها وفقهائها، بينما واصل العبيديون سعيهم لإسقاط دُوَل المغرب الأخرى.',
-          fr: 'Les survivants des Rustamides fuirent vers Wārjlān et l’Ifrīqiya, et les tribus des gens de l’intégrité restèrent attachées à leurs savants et juristes, tandis que les Ubaydides poursuivaient leur effort pour renverser les autres États du Maghreb.',
-          en: 'The Rustamid survivors fled to Ouargla and Ifriqiya, and the tribes of the people of integrity remained attached to their scholars and jurists, while the Ubaydids continued their effort to topple the other states of the Maghreb.',
+          ar: 'فرّ الناجون من آل الرستميين إلى وارجلان وتخفّوا فيها، وبقيت قبائل أهل الاستقامة في المغرب الأوسط وإفريقية متمسّكةً بعلمائها وفقهائها، كاتمةً أمرها، بينما واصل العبيديون سعيهم لإسقاط دُوَل المغرب وأئمّتها.',
+          fr: 'Les survivants des Rustamides fuirent à Wārjlān et s’y cachèrent ; les tribus des gens de l’intégrité restèrent au Maghreb central et en Ifrīqiya, attachées à leurs savants et juristes, en gardant leur cause secrète, tandis que les Ubaydides poursuivaient leur effort pour renverser les États du Maghreb et leurs imams.',
+          en: 'The Rustamid survivors fled to Ouargla and hid there; the tribes of the people of integrity remained in the central Maghreb and Ifriqiya, attached to their scholars and jurists and keeping their cause hidden, while the Ubaydids continued their effort to topple the states of the Maghreb and their imams.',
         },
       ],
     },
