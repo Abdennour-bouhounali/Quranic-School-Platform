@@ -458,6 +458,145 @@ export type BalanceSection = {
   weights: BalanceWeight[]
 }
 
+// ---------- Riddle ("Who am I?": clues open one by one) ----------
+
+export type Riddle = {
+  id: string
+  // From the vaguest clue to the most obvious one. Fewer clues used = more stars.
+  clues: LocalizedText[]
+  options: { id: string; label: LocalizedText }[]
+  correctId: string
+  // Shown once solved.
+  reveal: LocalizedText
+  image?: string
+}
+
+export type RiddleSection = {
+  kind: 'riddle'
+  id: string
+  title: LocalizedText
+  intro: LocalizedText
+  riddles: Riddle[]
+}
+
+// ---------- Estimate (guess a number on a slider, then compare) ----------
+
+export type EstimateItem = {
+  id: string
+  question: LocalizedText
+  min: number
+  max: number
+  step?: number
+  answer: number
+  // How far from the answer still counts as "spot on" (default: 10% of the range).
+  tolerance?: number
+  unit?: LocalizedText
+  reveal: LocalizedText
+  // Optional bars drawn after the reveal, to compare quantities (e.g. two armies).
+  compare?: { label: LocalizedText; value: number }[]
+}
+
+export type EstimateSection = {
+  kind: 'estimate'
+  id: string
+  title: LocalizedText
+  intro: LocalizedText
+  items: EstimateItem[]
+}
+
+// ---------- Catch (floating lanterns: tap the ones that fit the goal) ----------
+
+export type CatchItem = {
+  id: string
+  label: LocalizedText
+  good: boolean
+  // For a good item: why it fits. For a bad one: why it does not.
+  explanation: LocalizedText
+}
+
+export type CatchSection = {
+  kind: 'catch'
+  id: string
+  title: LocalizedText
+  intro: LocalizedText
+  // What to catch, e.g. "Catch only the causes of the victory".
+  goal: LocalizedText
+  items: CatchItem[]
+}
+
+// ---------- Wheel (spin for a question; made for the whole class) ----------
+
+export type WheelSegment = {
+  id: string
+  // One or two words written on the wheel.
+  label: LocalizedText
+  question: LocalizedText
+  answer: LocalizedText
+}
+
+export type WheelSection = {
+  kind: 'wheel'
+  id: string
+  title: LocalizedText
+  intro: LocalizedText
+  segments: WheelSegment[]
+}
+
+// ---------- Vault (a combination lock: each dial answers one question) ----------
+
+export type VaultDial = {
+  id: string
+  question: LocalizedText
+  // Short values that fit on a dial (a number, a year, one or two words).
+  options: { id: string; label: LocalizedText }[]
+  correctId: string
+  hint: LocalizedText
+}
+
+export type VaultSection = {
+  kind: 'vault'
+  id: string
+  title: LocalizedText
+  intro: LocalizedText
+  image?: string
+  imageAlt?: LocalizedText
+  dials: VaultDial[]
+  // What the learner finds inside once the lock opens.
+  treasure: LocalizedText
+}
+
+// ---------- Scramble (rebuild a key word from shuffled letters) ----------
+
+export type ScrambleWord = {
+  id: string
+  clue: LocalizedText
+  // A single word per language, no spaces and no diacritics.
+  word: LocalizedText
+  reveal: LocalizedText
+}
+
+export type ScrambleSection = {
+  kind: 'scramble'
+  id: string
+  title: LocalizedText
+  intro: LocalizedText
+  words: ScrambleWord[]
+}
+
+// ---------- Lantern (a dark scene: move the light to find hidden facts) ----------
+
+export type LanternSection = {
+  kind: 'lantern'
+  id: string
+  title: LocalizedText
+  intro: LocalizedText
+  // Square, uncropped image; secrets use the same % coordinates as explorer hotspots.
+  image: string
+  imageAlt: LocalizedText
+  secrets: Hotspot[]
+  ending: LocalizedText
+}
+
 // ---------- Completion ----------
 
 export type CompletionSection = {
@@ -487,6 +626,13 @@ export type LessonSection =
   | ReadingSection
   | JourneySection
   | BalanceSection
+  | RiddleSection
+  | EstimateSection
+  | CatchSection
+  | WheelSection
+  | VaultSection
+  | ScrambleSection
+  | LanternSection
   | CompletionSection
 
 export type SectionKind = LessonSection['kind']

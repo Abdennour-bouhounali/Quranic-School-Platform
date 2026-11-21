@@ -252,3 +252,67 @@ These sections currently point to an existing figure-free image. After generatin
 - **nahrawan-muhakkima/damascus-capital.png** — `An ancient walled city at sunset with thick crenellated stone ramparts, a great palace with one broad low lead-covered dome, green gardens and orchards around the walls, plain green banners on the ramparts, majestic`
 - **nahrawan-muhakkima/varied-reactions.png** (new) — `Still life on a woven mat in a quiet room: on the left a sheathed sword lying flat, in the middle a small closed wooden box, on the right a closed leather-bound book beside a lit clay oil lamp, warm gold light, symbolic and calm`
 - **hijra-habasha-madina/year-of-sorrow.png** (new; the Year of Sorrow card temporarily uses sahifa.png) — a quiet mourning scene: an empty house doorway at dusk with an unlit lamp
+
+---
+
+## Lesson 5 of each grade (Flux schnell via Cloudflare Workers AI)
+
+Same workflow and shared suffix. Square images used by `lantern` sections must stay uncropped, like hotspot maps.
+
+### public/images/lessons/ghazawat/
+
+
+11 generation calls for 10 images. Every image reviewed by eye: no human figure, no text.
+
+- **hero.png** — `Wide desert valley at golden dawn, a plain green cloth banner on a wooden pole planted in the sand, round leather shields and wooden spears lying on the sand in the foreground, distant rocky mountains and a palm oasis on the horizon, empty uninhabited landscape, calm and solemn` (post-edit: a tiny figure-like speck on the far dune at ~11%/53% was painted over with neighbouring sand and blurred)
+- **caravan.png** — `Several camels loaded with woven bags and bundles kneeling and resting on a sandy road beside the calm Red Sea shore at late afternoon, rocky desert hills on one side and turquoise sea on the other, empty uninhabited landscape`
+- **badr-night.png** — `A wide moonlit desert plain at night seen from slightly above, in the left foreground a round stone well beside a small stone basin full of water reflecting the moon, in the right foreground an old well filled up with a heap of rocks and sand, in the middle a few dark goat-hair tents with one glowing clay oil lamp, far away on the horizon behind a dune a row of tiny campfires, vast deep-blue starry sky, empty uninhabited scene` (lantern scene: must stay square and uncropped; secrets at well 23/72, rock heap 73/73, tent 79/58, horizon fires 63/41, moon 54/21)
+- **uhud.png** — `A long massive reddish rocky mountain rising above a wide sandy plain in clear morning light, a few simple cloth tents pitched at the far edge of a dry valley at its foot, scattered acacia shrubs, empty uninhabited landscape`
+- **archers-hill.png** — `The rocky top of a small hill overlooking a wide sandy plain with a large reddish mountain behind, several simple curved wooden longbows and leather quivers full of feathered arrows resting against the rocks on the hilltop, afternoon light, empty uninhabited landscape` (second attempt; the first prompt, "wooden bows and leather quivers full of arrows lying abandoned on the rocks at the top of the hillock", drew a crossbow-like bow and was rejected)
+- **ahzab-camp.png** — `A vast encampment of hundreds of small dark goat-hair tents with plain cloth banners spread across a wide sandy plain at dusk, seen from far above, a walled palm oasis town of low mud-brick houses in the distance, rocky black lava hills on both sides, empty uninhabited scene, tense quiet atmosphere` (post-edit: two tiny specks by the town gate painted over; bottom 5% cropped to remove a faint signature mark)
+- **trench.png** — `Elevated view of a long wide deep trench freshly dug across a sandy plain between two dark rocky hills in daylight, heaps of excavated earth along its edge, wooden pickaxes and woven palm baskets lying beside it in the left foreground, one large cracked grey boulder inside the trench in the centre, a wooden bowl of food on a mat in the right foreground, a palm oasis with low mud-brick houses behind the trench, empty uninhabited scene` (explorer map: must stay square and uncropped; hotspots at houses 44/24, trench 50/42, left hill 13/30, trench wall 37/70, pickaxe 17/64, boulder 49/57, bowl 84/87, sky 52/8)
+- **storm.png** — `A fierce cold night wind and swirling dust storm tearing through a desert camp, dark goat-hair tents collapsing and flying loose with snapped ropes, overturned cooking pots and extinguished campfires, torn cloth banners blown away, dramatic dark teal sky, empty uninhabited scene` (post-edit: top 17% cropped to remove an odd winged-animal shape in the sky; image is now 1024×854)
+- **forts.png** — `Several tall ancient fortified tower houses of dark stone and mud brick with heavy closed wooden gates standing among dense date palm groves at dusk, long shadows, a tense silent atmosphere, empty uninhabited scene`
+- **calm.png** — `A peaceful palm oasis town of low mud-brick houses at clear sunrise after a storm, calm golden light, still palm trees, a wide empty sandy plain in front with a long earthen trench in the distance, fresh clear sky, empty uninhabited scene, serene and relieved mood`
+
+#### Pending / could be improved (none blocking)
+
+- **forts.png** — wall lamps look like later-period sconces; regenerate with a stronger model if wanted (same prompt + `plain bare walls`).
+- **calm.png** — a few bench-like shapes by the houses and the trench runs through the street; regenerate if wanted with `the trench crossing open sand far outside the town`.
+- **hero.png** — small domed roofs in the distant oasis are slightly anachronistic.
+
+### public/images/lessons/abu-ubayda/
+
+- **hero.png** — `Front of a humble ancient basket-weaver's workshop of mud-brick with a low arched wooden door, stacks of woven palm-leaf baskets and bundles of palm fronds beside the door, a clay lantern glowing in a wall niche, behind it a wide calm river with dense date palm groves and low flat-roofed mud-brick houses at dusk, wide view, calm and mysterious` (cropped to remove a tiled roof at the top-right edge)
+- **cellar.png** (lantern, square, uncropped) — `Interior of an ancient underground vaulted brick cellar lit by small clay oil lamps, on the left a stone staircase rising to an arched wooden door with heavy iron chains hanging across the doorway, in the center a low wooden book stand holding an open book on a circle of woven straw mats, on the right a tall pile of woven palm-leaf baskets and bundles of dried palm fronds, a shelf of old leather-bound books on the back wall, deep shadows and warm amber glow, secret and quiet` (pseudo-script on the open pages blurred out; secrets placed at door 50/47, chains 50/13, book 52/72, baskets 83/69, lamp 13/73)
+- **chains.png** — `Close-up of heavy old iron chains hanging across a narrow arched doorway at the top of worn stone steps leading down into a dim brick cellar, a faint warm lamp glow rising from below, dust in a ray of light, quiet and watchful`
+- **baskets.png** — `Close-up still life of a half-woven palm-leaf basket with loose strands beside three finished round woven baskets on a woven straw mat, long strips of dried green palm leaves, a simple clay water jug, plain bare mud-brick wall behind, warm sunlight from the side, humble and diligent`
+- **caravan.png** — `Empty silent desert campsite at dawn, three camels kneeling asleep in the sand, leather saddlebags and bundles of closed leather-bound books stacked on a woven palm mat beside them, a sandy trail forking into two paths toward two far horizons, distant date palm groves, vast golden sky, wide landscape of animals and objects only`
+- **letters.png** — `Rolled parchment letters tied with cord packed in an open worn leather saddlebag on a woven palm mat, beside a neat stack of closed plain leather-bound books and a clay inkwell with a cut reed stick, a small shallow clay saucer oil lamp with a small flame, dark mud-brick wall behind, warm firelight, close-up still life` (signature strip cropped)
+- **prison-door.png** — `A heavy ancient wooden door with iron studs standing wide open in a thick dark stone wall, bright golden morning sunlight pouring through the doorway onto a worn stone floor, an iron ring with a broken chain lying on the floor, view from inside a bare dim stone room, a sense of freedom`
+- **chest.png** — `An old closed wooden chest with iron bands and a round brass lock standing on a stone floor in a dim vaulted brick room, a warm golden glow leaking from under its lid, a small clay oil lamp beside it, mysterious and precious` (signature strip cropped)
+
+Rejected and regenerated: `caravan` (first attempt "camels kneeling and resting beside a stone well at a desert crossroads" rendered two seated figures), `baskets` (first attempt had a wall hanging and a book with rendered text, and a teapot-like lamp). 10 generation calls in total.
+
+Pending: none.
+
+### public/images/lessons/nafusa-jerba/
+
+12 Flux calls (cap reached).
+
+Shared suffix as in IMAGE_PROMPTS.md. Reviewed by eye. Rejected: `kitman` v1 (electric-looking wall lamps, cables), `kitman` v2 (barbed wire, bulb lantern), `djerba-mosque` v1 (cross finial), `books-chest` v1 (pseudo-script on open pages).
+Post-processing: `djerba-mosque` v2 — a small cross-like finial on the dome was painted out with sky colour; `kitman` v3 — cropped to the lower 1024×555 band to remove three wrought-iron wall lanterns and a signature; `harbor-boats` — cropped to a 1024×585 band to remove tiny distant figures, a tower and a signature.
+
+- **hero.png** — `Wide panoramic view from a rocky sandstone mountain ridge with an ancient stone and mud Amazigh village and terraced olive groves in the foreground, the land sloping down to a calm turquoise sea in the distance where a low flat island with small white low-domed buildings and date palms lies on the horizon, golden sunrise light, quiet empty landscape`
+- **qasr.png** — `An ancient Amazigh fortified communal granary built of honey-colored mud and stone, many small arched vaulted storage cells stacked in four irregular tiers around a courtyard, rough wooden beams sticking out of the walls, small dark arched openings, clear blue sky, warm morning light, quiet empty courtyard`
+- **kitman.png** (cropped band) — `A heavy closed ancient wooden plank door set in a thick rough stone wall of a mountain village house at dusk, warm firelight glowing through the narrow gap under the door, a gnarled olive tree beside the wall, worn stone steps, deep blue evening sky with first stars above the flat roof, calm and secret mood, quiet empty scene`
+- **halqa-lantern.png** (lantern, square, uncropped) — `Interior of a simple ancient stone-vaulted study room in a mountain village at night, a circle of woven palm mats on the floor around a low wooden book stand holding a closed leather-bound book, two small clay oil lamps glowing side by side at the center, a stack of old bound books in a wall niche on the left, a long plain woven curtain hanging across the right side of the room, a plain arched niche in the back wall, deep blue shadows and warm lamp glow, quiet empty room`
+- **djerba-mosque.png** (finial retouched) — `A small ancient whitewashed North African island mosque of Djerba, low and wide single-storey building with thick white walls and heavy sloping buttresses, one low plain rounded white dome with a smooth bare top, a shaded porch with three round arches, date palms and old olive trees around, sandy ground, turquoise sea behind, bright soft daylight, quiet empty scene`
+- **island-map.png** (explorer, square, uncropped) — `Top-down illustrated map view of a small flat sandy island surrounded by plain calm turquoise sea, a larger white courtyard building with low domes near the center, small white low-domed buildings and white flat-roofed village houses scattered across the island among date palm groves and olive trees, sandy paths linking them, three small wooden sailing boats anchored by a stone jetty at the lower left shore, daylight, map-like clarity`
+- **harbor-boats.png** (cropped band) — `Small wooden sailing fishing boats with furled sails anchored in calm shallow turquoise water beside an old stone jetty on a flat island, a wooden chest, cloth bundles and a rolled palm mat waiting on the jetty, a white low-domed building and date palms on the shore behind, soft morning light, quiet empty scene`
+- **books-chest.png** — `An open old wooden chest filled with closed thick leather-bound books with plain brown covers stacked spine to spine, a glowing clay oil lamp beside it, a reed pen resting in a small clay inkwell, on a woven palm mat inside a whitewashed room with an arched niche, warm light, quiet still life`
+
+Pending (optional, when quota allows):
+- **kitman.png** full-square regeneration without wall lanterns (current file is a cropped band).
+- **harbor-boats.png** full-square regeneration without distant figures (current file is a cropped band).
+- **qasr.png** could be regenerated closer to a real Nafusa ghorfa granary (current one reads as a generic arched earthen courtyard).

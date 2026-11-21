@@ -66,6 +66,13 @@ LessonSection =                  // discriminated by `kind`
   | MemorySection     'memory'      study → flip → recall rounds
   | JourneySection     'journey'     route with one question per stop
   | BalanceSection     'balance'     two-pan scale, facts placed on a side
+  | RiddleSection      'riddle'      "who am I?": clues open one by one, fewer clues = more stars
+  | EstimateSection    'estimate'    guess a number on a slider, then compare bars
+  | CatchSection       'catch'       floating lanterns: tap only the ones that fit the goal
+  | WheelSection       'wheel'       spin for an oral question (whole-class review)
+  | VaultSection       'vault'       combination lock: one question per dial, a "treasure" inside
+  | ScrambleSection    'scramble'    rebuild a key word from shuffled letters
+  | LanternSection     'lantern'     dark picture: sweep a light to find hidden facts
   | CompletionSection 'completion'  takeaway + "what you learned"
 ```
 
@@ -112,6 +119,13 @@ Components read content only through `src/data/index.ts`. To move to a backend, 
 | `ValueCard` | Flip card: value on the front, story evidence on the back | value, evidence |
 | `JourneyPath` | Winding route: answer each stop's question to move the traveller on (`journey` section) | stops, arrival text |
 | `BalanceScale` | Weigh facts on two pans; the beam tilts as they land (`balance` section) | two pan labels, weights with `side` |
+| `RiddleGame` | "Who am I?" Clues open from vague to obvious; a wrong pick opens the next clue; stars for solving early (`riddle`) | riddles with clues, options, `correctId` |
+| `EstimateGame` | Slider guess, then the real figure and optional comparison bars; no guess is "wrong" (`estimate`) | items with `min`/`max`/`answer`, optional `compare` |
+| `CatchGame` | Lanterns drift up a night sky; tap those that fit the goal. A missed right lantern returns, so there is no losing. Static grid under reduced motion (`catch`) | goal, items with `good` |
+| `WheelGame` | Spin lands on an unused segment; the class answers aloud, then the answer is revealed (`wheel`) | segments with label, question, answer |
+| `VaultGame` | Combination lock: turn each dial to its answer, "open" checks all; right dials lock, the rest show a hint (`vault`) | dials with short options, treasure text |
+| `ScrambleGame` | Tap shuffled letters in order to rebuild a word, in the learner's language (`scramble`) | words with clue, one-word `word` |
+| `LanternGame` | Dark square picture; move the light by finger, mouse or arrow keys to reveal secrets; "Show me one" helps (`lantern`) | image, secrets (hotspot coordinates) |
 
 Shared UI: `FeedbackMessage` (correct / incorrect / info, all encouraging), `LessonProgress`, `SmartImage`, `CertaintyBadge`, `SectionHeader`.
 

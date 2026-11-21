@@ -9,6 +9,7 @@ import type {
   ExplorerSection,
   HeroSection,
   JourneySection,
+  LanternSection,
   LessonSection,
   MemorySection,
   MissionsSection,
@@ -21,10 +22,18 @@ import type {
   SwipeSection,
   TimelineSection,
   ValueSection,
+  VaultSection,
   VerseSection,
 } from '@/data'
-import { useI18n } from '@/i18n'
-import { useState } from 'react'
+import { useI18n, type LocalizedText } from '@/i18n'
+import { useState, type ReactNode } from 'react'
+import { RiddleGame } from '@/components/activities/RiddleGame'
+import { EstimateGame } from '@/components/activities/EstimateGame'
+import { CatchGame } from '@/components/activities/CatchGame'
+import { WheelGame } from '@/components/activities/WheelGame'
+import { VaultGame } from '@/components/activities/VaultGame'
+import { ScrambleGame } from '@/components/activities/ScrambleGame'
+import { LanternGame } from '@/components/activities/LanternGame'
 import { SectionHeader } from '@/components/ui/SectionHeader'
 import { SmartImage } from '@/components/ui/SmartImage'
 import { HotspotExplorer } from '@/components/activities/HotspotExplorer'
@@ -98,9 +107,52 @@ export function SectionRenderer({ section, nav }: { section: LessonSection; nav:
       return <Journey section={section} nav={nav} />
     case 'balance':
       return <Balance section={section} nav={nav} />
+    case 'riddle':
+      return <Game section={section} nav={nav}><RiddleGame riddles={section.riddles} /></Game>
+    case 'estimate':
+      return <Game section={section} nav={nav}><EstimateGame items={section.items} /></Game>
+    case 'catch':
+      return <Game section={section} nav={nav}><CatchGame goal={section.goal} items={section.items} /></Game>
+    case 'wheel':
+      return <Game section={section} nav={nav}><WheelGame segments={section.segments} /></Game>
+    case 'vault':
+      return <Vault section={section} nav={nav} />
+    case 'scramble':
+      return <Game section={section} nav={nav}><ScrambleGame words={section.words} /></Game>
+    case 'lantern':
+      return <Lantern section={section} nav={nav} />
     case 'completion':
       return <Completion section={section} nav={nav} />
   }
+}
+
+// Header + one activity: the layout shared by the games that need nothing else.
+function Game({ section, nav, children }: { section: { title: LocalizedText; intro: LocalizedText }; nav: SectionNav; children: ReactNode }) {
+  const { tx } = useI18n()
+  return (
+    <>
+      <SectionHeader index={nav.index} title={tx(section.title)} intro={tx(section.intro)} />
+      {children}
+    </>
+  )
+}
+
+function Vault({ section, nav }: Props<VaultSection>) {
+  const { tx } = useI18n()
+  return (
+    <Game section={section} nav={nav}>
+      <VaultGame dials={section.dials} treasure={section.treasure} image={section.image} imageAlt={section.imageAlt && tx(section.imageAlt)} />
+    </Game>
+  )
+}
+
+function Lantern({ section, nav }: Props<LanternSection>) {
+  const { tx } = useI18n()
+  return (
+    <Game section={section} nav={nav}>
+      <LanternGame image={section.image} imageAlt={tx(section.imageAlt)} secrets={section.secrets} ending={section.ending} />
+    </Game>
+  )
 }
 
 function Hero({ section, nav }: Props<HeroSection>) {
