@@ -98,13 +98,13 @@ export const abuUbayda: Lesson = {
         {
           id: 'm1',
           question: { ar: 'من هو الإمام أبو عبيدة؟', fr: 'Qui est l’imam Abū ‘Ubayda ?', en: 'Who is Imam Abu ‘Ubayda?' },
-          target: 'who-am-i',
+          target: 'reading-youth',
           teaser: { ar: 'ثلاثة ألغاز… وثلاثة وجوه.', fr: 'Trois énigmes… trois personnages.', en: 'Three riddles… three characters.' },
         },
         {
           id: 'm2',
           question: { ar: 'ماذا يُخفي السرداب؟', fr: 'Que cache la cave ?', en: 'What is the cellar hiding?' },
-          target: 'cellar-lantern',
+          target: 'reading-cellar',
           teaser: { ar: 'خذ المصباح وانزل بهدوء.', fr: 'Prends la lampe et descends sans bruit.', en: 'Take the lamp and go down quietly.' },
         },
         {
@@ -116,97 +116,21 @@ export const abuUbayda: Lesson = {
         {
           id: 'm4',
           question: { ar: 'ممّن نأخذ العلم؟', fr: 'De qui prendre le savoir ?', en: 'Whom do we take knowledge from?' },
-          target: 'fiqh-vault',
+          target: 'reading-fiqh',
           teaser: { ar: 'الجواب مقفلٌ في خزنة!', fr: 'La réponse est enfermée dans un coffre !', en: 'The answer is locked in a vault!' },
         },
       ],
     },
 
-    // 03 — Riddles: who am I? (slide 3 + card, slide 6 timeline)
-    {
-      kind: 'riddle',
-      id: 'who-am-i',
-      title: { ar: 'من أنا؟', fr: 'Qui suis-je ?', en: 'Who am I?' },
-      intro: {
-        ar: 'تنكشف الأدلّة واحدًا بعد واحد. كلّما عرفت الجواب بأدلّةٍ أقلّ، ربحت نجومًا أكثر!',
-        fr: 'Les indices s’ouvrent un à un. Moins tu en utilises pour trouver, plus tu gagnes d’étoiles !',
-        en: 'The clues open one by one. The fewer you need, the more stars you win!',
-      },
-      riddles: [
-        {
-          id: 'r-abu-ubayda',
-          image: `${IMG}/baskets.png`,
-          clues: [
-            { ar: 'أصلي فارسيّ، وأنتمي إلى قبيلة بني تميم بالولاء.', fr: 'Je suis d’origine perse, rattaché à la tribu des Banū Tamīm par alliance (walā’).', en: 'I am of Persian origin, attached to the tribe of Banu Tamim by clientage (walā’).' },
-            { ar: 'أنا مولًى لعروة بن أُدَيّة، ووُلدتُ نحو سنة 50 هـ.', fr: 'Je suis le client (mawlā) de ‘Urwa ibn Udayya, né vers l’an 50 H.', en: 'I am the client (mawlā) of ‘Urwa ibn Udayya, born about 50 AH.' },
-            { ar: 'تعلّمتُ في البصرة عند كبار الصحابة والتابعين.', fr: 'J’ai étudié à Bassora auprès de grands Compagnons et Successeurs.', en: 'I studied in Basra with senior Companions and Successors.' },
-            { ar: 'أنا الإمام الثاني لأهل الدعوة، بعد الإمام جابر.', fr: 'Je suis le deuxième imam des gens de l’Appel, après l’imam Jābir.', en: 'I am the second imam of the People of the Call, after Imam Jabir.' },
-          ],
-          options: [
-            { id: 'ibn-ibad', label: { ar: 'عبد الله بن إباض', fr: '‘Abd Allāh ibn Ibāḍ', en: '‘Abdullah ibn Ibad' } },
-            { id: 'abu-ubayda', label: { ar: 'أبو عبيدة مسلم', fr: 'Abū ‘Ubayda Muslim', en: 'Abu ‘Ubayda Muslim' } },
-            { id: 'rabi', label: { ar: 'الربيع بن حبيب', fr: 'al-Rabī‘ ibn Ḥabīb', en: 'al-Rabi‘ ibn Habib' } },
-            { id: 'abu-bilal', label: { ar: 'أبو بلال مرداس', fr: 'Abū Bilāl Mirdās', en: 'Abu Bilal Mirdas' } },
-          ],
-          correctId: 'abu-ubayda',
-          reveal: {
-            ar: 'إنّه الإمام أبو عبيدة مسلم بن أبي كريمة رحمه الله: فارسيّ الأصل، تميميّ بالولاء، مولًى لعروة بن أُدَيّة. وُلد نحو سنة 50 هـ وتوفّي نحو سنة 145 هـ، وهو الإمام الثاني للمذهب بعد الإمام جابر.',
-            fr: 'C’est l’imam Abū ‘Ubayda Muslim ibn Abī Karīma (qu’Allah lui fasse miséricorde) : d’origine perse, rattaché aux Banū Tamīm, client de ‘Urwa ibn Udayya. Né vers 50 H, mort vers 145 H, il est le deuxième imam de l’école après l’imam Jābir.',
-            en: 'He is Imam Abu ‘Ubayda Muslim ibn Abi Karima (may God have mercy on him): Persian by origin, a Tamimi by clientage, client of ‘Urwa ibn Udayya. Born about 50 AH and died about 145 AH, he is the school’s second imam after Imam Jabir.',
-          },
-        },
-        {
-          id: 'r-jabir',
-          clues: [
-            { ar: 'لي حلقةُ علمٍ في البصرة، وقد عرفتَني في درسٍ سابق.', fr: 'J’ai un cercle de savoir à Bassora ; tu m’as connu dans une leçon précédente.', en: 'I have a study circle in Basra; you met me in an earlier lesson.' },
-            { ar: 'لازم أبو عبيدة حلقاتي، واعتمد منهجي في العلم والعمل، ثمّ خلفني في رئاسة الحلقة.', fr: 'Abū ‘Ubayda ne quittait pas mes cercles ; il adopta ma méthode dans le savoir et l’action, puis me succéda à leur tête.', en: 'Abu ‘Ubayda never left my circles; he adopted my method in knowledge and action, then succeeded me at their head.' },
-            { ar: 'أنا إمام أهل الدعوة الأوّل، وكانت إمامتي من سنة 61 هـ إلى سنة 93 هـ.', fr: 'Je suis le premier imam des gens de l’Appel ; mon imamat dura de 61 H à 93 H.', en: 'I am the first imam of the People of the Call; my imamate lasted from 61 AH to 93 AH.' },
-          ],
-          options: [
-            { id: 'suhar', label: { ar: 'صحار العبدي', fr: 'Ṣuḥār al-‘Abdī', en: 'Suhar al-‘Abdi' } },
-            { id: 'ibn-abbas', label: { ar: 'عبد الله بن عبّاس', fr: '‘Abd Allāh ibn ‘Abbās', en: '‘Abdullah ibn ‘Abbas' } },
-            { id: 'jabir', label: { ar: 'جابر بن زيد', fr: 'Jābir ibn Zayd', en: 'Jabir ibn Zayd' } },
-            { id: 'ibn-ibad', label: { ar: 'عبد الله بن إباض', fr: '‘Abd Allāh ibn Ibāḍ', en: '‘Abdullah ibn Ibad' } },
-          ],
-          correctId: 'jabir',
-          reveal: {
-            ar: 'إنّه الإمام جابر بن زيد. أخذ عنه أبو عبيدة العلم، واعتمد منهجه في العلم والعمل، ولازم حلقاته حتى خلفه في رئاسة الحلقة سنة 93 هـ.',
-            fr: 'C’est l’imam Jābir ibn Zayd. Abū ‘Ubayda reçut de lui le savoir, adopta sa méthode dans le savoir et l’action, et ne quitta pas ses cercles jusqu’à lui succéder à leur tête en 93 H.',
-            en: 'He is Imam Jabir ibn Zayd. Abu ‘Ubayda took knowledge from him, adopted his method in knowledge and action, and stayed in his circles until he succeeded him at their head in 93 AH.',
-          },
-        },
-        {
-          id: 'r-hajjaj',
-          image: `${IMG}/prison-door.png`,
-          clues: [
-            { ar: 'لستُ عالمًا ولا طالب علم: أنا والٍ أمويّ.', fr: 'Je ne suis ni savant ni étudiant : je suis un gouverneur omeyyade.', en: 'I am neither a scholar nor a student: I am an Umayyad governor.' },
-            { ar: 'كنتُ واليًا على العراق، وألقيتُ بأهل الفضل والعلم في السجن.', fr: 'Je gouvernais l’Irak, et j’ai jeté en prison des gens de mérite et de savoir.', en: 'I governed Iraq, and I threw people of virtue and knowledge into prison.' },
-            { ar: 'كان أبو عبيدة من سجنائي، ولم يخرج إلا بعد موتي سنة 95 هـ.', fr: 'Abū ‘Ubayda fut l’un de mes prisonniers ; il ne sortit qu’après ma mort, en 95 H.', en: 'Abu ‘Ubayda was one of my prisoners; he only came out after my death in 95 AH.' },
-          ],
-          options: [
-            { id: 'abd-al-malik', label: { ar: 'عبد الملك بن مروان', fr: '‘Abd al-Malik ibn Marwān', en: '‘Abd al-Malik ibn Marwan' } },
-            { id: 'hajjaj', label: { ar: 'الحجّاج بن يوسف', fr: 'al-Ḥajjāj ibn Yūsuf', en: 'al-Hajjaj ibn Yusuf' } },
-            { id: 'nafi', label: { ar: 'نافع بن الأزرق', fr: 'Nāfi‘ ibn al-Azraq', en: 'Nafi‘ ibn al-Azraq' } },
-          ],
-          correctId: 'hajjaj',
-          reveal: {
-            ar: 'إنّه الحجّاج بن يوسف الثقفي، والي العراق. سجن أهل الفضل والعلم لأسبابٍ مختلفة، أهمّها إنكارهم لظلم الحكّام والولاة.',
-            fr: 'C’est al-Ḥajjāj ibn Yūsuf al-Thaqafī, gouverneur d’Irak. Il emprisonna des gens de mérite et de savoir pour diverses raisons, la principale étant qu’ils dénonçaient l’injustice des dirigeants et des gouverneurs.',
-            en: 'He is al-Hajjaj ibn Yusuf al-Thaqafi, governor of Iraq. He imprisoned people of virtue and knowledge for various reasons, above all because they spoke out against the injustice of rulers and governors.',
-          },
-        },
-      ],
-    },
-
-    // 04 — Reading: his learning, prison and succession (slide 3)
+    // 03 — Reading: his learning, prison and succession (slide 3)
     {
       kind: 'reading',
       id: 'reading-youth',
       title: { ar: 'اقرأ: من طالب علمٍ إلى إمام', fr: 'Lis : de l’étudiant à l’imam', en: 'Read: from student to imam' },
       intro: {
-        ar: 'أربع بطاقاتٍ قصيرة. انتبه للأرقام: ستحتاجها في لعبة التخمين التالية!',
-        fr: 'Quatre courtes cartes. Attention aux nombres : tu en auras besoin dans le jeu d’estimation qui suit !',
-        en: 'Four short cards. Watch the numbers — you will need them in the guessing game that follows!',
+        ar: 'ستّ بطاقاتٍ قصيرة. انتبه للأسماء والأرقام: ستحتاجها في الألغاز التالية!',
+        fr: 'Six courtes cartes. Attention aux noms et aux nombres : tu en auras besoin dans les énigmes qui suivent !',
+        en: 'Six short cards. Watch the names and the numbers — you will need them in the riddles that follow!',
       },
       image: `${IMG}/prison-door.png`,
       imageAlt: {
@@ -215,6 +139,15 @@ export const abuUbayda: Lesson = {
         en: 'A heavy wooden door standing open in a stone wall, morning light pouring in; on the floor, an iron ring and a broken chain',
       },
       paragraphs: [
+        {
+          id: 'p0',
+          heading: { ar: 'بطاقة الإمام', fr: 'La carte de l’imam', en: 'The imam’s card' },
+          text: {
+            ar: 'هو الإمام أبو عبيدة مسلم بن أبي كريمة رحمه الله: فارسيّ الأصل، ينتمي إلى قبيلة بني تميم بالولاء، وهو مولًى لعروة بن أُدَيّة. وُلد نحو سنة 50 هـ، وتعلّم في البصرة عند كبار الصحابة والتابعين، وتوفّي نحو سنة 145 هـ.',
+            fr: 'C’est l’imam Abū ‘Ubayda Muslim ibn Abī Karīma (qu’Allah lui fasse miséricorde) : d’origine perse, rattaché à la tribu des Banū Tamīm par alliance (walā’), client (mawlā) de ‘Urwa ibn Udayya. Né vers 50 H, il étudia à Bassora auprès de grands Compagnons et Successeurs, et mourut vers 145 H.',
+            en: 'He is Imam Abu ‘Ubayda Muslim ibn Abi Karima (may God have mercy on him): Persian by origin, attached to the tribe of Banu Tamim by clientage (walā’), and the client (mawlā) of ‘Urwa ibn Udayya. Born about 50 AH, he studied in Basra with senior Companions and Successors, and died about 145 AH.',
+          },
+        },
         {
           id: 'p1',
           heading: { ar: 'أساتذته', fr: 'Ses maîtres', en: 'His teachers' },
@@ -251,49 +184,120 @@ export const abuUbayda: Lesson = {
             en: 'He kept the imamate in secrecy (kitmān), as a shield from the injustice of the Umayyads, and then of the Abbasids after them.',
           },
         },
+        {
+          id: 'p5',
+          heading: { ar: 'عمرٌ بين التعلّم والتعليم', fr: 'Une vie entre apprendre et enseigner', en: 'A life of learning and teaching' },
+          text: {
+            ar: 'مكث 40 سنة يتعلّم، ثمّ 40 سنة معلّمًا، وعاش نحو 95 سنة (من نحو 50 هـ إلى نحو 145 هـ). كانت إمامة جابر بن زيد من سنة 61 هـ إلى سنة 93 هـ، أي 32 سنة؛ ثمّ خلفه أبو عبيدة سنة 93 هـ، ودامت إمامته حتى وفاته نحو سنة 145 هـ، أي نحو 52 سنة.',
+            fr: 'Il passa 40 ans à apprendre, puis 40 ans à enseigner, et vécut environ 95 ans (d’environ 50 H à environ 145 H). L’imamat de Jābir ibn Zayd alla de 61 H à 93 H, soit 32 ans ; Abū ‘Ubayda lui succéda en 93 H, et son imamat dura jusqu’à sa mort vers 145 H, soit environ 52 ans.',
+            en: 'He spent 40 years learning, then 40 years teaching, and lived about 95 years (from about 50 AH to about 145 AH). Jabir ibn Zayd’s imamate ran from 61 AH to 93 AH — 32 years; Abu ‘Ubayda succeeded him in 93 AH, and his imamate lasted until his death about 145 AH — about 52 years.',
+          },
+        },
       ],
     },
 
-    // 05 — Estimate: the numbers of a long life (slides 3, 6, 7)
+    // 04 — Quiz: who am I? and the numbers of a long life (slides 3, 6, 7)
     {
-      kind: 'estimate',
-      id: 'numbers',
-      title: { ar: 'خمِّن الرقم!', fr: 'Devine le nombre !', en: 'Guess the number!' },
+      kind: 'quiz',
+      id: 'who-am-i',
+      title: { ar: 'من أنا؟ وكم؟', fr: 'Qui suis-je ? Combien ?', en: 'Who am I? How many?' },
       intro: {
-        ar: 'حرّك المؤشّر إلى الرقم الذي تظنّه صحيحًا، ثمّ اكشف الجواب.',
-        fr: 'Glisse le curseur sur le nombre que tu crois juste, puis découvre la réponse.',
-        en: 'Slide to the number you think is right, then reveal the answer.',
+        ar: 'ثلاثة ألغاز «من أنا؟»، ثمّ أربعة أرقامٍ من حياة الإمام. عُد إلى البطاقات إن احتجت!',
+        fr: 'Trois énigmes « Qui suis-je ? », puis quatre nombres de la vie de l’imam. Reviens aux cartes si besoin !',
+        en: 'Three “Who am I?” riddles, then four numbers from the imam’s life. Go back to the cards if you need to!',
       },
-      items: [
+      questions: [
+        {
+          id: 'r-abu-ubayda',
+          type: 'mcq',
+          question: {
+            ar: 'من أنا؟ أصلي فارسيّ، وأنتمي إلى قبيلة بني تميم بالولاء. أنا مولًى لعروة بن أُدَيّة، ووُلدتُ نحو سنة 50 هـ. تعلّمتُ في البصرة عند كبار الصحابة والتابعين. وأنا الإمام الثاني لأهل الدعوة، بعد الإمام جابر.',
+            fr: 'Qui suis-je ? Je suis d’origine perse, rattaché à la tribu des Banū Tamīm par alliance (walā’). Je suis le client (mawlā) de ‘Urwa ibn Udayya, né vers l’an 50 H. J’ai étudié à Bassora auprès de grands Compagnons et Successeurs. Je suis le deuxième imam des gens de l’Appel, après l’imam Jābir.',
+            en: 'Who am I? I am of Persian origin, attached to the tribe of Banu Tamim by clientage (walā’). I am the client (mawlā) of ‘Urwa ibn Udayya, born about 50 AH. I studied in Basra with senior Companions and Successors. I am the second imam of the People of the Call, after Imam Jabir.',
+          },
+          options: [
+            { id: 'ibn-ibad', label: { ar: 'عبد الله بن إباض', fr: '‘Abd Allāh ibn Ibāḍ', en: '‘Abdullah ibn Ibad' } },
+            { id: 'abu-ubayda', label: { ar: 'أبو عبيدة مسلم', fr: 'Abū ‘Ubayda Muslim', en: 'Abu ‘Ubayda Muslim' } },
+            { id: 'rabi', label: { ar: 'الربيع بن حبيب', fr: 'al-Rabī‘ ibn Ḥabīb', en: 'al-Rabi‘ ibn Habib' } },
+            { id: 'abu-bilal', label: { ar: 'أبو بلال مرداس', fr: 'Abū Bilāl Mirdās', en: 'Abu Bilal Mirdas' } },
+          ],
+          correctId: 'abu-ubayda',
+          explanation: {
+            ar: 'إنّه الإمام أبو عبيدة مسلم بن أبي كريمة رحمه الله: فارسيّ الأصل، تميميّ بالولاء، مولًى لعروة بن أُدَيّة. وُلد نحو سنة 50 هـ وتوفّي نحو سنة 145 هـ، وهو الإمام الثاني للمذهب بعد الإمام جابر.',
+            fr: 'C’est l’imam Abū ‘Ubayda Muslim ibn Abī Karīma (qu’Allah lui fasse miséricorde) : d’origine perse, rattaché aux Banū Tamīm, client de ‘Urwa ibn Udayya. Né vers 50 H, mort vers 145 H, il est le deuxième imam de l’école après l’imam Jābir.',
+            en: 'He is Imam Abu ‘Ubayda Muslim ibn Abi Karima (may God have mercy on him): Persian by origin, a Tamimi by clientage, client of ‘Urwa ibn Udayya. Born about 50 AH and died about 145 AH, he is the school’s second imam after Imam Jabir.',
+          },
+        },
+        {
+          id: 'r-jabir',
+          type: 'mcq',
+          question: {
+            ar: 'من أنا؟ لي حلقةُ علمٍ في البصرة، وقد عرفتَني في درسٍ سابق. لازم أبو عبيدة حلقاتي، واعتمد منهجي في العلم والعمل، ثمّ خلفني في رئاسة الحلقة. أنا إمام أهل الدعوة الأوّل، وكانت إمامتي من سنة 61 هـ إلى سنة 93 هـ.',
+            fr: 'Qui suis-je ? J’ai un cercle de savoir à Bassora ; tu m’as connu dans une leçon précédente. Abū ‘Ubayda ne quittait pas mes cercles ; il adopta ma méthode dans le savoir et l’action, puis me succéda à leur tête. Je suis le premier imam des gens de l’Appel ; mon imamat dura de 61 H à 93 H.',
+            en: 'Who am I? I have a study circle in Basra; you met me in an earlier lesson. Abu ‘Ubayda never left my circles; he adopted my method in knowledge and action, then succeeded me at their head. I am the first imam of the People of the Call; my imamate lasted from 61 AH to 93 AH.',
+          },
+          options: [
+            { id: 'suhar', label: { ar: 'صحار العبدي', fr: 'Ṣuḥār al-‘Abdī', en: 'Suhar al-‘Abdi' } },
+            { id: 'ibn-abbas', label: { ar: 'عبد الله بن عبّاس', fr: '‘Abd Allāh ibn ‘Abbās', en: '‘Abdullah ibn ‘Abbas' } },
+            { id: 'jabir', label: { ar: 'جابر بن زيد', fr: 'Jābir ibn Zayd', en: 'Jabir ibn Zayd' } },
+            { id: 'ibn-ibad', label: { ar: 'عبد الله بن إباض', fr: '‘Abd Allāh ibn Ibāḍ', en: '‘Abdullah ibn Ibad' } },
+          ],
+          correctId: 'jabir',
+          explanation: {
+            ar: 'إنّه الإمام جابر بن زيد. أخذ عنه أبو عبيدة العلم، واعتمد منهجه في العلم والعمل، ولازم حلقاته حتى خلفه في رئاسة الحلقة سنة 93 هـ.',
+            fr: 'C’est l’imam Jābir ibn Zayd. Abū ‘Ubayda reçut de lui le savoir, adopta sa méthode dans le savoir et l’action, et ne quitta pas ses cercles jusqu’à lui succéder à leur tête en 93 H.',
+            en: 'He is Imam Jabir ibn Zayd. Abu ‘Ubayda took knowledge from him, adopted his method in knowledge and action, and stayed in his circles until he succeeded him at their head in 93 AH.',
+          },
+        },
+        {
+          id: 'r-hajjaj',
+          type: 'mcq',
+          question: {
+            ar: 'من أنا؟ لستُ عالمًا ولا طالب علم: أنا والٍ أمويّ. كنتُ واليًا على العراق، وألقيتُ بأهل الفضل والعلم في السجن. كان أبو عبيدة من سجنائي، ولم يخرج إلا بعد موتي سنة 95 هـ.',
+            fr: 'Qui suis-je ? Je ne suis ni savant ni étudiant : je suis un gouverneur omeyyade. Je gouvernais l’Irak, et j’ai jeté en prison des gens de mérite et de savoir. Abū ‘Ubayda fut l’un de mes prisonniers ; il ne sortit qu’après ma mort, en 95 H.',
+            en: 'Who am I? I am neither a scholar nor a student: I am an Umayyad governor. I governed Iraq, and I threw people of virtue and knowledge into prison. Abu ‘Ubayda was one of my prisoners; he only came out after my death in 95 AH.',
+          },
+          options: [
+            { id: 'abd-al-malik', label: { ar: 'عبد الملك بن مروان', fr: '‘Abd al-Malik ibn Marwān', en: '‘Abd al-Malik ibn Marwan' } },
+            { id: 'hajjaj', label: { ar: 'الحجّاج بن يوسف', fr: 'al-Ḥajjāj ibn Yūsuf', en: 'al-Hajjaj ibn Yusuf' } },
+            { id: 'nafi', label: { ar: 'نافع بن الأزرق', fr: 'Nāfi‘ ibn al-Azraq', en: 'Nafi‘ ibn al-Azraq' } },
+          ],
+          correctId: 'hajjaj',
+          explanation: {
+            ar: 'إنّه الحجّاج بن يوسف الثقفي، والي العراق. سجن أهل الفضل والعلم لأسبابٍ مختلفة، أهمّها إنكارهم لظلم الحكّام والولاة.',
+            fr: 'C’est al-Ḥajjāj ibn Yūsuf al-Thaqafī, gouverneur d’Irak. Il emprisonna des gens de mérite et de savoir pour diverses raisons, la principale étant qu’ils dénonçaient l’injustice des dirigeants et des gouverneurs.',
+            en: 'He is al-Hajjaj ibn Yusuf al-Thaqafi, governor of Iraq. He imprisoned people of virtue and knowledge for various reasons, above all because they spoke out against the injustice of rulers and governors.',
+          },
+        },
         {
           id: 'e-learn',
+          type: 'mcq',
           question: { ar: 'كم سنةً مكث أبو عبيدة يتعلّم قبل أن يجلس للتعليم؟', fr: 'Combien d’années Abū ‘Ubayda passa-t-il à apprendre avant d’enseigner ?', en: 'How many years did Abu ‘Ubayda spend learning before he taught?' },
-          min: 5,
-          max: 60,
-          step: 1,
-          answer: 40,
-          tolerance: 4,
-          unit: { ar: 'سنة', fr: 'ans', en: 'years' },
-          reveal: {
+          options: [
+            { id: 'n20', label: { ar: '20 سنة', fr: '20 ans', en: '20 years' } },
+            { id: 'n30', label: { ar: '30 سنة', fr: '30 ans', en: '30 years' } },
+            { id: 'n40', label: { ar: '40 سنة', fr: '40 ans', en: '40 years' } },
+            { id: 'n50', label: { ar: '50 سنة', fr: '50 ans', en: '50 years' } },
+          ],
+          correctId: 'n40',
+          explanation: {
             ar: 'مكث 40 سنة يتعلّم، ثمّ 40 سنة معلّمًا! عمرٌ كامل بين طلب العلم ونشره.',
             fr: 'Il passa 40 ans à apprendre, puis 40 ans à enseigner ! Toute une vie entre la quête du savoir et sa transmission.',
             en: 'He spent 40 years learning, then 40 years teaching! A whole life between seeking knowledge and spreading it.',
           },
-          compare: [
-            { label: { ar: 'يتعلّم', fr: 'Apprendre', en: 'Learning' }, value: 40 },
-            { label: { ar: 'يعلّم', fr: 'Enseigner', en: 'Teaching' }, value: 40 },
-          ],
         },
         {
           id: 'e-prison',
+          type: 'mcq',
           question: { ar: 'في أيّ سنةٍ هجرية مات الحجّاج فخرج أبو عبيدة من السجن؟', fr: 'En quelle année de l’Hégire al-Ḥajjāj mourut-il, libérant Abū ‘Ubayda de prison ?', en: 'In which Hijri year did al-Hajjaj die, so that Abu ‘Ubayda left prison?' },
-          min: 60,
-          max: 140,
-          step: 1,
-          answer: 95,
-          tolerance: 5,
-          unit: { ar: 'هـ', fr: 'H', en: 'AH' },
-          reveal: {
+          options: [
+            { id: 'y61', label: { ar: '61 هـ', fr: '61 H', en: '61 AH' } },
+            { id: 'y93', label: { ar: '93 هـ', fr: '93 H', en: '93 AH' } },
+            { id: 'y95', label: { ar: '95 هـ', fr: '95 H', en: '95 AH' } },
+            { id: 'y145', label: { ar: '145 هـ', fr: '145 H', en: '145 AH' } },
+          ],
+          correctId: 'y95',
+          explanation: {
             ar: 'سنة 95 هـ. لم يخرج الإمام من السجن إلا بعد موت الحجّاج.',
             fr: 'En 95 H. L’imam ne sortit de prison qu’après la mort d’al-Ḥajjāj.',
             en: 'In 95 AH. The imam only left prison after al-Hajjaj’s death.',
@@ -301,14 +305,16 @@ export const abuUbayda: Lesson = {
         },
         {
           id: 'e-life',
+          type: 'mcq',
           question: { ar: 'وُلد نحو سنة 50 هـ وتوفّي نحو سنة 145 هـ. كم سنةً عاش تقريبًا؟', fr: 'Né vers 50 H, mort vers 145 H : combien d’années vécut-il environ ?', en: 'Born about 50 AH, died about 145 AH: roughly how many years did he live?' },
-          min: 40,
-          max: 120,
-          step: 1,
-          answer: 95,
-          tolerance: 5,
-          unit: { ar: 'سنة', fr: 'ans', en: 'years' },
-          reveal: {
+          options: [
+            { id: 'n50', label: { ar: 'نحو 50 سنة', fr: 'Environ 50 ans', en: 'About 50 years' } },
+            { id: 'n80', label: { ar: 'نحو 80 سنة', fr: 'Environ 80 ans', en: 'About 80 years' } },
+            { id: 'n95', label: { ar: 'نحو 95 سنة', fr: 'Environ 95 ans', en: 'About 95 years' } },
+            { id: 'n145', label: { ar: 'نحو 145 سنة', fr: 'Environ 145 ans', en: 'About 145 years' } },
+          ],
+          correctId: 'n95',
+          explanation: {
             ar: 'نحو 95 سنة (من نحو 50 هـ إلى نحو 145 هـ). والتاريخان تقريبيّان.',
             fr: 'Environ 95 ans (d’environ 50 H à environ 145 H). Les deux dates sont approximatives.',
             en: 'About 95 years (from about 50 AH to about 145 AH). Both dates are approximate.',
@@ -316,35 +322,98 @@ export const abuUbayda: Lesson = {
         },
         {
           id: 'e-imamate',
+          type: 'mcq',
           question: { ar: 'خلف جابرًا سنة 93 هـ وبقي إمامًا حتى وفاته نحو سنة 145 هـ. كم سنةً دامت إمامته تقريبًا؟', fr: 'Il succéda à Jābir en 93 H et resta imam jusqu’à sa mort vers 145 H. Combien d’années environ ?', en: 'He succeeded Jabir in 93 AH and remained imam until his death about 145 AH. Roughly how many years?' },
-          min: 10,
-          max: 90,
-          step: 1,
-          answer: 52,
-          tolerance: 6,
-          unit: { ar: 'سنة', fr: 'ans', en: 'years' },
-          reveal: {
+          options: [
+            { id: 'n32', label: { ar: 'نحو 32 سنة', fr: 'Environ 32 ans', en: 'About 32 years' } },
+            { id: 'n40', label: { ar: 'نحو 40 سنة', fr: 'Environ 40 ans', en: 'About 40 years' } },
+            { id: 'n52', label: { ar: 'نحو 52 سنة', fr: 'Environ 52 ans', en: 'About 52 years' } },
+            { id: 'n95', label: { ar: 'نحو 95 سنة', fr: 'Environ 95 ans', en: 'About 95 years' } },
+          ],
+          correctId: 'n52',
+          explanation: {
             ar: 'نحو 52 سنة (93 ← 145 هـ)، أمّا إمامة جابر بن زيد قبله فكانت من 61 هـ إلى 93 هـ، أي 32 سنة.',
             fr: 'Environ 52 ans (93 → 145 H). L’imamat de Jābir ibn Zayd, avant lui, alla de 61 H à 93 H, soit 32 ans.',
             en: 'About 52 years (93 → 145 AH). Jabir ibn Zayd’s imamate before him ran from 61 AH to 93 AH — 32 years.',
           },
-          compare: [
-            { label: { ar: 'إمامة جابر', fr: 'Imamat de Jābir', en: 'Jabir’s imamate' }, value: 32 },
-            { label: { ar: 'إمامة أبي عبيدة', fr: 'Imamat d’Abū ‘Ubayda', en: 'Abu ‘Ubayda’s imamate' }, value: 52 },
-          ],
         },
       ],
     },
 
-    // 06 — Lantern: the hidden cellar (slides 4 and 7)
+    // 05 — Reading: teaching in the cellar (slides 4 and 7)
     {
-      kind: 'lantern',
-      id: 'cellar-lantern',
+      kind: 'reading',
+      id: 'reading-cellar',
+      title: { ar: 'اقرأ: التدريس في السرداب', fr: 'Lis : enseigner dans la cave', en: 'Read: teaching in the cellar' },
+      intro: {
+        ar: 'أنت الآن تحت الأرض في البصرة. اقرأ أسرار السرداب، ثمّ خذ المصباح واكتشفها بنفسك.',
+        fr: 'Te voici sous terre, à Bassora. Lis les secrets de la cave, puis prends la lampe et découvre-les toi-même.',
+        en: 'You are now underground in Basra. Read the cellar’s secrets, then take the lamp and discover them yourself.',
+      },
+      image: `${IMG}/baskets.png`,
+      imageAlt: {
+        ar: 'قفافٌ منسوجة من سعف النخيل وشرائطُ من السعف الأخضر على حصيرٍ مستدير، وبجانبها جرّةٌ من الفخّار في ضوء نافذةٍ صغيرة',
+        fr: 'Des paniers tressés en feuilles de palmier et des lanières de palme verte sur une natte ronde, à côté d’une jarre en terre cuite, dans la lumière d’une petite fenêtre',
+        en: 'Baskets woven from palm leaves and strips of green palm frond on a round mat, beside a clay jar, in the light of a small window',
+      },
+      paragraphs: [
+        {
+          id: 'p1',
+          heading: { ar: 'بابٌ لا يعرفه أحد', fr: 'Une porte que nul ne connaît', en: 'A door nobody knows' },
+          text: {
+            ar: 'اهتمّ الإمام بالدعوة إلى الله وبثّ الروح الإسلامية والاستقامة بين المسلمين اهتمامًا بالغًا، ومنحها كلّ جهده. ولمّا كانت رقابة الأمويين شديدة، اتّخذ الإمام أبو عبيدة مدرسته في سردابٍ خفيّ في البصرة.',
+            fr: 'L’imam se soucia au plus haut point d’appeler à Dieu et de répandre l’esprit de l’islam et la rectitude parmi les musulmans ; il y consacra tous ses efforts. Comme la surveillance des Omeyyades était sévère, l’imam Abū ‘Ubayda installa son école dans une cave cachée de Bassora.',
+            en: 'The imam cared deeply about calling to God and spreading the spirit of Islam and rectitude among Muslims, and gave it all his effort. Because Umayyad surveillance was severe, Imam Abu ‘Ubayda set up his school in a hidden cellar in Basra.',
+          },
+        },
+        {
+          id: 'p2',
+          heading: { ar: 'معمل العقول', fr: 'L’atelier des esprits', en: 'The workshop of minds' },
+          text: {
+            ar: 'هنا آوى الإمام طلبة العلم من كلّ الأقطار، ودرّسهم ورعاهم بنفسه مدّة وجودهم في البصرة.',
+            fr: 'Ici, l’imam accueillait les étudiants venus de toutes les contrées ; il les instruisait et veillait sur eux lui-même tout le temps de leur séjour à Bassora.',
+            en: 'Here the imam sheltered students of knowledge from every land, teaching them and caring for them himself for as long as they stayed in Basra.',
+          },
+        },
+        {
+          id: 'p3',
+          heading: { ar: 'جرس الإنذار', fr: 'La sonnette d’alarme', en: 'The alarm bell' },
+          text: {
+            ar: 'وضع في مدخل السرداب سلاسل: إذا سمع صلصلتها هو وطلّابه، علموا أنّ غريبًا يريد الدخول، فأوقفوا التدريس واشتغلوا بصنع القفاف. فإذا غادر وأمنوا عيون الظَّلَمة، رجعوا من معمل القفاف إلى معمل العقول.',
+            fr: 'Il plaça des chaînes à l’entrée de la cave : dès que lui et ses élèves entendaient leur cliquetis, ils savaient qu’un étranger voulait entrer ; ils arrêtaient alors la leçon et se mettaient à tresser des paniers. Une fois l’étranger reparti et les yeux des oppresseurs loin, ils revenaient de l’atelier des paniers à l’atelier des esprits.',
+            en: 'He hung chains at the cellar’s entrance: when he and his students heard them rattle, they knew a stranger wanted to come in, so they stopped the lesson and started weaving baskets. Once he left and the oppressors’ eyes were gone, they went back from the basket workshop to the workshop of minds.',
+          },
+        },
+        {
+          id: 'p4',
+          heading: { ar: 'معمل القفاف', fr: 'L’atelier des paniers', en: 'The basket workshop' },
+          text: {
+            ar: 'اشتغل أبو عبيدة مع تعليمه وتعلّمه بصنع القفاف، ليكسب به الرزق ويكفل طلبته.',
+            fr: 'Tout en apprenant et en enseignant, Abū ‘Ubayda tressait des paniers pour gagner sa vie et prendre en charge ses élèves.',
+            en: 'Alongside learning and teaching, Abu ‘Ubayda wove baskets to earn his living and provide for his students.',
+          },
+        },
+        {
+          id: 'p5',
+          heading: { ar: 'ثمرة السرداب', fr: 'Le fruit de la cave', en: 'The fruit of the cellar' },
+          text: {
+            ar: 'فتخرّج من سردابه النجباء، من أمثال الإمام الربيع بن حبيب، وحملة العلم إلى المشرق وإلى المغرب، الذين كان لهم الفضل في نشر الفقه والعلم في البلاد البعيدة.',
+            fr: 'De sa cave sortirent de brillants élèves, tels l’imam al-Rabī‘ ibn Ḥabīb, et les porteurs du savoir vers l’Orient et le Maghreb, à qui l’on doit la diffusion du droit et du savoir dans les pays lointains.',
+            en: 'From his cellar came brilliant students, such as Imam al-Rabi‘ ibn Habib, and the bearers of knowledge to the East and the Maghreb, to whom we owe the spread of jurisprudence and knowledge in faraway lands.',
+          },
+        },
+      ],
+    },
+
+    // 06 — Explorer: the hidden cellar (slides 4 and 7)
+    {
+      kind: 'explorer',
+      id: 'cellar-explorer',
       title: { ar: 'السرداب السرّي', fr: 'La cave secrète', en: 'The secret cellar' },
       intro: {
-        ar: 'أنت الآن تحت الأرض في البصرة، والظلام شديد. حرّك المصباح بهدوء واكشف خمسة أسرارٍ يُخفيها السرداب.',
-        fr: 'Te voici sous terre, à Bassora, dans le noir. Déplace doucement la lampe et découvre les cinq secrets que cache la cave.',
-        en: 'You are now underground in Basra, and it is very dark. Move the lamp gently and uncover the five secrets the cellar is hiding.',
+        ar: 'السرداب مظلم، والمصباح في يدك. اضغط على كلّ نقطةٍ واكشف خمسة أسرارٍ يُخفيها السرداب.',
+        fr: 'La cave est sombre, et la lampe est dans ta main. Touche chaque point et découvre les cinq secrets que cache la cave.',
+        en: 'The cellar is dark, and the lamp is in your hand. Tap each point and uncover the five secrets the cellar is hiding.',
       },
       image: `${IMG}/cellar.png`,
       imageAlt: {
@@ -352,7 +421,7 @@ export const abuUbayda: Lesson = {
         fr: 'Une cave voûtée en briques : une porte en arc sous des chaînes suspendues, un livre ouvert sur un pupitre de bois posé sur une natte, des paniers et des palmes dans un coin, une lampe en terre cuite près de l’escalier',
         en: 'A vaulted brick cellar: an arched door under hanging chains, an open book on a wooden stand over a mat, baskets and palm fronds in a corner, and a clay lamp near the stairs',
       },
-      secrets: [
+      hotspots: [
         {
           id: 's-door',
           x: 50,
@@ -409,11 +478,6 @@ export const abuUbayda: Lesson = {
           },
         },
       ],
-      ending: {
-        ar: 'كشفتَ أسرار السرداب: مدرسةٌ خفيّة، وسلاسلُ تنذر، وقفافٌ تُخفي دروس العلم. والآن… صه! السلاسل تتحرّك!',
-        fr: 'Tu as percé les secrets de la cave : une école cachée, des chaînes qui avertissent, des paniers qui dissimulent les leçons. Et maintenant… chut ! Les chaînes bougent !',
-        en: 'You have uncovered the cellar’s secrets: a hidden school, chains that warn, and baskets that hide the lessons. And now… hush! The chains are moving!',
-      },
     },
 
     // 07 — Chain: the stranger alarm (slide 4)
@@ -422,9 +486,9 @@ export const abuUbayda: Lesson = {
       id: 'alarm-chain',
       title: { ar: 'صلصلة السلاسل!', fr: 'Le cliquetis des chaînes !', en: 'The chains are rattling!' },
       intro: {
-        ar: 'عِش اللحظة كما عاشها طلبة السرداب: اختر في كلّ مرّة ما حدث فعلًا.',
-        fr: 'Vis ce moment comme les élèves de la cave : choisis à chaque fois ce qui se passa vraiment.',
-        en: 'Live the moment as the cellar’s students did: each time, choose what really happened.',
+        ar: 'كشفتَ أسرار السرداب: مدرسةٌ خفيّة، وسلاسلُ تنذر، وقفافٌ تُخفي دروس العلم. والآن… صه! السلاسل تتحرّك! عِش اللحظة كما عاشها طلبة السرداب: اختر في كلّ مرّة ما حدث فعلًا.',
+        fr: 'Tu as percé les secrets de la cave : une école cachée, des chaînes qui avertissent, des paniers qui dissimulent les leçons. Et maintenant… chut ! Les chaînes bougent ! Vis ce moment comme les élèves de la cave : choisis à chaque fois ce qui se passa vraiment.',
+        en: 'You have uncovered the cellar’s secrets: a hidden school, chains that warn, and baskets that hide the lessons. And now… hush! The chains are moving! Live the moment as the cellar’s students did: each time, choose what really happened.',
       },
       image: `${IMG}/chains.png`,
       imageAlt: {
@@ -527,9 +591,9 @@ export const abuUbayda: Lesson = {
       id: 'reading-institute',
       title: { ar: 'اقرأ: من سردابٍ إلى معهدٍ عالميّ', fr: 'Lis : d’une cave à un institut mondial', en: 'Read: from a cellar to a worldwide institute' },
       intro: {
-        ar: 'كيف يصل علمُ سردابٍ صغير إلى بلادٍ بعيدة؟ اقرأ خطّة الإمام، ثمّ التقط الفوانيس الصحيحة.',
-        fr: 'Comment le savoir d’une petite cave atteint-il des pays lointains ? Lis le plan de l’imam, puis attrape les bonnes lanternes.',
-        en: 'How does the knowledge of a small cellar reach faraway lands? Read the imam’s plan, then catch the right lanterns.',
+        ar: 'كيف يصل علمُ سردابٍ صغير إلى بلادٍ بعيدة؟ اقرأ خطّة الإمام، ثمّ ميّز ما فعله حقًّا.',
+        fr: 'Comment le savoir d’une petite cave atteint-il des pays lointains ? Lis le plan de l’imam, puis distingue ce qu’il fit vraiment.',
+        en: 'How does the knowledge of a small cellar reach faraway lands? Read the imam’s plan, then tell apart what he really did.',
       },
       image: `${IMG}/caravan.png`,
       imageAlt: {
@@ -574,83 +638,89 @@ export const abuUbayda: Lesson = {
             en: 'The imam divided his students into ranks, each with its own assembly. The assembly of the elders: only the school’s senior figures attend, to look into the affairs of the People of the Call, what hinders establishing and conveying the religion, and what the bearers of knowledge need. The circle of the bearers of knowledge (or callers): students from several lands, chosen to teach and guide in the countries the conquests had reached. And assemblies for the general public and beginners, for those eager to learn and understand the religion.',
           },
         },
+        {
+          id: 'p5',
+          heading: { ar: 'خرّيجو المعهد', fr: 'Les diplômés de l’institut', en: 'The institute’s graduates' },
+          text: {
+            ar: 'أنشأ الإمام مدرسةً خاصّة بطلّاب العلم إلى جانب حِلَق العلم، وكوّن الدعاة الذين نشروا الدين والعلم. وتخرّج من معهده طلبةٌ كثيرون، منهم الربيع بن حبيب صاحب المسند، وعبد الله بن يحيى (طالب الحقّ)، وعبد الرحمن بن رستم مؤسّس الدولة الرستمية، رحمهم الله.',
+            fr: 'L’imam fonda une école réservée aux étudiants, en plus des cercles de savoir, et forma les prédicateurs qui répandirent la religion et le savoir. De son institut sortirent de nombreux élèves, dont al-Rabī‘ ibn Ḥabīb, auteur du Musnad, ‘Abd Allāh ibn Yaḥyā (Ṭālib al-Ḥaqq) et ‘Abd al-Raḥmān ibn Rustam, fondateur de l’État rustamide (qu’Allah leur fasse miséricorde).',
+            en: 'The imam founded a school just for students of knowledge alongside the study circles, and trained the callers who spread the religion and knowledge. Many students graduated from his institute, among them al-Rabi‘ ibn Habib, author of the Musnad, ‘Abdullah ibn Yahya (Talib al-Haqq) and ‘Abd al-Rahman ibn Rustam, founder of the Rustamid state (may God have mercy on them).',
+          },
+        },
       ],
     },
 
-    // 09 — Catch: what the imam really did (slides 3, 4, 5, 7)
+    // 09 — Balance: what the imam really did (slides 3, 4, 5, 7)
     {
-      kind: 'catch',
-      id: 'dawa-catch',
-      title: { ar: 'فوانيس الحقيقة', fr: 'Les lanternes de vérité', en: 'Lanterns of truth' },
+      kind: 'balance',
+      id: 'dawa-balance',
+      title: { ar: 'فعله أم لم يفعله؟', fr: 'L’a-t-il fait, ou non ?', en: 'Did he do it, or not?' },
       intro: {
-        ar: 'فوانيسُ تطفو في ليل البصرة: بعضها يحمل حقيقةً عن الإمام، وبعضها يحمل خطأً. كن سريعًا ودقيقًا!',
-        fr: 'Des lanternes flottent dans la nuit de Bassora : certaines portent une vérité sur l’imam, d’autres une erreur. Sois rapide et précis !',
-        en: 'Lanterns float in the Basra night: some carry a truth about the imam, others a mistake. Be quick and careful!',
+        ar: 'ضع كلّ بطاقةٍ على الكفّة الصحيحة: هل هذا ما فعله الإمام أبو عبيدة حقًّا، أم لا؟',
+        fr: 'Pose chaque carte sur le bon plateau : est-ce vraiment ce que fit l’imam Abū ‘Ubayda, ou non ?',
+        en: 'Place each card on the right pan: is this what Imam Abu ‘Ubayda really did, or not?',
       },
-      goal: {
-        ar: 'التقط فقط ما فعله الإمام أبو عبيدة حقًّا',
-        fr: 'Attrape seulement ce que l’imam Abū ‘Ubayda a vraiment fait',
-        en: 'Catch only what Imam Abu ‘Ubayda really did',
-      },
-      items: [
+      left: { ar: 'فعله الإمام حقًّا', fr: 'L’imam l’a vraiment fait', en: 'The imam really did it' },
+      right: { ar: 'لم يفعله الإمام', fr: 'L’imam ne l’a pas fait', en: 'The imam did not do it' },
+      weights: [
         {
           id: 'c1',
-          label: { ar: 'نظّم الدعاة أوّلًا', fr: 'Organisa d’abord les prédicateurs', en: 'Organised the callers first' },
-          good: true,
+          text: { ar: 'نظّم الدعاة أوّلًا', fr: 'Organisa d’abord les prédicateurs', en: 'Organised the callers first' },
+          side: 'left',
           explanation: { ar: 'نعم، بدأ بتنظيم الدعاة، فكوّن جيلًا متعاونًا محبًّا للخير.', fr: 'Oui : il commença par organiser les prédicateurs, formant une génération solidaire et aimant le bien.', en: 'Yes — he began by organising the callers, forming a cooperative generation that loved good.' },
         },
         {
           id: 'c2',
-          label: { ar: 'أعلن إمامته جهرًا', fr: 'Proclama son imamat', en: 'Declared his imamate openly' },
-          good: false,
+          text: { ar: 'أعلن إمامته جهرًا', fr: 'Proclama son imamat', en: 'Declared his imamate openly' },
+          side: 'right',
           explanation: { ar: 'بل أبقى الإمامة كتمانًا من جور الأمويين ثمّ العبّاسيين.', fr: 'Non : il garda l’imamat secret, face à l’injustice des Omeyyades puis des Abbassides.', en: 'No — he kept the imamate secret from the injustice of the Umayyads, then the Abbasids.' },
         },
         {
           id: 'c3',
-          label: { ar: 'كفل مأكل طلبته ومقامهم', fr: 'Nourrit et logea ses élèves', en: 'Fed and housed his students' },
-          good: true,
+          text: { ar: 'كفل مأكل طلبته ومقامهم', fr: 'Nourrit et logea ses élèves', en: 'Fed and housed his students' },
+          side: 'left',
           explanation: { ar: 'نعم، خصّهم برعايةٍ خاصّة وكفل مأكلهم ومقامهم.', fr: 'Oui : il leur accorda un soin particulier et prit en charge leur nourriture et leur logement.', en: 'Yes — he gave them special care and paid for their food and lodging.' },
         },
         {
           id: 'c4',
-          label: { ar: 'قبِل طلبة البصرة فقط', fr: 'N’accepta que des Bassoriens', en: 'Took only Basra students' },
-          good: false,
+          text: { ar: 'قبِل طلبة البصرة فقط', fr: 'N’accepta que des Bassoriens', en: 'Took only Basra students' },
+          side: 'right',
           explanation: { ar: 'بل انتقى طلبته من كلّ الجهات وآواهم من كلّ الأقطار.', fr: 'Non : il choisit ses élèves de toutes les régions et les accueillit de toutes les contrées.', en: 'No — he selected students from every direction and sheltered them from every land.' },
         },
         {
           id: 'c5',
-          label: { ar: 'صنع القفاف ليكسب رزقه', fr: 'Tressa des paniers pour vivre', en: 'Wove baskets for a living' },
-          good: true,
+          text: { ar: 'صنع القفاف ليكسب رزقه', fr: 'Tressa des paniers pour vivre', en: 'Wove baskets for a living' },
+          side: 'left',
           explanation: { ar: 'نعم، اشتغل بصنع القفاف ليكسب به الرزق ويكفل طلبته.', fr: 'Oui : il tressait des paniers pour gagner sa vie et prendre en charge ses élèves.', en: 'Yes — he wove baskets to earn his living and provide for his students.' },
         },
         {
           id: 'c6',
-          label: { ar: 'أخذ أجرةً من طلبته', fr: 'Fit payer ses élèves', en: 'Charged his students fees' },
-          good: false,
+          text: { ar: 'أخذ أجرةً من طلبته', fr: 'Fit payer ses élèves', en: 'Charged his students fees' },
+          side: 'right',
           explanation: { ar: 'بالعكس: هو الذي كان يكفل طلبته من كسب يده.', fr: 'Au contraire : c’est lui qui prenait en charge ses élèves, du travail de ses mains.', en: 'The opposite: he was the one who provided for his students from the work of his hands.' },
         },
         {
           id: 'c7',
-          label: { ar: 'استعدّ لمواسم الحجّ', fr: 'Se prépara aux saisons du Hajj', en: 'Prepared for the Hajj seasons' },
-          good: true,
+          text: { ar: 'استعدّ لمواسم الحجّ', fr: 'Se prépara aux saisons du Hajj', en: 'Prepared for the Hajj seasons' },
+          side: 'left',
           explanation: { ar: 'نعم، ففيها كان يوجّه الناس ويعلّمهم ويأمر بالمعروف وينهى عن المنكر.', fr: 'Oui : il y guidait et instruisait les gens, ordonnait le bien et interdisait le mal.', en: 'Yes — there he guided and taught people, enjoining good and forbidding wrong.' },
         },
         {
           id: 'c8',
-          label: { ar: 'درّس في قصر الوالي', fr: 'Enseigna au palais du gouverneur', en: 'Taught in the governor’s palace' },
-          good: false,
+          text: { ar: 'درّس في قصر الوالي', fr: 'Enseigna au palais du gouverneur', en: 'Taught in the governor’s palace' },
+          side: 'right',
           explanation: { ar: 'بل اتّخذ مدرسته في سردابٍ خفيّ، لشدّة رقابة الأمويين.', fr: 'Non : il installa son école dans une cave cachée, tant la surveillance des Omeyyades était sévère.', en: 'No — he set up his school in a hidden cellar, because Umayyad surveillance was so severe.' },
         },
         {
           id: 'c9',
-          label: { ar: 'أنشأ مدرسةً لطلّاب العلم', fr: 'Fonda une école pour étudiants', en: 'Founded a school for students' },
-          good: true,
+          text: { ar: 'أنشأ مدرسةً لطلّاب العلم', fr: 'Fonda une école pour étudiants', en: 'Founded a school for students' },
+          side: 'left',
           explanation: { ar: 'نعم، أنشأ مدرسةً خاصّة بطلّاب العلم إلى جانب حِلَق العلم، وكوّن الدعاة الذين نشروا الدين والعلم.', fr: 'Oui : il fonda une école réservée aux étudiants, en plus des cercles de savoir, et forma les prédicateurs qui répandirent la religion et le savoir.', en: 'Yes — he founded a school just for students of knowledge alongside the study circles, and trained the callers who spread the religion and knowledge.' },
         },
         {
           id: 'c10',
-          label: { ar: 'أرسل دعاةً يجهلون البلاد', fr: 'Envoya des prédicateurs étrangers au pays', en: 'Sent callers who did not know the land' },
-          good: false,
+          text: { ar: 'أرسل دعاةً يجهلون البلاد', fr: 'Envoya des prédicateurs étrangers au pays', en: 'Sent callers who did not know the land' },
+          side: 'right',
           explanation: { ar: 'بل أراد أن يكون حامل العلم ابن تلك البيئة، العالم بأهلها وأحوالها.', fr: 'Non : il voulait que le porteur du savoir soit un enfant du pays, connaissant ses habitants et leur situation.', en: 'No — he wanted the bearer of knowledge to be a son of that land, who knows its people and their conditions.' },
         },
       ],
@@ -717,46 +787,40 @@ export const abuUbayda: Lesson = {
       ],
     },
 
-    // 11 — Scramble: key words of the lesson (slides 3, 4, 7)
+    // 11 — Memory: teachers and graduates (slides 3 and 7)
     {
-      kind: 'scramble',
-      id: 'key-words',
-      title: { ar: 'حروفٌ مبعثرة', fr: 'Lettres mêlées', en: 'Scrambled letters' },
+      kind: 'memory',
+      id: 'people-memory',
+      title: { ar: 'من علّمه؟ ومن تخرّج عنده؟', fr: 'Qui l’a formé ? Qui a-t-il formé ?', en: 'Who taught him? Whom did he teach?' },
       intro: {
-        ar: 'الغريب بعثر الحروف وهو يغادر! أعد ترتيبها لتجد كلمات الدرس.',
-        fr: 'En repartant, l’étranger a mélangé les lettres ! Remets-les en ordre pour retrouver les mots de la leçon.',
-        en: 'The stranger scattered the letters on his way out! Put them back in order to find the lesson’s words.',
+        ar: 'تخرّج من معهد أبي عبيدة طلبةٌ كثيرون، منهم الربيع بن حبيب صاحب المسند، وعبد الله بن يحيى (طالب الحقّ)، وعبد الرحمن بن رستم مؤسّس الدولة الرستمية، رحمهم الله. احفظ كلّ بطاقةٍ وما تدلّ عليه قبل أن تنقلب!',
+        fr: 'De l’institut d’Abū ‘Ubayda sortirent de nombreux élèves, dont al-Rabī‘ ibn Ḥabīb, auteur du Musnad, ‘Abd Allāh ibn Yaḥyā (Ṭālib al-Ḥaqq) et ‘Abd al-Raḥmān ibn Rustam, fondateur de l’État rustamide (qu’Allah leur fasse miséricorde). Mémorise chaque carte avant qu’elle ne se retourne !',
+        en: 'Many students graduated from Abu ‘Ubayda’s institute, among them al-Rabi‘ ibn Habib, author of the Musnad, ‘Abdullah ibn Yahya (Talib al-Haqq) and ‘Abd al-Rahman ibn Rustam, founder of the Rustamid state (may God have mercy on them). Memorise each card before it flips!',
       },
-      words: [
+      image: `${IMG}/caravan.png`,
+      cards: [
+        { id: 'jabir', label: { ar: 'جابر بن زيد', fr: 'Jābir ibn Zayd', en: 'Jabir ibn Zayd' }, category: { ar: 'أستاذه', fr: 'Son maître', en: 'His teacher' } },
+        { id: 'suhar', label: { ar: 'صحار العبدي', fr: 'Ṣuḥār al-‘Abdī', en: 'Suhar al-‘Abdi' }, category: { ar: 'أستاذه', fr: 'Son maître', en: 'His teacher' } },
+        { id: 'ibn-abbas', label: { ar: 'عبد الله بن عبّاس', fr: '‘Abd Allāh ibn ‘Abbās', en: '‘Abdullah ibn ‘Abbas' }, category: { ar: 'صحابيٌّ أدركه', fr: 'Compagnon qu’il connut', en: 'A Companion he met' } },
+        { id: 'rabi', label: { ar: 'الربيع بن حبيب', fr: 'al-Rabī‘ ibn Ḥabīb', en: 'al-Rabi‘ ibn Habib' }, category: { ar: 'تلميذه: صاحب المسند', fr: 'Son élève : auteur du Musnad', en: 'His student: author of the Musnad' } },
+        { id: 'ibn-yahya', label: { ar: 'عبد الله بن يحيى', fr: '‘Abd Allāh ibn Yaḥyā', en: '‘Abdullah ibn Yahya' }, category: { ar: 'تلميذه: طالب الحقّ', fr: 'Son élève : Ṭālib al-Ḥaqq', en: 'His student: Talib al-Haqq' } },
+        { id: 'ibn-rustam', label: { ar: 'عبد الرحمن بن رستم', fr: '‘Abd al-Raḥmān ibn Rustam', en: '‘Abd al-Rahman ibn Rustam' }, category: { ar: 'تلميذه: مؤسّس الدولة الرستمية', fr: 'Son élève : fondateur de l’État rustamide', en: 'His student: founder of the Rustamid state' } },
+      ],
+      rounds: [
         {
-          id: 'w-basra',
-          clue: { ar: 'المدينة التي تعلّم فيها أبو عبيدة وعلّم', fr: 'La ville où Abū ‘Ubayda apprit et enseigna', en: 'The city where Abu ‘Ubayda learned and taught' },
-          word: { ar: 'البصرة', fr: 'Bassora', en: 'Basra' },
-          reveal: { ar: 'البصرة: فيها تعلّم عند كبار الصحابة والتابعين، وفيها آوى طلبته ودرّسهم.', fr: 'Bassora : il y étudia auprès de grands Compagnons et Successeurs, y accueillit et instruisit ses élèves.', en: 'Basra: there he studied with senior Companions and Successors, and there he sheltered and taught his students.' },
+          id: 'teachers',
+          question: { ar: 'أين كانت بطاقتا الأستاذين اللذين أخذ عنهما العلم؟', fr: 'Où étaient les cartes des deux maîtres dont il reçut le savoir ?', en: 'Where were the cards of the two teachers he took knowledge from?' },
+          correctIds: ['jabir', 'suhar'],
         },
         {
-          id: 'w-cellar',
-          clue: { ar: 'مكانٌ تحت الأرض اتّخذه مدرسةً خفيّة', fr: 'Un lieu sous terre devenu école cachée', en: 'An underground place he made a hidden school' },
-          word: { ar: 'سرداب', fr: 'cave', en: 'cellar' },
-          reveal: { ar: 'السرداب: مدرسةٌ خفيّة في البصرة، لأنّ رقابة الأمويين كانت شديدة.', fr: 'La cave : une école cachée à Bassora, car la surveillance des Omeyyades était sévère.', en: 'The cellar: a hidden school in Basra, because Umayyad surveillance was severe.' },
+          id: 'graduates',
+          question: { ar: 'أين كانت بطاقات تلاميذه الثلاثة؟', fr: 'Où étaient les cartes de ses trois élèves ?', en: 'Where were the cards of his three students?' },
+          correctIds: ['rabi', 'ibn-yahya', 'ibn-rustam'],
         },
         {
-          id: 'w-baskets',
-          clue: { ar: 'كان يصنعها ليكسب رزقه ويكفل طلبته', fr: 'Il les fabriquait pour gagner sa vie et aider ses élèves', en: 'He made them to earn a living and support his students' },
-          word: { ar: 'القفاف', fr: 'paniers', en: 'baskets' },
-          reveal: { ar: 'القفاف: صنعةُ الإمام، وبها كان الطلبة يشتغلون إذا دخل غريب.', fr: 'Les paniers : le métier de l’imam ; les élèves s’y mettaient dès qu’un étranger entrait.', en: 'Baskets: the imam’s trade, and what the students busied themselves with when a stranger came in.' },
-        },
-        {
-          id: 'w-kitman',
-          clue: { ar: 'هكذا أبقى الإمامة، اتّقاءً لجور الحكّام', fr: 'Ainsi garda-t-il l’imamat, face à l’injustice des dirigeants', en: 'How he kept the imamate, away from the rulers’ injustice' },
-          word: { ar: 'كتمان', fr: 'secret', en: 'secrecy' },
-          reveal: { ar: 'الكتمان: أبقى الإمامة كتمانًا من جور الأمويين والعبّاسيين بعدهم.', fr: 'Le secret (kitmān) : il garda l’imamat caché, face à l’injustice des Omeyyades puis des Abbassides.', en: 'Secrecy (kitmān): he kept the imamate hidden from the injustice of the Umayyads and then the Abbasids.' },
-        },
-        {
-          id: 'w-rustam',
-          clue: { ar: 'عبد الرحمن بن …، مؤسّس دولةٍ تحمل اسمه', fr: '‘Abd al-Raḥmān ibn …, fondateur d’un État qui porte son nom', en: '‘Abd al-Rahman ibn …, founder of a state that bears his name' },
-          word: { ar: 'رستم', fr: 'Rustam', en: 'Rustam' },
-          reveal: { ar: 'عبد الرحمن بن رستم، مؤسّس الدولة الرستمية، تخرّج من معهد أبي عبيدة.', fr: '‘Abd al-Raḥmān ibn Rustam, fondateur de l’État rustamide, sortit de l’institut d’Abū ‘Ubayda.', en: '‘Abd al-Rahman ibn Rustam, founder of the Rustamid state, graduated from Abu ‘Ubayda’s institute.' },
+          id: 'state',
+          question: { ar: 'أين بطاقة التلميذ الذي أسّس دولة؟', fr: 'Où est la carte de l’élève qui fonda un État ?', en: 'Where is the card of the student who founded a state?' },
+          correctIds: ['ibn-rustam'],
         },
       ],
     },
@@ -767,9 +831,9 @@ export const abuUbayda: Lesson = {
       id: 'reading-fiqh',
       title: { ar: 'اقرأ: فقه الإمام وعلمه', fr: 'Lis : le droit et le savoir de l’imam', en: 'Read: the imam’s jurisprudence and knowledge' },
       intro: {
-        ar: 'عالمٌ كبير… لم يكتب كتبًا بيده! فكيف وصل علمه إلينا؟ اقرأ جيّدًا: فيها مفاتيح الخزنة التالية.',
-        fr: 'Un grand savant… qui n’écrivit pas de livres ! Comment son savoir nous est-il parvenu ? Lis bien : tu y trouveras les clés du coffre qui suit.',
-        en: 'A great scholar… who wrote no books himself! So how did his knowledge reach us? Read carefully: here are the keys to the vault that follows.',
+        ar: 'عالمٌ كبير… لم يكتب كتبًا بيده! فكيف وصل علمه إلينا؟ اقرأ جيّدًا: فيها مفاتيح الطريق إلى الخزنة.',
+        fr: 'Un grand savant… qui n’écrivit pas de livres ! Comment son savoir nous est-il parvenu ? Lis bien : tu y trouveras les clés du chemin vers le coffre.',
+        en: 'A great scholar… who wrote no books himself! So how did his knowledge reach us? Read carefully: here are the keys for the road to the vault.',
       },
       image: `${IMG}/letters.png`,
       imageAlt: {
@@ -809,96 +873,167 @@ export const abuUbayda: Lesson = {
           id: 'p4',
           heading: { ar: 'حذرٌ في النقل', fr: 'Prudent dans la transmission', en: 'Careful in transmission' },
           text: {
-            ar: 'وكان الإمام حذرًا في نقل الحديث، فلا ينقل إلا عن الثقات. وقد اشتهر عنه قولٌ في ذلك… مقفلٌ عليه في الخزنة التالية!',
-            fr: 'L’imam était prudent dans la transmission du hadith : il ne rapportait que de gens dignes de confiance. On connaît de lui une parole célèbre à ce sujet… enfermée dans le coffre qui suit !',
-            en: 'The imam was careful in transmitting hadith: he narrated only from trustworthy people. A famous saying of his about this… is locked in the vault that follows!',
+            ar: 'وكان الإمام حذرًا في نقل الحديث، فلا ينقل إلا عن الثقات. واشتهر عنه قوله: «لا ينبغي أن تأخذ العلم من رجلٍ مبتدعٍ يدعو إلى بدعته، ولا من سفيهٍ يدعو إلى سفهه، ولا ممّن يكذب وإن كان يصدق في فتواه، ولا ممّن لا يفرز مذهبه من مذهب غيره». احفظه جيّدًا: ستجده مقفلًا عليه في خزنة الإمام!',
+            fr: 'L’imam était prudent dans la transmission du hadith : il ne rapportait que de gens dignes de confiance. On connaît de lui cette parole célèbre : « Il ne convient pas de prendre le savoir d’un innovateur qui appelle à son innovation, ni d’un insensé qui appelle à sa sottise, ni de quelqu’un qui ment, même s’il dit vrai dans sa fatwa, ni de quelqu’un qui ne distingue pas sa doctrine de celle des autres. » Retiens-la bien : tu la retrouveras enfermée dans le coffre de l’imam !',
+            en: 'The imam was careful in transmitting hadith: he narrated only from trustworthy people. A famous saying of his is: "You should not take knowledge from an innovator who calls to his innovation, nor from a fool who calls to his folly, nor from one who lies — even if he is truthful in his fatwa — nor from one who cannot tell his own school from another’s." Remember it well: you will find it locked in the imam’s vault!',
           },
         },
       ],
     },
 
-    // 13 — Vault: open it to find the famous saying (slide 6)
+    // 13 — Journey: how his knowledge reached us, ending at the imam's vault (slide 6)
     {
-      kind: 'vault',
-      id: 'fiqh-vault',
-      title: { ar: 'خزنة الإمام', fr: 'Le coffre de l’imam', en: 'The imam’s vault' },
+      kind: 'journey',
+      id: 'fiqh-journey',
+      title: { ar: 'إلى خزنة الإمام', fr: 'Jusqu’au coffre de l’imam', en: 'To the imam’s vault' },
       intro: {
-        ar: 'أربعة أقراص، وأربعة أسئلة. اضبط كلّ قرصٍ على الجواب الصحيح لتنفتح الخزنة وتجد وصيّة الإمام.',
-        fr: 'Quatre molettes, quatre questions. Règle chacune sur la bonne réponse pour ouvrir le coffre et trouver la recommandation de l’imam.',
-        en: 'Four dials, four questions. Set each dial to the right answer to open the vault and find the imam’s advice.',
+        ar: 'أربع محطّات، وأربعة أسئلة. أجب في كلّ محطّةٍ لتتقدّم، حتى تنفتح الخزنة وتجد وصيّة الإمام.',
+        fr: 'Quatre étapes, quatre questions. Réponds à chaque étape pour avancer, jusqu’à ce que le coffre s’ouvre sur la recommandation de l’imam.',
+        en: 'Four stops, four questions. Answer at each stop to move on, until the vault opens and you find the imam’s advice.',
       },
-      image: `${IMG}/chest.png`,
-      imageAlt: {
-        ar: 'صندوقٌ خشبيّ قديم مقفل بأحزمةٍ من حديد وقفلٍ نحاسيّ، في غرفةٍ مقبّبة خافتة الضوء بجانبه مصباح',
-        fr: 'Un vieux coffre de bois fermé, cerclé de fer et muni d’une serrure de laiton, dans une pièce voûtée faiblement éclairée par une lampe',
-        en: 'An old locked wooden chest with iron bands and a brass lock, in a dim vaulted room beside a lamp',
-      },
-      dials: [
+      stops: [
         {
           id: 'd1',
+          name: { ar: 'رسالة المغرب', fr: 'La lettre au Maghreb', en: 'The letter to the Maghreb' },
+          image: `${IMG}/letters.png`,
           question: { ar: 'عن أيّ موضوعٍ أجاب أهلَ المغرب في رسالته؟', fr: 'Sur quel sujet répondit-il aux gens du Maghreb dans sa lettre ?', en: 'On what subject did he answer the people of the Maghreb in his letter?' },
           options: [
-            { id: 'salat', label: { ar: 'الصلاة', fr: 'La prière', en: 'Prayer' } },
-            { id: 'zakat', label: { ar: 'الزكاة', fr: 'La zakat', en: 'Zakat' } },
-            { id: 'hajj', label: { ar: 'الحجّ', fr: 'Le Hajj', en: 'Hajj' } },
-            { id: 'sawm', label: { ar: 'الصوم', fr: 'Le jeûne', en: 'Fasting' } },
+            { id: 'salat', correct: false, label: { ar: 'الصلاة', fr: 'La prière', en: 'Prayer' }, hint: { ar: 'عُد إلى بطاقة «رسائل وصلت إلينا»: رسالةٌ مكتوبة في…', fr: 'Reviens à la carte « Des lettres parvenues jusqu’à nous » : une lettre écrite sur…', en: 'Go back to the card "Letters that reached us": a written letter on…' } },
+            { id: 'zakat', correct: true, label: { ar: 'الزكاة', fr: 'La zakat', en: 'Zakat' } },
+            { id: 'hajj', correct: false, label: { ar: 'الحجّ', fr: 'Le Hajj', en: 'Hajj' }, hint: { ar: 'عُد إلى بطاقة «رسائل وصلت إلينا»: رسالةٌ مكتوبة في…', fr: 'Reviens à la carte « Des lettres parvenues jusqu’à nous » : une lettre écrite sur…', en: 'Go back to the card "Letters that reached us": a written letter on…' } },
+            { id: 'sawm', correct: false, label: { ar: 'الصوم', fr: 'Le jeûne', en: 'Fasting' }, hint: { ar: 'عُد إلى بطاقة «رسائل وصلت إلينا»: رسالةٌ مكتوبة في…', fr: 'Reviens à la carte « Des lettres parvenues jusqu’à nous » : une lettre écrite sur…', en: 'Go back to the card "Letters that reached us": a written letter on…' } },
           ],
-          correctId: 'zakat',
-          hint: { ar: 'عُد إلى بطاقة «رسائل وصلت إلينا»: رسالةٌ مكتوبة في…', fr: 'Reviens à la carte « Des lettres parvenues jusqu’à nous » : une lettre écrite sur…', en: 'Go back to the card "Letters that reached us": a written letter on…' },
+          reveal: {
+            ar: 'وصلت إلينا رسالةٌ مكتوبة في الزكاة أجاب فيها أهل المغرب.',
+            fr: 'Nous est parvenue une lettre écrite sur la zakat, où il répond aux gens du Maghreb.',
+            en: 'A written letter on zakat has reached us, in which he answered the people of the Maghreb.',
+          },
         },
         {
           id: 'd2',
+          name: { ar: 'الكتابان', fr: 'Les deux livres', en: 'The two books' },
           question: { ar: 'في كم كتابٍ جُمعت رسائله الأخرى؟', fr: 'En combien de livres ses autres lettres furent-elles réunies ?', en: 'Into how many books were his other letters gathered?' },
           options: [
-            { id: 'n1', label: { ar: '1', fr: '1', en: '1' } },
-            { id: 'n2', label: { ar: '2', fr: '2', en: '2' } },
-            { id: 'n3', label: { ar: '3', fr: '3', en: '3' } },
-            { id: 'n4', label: { ar: '4', fr: '4', en: '4' } },
+            { id: 'n1', correct: false, label: { ar: '1', fr: '1', en: '1' }, hint: { ar: 'عُد إلى بطاقة «رسائل وصلت إلينا»: جُمعت في كتاب… وكتابٍ آخر.', fr: 'Reviens à la carte « Des lettres parvenues jusqu’à nous » : réunies en un livre… et un autre.', en: 'Go back to the card "Letters that reached us": gathered in one book… and another.' } },
+            { id: 'n2', correct: true, label: { ar: '2', fr: '2', en: '2' } },
+            { id: 'n3', correct: false, label: { ar: '3', fr: '3', en: '3' }, hint: { ar: 'عُد إلى بطاقة «رسائل وصلت إلينا»: جُمعت في كتاب… وكتابٍ آخر.', fr: 'Reviens à la carte « Des lettres parvenues jusqu’à nous » : réunies en un livre… et un autre.', en: 'Go back to the card "Letters that reached us": gathered in one book… and another.' } },
+            { id: 'n4', correct: false, label: { ar: '4', fr: '4', en: '4' }, hint: { ar: 'عُد إلى بطاقة «رسائل وصلت إلينا»: جُمعت في كتاب… وكتابٍ آخر.', fr: 'Reviens à la carte « Des lettres parvenues jusqu’à nous » : réunies en un livre… et un autre.', en: 'Go back to the card "Letters that reached us": gathered in one book… and another.' } },
           ],
-          correctId: 'n2',
-          hint: { ar: 'عُد إلى بطاقة «رسائل وصلت إلينا»: جُمعت في كتاب… وكتابٍ آخر.', fr: 'Reviens à la carte « Des lettres parvenues jusqu’à nous » : réunies en un livre… et un autre.', en: 'Go back to the card "Letters that reached us": gathered in one book… and another.' },
+          reveal: {
+            ar: 'ورسائل أخرى جُمعت في كتابين.',
+            fr: 'Et d’autres lettres furent réunies en deux livres.',
+            en: 'And other letters were gathered into two books.',
+          },
         },
         {
           id: 'd3',
+          name: { ar: 'المسند', fr: 'Le Musnad', en: 'The Musnad' },
           question: { ar: 'من حفظ المسند برواية أبي عبيدة؟', fr: 'Qui a conservé le Musnad d’après Abū ‘Ubayda ?', en: 'Who preserved the Musnad through Abu ‘Ubayda’s narration?' },
           options: [
-            { id: 'suhar', label: { ar: 'صحار', fr: 'Ṣuḥār', en: 'Suhar' } },
-            { id: 'jabir', label: { ar: 'جابر', fr: 'Jābir', en: 'Jabir' } },
-            { id: 'rabi', label: { ar: 'الربيع', fr: 'al-Rabī‘', en: 'al-Rabi‘' } },
-            { id: 'urwa', label: { ar: 'عروة', fr: '‘Urwa', en: '‘Urwa' } },
+            { id: 'suhar', correct: false, label: { ar: 'صحار', fr: 'Ṣuḥār', en: 'Suhar' }, hint: { ar: 'المسند يحمل اسمه: مسند الإمام… بن حبيب.', fr: 'Le Musnad porte son nom : le Musnad de l’imam… ibn Ḥabīb.', en: 'The Musnad bears his name: the Musnad of Imam… ibn Habib.' } },
+            { id: 'jabir', correct: false, label: { ar: 'جابر', fr: 'Jābir', en: 'Jabir' }, hint: { ar: 'المسند يحمل اسمه: مسند الإمام… بن حبيب.', fr: 'Le Musnad porte son nom : le Musnad de l’imam… ibn Ḥabīb.', en: 'The Musnad bears his name: the Musnad of Imam… ibn Habib.' } },
+            { id: 'rabi', correct: true, label: { ar: 'الربيع', fr: 'al-Rabī‘', en: 'al-Rabi‘' } },
+            { id: 'urwa', correct: false, label: { ar: 'عروة', fr: '‘Urwa', en: '‘Urwa' }, hint: { ar: 'المسند يحمل اسمه: مسند الإمام… بن حبيب.', fr: 'Le Musnad porte son nom : le Musnad de l’imam… ibn Ḥabīb.', en: 'The Musnad bears his name: the Musnad of Imam… ibn Habib.' } },
           ],
-          correctId: 'rabi',
-          hint: { ar: 'المسند يحمل اسمه: مسند الإمام… بن حبيب.', fr: 'Le Musnad porte son nom : le Musnad de l’imam… ibn Ḥabīb.', en: 'The Musnad bears his name: the Musnad of Imam… ibn Habib.' },
+          reveal: {
+            ar: 'روى أبو عبيدة عن الإمام جابر أحاديث كثيرة، هي اليوم في مسند الإمام الربيع؛ فالمسند حفظه الربيع برواية أبي عبيدة.',
+            fr: 'Abū ‘Ubayda rapporta de l’imam Jābir de nombreux hadiths, aujourd’hui dans le Musnad de l’imam al-Rabī‘ : al-Rabī‘ a conservé ce Musnad d’après la transmission d’Abū ‘Ubayda.',
+            en: 'Abu ‘Ubayda narrated many hadiths from Imam Jabir, found today in Imam al-Rabi‘’s Musnad — al-Rabi‘ preserved the Musnad through Abu ‘Ubayda’s narration.',
+          },
         },
         {
           id: 'd4',
+          name: { ar: 'خزنة الإمام', fr: 'Le coffre de l’imam', en: 'The imam’s vault' },
+          image: `${IMG}/chest.png`,
           question: { ar: 'كان لا ينقل الحديث إلا عن…', fr: 'Il ne rapportait le hadith que de…', en: 'He narrated hadith only from…' },
           options: [
-            { id: 'rulers', label: { ar: 'الولاة', fr: 'gouverneurs', en: 'governors' } },
-            { id: 'rich', label: { ar: 'الأغنياء', fr: 'gens riches', en: 'the rich' } },
-            { id: 'trust', label: { ar: 'الثقات', fr: 'gens sûrs', en: 'the trustworthy' } },
-            { id: 'kin', label: { ar: 'الأقارب', fr: 'proches', en: 'relatives' } },
+            { id: 'rulers', correct: false, label: { ar: 'الولاة', fr: 'gouverneurs', en: 'governors' }, hint: { ar: 'لا المال ولا المنصب ولا القرابة: المهمّ أن يكون الراوي موثوقًا.', fr: 'Ni l’argent, ni le rang, ni la parenté : l’essentiel est que le transmetteur soit digne de confiance.', en: 'Not wealth, rank or kinship: what matters is that the narrator can be trusted.' } },
+            { id: 'rich', correct: false, label: { ar: 'الأغنياء', fr: 'gens riches', en: 'the rich' }, hint: { ar: 'لا المال ولا المنصب ولا القرابة: المهمّ أن يكون الراوي موثوقًا.', fr: 'Ni l’argent, ni le rang, ni la parenté : l’essentiel est que le transmetteur soit digne de confiance.', en: 'Not wealth, rank or kinship: what matters is that the narrator can be trusted.' } },
+            { id: 'trust', correct: true, label: { ar: 'الثقات', fr: 'gens sûrs', en: 'the trustworthy' } },
+            { id: 'kin', correct: false, label: { ar: 'الأقارب', fr: 'proches', en: 'relatives' }, hint: { ar: 'لا المال ولا المنصب ولا القرابة: المهمّ أن يكون الراوي موثوقًا.', fr: 'Ni l’argent, ni le rang, ni la parenté : l’essentiel est que le transmetteur soit digne de confiance.', en: 'Not wealth, rank or kinship: what matters is that the narrator can be trusted.' } },
           ],
-          correctId: 'trust',
-          hint: { ar: 'لا المال ولا المنصب ولا القرابة: المهمّ أن يكون الراوي موثوقًا.', fr: 'Ni l’argent, ni le rang, ni la parenté : l’essentiel est que le transmetteur soit digne de confiance.', en: 'Not wealth, rank or kinship: what matters is that the narrator can be trusted.' },
+          reveal: {
+            ar: 'كان الإمام حذرًا في نقل الحديث، فلا ينقل إلا عن الثقات.',
+            fr: 'L’imam était prudent dans la transmission du hadith : il ne rapportait que de gens dignes de confiance.',
+            en: 'The imam was careful in transmitting hadith: he narrated only from trustworthy people.',
+          },
         },
       ],
-      treasure: {
-        ar: 'قال الإمام أبو عبيدة: «لا ينبغي أن تأخذ العلم من رجلٍ مبتدعٍ يدعو إلى بدعته، ولا من سفيهٍ يدعو إلى سفهه، ولا ممّن يكذب وإن كان يصدق في فتواه، ولا ممّن لا يفرز مذهبه من مذهب غيره».',
-        fr: 'L’imam Abū ‘Ubayda a dit : « Il ne convient pas de prendre le savoir d’un innovateur qui appelle à son innovation, ni d’un insensé qui appelle à sa sottise, ni de quelqu’un qui ment, même s’il dit vrai dans sa fatwa, ni de quelqu’un qui ne distingue pas sa doctrine de celle des autres. »',
-        en: 'Imam Abu ‘Ubayda said: "You should not take knowledge from an innovator who calls to his innovation, nor from a fool who calls to his folly, nor from one who lies — even if he is truthful in his fatwa — nor from one who cannot tell his own school from another’s."',
+      arrival: {
+        ar: 'انفتحت الخزنة! قال الإمام أبو عبيدة: «لا ينبغي أن تأخذ العلم من رجلٍ مبتدعٍ يدعو إلى بدعته، ولا من سفيهٍ يدعو إلى سفهه، ولا ممّن يكذب وإن كان يصدق في فتواه، ولا ممّن لا يفرز مذهبه من مذهب غيره».',
+        fr: 'Le coffre s’ouvre ! L’imam Abū ‘Ubayda a dit : « Il ne convient pas de prendre le savoir d’un innovateur qui appelle à son innovation, ni d’un insensé qui appelle à sa sottise, ni de quelqu’un qui ment, même s’il dit vrai dans sa fatwa, ni de quelqu’un qui ne distingue pas sa doctrine de celle des autres. »',
+        en: 'The vault opens! Imam Abu ‘Ubayda said: "You should not take knowledge from an innovator who calls to his innovation, nor from a fool who calls to his folly, nor from one who lies — even if he is truthful in his fatwa — nor from one who cannot tell his own school from another’s."',
       },
     },
 
-    // 14 — Swipe: whom do we take knowledge from? (slide 6)
+    // 14 — Word builder (source: 'saying'): the imam's famous saying (slide 6) — NOT a Qur'anic verse
+    {
+      kind: 'verses',
+      id: 'imam-saying',
+      source: 'saying',
+      title: { ar: 'وصيّة الإمام', fr: 'La recommandation de l’imam', en: 'The imam’s advice' },
+      intro: {
+        ar: 'وجدتَ وصيّة الإمام في الخزنة. أعِد الآن بناء كلّ جملةٍ منها بالترتيب.',
+        fr: 'Tu as trouvé la recommandation de l’imam dans le coffre. Reconstruis maintenant chacune de ses phrases dans l’ordre.',
+        en: 'You found the imam’s advice in the vault. Now rebuild each of its sentences in order.',
+      },
+      verses: [
+        {
+          id: 'v1',
+          context: { ar: 'قال الإمام أبو عبيدة:', fr: 'L’imam Abū ‘Ubayda a dit :', en: 'Imam Abu ‘Ubayda said:' },
+          ref: { ar: 'الإمام أبو عبيدة', fr: 'L’imam Abū ‘Ubayda', en: 'Imam Abu ‘Ubayda' },
+          words: ['لَا', 'يَنْبَغِي', 'أَنْ', 'تَأْخُذَ', 'الْعِلْمَ', 'مِنْ', 'رَجُلٍ', 'مُبْتَدِعٍ', 'يَدْعُو', 'إِلَى', 'بِدْعَتِهِ'],
+          meaning: {
+            ar: 'لا تأخذ العلم ممّن ابتدع في الدين شيئًا ويدعو الناس إليه.',
+            fr: 'Il ne convient pas de prendre le savoir d’un innovateur qui appelle à son innovation.',
+            en: 'You should not take knowledge from an innovator who calls to his innovation.',
+          },
+        },
+        {
+          id: 'v2',
+          context: { ar: 'ثمّ قال:', fr: 'Puis il dit :', en: 'Then he said:' },
+          ref: { ar: 'الإمام أبو عبيدة', fr: 'L’imam Abū ‘Ubayda', en: 'Imam Abu ‘Ubayda' },
+          words: ['وَلَا', 'مِنْ', 'سَفِيهٍ', 'يَدْعُو', 'إِلَى', 'سَفَهِهِ'],
+          meaning: {
+            ar: 'ولا تأخذه من سفيهٍ يدعو الناس إلى سفهه.',
+            fr: 'Ni d’un insensé qui appelle à sa sottise.',
+            en: 'Nor from a fool who calls to his folly.',
+          },
+        },
+        {
+          id: 'v3',
+          context: { ar: 'ثمّ قال:', fr: 'Puis il dit :', en: 'Then he said:' },
+          ref: { ar: 'الإمام أبو عبيدة', fr: 'L’imam Abū ‘Ubayda', en: 'Imam Abu ‘Ubayda' },
+          words: ['وَلَا', 'مِمَّنْ', 'يَكْذِبُ', 'وَإِنْ', 'كَانَ', 'يَصْدُقُ', 'فِي', 'فَتْوَاهُ'],
+          meaning: {
+            ar: 'ولا تأخذه ممّن يكذب، حتى لو كان صادقًا في فتواه.',
+            fr: 'Ni de quelqu’un qui ment, même s’il dit vrai dans sa fatwa.',
+            en: 'Nor from one who lies — even if he is truthful in his fatwa.',
+          },
+        },
+        {
+          id: 'v4',
+          context: { ar: 'وختم بقوله:', fr: 'Et il conclut :', en: 'And he concluded:' },
+          ref: { ar: 'الإمام أبو عبيدة', fr: 'L’imam Abū ‘Ubayda', en: 'Imam Abu ‘Ubayda' },
+          words: ['وَلَا', 'مِمَّنْ', 'لَا', 'يَفْرِزُ', 'مَذْهَبَهُ', 'مِنْ', 'مَذْهَبِ', 'غَيْرِهِ'],
+          meaning: {
+            ar: 'ولا تأخذه ممّن لا يميّز مذهبه من مذهب غيره.',
+            fr: 'Ni de quelqu’un qui ne distingue pas sa doctrine de celle des autres.',
+            en: 'Nor from one who cannot tell his own school from another’s.',
+          },
+        },
+      ],
+    },
+
+    // 15 — Swipe: whom do we take knowledge from? (slide 6)
     {
       kind: 'swipe',
       id: 'trust-swipe',
       title: { ar: 'آخذ عنه العلم أم لا؟', fr: 'Prendre son savoir, ou non ?', en: 'Take knowledge from them, or not?' },
       intro: {
-        ar: 'طبّق وصيّة الإمام التي وجدتها في الخزنة: اسحب كلّ بطاقةٍ إلى الجهة الصحيحة.',
-        fr: 'Applique la recommandation trouvée dans le coffre : fais glisser chaque carte du bon côté.',
-        en: 'Apply the advice you found in the vault: swipe each card to the correct side.',
+        ar: 'طبّق وصيّة الإمام التي أعدتَ بناءها: اسحب كلّ بطاقةٍ إلى الجهة الصحيحة.',
+        fr: 'Applique la recommandation de l’imam que tu viens de reconstruire : fais glisser chaque carte du bon côté.',
+        en: 'Apply the imam’s advice you just rebuilt: swipe each card to the correct side.',
       },
       left: {
         label: { ar: 'لا يؤخذ عنه العلم', fr: 'On ne prend pas son savoir', en: 'Do not take knowledge from them' },
@@ -951,44 +1086,6 @@ export const abuUbayda: Lesson = {
           deed: { ar: 'لا يفرز مذهبه من مذهب غيره', fr: 'Il ne distingue pas sa doctrine de celle des autres', en: 'He cannot tell his own school from another’s' },
           side: 'left',
           explanation: { ar: 'قال الإمام: «ولا ممّن لا يفرز مذهبه من مذهب غيره».', fr: 'L’imam a dit : « ni de quelqu’un qui ne distingue pas sa doctrine de celle des autres ».', en: 'The imam said: "nor from one who cannot tell his own school from another’s".' },
-        },
-      ],
-    },
-
-    // 15 — Memory: teachers and graduates (slides 3 and 7)
-    {
-      kind: 'memory',
-      id: 'people-memory',
-      title: { ar: 'من علّمه؟ ومن تخرّج عنده؟', fr: 'Qui l’a formé ? Qui a-t-il formé ?', en: 'Who taught him? Whom did he teach?' },
-      intro: {
-        ar: 'تخرّج من معهد أبي عبيدة طلبةٌ كثيرون، منهم الربيع بن حبيب صاحب المسند، وعبد الله بن يحيى (طالب الحقّ)، وعبد الرحمن بن رستم مؤسّس الدولة الرستمية، رحمهم الله. احفظ كلّ بطاقةٍ وما تدلّ عليه قبل أن تنقلب!',
-        fr: 'De l’institut d’Abū ‘Ubayda sortirent de nombreux élèves, dont al-Rabī‘ ibn Ḥabīb, auteur du Musnad, ‘Abd Allāh ibn Yaḥyā (Ṭālib al-Ḥaqq) et ‘Abd al-Raḥmān ibn Rustam, fondateur de l’État rustamide (qu’Allah leur fasse miséricorde). Mémorise chaque carte avant qu’elle ne se retourne !',
-        en: 'Many students graduated from Abu ‘Ubayda’s institute, among them al-Rabi‘ ibn Habib, author of the Musnad, ‘Abdullah ibn Yahya (Talib al-Haqq) and ‘Abd al-Rahman ibn Rustam, founder of the Rustamid state (may God have mercy on them). Memorise each card before it flips!',
-      },
-      image: `${IMG}/caravan.png`,
-      cards: [
-        { id: 'jabir', label: { ar: 'جابر بن زيد', fr: 'Jābir ibn Zayd', en: 'Jabir ibn Zayd' }, category: { ar: 'أستاذه', fr: 'Son maître', en: 'His teacher' } },
-        { id: 'suhar', label: { ar: 'صحار العبدي', fr: 'Ṣuḥār al-‘Abdī', en: 'Suhar al-‘Abdi' }, category: { ar: 'أستاذه', fr: 'Son maître', en: 'His teacher' } },
-        { id: 'ibn-abbas', label: { ar: 'عبد الله بن عبّاس', fr: '‘Abd Allāh ibn ‘Abbās', en: '‘Abdullah ibn ‘Abbas' }, category: { ar: 'صحابيٌّ أدركه', fr: 'Compagnon qu’il connut', en: 'A Companion he met' } },
-        { id: 'rabi', label: { ar: 'الربيع بن حبيب', fr: 'al-Rabī‘ ibn Ḥabīb', en: 'al-Rabi‘ ibn Habib' }, category: { ar: 'تلميذه: صاحب المسند', fr: 'Son élève : auteur du Musnad', en: 'His student: author of the Musnad' } },
-        { id: 'ibn-yahya', label: { ar: 'عبد الله بن يحيى', fr: '‘Abd Allāh ibn Yaḥyā', en: '‘Abdullah ibn Yahya' }, category: { ar: 'تلميذه: طالب الحقّ', fr: 'Son élève : Ṭālib al-Ḥaqq', en: 'His student: Talib al-Haqq' } },
-        { id: 'ibn-rustam', label: { ar: 'عبد الرحمن بن رستم', fr: '‘Abd al-Raḥmān ibn Rustam', en: '‘Abd al-Rahman ibn Rustam' }, category: { ar: 'تلميذه: مؤسّس الدولة الرستمية', fr: 'Son élève : fondateur de l’État rustamide', en: 'His student: founder of the Rustamid state' } },
-      ],
-      rounds: [
-        {
-          id: 'teachers',
-          question: { ar: 'أين كانت بطاقتا الأستاذين اللذين أخذ عنهما العلم؟', fr: 'Où étaient les cartes des deux maîtres dont il reçut le savoir ?', en: 'Where were the cards of the two teachers he took knowledge from?' },
-          correctIds: ['jabir', 'suhar'],
-        },
-        {
-          id: 'graduates',
-          question: { ar: 'أين كانت بطاقات تلاميذه الثلاثة؟', fr: 'Où étaient les cartes de ses trois élèves ?', en: 'Where were the cards of his three students?' },
-          correctIds: ['rabi', 'ibn-yahya', 'ibn-rustam'],
-        },
-        {
-          id: 'state',
-          question: { ar: 'أين بطاقة التلميذ الذي أسّس دولة؟', fr: 'Où est la carte de l’élève qui fonda un État ?', en: 'Where is the card of the student who founded a state?' },
-          correctIds: ['ibn-rustam'],
         },
       ],
     },
@@ -1056,7 +1153,118 @@ export const abuUbayda: Lesson = {
       ],
     },
 
-    // 17 — Values (drawn from slides 4, 6, 7)
+    // 17 — Quiz: whole-lesson review (key words and class review questions)
+    {
+      kind: 'quiz',
+      id: 'quiz',
+      title: { ar: 'اختبر معلوماتك', fr: 'Teste tes connaissances', en: 'Test your knowledge' },
+      intro: {
+        ar: 'أسئلةٌ متنوّعة تجمع الدرس كلّه. يمكن أن يجيب عنها القسم كلّه معًا!',
+        fr: 'Des questions variées qui reprennent toute la leçon. Toute la classe peut y répondre ensemble !',
+        en: 'Varied questions covering the whole lesson. The whole class can answer them together!',
+      },
+      questions: [
+        {
+          id: 'q-words',
+          type: 'matching',
+          question: { ar: 'صِل كلّ دليلٍ بكلمة الدرس التي تناسبه', fr: 'Relie chaque indice au mot de la leçon qui lui correspond', en: 'Match each clue to the lesson word it describes' },
+          pairs: [
+            { id: 'w-basra', left: { ar: 'المدينة التي تعلّم فيها أبو عبيدة وعلّم', fr: 'La ville où Abū ‘Ubayda apprit et enseigna', en: 'The city where Abu ‘Ubayda learned and taught' }, right: { ar: 'البصرة', fr: 'Bassora', en: 'Basra' } },
+            { id: 'w-cellar', left: { ar: 'مكانٌ تحت الأرض اتّخذه مدرسةً خفيّة', fr: 'Un lieu sous terre devenu école cachée', en: 'An underground place he made a hidden school' }, right: { ar: 'السرداب', fr: 'La cave', en: 'The cellar' } },
+            { id: 'w-baskets', left: { ar: 'كان يصنعها ليكسب رزقه ويكفل طلبته', fr: 'Il les fabriquait pour gagner sa vie et aider ses élèves', en: 'He made them to earn a living and support his students' }, right: { ar: 'القفاف', fr: 'Les paniers', en: 'Baskets' } },
+            { id: 'w-kitman', left: { ar: 'هكذا أبقى الإمامة، اتّقاءً لجور الحكّام', fr: 'Ainsi garda-t-il l’imamat, face à l’injustice des dirigeants', en: 'How he kept the imamate, away from the rulers’ injustice' }, right: { ar: 'الكتمان', fr: 'Le secret (kitmān)', en: 'Secrecy (kitmān)' } },
+            { id: 'w-rustam', left: { ar: 'عبد الرحمن بن …، مؤسّس دولةٍ تحمل اسمه', fr: '‘Abd al-Raḥmān ibn …, fondateur d’un État qui porte son nom', en: '‘Abd al-Rahman ibn …, founder of a state that bears his name' }, right: { ar: 'رستم', fr: 'Rustam', en: 'Rustam' } },
+          ],
+          explanation: {
+            ar: 'البصرة: فيها تعلّم عند كبار الصحابة والتابعين، وفيها آوى طلبته ودرّسهم. السرداب: مدرسةٌ خفيّة في البصرة، لأنّ رقابة الأمويين كانت شديدة. القفاف: صنعةُ الإمام، وبها كان الطلبة يشتغلون إذا دخل غريب. الكتمان: أبقى الإمامة كتمانًا من جور الأمويين والعبّاسيين بعدهم. وعبد الرحمن بن رستم، مؤسّس الدولة الرستمية، تخرّج من معهد أبي عبيدة.',
+            fr: 'Bassora : il y étudia auprès de grands Compagnons et Successeurs, y accueillit et instruisit ses élèves. La cave : une école cachée à Bassora, car la surveillance des Omeyyades était sévère. Les paniers : le métier de l’imam ; les élèves s’y mettaient dès qu’un étranger entrait. Le secret (kitmān) : il garda l’imamat caché, face à l’injustice des Omeyyades puis des Abbassides. Et ‘Abd al-Raḥmān ibn Rustam, fondateur de l’État rustamide, sortit de l’institut d’Abū ‘Ubayda.',
+            en: 'Basra: there he studied with senior Companions and Successors, and there he sheltered and taught his students. The cellar: a hidden school in Basra, because Umayyad surveillance was severe. Baskets: the imam’s trade, and what the students busied themselves with when a stranger came in. Secrecy (kitmān): he kept the imamate hidden from the injustice of the Umayyads and then the Abbasids. And ‘Abd al-Rahman ibn Rustam, founder of the Rustamid state, graduated from Abu ‘Ubayda’s institute.',
+          },
+        },
+        {
+          id: 'q-life',
+          type: 'matching',
+          question: { ar: 'صِل كلّ سؤالٍ بجوابه', fr: 'Relie chaque question à sa réponse', en: 'Match each question to its answer' },
+          pairs: [
+            { id: 'g-origin', left: { ar: 'ما أصل أبي عبيدة؟ وإلى أيّ قبيلةٍ ينتمي بالولاء؟', fr: 'Quelle est l’origine d’Abū ‘Ubayda ? À quelle tribu est-il rattaché ?', en: 'What was Abu ‘Ubayda’s origin? Which tribe was he attached to?' }, right: { ar: 'فارسيّ الأصل، من بني تميم بالولاء', fr: 'D’origine perse, rattaché aux Banū Tamīm', en: 'Persian by origin, attached to Banu Tamim' } },
+            { id: 'g-prison', left: { ar: 'من سجنه؟ ومتى خرج؟', fr: 'Qui l’emprisonna ? Quand sortit-il ?', en: 'Who imprisoned him? When did he get out?' }, right: { ar: 'الحجّاج، وخرج بعد موته سنة 95 هـ', fr: 'Al-Ḥajjāj ; il sortit après sa mort, en 95 H', en: 'Al-Hajjaj; he got out after his death in 95 AH' } },
+            { id: 'g-cellar', left: { ar: 'لماذا اتّخذ مدرسته في سرداب؟', fr: 'Pourquoi installa-t-il son école dans une cave ?', en: 'Why did he set up his school in a cellar?' }, right: { ar: 'لأنّ رقابة الأمويين كانت شديدة', fr: 'Parce que la surveillance des Omeyyades était sévère', en: 'Because Umayyad surveillance was severe' } },
+            { id: 'g-chains', left: { ar: 'ما فائدة السلاسل؟ وماذا يفعلون إذا صلصلت؟', fr: 'À quoi servaient les chaînes ? Que faisaient-ils quand elles cliquetaient ?', en: 'What were the chains for? What did they do when they rattled?' }, right: { ar: 'تنذر بغريب، فيصنعون القفاف', fr: 'Elles avertissent d’un étranger : on tresse des paniers', en: 'They warn of a stranger, so they weave baskets' } },
+          ],
+          explanation: {
+            ar: 'فارسيّ الأصل، ينتمي إلى بني تميم بالولاء، وهو مولًى لعروة بن أُدَيّة. سجنه الحجّاج بن يوسف والي العراق، ولم يخرج إلا بعد موته سنة 95 هـ. ولأنّ رقابة الأمويين كانت شديدة، أخفى مدرسته في سردابٍ في البصرة. والسلاسل تنذر بدخول غريب؛ فيوقفون التدريس ويشتغلون بصنع القفاف، ثمّ يرجعون إلى الدرس إذا غادر.',
+            fr: 'D’origine perse, rattaché aux Banū Tamīm, il est le client de ‘Urwa ibn Udayya. Al-Ḥajjāj ibn Yūsuf, gouverneur d’Irak, l’emprisonna ; il ne sortit qu’après sa mort, en 95 H. Comme la surveillance des Omeyyades était sévère, il cacha son école dans une cave de Bassora. Les chaînes avertissaient de l’arrivée d’un étranger : ils arrêtaient la leçon et tressaient des paniers, puis reprenaient après son départ.',
+            en: 'Persian by origin, attached to Banu Tamim by clientage, he was the client of ‘Urwa ibn Udayya. Al-Hajjaj ibn Yusuf, governor of Iraq, imprisoned him; he only got out after al-Hajjaj died in 95 AH. Because Umayyad surveillance was severe, he hid his school in a cellar in Basra. The chains warned that a stranger was coming: they stopped the lesson and wove baskets, then went back to it once he left.',
+          },
+        },
+        {
+          id: 'g-teachers',
+          type: 'mcq',
+          question: { ar: 'ممّن أخذ أبو عبيدة العلم؟', fr: 'De qui Abū ‘Ubayda reçut-il le savoir ?', en: 'Whom did Abu ‘Ubayda take knowledge from?' },
+          options: [
+            { id: 'a', label: { ar: 'الحجّاج بن يوسف وعروة بن أُدَيّة', fr: 'Al-Ḥajjāj ibn Yūsuf et ‘Urwa ibn Udayya', en: 'Al-Hajjaj ibn Yusuf and ‘Urwa ibn Udayya' } },
+            { id: 'b', label: { ar: 'جابر بن زيد وصحار العبدي', fr: 'Jābir ibn Zayd et Ṣuḥār al-‘Abdī', en: 'Jabir ibn Zayd and Suhar al-‘Abdi' } },
+            { id: 'c', label: { ar: 'الربيع بن حبيب وعبد الرحمن بن رستم', fr: 'Al-Rabī‘ ibn Ḥabīb et ‘Abd al-Raḥmān ibn Rustam', en: 'Al-Rabi‘ ibn Habib and ‘Abd al-Rahman ibn Rustam' } },
+          ],
+          correctId: 'b',
+          explanation: {
+            ar: 'جابر بن زيد وصحار العبدي، وأدرك من الصحابة ابن عبّاس وابن عمر وأبا سعيد الخدري وأنس بن مالك رضي الله عنهم.',
+            fr: 'Jābir ibn Zayd et Ṣuḥār al-‘Abdī ; il connut aussi Ibn ‘Abbās, Ibn ‘Umar, Abū Sa‘īd al-Khudrī et Anas ibn Mālik (qu’Allah les agrée).',
+            en: 'Jabir ibn Zayd and Suhar al-‘Abdi; he also met the Companions Ibn ‘Abbas, Ibn ‘Umar, Abu Sa‘id al-Khudri and Anas ibn Malik (may God be pleased with them).',
+          },
+        },
+        {
+          id: 'g-assemblies',
+          type: 'mcq',
+          question: { ar: 'ما المجالس الثلاثة في معهد الإمام؟', fr: 'Quelles sont les trois assemblées de l’institut de l’imam ?', en: 'What are the three assemblies in the imam’s institute?' },
+          options: [
+            { id: 'a', label: { ar: 'مجلس الشيوخ، وحلقة حملة العلم، ومجالس العامّة والمبتدئين', fr: 'Les cheikhs, les porteurs du savoir, le public et les débutants', en: 'The elders, the bearers of knowledge, the public and beginners' } },
+            { id: 'b', label: { ar: 'مجلس الولاة، ومجلس التجّار، ومجلس الجند', fr: 'Les gouverneurs, les marchands, les soldats', en: 'The governors, the merchants, the soldiers' } },
+            { id: 'c', label: { ar: 'مجلس الشيوخ وحده، مفتوحٌ للجميع', fr: 'La seule assemblée des cheikhs, ouverte à tous', en: 'Only the assembly of the elders, open to all' } },
+          ],
+          correctId: 'a',
+          explanation: {
+            ar: 'مجلس الشيوخ، وحلقة حملة العلم (الدعاة)، ومجالس العامّة والمبتدئين.',
+            fr: 'L’assemblée des cheikhs, le cercle des porteurs du savoir (prédicateurs), et les assemblées du public et des débutants.',
+            en: 'The assembly of the elders, the circle of the bearers of knowledge (callers), and the assemblies for the public and beginners.',
+          },
+        },
+        {
+          id: 'g-letter',
+          type: 'mcq',
+          question: { ar: 'ما موضوع رسالته إلى أهل المغرب؟', fr: 'Quel est le sujet de sa lettre aux gens du Maghreb ?', en: 'What was his letter to the people of the Maghreb about?' },
+          options: [
+            { id: 'a', label: { ar: 'الصلاة', fr: 'La prière', en: 'Prayer' } },
+            { id: 'b', label: { ar: 'الحجّ', fr: 'Le Hajj', en: 'Hajj' } },
+            { id: 'c', label: { ar: 'الزكاة', fr: 'La zakat', en: 'Zakat' } },
+          ],
+          correctId: 'c',
+          explanation: {
+            ar: 'الزكاة. ومن كتبه: «مسائل أبي عبيدة» و«كتابٌ في الزكاة» و«رسائل أبي عبيدة».',
+            fr: 'La zakat. Ses livres : « Les Questions d’Abū ‘Ubayda », « Un livre sur la zakat », « Les Lettres d’Abū ‘Ubayda ».',
+            en: 'Zakat. His books: "The Questions of Abu ‘Ubayda", "A Book on Zakat" and "The Letters of Abu ‘Ubayda".',
+          },
+        },
+        {
+          id: 'g-students',
+          type: 'mcq',
+          question: { ar: 'من هؤلاء تخرّجوا من معهده؟', fr: 'Lesquels sont sortis de son institut ?', en: 'Which of these graduated from his institute?' },
+          options: [
+            { id: 'a', label: { ar: 'جابر بن زيد، وصحار العبدي، وابن عبّاس', fr: 'Jābir ibn Zayd, Ṣuḥār al-‘Abdī, Ibn ‘Abbās', en: 'Jabir ibn Zayd, Suhar al-‘Abdi, Ibn ‘Abbas' } },
+            { id: 'b', label: { ar: 'الربيع بن حبيب، وعبد الله بن يحيى، وعبد الرحمن بن رستم', fr: 'Al-Rabī‘ ibn Ḥabīb, ‘Abd Allāh ibn Yaḥyā, ‘Abd al-Raḥmān ibn Rustam', en: 'Al-Rabi‘ ibn Habib, ‘Abdullah ibn Yahya, ‘Abd al-Rahman ibn Rustam' } },
+            { id: 'c', label: { ar: 'الحجّاج، وعروة بن أُدَيّة، ونافع بن الأزرق', fr: 'Al-Ḥajjāj, ‘Urwa ibn Udayya, Nāfi‘ ibn al-Azraq', en: 'Al-Hajjaj, ‘Urwa ibn Udayya, Nafi‘ ibn al-Azraq' } },
+          ],
+          correctId: 'b',
+          explanation: {
+            ar: 'الربيع بن حبيب صاحب المسند، وعبد الله بن يحيى (طالب الحقّ)، وعبد الرحمن بن رستم مؤسّس الدولة الرستمية. أمّا جابر وصحار وابن عبّاس فهم ممّن أخذ عنهم العلم.',
+            fr: 'Al-Rabī‘ ibn Ḥabīb, auteur du Musnad ; ‘Abd Allāh ibn Yaḥyā (Ṭālib al-Ḥaqq) ; ‘Abd al-Raḥmān ibn Rustam, fondateur de l’État rustamide. Jābir, Ṣuḥār et Ibn ‘Abbās, eux, sont parmi ceux dont il reçut le savoir.',
+            en: 'Al-Rabi‘ ibn Habib, author of the Musnad; ‘Abdullah ibn Yahya (Talib al-Haqq); and ‘Abd al-Rahman ibn Rustam, founder of the Rustamid state. Jabir, Suhar and Ibn ‘Abbas are among those he learned from.',
+          },
+        },
+      ],
+    },
+
+    // 18 — Values (drawn from slides 4, 6, 7)
     {
       kind: 'value',
       id: 'values',
@@ -1112,68 +1320,6 @@ export const abuUbayda: Lesson = {
           id: 'verify',
           value: { ar: 'التثبّت في أخذ العلم', fr: 'Vérifier d’où vient le savoir', en: 'Checking where knowledge comes from' },
           evidence: { ar: 'كان لا ينقل الحديث إلا عن الثقات.', fr: 'Il ne rapportait le hadith que de gens dignes de confiance.', en: 'He narrated hadith only from the trustworthy.' },
-        },
-      ],
-    },
-
-    // 18 — Wheel: whole-class review
-    {
-      kind: 'wheel',
-      id: 'class-wheel',
-      title: { ar: 'عجلة السرداب', fr: 'La roue de la cave', en: 'The cellar wheel' },
-      intro: {
-        ar: 'لعبةٌ للقسم كلّه: أدر العجلة، وأجب شفويًّا قبل كشف الجواب. من يجمع أكثر النقاط؟',
-        fr: 'Un jeu pour toute la classe : fais tourner la roue et réponds à voix haute avant de dévoiler la réponse. Qui marquera le plus de points ?',
-        en: 'A game for the whole class: spin the wheel and answer out loud before revealing the answer. Who will score the most?',
-      },
-      segments: [
-        {
-          id: 'g-origin',
-          label: { ar: 'النسب', fr: 'Origine', en: 'Origin' },
-          question: { ar: 'ما أصل أبي عبيدة؟ وإلى أيّ قبيلةٍ ينتمي بالولاء؟', fr: 'Quelle est l’origine d’Abū ‘Ubayda ? À quelle tribu est-il rattaché ?', en: 'What was Abu ‘Ubayda’s origin? Which tribe was he attached to?' },
-          answer: { ar: 'فارسيّ الأصل، ينتمي إلى بني تميم بالولاء، وهو مولًى لعروة بن أُدَيّة.', fr: 'D’origine perse, rattaché aux Banū Tamīm ; il est le client de ‘Urwa ibn Udayya.', en: 'Persian by origin, attached to Banu Tamim by clientage; he was the client of ‘Urwa ibn Udayya.' },
-        },
-        {
-          id: 'g-teachers',
-          label: { ar: 'الأساتذة', fr: 'Maîtres', en: 'Teachers' },
-          question: { ar: 'اذكر اثنين ممّن أخذ عنهم العلم.', fr: 'Cite deux de ceux dont il reçut le savoir.', en: 'Name two of those he took knowledge from.' },
-          answer: { ar: 'جابر بن زيد وصحار العبدي، وأدرك من الصحابة ابن عبّاس وابن عمر وأبا سعيد الخدري وأنس بن مالك رضي الله عنهم.', fr: 'Jābir ibn Zayd et Ṣuḥār al-‘Abdī ; il connut aussi Ibn ‘Abbās, Ibn ‘Umar, Abū Sa‘īd al-Khudrī et Anas ibn Mālik (qu’Allah les agrée).', en: 'Jabir ibn Zayd and Suhar al-‘Abdi; he also met the Companions Ibn ‘Abbas, Ibn ‘Umar, Abu Sa‘id al-Khudri and Anas ibn Malik (may God be pleased with them).' },
-        },
-        {
-          id: 'g-prison',
-          label: { ar: 'السجن', fr: 'Prison', en: 'Prison' },
-          question: { ar: 'من سجنه؟ ومتى خرج؟', fr: 'Qui l’emprisonna ? Quand sortit-il ?', en: 'Who imprisoned him? When did he get out?' },
-          answer: { ar: 'سجنه الحجّاج بن يوسف والي العراق، ولم يخرج إلا بعد موته سنة 95 هـ.', fr: 'Al-Ḥajjāj ibn Yūsuf, gouverneur d’Irak ; il ne sortit qu’après sa mort, en 95 H.', en: 'Al-Hajjaj ibn Yusuf, governor of Iraq; he only got out after al-Hajjaj died in 95 AH.' },
-        },
-        {
-          id: 'g-cellar',
-          label: { ar: 'السرداب', fr: 'Cave', en: 'Cellar' },
-          question: { ar: 'لماذا اتّخذ مدرسته في سرداب؟', fr: 'Pourquoi installa-t-il son école dans une cave ?', en: 'Why did he set up his school in a cellar?' },
-          answer: { ar: 'لأنّ رقابة الأمويين كانت شديدة، فأخفى مدرسته في سردابٍ في البصرة.', fr: 'Parce que la surveillance des Omeyyades était sévère : il cacha son école dans une cave de Bassora.', en: 'Because Umayyad surveillance was severe, so he hid his school in a cellar in Basra.' },
-        },
-        {
-          id: 'g-chains',
-          label: { ar: 'السلاسل', fr: 'Chaînes', en: 'Chains' },
-          question: { ar: 'ما فائدة السلاسل؟ وماذا يفعلون إذا صلصلت؟', fr: 'À quoi servaient les chaînes ? Que faisaient-ils quand elles cliquetaient ?', en: 'What were the chains for? What did they do when they rattled?' },
-          answer: { ar: 'تنذر بدخول غريب؛ فيوقفون التدريس ويشتغلون بصنع القفاف، ثمّ يرجعون إلى الدرس إذا غادر.', fr: 'Elles avertissaient de l’arrivée d’un étranger : ils arrêtaient la leçon et tressaient des paniers, puis reprenaient après son départ.', en: 'They warned that a stranger was coming: they stopped the lesson and wove baskets, then went back to it once he left.' },
-        },
-        {
-          id: 'g-assemblies',
-          label: { ar: 'المجالس', fr: 'Assemblées', en: 'Assemblies' },
-          question: { ar: 'اذكر المجالس الثلاثة في معهد الإمام.', fr: 'Cite les trois assemblées de l’institut de l’imam.', en: 'Name the three assemblies in the imam’s institute.' },
-          answer: { ar: 'مجلس الشيوخ، وحلقة حملة العلم (الدعاة)، ومجالس العامّة والمبتدئين.', fr: 'L’assemblée des cheikhs, le cercle des porteurs du savoir (prédicateurs), et les assemblées du public et des débutants.', en: 'The assembly of the elders, the circle of the bearers of knowledge (callers), and the assemblies for the public and beginners.' },
-        },
-        {
-          id: 'g-letter',
-          label: { ar: 'الرسالة', fr: 'Lettre', en: 'Letter' },
-          question: { ar: 'ما موضوع رسالته إلى أهل المغرب؟ واذكر كتابًا يُنسب إليه.', fr: 'Quel est le sujet de sa lettre aux gens du Maghreb ? Cite un livre à son nom.', en: 'What was his letter to the people of the Maghreb about? Name a book attributed to him.' },
-          answer: { ar: 'الزكاة. ومن كتبه: «مسائل أبي عبيدة» و«كتابٌ في الزكاة» و«رسائل أبي عبيدة».', fr: 'La zakat. Ses livres : « Les Questions d’Abū ‘Ubayda », « Un livre sur la zakat », « Les Lettres d’Abū ‘Ubayda ».', en: 'Zakat. His books: "The Questions of Abu ‘Ubayda", "A Book on Zakat" and "The Letters of Abu ‘Ubayda".' },
-        },
-        {
-          id: 'g-students',
-          label: { ar: 'التلاميذ', fr: 'Élèves', en: 'Students' },
-          question: { ar: 'اذكر ثلاثةً ممّن تخرّجوا من معهده.', fr: 'Cite trois élèves sortis de son institut.', en: 'Name three graduates of his institute.' },
-          answer: { ar: 'الربيع بن حبيب صاحب المسند، وعبد الله بن يحيى (طالب الحقّ)، وعبد الرحمن بن رستم مؤسّس الدولة الرستمية.', fr: 'Al-Rabī‘ ibn Ḥabīb, auteur du Musnad ; ‘Abd Allāh ibn Yaḥyā (Ṭālib al-Ḥaqq) ; ‘Abd al-Raḥmān ibn Rustam, fondateur de l’État rustamide.', en: 'Al-Rabi‘ ibn Habib, author of the Musnad; ‘Abdullah ibn Yahya (Talib al-Haqq); and ‘Abd al-Rahman ibn Rustam, founder of the Rustamid state.' },
         },
       ],
     },

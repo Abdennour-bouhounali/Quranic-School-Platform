@@ -75,9 +75,9 @@ export const ghazawat: Lesson = {
     en: 'The Battles: Badr, Uḥud and the Trench',
   },
   description: {
-    ar: 'ثلاثُ مواقف كبرى: بئرٌ تحسم معركة، وربوةٌ تقلب نصرًا، وخندقٌ يوقف عشرة آلاف. ابحث بالمصباح، افتح الخزنة، وأدِر العجلة!',
-    fr: 'Trois grands moments : un puits qui décide d’une bataille, une butte qui renverse une victoire, un fossé qui arrête dix mille hommes. Cherche à la lanterne, ouvre le coffre et fais tourner la roue !',
-    en: 'Three great moments: a well that decides a battle, a hillock that overturns a victory, a trench that stops ten thousand men. Search by lantern, crack the vault and spin the wheel!',
+    ar: 'ثلاثُ مواقف كبرى: بئرٌ تحسم معركة، وربوةٌ تقلب نصرًا، وخندقٌ يوقف عشرة آلاف. استكشف الميادين، ورتّب الأحداث، واختبر نفسك!',
+    fr: 'Trois grands moments : un puits qui décide d’une bataille, une butte qui renverse une victoire, un fossé qui arrête dix mille hommes. Explore les champs de bataille, remets les faits en ordre et teste-toi !',
+    en: 'Three great moments: a well that decides a battle, a hillock that overturns a victory, a trench that stops ten thousand men. Explore the battlefields, put events in order and test yourself!',
   },
 
   sections: [
@@ -120,19 +120,19 @@ export const ghazawat: Lesson = {
         {
           id: 'm2',
           question: { ar: 'لماذا سُمّي يوم بدرٍ بيوم الفرقان؟', fr: 'Pourquoi le jour de Badr est-il appelé « jour du Furqān » ?', en: 'Why is the day of Badr called the “Day of the Furqān”?' },
-          target: 'vault-furqan',
-          teaser: { ar: 'الجواب داخل خزنة.', fr: 'La réponse est dans un coffre.', en: 'The answer is inside a vault.' },
+          target: 'reading-furqan',
+          teaser: { ar: 'يومٌ فرّق بين أمرين.', fr: 'Un jour qui sépara deux choses.', en: 'A day that set two things apart.' },
         },
         {
           id: 'm3',
           question: { ar: 'ماذا وقع في معركة أحد؟ ولماذا انقلبت؟', fr: 'Que s’est-il passé à Uḥud ? Pourquoi tout a basculé ?', en: 'What happened at Uḥud — and why did it turn?' },
-          target: 'chain-uhud',
+          target: 'reading-uhud-battle',
           teaser: { ar: 'خمسون راميًا وربوة.', fr: 'Cinquante archers et une butte.', en: 'Fifty archers and a hillock.' },
         },
         {
           id: 'm4',
           question: { ar: 'كيف سيُبعد المسلمون خطر عشرة آلاف مقاتل؟', fr: 'Comment les musulmans écarteront-ils dix mille combattants ?', en: 'How will the Muslims keep ten thousand fighters away?' },
-          target: 'explorer-khandaq',
+          target: 'reading-khandaq',
           teaser: { ar: 'فكرةٌ من أرض فارس.', fr: 'Une idée venue de Perse.', en: 'An idea from the land of Persia.' },
         },
       ],
@@ -341,15 +341,15 @@ export const ghazawat: Lesson = {
       ],
     },
 
-    // 05 — Lantern: the field of Badr at night (Badr slides 4–5)
+    // 05 — Reading: the eve of Badr (Badr slides 4–5)
     {
-      kind: 'lantern',
-      id: 'lantern-badr',
-      title: { ar: 'ليل بدر: ابحث بالمصباح', fr: 'La nuit de Badr : cherche à la lanterne', en: 'Night at Badr: search by lantern' },
+      kind: 'reading',
+      id: 'reading-badr-eve',
+      title: { ar: 'اقرأ: ليلة بدر', fr: 'Lis : la veille de Badr', en: 'Read: the eve of Badr' },
       intro: {
-        ar: 'هذه العُدوة الدنيا، ميدان بدر. حرّك الضوء واعثر على خمسة أسرارٍ مخبّأة في الظلام.',
-        fr: 'Voici al-‘udwa ad-dunyā, le champ de Badr. Déplace la lumière et trouve cinq secrets cachés dans le noir.',
-        en: 'This is al-‘udwa ad-dunyā, the field of Badr. Move the light and find five secrets hidden in the dark.',
+        ar: 'ماءٌ، ونظامٌ، ودعاء. اقرأ، ثمّ استكشف ميدان بدر.',
+        fr: 'De l’eau, de l’ordre et la prière. Lis, puis explore le champ de Badr.',
+        en: 'Water, order and prayer. Read, then explore the field of Badr.',
       },
       image: `${IMG}/badr-night.png`,
       imageAlt: {
@@ -357,7 +357,63 @@ export const ghazawat: Lesson = {
         fr: 'Une plaine désertique sous la lune : un puits de pierre plein d’eau, un puits comblé de pierres, des tentes sombres et de petits feux lointains à l’horizon',
         en: 'A desert plain under the moon: a stone well with water, a well filled in with rocks, dark tents and small distant fires on the horizon',
       },
-      secrets: [
+      paragraphs: [
+        {
+          id: 'p1',
+          heading: { ar: 'البئر الوحيدة', fr: 'Le seul puits', en: 'The one well' },
+          text: {
+            ar: 'بمشورة الحُباب (رضي الله عنه) أبقى المسلمون قليبًا واحدًا وحفروا عليه حوضًا: يشربون ولا يشرب عدوّهم.',
+            fr: 'Sur le conseil d’al-Ḥubāb (que Dieu l’agrée), les musulmans gardèrent un seul puits et creusèrent un bassin : eux boivent, pas l’ennemi.',
+            en: 'On al-Ḥubāb’s advice (may God be pleased with him), the Muslims kept a single well and dug a basin by it: they drink, the enemy does not.',
+          },
+        },
+        {
+          id: 'p2',
+          heading: { ar: 'آبارٌ مردومة', fr: 'Des puits comblés', en: 'Filled-in wells' },
+          text: {
+            ar: 'وصل جيش المشركين بدرًا فوجدوا الآبار قد رُدمت، ولم يجدوا ماءً ولا مستراحًا. ورغم ذلك عزموا على الحرب.',
+            fr: 'L’armée des polythéistes arriva à Badr et trouva les puits comblés : ni eau, ni lieu de repos. Malgré cela, ils décidèrent de combattre.',
+            en: 'The polytheists’ army reached Badr and found the wells filled in: no water and no resting place. Even so, they resolved to fight.',
+          },
+        },
+        {
+          id: 'p3',
+          heading: { ar: 'ثلاثمائة أمام ألف', fr: 'Trois cents face à mille', en: 'Three hundred against a thousand' },
+          text: {
+            ar: 'وصل المسلمون قبل قريش، وهم نحو ثلاثمائة رجل، أمام جيش المشركين الذي يزيد عدده على ألف مقاتل: أكثر من ثلاثة أضعاف المسلمين! وفي اليوم التالي استمعوا إلى وصايا الرسول ﷺ ثمّ اصطفّوا.',
+            fr: 'Les musulmans arrivèrent avant Quraysh ; ils étaient environ trois cents, face à l’armée des polythéistes, forte de plus de mille combattants : plus de trois fois les musulmans ! Le lendemain, ils écoutèrent les recommandations du Prophète ﷺ puis se mirent en rangs.',
+            en: 'The Muslims arrived before Quraysh; they were about three hundred men, facing the polytheists’ army of more than a thousand fighters: over three times the Muslims! The next day they listened to the Prophet’s ﷺ instructions, then lined up.',
+          },
+        },
+        {
+          id: 'p4',
+          heading: { ar: 'دعاءٌ يصعد إلى السماء', fr: 'Une prière monte vers le ciel', en: 'A prayer rises to the sky' },
+          text: {
+            ar: 'لمّا اشتدّت الحرب كان الرسول ﷺ يدعو ويبتهل، فأنزل الله تعالى الملائكة يقاتلون مع المسلمين ويُرعبون قلوب المشركين.',
+            fr: 'Quand le combat devint rude, le Prophète ﷺ invoquait et implorait Dieu. Dieu fit descendre les anges : ils combattaient avec les musulmans et jetaient l’effroi dans le cœur des polythéistes.',
+            en: 'When the fighting grew fierce, the Prophet ﷺ prayed and implored. God sent down the angels to fight alongside the Muslims and cast terror into the polytheists’ hearts.',
+          },
+        },
+      ],
+    },
+
+    // 06 — Explorer: the field of Badr (Badr slides 4–5)
+    {
+      kind: 'explorer',
+      id: 'explorer-badr',
+      title: { ar: 'ليل بدر: استكشف الميدان', fr: 'La nuit de Badr : explore le champ', en: 'Night at Badr: explore the field' },
+      intro: {
+        ar: 'هذه العُدوة الدنيا، ميدان بدر. اضغط على النقاط المضيئة لتكتشف خمسة أسرار: ماءٌ، ونظامٌ، ودعاء… هكذا استعدّ ثلاثمائةٍ لملاقاة ألف.',
+        fr: 'Voici al-‘udwa ad-dunyā, le champ de Badr. Touche les points lumineux pour découvrir cinq secrets : de l’eau, de l’ordre et la prière… ainsi trois cents hommes se préparèrent à en affronter mille.',
+        en: 'This is al-‘udwa ad-dunyā, the field of Badr. Tap the glowing points to discover five secrets: water, order and prayer… that is how three hundred prepared to face a thousand.',
+      },
+      image: `${IMG}/badr-night.png`,
+      imageAlt: {
+        ar: 'سهلٌ صحراويّ في ليلةٍ مقمرة: بئرٌ حجرية فيها ماء، وبئرٌ مردومة بالحجارة، وخيامٌ داكنة، ونيرانٌ صغيرة بعيدة في الأفق',
+        fr: 'Une plaine désertique sous la lune : un puits de pierre plein d’eau, un puits comblé de pierres, des tentes sombres et de petits feux lointains à l’horizon',
+        en: 'A desert plain under the moon: a stone well with water, a well filled in with rocks, dark tents and small distant fires on the horizon',
+      },
+      hotspots: [
         {
           id: 'well',
           x: 23,
@@ -414,29 +470,84 @@ export const ghazawat: Lesson = {
           },
         },
       ],
-      ending: {
-        ar: 'وجدتَ الأسرار الخمسة! ماءٌ، ونظامٌ، ودعاء: هكذا استعدّ ثلاثمائةٍ لملاقاة ألف.',
-        fr: 'Tu as trouvé les cinq secrets ! De l’eau, de l’ordre et la prière : ainsi trois cents hommes se préparèrent à en affronter mille.',
-        en: 'You found all five secrets! Water, order and prayer: that is how three hundred prepared to face a thousand.',
-      },
     },
 
-    // 06 — Catch: what really happened on the day of Badr (Badr slide 5)
+    // 07 — Reading: the battle of Badr (Badr slide 5)
     {
-      kind: 'catch',
-      id: 'catch-badr',
-      title: { ar: 'يوم بدر: التقط الحقائق', fr: 'Le jour de Badr : attrape les faits', en: 'The day of Badr: catch the facts' },
+      kind: 'reading',
+      id: 'reading-badr-battle',
+      title: { ar: 'اقرأ: اشتعال المعركة', fr: 'Lis : la bataille s’embrase', en: 'Read: the battle breaks out' },
       intro: {
-        ar: 'الفوانيس تطير! بعضها يحمل ما وقع فعلًا يوم بدر، وبعضها يخدعك.',
-        fr: 'Les lanternes s’envolent ! Certaines portent ce qui s’est vraiment passé à Badr, d’autres te piègent.',
-        en: 'The lanterns are floating up! Some carry what truly happened at Badr, others try to trick you.',
+        ar: 'ماذا وقع فعلًا يوم بدر؟ اقرأ، ثمّ احكم على كلّ بطاقة.',
+        fr: 'Que s’est-il vraiment passé à Badr ? Lis, puis juge chaque carte.',
+        en: 'What truly happened at Badr? Read, then judge each card.',
       },
-      goal: { ar: 'التقط فقط ما وقع فعلًا يوم بدر', fr: 'Attrape seulement ce qui s’est vraiment passé à Badr', en: 'Catch only what truly happened at Badr' },
-      items: [
+      image: `${IMG}/hero.png`,
+      imageAlt: HERO_ALT,
+      paragraphs: [
+        {
+          id: 'p1',
+          heading: { ar: 'وصايا ثمّ اصطفاف', fr: 'Des consignes, puis les rangs', en: 'Instructions, then the ranks' },
+          text: {
+            ar: 'استمع المسلمون إلى وصايا الرسول ﷺ، ثمّ اصطفّوا وهم ثلاثمائة رجل، مقابل جيش المشركين الذي يزيد عدده على ألف مقاتل.',
+            fr: 'Les musulmans écoutèrent les consignes du Prophète ﷺ, puis s’alignèrent : trois cents hommes face à une armée de plus de mille combattants.',
+            en: 'The Muslims listened to the Prophet’s ﷺ instructions, then lined up: three hundred men against an army of more than a thousand fighters.',
+          },
+        },
+        {
+          id: 'p2',
+          heading: { ar: 'مبارزة: ثلاثةٌ لثلاثة', fr: 'Duel : trois contre trois', en: 'A duel: three against three' },
+          text: {
+            ar: 'خرج ثلاثةٌ من كبار قريشٍ لمبارزة ثلاثةٍ من كبار المسلمين، فقتلوا المشركين الثلاثة، ثمّ بدأ القتال.',
+            fr: 'Trois notables de Quraysh sortirent défier trois grands parmi les musulmans, qui tuèrent les trois polythéistes ; puis le combat commença.',
+            en: 'Three of Quraysh’s leading men came out to duel three of the leading Muslims, who killed all three; then the battle began.',
+          },
+        },
+        {
+          id: 'p3',
+          heading: { ar: 'الملائكة', fr: 'Les anges', en: 'The angels' },
+          text: {
+            ar: 'اشتدّت الحرب والرسول ﷺ يدعو ويبتهل، فأنزل الله الملائكة يقاتلون مع المسلمين ويُرعبون قلوب المشركين.',
+            fr: 'Au plus fort du combat, le Prophète ﷺ implorait Dieu, qui fit descendre les anges pour combattre avec les musulmans et effrayer les polythéistes.',
+            en: 'At the height of battle the Prophet ﷺ was imploring God, who sent down angels to fight with the Muslims and terrify the polytheists.',
+          },
+        },
+        {
+          id: 'p4',
+          heading: { ar: 'النتيجة', fr: 'Le résultat', en: 'The outcome' },
+          text: {
+            ar: 'تمكّن جيش النبيّ ﷺ من قتل سبعين رجلًا من قريش وأسر سبعين آخرين، وجمع المسلمون غنائم كثيرة. وسمعت القبائل بالخبر، فذلّت قريشٌ وعزّ النبيّ ﷺ والمسلمون.',
+            fr: 'L’armée du Prophète ﷺ tua soixante-dix hommes de Quraysh et en captura soixante-dix autres, et les musulmans recueillirent un butin abondant. Les tribus apprirent la nouvelle : Quraysh fut abaissée, le Prophète ﷺ et les musulmans furent honorés.',
+            en: 'The Prophet’s ﷺ army killed seventy men of Quraysh and captured seventy others, and the Muslims gathered plentiful spoils. The tribes heard the news: Quraysh was humbled, and the Prophet ﷺ and the Muslims were honoured.',
+          },
+        },
+      ],
+    },
+
+    // 08 — Swipe: what really happened on the day of Badr (Badr slide 5)
+    {
+      kind: 'swipe',
+      id: 'swipe-badr',
+      title: { ar: 'يوم بدر: وقع أم لم يقع؟', fr: 'Le jour de Badr : vrai ou piège ?', en: 'The day of Badr: did it happen?' },
+      intro: {
+        ar: 'بعض البطاقات تحمل ما وقع فعلًا يوم بدر، وبعضها يخدعك. اسحب كلّ بطاقة إلى الجهة الصحيحة.',
+        fr: 'Certaines cartes portent ce qui s’est vraiment passé à Badr, d’autres te piègent. Glisse chaque carte du bon côté.',
+        en: 'Some cards carry what truly happened at Badr, others try to trick you. Swipe each card to the right side.',
+      },
+      left: {
+        label: { ar: 'لم يقع يوم بدر', fr: 'Ne s’est pas passé à Badr', en: 'Did not happen at Badr' },
+        tag: { ar: 'لم يقع', fr: 'Piège', en: 'Did not happen' },
+      },
+      right: {
+        label: { ar: 'وقع فعلًا يوم بدر', fr: 'S’est vraiment passé à Badr', en: 'Truly happened at Badr' },
+        tag: { ar: 'وقع', fr: 'Vrai', en: 'Happened' },
+      },
+      cards: [
         {
           id: 'c1',
-          label: { ar: 'نحو 300 أمام أكثر من ألف', fr: 'Environ 300 contre plus de 1000', en: 'About 300 against over 1,000' },
-          good: true,
+          who: { ar: 'العدد', fr: 'Les effectifs', en: 'The numbers' },
+          deed: { ar: 'نحو 300 أمام أكثر من ألف', fr: 'Environ 300 contre plus de 1000', en: 'About 300 against over 1,000' },
+          side: 'right',
           explanation: {
             ar: 'اصطفّ المسلمون وهم ثلاثمائة رجل، مقابل جيش المشركين الذي يزيد عدده على ألف مقاتل.',
             fr: 'Les musulmans, trois cents hommes, s’alignèrent face à une armée de plus de mille combattants.',
@@ -445,8 +556,9 @@ export const ghazawat: Lesson = {
         },
         {
           id: 'c2',
-          label: { ar: 'مبارزة: ثلاثةٌ لثلاثة', fr: 'Duel : trois contre trois', en: 'A duel: three against three' },
-          good: true,
+          who: { ar: 'قبل القتال', fr: 'Avant le combat', en: 'Before the battle' },
+          deed: { ar: 'مبارزة: ثلاثةٌ لثلاثة', fr: 'Duel : trois contre trois', en: 'A duel: three against three' },
+          side: 'right',
           explanation: {
             ar: 'خرج ثلاثةٌ من كبار قريشٍ لمبارزة ثلاثةٍ من كبار المسلمين، فقتلوا المشركين الثلاثة، ثمّ بدأ القتال.',
             fr: 'Trois notables de Quraysh sortirent défier trois grands parmi les musulmans, qui tuèrent les trois polythéistes ; puis le combat commença.',
@@ -455,8 +567,9 @@ export const ghazawat: Lesson = {
         },
         {
           id: 'c3',
-          label: { ar: 'رجعت قريشٌ حين لم تجد ماء', fr: 'Quraysh repartit faute d’eau', en: 'Quraysh left for lack of water' },
-          good: false,
+          who: { ar: 'الماء', fr: 'L’eau', en: 'The water' },
+          deed: { ar: 'رجعت قريشٌ حين لم تجد ماء', fr: 'Quraysh repartit faute d’eau', en: 'Quraysh left for lack of water' },
+          side: 'left',
           explanation: {
             ar: 'لم يجدوا ماءً ولا مستراحًا، ورغم ذلك عزموا على الحرب ولم يرجعوا.',
             fr: 'Ils ne trouvèrent ni eau ni repos, mais décidèrent quand même de combattre.',
@@ -465,8 +578,9 @@ export const ghazawat: Lesson = {
         },
         {
           id: 'c4',
-          label: { ar: 'الملائكة تقاتل مع المسلمين', fr: 'Les anges combattent avec les musulmans', en: 'Angels fight beside the Muslims' },
-          good: true,
+          who: { ar: 'السماء', fr: 'Le ciel', en: 'The sky' },
+          deed: { ar: 'الملائكة تقاتل مع المسلمين', fr: 'Les anges combattent avec les musulmans', en: 'Angels fight beside the Muslims' },
+          side: 'right',
           explanation: {
             ar: 'اشتدّت الحرب والرسول ﷺ يدعو ويبتهل، فأنزل الله الملائكة يقاتلون مع المسلمين ويُرعبون قلوب المشركين.',
             fr: 'Au plus fort du combat, le Prophète ﷺ implorait Dieu, qui fit descendre les anges pour combattre avec les musulmans et effrayer les polythéistes.',
@@ -475,8 +589,9 @@ export const ghazawat: Lesson = {
         },
         {
           id: 'c5',
-          label: { ar: 'حُفر خندقٌ حول بدر', fr: 'Un fossé creusé autour de Badr', en: 'A trench dug around Badr' },
-          good: false,
+          who: { ar: 'الخطّة', fr: 'Le plan', en: 'The plan' },
+          deed: { ar: 'حُفر خندقٌ حول بدر', fr: 'Un fossé creusé autour de Badr', en: 'A trench dug around Badr' },
+          side: 'left',
           explanation: {
             ar: 'الخندق قصّةٌ أخرى ستكتشفها بعد قليل! في بدرٍ كانت الخطّة خطّة الآبار.',
             fr: 'Le fossé, c’est une autre histoire que tu découvriras bientôt ! À Badr, le plan était celui des puits.',
@@ -485,8 +600,9 @@ export const ghazawat: Lesson = {
         },
         {
           id: 'c6',
-          label: { ar: '70 قتيلًا و70 أسيرًا من قريش', fr: '70 tués et 70 prisonniers de Quraysh', en: '70 killed, 70 captured from Quraysh' },
-          good: true,
+          who: { ar: 'خسائر قريش', fr: 'Les pertes de Quraysh', en: 'Quraysh’s losses' },
+          deed: { ar: '70 قتيلًا و70 أسيرًا من قريش', fr: '70 tués et 70 prisonniers de Quraysh', en: '70 killed, 70 captured from Quraysh' },
+          side: 'right',
           explanation: {
             ar: 'تمكّن جيش النبيّ ﷺ من قتل سبعين رجلًا من قريش وأسر سبعين آخرين.',
             fr: 'L’armée du Prophète ﷺ tua soixante-dix hommes de Quraysh et en captura soixante-dix autres.',
@@ -495,8 +611,9 @@ export const ghazawat: Lesson = {
         },
         {
           id: 'c7',
-          label: { ar: 'كان المسلمون أكثر عددًا', fr: 'Les musulmans étaient plus nombreux', en: 'The Muslims were more numerous' },
-          good: false,
+          who: { ar: 'العدد', fr: 'Les effectifs', en: 'The numbers' },
+          deed: { ar: 'كان المسلمون أكثر عددًا', fr: 'Les musulmans étaient plus nombreux', en: 'The Muslims were more numerous' },
+          side: 'left',
           explanation: {
             ar: 'بل كانوا أقلّ بكثير: نحو ثلاثمائة أمام أكثر من ألف. النصر لم يكن بالعدد.',
             fr: 'Bien moins nombreux, au contraire : environ trois cents contre plus de mille. La victoire ne vint pas du nombre.',
@@ -505,8 +622,9 @@ export const ghazawat: Lesson = {
         },
         {
           id: 'c8',
-          label: { ar: 'غنائم كثيرة', fr: 'Un butin abondant', en: 'Plentiful spoils' },
-          good: true,
+          who: { ar: 'بعد المعركة', fr: 'Après la bataille', en: 'After the battle' },
+          deed: { ar: 'غنائم كثيرة', fr: 'Un butin abondant', en: 'Plentiful spoils' },
+          side: 'right',
           explanation: {
             ar: 'جمع المسلمون غنائم كثيرة بعد المعركة.',
             fr: 'Les musulmans recueillirent un butin abondant après la bataille.',
@@ -515,8 +633,9 @@ export const ghazawat: Lesson = {
         },
         {
           id: 'c9',
-          label: { ar: 'بدأ القتال قبل الوصايا', fr: 'Le combat avant les consignes', en: 'Fighting before the instructions' },
-          good: false,
+          who: { ar: 'الترتيب', fr: 'L’ordre', en: 'The order' },
+          deed: { ar: 'بدأ القتال قبل الوصايا', fr: 'Le combat avant les consignes', en: 'Fighting before the instructions' },
+          side: 'left',
           explanation: {
             ar: 'الترتيب: استمع المسلمون إلى وصايا الرسول ﷺ، ثمّ اصطفّوا، ثمّ المبارزة، ثمّ القتال.',
             fr: 'L’ordre : les musulmans écoutèrent les consignes du Prophète ﷺ, se rangèrent, puis vint le duel, puis le combat.',
@@ -525,8 +644,9 @@ export const ghazawat: Lesson = {
         },
         {
           id: 'c10',
-          label: { ar: 'ذلّت قريشٌ بين القبائل', fr: 'Quraysh humiliée devant les tribus', en: 'Quraysh humbled before the tribes' },
-          good: true,
+          who: { ar: 'القبائل', fr: 'Les tribus', en: 'The tribes' },
+          deed: { ar: 'ذلّت قريشٌ بين القبائل', fr: 'Quraysh humiliée devant les tribus', en: 'Quraysh humbled before the tribes' },
+          side: 'right',
           explanation: {
             ar: 'سمعت القبائل بالخبر، فذلّت قريشٌ وعزّ النبيّ ﷺ والمسلمون.',
             fr: 'Les tribus apprirent la nouvelle : Quraysh fut abaissée, le Prophète ﷺ et les musulmans furent honorés.',
@@ -536,19 +656,63 @@ export const ghazawat: Lesson = {
       ],
     },
 
-    // 07 — Vault: the Day of the Furqān (Badr slide 6)
+    // 09 — Reading: the Day of the Furqān (Badr slide 6)
     {
-      kind: 'vault',
-      id: 'vault-furqan',
-      title: { ar: 'خزنة يوم الفرقان', fr: 'Le coffre du jour du Furqān', en: 'The vault of the Day of the Furqān' },
+      kind: 'reading',
+      id: 'reading-furqan',
+      title: { ar: 'اقرأ: يوم الفرقان', fr: 'Lis : le jour du Furqān', en: 'Read: the Day of the Furqān' },
       intro: {
-        ar: 'أدِر الأقراص الأربعة على الجواب الصحيح لتفتح الخزنة وتعرف سرّ اسم «يوم الفرقان».',
-        fr: 'Tourne les quatre molettes sur la bonne réponse pour ouvrir le coffre et découvrir le secret du nom « jour du Furqān ».',
-        en: 'Turn the four dials to the right answers to open the vault and learn the secret of the name “Day of the Furqān”.',
+        ar: 'لماذا سُمّي يوم بدرٍ بيوم الفرقان؟ اقرأ، ثمّ أجب عن أسئلة التاريخ.',
+        fr: 'Pourquoi le jour de Badr est-il appelé « jour du Furqān » ? Lis, puis réponds aux questions de date.',
+        en: 'Why is the day of Badr called the “Day of the Furqān”? Read, then answer the date questions.',
       },
-      dials: [
+      image: `${IMG}/hero.png`,
+      imageAlt: HERO_ALT,
+      paragraphs: [
         {
-          id: 'd1',
+          id: 'p1',
+          heading: { ar: 'معركةٌ فاصلة', fr: 'Une bataille décisive', en: 'A decisive battle' },
+          text: {
+            ar: 'كانت بدرٌ معركةً فاصلة بين الكفر والإيمان، أعلى الله فيها كلمة الإيمان على كلمة الكفر، وفرّق بين الحقّ والباطل؛ فسُمّي ذلك اليوم «يوم الفرقان».',
+            fr: 'Badr fut la bataille décisive entre la mécréance et la foi : Dieu y éleva la parole de la foi au-dessus de celle de la mécréance et sépara le vrai du faux. Ce jour fut donc appelé « jour du Furqān » (de la distinction).',
+            en: 'Badr was the decisive battle between disbelief and faith: in it God raised the word of faith above the word of disbelief and separated truth from falsehood. So that day was named the “Day of the Furqān” (the Criterion).',
+          },
+        },
+        {
+          id: 'p2',
+          heading: { ar: 'متى؟ وأين ذُكرت؟', fr: 'Quand ? Où en parle-t-on ?', en: 'When? Where is it told?' },
+          text: {
+            ar: 'وقعت بدرٌ في السابع عشر من رمضان من السنة الثانية للهجرة. وأنزل الله آياتٍ عديدة في سورة الأنفال وفي سورة آل عمران تتحدّث عن أخبار بدرٍ وعِبرها.',
+            fr: 'Badr eut lieu le 17 ramadan de l’an 2 de l’Hégire. Dieu révéla de nombreux versets dans les sourates al-Anfāl et Āl ‘Imrān sur les récits et les leçons de Badr.',
+            en: 'Badr took place on 17 Ramadan, year 2 of the Hijra. God revealed many verses in Surat al-Anfāl and Surat Āl ‘Imrān about the events and lessons of Badr.',
+          },
+        },
+        {
+          id: 'p3',
+          heading: { ar: 'خوفٌ ونفاق', fr: 'Peur et hypocrisie', en: 'Fear and hypocrisy' },
+          text: {
+            ar: 'وقد أرعبت هذه النتيجة — التي لم يكن يتمنّاها اليهود ولا المشركون في المدينة — كثيرًا منهم، فأظهروا الإسلام خوفًا وطمعًا فيما عند المسلمين، وهم ينافقون: لا ينوون خيرًا، ويحاولون إفشال عزائم المسلمين والتفريق بينهم.',
+            fr: 'Ce résultat, que ni les juifs ni les polythéistes de Médine ne souhaitaient, effraya beaucoup d’entre eux : ils affichèrent l’islam par peur et par convoitise des biens des musulmans. C’étaient des hypocrites : sans bonne intention, ils cherchaient à affaiblir la détermination des musulmans et à les diviser.',
+            en: 'This outcome, which neither the Jews nor the polytheists of Madina had wished for, frightened many of them: they made a show of Islam out of fear and out of greed for what the Muslims had. They were hypocrites: meaning no good, and trying to weaken the Muslims’ resolve and divide them.',
+          },
+        },
+      ],
+    },
+
+    // 10 — Quiz: the date of the Furqān (Badr slide 6)
+    {
+      kind: 'quiz',
+      id: 'quiz-furqan',
+      title: { ar: 'متى كان يوم الفرقان؟', fr: 'Quand fut le jour du Furqān ?', en: 'When was the Day of the Furqān?' },
+      intro: {
+        ar: 'أربعة أسئلةٍ قصيرة عن يوم بدر. اختر الجواب الصحيح.',
+        fr: 'Quatre petites questions sur le jour de Badr. Choisis la bonne réponse.',
+        en: 'Four short questions about the day of Badr. Pick the right answer.',
+      },
+      questions: [
+        {
+          id: 'f1',
+          type: 'mcq',
           question: { ar: 'في أيّ يومٍ من الشهر وقعت بدر؟', fr: 'Quel jour du mois eut lieu Badr ?', en: 'On which day of the month was Badr?' },
           options: [
             { id: 'a', label: { ar: '7', fr: '7', en: '7' } },
@@ -556,10 +720,11 @@ export const ghazawat: Lesson = {
             { id: 'c', label: { ar: '27', fr: '27', en: '27' } },
           ],
           correctId: 'b',
-          hint: { ar: 'السابع عشر من الشهر.', fr: 'Le dix-septième jour du mois.', en: 'The seventeenth of the month.' },
+          explanation: { ar: 'السابع عشر من الشهر.', fr: 'Le dix-septième jour du mois.', en: 'The seventeenth of the month.' },
         },
         {
-          id: 'd2',
+          id: 'f2',
+          type: 'mcq',
           question: { ar: 'في أيّ شهر؟', fr: 'En quel mois ?', en: 'In which month?' },
           options: [
             { id: 'a', label: { ar: 'شعبان', fr: 'Sha‘bān', en: 'Sha‘bān' } },
@@ -567,10 +732,11 @@ export const ghazawat: Lesson = {
             { id: 'c', label: { ar: 'رمضان', fr: 'Ramadan', en: 'Ramadan' } },
           ],
           correctId: 'c',
-          hint: { ar: 'شهر الصيام.', fr: 'Le mois du jeûne.', en: 'The month of fasting.' },
+          explanation: { ar: 'شهر الصيام.', fr: 'Le mois du jeûne.', en: 'The month of fasting.' },
         },
         {
-          id: 'd3',
+          id: 'f3',
+          type: 'mcq',
           question: { ar: 'في أيّ سنةٍ للهجرة؟', fr: 'En quelle année de l’Hégire ?', en: 'In which year of the Hijra?' },
           options: [
             { id: 'a', label: { ar: '1 هـ', fr: 'An 1', en: '1 AH' } },
@@ -578,10 +744,11 @@ export const ghazawat: Lesson = {
             { id: 'c', label: { ar: '5 هـ', fr: 'An 5', en: '5 AH' } },
           ],
           correctId: 'b',
-          hint: { ar: 'السنة الثانية للهجرة.', fr: 'La deuxième année de l’Hégire.', en: 'The second year of the Hijra.' },
+          explanation: { ar: 'السنة الثانية للهجرة.', fr: 'La deuxième année de l’Hégire.', en: 'The second year of the Hijra.' },
         },
         {
-          id: 'd4',
+          id: 'f4',
+          type: 'mcq',
           question: { ar: 'في أيّ سورتين نزلت آياتٌ عن بدر؟', fr: 'Quelles sourates parlent de Badr ?', en: 'Which two suras speak of Badr?' },
           options: [
             { id: 'a', label: { ar: 'الأنفال وآل عمران', fr: 'al-Anfāl, Āl ‘Imrān', en: 'al-Anfāl, Āl ‘Imrān' } },
@@ -589,21 +756,76 @@ export const ghazawat: Lesson = {
             { id: 'c', label: { ar: 'الفيل وقريش', fr: 'al-Fīl, Quraysh', en: 'al-Fīl, Quraysh' } },
           ],
           correctId: 'a',
-          hint: {
+          explanation: {
             ar: 'أنزل الله آياتٍ عديدة في سورة الأنفال وفي سورة آل عمران تتحدّث عن أخبار بدرٍ وعِبرها.',
             fr: 'Dieu révéla de nombreux versets dans les sourates al-Anfāl et Āl ‘Imrān sur les récits et les leçons de Badr.',
             en: 'God revealed many verses in Surat al-Anfāl and Surat Āl ‘Imrān about the events and lessons of Badr.',
           },
         },
       ],
-      treasure: {
-        ar: 'كانت بدرٌ معركةً فاصلة بين الكفر والإيمان، أعلى الله فيها كلمة الإيمان على كلمة الكفر، وفرّق بين الحقّ والباطل؛ فسُمّي ذلك اليوم «يوم الفرقان». وقد أرعبت هذه النتيجة — التي لم يكن يتمنّاها اليهود ولا المشركون في المدينة — كثيرًا منهم، فأظهروا الإسلام خوفًا وطمعًا فيما عند المسلمين، وهم ينافقون: لا ينوون خيرًا، ويحاولون إفشال عزائم المسلمين والتفريق بينهم.',
-        fr: 'Badr fut la bataille décisive entre la mécréance et la foi : Dieu y éleva la parole de la foi au-dessus de celle de la mécréance et sépara le vrai du faux. Ce jour fut donc appelé « jour du Furqān » (de la distinction). Ce résultat, que ni les juifs ni les polythéistes de Médine ne souhaitaient, effraya beaucoup d’entre eux : ils affichèrent l’islam par peur et par convoitise des biens des musulmans. C’étaient des hypocrites : sans bonne intention, ils cherchaient à affaiblir la détermination des musulmans et à les diviser.',
-        en: 'Badr was the decisive battle between disbelief and faith: in it God raised the word of faith above the word of disbelief and separated truth from falsehood. So that day was named the “Day of the Furqān” (the Criterion). This outcome, which neither the Jews nor the polytheists of Madina had wished for, frightened many of them: they made a show of Islam out of fear and out of greed for what the Muslims had. They were hypocrites: meaning no good, and trying to weaken the Muslims’ resolve and divide them.',
-      },
     },
 
-    // 08 — Journey: the road to Uḥud (Uḥud slides 2–4)
+    // 11 — Reading: from Badr to Uḥud (Uḥud slides 2–4)
+    {
+      kind: 'reading',
+      id: 'reading-uhud-road',
+      title: { ar: 'اقرأ: من بدرٍ إلى أحد', fr: 'Lis : de Badr à Uḥud', en: 'Read: from Badr to Uḥud' },
+      intro: {
+        ar: 'عامٌ واحد بين بدرٍ وأحد. اقرأ، ثمّ سِر في الطريق محطّةً محطّة.',
+        fr: 'Une seule année entre Badr et Uḥud. Lis, puis avance sur la route, étape par étape.',
+        en: 'Just one year between Badr and Uḥud. Read, then travel the road stop by stop.',
+      },
+      image: `${IMG}/uhud.png`,
+      imageAlt: UHUD_ALT,
+      paragraphs: [
+        {
+          id: 'p1',
+          heading: { ar: 'قريشٌ تريد الثأر', fr: 'Quraysh veut se venger', en: 'Quraysh wants revenge' },
+          text: {
+            ar: 'لم يهدأ بال قريشٍ حتى عزمت على الثأر من هزيمة بدر، فراحت تُعدّ لذلك جيشًا كبيرًا، ثمّ زحفوا قاصدين المدينة. فلمّا سمع المسلمون بالخبر أعدّوا العدّة للمواجهة.',
+            fr: 'Quraysh ne trouva pas le repos avant de décider de venger Badr. Elle prépara une grande armée, puis marcha sur Médine. À cette nouvelle, les musulmans se préparèrent à l’affrontement.',
+            en: 'Quraysh found no rest until it resolved to avenge Badr. It prepared a large army, then marched on Madina. When the Muslims heard the news, they made ready to face it.',
+          },
+        },
+        {
+          id: 'p2',
+          heading: { ar: 'بنو قينقاع', fr: 'Banū Qaynuqā‘', en: 'Banū Qaynuqā‘' },
+          text: {
+            ar: 'في شهر شوّال، بعد رمضان غزوة بدر، أظهر يهود بني قينقاع في المدينة الشرّ والعداوة للمسلمين. فنصحهم رسول الله ﷺ ونهاهم، وصبر على تجرّئهم. ثمّ أثاروا في سوقهم فتنةً قُتل فيها رجلٌ من المسلمين ورجلٌ من اليهود، فحاصرهم ﷺ حتى استسلموا بعد خمسة عشر يومًا، ثمّ أجلاهم إلى خارج المدينة.',
+            fr: 'Au mois de Shawwāl, après le Ramadan de Badr, les juifs de Banū Qaynuqā‘ à Médine montrèrent hostilité et méchanceté envers les musulmans. Le Messager de Dieu ﷺ les conseilla, les mit en garde et supporta patiemment leur audace. Puis ils provoquèrent dans leur marché des troubles où furent tués un musulman et un juif ; il ﷺ les assiégea jusqu’à leur reddition, au bout de quinze jours, puis les fit sortir de Médine.',
+            en: 'In the month of Shawwāl, after the Ramadan of Badr, the Jews of Banū Qaynuqā‘ in Madina showed open hostility to the Muslims. The Messenger of God ﷺ advised and warned them, and bore their boldness with patience. Then they stirred up strife in their market in which a Muslim man and a Jewish man were killed; he ﷺ besieged them until they surrendered after fifteen days, and sent them out of Madina.',
+          },
+        },
+        {
+          id: 'p3',
+          heading: { ar: 'ألف بعير', fr: 'Mille chameaux', en: 'A thousand camels' },
+          text: {
+            ar: 'تمكّن المسلمون من حبس قافلةٍ لقريشٍ فيها ألف بعير كانت متّجهةً إلى الشام، فازداد المشركون غيظًا.',
+            fr: 'Les musulmans purent arrêter une caravane de Quraysh de mille chameaux qui se dirigeait vers le Shām ; la colère des polythéistes redoubla.',
+            en: 'The Muslims managed to seize a Quraysh caravan of a thousand camels heading for Shām, and the polytheists’ rage grew.',
+          },
+        },
+        {
+          id: 'p4',
+          heading: { ar: 'الشورى: نتحصّن أم نخرج؟', fr: 'Le conseil : se retrancher ou sortir ?', en: 'The council: fortify or go out?' },
+          text: {
+            ar: 'بعد عامٍ من بدر وصلت أنباء تجهّز قريش، فجمع الرسول ﷺ المسلمين وأمرهم بالاستعداد. وكان رأيه أن يتحصّنوا في المدينة ويحاربوا في الأزقّة والشوارع، فألحّ عليه الشباب أن يخرجوا للقاء المشركين في معركةٍ مكشوفة، فاستجاب ﷺ لرأيهم.',
+            fr: 'Un an après Badr, on apprit que Quraysh s’armait. Le Prophète ﷺ réunit les musulmans et leur ordonna de se préparer. Son avis était de se retrancher dans Médine et de combattre dans les ruelles et les rues ; mais les jeunes insistèrent pour sortir affronter les polythéistes à découvert, et il ﷺ accepta leur avis.',
+            en: 'A year after Badr, news came that Quraysh was arming. The Prophet ﷺ gathered the Muslims and ordered them to prepare. His view was to fortify inside Madina and fight in the lanes and streets; but the young men pressed him to go out and meet the polytheists in an open battle, and he ﷺ agreed to their view.',
+          },
+        },
+        {
+          id: 'p5',
+          heading: { ar: 'خمسون راميًا على الربوة', fr: 'Cinquante archers sur la butte', en: 'Fifty archers on the hillock' },
+          text: {
+            ar: 'عسكر الرسول ﷺ في أقصى الوادي قرب جبل أحد ليراقب تحرّك المشركين، ونظّم المسلمين في سبعمائة رجل، ووضع خمسين رجلًا من أمهر الرماة على ربوةٍ قبالة الجبل لحماية ظهر الجيش، وأمرهم بالتزام المكان حتى ولو انتصر المسلمون، حتى يأذن لهم هو.',
+            fr: 'Le Prophète ﷺ campa au fond de la vallée, près du mont Uḥud, pour surveiller les polythéistes. Il rangea les musulmans, sept cents hommes, et plaça cinquante des meilleurs archers sur une butte face à la montagne pour protéger l’arrière de l’armée, avec ordre de ne pas quitter leur poste, même si les musulmans l’emportaient, tant qu’il ne le leur permettrait pas lui-même.',
+            en: 'The Prophet ﷺ camped at the far end of the valley near Mount Uḥud to watch the polytheists. He arranged the Muslims, seven hundred men, and placed fifty of the most skilled archers on a hillock facing the mountain to guard the army’s rear, ordering them to hold their position even if the Muslims were winning, until he himself gave them leave.',
+          },
+        },
+      ],
+    },
+    // 12 — Journey: the road to Uḥud (Uḥud slides 2–4)
     {
       kind: 'journey',
       id: 'journey-uhud',
@@ -734,7 +956,62 @@ export const ghazawat: Lesson = {
       },
     },
 
-    // 09 — Chain: why Uḥud turned (Uḥud slide 5)
+    // 13 — Reading: an unexpected ending (Uḥud slide 5)
+    {
+      kind: 'reading',
+      id: 'reading-uhud-battle',
+      title: { ar: 'اقرأ: نهايةٌ غير متوقّعة', fr: 'Lis : une fin inattendue', en: 'Read: an unexpected ending' },
+      intro: {
+        ar: 'كيف ينقلب نصرٌ في لحظات؟ اقرأ، ثمّ ابنِ سلسلة الأحداث.',
+        fr: 'Comment une victoire bascule-t-elle en quelques instants ? Lis, puis construis la chaîne des événements.',
+        en: 'How does a victory flip in moments? Read, then build the chain of events.',
+      },
+      image: `${IMG}/archers-hill.png`,
+      imageAlt: {
+        ar: 'قمّة ربوةٍ صخرية تطلّ على سهلٍ رمليّ، وعليها أقواسٌ وجعابُ سهامٍ متروكة، وخلفها جبلٌ أحمر كبير',
+        fr: 'Le sommet d’une butte rocheuse dominant une plaine de sable, avec des arcs et des carquois laissés là, et une grande montagne rouge derrière',
+        en: 'The top of a rocky hillock overlooking a sandy plain, with bows and quivers left behind, and a great red mountain beyond',
+      },
+      paragraphs: [
+        {
+          id: 'p1',
+          heading: { ar: 'نصرٌ في البداية', fr: 'La victoire au début', en: 'Victory at first' },
+          text: {
+            ar: 'تقابل الجيشان، فبدأ المسلمون يضربون بسيوفهم المشركين الذين أصابهم الرعب وأخذوا يتراجعون، وانهزم المشركون شرّ هزيمة.',
+            fr: 'Les deux armées se firent face. Les musulmans frappèrent de leurs épées les polythéistes qui, saisis d’effroi, reculèrent et subirent une lourde défaite.',
+            en: 'The two armies met. The Muslims struck with their swords at the polytheists, who were seized with terror, fell back and were badly routed.',
+          },
+        },
+        {
+          id: 'p2',
+          heading: { ar: 'الرماة ينزلون', fr: 'Les archers descendent', en: 'The archers come down' },
+          text: {
+            ar: 'لاحظ خالد بن الوليد الرماة على الربوة وفهم خطّتهم. ولمّا رأى أغلب الرماة المشركين يتراجعون، نزلوا إلى الميدان لجمع الغنائم مع باقي الجيش.',
+            fr: 'Khālid ibn al-Walīd remarqua les archers sur la butte et comprit leur plan. Voyant les polythéistes reculer, la plupart des archers descendirent sur le terrain ramasser le butin avec le reste de l’armée.',
+            en: 'Khālid ibn al-Walīd noticed the archers on the hillock and understood their plan. Seeing the polytheists fall back, most of the archers went down to the field to gather spoils with the rest of the army.',
+          },
+        },
+        {
+          id: 'p3',
+          heading: { ar: 'هجومٌ من الخلف', fr: 'Une attaque par-derrière', en: 'An attack from behind' },
+          text: {
+            ar: 'انطلق خالد فقتل من بقي من الرماة، ودار خلف الربوة وهاجم المسلمين وهم يظنّون أنّها ساعة النصر. فاهتزّ المسلمون، وعاد المشركون الفارّون فهاجموهم من ظهورهم، فتشتّتوا وحاولوا اللحاق بجبل أحد للاحتماء به.',
+            fr: 'Khālid s’élança, tua les archers restés, contourna la butte et attaqua les musulmans, qui croyaient la victoire acquise. Les musulmans furent ébranlés ; les fuyards revinrent les attaquer par-derrière, et ils se dispersèrent en tentant de gagner le mont Uḥud pour s’y abriter.',
+            en: 'Khālid charged, killed the archers who remained, circled behind the hillock and attacked the Muslims, who thought it was the hour of victory. The Muslims were shaken; the fleeing polytheists came back and struck them from behind, and they scattered, trying to reach Mount Uḥud to take shelter there.',
+          },
+        },
+        {
+          id: 'p4',
+          heading: { ar: 'جُرح الرسول ﷺ', fr: 'Le Prophète ﷺ blessé', en: 'The Prophet ﷺ wounded' },
+          text: {
+            ar: 'أُصيب المسلمون، وجُرح الرسول ﷺ وأُصيب وجهه وسنّه بكسرٍ ونزف دمًا.',
+            fr: 'Les musulmans furent touchés ; le Prophète ﷺ fut blessé, atteint au visage, une dent brisée, et il saigna.',
+            en: 'The Muslims were struck; the Prophet ﷺ was wounded, his face hurt and a tooth broken, and he bled.',
+          },
+        },
+      ],
+    },
+    // 14 — Chain: why Uḥud turned (Uḥud slide 5)
     {
       kind: 'chain',
       id: 'chain-uhud',
@@ -829,7 +1106,7 @@ export const ghazawat: Lesson = {
       },
     },
 
-    // 10 — Timeline: the day after Uḥud (Uḥud slide 6)
+    // 15 — Timeline: the day after Uḥud (Uḥud slide 6)
     {
       kind: 'timeline',
       id: 'timeline-after-uhud',
@@ -905,15 +1182,15 @@ export const ghazawat: Lesson = {
       ],
     },
 
-    // 11 — Reading: before the Trench (textbook p.32)
+    // 16 — Reading: before the Trench (textbook p.32)
     {
       kind: 'reading',
       id: 'reading-ahzab',
       title: { ar: 'اقرأ: الأحزاب تجتمع', fr: 'Lis : les Coalisés se rassemblent', en: 'Read: the Confederates gather' },
       intro: {
-        ar: 'أخطر امتحان: «الابتلاء المزلزل». اقرأ كيف بدأ، ثمّ استكشف أذكى خطّة دفاع.',
-        fr: 'L’épreuve la plus dure : « l’épreuve qui ébranle ». Lis comment elle commença, puis explore le plan de défense le plus ingénieux.',
-        en: 'The hardest test of all: “the shaking trial”. Read how it began, then explore the cleverest defence plan.',
+        ar: 'أخطر امتحان: «الابتلاء المزلزل». اقرأ كيف بدأ، ثمّ رتّب أحداثه.',
+        fr: 'L’épreuve la plus dure : « l’épreuve qui ébranle ». Lis comment elle commença, puis remets ses événements en ordre.',
+        en: 'The hardest test of all: “the shaking trial”. Read how it began, then put its events in order.',
       },
       image: `${IMG}/ahzab-camp.png`,
       imageAlt: {
@@ -961,7 +1238,94 @@ export const ghazawat: Lesson = {
       ],
     },
 
-    // 12 — Explorer: the Trench project (textbook p.33)
+    // 17 — Sorting: from the millstone to ten thousand (textbook p.32)
+    {
+      kind: 'sorting',
+      id: 'sorting-nadir',
+      title: { ar: 'كيف اجتمعت الأحزاب؟', fr: 'Comment les Coalisés se sont-ils réunis ?', en: 'How did the Confederates gather?' },
+      intro: {
+        ar: 'رتّب الأحداث من الأوّل إلى الأخير، بالسحب أو بالأسهم.',
+        fr: 'Range les événements du premier au dernier, en glissant ou avec les flèches.',
+        en: 'Put the events in order from first to last, by dragging or with the arrows.',
+      },
+      image: `${IMG}/ahzab-camp.png`,
+      imageAlt: {
+        ar: 'مئات الخيام الداكنة منتشرة في سهلٍ رمليّ عند الغروب',
+        fr: 'Des centaines de tentes sombres sur une plaine de sable au crépuscule',
+        en: 'Hundreds of dark tents on a sandy plain at dusk',
+      },
+      items: [
+        { id: 'i1', label: { ar: 'الرسول ﷺ يحضر إلى حيّ بني النضير لجمع ديّة مقتولَين', fr: 'Le Prophète ﷺ se rend chez Banū an-Naḍīr pour réunir la diya de deux tués', en: 'The Prophet ﷺ goes to Banū an-Naḍīr to collect the diya for two slain men' } },
+        { id: 'i2', label: { ar: 'أحدهم يصعد البناء ليُلقي على رأسه حجر الرحى', fr: 'L’un d’eux monte sur la bâtisse pour lui jeter une meule', en: 'One of them climbs the building to drop a millstone on him' } },
+        { id: 'i3', label: { ar: 'جبريل (عليه السلام) ينبّهه، فيغادر ﷺ المكان', fr: 'Jibrīl (paix sur lui) l’avertit, et il ﷺ quitte les lieux', en: 'Jibrīl (peace be upon him) warns him, and he ﷺ leaves' } },
+        { id: 'i4', label: { ar: 'يأمرهم بالخروج لخرقهم صحيفة المدينة، فلا يستجيبون', fr: 'Il leur ordonne de partir pour avoir violé la charte ; ils refusent', en: 'He orders them out for violating the Charter; they refuse' } },
+        { id: 'i5', label: { ar: 'يُخرجهم بالقوّة بداية سنة 4 هـ، فيستقرّون بخيبر', fr: 'Il les fait sortir par la force début de l’an 4 ; ils s’installent à Khaybar', en: 'He expels them by force at the start of 4 AH; they settle in Khaybar' } },
+        { id: 'i6', label: { ar: 'يدعون القبائل من كلّ الجهات لحرب المدينة', fr: 'Ils appellent les tribus de partout à attaquer Médine', en: 'They call tribes from everywhere to attack Madina' } },
+        { id: 'i7', label: { ar: 'بعد سنةٍ ونصف: حوالي عشرة آلاف رجلٍ على مشارف المدينة', fr: 'Un an et demi plus tard : environ dix mille hommes aux abords de Médine', en: 'A year and a half later: about ten thousand men at the edge of Madina' } },
+      ],
+      explanation: {
+        ar: 'من مؤامرة حجر الرحى إلى عشرة آلاف رجلٍ سمّاهم القرآن «الأحزاب»: هكذا بدأ «الابتلاء المزلزل».',
+        fr: 'Du complot de la meule aux dix mille hommes que le Coran nomme « al-Aḥzāb » : ainsi commença « l’épreuve qui ébranle ».',
+        en: 'From the millstone plot to the ten thousand men the Qur’an names “al-Aḥzāb”: that is how “the shaking trial” began.',
+      },
+    },
+
+    // 18 — Reading: digging the Trench (textbook p.33)
+    {
+      kind: 'reading',
+      id: 'reading-khandaq',
+      title: { ar: 'اقرأ: حفر الخندق', fr: 'Lis : on creuse le Fossé', en: 'Read: digging the Trench' },
+      intro: {
+        ar: 'كيف سيُبعد المسلمون خطر عشرة آلاف مقاتل؟ اقرأ، ثمّ استكشف أذكى خطّة دفاع.',
+        fr: 'Comment les musulmans écarteront-ils dix mille combattants ? Lis, puis explore le plan de défense le plus ingénieux.',
+        en: 'How will the Muslims keep ten thousand fighters away? Read, then explore the cleverest defence plan.',
+      },
+      image: `${IMG}/trench.png`,
+      imageAlt: {
+        ar: 'خندقٌ عميق محفور في الرمل بين تلّين صخريّين داكنين، وفيه صخرةٌ كبيرة متشقّقة، وعلى حافّته فؤوسٌ وسلال وقصعةُ طعام، وخلفه بيوتٌ بعيدة',
+        fr: 'Un fossé profond creusé dans le sable entre deux collines rocheuses sombres, avec un gros rocher fissuré au fond, des pioches, des paniers et un plat de nourriture au bord, et des maisons au loin',
+        en: 'A deep trench dug in the sand between two dark rocky hills, a large cracked boulder inside it, pickaxes, baskets and a bowl of food at its edge, and houses in the distance',
+      },
+      paragraphs: [
+        {
+          id: 'p1',
+          heading: { ar: 'فكرةٌ من أرض فارس', fr: 'Une idée venue de Perse', en: 'An idea from Persia' },
+          text: {
+            ar: 'لمّا سمع الرسول ﷺ بما عزم عليه المشركون راح يستشير أصحابه في حلٍّ ممكن. فأشار عليه سلمان الفارسيّ (رضي الله عنه): «إنّا كنّا بأرض فارس إذا حوصرنا خندقنا علينا». فكانت أحسن فكرة.',
+            fr: 'Quand le Prophète ﷺ apprit le projet des polythéistes, il consulta ses Compagnons. Salmān al-Fārisī (que Dieu l’agrée) dit : « En Perse, quand on nous assiégeait, nous creusions un fossé autour de nous. » Ce fut la meilleure idée.',
+            en: 'When the Prophet ﷺ heard what the polytheists intended, he consulted his Companions for a solution. Salmān al-Fārisī (may God be pleased with him) said: “In the land of Persia, when we were besieged, we dug a trench around us.” It was the best idea.',
+          },
+        },
+        {
+          id: 'p2',
+          heading: { ar: 'ما الخندق؟ وأين حُفر؟', fr: 'Qu’est-ce qu’un fossé ? Où fut-il creusé ?', en: 'What is a trench? Where was it dug?' },
+          text: {
+            ar: 'الخندق حفرةٌ عميقة مستطيلة حول المكان، تُحفر في ميدان القتال تمنع دخول الخطر الكبير. حُفر في الجهة المكشوفة من المدينة: المدخل الشماليّ، ما بين حرّتَي بني حارثة والوبرة. ولم يُحفر في كلّ الجهات لأنّ الجبال تحصّن المدينة، فحُفر ما بين جبلٍ وجبل، وعرضه من 5 أمتار إلى 10 أمتار، وعمقه من 3 أمتار إلى 5 أمتار.',
+            fr: 'Un fossé est une tranchée longue et profonde creusée autour d’un lieu, sur le terrain du combat, pour barrer la route à un grand danger. Il fut creusé du côté découvert de Médine : l’entrée nord, entre les deux ḥarra de Banū Ḥāritha et d’al-Wabara. Pas de tous côtés, car les montagnes protègent Médine : d’une hauteur à l’autre. Largeur : de 5 à 10 mètres ; profondeur : de 3 à 5 mètres.',
+            en: 'A trench is a long, deep ditch dug around a place on the battlefield to keep a great danger out. It was dug on the exposed side of Madina: the northern entrance, between the two ḥarras of Banū Ḥāritha and al-Wabara. Not on every side, because the mountains fortify Madina: it ran from one height to the other. Width: 5 to 10 metres; depth: 3 to 5 metres.',
+          },
+        },
+        {
+          id: 'p3',
+          heading: { ar: 'قائدٌ يحفر', fr: 'Un chef qui creuse', en: 'A leader who digs' },
+          text: {
+            ar: 'شرع المسلمون في الحفر، وشارك الرسول ﷺ في الحفر والعمل: مهندس المشروع ومسيّره، وجنديٌّ في العمل. وكان ﷺ يربط الحجر في بطنه من شدّة الجوع، وقد أعطاه الله قوّةً يضرب الحجر بالفأس فيتفتّت، وكان يمسح في القصعة فيكفي الطعام للجميع.',
+            fr: 'Les musulmans se mirent à creuser, et le Prophète ﷺ prit part au travail : ingénieur et chef du projet, et simple soldat à l’ouvrage. Il ﷺ attachait une pierre sur son ventre tant la faim était forte ; Dieu lui donna la force de frapper le roc de sa pioche, qui s’effritait ; et il passait la main dans le plat, et la nourriture suffisait à tous.',
+            en: 'The Muslims set to digging, and the Prophet ﷺ joined in the work: engineer and manager of the project, and a soldier in the labour. He ﷺ would tie a stone against his stomach from sheer hunger; God gave him the strength to strike the rock with the pickaxe so that it crumbled; and he would pass his hand over the bowl, and the food would be enough for everyone.',
+          },
+        },
+        {
+          id: 'p4',
+          heading: { ar: 'مناجاةٌ ورجزٌ وكتمان', fr: 'Prière, chant et secret', en: 'Prayer, chant and secrecy' },
+          text: {
+            ar: 'كان ﷺ وأصحابه يناجون ربّهم ويدعونه أن ينصرهم في محنتهم، وكان ﷺ يرتجز والصحابة يجيبون، ويحرص معهم ألّا يصل خبر الخندق إلى المشركين.',
+            fr: 'Lui ﷺ et ses Compagnons invoquaient leur Seigneur en confidence, Lui demandant le secours dans l’épreuve ; il ﷺ scandait des vers et les Compagnons répondaient ; et tous veillaient à ce que la nouvelle du fossé n’atteigne pas les polythéistes.',
+            en: 'He ﷺ and his Companions called on their Lord in private, asking His help in their trial; he ﷺ chanted verses and the Companions answered; and they took care that news of the trench did not reach the polytheists.',
+          },
+        },
+      ],
+    },
+    // 19 — Explorer: the Trench project (textbook p.33)
     {
       kind: 'explorer',
       id: 'explorer-khandaq',
@@ -1069,89 +1433,82 @@ export const ghazawat: Lesson = {
       ],
     },
 
-    // 13 — Estimate: the numbers of the Trench (textbook p.32–33)
+    // 20 — Reading: the numbers of the Trench (textbook p.32–33, «مشروع الخندق» card)
     {
-      kind: 'estimate',
-      id: 'estimate-khandaq',
-      title: { ar: 'خمّن أرقام الخندق', fr: 'Devine les chiffres du Fossé', en: 'Guess the Trench’s numbers' },
+      kind: 'reading',
+      id: 'reading-khandaq-numbers',
+      title: { ar: 'اقرأ: أرقام الخندق', fr: 'Lis : les chiffres du Fossé', en: 'Read: the Trench in numbers' },
       intro: {
-        ar: 'حرّك المؤشّر وخمّن، ثمّ اكشف الرقم الحقيقيّ. لا خسارة هنا: كلّ تخمينٍ يقرّبك!',
-        fr: 'Déplace le curseur et devine, puis découvre le vrai chiffre. Rien à perdre : chaque essai te rapproche !',
-        en: 'Slide to guess, then reveal the real number. Nothing to lose: every guess brings you closer!',
+        ar: 'أرقامٌ مدهشة! اقرأها جيّدًا، ثمّ اختبر ذاكرتك.',
+        fr: 'Des chiffres étonnants ! Lis-les bien, puis teste ta mémoire.',
+        en: 'Amazing numbers! Read them carefully, then test your memory.',
       },
-      items: [
+      image: `${IMG}/trench.png`,
+      imageAlt: {
+        ar: 'خندقٌ عميق محفور في الرمل بين تلّين صخريّين',
+        fr: 'Un fossé profond creusé dans le sable entre deux collines rocheuses',
+        en: 'A deep trench dug in the sand between two rocky hills',
+      },
+      paragraphs: [
         {
-          id: 'e1',
-          question: { ar: 'كم رجلًا اجتمع من الأحزاب على مشارف المدينة؟', fr: 'Combien d’hommes les Coalisés réunirent-ils aux abords de Médine ?', en: 'How many Confederates gathered at the edge of Madina?' },
-          min: 1000,
-          max: 20000,
-          step: 500,
-          answer: 10000,
-          tolerance: 1500,
-          unit: { ar: 'رجل', fr: 'hommes', en: 'men' },
-          reveal: {
-            ar: 'حوالي عشرة آلاف رجل، أمام نحو 3000 من الصحابة: أكثر من ثلاثة أضعاف!',
-            fr: 'Environ dix mille hommes, face à quelque 3000 Compagnons : plus de trois fois plus !',
-            en: 'About ten thousand men, facing some 3,000 Companions: more than three times as many!',
-          },
-          compare: [
-            { label: { ar: 'الأحزاب', fr: 'Les Coalisés', en: 'The Confederates' }, value: 10000 },
-            { label: { ar: 'الصحابة', fr: 'Les Compagnons', en: 'The Companions' }, value: 3000 },
-          ],
-        },
-        {
-          id: 'e2',
-          question: { ar: 'كم مترًا طول الخندق؟', fr: 'Quelle longueur de fossé, en mètres ?', en: 'How long was the trench, in metres?' },
-          min: 1000,
-          max: 9000,
-          step: 8,
-          answer: 5544,
-          tolerance: 800,
-          unit: { ar: 'متر', fr: 'mètres', en: 'metres' },
-          reveal: {
-            ar: 'نحو 5544 مترًا: أكثر من خمسة كيلومترات ونصف!',
-            fr: 'Environ 5544 mètres : plus de cinq kilomètres et demi !',
-            en: 'About 5,544 metres: more than five and a half kilometres!',
+          id: 'p1',
+          heading: { ar: 'عشرة آلاف أمام ثلاثة آلاف', fr: 'Dix mille contre trois mille', en: 'Ten thousand against three thousand' },
+          text: {
+            ar: 'اجتمع من الأحزاب حوالي عشرة آلاف رجل، أمام نحو 3000 من الصحابة: أكثر من ثلاثة أضعاف!',
+            fr: 'Les Coalisés réunirent environ dix mille hommes, face à quelque 3000 Compagnons : plus de trois fois plus !',
+            en: 'The Confederates gathered about ten thousand men, facing some 3,000 Companions: more than three times as many!',
           },
         },
         {
-          id: 'e3',
-          question: { ar: 'كم صحابيًّا أنجز الحفر؟', fr: 'Combien de Compagnons ont creusé ?', en: 'How many Companions did the digging?' },
-          min: 100,
-          max: 3000,
-          step: 100,
-          answer: 1500,
-          tolerance: 300,
-          unit: { ar: 'صحابيّ', fr: 'Compagnons', en: 'Companions' },
-          reveal: {
-            ar: 'نحو 1500 صحابيّ من إجماليّ 3000: نصف الرجال يحفرون.',
-            fr: 'Environ 1500 Compagnons sur 3000 au total : la moitié des hommes creusait.',
-            en: 'About 1,500 Companions out of 3,000 in all: half the men were digging.',
+          id: 'p2',
+          heading: { ar: 'طول الخندق', fr: 'La longueur du fossé', en: 'The trench’s length' },
+          text: {
+            ar: 'بلغ طول الخندق نحو 5544 مترًا: أكثر من خمسة كيلومترات ونصف! وكلّ 40 مسلمًا يحفر 20 مترًا.',
+            fr: 'Le fossé mesurait environ 5544 mètres : plus de cinq kilomètres et demi ! Chaque groupe de 40 musulmans creusait 20 mètres.',
+            en: 'The trench was about 5,544 metres long: more than five and a half kilometres! Every 40 Muslims dug 20 metres.',
           },
-          compare: [
-            { label: { ar: 'حفروا الخندق', fr: 'Ont creusé', en: 'Dug the trench' }, value: 1500 },
-            { label: { ar: 'إجماليّ الصحابة', fr: 'Total des Compagnons', en: 'All the Companions' }, value: 3000 },
-          ],
         },
         {
-          id: 'e4',
-          question: { ar: 'في كم يومٍ أُنجز الخندق؟', fr: 'En combien de jours le fossé fut-il achevé ?', en: 'In how many days was the trench finished?' },
-          min: 1,
-          max: 60,
-          step: 1,
-          answer: 14,
-          tolerance: 4,
-          unit: { ar: 'يوم', fr: 'jours', en: 'days' },
-          reveal: {
-            ar: 'أسبوعان فقط! ولذلك فوجئت به جيوش الأحزاب.',
-            fr: 'Deux semaines seulement ! Voilà pourquoi les armées coalisées furent prises de court.',
-            en: 'Just two weeks! That is why the Confederate armies were caught by surprise.',
+          id: 'p3',
+          heading: { ar: 'نصف الرجال في أسبوعين', fr: 'La moitié des hommes en deux semaines', en: 'Half the men in two weeks' },
+          text: {
+            ar: 'أنجز الحفر نحو 1500 صحابيّ من إجماليّ 3000: نصف الرجال يحفرون. وأُنجز الخندق في أسبوعين فقط! ولذلك فوجئت به جيوش الأحزاب.',
+            fr: 'Environ 1500 Compagnons sur 3000 au total ont creusé : la moitié des hommes. Et le fossé fut achevé en deux semaines seulement ! Voilà pourquoi les armées coalisées furent prises de court.',
+            en: 'About 1,500 Companions out of 3,000 in all did the digging: half the men. And the trench was finished in just two weeks! That is why the Confederate armies were caught by surprise.',
           },
         },
       ],
     },
 
-    // 14 — Story: the alliance falls apart (textbook p.33–34)
+    // 21 — Memory: the numbers of the Trench
+    {
+      kind: 'memory',
+      id: 'memory-khandaq',
+      title: { ar: 'ذاكرة الأرقام', fr: 'La mémoire des chiffres', en: 'Number memory' },
+      intro: {
+        ar: 'احفظ البطاقات قبل أن تنقلب، ثمّ اعثر على الرقم الذي يجيب عن كلّ سؤال.',
+        fr: 'Mémorise les cartes avant qu’elles se retournent, puis retrouve le chiffre qui répond à chaque question.',
+        en: 'Memorise the cards before they flip, then find the number that answers each question.',
+      },
+      cards: [
+        { id: 'n1', label: { ar: 'حوالي 10 000', fr: 'Environ 10 000', en: 'About 10,000' }, category: { ar: 'الأحزاب', fr: 'Les Coalisés', en: 'The Confederates' } },
+        { id: 'n2', label: { ar: 'نحو 3000', fr: 'Environ 3000', en: 'About 3,000' }, category: { ar: 'الصحابة', fr: 'Les Compagnons', en: 'The Companions' } },
+        { id: 'n3', label: { ar: 'نحو 5544 م', fr: 'Environ 5544 m', en: 'About 5,544 m' }, category: { ar: 'طول الخندق', fr: 'Longueur du fossé', en: 'Trench length' } },
+        { id: 'n4', label: { ar: 'نحو 1500', fr: 'Environ 1500', en: 'About 1,500' }, category: { ar: 'الحفّارون', fr: 'Ceux qui creusent', en: 'The diggers' } },
+        { id: 'n5', label: { ar: 'أسبوعان', fr: 'Deux semaines', en: 'Two weeks' }, category: { ar: 'مدّة الحفر', fr: 'Durée des travaux', en: 'Digging time' } },
+        { id: 'n6', label: { ar: '20 مترًا', fr: '20 mètres', en: '20 metres' }, category: { ar: 'حصّة كلّ 40', fr: 'Part de chaque groupe de 40', en: 'Share of every 40' } },
+      ],
+      rounds: [
+        { id: 'r1', question: { ar: 'كم رجلًا اجتمع من الأحزاب على مشارف المدينة؟', fr: 'Combien d’hommes les Coalisés réunirent-ils aux abords de Médine ?', en: 'How many Confederates gathered at the edge of Madina?' }, correctIds: ['n1'] },
+        { id: 'r2', question: { ar: 'كم مترًا طول الخندق؟', fr: 'Quelle longueur de fossé, en mètres ?', en: 'How long was the trench, in metres?' }, correctIds: ['n3'] },
+        { id: 'r3', question: { ar: 'كم صحابيًّا أنجز الحفر؟', fr: 'Combien de Compagnons ont creusé ?', en: 'How many Companions did the digging?' }, correctIds: ['n4'] },
+        { id: 'r4', question: { ar: 'في كم يومٍ أُنجز الخندق؟', fr: 'En combien de jours le fossé fut-il achevé ?', en: 'In how many days was the trench finished?' }, correctIds: ['n5'] },
+        { id: 'r5', question: { ar: 'كم كان إجماليّ الصحابة؟', fr: 'Combien de Compagnons y avait-il en tout ?', en: 'How many Companions were there in all?' }, correctIds: ['n2'] },
+        { id: 'r6', question: { ar: 'كم مترًا يحفر كلّ 40 مسلمًا؟', fr: 'Combien de mètres creuse chaque groupe de 40 musulmans ?', en: 'How many metres did every 40 Muslims dig?' }, correctIds: ['n6'] },
+      ],
+    },
+
+    // 22 — Story: the alliance falls apart (textbook p.33–34)
     {
       kind: 'story',
       id: 'story-ahzab',
@@ -1287,68 +1644,25 @@ export const ghazawat: Lesson = {
       },
     },
 
-    // 15 — Scramble: key words of the lesson
+    // 23 — Quiz: who am I? + key words (review of the whole lesson)
     {
-      kind: 'scramble',
-      id: 'scramble-words',
-      title: { ar: 'رتّب الحروف', fr: 'Remets les lettres en ordre', en: 'Unscramble the letters' },
+      kind: 'quiz',
+      id: 'quiz-who',
+      title: { ar: 'من أنا؟ وما الكلمة؟', fr: 'Qui suis-je ? Quel est le mot ?', en: 'Who am I? What’s the word?' },
       intro: {
-        ar: 'خمس كلماتٍ مفتاحية تبعثرت حروفها. اقرأ التلميح وأعِد بناء الكلمة.',
-        fr: 'Cinq mots-clés aux lettres mélangées. Lis l’indice et reconstruis le mot.',
-        en: 'Five key words with shuffled letters. Read the clue and rebuild the word.',
+        ar: 'اقرأ التلميحات وتعرّف على صاحبها، ثمّ صِل كلّ تلميحٍ بكلمته المفتاحية.',
+        fr: 'Lis les indices et trouve de qui il s’agit, puis relie chaque indice à son mot-clé.',
+        en: 'Read the clues and find who it is, then match each clue to its key word.',
       },
-      words: [
+      questions: [
         {
           id: 'w1',
-          clue: { ar: 'اسم اليوم الذي فرّق الله فيه بين الحقّ والباطل: يوم الـ…', fr: 'Le jour où Dieu sépara le vrai du faux : le jour du…', en: 'The day God separated truth from falsehood: the Day of the…' },
-          word: { ar: 'فرقان', fr: 'Furqan', en: 'Furqan' },
-          reveal: { ar: 'يوم الفرقان هو يوم بدر: 17 رمضان من السنة الثانية للهجرة.', fr: 'Le jour du Furqān, c’est Badr : le 17 ramadan de l’an 2 de l’Hégire.', en: 'The Day of the Furqān is Badr: 17 Ramadan, year 2 of the Hijra.' },
-        },
-        {
-          id: 'w2',
-          clue: { ar: 'جبلٌ عسكر المسلمون قربه وحاولوا الاحتماء به.', fr: 'La montagne près de laquelle campèrent les musulmans et où ils cherchèrent refuge.', en: 'The mountain the Muslims camped by and tried to shelter at.' },
-          word: { ar: 'أحد', fr: 'Uhud', en: 'Uhud' },
-          reveal: { ar: 'جبل أحد: عنده وُضع خمسون راميًا على ربوةٍ لحماية ظهر الجيش.', fr: 'Le mont Uḥud : c’est là que cinquante archers furent placés sur une butte pour protéger l’arrière.', en: 'Mount Uḥud: there fifty archers were posted on a hillock to guard the rear.' },
-        },
-        {
-          id: 'w3',
-          clue: { ar: 'حفرةٌ عميقة مستطيلة حول المكان، تمنع دخول الخطر الكبير.', fr: 'Tranchée longue et profonde autour d’un lieu, qui barre la route au danger (mot arabe).', en: 'A long, deep ditch around a place that keeps great danger out (Arabic word).' },
-          word: { ar: 'خندق', fr: 'Khandaq', en: 'Khandaq' },
-          reveal: { ar: 'الخندق: نحو 5544 مترًا حُفرت في أسبوعين شمال المدينة.', fr: 'Le Khandaq (fossé) : environ 5544 mètres creusés en deux semaines au nord de Médine.', en: 'The Khandaq (trench): about 5,544 metres dug in two weeks north of Madina.' },
-        },
-        {
-          id: 'w4',
-          clue: { ar: 'صاحب فكرة الخندق، من أرض فارس.', fr: 'L’auteur de l’idée du fossé, venu de Perse.', en: 'The man behind the trench idea, from Persia.' },
-          word: { ar: 'سلمان', fr: 'Salman', en: 'Salman' },
-          reveal: { ar: 'سلمان الفارسيّ (رضي الله عنه): «إنّا كنّا بأرض فارس إذا حوصرنا خندقنا علينا».', fr: 'Salmān al-Fārisī (que Dieu l’agrée) : « En Perse, quand on nous assiégeait, nous creusions un fossé. »', en: 'Salmān al-Fārisī (may God be pleased with him): “In Persia, when besieged, we dug a trench around us.”' },
-        },
-        {
-          id: 'w5',
-          clue: { ar: 'الاسم الذي سمّى به القرآن القبائل المجتمعة ضدّ المدينة.', fr: 'Le nom que le Coran donne aux tribus réunies contre Médine.', en: 'The name the Qur’an gives the tribes gathered against Madina.' },
-          word: { ar: 'أحزاب', fr: 'Ahzab', en: 'Ahzab' },
-          reveal: { ar: 'الأحزاب: حوالي عشرة آلاف رجل، ولذلك تُسمّى الغزوة أيضًا غزوة الأحزاب.', fr: 'Al-Aḥzāb, les Coalisés : environ dix mille hommes ; la bataille porte aussi ce nom.', en: 'Al-Aḥzāb, the Confederates: about ten thousand men; the battle is also known by this name.' },
-        },
-      ],
-    },
-
-    // 16 — Riddle: who am I?
-    {
-      kind: 'riddle',
-      id: 'riddle-who',
-      title: { ar: 'من أنا؟', fr: 'Qui suis-je ?', en: 'Who am I?' },
-      intro: {
-        ar: 'افتح التلميحات واحدًا واحدًا. كلّما أجبتَ بتلميحاتٍ أقلّ، ربحتَ نجومًا أكثر!',
-        fr: 'Ouvre les indices un à un. Moins tu en utilises, plus tu gagnes d’étoiles !',
-        en: 'Open the clues one at a time. The fewer you need, the more stars you win!',
-      },
-      riddles: [
-        {
-          id: 'q1',
-          clues: [
-            { ar: 'رأيٌ واحد منّي غيّر مكان معسكرٍ كامل.', fr: 'Un seul avis de ma part a déplacé tout un camp.', en: 'One piece of advice from me moved a whole camp.' },
-            { ar: 'قلتُ: «ليس هذا بمنزل».', fr: 'J’ai dit : « Ce n’est pas le bon emplacement. »', en: 'I said: “This is not the place to camp.”' },
-            { ar: 'اقترحتُ أن تُغوَّر الآبار إلّا واحدة يُحفر عليها حوض.', fr: 'J’ai proposé de combler les puits sauf un, avec un bassin.', en: 'I proposed filling in the wells but one, with a basin beside it.' },
-          ],
+          type: 'mcq',
+          question: {
+            ar: 'من أنا؟ رأيٌ واحد منّي غيّر مكان معسكرٍ كامل. قلتُ: «ليس هذا بمنزل». واقترحتُ أن تُغوَّر الآبار إلّا واحدة يُحفر عليها حوض.',
+            fr: 'Qui suis-je ? Un seul avis de ma part a déplacé tout un camp. J’ai dit : « Ce n’est pas le bon emplacement. » Et j’ai proposé de combler les puits sauf un, avec un bassin.',
+            en: 'Who am I? One piece of advice from me moved a whole camp. I said: “This is not the place to camp.” And I proposed filling in the wells but one, with a basin beside it.',
+          },
           options: [
             { id: 'a', label: { ar: 'سلمان الفارسيّ', fr: 'Salmān al-Fārisī', en: 'Salmān al-Fārisī' } },
             { id: 'b', label: { ar: 'الحُباب بن المنذر', fr: 'Al-Ḥubāb ibn al-Mundhir', en: 'Al-Ḥubāb ibn al-Mundhir' } },
@@ -1356,20 +1670,20 @@ export const ghazawat: Lesson = {
             { id: 'd', label: { ar: 'نُعيم بن مسعود', fr: 'Nu‘aym ibn Mas‘ūd', en: 'Nu‘aym ibn Mas‘ūd' } },
           ],
           correctId: 'b',
-          reveal: {
+          explanation: {
             ar: 'الحُباب بن المنذر (رضي الله عنه) يوم بدر. قال له الرسول ﷺ: «قد أشرتَ بالرأي».',
             fr: 'Al-Ḥubāb ibn al-Mundhir (que Dieu l’agrée), à Badr. Le Prophète ﷺ lui dit : « Tu as donné le bon avis. »',
             en: 'Al-Ḥubāb ibn al-Mundhir (may God be pleased with him), at Badr. The Prophet ﷺ told him: “You have given the right counsel.”',
           },
-          image: `${IMG}/badr-night.png`,
         },
         {
-          id: 'q2',
-          clues: [
-            { ar: 'القافلة نجت، لكنّي رفضتُ الرجوع.', fr: 'La caravane était sauve, mais j’ai refusé de rentrer.', en: 'The caravan was safe, yet I refused to turn back.' },
-            { ar: 'أردتُ أن أُظهر للعرب بأس قريش.', fr: 'Je voulais montrer aux Arabes la force de Quraysh.', en: 'I wanted to show the Arabs Quraysh’s might.' },
-            { ar: 'أصررتُ أن أصل بقريشٍ إلى مستراح بدر.', fr: 'J’ai tenu à mener Quraysh jusqu’à la halte de Badr.', en: 'I insisted on leading Quraysh to the resting place of Badr.' },
-          ],
+          id: 'w2',
+          type: 'mcq',
+          question: {
+            ar: 'من أنا؟ القافلة نجت، لكنّي رفضتُ الرجوع. أردتُ أن أُظهر للعرب بأس قريش، وأصررتُ أن أصل بقريشٍ إلى مستراح بدر.',
+            fr: 'Qui suis-je ? La caravane était sauve, mais j’ai refusé de rentrer. Je voulais montrer aux Arabes la force de Quraysh, et j’ai tenu à mener Quraysh jusqu’à la halte de Badr.',
+            en: 'Who am I? The caravan was safe, yet I refused to turn back. I wanted to show the Arabs Quraysh’s might, and I insisted on leading Quraysh to the resting place of Badr.',
+          },
           options: [
             { id: 'a', label: { ar: 'أبو سفيان', fr: 'Abū Sufyān', en: 'Abū Sufyān' } },
             { id: 'b', label: { ar: 'خالد بن الوليد', fr: 'Khālid ibn al-Walīd', en: 'Khālid ibn al-Walīd' } },
@@ -1377,19 +1691,20 @@ export const ghazawat: Lesson = {
             { id: 'd', label: { ar: 'معبد بن أبي معبد', fr: 'Ma‘bad ibn Abī Ma‘bad', en: 'Ma‘bad ibn Abī Ma‘bad' } },
           ],
           correctId: 'c',
-          reveal: {
+          explanation: {
             ar: 'أبو جهل. كتب أبو سفيان إلى قريشٍ أن ترجع، لكنّ أبا جهلٍ أصرّ على المسير إلى بدر.',
             fr: 'Abū Jahl. Abū Sufyān avait écrit à Quraysh de rentrer, mais Abū Jahl s’obstina à marcher sur Badr.',
             en: 'Abū Jahl. Abū Sufyān had written to Quraysh to turn back, but Abū Jahl insisted on marching to Badr.',
           },
         },
         {
-          id: 'q3',
-          clues: [
-            { ar: 'كنتُ في جيش المشركين وهو يتراجع.', fr: 'J’étais dans l’armée des polythéistes qui reculait.', en: 'I was in the polytheists’ army as it fell back.' },
-            { ar: 'لاحظتُ خمسين رجلًا على ربوة وفهمتُ خطّتهم.', fr: 'J’ai remarqué cinquante hommes sur une butte et compris leur plan.', en: 'I noticed fifty men on a hillock and understood their plan.' },
-            { ar: 'درتُ خلف الربوة يوم أحد.', fr: 'J’ai contourné la butte, le jour d’Uḥud.', en: 'I circled behind the hillock on the day of Uḥud.' },
-          ],
+          id: 'w3',
+          type: 'mcq',
+          question: {
+            ar: 'من أنا؟ كنتُ في جيش المشركين وهو يتراجع. لاحظتُ خمسين رجلًا على ربوة وفهمتُ خطّتهم، ودرتُ خلف الربوة يوم أحد.',
+            fr: 'Qui suis-je ? J’étais dans l’armée des polythéistes qui reculait. J’ai remarqué cinquante hommes sur une butte et compris leur plan, et j’ai contourné la butte, le jour d’Uḥud.',
+            en: 'Who am I? I was in the polytheists’ army as it fell back. I noticed fifty men on a hillock and understood their plan, and I circled behind the hillock on the day of Uḥud.',
+          },
           options: [
             { id: 'a', label: { ar: 'خالد بن الوليد', fr: 'Khālid ibn al-Walīd', en: 'Khālid ibn al-Walīd' } },
             { id: 'b', label: { ar: 'أبو جهل', fr: 'Abū Jahl', en: 'Abū Jahl' } },
@@ -1397,20 +1712,20 @@ export const ghazawat: Lesson = {
             { id: 'd', label: { ar: 'الحُباب بن المنذر', fr: 'Al-Ḥubāb ibn al-Mundhir', en: 'Al-Ḥubāb ibn al-Mundhir' } },
           ],
           correctId: 'a',
-          reveal: {
+          explanation: {
             ar: 'خالد بن الوليد يوم أحد: استغلّ نزول أغلب الرماة فهاجم المسلمين من الخلف.',
             fr: 'Khālid ibn al-Walīd à Uḥud : il profita de la descente de la plupart des archers pour attaquer les musulmans par-derrière.',
             en: 'Khālid ibn al-Walīd at Uḥud: he used the moment most archers came down to attack the Muslims from behind.',
           },
-          image: `${IMG}/archers-hill.png`,
         },
         {
-          id: 'q4',
-          clues: [
-            { ar: 'كنتُ على وشك الإسلام.', fr: 'J’étais sur le point d’embrasser l’islam.', en: 'I was on the verge of Islam.' },
-            { ar: 'أُرسلتُ إلى أبي سفيان ناصحًا.', fr: 'On m’envoya conseiller Abū Sufyān.', en: 'I was sent to advise Abū Sufyān.' },
-            { ar: 'هوّلتُ عليه صفوف المسلمين، فأسرعت قريشٌ إلى مكّة.', fr: 'Je lui ai grossi les rangs des musulmans, et Quraysh se hâta vers La Mecque.', en: 'I made much of the Muslim ranks, and Quraysh hurried off to Makkah.' },
-          ],
+          id: 'w4',
+          type: 'mcq',
+          question: {
+            ar: 'من أنا؟ كنتُ على وشك الإسلام. أُرسلتُ إلى أبي سفيان ناصحًا، فهوّلتُ عليه صفوف المسلمين، فأسرعت قريشٌ إلى مكّة.',
+            fr: 'Qui suis-je ? J’étais sur le point d’embrasser l’islam. On m’envoya conseiller Abū Sufyān ; je lui ai grossi les rangs des musulmans, et Quraysh se hâta vers La Mecque.',
+            en: 'Who am I? I was on the verge of Islam. I was sent to advise Abū Sufyān; I made much of the Muslim ranks, and Quraysh hurried off to Makkah.',
+          },
           options: [
             { id: 'a', label: { ar: 'نُعيم بن مسعود', fr: 'Nu‘aym ibn Mas‘ūd', en: 'Nu‘aym ibn Mas‘ūd' } },
             { id: 'b', label: { ar: 'معبد بن أبي معبد', fr: 'Ma‘bad ibn Abī Ma‘bad', en: 'Ma‘bad ibn Abī Ma‘bad' } },
@@ -1418,19 +1733,20 @@ export const ghazawat: Lesson = {
             { id: 'd', label: { ar: 'حمزة', fr: 'Ḥamza', en: 'Ḥamza' } },
           ],
           correctId: 'b',
-          reveal: {
+          explanation: {
             ar: 'معبد بن أبي معبد، في اليوم الموالي لأحد: ضعفت عزائم قريش وخافوا ضياع فوزهم.',
             fr: 'Ma‘bad ibn Abī Ma‘bad, le lendemain d’Uḥud : la détermination de Quraysh faiblit, par peur de perdre son succès.',
             en: 'Ma‘bad ibn Abī Ma‘bad, the day after Uḥud: Quraysh’s resolve weakened for fear of losing their win.',
           },
         },
         {
-          id: 'q5',
-          clues: [
-            { ar: 'أسلمتُ وقومي لا يعلمون.', fr: 'J’ai embrassé l’islam à l’insu de mon peuple.', en: 'I became Muslim and my people did not know.' },
-            { ar: 'قيل لي: «أنت رجلٌ واحد… ولكن خذِّل عنّا ما استطعت».', fr: 'On m’a dit : « Tu n’es qu’un seul homme… mais détourne-les de nous. »', en: 'I was told: “You are only one man… but turn them away from us.”' },
-            { ar: 'زرعتُ الشكّ بين اليهود وقريشٍ أيّام الخندق.', fr: 'J’ai semé le doute entre les juifs et Quraysh, au temps du Fossé.', en: 'I sowed doubt between the Jews and Quraysh in the days of the Trench.' },
-          ],
+          id: 'w5',
+          type: 'mcq',
+          question: {
+            ar: 'من أنا؟ أسلمتُ وقومي لا يعلمون. قيل لي: «أنت رجلٌ واحد… ولكن خذِّل عنّا ما استطعت»، فزرعتُ الشكّ بين اليهود وقريشٍ أيّام الخندق.',
+            fr: 'Qui suis-je ? J’ai embrassé l’islam à l’insu de mon peuple. On m’a dit : « Tu n’es qu’un seul homme… mais détourne-les de nous », et j’ai semé le doute entre les juifs et Quraysh, au temps du Fossé.',
+            en: 'Who am I? I became Muslim and my people did not know. I was told: “You are only one man… but turn them away from us”, and I sowed doubt between the Jews and Quraysh in the days of the Trench.',
+          },
           options: [
             { id: 'a', label: { ar: 'سلمان الفارسيّ', fr: 'Salmān al-Fārisī', en: 'Salmān al-Fārisī' } },
             { id: 'b', label: { ar: 'معبد بن أبي معبد', fr: 'Ma‘bad ibn Abī Ma‘bad', en: 'Ma‘bad ibn Abī Ma‘bad' } },
@@ -1438,17 +1754,96 @@ export const ghazawat: Lesson = {
             { id: 'd', label: { ar: 'مصعب بن عمير', fr: 'Muṣ‘ab ibn ‘Umayr', en: 'Muṣ‘ab ibn ‘Umayr' } },
           ],
           correctId: 'c',
-          reveal: {
+          explanation: {
             ar: 'نُعيم بن مسعود الأشجعيّ (رضي الله عنه): رجلٌ واحد، و«الحرب خدعة».',
             fr: 'Nu‘aym ibn Mas‘ūd al-Ashja‘ī (que Dieu l’agrée) : un seul homme, et « la guerre est ruse ».',
             en: 'Nu‘aym ibn Mas‘ūd al-Ashja‘ī (may God be pleased with him): one man, and “war is stratagem”.',
           },
-          image: `${IMG}/storm.png`,
+        },
+        {
+          id: 'w6',
+          type: 'matching',
+          question: { ar: 'صِل كلّ تلميحٍ بكلمته المفتاحية.', fr: 'Relie chaque indice à son mot-clé.', en: 'Match each clue to its key word.' },
+          pairs: [
+            { id: 'k1', left: { ar: 'اليوم الذي فرّق الله فيه بين الحقّ والباطل: يوم الـ…', fr: 'Le jour où Dieu sépara le vrai du faux : le jour du…', en: 'The day God separated truth from falsehood: the Day of the…' }, right: { ar: 'فرقان', fr: 'Furqān', en: 'Furqān' } },
+            { id: 'k2', left: { ar: 'جبلٌ عسكر المسلمون قربه وحاولوا الاحتماء به.', fr: 'La montagne près de laquelle campèrent les musulmans et où ils cherchèrent refuge.', en: 'The mountain the Muslims camped by and tried to shelter at.' }, right: { ar: 'أحد', fr: 'Uḥud', en: 'Uḥud' } },
+            { id: 'k3', left: { ar: 'حفرةٌ عميقة مستطيلة حول المكان، تمنع دخول الخطر الكبير.', fr: 'Tranchée longue et profonde autour d’un lieu, qui barre la route au danger (mot arabe).', en: 'A long, deep ditch around a place that keeps great danger out (Arabic word).' }, right: { ar: 'خندق', fr: 'Khandaq', en: 'Khandaq' } },
+            { id: 'k4', left: { ar: 'صاحب فكرة الخندق، من أرض فارس.', fr: 'L’auteur de l’idée du fossé, venu de Perse.', en: 'The man behind the trench idea, from Persia.' }, right: { ar: 'سلمان', fr: 'Salmān', en: 'Salmān' } },
+            { id: 'k5', left: { ar: 'الاسم الذي سمّى به القرآن القبائل المجتمعة ضدّ المدينة.', fr: 'Le nom que le Coran donne aux tribus réunies contre Médine.', en: 'The name the Qur’an gives the tribes gathered against Madina.' }, right: { ar: 'أحزاب', fr: 'Aḥzāb', en: 'Aḥzāb' } },
+          ],
+          explanation: {
+            ar: 'يوم الفرقان هو يوم بدر: 17 رمضان من السنة الثانية للهجرة. جبل أحد: عنده وُضع خمسون راميًا على ربوةٍ لحماية ظهر الجيش. الخندق: نحو 5544 مترًا حُفرت في أسبوعين شمال المدينة. سلمان الفارسيّ (رضي الله عنه): «إنّا كنّا بأرض فارس إذا حوصرنا خندقنا علينا». الأحزاب: حوالي عشرة آلاف رجل، ولذلك تُسمّى الغزوة أيضًا غزوة الأحزاب.',
+            fr: 'Le jour du Furqān, c’est Badr : le 17 ramadan de l’an 2 de l’Hégire. Le mont Uḥud : c’est là que cinquante archers furent placés sur une butte pour protéger l’arrière. Le Khandaq (fossé) : environ 5544 mètres creusés en deux semaines au nord de Médine. Salmān al-Fārisī (que Dieu l’agrée) : « En Perse, quand on nous assiégeait, nous creusions un fossé. » Al-Aḥzāb, les Coalisés : environ dix mille hommes ; la bataille porte aussi ce nom.',
+            en: 'The Day of the Furqān is Badr: 17 Ramadan, year 2 of the Hijra. Mount Uḥud: there fifty archers were posted on a hillock to guard the rear. The Khandaq (trench): about 5,544 metres dug in two weeks north of Madina. Salmān al-Fārisī (may God be pleased with him): “In Persia, when besieged, we dug a trench around us.” Al-Aḥzāb, the Confederates: about ten thousand men; the battle is also known by this name.',
+          },
         },
       ],
     },
 
-    // 17 — Quiz (slides «أجيب» + textbook «أنجز»)
+    // 24 — Blitz: speed round on the three battles
+    {
+      kind: 'blitz',
+      id: 'blitz',
+      title: { ar: 'جولة الغزوات السريعة', fr: 'Manche éclair des batailles', en: 'Battles speed round' },
+      intro: {
+        ar: 'اثنتا عشرة ثانية لكلّ عبارة — هل هي صحيحة أم خاطئة؟ يمكن لعبها مع القسم كلّه!',
+        fr: 'Douze secondes par affirmation — vrai ou faux ? À jouer aussi avec toute la classe !',
+        en: 'Twelve seconds per statement — true or false? Great to play with the whole class!',
+      },
+      secondsPerCard: 12,
+      statements: [
+        {
+          id: 'g1',
+          text: { ar: 'قاد أبو سفيان بن حرب قافلة قريش، ونجا بها من طريقٍ آخر على ساحل البحر.', fr: 'Abū Sufyān ibn Ḥarb conduisait la caravane de Quraysh et s’échappa par un autre chemin, le long de la mer.', en: 'Abū Sufyān ibn Ḥarb led Quraysh’s caravan and escaped by another road along the seacoast.' },
+          answer: true,
+          explanation: { ar: 'صحيح: أبو سفيان بن حرب؛ سلك طريقًا آخر على ساحل البحر.', fr: 'Vrai : Abū Sufyān ibn Ḥarb ; il prit un autre chemin, le long de la mer.', en: 'True: Abū Sufyān ibn Ḥarb; he took another road along the seacoast.' },
+        },
+        {
+          id: 'g2',
+          text: { ar: 'كانت خطّة الحُباب بن المنذر (رضي الله عنه) في بدر أن يبتعد المسلمون عن الآبار كلّها.', fr: 'Le plan d’al-Ḥubāb ibn al-Mundhir (que Dieu l’agrée) à Badr était de s’éloigner de tous les puits.', en: 'Al-Ḥubāb ibn al-Mundhir’s plan (may God be pleased with him) at Badr was to move away from all the wells.' },
+          answer: false,
+          explanation: { ar: 'خطأ: جعل الآبار خلف المسلمين، وتغويرها إلّا واحدة يُحفر عليها حوض: «نشرب ولا يشربون».', fr: 'Faux : avoir les puits derrière soi, les combler sauf un, avec un bassin : « nous boirons et eux non ».', en: 'False: keep the wells behind the Muslims and fill them in but one, with a basin: “we drink and they do not”.' },
+        },
+        {
+          id: 'g3',
+          text: { ar: 'سُمّي يوم بدرٍ بيوم الفرقان لأنّ الله فرّق فيه بين الحقّ والباطل، وكان في 17 رمضان من السنة الثانية للهجرة.', fr: 'Badr est le « jour du Furqān » car Dieu y sépara le vrai du faux ; c’était le 17 ramadan de l’an 2 de l’Hégire.', en: 'Badr is the “Day of the Furqān” because God separated truth from falsehood on it; it was on 17 Ramadan, year 2 of the Hijra.' },
+          answer: true,
+          explanation: { ar: 'صحيح: فرّق الله فيه بين الحقّ والباطل؛ في 17 رمضان من السنة الثانية للهجرة.', fr: 'Vrai : Dieu y sépara le vrai du faux ; le 17 ramadan de l’an 2 de l’Hégire.', en: 'True: God separated truth from falsehood on it; 17 Ramadan, year 2 of the Hijra.' },
+        },
+        {
+          id: 'g4',
+          text: { ar: 'انهزم المسلمون في أحد مع أنّ الرماة لزموا الربوة حتى النهاية.', fr: 'Les musulmans furent défaits à Uḥud alors que les archers restèrent sur la butte jusqu’au bout.', en: 'The Muslims were defeated at Uḥud even though the archers held the hillock to the end.' },
+          answer: false,
+          explanation: { ar: 'خطأ: نزل أغلب الرماة عن الربوة لجمع الغنائم، فدار خالد بن الوليد خلفها وهاجم المسلمين من ظهورهم.', fr: 'Faux : la plupart des archers quittèrent la butte pour le butin ; Khālid ibn al-Walīd la contourna et attaqua par-derrière.', en: 'False: most archers left the hillock for the spoils; Khālid ibn al-Walīd circled behind it and attacked from the rear.' },
+        },
+        {
+          id: 'g5',
+          text: { ar: 'قالت امرأةٌ قُتل زوجها وأخوها وأبوها في أحد: «كلّ مصيبةٍ بعدك جَلَل»، أي صغيرة.', fr: 'Une femme qui perdit son mari, son frère et son père à Uḥud dit : « Tout malheur, après toi, est léger. »', en: 'A woman who lost her husband, brother and father at Uḥud said: “Every loss, after you, is small.”' },
+          answer: true,
+          explanation: { ar: 'صحيح: لمّا رأت الرسول ﷺ سالمًا هانت عليها كلّ مصيبة.', fr: 'Vrai : voyant le Prophète ﷺ sain et sauf, tout malheur lui parut léger.', en: 'True: seeing the Prophet ﷺ safe, every loss seemed small to her.' },
+        },
+        {
+          id: 'g6',
+          text: { ar: 'منع المسلمون المشركين من دخول المدينة بخندقٍ حُفر حولها من كلّ الجهات.', fr: 'Les musulmans empêchèrent les polythéistes d’entrer grâce à un fossé creusé tout autour de Médine.', en: 'The Muslims kept the polytheists out with a trench dug all round Madina.' },
+          answer: false,
+          explanation: { ar: 'خطأ: حُفر الخندق في الجهة المكشوفة شمال المدينة فقط، بمشورة سلمان الفارسيّ (رضي الله عنه).', fr: 'Faux : le fossé fut creusé du côté découvert, au nord, sur le conseil de Salmān al-Fārisī (que Dieu l’agrée).', en: 'False: the trench was dug only on the exposed northern side, on the advice of Salmān al-Fārisī (may God be pleased with him).' },
+        },
+        {
+          id: 'g7',
+          text: { ar: 'فشلت خطّة اليهود والمشركين حين زرع نُعيم بن مسعود (رضي الله عنه) الفرقة بينهم، ثمّ أرسل الله الريح والغبار.', fr: 'Le plan des juifs et des polythéistes échoua quand Nu‘aym ibn Mas‘ūd (que Dieu l’agrée) sema la division entre eux, puis Dieu envoya le vent et la poussière.', en: 'The plan of the Jews and the polytheists failed when Nu‘aym ibn Mas‘ūd (may God be pleased with him) sowed division among them, then God sent the wind and dust.' },
+          answer: true,
+          explanation: { ar: 'صحيح: زرع نُعيم الفرقة بينهم، ثمّ أرسل الله الريح والغبار فشتّتهم.', fr: 'Vrai : Nu‘aym sema la division, puis Dieu envoya le vent et la poussière qui les dispersèrent.', en: 'True: Nu‘aym sowed division, then God sent the wind and dust that scattered them.' },
+        },
+        {
+          id: 'g8',
+          text: { ar: 'أخرج الرسول ﷺ بني النضير من المدينة فاستقرّوا بالشام.', fr: 'Le Prophète ﷺ fit sortir Banū an-Naḍīr de Médine, et ils s’installèrent au Shām.', en: 'The Prophet ﷺ expelled Banū an-Naḍīr from Madina and they settled in Shām.' },
+          answer: false,
+          explanation: { ar: 'خطأ: أخرجهم بالقوّة لأنّهم خرقوا صحيفة المدينة وهمّوا بقتله، فاستقرّوا بخيبر.', fr: 'Faux : il les fit sortir par la force, car ils avaient violé la charte et voulu le tuer ; ils s’installèrent à Khaybar.', en: 'False: he expelled them by force because they violated the Charter and meant to kill him; they settled in Khaybar.' },
+        },
+      ],
+    },
+
+    // 25 — Quiz (slides «أجيب» + textbook «أنجز»)
     {
       kind: 'quiz',
       id: 'quiz',
@@ -1602,7 +1997,7 @@ export const ghazawat: Lesson = {
       ],
     },
 
-    // 18 — Values (Uḥud slide 7 «أعتبر» + textbook «أعتبر من قدوتي»)
+    // 26 — Values (Uḥud slide 7 «أعتبر» + textbook «أعتبر من قدوتي»)
     {
       kind: 'value',
       id: 'value',
@@ -1721,69 +2116,7 @@ export const ghazawat: Lesson = {
       ],
     },
 
-    // 19 — Wheel: whole-class review
-    {
-      kind: 'wheel',
-      id: 'wheel-review',
-      title: { ar: 'عجلة الغزوات', fr: 'La roue des batailles', en: 'The wheel of battles' },
-      intro: {
-        ar: 'لعبة القسم! أدِر العجلة، وأجب شفويًّا عن السؤال، ثمّ اكشف الجواب.',
-        fr: 'Le jeu de la classe ! Fais tourner la roue, réponds à l’oral, puis découvre la réponse.',
-        en: 'The class game! Spin the wheel, answer out loud, then reveal the answer.',
-      },
-      segments: [
-        {
-          id: 'g1',
-          label: { ar: 'القافلة', fr: 'La caravane', en: 'The caravan' },
-          question: { ar: 'من كان يقود قافلة قريش؟ وأيّ طريقٍ سلك لينجو بها؟', fr: 'Qui conduisait la caravane de Quraysh ? Par où s’échappa-t-il ?', en: 'Who led Quraysh’s caravan? Which way did he escape?' },
-          answer: { ar: 'أبو سفيان بن حرب؛ سلك طريقًا آخر على ساحل البحر.', fr: 'Abū Sufyān ibn Ḥarb ; il prit un autre chemin, le long de la mer.', en: 'Abū Sufyān ibn Ḥarb; he took another road along the seacoast.' },
-        },
-        {
-          id: 'g2',
-          label: { ar: 'الآبار', fr: 'Les puits', en: 'The wells' },
-          question: { ar: 'ما خطّة الحُباب بن المنذر (رضي الله عنه) في بدر؟', fr: 'Quel fut le plan d’al-Ḥubāb ibn al-Mundhir (que Dieu l’agrée) à Badr ?', en: 'What was al-Ḥubāb ibn al-Mundhir’s plan (may God be pleased with him) at Badr?' },
-          answer: { ar: 'جعل الآبار خلف المسلمين، وتغويرها إلّا واحدة يُحفر عليها حوض: «نشرب ولا يشربون».', fr: 'Avoir les puits derrière soi, les combler sauf un, avec un bassin : « nous boirons et eux non ».', en: 'Keep the wells behind the Muslims and fill them in but one, with a basin: “we drink and they do not”.' },
-        },
-        {
-          id: 'g3',
-          label: { ar: 'الفرقان', fr: 'Le Furqān', en: 'The Furqān' },
-          question: { ar: 'لماذا سُمّي يوم بدرٍ بيوم الفرقان؟ ومتى كان؟', fr: 'Pourquoi Badr est-il le « jour du Furqān » ? Quand eut-il lieu ?', en: 'Why is Badr the “Day of the Furqān”? When was it?' },
-          answer: { ar: 'لأنّ الله فرّق فيه بين الحقّ والباطل؛ في 17 رمضان من السنة الثانية للهجرة.', fr: 'Parce que Dieu y sépara le vrai du faux ; le 17 ramadan de l’an 2 de l’Hégire.', en: 'Because God separated truth from falsehood on it; on 17 Ramadan, year 2 of the Hijra.' },
-        },
-        {
-          id: 'g4',
-          label: { ar: 'الرماة', fr: 'Les archers', en: 'The archers' },
-          question: { ar: 'لماذا انهزم المسلمون في أحد؟', fr: 'Pourquoi les musulmans furent-ils défaits à Uḥud ?', en: 'Why were the Muslims defeated at Uḥud?' },
-          answer: { ar: 'نزل أغلب الرماة عن الربوة لجمع الغنائم، فدار خالد بن الوليد خلفها وهاجم المسلمين من ظهورهم.', fr: 'La plupart des archers quittèrent la butte pour le butin ; Khālid ibn al-Walīd la contourna et attaqua par-derrière.', en: 'Most archers left the hillock for the spoils; Khālid ibn al-Walīd circled behind it and attacked from the rear.' },
-        },
-        {
-          id: 'g5',
-          label: { ar: 'جَلَل', fr: '« Léger »', en: '“Small”' },
-          question: { ar: 'من قالت: «كلّ مصيبةٍ بعدك جَلَل»؟ وما معناها؟', fr: 'Qui a dit : « Tout malheur, après toi, est léger » ? Que voulait-elle dire ?', en: 'Who said: “Every loss, after you, is small”? What did she mean?' },
-          answer: { ar: 'امرأةٌ قُتل زوجها وأخوها وأبوها في أحد؛ لمّا رأت الرسول ﷺ سالمًا هانت عليها كلّ مصيبة.', fr: 'Une femme qui perdit son mari, son frère et son père à Uḥud ; voyant le Prophète ﷺ sain et sauf, tout malheur lui parut léger.', en: 'A woman who lost her husband, brother and father at Uḥud; seeing the Prophet ﷺ safe, every loss seemed small to her.' },
-        },
-        {
-          id: 'g6',
-          label: { ar: 'سلمان', fr: 'Salmān', en: 'Salmān' },
-          question: { ar: 'كيف منع المسلمون المشركين من دخول المدينة؟', fr: 'Comment les musulmans empêchèrent-ils les polythéistes d’entrer dans Médine ?', en: 'How did the Muslims keep the polytheists out of Madina?' },
-          answer: { ar: 'بحفر خندقٍ في الجهة المكشوفة شمال المدينة، بمشورة سلمان الفارسيّ (رضي الله عنه).', fr: 'En creusant un fossé du côté découvert, au nord, sur le conseil de Salmān al-Fārisī (que Dieu l’agrée).', en: 'By digging a trench on the exposed northern side, on the advice of Salmān al-Fārisī (may God be pleased with him).' },
-        },
-        {
-          id: 'g7',
-          label: { ar: 'نُعيم', fr: 'Nu‘aym', en: 'Nu‘aym' },
-          question: { ar: 'كيف فشلت خطّة اليهود والمشركين؟', fr: 'Comment le plan des juifs et des polythéistes échoua-t-il ?', en: 'How did the plan of the Jews and the polytheists fail?' },
-          answer: { ar: 'زرع نُعيم بن مسعود (رضي الله عنه) الفرقة بينهم، ثمّ أرسل الله الريح والغبار فشتّتهم.', fr: 'Nu‘aym ibn Mas‘ūd (que Dieu l’agrée) sema la division entre eux, puis Dieu envoya le vent et la poussière qui les dispersèrent.', en: 'Nu‘aym ibn Mas‘ūd (may God be pleased with him) sowed division among them, then God sent the wind and dust that scattered them.' },
-        },
-        {
-          id: 'g8',
-          label: { ar: 'بنو النضير', fr: 'Banū an-Naḍīr', en: 'Banū an-Naḍīr' },
-          question: { ar: 'ما الذي صنعه الرسول ﷺ ببني النضير؟ ولماذا؟', fr: 'Que fit le Prophète ﷺ de Banū an-Naḍīr ? Pourquoi ?', en: 'What did the Prophet ﷺ do with Banū an-Naḍīr, and why?' },
-          answer: { ar: 'أخرجهم من المدينة بالقوّة لأنّهم خرقوا صحيفة المدينة وهمّوا بقتله، فاستقرّوا بخيبر.', fr: 'Il les fit sortir de Médine par la force, car ils avaient violé la charte et voulu le tuer ; ils s’installèrent à Khaybar.', en: 'He expelled them from Madina by force because they violated the Charter and meant to kill him; they settled in Khaybar.' },
-        },
-      ],
-    },
-
-    // 20 — Completion
+    // 27 — Completion
     {
       kind: 'completion',
       id: 'completion',

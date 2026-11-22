@@ -50,9 +50,9 @@ export const nafusaJerba: Lesson = {
     en: 'The prosperity of Nafusa and Djerba',
   },
   description: {
-    ar: 'جبلٌ وجزيرة حفظا العلم بعد سقوط الدولة الرستمية. العب، وخمّن، وافتح الخزنة لتعرف كيف صارت جربة «جزيرة المساجد».',
-    fr: 'Une montagne et une île gardèrent le savoir après la chute de l’État rustamide. Joue, devine et ouvre le coffre pour savoir comment Djerba devint « l’île des mosquées ».',
-    en: 'A mountain and an island kept knowledge alive after the Rustamid state fell. Play, guess and open the vault to learn how Djerba became "the Island of Mosques".',
+    ar: 'جبلٌ وجزيرة حفظا العلم بعد سقوط الدولة الرستمية. اقرأ والعب لتعرف كيف صارت جربة «جزيرة المساجد».',
+    fr: 'Une montagne et une île gardèrent le savoir après la chute de l’État rustamide. Lis et joue pour savoir comment Djerba devint « l’île des mosquées ».',
+    en: 'A mountain and an island kept knowledge alive after the Rustamid state fell. Read and play to learn how Djerba became "the Island of Mosques".',
   },
 
   sections: [
@@ -85,124 +85,47 @@ export const nafusaJerba: Lesson = {
       id: 'missions',
       title: { ar: 'أربع مهمّات', fr: 'Quatre missions', en: 'Four missions' },
       intro: {
-        ar: 'اضغط على أيّ سؤال لتقفز إلى لعبته.',
-        fr: 'Touche une question pour sauter à son jeu.',
-        en: 'Tap any question to jump to its game.',
+        ar: 'اضغط على أيّ سؤال لتنتقل إلى محطّته في الدرس.',
+        fr: 'Touche une question pour aller directement à l’étape qui y répond.',
+        en: 'Tap any question to jump straight to the step that answers it.',
       },
       missions: [
         {
           id: 'm1',
           question: { ar: 'ماذا أصاب جبل نفوسة؟', fr: 'Qu’arriva-t-il au djebel Nafūsa ?', en: 'What happened to the Nafusa Mountain?' },
-          target: 'manu-chain',
+          target: 'reading-nafusa',
           teaser: { ar: 'واقعةٌ، فانتفاضة، فكتمان.', fr: 'Une bataille, un soulèvement, le secret.', en: 'A battle, an uprising, then secrecy.' },
         },
         {
           id: 'm2',
           question: { ar: 'من أعاد العلم إلى الجبل؟', fr: 'Qui ramena le savoir dans la montagne ?', en: 'Who brought knowledge back to the mountain?' },
-          target: 'halqa-lantern',
-          teaser: { ar: 'احمل المصباح وابحث.', fr: 'Prends la lampe et cherche.', en: 'Take the lamp and search.' },
+          target: 'reading-halqa',
+          teaser: { ar: 'شيخان وحلقتان.', fr: 'Deux cheikhs, deux cercles.', en: 'Two sheikhs, two circles.' },
         },
         {
           id: 'm3',
           question: { ar: 'أين الأمان: الجزيرة أم الجريد؟', fr: 'Où est la sécurité : l’île ou le Djérid ?', en: 'Where was it safe: the island or the Jarid?' },
-          target: 'safe-or-exposed',
+          target: 'reading-djerba',
           teaser: { ar: 'ضع كلّ حالٍ على كفّته.', fr: 'Pose chaque situation sur son plateau.', en: 'Put each situation on its pan.' },
         },
         {
           id: 'm4',
           question: { ar: 'كيف صارت جربة منارةً للعلم؟', fr: 'Comment Djerba devint-elle un phare du savoir ?', en: 'How did Djerba become a beacon of knowledge?' },
-          target: 'abu-miswar-catch',
-          teaser: { ar: 'التقط أعمال أبي مسور.', fr: 'Attrape les œuvres d’Abū Miswar.', en: 'Catch Abu Miswar’s works.' },
+          target: 'reading-miswar',
+          teaser: { ar: 'مدارس، وكتب، ومساجد.', fr: 'Des écoles, des livres, des mosquées.', en: 'Schools, books and mosques.' },
         },
       ],
     },
 
-    // 03 — Riddle: the three places (slides 2, 3, 7)
-    {
-      kind: 'riddle',
-      id: 'three-places',
-      title: { ar: 'جبلٌ أم جزيرة؟ من أنا؟', fr: 'Montagne ou île ? Qui suis-je ?', en: 'Mountain or island? Who am I?' },
-      intro: {
-        ar: 'افتح القرائن واحدةً واحدة. كلّما عرفت المكان بقرائن أقلّ، ربحت نجومًا أكثر!',
-        fr: 'Ouvre les indices un à un. Moins tu en utilises pour trouver le lieu, plus tu gagnes d’étoiles !',
-        en: 'Open the clues one by one. The fewer you need to name the place, the more stars you win!',
-      },
-      riddles: [
-        {
-          id: 'r-nafusa',
-          clues: [
-            { ar: 'أهلي من أوائل أهل الدعوة.', fr: 'Mes habitants comptent parmi les premiers gens de l’Appel.', en: 'My people were among the first People of the Call.' },
-            { ar: 'كنتُ سندًا قويًّا للإمامة الرستمية في تاهرت.', fr: 'J’étais un solide appui de l’imamat rustamide de Tāhert.', en: 'I was a strong support for the Rustamid imamate in Tahert.' },
-            { ar: 'أحمل اسم قبيلةٍ أمازيغية اعتنقت الإسلام مبكّرًا.', fr: 'Je porte le nom d’une tribu amazighe convertie très tôt à l’islam.', en: 'I bear the name of an Amazigh tribe that embraced Islam early.' },
-            { ar: 'أنا سلسلة جبالٍ في شمال غرب ليبيا.', fr: 'Je suis une chaîne de montagnes au nord-ouest de la Libye.', en: 'I am a mountain range in north-western Libya.' },
-          ],
-          options: [
-            { id: 'nafusa', label: { ar: 'جبل نفوسة', fr: 'Le djebel Nafūsa', en: 'The Nafusa Mountain' } },
-            { id: 'jerba', label: { ar: 'جزيرة جربة', fr: 'L’île de Djerba', en: 'The island of Djerba' } },
-            { id: 'jarid', label: { ar: 'بلاد الجريد', fr: 'Le Djérid', en: 'The Jarid' } },
-            { id: 'tahert', label: { ar: 'تاهرت', fr: 'Tāhert', en: 'Tahert' } },
-          ],
-          correctId: 'nafusa',
-          reveal: {
-            ar: 'جبل نفوسة! سلسلة جبالٍ في المنطقة الشمالية الغربية لليبيا. من مدنه وقراه على الخريطة: نالوت وكاباو وجادو ويفرن وغريان.',
-            fr: 'Le djebel Nafūsa ! Une chaîne de montagnes dans le nord-ouest de la Libye. Parmi ses villes et villages sur la carte : Nālūt, Kābāw, Jādū, Yafran et Gharyān.',
-            en: 'The Nafusa Mountain! A mountain range in the north-west of Libya. Among its towns and villages on the map: Nalut, Kabaw, Jadu, Yefren and Gharyan.',
-          },
-        },
-        {
-          id: 'r-jerba',
-          clues: [
-            { ar: 'احتمى بي أهل الدعوة لمّا انهزموا أمام العبيديين.', fr: 'Les gens de l’Appel se réfugièrent chez moi après leur défaite face aux Ubaydides.', en: 'The People of the Call took shelter in me when the Ubaydids defeated them.' },
-            { ar: 'كنتُ على ولاءٍ للرستميين منذ عهد الإمام الثاني عبد الوهّاب.', fr: 'J’étais fidèle aux Rustamides depuis le temps du deuxième imam, ‘Abd al-Wahhāb.', en: 'I was loyal to the Rustamids from the time of the second imam, ‘Abd al-Wahhab.' },
-            { ar: 'لقبي: «جزيرة المساجد».', fr: 'Mon surnom : « l’île des mosquées ».', en: 'My nickname: "the Island of Mosques".' },
-            { ar: 'يحيط بي البحر، جنوب شرق تونس.', fr: 'La mer m’entoure, au sud-est de la Tunisie.', en: 'The sea surrounds me, in the south-east of Tunisia.' },
-          ],
-          options: [
-            { id: 'nafusa', label: { ar: 'جبل نفوسة', fr: 'Le djebel Nafūsa', en: 'The Nafusa Mountain' } },
-            { id: 'jerba', label: { ar: 'جزيرة جربة', fr: 'L’île de Djerba', en: 'The island of Djerba' } },
-            { id: 'jarid', label: { ar: 'بلاد الجريد', fr: 'Le Djérid', en: 'The Jarid' } },
-            { id: 'demmer', label: { ar: 'جبل دمّر', fr: 'Le djebel Demmer', en: 'Jabal Demmer' } },
-          ],
-          correctId: 'jerba',
-          reveal: {
-            ar: 'جزيرة جربة! تقع جنوب شرق تونس، وكانت على ولاءٍ للرستميين منذ عهد الإمام عبد الوهّاب، نحو سنة 171 هـ.',
-            fr: 'L’île de Djerba ! Située au sud-est de la Tunisie, elle était fidèle aux Rustamides depuis le temps de l’imam ‘Abd al-Wahhāb, vers l’an 171 H.',
-            en: 'The island of Djerba! It lies in the south-east of Tunisia and was loyal to the Rustamids from the time of Imam ‘Abd al-Wahhab, about 171 AH.',
-          },
-        },
-        {
-          id: 'r-jarid',
-          clues: [
-            { ar: 'لستُ منيعةً مثل الجبل ولا مثل الجزيرة.', fr: 'Je ne suis pas protégée comme la montagne ni comme l’île.', en: 'I am not as protected as the mountain or the island.' },
-            { ar: 'أصل بين وادي سوف وجبل نفوسة.', fr: 'Je relie l’Oued Souf au djebel Nafūsa.', en: 'I link Wadi Souf to the Nafusa Mountain.' },
-            { ar: 'يمرّ الطريق منّي عبر جبل دمّر ومطماطة.', fr: 'De chez moi, la route passe par le djebel Demmer et Matmata.', en: 'From me the road runs through Jabal Demmer and Matmata.' },
-            { ar: 'أنا المنطقة الجنوبية من تونس.', fr: 'Je suis la région sud de la Tunisie.', en: 'I am the southern region of Tunisia.' },
-          ],
-          options: [
-            { id: 'nafusa', label: { ar: 'جبل نفوسة', fr: 'Le djebel Nafūsa', en: 'The Nafusa Mountain' } },
-            { id: 'jerba', label: { ar: 'جزيرة جربة', fr: 'L’île de Djerba', en: 'The island of Djerba' } },
-            { id: 'jarid', label: { ar: 'بلاد الجريد', fr: 'Le Djérid', en: 'The Jarid' } },
-            { id: 'souf', label: { ar: 'وادي سوف', fr: 'L’Oued Souf', en: 'Wadi Souf' } },
-          ],
-          correctId: 'jarid',
-          reveal: {
-            ar: 'بلاد الجريد! هي المنطقة الجنوبية من تونس، تصل بين وادي سوف في المغرب الأوسط وجبل نفوسة في طرابلس الغرب، عبر جبل دمّر ومطماطة.',
-            fr: 'Le Djérid ! C’est la région sud de la Tunisie ; elle relie l’Oued Souf, au Maghreb central, au djebel Nafūsa, en Tripolitaine, par le djebel Demmer et Matmata.',
-            en: 'The Jarid! It is the southern region of Tunisia, linking Wadi Souf in the central Maghreb to the Nafusa Mountain in Tripolitania, by way of Jabal Demmer and Matmata.',
-          },
-        },
-      ],
-    },
-
-    // 04 — Reading: who are the people of Nafusa? (slide 3)
+    // 03 — Reading: who are the people of Nafusa? (slide 3)
     {
       kind: 'reading',
       id: 'reading-nafusa',
       title: { ar: 'اقرأ في دقيقة: أهل الجبل', fr: 'Lis en une minute : les gens de la montagne', en: 'A one-minute read: the mountain’s people' },
       intro: {
-        ar: 'ثلاث بطاقاتٍ قصيرة، ثمّ تبدأ سلسلة الأحداث!',
-        fr: 'Trois courtes cartes, puis la chaîne des événements commence !',
-        en: 'Three short cards, then the chain of events begins!',
+        ar: 'ستّ بطاقاتٍ قصيرة، ثمّ تبدأ سلسلة الأحداث!',
+        fr: 'Six courtes cartes, puis la chaîne des événements commence !',
+        en: 'Six short cards, then the chain of events begins!',
       },
       image: `${IMG}/qasr.png`,
       imageAlt: {
@@ -238,10 +161,37 @@ export const nafusaJerba: Lesson = {
             en: 'So the people of Nafusa became among the first People of the Call, a school for its scholars and sheikhs in the Maghreb, and a strong support for the Rustamid imamate in Tahert.',
           },
         },
+        {
+          id: 'p4',
+          heading: { ar: 'على الخريطة', fr: 'Sur la carte', en: 'On the map' },
+          text: {
+            ar: 'من مدن جبل نفوسة وقراه على الخريطة: نالوت وكاباو وجادو ويفرن وغريان.',
+            fr: 'Parmi les villes et villages du djebel Nafūsa sur la carte : Nālūt, Kābāw, Jādū, Yafran et Gharyān.',
+            en: 'Among the towns and villages of the Nafusa Mountain on the map: Nalut, Kabaw, Jadu, Yefren and Gharyan.',
+          },
+        },
+        {
+          id: 'p5',
+          heading: { ar: 'واقعة مانو', fr: 'La bataille de Mānū', en: 'The battle of Manu' },
+          text: {
+            ar: 'سنة 283 هـ وقعت واقعة مانو، فأضرّت بالجبل وأنهكت أهله، فلم يقدروا على حماية الدولة الرستمية حين سقطت.',
+            fr: 'En 283 H eut lieu la bataille de Mānū : elle nuisit à la montagne et épuisa ses habitants, qui ne purent défendre l’État rustamide quand il tomba.',
+            en: 'In 283 AH the battle of Manu took place: it harmed the mountain and exhausted its people, so they could not protect the Rustamid state when it fell.',
+          },
+        },
+        {
+          id: 'p6',
+          heading: { ar: 'انتفاضةٌ ثمّ كتمان', fr: 'Un soulèvement, puis le secret', en: 'An uprising, then secrecy' },
+          text: {
+            ar: 'لكنّهم شاركوا الإمام أبا خزر يغلا بن زلتاف وأبا نوح سعيد سنة 358 هـ في الانتفاضة ضدّ العبيديين، ولم يُكتب لها النصر، فدخل أهل الدعوة مرحلة الكتمان، واشتغلوا بإصلاح مجتمعهم وتربية الأجيال.',
+            fr: 'Pourtant, en 358 H, ils se joignirent à l’imam Abū Khazar Yaghlā ibn Zultāf et à Abū Nūḥ Sa‘īd dans le soulèvement contre les Ubaydides ; il ne fut pas couronné de victoire, et les gens de l’Appel entrèrent dans la phase du secret, se consacrant à réformer leur société et à éduquer les générations.',
+            en: 'Yet in 358 AH they joined Imam Abu Khazar Yaghla ibn Zultaf and Abu Nuh Sa‘id in the uprising against the Ubaydids; it was not granted victory, and the People of the Call entered the stage of secrecy, turning to reforming their society and raising the generations.',
+          },
+        },
       ],
     },
 
-    // 05 — Domino chain: from Manu to the stage of secrecy (slide 3)
+    // 04 — Domino chain: from Manu to the stage of secrecy (slide 3)
     {
       kind: 'chain',
       id: 'manu-chain',
@@ -316,71 +266,74 @@ export const nafusaJerba: Lesson = {
       },
     },
 
-    // 06 — Estimate: the numbers of the trial (slides 3, 5)
+    // 05 — Reading: scholars revive the mountain (slides 5–6)
     {
-      kind: 'estimate',
-      id: 'manu-numbers',
-      title: { ar: 'خمِّن الرقم!', fr: 'Devine le nombre !', en: 'Guess the number!' },
+      kind: 'reading',
+      id: 'reading-halqa',
+      title: { ar: 'اقرأ: علماء ينعشون الجبل', fr: 'Lis : des savants raniment la montagne', en: 'Read: scholars revive the mountain' },
       intro: {
-        ar: 'حرّك المؤشّر إلى الرقم الذي تظنّه صحيحًا، ثمّ اكشف الجواب.',
-        fr: 'Glisse le curseur sur le nombre que tu crois juste, puis découvre la réponse.',
-        en: 'Slide to the number you think is right, then reveal the answer.',
+        ar: 'اقرأ كيف عاد العلم إلى الجبل بعد مانو، ثمّ ادخل الحلقة في اللعبة التالية.',
+        fr: 'Lis comment le savoir revint dans la montagne après Mānū, puis entre dans le cercle au jeu suivant.',
+        en: 'Read how knowledge came back to the mountain after Manu, then step into the circle in the next game.',
       },
-      items: [
+      paragraphs: [
         {
-          id: 'e-scholars',
-          question: {
-            ar: 'هلك في موقعة مانو الآلاف من نفوسة. كم كان بينهم من عالمٍ وفقيه؟',
-            fr: 'Des milliers de gens de Nafūsa périrent à Mānū. Combien de savants et de juristes parmi eux ?',
-            en: 'Thousands of Nafusa’s people perished at Manu. How many scholars and jurists were among them?',
-          },
-          min: 0,
-          max: 1000,
-          step: 50,
-          answer: 400,
-          tolerance: 100,
-          unit: { ar: 'عالم وفقيه', fr: 'savants et juristes', en: 'scholars and jurists' },
-          reveal: {
-            ar: 'أزيد من أربعمائة عالمٍ وفقيه! حتّى فُقد من يدرّس أصول الدين للأجيال. كانت هذه من أشدّ محن موقعة مانو.',
-            fr: 'Plus de quatre cents savants et juristes ! Au point qu’il ne resta plus personne pour enseigner les fondements de la religion aux générations. Ce fut l’une des plus dures épreuves de Mānū.',
-            en: 'More than four hundred scholars and jurists! So many that no one was left to teach the foundations of the religion to the generations. This was among the hardest trials of Manu.',
+          id: 'p1',
+          heading: { ar: 'محنةٌ كبيرة', fr: 'Une grande épreuve', en: 'A great trial' },
+          text: {
+            ar: 'من محن موقعة مانو هلاك الآلاف من نفوسة، وفيهم أزيد من أربعمائة عالمٍ وفقيه، حتّى فُقد من يدرّس أصول الدين للأجيال.',
+            fr: 'Parmi les épreuves de Mānū : la mort de milliers de gens de Nafūsa, dont plus de quatre cents savants et juristes, au point qu’il ne resta plus personne pour enseigner les fondements de la religion aux générations.',
+            en: 'Among the trials of Manu: thousands of Nafusa’s people perished, more than four hundred scholars and jurists among them, until no one was left to teach the foundations of the religion to the generations.',
           },
         },
         {
-          id: 'e-years',
-          question: {
-            ar: 'كم سنةً مرّت بين واقعة مانو (283 هـ) والانتفاضة ضدّ العبيديين (358 هـ)؟',
-            fr: 'Combien d’années séparent la bataille de Mānū (283 H) du soulèvement contre les Ubaydides (358 H) ?',
-            en: 'How many years passed between the battle of Manu (283 AH) and the uprising against the Ubaydids (358 AH)?',
+          id: 'p2',
+          heading: { ar: 'شيخان وحلقتان', fr: 'Deux cheikhs, deux cercles', en: 'Two sheikhs, two circles' },
+          text: {
+            ar: 'الشيخان اللذان أطال الله في أعمارهما، أبو القاسم سدرات البغطوري وعبد الله بن الخير رحمهما الله، حفظا الدين والمذهب في الجبل بحلقتيهما العلميتين اللتين استمرّتا طويلًا.',
+            fr: 'Les deux cheikhs à qui Dieu accorda une longue vie, Abū al-Qāsim Sadrāt al-Baghṭūrī et ‘Abd Allāh ibn al-Khayr — que Dieu leur fasse miséricorde —, préservèrent la religion et l’école dans la montagne grâce à leurs deux cercles d’étude, qui durèrent longtemps.',
+            en: 'The two sheikhs whom God granted long lives, Abu al-Qasim Sadrat al-Baghturi and ‘Abd Allah ibn al-Khayr — may God have mercy on them — preserved the religion and the school in the mountain through their two study circles, which lasted a long time.',
           },
-          min: 0,
-          max: 150,
-          step: 5,
-          answer: 75,
-          tolerance: 10,
-          unit: { ar: 'سنة', fr: 'ans', en: 'years' },
-          reveal: {
-            ar: 'خمسٌ وسبعون سنة! ومع أنّ مانو أنهكتهم، عاد أهل نفوسة فشاركوا في الانتفاضة مع أبي خزر وأبي نوح.',
-            fr: 'Soixante-quinze ans ! Bien que Mānū les eût épuisés, les gens de Nafūsa revinrent prendre part au soulèvement avec Abū Khazar et Abū Nūḥ.',
-            en: 'Seventy-five years! Though Manu had worn them out, the people of Nafusa came back to join the uprising with Abu Khazar and Abu Nuh.',
+        },
+        {
+          id: 'p3',
+          heading: { ar: 'مشايخ كبار', fr: 'De grands cheikhs', en: 'Great sheikhs' },
+          text: {
+            ar: 'فانتعش العلم وظهر مشايخ كبار، كسليمان بن ماطوس (القرن 3 هـ) أستاذ الشيخ أبي مسور يسجا محيي العلم في جربة، وأبي زكرياء بن الخير الجناوني صاحب «كتاب الوضع».',
+            fr: 'Le savoir refleurit et de grands cheikhs apparurent, comme Sulaymān ibn Māṭūs (IIIᵉ siècle H), maître du cheikh Abū Miswar Yasjā qui fit revivre le savoir à Djerba, et Abū Zakariyyā’ ibn al-Khayr al-Jannāwunī, auteur du « Kitāb al-Waḍ‘ ».',
+            en: 'Knowledge revived and great sheikhs emerged, such as Sulayman ibn Matus (3rd century AH), teacher of Sheikh Abu Miswar Yasja, reviver of knowledge in Djerba, and Abu Zakariya ibn al-Khayr al-Jannawuni, author of "Kitab al-Wad‘".',
           },
-          compare: [
-            { label: { ar: 'واقعة مانو (هـ)', fr: 'Bataille de Mānū (H)', en: 'Battle of Manu (AH)' }, value: 283 },
-            { label: { ar: 'الانتفاضة (هـ)', fr: 'Le soulèvement (H)', en: 'The uprising (AH)' }, value: 358 },
-          ],
+        },
+        {
+          id: 'p4',
+          heading: { ar: 'في الحلقة', fr: 'Dans le cercle', en: 'In the circle' },
+          text: {
+            ar: 'كانت الحلقات مهتمّةً بالتعليم والذكر والمواعظ، وكانت النساء يجلسن من خلف حجابٍ للاستماع إلى الدروس أو للصلاة.',
+            fr: 'Les cercles se consacraient à l’enseignement, au rappel de Dieu (dhikr) et aux exhortations ; les femmes s’asseyaient derrière un rideau pour écouter les leçons ou pour prier.',
+            en: 'The circles were devoted to teaching, remembrance of God (dhikr) and exhortation; women would sit behind a curtain to listen to the lessons or to pray.',
+          },
+        },
+        {
+          id: 'p5',
+          heading: { ar: 'هكذا يُحفظ العلم', fr: 'Ainsi se garde le savoir', en: 'How knowledge is kept' },
+          text: {
+            ar: 'حلقتان صبورتان أعادتا النور إلى الجبل كلّه: هكذا يُحفظ العلم حين يقلّ العلماء.',
+            fr: 'Deux cercles patients rendirent la lumière à toute la montagne : ainsi se garde le savoir quand les savants se font rares.',
+            en: 'Two patient circles brought light back to the whole mountain: this is how knowledge is kept when scholars are few.',
+          },
         },
       ],
     },
 
-    // 07 — Lantern: the study circle that revived the mountain (slide 5)
+    // 06 — Explorer: the study circle that revived the mountain (slide 5)
     {
-      kind: 'lantern',
+      kind: 'explorer',
       id: 'halqa-lantern',
       title: { ar: 'مصباحٌ في حلقة الجبل', fr: 'Une lampe dans le cercle de la montagne', en: 'A lamp in the mountain’s circle' },
       intro: {
-        ar: 'بعد مانو كاد العلم ينطفئ في الجبل. حرّك الضوء في الغرفة المظلمة واكتشف خمسة أسرار: من أعاد إشعاله؟',
-        fr: 'Après Mānū, le savoir faillit s’éteindre dans la montagne. Promène la lumière dans la salle obscure et découvre cinq secrets : qui le ralluma ?',
-        en: 'After Manu, knowledge nearly went out in the mountain. Move the light around the dark room and find five secrets: who lit it again?',
+        ar: 'بعد مانو كاد العلم ينطفئ في الجبل. اضغط على النقاط المضيئة في الغرفة واكتشف خمسة أسرار: من أعاد إشعاله؟',
+        fr: 'Après Mānū, le savoir faillit s’éteindre dans la montagne. Touche les points lumineux de la salle et découvre cinq secrets : qui le ralluma ?',
+        en: 'After Manu, knowledge nearly went out in the mountain. Tap the glowing points in the room and find five secrets: who lit it again?',
       },
       image: `${IMG}/halqa-lantern.png`,
       imageAlt: {
@@ -388,7 +341,7 @@ export const nafusaJerba: Lesson = {
         fr: 'Une salle voûtée de pierre, la nuit : une natte ronde avec un livre ouvert sur un pupitre de bois et une lampe à huile, une niche avec des livres et un chapelet, un rideau tissé suspendu, une arche dans le mur du fond',
         en: 'A stone-vaulted room at night: a round mat with an open book on a wooden stand and an oil lamp, a niche with books and prayer beads, a hanging woven curtain, an arch in the back wall',
       },
-      secrets: [
+      hotspots: [
         {
           id: 'two-sheikhs',
           x: 43,
@@ -445,11 +398,60 @@ export const nafusaJerba: Lesson = {
           },
         },
       ],
-      ending: {
-        ar: 'حلقتان صبورتان أعادتا النور إلى الجبل كلّه: هكذا يُحفظ العلم حين يقلّ العلماء.',
-        fr: 'Deux cercles patients rendirent la lumière à toute la montagne : ainsi se garde le savoir quand les savants se font rares.',
-        en: 'Two patient circles brought light back to the whole mountain: this is how knowledge is kept when scholars are few.',
+    },
+
+    // 07 — Quiz: the numbers of the trial (slides 3, 5)
+    {
+      kind: 'quiz',
+      id: 'manu-numbers',
+      title: { ar: 'ما الرقم؟', fr: 'Quel est le nombre ?', en: 'What is the number?' },
+      intro: {
+        ar: 'سؤالان عن أرقام المحنة: اختر الرقم الصحيح.',
+        fr: 'Deux questions sur les chiffres de l’épreuve : choisis le bon nombre.',
+        en: 'Two questions on the numbers of the trial: pick the right one.',
       },
+      questions: [
+        {
+          id: 'n1',
+          type: 'mcq',
+          question: {
+            ar: 'هلك في موقعة مانو الآلاف من نفوسة. كم كان بينهم من عالمٍ وفقيه؟',
+            fr: 'Des milliers de gens de Nafūsa périrent à Mānū. Combien de savants et de juristes parmi eux ?',
+            en: 'Thousands of Nafusa’s people perished at Manu. How many scholars and jurists were among them?',
+          },
+          options: [
+            { id: 'a', label: { ar: 'نحو مائة', fr: 'Environ cent', en: 'About one hundred' } },
+            { id: 'b', label: { ar: 'أزيد من أربعمائة', fr: 'Plus de quatre cents', en: 'More than four hundred' } },
+            { id: 'c', label: { ar: 'نحو ألف', fr: 'Environ mille', en: 'About a thousand' } },
+          ],
+          correctId: 'b',
+          explanation: {
+            ar: 'أزيد من أربعمائة عالمٍ وفقيه! حتّى فُقد من يدرّس أصول الدين للأجيال. كانت هذه من أشدّ محن موقعة مانو.',
+            fr: 'Plus de quatre cents savants et juristes ! Au point qu’il ne resta plus personne pour enseigner les fondements de la religion aux générations. Ce fut l’une des plus dures épreuves de Mānū.',
+            en: 'More than four hundred scholars and jurists! So many that no one was left to teach the foundations of the religion to the generations. This was among the hardest trials of Manu.',
+          },
+        },
+        {
+          id: 'n2',
+          type: 'mcq',
+          question: {
+            ar: 'كم سنةً مرّت بين واقعة مانو (283 هـ) والانتفاضة ضدّ العبيديين (358 هـ)؟',
+            fr: 'Combien d’années séparent la bataille de Mānū (283 H) du soulèvement contre les Ubaydides (358 H) ?',
+            en: 'How many years passed between the battle of Manu (283 AH) and the uprising against the Ubaydids (358 AH)?',
+          },
+          options: [
+            { id: 'a', label: { ar: '25 سنة', fr: '25 ans', en: '25 years' } },
+            { id: 'b', label: { ar: '75 سنة', fr: '75 ans', en: '75 years' } },
+            { id: 'c', label: { ar: '150 سنة', fr: '150 ans', en: '150 years' } },
+          ],
+          correctId: 'b',
+          explanation: {
+            ar: 'خمسٌ وسبعون سنة (358 − 283)! ومع أنّ مانو أنهكتهم، عاد أهل نفوسة فشاركوا في الانتفاضة مع أبي خزر وأبي نوح.',
+            fr: 'Soixante-quinze ans (358 − 283) ! Bien que Mānū les eût épuisés, les gens de Nafūsa revinrent prendre part au soulèvement avec Abū Khazar et Abū Nūḥ.',
+            en: 'Seventy-five years (358 − 283)! Though Manu had worn them out, the people of Nafusa came back to join the uprising with Abu Khazar and Abu Nuh.',
+          },
+        },
+      ],
     },
 
     // 08 — Reading: the Jarid and the island of Djerba (slide 7)
@@ -572,7 +574,246 @@ export const nafusaJerba: Lesson = {
       ],
     },
 
-    // 10 — Explorer: the Island of Mosques (slides 7, 9)
+    // 10 — Placement: mountain, island or Jarid? (slides 2, 3, 7)
+    {
+      kind: 'placement',
+      id: 'three-places',
+      title: { ar: 'جبلٌ أم جزيرة أم جريد؟', fr: 'Montagne, île ou Djérid ?', en: 'Mountain, island or Jarid?' },
+      intro: {
+        ar: 'اسحب كلّ قرينةٍ إلى المكان الذي تصفه، أو اضغط القرينة ثمّ المكان.',
+        fr: 'Glisse chaque indice vers le lieu qu’il décrit, ou touche l’indice puis le lieu.',
+        en: 'Drag each clue to the place it describes, or tap the clue and then the place.',
+      },
+      slots: [
+        { id: 'nafusa', label: { ar: 'جبل نفوسة', fr: 'Le djebel Nafūsa', en: 'The Nafusa Mountain' } },
+        { id: 'jerba', label: { ar: 'جزيرة جربة', fr: 'L’île de Djerba', en: 'The island of Djerba' } },
+        { id: 'jarid', label: { ar: 'بلاد الجريد', fr: 'Le Djérid', en: 'The Jarid' } },
+      ],
+      cards: [
+        {
+          id: 'n1',
+          slotId: 'nafusa',
+          label: { ar: 'أهلي من أوائل أهل الدعوة.', fr: 'Mes habitants comptent parmi les premiers gens de l’Appel.', en: 'My people were among the first People of the Call.' },
+          hint: { ar: 'فكّر في القبيلة الأمازيغية التي اعتمدت منهج أهل الاستقامة.', fr: 'Pense à la tribu amazighe qui adopta la voie des gens de la Rectitude.', en: 'Think of the Amazigh tribe that adopted the way of the People of Rectitude.' },
+        },
+        {
+          id: 'n2',
+          slotId: 'nafusa',
+          label: { ar: 'كنتُ سندًا قويًّا للإمامة الرستمية في تاهرت.', fr: 'J’étais un solide appui de l’imamat rustamide de Tāhert.', en: 'I was a strong support for the Rustamid imamate in Tahert.' },
+          hint: { ar: 'كان هذا السند جبلًا بالرجال والعلماء.', fr: 'Cet appui était une montagne riche en hommes et en savants.', en: 'This support was a mountain, with its men and scholars.' },
+        },
+        {
+          id: 'n3',
+          slotId: 'nafusa',
+          label: { ar: 'أحمل اسم قبيلةٍ أمازيغية اعتنقت الإسلام مبكّرًا.', fr: 'Je porte le nom d’une tribu amazighe convertie très tôt à l’islam.', en: 'I bear the name of an Amazigh tribe that embraced Islam early.' },
+          hint: { ar: 'القبيلة والجبل يحملان الاسم نفسه.', fr: 'La tribu et la montagne portent le même nom.', en: 'The tribe and the mountain share the same name.' },
+        },
+        {
+          id: 'n4',
+          slotId: 'nafusa',
+          label: { ar: 'أنا سلسلة جبالٍ في شمال غرب ليبيا.', fr: 'Je suis une chaîne de montagnes au nord-ouest de la Libye.', en: 'I am a mountain range in north-western Libya.' },
+          hint: { ar: 'سلسلة جبالٍ في ليبيا، لا في تونس.', fr: 'Une chaîne de montagnes en Libye, pas en Tunisie.', en: 'A mountain range in Libya, not in Tunisia.' },
+        },
+        {
+          id: 'j1',
+          slotId: 'jerba',
+          label: { ar: 'احتمى بي أهل الدعوة لمّا انهزموا أمام العبيديين.', fr: 'Les gens de l’Appel se réfugièrent chez moi après leur défaite face aux Ubaydides.', en: 'The People of the Call took shelter in me when the Ubaydids defeated them.' },
+          hint: { ar: 'مكانٌ يحميه البحر.', fr: 'Un lieu protégé par la mer.', en: 'A place protected by the sea.' },
+        },
+        {
+          id: 'j2',
+          slotId: 'jerba',
+          label: { ar: 'كنتُ على ولاءٍ للرستميين منذ عهد الإمام الثاني عبد الوهّاب.', fr: 'J’étais fidèle aux Rustamides depuis le temps du deuxième imam, ‘Abd al-Wahhāb.', en: 'I was loyal to the Rustamids from the time of the second imam, ‘Abd al-Wahhab.' },
+          hint: { ar: 'هذا الولاء، منذ نحو سنة 171 هـ، كان لجزيرة.', fr: 'Cette fidélité, depuis vers 171 H, était celle d’une île.', en: 'This loyalty, from about 171 AH, was an island’s.' },
+        },
+        {
+          id: 'j3',
+          slotId: 'jerba',
+          label: { ar: 'لقبي: «جزيرة المساجد».', fr: 'Mon surnom : « l’île des mosquées ».', en: 'My nickname: "the Island of Mosques".' },
+          hint: { ar: 'اللقب نفسه يقول: جزيرة.', fr: 'Le surnom lui-même le dit : une île.', en: 'The nickname itself says it: an island.' },
+        },
+        {
+          id: 'j4',
+          slotId: 'jerba',
+          label: { ar: 'يحيط بي البحر، جنوب شرق تونس.', fr: 'La mer m’entoure, au sud-est de la Tunisie.', en: 'The sea surrounds me, in the south-east of Tunisia.' },
+          hint: { ar: 'ما يحيط به البحر جزيرة.', fr: 'Ce que la mer entoure est une île.', en: 'What the sea surrounds is an island.' },
+        },
+        {
+          id: 'r1',
+          slotId: 'jarid',
+          label: { ar: 'لستُ منيعةً مثل الجبل ولا مثل الجزيرة.', fr: 'Je ne suis pas protégée comme la montagne ni comme l’île.', en: 'I am not as protected as the mountain or the island.' },
+          hint: { ar: 'ليس الجبل ولا الجزيرة… فما المكان الثالث؟', fr: 'Ni la montagne ni l’île… quel est le troisième lieu ?', en: 'Neither the mountain nor the island… so which is the third place?' },
+        },
+        {
+          id: 'r2',
+          slotId: 'jarid',
+          label: { ar: 'أصل بين وادي سوف وجبل نفوسة.', fr: 'Je relie l’Oued Souf au djebel Nafūsa.', en: 'I link Wadi Souf to the Nafusa Mountain.' },
+          hint: { ar: 'منطقةٌ في جنوب تونس تصل بين المكانين.', fr: 'Une région du sud de la Tunisie qui relie les deux lieux.', en: 'A region in southern Tunisia that links the two places.' },
+        },
+        {
+          id: 'r3',
+          slotId: 'jarid',
+          label: { ar: 'يمرّ الطريق منّي عبر جبل دمّر ومطماطة.', fr: 'De chez moi, la route passe par le djebel Demmer et Matmata.', en: 'From me the road runs through Jabal Demmer and Matmata.' },
+          hint: { ar: 'جبل دمّر ومطماطة في جنوب تونس، على طريق الجريد.', fr: 'Le djebel Demmer et Matmata sont au sud de la Tunisie, sur la route du Djérid.', en: 'Jabal Demmer and Matmata are in southern Tunisia, on the Jarid’s road.' },
+        },
+        {
+          id: 'r4',
+          slotId: 'jarid',
+          label: { ar: 'أنا المنطقة الجنوبية من تونس.', fr: 'Je suis la région sud de la Tunisie.', en: 'I am the southern region of Tunisia.' },
+          hint: { ar: 'جنوب تونس، لا جنوبها الشرقيّ حيث الجزيرة.', fr: 'Le sud de la Tunisie, pas le sud-est où se trouve l’île.', en: 'The south of Tunisia, not the south-east where the island lies.' },
+        },
+      ],
+    },
+
+    // 11 — Reading: Djerba, beacon of knowledge in the Maghreb (slides 9–10)
+    {
+      kind: 'reading',
+      id: 'reading-miswar',
+      title: { ar: 'اقرأ: جربة منارة العلم بالمغرب', fr: 'Lis : Djerba, phare du savoir au Maghreb', en: 'Read: Djerba, beacon of knowledge in the Maghreb' },
+      intro: {
+        ar: 'اقرأ ما فعله أبو مسور في جزيرته، ثمّ فرّق بين أعماله وأعمال غيره في اللعبة التالية.',
+        fr: 'Lis ce que fit Abū Miswar sur son île, puis distingue ses œuvres de celles des autres au jeu suivant.',
+        en: 'Read what Abu Miswar did on his island, then tell his works from others’ in the next game.',
+      },
+      image: `${IMG}/books-chest.png`,
+      imageAlt: {
+        ar: 'صندوقٌ خشبيّ قديم عليه كتبٌ مجلّدة مكدّسة وكتابٌ مفتوح، وبجانبه مصباحٌ زيتيّ من الفخّار مضاء فوق حصيرٍ مستدير',
+        fr: 'Un vieux coffre de bois chargé de livres reliés empilés et d’un livre ouvert, près d’une lampe à huile en terre cuite allumée sur une natte ronde',
+        en: 'An old wooden chest piled with bound books and an open book, beside a lit clay oil lamp on a round mat',
+      },
+      paragraphs: [
+        {
+          id: 'p1',
+          heading: { ar: 'عائدٌ من الجبل', fr: 'De retour de la montagne', en: 'Back from the mountain' },
+          text: {
+            ar: 'كان لأبي مسور يسجا بن يوجين، رحمه الله، فضلٌ في ازدهار العلم بجربة وانتظام أحوالها؛ فقد تفرّغ للتعليم في الجزيرة منذ عاد من جبل نفوسة.',
+            fr: 'Abū Miswar Yasjā ibn Yūjīn — que Dieu lui fasse miséricorde — eut un grand mérite dans l’essor du savoir à Djerba et le bon ordre de ses affaires : il se consacra à l’enseignement sur l’île dès son retour du djebel Nafūsa.',
+            en: 'Abu Miswar Yasja ibn Yujin — may God have mercy on him — played a great part in the flourishing of knowledge in Djerba and the good order of its affairs: he devoted himself to teaching on the island from the moment he returned from the Nafusa Mountain.',
+          },
+        },
+        {
+          id: 'p2',
+          heading: { ar: 'مدارس وكتب ومساجد', fr: 'Écoles, livres et mosquées', en: 'Schools, books and mosques' },
+          text: {
+            ar: 'فأنشأ المدارس، وجمع الكتب النفيسة، وبنى المساجد.',
+            fr: 'Il fonda des écoles, réunit des livres précieux et bâtit des mosquées.',
+            en: 'He founded schools, collected precious books and built mosques.',
+          },
+        },
+        {
+          id: 'p3',
+          heading: { ar: 'قبلة الطلبة', fr: 'La destination des étudiants', en: 'Where students headed' },
+          text: {
+            ar: 'وتخرّج على يده علماء كبار، أمثال ابنه أبي زكرياء فصيل وعبد الله بن مانوج اللمائي رحمهم الله، حتّى أصبحت الجزيرة قبلةً للطلبة.',
+            fr: 'Il forma de grands savants, tels son fils Abū Zakariyyā’ Faṣīl et ‘Abd Allāh ibn Mānūj al-Lamā’ī — que Dieu leur fasse miséricorde —, si bien que l’île devint la destination des étudiants.',
+            en: 'He trained great scholars, such as his son Abu Zakariya Fasil and ‘Abd Allah ibn Manuj al-Lama’i — may God have mercy on them — until the island became the destination of students.',
+          },
+        },
+        {
+          id: 'p4',
+          heading: { ar: 'محمد بن بكر و«ديوان العزّابة»', fr: 'Muḥammad ibn Bakr et le « Dīwān al-‘Azzāba »', en: 'Muhammad ibn Bakr and "Diwan al-‘Azzaba"' },
+          text: {
+            ar: 'ومرّ منها الشيخ محمد بن بكر، صاحب نظام الحلقة، متعلّمًا عند الشيخ فصيل. وفي جربة تمّ تأليف إحدى الموسوعات الفقهية: «ديوان العزّابة».',
+            fr: 'Le cheikh Muḥammad ibn Bakr, fondateur du système de la Ḥalqa, y passa pour étudier auprès du cheikh Faṣīl. Et c’est à Djerba que fut composée l’une des encyclopédies du droit : le « Dīwān al-‘Azzāba ».',
+            en: 'Sheikh Muhammad ibn Bakr, founder of the Halqa system, passed through it as a student of Sheikh Fasil. And it was in Djerba that one of the encyclopedias of jurisprudence was composed: "Diwan al-‘Azzaba".',
+          },
+        },
+      ],
+    },
+
+    // 12 — Swipe: what Abu Miswar did in Djerba (slides 5, 9)
+    {
+      kind: 'swipe',
+      id: 'abu-miswar-works',
+      title: { ar: 'أعمال أبي مسور', fr: 'Les œuvres d’Abū Miswar', en: 'Abu Miswar’s works' },
+      intro: {
+        ar: 'اسحب كلّ بطاقة: هل هي ممّا فعله أبو مسور في جربة، أم لا؟',
+        fr: 'Fais glisser chaque carte : est-ce une chose qu’Abū Miswar fit à Djerba, ou non ?',
+        en: 'Swipe each card: is it something Abu Miswar did in Djerba, or not?',
+      },
+      left: {
+        label: { ar: 'من أعمال أبي مسور', fr: 'Une œuvre d’Abū Miswar', en: 'One of Abu Miswar’s works' },
+        tag: { ar: 'أبو مسور', fr: 'Abū Miswar', en: 'Abu Miswar' },
+      },
+      right: {
+        label: { ar: 'ليس من أعماله', fr: 'Pas une de ses œuvres', en: 'Not one of his works' },
+        tag: { ar: 'غيره', fr: 'Un autre', en: 'Someone else' },
+      },
+      cards: [
+        {
+          id: 'c1',
+          who: { ar: 'المدارس', fr: 'Les écoles', en: 'Schools' },
+          deed: { ar: 'أنشأ المدارس', fr: 'Il fonda des écoles', en: 'Founded schools' },
+          side: 'left',
+          explanation: { ar: 'نعم، أنشأ المدارس في الجزيرة.', fr: 'Oui, il fonda des écoles sur l’île.', en: 'Yes, he founded schools on the island.' },
+        },
+        {
+          id: 'c2',
+          who: { ar: 'كتاب الوضع', fr: 'Kitāb al-Waḍ‘', en: 'Kitab al-Wad‘' },
+          deed: { ar: 'ألّف «كتاب الوضع»', fr: 'Il écrivit le « Kitāb al-Waḍ‘ »', en: 'Wrote "Kitab al-Wad‘"' },
+          side: 'right',
+          explanation: { ar: 'صاحبه أبو زكرياء بن الخير الجناوني، من مشايخ الجبل.', fr: 'Son auteur est Abū Zakariyyā’ ibn al-Khayr al-Jannāwunī, un cheikh de la montagne.', en: 'Its author is Abu Zakariya ibn al-Khayr al-Jannawuni, a sheikh of the mountain.' },
+        },
+        {
+          id: 'c3',
+          who: { ar: 'الكتب النفيسة', fr: 'Les livres précieux', en: 'Precious books' },
+          deed: { ar: 'جمع الكتب النفيسة', fr: 'Il réunit des livres précieux', en: 'Collected precious books' },
+          side: 'left',
+          explanation: { ar: 'نعم، جمع الكتب النفيسة.', fr: 'Oui, il rassembla des livres précieux.', en: 'Yes, he gathered precious books.' },
+        },
+        {
+          id: 'c4',
+          who: { ar: 'نظام الحلقة', fr: 'Le système de la Ḥalqa', en: 'The Halqa system' },
+          deed: { ar: 'وضع نظام الحلقة', fr: 'Il fonda le système de la Ḥalqa', en: 'Founded the Halqa system' },
+          side: 'right',
+          explanation: { ar: 'صاحب نظام الحلقة هو الشيخ محمد بن بكر، وقد مرّ من جربة متعلّمًا.', fr: 'Le fondateur du système de la Ḥalqa est le cheikh Muḥammad ibn Bakr, passé par Djerba comme étudiant.', en: 'The founder of the Halqa system is Sheikh Muhammad ibn Bakr, who passed through Djerba as a student.' },
+        },
+        {
+          id: 'c5',
+          who: { ar: 'المساجد', fr: 'Les mosquées', en: 'Mosques' },
+          deed: { ar: 'بنى المساجد', fr: 'Il bâtit des mosquées', en: 'Built mosques' },
+          side: 'left',
+          explanation: { ar: 'نعم، بنى المساجد في الجزيرة.', fr: 'Oui, il bâtit des mosquées sur l’île.', en: 'Yes, he built mosques on the island.' },
+        },
+        {
+          id: 'c6',
+          who: { ar: 'انتفاضة 358 هـ', fr: 'Le soulèvement de 358 H', en: 'The 358 AH uprising' },
+          deed: { ar: 'شارك في انتفاضة 358 هـ', fr: 'Il prit part au soulèvement de 358 H', en: 'Joined the 358 AH uprising' },
+          side: 'right',
+          explanation: { ar: 'الدرس يذكر فيها أهل نفوسة مع الإمام أبي خزر يغلا بن زلتاف وأبي نوح سعيد.', fr: 'La leçon y cite les gens de Nafūsa avec l’imam Abū Khazar Yaghlā ibn Zultāf et Abū Nūḥ Sa‘īd.', en: 'The lesson names the people of Nafusa there, with Imam Abu Khazar Yaghla ibn Zultaf and Abu Nuh Sa‘id.' },
+        },
+        {
+          id: 'c7',
+          who: { ar: 'التعليم', fr: 'L’enseignement', en: 'Teaching' },
+          deed: { ar: 'تفرّغ للتعليم', fr: 'Il se consacra à l’enseignement', en: 'Devoted himself to teaching' },
+          side: 'left',
+          explanation: { ar: 'نعم، تفرّغ للتعليم في الجزيرة منذ عاد من جبل نفوسة.', fr: 'Oui, il s’y consacra sur l’île dès son retour du djebel Nafūsa.', en: 'Yes, he did so on the island from the moment he returned from the Nafusa Mountain.' },
+        },
+        {
+          id: 'c8',
+          who: { ar: 'درجين', fr: 'Darjīn', en: 'Darjin' },
+          deed: { ar: 'خرّب درجين', fr: 'Il détruisit Darjīn', en: 'Destroyed Darjin' },
+          side: 'right',
+          explanation: { ar: 'خرّبها الزيريون سنة 440 هـ. أمّا أبو مسور فكان يبني!', fr: 'Ce sont les Zirides qui la détruisirent en 440 H. Abū Miswar, lui, bâtissait !', en: 'The Zirids destroyed it in 440 AH. Abu Miswar was a builder!' },
+        },
+        {
+          id: 'c9',
+          who: { ar: 'العلماء', fr: 'Les savants', en: 'Scholars' },
+          deed: { ar: 'خرّج علماء كبارًا', fr: 'Il forma de grands savants', en: 'Trained great scholars' },
+          side: 'left',
+          explanation: { ar: 'نعم، أمثال ابنه أبي زكرياء فصيل وعبد الله بن مانوج اللمائي، رحمهم الله.', fr: 'Oui, tels son fils Abū Zakariyyā’ Faṣīl et ‘Abd Allāh ibn Mānūj al-Lamā’ī — que Dieu leur fasse miséricorde.', en: 'Yes, such as his son Abu Zakariya Fasil and ‘Abd Allah ibn Manuj al-Lama’i — may God have mercy on them.' },
+        },
+        {
+          id: 'c10',
+          who: { ar: 'الشيخ فصيل', fr: 'Le cheikh Faṣīl', en: 'Sheikh Fasil' },
+          deed: { ar: 'تعلّم عند الشيخ فصيل', fr: 'Il étudia auprès du cheikh Faṣīl', en: 'Studied under Sheikh Fasil' },
+          side: 'right',
+          explanation: { ar: 'فصيل ابنه وتلميذه! أمّا أستاذ أبي مسور فهو سليمان بن ماطوس.', fr: 'Faṣīl est son fils et son élève ! Le maître d’Abū Miswar fut Sulaymān ibn Māṭūs.', en: 'Fasil was his son and pupil! Abu Miswar’s own teacher was Sulayman ibn Matus.' },
+        },
+      ],
+    },
+
+    // 13 — Explorer: the Island of Mosques (slides 7, 9)
     {
       kind: 'explorer',
       id: 'djerba-explorer',
@@ -658,86 +899,7 @@ export const nafusaJerba: Lesson = {
       ],
     },
 
-    // 11 — Catch: what Abu Miswar did in Djerba (slides 5, 9)
-    {
-      kind: 'catch',
-      id: 'abu-miswar-catch',
-      title: { ar: 'فوانيس أبي مسور', fr: 'Les lanternes d’Abū Miswar', en: 'Abu Miswar’s lanterns' },
-      intro: {
-        ar: 'كان لأبي مسور يسجا بن يوجين، رحمه الله، فضلٌ في ازدهار العلم بجربة وانتظام أحوالها. الفوانيس تطير… فأيّها له؟',
-        fr: 'Abū Miswar Yasjā ibn Yūjīn — que Dieu lui fasse miséricorde — eut un grand mérite dans l’essor du savoir à Djerba et le bon ordre de ses affaires. Les lanternes s’envolent… lesquelles sont à lui ?',
-        en: 'Abu Miswar Yasja ibn Yujin — may God have mercy on him — played a great part in the flourishing of knowledge in Djerba and the good order of its affairs. The lanterns are floating… which ones are his?',
-      },
-      goal: {
-        ar: 'التقط فقط ما فعله أبو مسور في جربة.',
-        fr: 'N’attrape que ce qu’Abū Miswar fit à Djerba.',
-        en: 'Catch only what Abu Miswar did in Djerba.',
-      },
-      items: [
-        {
-          id: 'c1',
-          label: { ar: 'أنشأ المدارس', fr: 'Il fonda des écoles', en: 'Founded schools' },
-          good: true,
-          explanation: { ar: 'نعم، أنشأ المدارس في الجزيرة.', fr: 'Oui, il fonda des écoles sur l’île.', en: 'Yes, he founded schools on the island.' },
-        },
-        {
-          id: 'c2',
-          label: { ar: 'ألّف «كتاب الوضع»', fr: 'Il écrivit le « Kitāb al-Waḍ‘ »', en: 'Wrote "Kitab al-Wad‘"' },
-          good: false,
-          explanation: { ar: 'صاحبه أبو زكرياء بن الخير الجناوني، من مشايخ الجبل.', fr: 'Son auteur est Abū Zakariyyā’ ibn al-Khayr al-Jannāwunī, un cheikh de la montagne.', en: 'Its author is Abu Zakariya ibn al-Khayr al-Jannawuni, a sheikh of the mountain.' },
-        },
-        {
-          id: 'c3',
-          label: { ar: 'جمع الكتب النفيسة', fr: 'Il réunit des livres précieux', en: 'Collected precious books' },
-          good: true,
-          explanation: { ar: 'نعم، جمع الكتب النفيسة.', fr: 'Oui, il rassembla des livres précieux.', en: 'Yes, he gathered precious books.' },
-        },
-        {
-          id: 'c4',
-          label: { ar: 'وضع نظام الحلقة', fr: 'Il fonda le système de la Ḥalqa', en: 'Founded the Halqa system' },
-          good: false,
-          explanation: { ar: 'صاحب نظام الحلقة هو الشيخ محمد بن بكر، وقد مرّ من جربة متعلّمًا.', fr: 'Le fondateur du système de la Ḥalqa est le cheikh Muḥammad ibn Bakr, passé par Djerba comme étudiant.', en: 'The founder of the Halqa system is Sheikh Muhammad ibn Bakr, who passed through Djerba as a student.' },
-        },
-        {
-          id: 'c5',
-          label: { ar: 'بنى المساجد', fr: 'Il bâtit des mosquées', en: 'Built mosques' },
-          good: true,
-          explanation: { ar: 'نعم، بنى المساجد في الجزيرة.', fr: 'Oui, il bâtit des mosquées sur l’île.', en: 'Yes, he built mosques on the island.' },
-        },
-        {
-          id: 'c6',
-          label: { ar: 'شارك في انتفاضة 358 هـ', fr: 'Il prit part au soulèvement de 358 H', en: 'Joined the 358 AH uprising' },
-          good: false,
-          explanation: { ar: 'الدرس يذكر فيها أهل نفوسة مع الإمام أبي خزر يغلا بن زلتاف وأبي نوح سعيد.', fr: 'La leçon y cite les gens de Nafūsa avec l’imam Abū Khazar Yaghlā ibn Zultāf et Abū Nūḥ Sa‘īd.', en: 'The lesson names the people of Nafusa there, with Imam Abu Khazar Yaghla ibn Zultaf and Abu Nuh Sa‘id.' },
-        },
-        {
-          id: 'c7',
-          label: { ar: 'تفرّغ للتعليم', fr: 'Il se consacra à l’enseignement', en: 'Devoted himself to teaching' },
-          good: true,
-          explanation: { ar: 'نعم، تفرّغ للتعليم في الجزيرة منذ عاد من جبل نفوسة.', fr: 'Oui, il s’y consacra sur l’île dès son retour du djebel Nafūsa.', en: 'Yes, he did so on the island from the moment he returned from the Nafusa Mountain.' },
-        },
-        {
-          id: 'c8',
-          label: { ar: 'خرّب درجين', fr: 'Il détruisit Darjīn', en: 'Destroyed Darjin' },
-          good: false,
-          explanation: { ar: 'خرّبها الزيريون سنة 440 هـ. أمّا أبو مسور فكان يبني!', fr: 'Ce sont les Zirides qui la détruisirent en 440 H. Abū Miswar, lui, bâtissait !', en: 'The Zirids destroyed it in 440 AH. Abu Miswar was a builder!' },
-        },
-        {
-          id: 'c9',
-          label: { ar: 'خرّج علماء كبارًا', fr: 'Il forma de grands savants', en: 'Trained great scholars' },
-          good: true,
-          explanation: { ar: 'نعم، أمثال ابنه أبي زكرياء فصيل وعبد الله بن مانوج اللمائي، رحمهم الله.', fr: 'Oui, tels son fils Abū Zakariyyā’ Faṣīl et ‘Abd Allāh ibn Mānūj al-Lamā’ī — que Dieu leur fasse miséricorde.', en: 'Yes, such as his son Abu Zakariya Fasil and ‘Abd Allah ibn Manuj al-Lama’i — may God have mercy on them.' },
-        },
-        {
-          id: 'c10',
-          label: { ar: 'تعلّم عند الشيخ فصيل', fr: 'Il étudia auprès du cheikh Faṣīl', en: 'Studied under Sheikh Fasil' },
-          good: false,
-          explanation: { ar: 'فصيل ابنه وتلميذه! أمّا أستاذ أبي مسور فهو سليمان بن ماطوس.', fr: 'Faṣīl est son fils et son élève ! Le maître d’Abū Miswar fut Sulaymān ibn Māṭūs.', en: 'Fasil was his son and pupil! Abu Miswar’s own teacher was Sulayman ibn Matus.' },
-        },
-      ],
-    },
-
-    // 12 — Chat: the island every student headed for (slide 9)
+    // 14 — Chat: the island every student headed for (slide 9)
     {
       kind: 'chat',
       id: 'island-chat',
@@ -794,7 +956,7 @@ export const nafusaJerba: Lesson = {
               id: 'b',
               correct: false,
               label: { ar: 'وحين عاد اشتغل بالتجارة فقط.', fr: 'Et à son retour, il ne fit que du commerce.', en: 'And once back, he only traded.' },
-              hint: { ar: 'تذكّر الفوانيس: مدارس، وكتب، ومساجد.', fr: 'Souviens-toi des lanternes : écoles, livres, mosquées.', en: 'Remember the lanterns: schools, books, mosques.' },
+              hint: { ar: 'تذكّر: مدارس، وكتب، ومساجد.', fr: 'Souviens-toi : écoles, livres, mosquées.', en: 'Remember: schools, books, mosques.' },
             },
             {
               id: 'c',
@@ -915,7 +1077,7 @@ export const nafusaJerba: Lesson = {
       ],
     },
 
-    // 13 — Placement: scholars of the mountain and of the island (slides 5, 9)
+    // 15 — Placement: scholars of the mountain and of the island (slides 5, 9)
     {
       kind: 'placement',
       id: 'scholars-places',
@@ -975,15 +1137,15 @@ export const nafusaJerba: Lesson = {
       ],
     },
 
-    // 14 — Timeline (slides 3, 5, 7)
+    // 16 — Timeline (slides 3, 5, 7)
     {
       kind: 'timeline',
       id: 'timeline',
       title: { ar: 'خمسة تواريخ في سطر', fr: 'Cinq dates sur une ligne', en: 'Five dates on one line' },
       intro: {
-        ar: 'احفظ هذه السنوات جيّدًا: ستحتاجها لفتح الخزنة في اللعبة التالية!',
-        fr: 'Retiens bien ces années : il te les faudra pour ouvrir le coffre au jeu suivant !',
-        en: 'Remember these years well: you will need them to open the vault in the next game!',
+        ar: 'احفظ هذه السنوات جيّدًا: ستحتاجها بعد الجولة السريعة في الاختبار!',
+        fr: 'Retiens bien ces années : il te les faudra au quiz, après la manche éclair !',
+        en: 'Remember these years well: you will need them in the quiz, after the speed round!',
       },
       steps: [
         {
@@ -1041,25 +1203,83 @@ export const nafusaJerba: Lesson = {
       ],
     },
 
-    // 15 — Vault: the lock of years (slides 3, 7)
+    // 17 — Blitz: speed review (all slides)
     {
-      kind: 'vault',
-      id: 'years-vault',
-      title: { ar: 'خزنة الكتب النفيسة', fr: 'Le coffre aux livres précieux', en: 'The vault of precious books' },
+      kind: 'blitz',
+      id: 'blitz',
+      title: { ar: 'جولة سريعة', fr: 'Manche éclair', en: 'Speed round' },
       intro: {
-        ar: 'أربعة أقراص، وأربعة أسئلة. أدِر كلّ قرصٍ إلى الجواب الصحيح لتفتح الخزنة!',
-        fr: 'Quatre molettes, quatre questions. Tourne chacune sur la bonne réponse pour ouvrir le coffre !',
-        en: 'Four dials, four questions. Turn each one to the right answer to open the vault!',
+        ar: 'اثنتا عشرة ثانية لكلّ عبارة — هل هي صحيحة أم خاطئة؟',
+        fr: 'Douze secondes par affirmation — vrai ou faux ?',
+        en: 'Twelve seconds per statement — true or false?',
       },
-      image: `${IMG}/books-chest.png`,
-      imageAlt: {
-        ar: 'صندوقٌ خشبيّ قديم عليه كتبٌ مجلّدة مكدّسة وكتابٌ مفتوح، وبجانبه مصباحٌ زيتيّ من الفخّار مضاء فوق حصيرٍ مستدير',
-        fr: 'Un vieux coffre de bois chargé de livres reliés empilés et d’un livre ouvert, près d’une lampe à huile en terre cuite allumée sur une natte ronde',
-        en: 'An old wooden chest piled with bound books and an open book, beside a lit clay oil lamp on a round mat',
+      secondsPerCard: 12,
+      statements: [
+        {
+          id: 'b1',
+          text: { ar: 'جبل نفوسة سلسلة جبالٍ في شمال غرب ليبيا، ونفوسة قبيلةٌ أمازيغية اعتنقت الإسلام مبكّرًا.', fr: 'Le djebel Nafūsa est une chaîne de montagnes au nord-ouest de la Libye, et Nafūsa une tribu amazighe convertie très tôt à l’islam.', en: 'The Nafusa Mountain is a range in north-western Libya, and Nafusa is an Amazigh tribe that embraced Islam early.' },
+          answer: true,
+          explanation: { ar: 'صحيح.', fr: 'Vrai.', en: 'True.' },
+        },
+        {
+          id: 'b2',
+          text: { ar: 'لم يفقد الجبل في موقعة مانو (283 هـ) إلّا عالمًا واحدًا.', fr: 'À Mānū (283 H), la montagne ne perdit qu’un seul savant.', en: 'At Manu (283 AH) the mountain lost only one scholar.' },
+          answer: false,
+          explanation: { ar: 'خطأ: هلك الآلاف، وفيهم أزيد من أربعمائة عالمٍ وفقيه، حتّى فُقد من يدرّس أصول الدين.', fr: 'Faux : des milliers périrent, dont plus de quatre cents savants et juristes ; plus personne pour enseigner les fondements de la religion.', en: 'False — thousands perished, including more than four hundred scholars and jurists, until no one was left to teach the foundations of the religion.' },
+        },
+        {
+          id: 'b3',
+          text: { ar: 'حفظ أبو القاسم سدرات البغطوري وعبد الله بن الخير الدين والمذهب في الجبل بحلقتيهما العلميتين.', fr: 'Abū al-Qāsim Sadrāt al-Baghṭūrī et ‘Abd Allāh ibn al-Khayr préservèrent la religion et l’école dans la montagne par leurs deux cercles d’étude.', en: 'Abu al-Qasim Sadrat al-Baghturi and ‘Abd Allah ibn al-Khayr preserved the religion and the school in the mountain through their two study circles.' },
+          answer: true,
+          explanation: { ar: 'صحيح، بحلقتيهما اللتين استمرّتا طويلًا.', fr: 'Vrai, par leurs deux cercles qui durèrent longtemps.', en: 'True — through their two long-lasting circles.' },
+        },
+        {
+          id: 'b4',
+          text: { ar: 'شارك أهل نفوسة في انتفاضة 358 هـ ضدّ الزيريين.', fr: 'En 358 H, les gens de Nafūsa se soulevèrent contre les Zirides.', en: 'In 358 AH the people of Nafusa rose against the Zirids.' },
+          answer: false,
+          explanation: { ar: 'خطأ: شاركوا مع الإمام أبي خزر يغلا بن زلتاف وأبي نوح سعيد، ضدّ العبيديين.', fr: 'Faux : ils se soulevèrent avec l’imam Abū Khazar Yaghlā ibn Zultāf et Abū Nūḥ Sa‘īd, contre les Ubaydides.', en: 'False — they rose with Imam Abu Khazar Yaghla ibn Zultaf and Abu Nuh Sa‘id, against the Ubaydids.' },
+        },
+        {
+          id: 'b5',
+          text: { ar: 'في مرحلة الكتمان اشتغل أهل الدعوة بإصلاح مجتمعهم وتربية الأجيال.', fr: 'Dans la phase du secret, les gens de l’Appel se consacrèrent à réformer leur société et à éduquer les générations.', en: 'In the stage of secrecy the People of the Call turned to reforming their society and raising the generations.' },
+          answer: true,
+          explanation: { ar: 'صحيح.', fr: 'Vrai.', en: 'True.' },
+        },
+        {
+          id: 'b6',
+          text: { ar: 'تحمّل سكّان المناطق غير المنيعة ضغطًا كبيرًا من الزيريين ومن القبائل البدوية المهاجرة.', fr: 'Les habitants des régions exposées subirent une forte pression des Zirides et des tribus bédouines migrantes.', en: 'People in the exposed regions suffered heavy pressure from the Zirids and from migrating Bedouin tribes.' },
+          answer: true,
+          explanation: { ar: 'صحيح، وقد خرّب الزيريون درجين في قسطيلية سنة 440 هـ.', fr: 'Vrai, et les Zirides détruisirent Darjīn, en Qasṭīliya, en 440 H.', en: 'True — and the Zirids destroyed Darjin in Qastiliya in 440 AH.' },
+        },
+        {
+          id: 'b7',
+          text: { ar: 'اشتغل أبو مسور في جربة بالتجارة فقط.', fr: 'À Djerba, Abū Miswar ne fit que du commerce.', en: 'In Djerba, Abu Miswar only traded.' },
+          answer: false,
+          explanation: { ar: 'خطأ: أنشأ المدارس، وجمع الكتب النفيسة، وبنى المساجد، وتخرّج على يده علماء كبار.', fr: 'Faux : il fonda des écoles, réunit des livres précieux, bâtit des mosquées et forma de grands savants.', en: 'False — he founded schools, collected precious books, built mosques and trained great scholars.' },
+        },
+        {
+          id: 'b8',
+          text: { ar: 'أُلّفت في جربة إحدى الموسوعات الفقهية: «ديوان العزّابة».', fr: 'L’une des encyclopédies du droit, le « Dīwān al-‘Azzāba », fut composée à Djerba.', en: 'One of the encyclopedias of jurisprudence, "Diwan al-‘Azzaba", was composed in Djerba.' },
+          answer: true,
+          explanation: { ar: 'صحيح. وسُمّيت جربة «جزيرة المساجد» لأنّ قراها وأريافها اعتنت بحلقات التعليم ورعاية الطلبة الوافدين.', fr: 'Vrai. Et Djerba fut surnommée « l’île des mosquées » parce que ses villages et campagnes veillèrent aux cercles d’étude et à l’accueil des étudiants.', en: 'True. And Djerba was named "the Island of Mosques" because its villages and countryside looked after the study circles and cared for arriving students.' },
+        },
+      ],
+    },
+
+    // 18 — Quiz (slides 3, 5, 7, 9)
+    {
+      kind: 'quiz',
+      id: 'quiz',
+      title: { ar: 'اختبر معلوماتك', fr: 'Teste tes connaissances', en: 'Test your knowledge' },
+      intro: {
+        ar: 'خمسة أسئلة: أربعة عن التواريخ واللقب، وسؤالٌ عن الكلمات المفتاحية.',
+        fr: 'Cinq questions : quatre sur les dates et le surnom, une sur les mots-clés.',
+        en: 'Five questions: four on the dates and the nickname, one on the key words.',
       },
-      dials: [
+      questions: [
         {
           id: 'd1',
+          type: 'mcq',
           question: { ar: 'في أيّ سنةٍ وقعت واقعة مانو؟', fr: 'En quelle année eut lieu la bataille de Mānū ?', en: 'In which year did the battle of Manu take place?' },
           options: [
             { id: '171', label: { ar: '171 هـ', fr: '171 H', en: '171 AH' } },
@@ -1068,10 +1288,11 @@ export const nafusaJerba: Lesson = {
             { id: '440', label: { ar: '440 هـ', fr: '440 H', en: '440 AH' } },
           ],
           correctId: '283',
-          hint: { ar: 'هي أقدم محنةٍ أصابت الجبل، في القرن الثالث الهجريّ.', fr: 'C’est la plus ancienne épreuve de la montagne, au IIIᵉ siècle de l’Hégire.', en: 'It is the mountain’s earliest trial, in the 3rd century AH.' },
+          explanation: { ar: 'وقعت واقعة مانو سنة 283 هـ، وهي أقدم محنةٍ أصابت الجبل في هذا الدرس، في القرن الثالث الهجريّ.', fr: 'La bataille de Mānū eut lieu en 283 H : c’est la plus ancienne épreuve de la montagne dans cette leçon, au IIIᵉ siècle de l’Hégire.', en: 'The battle of Manu took place in 283 AH: the mountain’s earliest trial in this lesson, in the 3rd century AH.' },
         },
         {
           id: 'd2',
+          type: 'mcq',
           question: { ar: 'في أيّ سنةٍ كانت الانتفاضة ضدّ العبيديين؟', fr: 'En quelle année eut lieu le soulèvement contre les Ubaydides ?', en: 'In which year was the uprising against the Ubaydids?' },
           options: [
             { id: '171', label: { ar: '171 هـ', fr: '171 H', en: '171 AH' } },
@@ -1080,10 +1301,11 @@ export const nafusaJerba: Lesson = {
             { id: '440', label: { ar: '440 هـ', fr: '440 H', en: '440 AH' } },
           ],
           correctId: '358',
-          hint: { ar: 'بعد مانو بخمسٍ وسبعين سنة.', fr: 'Soixante-quinze ans après Mānū.', en: 'Seventy-five years after Manu.' },
+          explanation: { ar: 'كانت الانتفاضة سنة 358 هـ، بعد مانو بخمسٍ وسبعين سنة.', fr: 'Le soulèvement eut lieu en 358 H, soixante-quinze ans après Mānū.', en: 'The uprising was in 358 AH, seventy-five years after Manu.' },
         },
         {
           id: 'd3',
+          type: 'mcq',
           question: { ar: 'في أيّ سنةٍ خرّب الزيريون درجين؟', fr: 'En quelle année les Zirides détruisirent-ils Darjīn ?', en: 'In which year did the Zirids destroy Darjin?' },
           options: [
             { id: '171', label: { ar: '171 هـ', fr: '171 H', en: '171 AH' } },
@@ -1092,10 +1314,11 @@ export const nafusaJerba: Lesson = {
             { id: '440', label: { ar: '440 هـ', fr: '440 H', en: '440 AH' } },
           ],
           correctId: '440',
-          hint: { ar: 'هو آخر تاريخٍ على الخطّ الزمنيّ.', fr: 'C’est la dernière date de la frise.', en: 'It is the last date on the timeline.' },
+          explanation: { ar: 'خرّب الزيريون درجين في قسطيلية سنة 440 هـ، وهو آخر تاريخٍ على الخطّ الزمنيّ.', fr: 'Les Zirides détruisirent Darjīn, en Qasṭīliya, en 440 H : c’est la dernière date de la frise.', en: 'The Zirids destroyed Darjin in Qastiliya in 440 AH: the last date on the timeline.' },
         },
         {
           id: 'd4',
+          type: 'mcq',
           question: { ar: 'سُمّيت جربة: جزيرة…', fr: 'Djerba fut surnommée : l’île des…', en: 'Djerba was named: the Island of…' },
           options: [
             { id: 'palms', label: { ar: 'النخيل', fr: 'palmiers', en: 'Palms' } },
@@ -1103,123 +1326,88 @@ export const nafusaJerba: Lesson = {
             { id: 'caravans', label: { ar: 'القوافل', fr: 'caravanes', en: 'Caravans' } },
           ],
           correctId: 'mosques',
-          hint: { ar: 'فكّر في ما بناه أبو مسور وفي حلقات التعليم.', fr: 'Pense à ce que bâtit Abū Miswar et aux cercles d’étude.', en: 'Think of what Abu Miswar built and of the study circles.' },
+          explanation: { ar: '«جزيرة المساجد»: بنى فيها أبو مسور المساجد، واعتنت قراها وأريافها بحلقات التعليم.', fr: '« L’île des mosquées » : Abū Miswar y bâtit des mosquées, et ses villages et campagnes veillèrent aux cercles d’étude.', en: '"The Island of Mosques": Abu Miswar built mosques there, and its villages and countryside looked after the study circles.' },
+        },
+        {
+          id: 'q5',
+          type: 'matching',
+          question: { ar: 'صِل كلّ تعريفٍ بكلمته المفتاحية', fr: 'Relie chaque définition à son mot-clé', en: 'Match each definition to its key word' },
+          pairs: [
+            { id: 'w-nafusa', left: { ar: 'قبيلةٌ أمازيغية وسلسلة جبالٍ في ليبيا.', fr: 'Une tribu amazighe et une chaîne de montagnes en Libye.', en: 'An Amazigh tribe and a mountain range in Libya.' }, right: { ar: 'نفوسة', fr: 'Nafūsa', en: 'Nafusa' } },
+            { id: 'w-kitman', left: { ar: 'المرحلة التي دخلها أهل الدعوة بعد انتفاضة 358 هـ.', fr: 'La phase où entrèrent les gens de l’Appel après le soulèvement de 358 H : la phase du…', en: 'The stage the People of the Call entered after the 358 AH uprising: the stage of…' }, right: { ar: 'الكتمان', fr: 'le secret (kitmān)', en: 'secrecy (kitman)' } },
+            { id: 'w-halqa', left: { ar: 'مجلسٌ للتعليم والذكر والمواعظ.', fr: 'Une assemblée d’enseignement, de rappel et d’exhortation.', en: 'A gathering for teaching, remembrance and exhortation.' }, right: { ar: 'الحلقة', fr: 'le cercle (ḥalqa)', en: 'the circle (halqa)' } },
+            { id: 'w-jarid', left: { ar: 'المنطقة الجنوبية من تونس، بين وادي سوف وجبل نفوسة.', fr: 'La région sud de la Tunisie, entre l’Oued Souf et le djebel Nafūsa.', en: 'The southern region of Tunisia, between Wadi Souf and the Nafusa Mountain.' }, right: { ar: 'الجريد', fr: 'le Djérid', en: 'the Jarid' } },
+            { id: 'w-jerba', left: { ar: 'جزيرة المساجد.', fr: 'L’île des mosquées.', en: 'The Island of Mosques.' }, right: { ar: 'جربة', fr: 'Djerba', en: 'Djerba' } },
+          ],
+          explanation: {
+            ar: 'نفوسة: من أوائل أهل الدعوة وسندٌ قويّ للإمامة الرستمية. في مرحلة الكتمان أصلحوا مجتمعهم وربّوا الأجيال. بحلقتين علميتين حُفظ الدين في الجبل. الجريد منطقةٌ غير منيعة تحمّلت ضغط الزيريين والقبائل البدوية المهاجرة. وجربة منارة العلم بالمغرب وقبلة الطلبة.',
+            fr: 'Nafūsa : parmi les premiers gens de l’Appel, solide appui de l’imamat rustamide. Dans la phase du secret (kitmān), ils réformèrent leur société et éduquèrent les générations. Par deux cercles d’étude (ḥalqa), la religion fut gardée dans la montagne. Le Djérid, région peu protégée, subit la pression des Zirides et des tribus bédouines migrantes. Et Djerba fut le phare du savoir au Maghreb et la destination des étudiants.',
+            en: 'Nafusa: among the first People of the Call, a strong support for the Rustamid imamate. In the stage of secrecy (kitman) they reformed their society and raised the generations. Through two study circles (halqa) the religion was kept in the mountain. The Jarid, an unprotected region, bore the pressure of the Zirids and migrating Bedouin tribes. And Djerba was the beacon of knowledge in the Maghreb and the destination of students.',
+          },
         },
       ],
-      treasure: {
-        ar: 'كنز الدرس: حين غابت الدولة لم يغب العلم. دخل أهل الدعوة مرحلة الكتمان، واشتغلوا بإصلاح مجتمعهم وتربية الأجيال، فحفظت الحلقات الدين في الجبل والجزيرة.',
-        fr: 'Le trésor de la leçon : quand l’État disparut, le savoir, lui, ne disparut pas. Les gens de l’Appel entrèrent dans la phase du secret, se consacrèrent à réformer leur société et à éduquer les générations, et les cercles gardèrent la religion dans la montagne et sur l’île.',
-        en: 'The lesson’s treasure: when the state was gone, knowledge was not. The People of the Call entered the stage of secrecy, turned to reforming their society and raising the generations, and the circles kept the religion alive in the mountain and on the island.',
-      },
     },
 
-    // 16 — Scramble: key words (slides 3, 5, 7)
+    // 19 — Values
     {
-      kind: 'scramble',
-      id: 'key-words',
-      title: { ar: 'حروفٌ مبعثرة', fr: 'Lettres en désordre', en: 'Scrambled letters' },
-      intro: {
-        ar: 'رتّب الحروف لتكوّن الكلمة المفتاحية.',
-        fr: 'Remets les lettres en ordre pour former le mot-clé.',
-        en: 'Put the letters in order to form the key word.',
+      kind: 'value',
+      id: 'values',
+      title: { ar: 'ماذا نتعلّم من هذا الدرس؟', fr: 'Que retenir de cette leçon ?', en: 'What do we learn from this lesson?' },
+      prompt: {
+        ar: 'حين غابت الدولة وقلّ العلماء، ماذا اختار أهل الدعوة؟',
+        fr: 'Quand l’État disparut et que les savants se firent rares, que choisirent les gens de l’Appel ?',
+        en: 'When the state was gone and scholars were few, what did the People of the Call choose?',
       },
-      words: [
+      choices: [
         {
-          id: 'w-nafusa',
-          clue: { ar: 'قبيلةٌ أمازيغية وسلسلة جبالٍ في ليبيا.', fr: 'Une tribu amazighe et une chaîne de montagnes en Libye.', en: 'An Amazigh tribe and a mountain range in Libya.' },
-          word: { ar: 'نفوسة', fr: 'Nafusa', en: 'Nafusa' },
-          reveal: { ar: 'نفوسة: من أوائل أهل الدعوة، وسندٌ قويّ للإمامة الرستمية.', fr: 'Nafūsa : parmi les premiers gens de l’Appel, solide appui de l’imamat rustamide.', en: 'Nafusa: among the first People of the Call, a strong support for the Rustamid imamate.' },
+          id: 'reform',
+          isCorrect: true,
+          label: { ar: 'دخلوا مرحلة الكتمان، وأصلحوا مجتمعهم وربّوا الأجيال', fr: 'Ils entrèrent dans la phase du secret, réformèrent leur société et éduquèrent les générations', en: 'They entered the stage of secrecy, reformed their society and raised the generations' },
+          feedback: {
+            ar: 'صحيح — حين غابت الدولة لم يغب العلم: حفظت الحلقات الدين في الجبل والجزيرة.',
+            fr: 'Exact — quand l’État disparut, le savoir, lui, ne disparut pas : les cercles gardèrent la religion dans la montagne et sur l’île.',
+            en: 'Correct — when the state was gone, knowledge was not: the circles kept the religion alive in the mountain and on the island.',
+          },
         },
         {
-          id: 'w-kitman',
-          clue: { ar: 'المرحلة التي دخلها أهل الدعوة بعد انتفاضة 358 هـ.', fr: 'La phase où entrèrent les gens de l’Appel après le soulèvement de 358 H : la phase du…', en: 'The stage the People of the Call entered after the 358 AH uprising: the stage of…' },
-          word: { ar: 'الكتمان', fr: 'secret', en: 'secrecy' },
-          reveal: { ar: 'في مرحلة الكتمان اشتغلوا بإصلاح مجتمعهم وتربية الأجيال.', fr: 'Dans la phase du secret (kitmān), ils se consacrèrent à réformer leur société et à éduquer les générations.', en: 'In the stage of secrecy (kitman) they turned to reforming their society and raising the generations.' },
+          id: 'despair',
+          isCorrect: false,
+          label: { ar: 'تركوا العلم واليأسُ يملؤهم', fr: 'Ils abandonnèrent le savoir, découragés', en: 'They gave up learning in despair' },
+          feedback: { ar: 'لا — بل اشتغلوا بالإصلاح والتربية.', fr: 'Non — au contraire, ils se consacrèrent à la réforme et à l’éducation.', en: 'No — rather, they turned to reform and education.' },
         },
         {
-          id: 'w-halqa',
-          clue: { ar: 'مجلسٌ للتعليم والذكر والمواعظ.', fr: 'Une assemblée d’enseignement, de rappel et d’exhortation.', en: 'A gathering for teaching, remembrance and exhortation.' },
-          word: { ar: 'حلقة', fr: 'cercle', en: 'circle' },
-          reveal: { ar: 'بحلقتين علميتين حفظ الشيخان الدين والمذهب في الجبل.', fr: 'Par deux cercles d’étude (ḥalqa), les deux cheikhs préservèrent la religion et l’école dans la montagne.', en: 'Through two study circles (halqa), the two sheikhs preserved the religion and the school in the mountain.' },
+          id: 'imamate',
+          isCorrect: false,
+          label: { ar: 'أعلنوا إمامةً جديدة فورًا', fr: 'Ils proclamèrent aussitôt un nouvel imamat', en: 'They at once proclaimed a new imamate' },
+          feedback: { ar: 'لا — الدرس يذكر الكتمان وإصلاح المجتمع، لا إمامةً جديدة.', fr: 'Non — la leçon parle de secret et de réforme de la société, non d’un nouvel imamat.', en: 'No — the lesson speaks of secrecy and reforming society, not of a new imamate.' },
+        },
+      ],
+      valuesTitle: { ar: 'قيمٌ من هذا الدرس — اقلب كلّ بطاقة', fr: 'Des valeurs de cette leçon — retourne chaque carte', en: 'Values from this lesson — flip each card' },
+      values: [
+        {
+          id: 'keep-knowledge',
+          value: { ar: 'حفظ العلم', fr: 'Garder le savoir', en: 'Keeping knowledge alive' },
+          evidence: { ar: 'بعد أن فُقد أزيد من أربعمائة عالم في مانو، حفظ الشيخان سدرات البغطوري وعبد الله بن الخير الدين بحلقتيهما.', fr: 'Après la perte de plus de quatre cents savants à Mānū, les cheikhs Sadrāt al-Baghṭūrī et ‘Abd Allāh ibn al-Khayr gardèrent la religion par leurs deux cercles.', en: 'After more than four hundred scholars were lost at Manu, Sheikhs Sadrat al-Baghturi and ‘Abd Allah ibn al-Khayr kept the religion alive through their circles.' },
         },
         {
-          id: 'w-jarid',
-          clue: { ar: 'المنطقة الجنوبية من تونس، بين وادي سوف وجبل نفوسة.', fr: 'La région sud de la Tunisie, entre l’Oued Souf et le djebel Nafūsa.', en: 'The southern region of Tunisia, between Wadi Souf and the Nafusa Mountain.' },
-          word: { ar: 'الجريد', fr: 'Djerid', en: 'Jarid' },
-          reveal: { ar: 'الجريد منطقةٌ غير منيعة، تحمّل أهلها ضغط الزيريين والقبائل البدوية المهاجرة.', fr: 'Le Djérid, région peu protégée, subit la pression des Zirides et des tribus bédouines migrantes.', en: 'The Jarid was an unprotected region whose people bore the pressure of the Zirids and migrating Bedouin tribes.' },
+          id: 'patience',
+          value: { ar: 'الصبر والإصلاح بعد المحنة', fr: 'Patience et réforme après l’épreuve', en: 'Patience and reform after hardship' },
+          evidence: { ar: 'بعد مانو وانتفاضةٍ لم تنتصر، اشتغل أهل الدعوة بإصلاح مجتمعهم وتربية الأجيال.', fr: 'Après Mānū et un soulèvement sans victoire, les gens de l’Appel se consacrèrent à réformer leur société et à éduquer les générations.', en: 'After Manu and an uprising that did not win, the People of the Call turned to reforming their society and raising the generations.' },
         },
         {
-          id: 'w-jerba',
-          clue: { ar: 'جزيرة المساجد.', fr: 'L’île des mosquées.', en: 'The Island of Mosques.' },
-          word: { ar: 'جربة', fr: 'Djerba', en: 'Djerba' },
-          reveal: { ar: 'جربة: منارة العلم بالمغرب وقبلة الطلبة.', fr: 'Djerba : phare du savoir au Maghreb et destination des étudiants.', en: 'Djerba: beacon of knowledge in the Maghreb and destination of students.' },
+          id: 'pass-it-on',
+          value: { ar: 'نقل العلم جيلًا بعد جيل', fr: 'Transmettre le savoir de génération en génération', en: 'Passing knowledge from one generation to the next' },
+          evidence: { ar: 'تعلّم أبو مسور على سليمان بن ماطوس، وعلّم ابنه فصيلًا، وعند فصيل تعلّم محمد بن بكر.', fr: 'Abū Miswar étudia auprès de Sulaymān ibn Māṭūs, enseigna à son fils Faṣīl, et Muḥammad ibn Bakr étudia auprès de Faṣīl.', en: 'Abu Miswar studied under Sulayman ibn Matus, taught his son Fasil, and Muhammad ibn Bakr studied under Fasil.' },
+        },
+        {
+          id: 'students',
+          value: { ar: 'إكرام طالب العلم', fr: 'Honorer celui qui cherche le savoir', en: 'Honouring the seeker of knowledge' },
+          evidence: { ar: 'رعت قرى جربة وأريافها الطلبة الوافدين، حتّى صارت الجزيرة قبلةً للطلبة.', fr: 'Les villages et campagnes de Djerba prirent soin des étudiants venus d’ailleurs, et l’île devint leur destination.', en: 'Djerba’s villages and countryside cared for arriving students, until the island became the destination of students.' },
         },
       ],
     },
 
-    // 17 — Wheel: whole-class review (all slides)
-    {
-      kind: 'wheel',
-      id: 'class-wheel',
-      title: { ar: 'عجلة القسم', fr: 'La roue de la classe', en: 'The class wheel' },
-      intro: {
-        ar: 'أدِر العجلة! من يجيب شفويًّا قبل كشف الجواب يربح نقطةً لفريقه.',
-        fr: 'Fais tourner la roue ! Qui répond à l’oral avant la révélation gagne un point pour son équipe.',
-        en: 'Spin the wheel! Whoever answers aloud before the reveal wins a point for the team.',
-      },
-      segments: [
-        {
-          id: 'g1',
-          label: { ar: 'نفوسة', fr: 'Nafūsa', en: 'Nafusa' },
-          question: { ar: 'أين يقع جبل نفوسة، ومن هم نفوسة؟', fr: 'Où se trouve le djebel Nafūsa, et qui sont les Nafūsa ?', en: 'Where is the Nafusa Mountain, and who are the Nafusa?' },
-          answer: { ar: 'سلسلة جبالٍ في شمال غرب ليبيا؛ ونفوسة قبيلةٌ أمازيغية اعتنقت الإسلام مبكّرًا.', fr: 'Une chaîne de montagnes au nord-ouest de la Libye ; Nafūsa est une tribu amazighe convertie très tôt à l’islam.', en: 'A mountain range in north-western Libya; Nafusa is an Amazigh tribe that embraced Islam early.' },
-        },
-        {
-          id: 'g2',
-          label: { ar: 'مانو', fr: 'Mānū', en: 'Manu' },
-          question: { ar: 'ما أشدّ ما خسره الجبل في موقعة مانو سنة 283 هـ؟', fr: 'Quelle fut la plus lourde perte de la montagne à Mānū, en 283 H ?', en: 'What was the mountain’s heaviest loss at Manu in 283 AH?' },
-          answer: { ar: 'هلاك الآلاف، وفيهم أزيد من أربعمائة عالمٍ وفقيه، حتّى فُقد من يدرّس أصول الدين.', fr: 'La mort de milliers de personnes, dont plus de quatre cents savants et juristes : plus personne pour enseigner les fondements de la religion.', en: 'The death of thousands, including more than four hundred scholars and jurists, until no one was left to teach the foundations of the religion.' },
-        },
-        {
-          id: 'g3',
-          label: { ar: 'الشيخان', fr: 'Deux cheikhs', en: 'Two sheikhs' },
-          question: { ar: 'من الشيخان اللذان حفظا الدين والمذهب في الجبل، وبماذا؟', fr: 'Quels deux cheikhs préservèrent la religion et l’école dans la montagne, et comment ?', en: 'Which two sheikhs preserved the religion and the school in the mountain, and how?' },
-          answer: { ar: 'أبو القاسم سدرات البغطوري وعبد الله بن الخير، بحلقتيهما العلميتين اللتين استمرّتا طويلًا.', fr: 'Abū al-Qāsim Sadrāt al-Baghṭūrī et ‘Abd Allāh ibn al-Khayr, par leurs deux cercles d’étude qui durèrent longtemps.', en: 'Abu al-Qasim Sadrat al-Baghturi and ‘Abd Allah ibn al-Khayr, through their two long-lasting study circles.' },
-        },
-        {
-          id: 'g4',
-          label: { ar: 'الانتفاضة', fr: 'Soulèvement', en: 'Uprising' },
-          question: { ar: 'مع من شارك أهل نفوسة في انتفاضة 358 هـ، وضدّ من؟', fr: 'Avec qui les gens de Nafūsa se soulevèrent-ils en 358 H, et contre qui ?', en: 'With whom did the people of Nafusa rise in 358 AH, and against whom?' },
-          answer: { ar: 'مع الإمام أبي خزر يغلا بن زلتاف وأبي نوح سعيد، ضدّ العبيديين.', fr: 'Avec l’imam Abū Khazar Yaghlā ibn Zultāf et Abū Nūḥ Sa‘īd, contre les Ubaydides.', en: 'With Imam Abu Khazar Yaghla ibn Zultaf and Abu Nuh Sa‘id, against the Ubaydids.' },
-        },
-        {
-          id: 'g5',
-          label: { ar: 'الكتمان', fr: 'Le secret', en: 'Secrecy' },
-          question: { ar: 'بماذا اشتغل أهل الدعوة في مرحلة الكتمان؟', fr: 'À quoi se consacrèrent les gens de l’Appel dans la phase du secret ?', en: 'What did the People of the Call turn to in the stage of secrecy?' },
-          answer: { ar: 'بإصلاح مجتمعهم وتربية الأجيال.', fr: 'À réformer leur société et à éduquer les générations.', en: 'To reforming their society and raising the generations.' },
-        },
-        {
-          id: 'g6',
-          label: { ar: 'الجريد', fr: 'Le Djérid', en: 'The Jarid' },
-          question: { ar: 'ممّن تحمّل سكّان المناطق غير المنيعة ضغطًا كبيرًا؟', fr: 'De qui les habitants des régions exposées subirent-ils une forte pression ?', en: 'From whom did people in the exposed regions suffer heavy pressure?' },
-          answer: { ar: 'من الزيريين، الذين خرّبوا درجين في قسطيلية سنة 440 هـ، ومن القبائل البدوية المهاجرة.', fr: 'Des Zirides, qui détruisirent Darjīn en Qasṭīliya en 440 H, et des tribus bédouines migrantes.', en: 'From the Zirids, who destroyed Darjin in Qastiliya in 440 AH, and from migrating Bedouin tribes.' },
-        },
-        {
-          id: 'g7',
-          label: { ar: 'أبو مسور', fr: 'Abū Miswar', en: 'Abu Miswar' },
-          question: { ar: 'اذكر ثلاثة أعمالٍ قام بها أبو مسور في جربة.', fr: 'Cite trois œuvres d’Abū Miswar à Djerba.', en: 'Name three things Abu Miswar did in Djerba.' },
-          answer: { ar: 'أنشأ المدارس، وجمع الكتب النفيسة، وبنى المساجد، وتخرّج على يده علماء كبار.', fr: 'Il fonda des écoles, réunit des livres précieux, bâtit des mosquées et forma de grands savants.', en: 'He founded schools, collected precious books, built mosques and trained great scholars.' },
-        },
-        {
-          id: 'g8',
-          label: { ar: 'جربة', fr: 'Djerba', en: 'Djerba' },
-          question: { ar: 'لماذا سُمّيت جربة «جزيرة المساجد»، وما الموسوعة التي أُلّفت فيها؟', fr: 'Pourquoi Djerba fut-elle surnommée « l’île des mosquées », et quelle encyclopédie y fut composée ?', en: 'Why was Djerba named "the Island of Mosques", and which encyclopedia was composed there?' },
-          answer: { ar: 'لأنّ قراها وأريافها اعتنت بحلقات التعليم ورعاية الطلبة الوافدين؛ والموسوعة هي «ديوان العزّابة».', fr: 'Parce que ses villages et campagnes veillèrent aux cercles d’étude et à l’accueil des étudiants ; l’encyclopédie est le « Dīwān al-‘Azzāba ».', en: 'Because its villages and countryside looked after the study circles and cared for arriving students; the encyclopedia is "Diwan al-‘Azzaba".' },
-        },
-      ],
-    },
-
-    // 18 — Completion
+    // 20 — Completion
     {
       kind: 'completion',
       id: 'completion',
